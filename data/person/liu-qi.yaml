@@ -1,0 +1,16 @@
+id: liu-qi
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth:
+  year: -187
+death:
+  year: -140
+reign:
+  - start: -156
+    end: -140
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

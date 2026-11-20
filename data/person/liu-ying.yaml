@@ -1,0 +1,16 @@
+id: liu-ying
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth:
+  year: -209
+death:
+  year: -187
+reign:
+  - start: -194
+    end: -187
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

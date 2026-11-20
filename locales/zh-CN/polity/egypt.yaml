@@ -1,0 +1,20 @@
+name: 埃及
+periods:
+  early-dynastic:
+    name: 早王朝
+  old-kingdom:
+    name: 古王国
+  first-intermediate:
+    name: 第一中间期
+  middle-kingdom:
+    name: 中王国
+  second-intermediate:
+    name: 第二中间期
+  new-kingdom:
+    name: 新王国
+  late-period:
+    name: 后期埃及
+  ptolemaic:
+    name: 托勒密王朝
+  roman-byzantine-egypt:
+    name: 罗马与拜占庭治下

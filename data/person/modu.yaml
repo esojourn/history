@@ -1,0 +1,17 @@
+id: modu
+wikidata: null
+civ: steppe
+faction: xiongnu
+importance: 4
+birth:
+  year: -233
+  circa: true
+death:
+  year: -173
+reign:
+  - start: -208
+    end: -173
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

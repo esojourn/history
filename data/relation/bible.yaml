@@ -1,0 +1,14 @@
+- from: mattathias
+  to: judas
+  type: kin
+- from: mattathias
+  to: simon
+  type: kin
+- from: judas
+  to: jonathan
+  type: kin
+  year: -159
+- from: jonathan
+  to: simon
+  type: kin
+  year: -142

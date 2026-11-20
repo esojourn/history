@@ -1,0 +1,15 @@
+id: philip-v
+wikidata: null
+civ: greece
+importance: 3
+birth:
+  year: -237
+death:
+  year: -178
+reign:
+  - start: -220
+    end: -178
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

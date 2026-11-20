@@ -1,0 +1,11 @@
+- id: kin
+  color: "#C4472D"
+- id: lord
+  color: "#2F6F9F"
+- id: rival
+  color: "#1B2A31"
+  dashed: true
+- id: ally
+  color: "#2F8F83"
+- id: mentor
+  color: "#B5851A"

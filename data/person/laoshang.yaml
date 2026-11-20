@@ -1,0 +1,17 @@
+id: laoshang
+wikidata: null
+civ: steppe
+faction: xiongnu
+importance: 2
+birth:
+  unknown: true
+  approx: -209
+death:
+  year: -160
+reign:
+  - start: -173
+    end: -160
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

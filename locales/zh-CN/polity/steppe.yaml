@@ -1,0 +1,25 @@
+name: 北方草原
+periods:
+  steppe-tribes:
+    name: 草原诸部
+    note: 东胡、月氏、匈奴
+  xiongnu:
+    name: 匈奴
+  xianbei:
+    name: 鲜卑
+  rouran:
+    name: 柔然
+  gokturk:
+    name: 突厥
+  uyghur:
+    name: 回鹘
+  steppe-divided:
+    name: 诸部并立
+  mongol-empire:
+    name: 蒙古帝国
+  mongol-tribes:
+    name: 蒙古诸部
+  qing-rule:
+    name: 清朝治下
+  mongolia:
+    name: 蒙古国

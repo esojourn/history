@@ -1,0 +1,17 @@
+id: menander
+wikidata: null
+civ: india
+importance: 3
+birth:
+  unknown: true
+  approx: -184
+death:
+  year: -129
+  circa: true
+reign:
+  - start: -164
+    end: -129
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

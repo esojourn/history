@@ -1,0 +1,11 @@
+id: pydna
+civ: greece
+type: null
+importance: 4
+start:
+  year: -167
+places: []
+participants:
+  - person: perseus
+  - person: polybius
+reviewed: false

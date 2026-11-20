@@ -1,0 +1,11 @@
+id: raphia
+civ: egypt
+type: null
+importance: 3
+start:
+  year: -216
+places: []
+participants:
+  - person: ptolemy-4
+  - person: antiochus-3
+reviewed: false

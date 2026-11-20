@@ -1,0 +1,34 @@
+id: yue
+order: 11
+color: "#4F8F5B"
+periods:
+  - id: dongson
+    start: -599
+    end: -203
+    certainty: traditional
+  - id: nanyue
+    start: -203
+    end: -110
+  - id: jiaozhi
+    start: -110
+    end: 100
+  - id: funan-champa
+    start: 100
+    end: 550
+    certainty: traditional
+  - id: chenla-srivijaya
+    start: 550
+    end: 802
+    certainty: traditional
+  - id: angkor
+    start: 802
+    end: 1431
+  - id: sea-kingdoms
+    start: 1431
+    end: 1824
+  - id: colonial
+    start: 1824
+    end: 1945
+  - id: independent-sea
+    start: 1945
+    end: 2000

@@ -1,0 +1,10 @@
+id: hasmonean
+civ: bible
+type: null
+importance: 3
+start:
+  year: -141
+places: []
+participants:
+  - person: simon
+reviewed: false

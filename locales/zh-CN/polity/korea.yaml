@@ -1,0 +1,18 @@
+name: 朝鲜半岛
+periods:
+  gojoseon:
+    name: 古朝鲜
+  three-kingdoms-korea:
+    name: 三国时代
+  unified-silla:
+    name: 统一新罗与渤海
+  goryeo:
+    name: 高丽
+  joseon:
+    name: 朝鲜王朝
+  korean-empire:
+    name: 大韩帝国
+  japanese-rule:
+    name: 日据
+  division:
+    name: 南北分治

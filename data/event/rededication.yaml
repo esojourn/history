@@ -1,0 +1,10 @@
+id: rededication
+civ: bible
+type: null
+importance: 3
+start:
+  year: -163
+places: []
+participants:
+  - person: judas
+reviewed: false

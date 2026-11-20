@@ -1,0 +1,10 @@
+id: cannae
+civ: rome
+type: null
+importance: 4
+start:
+  year: -215
+places: []
+participants:
+  - person: hannibal
+reviewed: false

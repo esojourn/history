@@ -1,0 +1,14 @@
+id: meng-tian
+wikidata: null
+civ: china
+faction: qin
+importance: 2
+birth:
+  unknown: true
+  approx: -259
+death:
+  year: -209
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

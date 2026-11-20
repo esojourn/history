@@ -1,0 +1,12 @@
+name: 希腊
+periods:
+  aegean:
+    name: 爱琴文明
+  dark-age:
+    name: 黑暗时代
+  archaic:
+    name: 古风时期
+  classical:
+    name: 古典时期
+  hellenistic:
+    name: 希腊化时代

@@ -1,0 +1,38 @@
+id: bible
+order: 1
+color: "#B5851A"
+periods:
+  - id: primeval
+    start: -3000
+    end: -2099
+    certainty: legendary
+  - id: patriarchs
+    start: -2099
+    end: -1799
+    certainty: traditional
+  - id: egypt-sojourn
+    start: -1799
+    end: -1299
+    certainty: traditional
+  - id: exodus-judges
+    start: -1299
+    end: -1049
+    certainty: traditional
+  - id: united-monarchy
+    start: -1049
+    end: -929
+  - id: divided-monarchy
+    start: -929
+    end: -585
+  - id: exile
+    start: -585
+    end: -537
+  - id: second-temple
+    start: -537
+    end: -3
+  - id: new-testament
+    start: -3
+    end: 100
+  - id: early-church
+    start: 100
+    end: 313

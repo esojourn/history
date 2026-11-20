@@ -1,0 +1,17 @@
+id: liu-bang
+wikidata: null
+civ: china
+faction: han
+importance: 5
+birth:
+  year: -255
+  circa: true
+death:
+  year: -194
+reign:
+  - start: -201
+    end: -194
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

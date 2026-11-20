@@ -1,0 +1,10 @@
+id: rosetta
+civ: egypt
+type: null
+importance: 3
+start:
+  year: -195
+places: []
+participants:
+  - person: ptolemy-5
+reviewed: false

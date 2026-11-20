@@ -1,0 +1,29 @@
+id: korea
+order: 9
+color: "#2F8F83"
+periods:
+  - id: gojoseon
+    start: -999
+    end: -107
+    certainty: traditional
+  - id: three-kingdoms-korea
+    start: -56
+    end: 668
+  - id: unified-silla
+    start: 668
+    end: 935
+  - id: goryeo
+    start: 936
+    end: 1392
+  - id: joseon
+    start: 1392
+    end: 1897
+  - id: korean-empire
+    start: 1897
+    end: 1910
+  - id: japanese-rule
+    start: 1910
+    end: 1945
+  - id: division
+    start: 1945
+    end: 2000

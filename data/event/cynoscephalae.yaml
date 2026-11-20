@@ -1,0 +1,10 @@
+id: cynoscephalae
+civ: greece
+type: null
+importance: 2
+start:
+  year: -196
+places: []
+participants:
+  - person: philip-v
+reviewed: false

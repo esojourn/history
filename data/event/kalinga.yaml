@@ -1,0 +1,11 @@
+id: kalinga
+civ: india
+type: null
+importance: 4
+start:
+  year: -260
+  circa: true
+places: []
+participants:
+  - person: ashoka
+reviewed: false

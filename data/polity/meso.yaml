@@ -1,0 +1,41 @@
+id: meso
+order: 2
+color: "#A0623A"
+periods:
+  - id: sumer
+    start: -2899
+    end: -2333
+    certainty: traditional
+  - id: akkad
+    start: -2333
+    end: -2153
+  - id: ur-iii
+    start: -2111
+    end: -2003
+  - id: old-babylon
+    start: -1893
+    end: -1594
+  - id: kassite
+    start: -1594
+    end: -1154
+  - id: assyria
+    start: -910
+    end: -611
+  - id: neo-babylon
+    start: -611
+    end: -538
+  - id: achaemenid
+    start: -538
+    end: -329
+  - id: seleucid
+    start: -329
+    end: -140
+  - id: parthia
+    start: -140
+    end: 224
+  - id: sasanian
+    start: 224
+    end: 651
+  - id: caliphate
+    start: 651
+    end: 1258

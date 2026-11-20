@@ -1,0 +1,24 @@
+name: 罗马与欧洲
+periods:
+  roman-kingdom:
+    name: 王政
+  roman-republic:
+    name: 罗马共和国
+  roman-empire:
+    name: 罗马帝国
+  early-middle-ages:
+    name: 中世纪前期
+  high-middle-ages:
+    name: 中世纪盛期
+  late-middle-ages:
+    name: 中世纪晚期
+  renaissance-reformation:
+    name: 文艺复兴与宗教改革
+  enlightenment-revolution:
+    name: 启蒙与革命
+  industrial-age:
+    name: 工业时代
+  world-wars:
+    name: 两次大战
+  postwar:
+    name: 战后

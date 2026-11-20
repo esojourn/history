@@ -1,0 +1,16 @@
+id: xiang-yu
+wikidata: null
+civ: china
+faction: chu
+importance: 5
+birth:
+  year: -231
+death:
+  year: -201
+reign:
+  - start: -205
+    end: -201
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

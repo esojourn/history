@@ -1,0 +1,26 @@
+name: 印度
+periods:
+  indus:
+    name: 印度河文明
+  vedic:
+    name: 吠陀时代
+  mahajanapada:
+    name: 列国时代
+  maurya:
+    name: 孔雀王朝
+  shunga-etc:
+    name: 巽伽等诸国
+  kushan-etc:
+    name: 贵霜等诸国
+  gupta:
+    name: 笈多王朝
+  regional-kingdoms:
+    name: 诸王国并立
+  delhi-sultanate:
+    name: 德里苏丹国
+  mughal:
+    name: 莫卧儿帝国
+  british-india:
+    name: 英属印度
+  republic-of-india:
+    name: 共和国

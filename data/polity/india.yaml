@@ -1,0 +1,42 @@
+id: india
+order: 6
+color: "#C9702B"
+periods:
+  - id: indus
+    start: -2599
+    end: -1899
+    certainty: traditional
+  - id: vedic
+    start: -1499
+    end: -599
+    certainty: traditional
+  - id: mahajanapada
+    start: -599
+    end: -321
+  - id: maurya
+    start: -321
+    end: -184
+  - id: shunga-etc
+    start: -184
+    end: 30
+  - id: kushan-etc
+    start: 30
+    end: 320
+  - id: gupta
+    start: 320
+    end: 550
+  - id: regional-kingdoms
+    start: 550
+    end: 1206
+  - id: delhi-sultanate
+    start: 1206
+    end: 1526
+  - id: mughal
+    start: 1526
+    end: 1857
+  - id: british-india
+    start: 1858
+    end: 1947
+  - id: republic-of-india
+    start: 1947
+    end: 2000

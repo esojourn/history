@@ -1,0 +1,20 @@
+name: 百越与东南亚
+periods:
+  dongson:
+    name: 东山文化与百越
+  nanyue:
+    name: 南越国
+  jiaozhi:
+    name: 交趾等郡
+  funan-champa:
+    name: 扶南与占婆
+  chenla-srivijaya:
+    name: 真腊与室利佛逝
+  angkor:
+    name: 吴哥王朝等
+  sea-kingdoms:
+    name: 诸国并立
+  colonial:
+    name: 殖民时代
+  independent-sea:
+    name: 独立诸国

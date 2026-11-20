@@ -1,0 +1,15 @@
+id: ptolemy-5
+wikidata: null
+civ: egypt
+importance: 2
+birth:
+  year: -209
+death:
+  year: -179
+reign:
+  - start: -203
+    end: -179
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

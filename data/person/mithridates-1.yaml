@@ -1,0 +1,17 @@
+id: mithridates-1
+wikidata: null
+civ: meso
+faction: parthia
+importance: 3
+birth:
+  year: -194
+  circa: true
+death:
+  year: -131
+reign:
+  - start: -170
+    end: -131
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

@@ -1,0 +1,38 @@
+id: rome
+order: 5
+color: "#A8456B"
+periods:
+  - id: roman-kingdom
+    start: -752
+    end: -508
+    certainty: traditional
+  - id: roman-republic
+    start: -508
+    end: -26
+  - id: roman-empire
+    start: -26
+    end: 476
+  - id: early-middle-ages
+    start: 476
+    end: 1000
+  - id: high-middle-ages
+    start: 1000
+    end: 1300
+  - id: late-middle-ages
+    start: 1300
+    end: 1453
+  - id: renaissance-reformation
+    start: 1453
+    end: 1648
+  - id: enlightenment-revolution
+    start: 1648
+    end: 1815
+  - id: industrial-age
+    start: 1815
+    end: 1914
+  - id: world-wars
+    start: 1914
+    end: 1945
+  - id: postwar
+    start: 1945
+    end: 2000

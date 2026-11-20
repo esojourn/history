@@ -1,0 +1,14 @@
+id: gaixia
+civ: china
+type: null
+importance: 5
+start:
+  year: -201
+places: []
+participants:
+  - person: xiang-yu
+  - person: liu-bang
+  - person: han-xin
+  - person: peng-yue
+  - person: yu-ji
+reviewed: false

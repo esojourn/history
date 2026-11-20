@@ -1,0 +1,16 @@
+id: ying-zheng
+wikidata: null
+civ: china
+faction: qin
+importance: 5
+birth:
+  year: -258
+death:
+  year: -209
+reign:
+  - start: -246
+    end: -209
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

@@ -1,0 +1,16 @@
+id: zhao-tuo
+wikidata: null
+civ: yue
+importance: 3
+birth:
+  year: -239
+  circa: true
+death:
+  year: -136
+reign:
+  - start: -203
+    end: -136
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

@@ -1,0 +1,39 @@
+id: steppe
+order: 7
+color: "#6E7B3A"
+periods:
+  - id: steppe-tribes
+    start: -699
+    end: -208
+    certainty: traditional
+  - id: xiongnu
+    start: -208
+    end: 93
+  - id: xianbei
+    start: 93
+    end: 330
+    certainty: traditional
+  - id: rouran
+    start: 330
+    end: 552
+  - id: gokturk
+    start: 552
+    end: 744
+  - id: uyghur
+    start: 744
+    end: 840
+  - id: steppe-divided
+    start: 840
+    end: 1206
+  - id: mongol-empire
+    start: 1206
+    end: 1368
+  - id: mongol-tribes
+    start: 1368
+    end: 1691
+  - id: qing-rule
+    start: 1691
+    end: 1911
+  - id: mongolia
+    start: 1911
+    end: 2000

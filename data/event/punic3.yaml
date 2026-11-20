@@ -1,0 +1,13 @@
+id: punic3
+civ: rome
+type: null
+importance: 4
+start:
+  year: -148
+end:
+  year: -145
+places: []
+participants:
+  - person: aemilianus
+  - person: cato
+reviewed: false

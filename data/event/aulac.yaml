@@ -1,0 +1,12 @@
+id: aulac
+civ: yue
+type: null
+importance: 2
+start:
+  year: -178
+  circa: true
+places: []
+participants:
+  - person: zhao-tuo
+  - person: an-duong
+reviewed: false

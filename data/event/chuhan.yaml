@@ -1,0 +1,18 @@
+id: chuhan
+civ: china
+type: null
+importance: 5
+start:
+  year: -205
+end:
+  year: -201
+places: []
+participants:
+  - person: liu-bang
+  - person: xiang-yu
+  - person: han-xin
+  - person: xiao-he
+  - person: zhang-liang
+  - person: chen-ping
+  - person: peng-yue
+reviewed: false

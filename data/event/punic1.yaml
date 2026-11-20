@@ -1,0 +1,12 @@
+id: punic1
+civ: rome
+type: null
+importance: 4
+start:
+  year: -263
+end:
+  year: -240
+places: []
+participants:
+  - person: hamilcar
+reviewed: false

@@ -1,0 +1,16 @@
+id: ashoka
+wikidata: null
+civ: india
+importance: 5
+birth:
+  year: -303
+  circa: true
+death:
+  year: -231
+reign:
+  - start: -267
+    end: -231
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

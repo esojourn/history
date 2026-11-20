@@ -1,0 +1,14 @@
+id: hannibal
+wikidata: null
+civ: rome
+faction: carthage
+importance: 5
+birth:
+  year: -246
+death:
+  year: -182
+  circa: true
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

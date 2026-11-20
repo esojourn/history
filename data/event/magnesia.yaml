@@ -1,0 +1,10 @@
+id: magnesia
+civ: meso
+type: null
+importance: 3
+start:
+  year: -189
+places: []
+participants:
+  - person: antiochus-3
+reviewed: false

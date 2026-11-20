@@ -1,0 +1,17 @@
+id: hu-hai
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth:
+  year: -229
+  circa: true
+death:
+  year: -206
+reign:
+  - start: -209
+    end: -206
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

@@ -1,0 +1,16 @@
+id: perseus
+wikidata: null
+civ: greece
+importance: 2
+birth:
+  year: -211
+  circa: true
+death:
+  year: -165
+reign:
+  - start: -178
+    end: -167
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

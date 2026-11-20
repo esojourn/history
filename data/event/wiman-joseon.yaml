@@ -1,0 +1,11 @@
+id: wiman-joseon
+civ: korea
+type: null
+importance: 3
+start:
+  year: -193
+places: []
+participants:
+  - person: wiman
+  - person: jun
+reviewed: false

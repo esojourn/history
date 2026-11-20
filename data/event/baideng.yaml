@@ -1,0 +1,12 @@
+id: baideng
+civ: china
+type: null
+importance: 3
+start:
+  year: -199
+places: []
+participants:
+  - person: liu-bang
+  - person: modu
+  - person: chen-ping
+reviewed: false

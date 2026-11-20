@@ -1,0 +1,10 @@
+id: seleucia
+civ: meso
+type: null
+importance: 3
+start:
+  year: -140
+places: []
+participants:
+  - person: mithridates-1
+reviewed: false

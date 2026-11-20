@@ -1,0 +1,10 @@
+id: desecration
+civ: bible
+type: null
+importance: 3
+start:
+  year: -166
+places: []
+participants:
+  - person: antiochus-4
+reviewed: false

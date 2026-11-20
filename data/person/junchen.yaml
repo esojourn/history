@@ -1,0 +1,17 @@
+id: junchen
+wikidata: null
+civ: steppe
+faction: xiongnu
+importance: 2
+birth:
+  unknown: true
+  approx: -184
+death:
+  year: -125
+reign:
+  - start: -160
+    end: -125
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

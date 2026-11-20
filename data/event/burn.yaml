@@ -1,0 +1,14 @@
+id: burn
+civ: china
+type: null
+importance: 3
+start:
+  year: -212
+end:
+  year: -211
+places: []
+participants:
+  - person: ying-zheng
+  - person: li-si
+  - person: fu-su
+reviewed: false

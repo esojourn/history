@@ -1,0 +1,15 @@
+id: maccabee
+civ: bible
+type: null
+importance: 4
+start:
+  year: -166
+end:
+  year: -159
+places: []
+participants:
+  - person: mattathias
+  - person: judas
+  - person: jonathan
+  - person: antiochus-4
+reviewed: false

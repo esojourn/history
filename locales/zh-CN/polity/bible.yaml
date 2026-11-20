@@ -1,0 +1,23 @@
+name: 圣经历史
+periods:
+  primeval:
+    name: 太初
+    note: 创世、洪水、巴别（只排先后，不标年份）
+  patriarchs:
+    name: 族长时期
+  egypt-sojourn:
+    name: 寄居埃及
+  exodus-judges:
+    name: 出埃及与士师
+  united-monarchy:
+    name: 联合王国
+  divided-monarchy:
+    name: 南北分国
+  exile:
+    name: 被掳
+  second-temple:
+    name: 第二圣殿时期
+  new-testament:
+    name: 新约时代
+  early-church:
+    name: 早期教会

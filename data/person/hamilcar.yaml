@@ -1,0 +1,14 @@
+id: hamilcar
+wikidata: null
+civ: rome
+faction: carthage
+importance: 2
+birth:
+  year: -274
+  circa: true
+death:
+  year: -227
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

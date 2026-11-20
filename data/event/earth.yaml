@@ -1,0 +1,11 @@
+id: earth
+civ: egypt
+type: null
+importance: 3
+start:
+  year: -239
+  circa: true
+places: []
+participants:
+  - person: eratosthenes
+reviewed: false

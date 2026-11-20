@@ -1,0 +1,16 @@
+id: ptolemy-3
+wikidata: null
+civ: egypt
+importance: 3
+birth:
+  year: -279
+  circa: true
+death:
+  year: -221
+reign:
+  - start: -245
+    end: -221
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

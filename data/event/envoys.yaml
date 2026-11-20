@@ -1,0 +1,13 @@
+id: envoys
+civ: india
+type: null
+importance: 3
+start:
+  year: -249
+  circa: true
+places: []
+participants:
+  - person: ashoka
+  - person: antiochus-2
+  - person: ptolemy-2
+reviewed: false

@@ -1,0 +1,11 @@
+id: syracuse
+civ: greece
+type: null
+importance: 3
+start:
+  year: -211
+places: []
+participants:
+  - person: archimedes
+  - person: marcellus
+reviewed: false

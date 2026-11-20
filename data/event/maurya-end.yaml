@@ -1,0 +1,11 @@
+id: maurya-end
+civ: india
+type: null
+importance: 3
+start:
+  year: -184
+  circa: true
+places: []
+participants:
+  - person: pushyamitra
+reviewed: false

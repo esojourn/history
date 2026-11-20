@@ -1,0 +1,8 @@
+- from: ashoka
+  to: antiochus-2
+  type: ally
+  year: -255
+- from: ashoka
+  to: ptolemy-2
+  type: ally
+  year: -253

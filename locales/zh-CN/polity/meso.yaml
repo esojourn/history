@@ -1,0 +1,26 @@
+name: 两河与波斯
+periods:
+  sumer:
+    name: 苏美尔城邦
+  akkad:
+    name: 阿卡德
+  ur-iii:
+    name: 乌尔第三王朝
+  old-babylon:
+    name: 古巴比伦
+  kassite:
+    name: 加喜特巴比伦
+  assyria:
+    name: 亚述帝国
+  neo-babylon:
+    name: 新巴比伦
+  achaemenid:
+    name: 波斯帝国
+  seleucid:
+    name: 塞琉古
+  parthia:
+    name: 安息
+  sasanian:
+    name: 萨珊波斯
+  caliphate:
+    name: 阿拉伯帝国

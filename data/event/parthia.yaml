@@ -1,0 +1,12 @@
+id: parthia
+civ: meso
+type: null
+importance: 4
+start:
+  year: -246
+  circa: true
+places: []
+participants:
+  - person: arsaces
+  - person: antiochus-2
+reviewed: false

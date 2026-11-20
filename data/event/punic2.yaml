@@ -1,0 +1,15 @@
+id: punic2
+civ: rome
+type: null
+importance: 5
+start:
+  year: -217
+end:
+  year: -200
+places: []
+participants:
+  - person: hannibal
+  - person: scipio
+  - person: fabius
+  - person: marcellus
+reviewed: false

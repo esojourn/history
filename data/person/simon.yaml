@@ -1,0 +1,16 @@
+id: simon
+wikidata: null
+civ: bible
+importance: 2
+birth:
+  unknown: true
+  approx: -204
+death:
+  year: -134
+reign:
+  - start: -141
+    end: -134
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

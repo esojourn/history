@@ -1,0 +1,14 @@
+id: zhao-gao
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth:
+  unknown: true
+  approx: -256
+death:
+  year: -206
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

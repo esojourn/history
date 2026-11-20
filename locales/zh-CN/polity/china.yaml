@@ -1,0 +1,52 @@
+name: 中国
+periods:
+  five-emperors:
+    name: 五帝传说时代
+  xia:
+    name: 夏
+  shang:
+    name: 商
+  western-zhou:
+    name: 西周
+  spring-autumn:
+    name: 春秋
+  warring-states:
+    name: 战国
+  qin:
+    name: 秦
+  chu-han:
+    name: 楚汉
+  western-han:
+    name: 西汉
+  xin:
+    name: 新
+  eastern-han:
+    name: 东汉
+  three-kingdoms:
+    name: 三国
+  western-jin:
+    name: 西晋
+  eastern-jin:
+    name: 东晋十六国
+  north-south:
+    name: 南北朝
+  sui:
+    name: 隋
+  tang:
+    name: 唐
+  five-dynasties:
+    name: 五代十国
+  northern-song:
+    name: 北宋与辽
+  southern-song:
+    name: 南宋与金
+  yuan:
+    name: 元
+  ming:
+    name: 明
+  qing:
+    name: 清
+  roc:
+    name: 民国
+  prc:
+    name: 共和国

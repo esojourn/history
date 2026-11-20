@@ -1,0 +1,12 @@
+id: hanxin-death
+civ: china
+type: null
+importance: 3
+start:
+  year: -195
+places: []
+participants:
+  - person: han-xin
+  - person: lv-zhi
+  - person: xiao-he
+reviewed: false

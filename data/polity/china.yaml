@@ -1,0 +1,82 @@
+id: china
+order: 8
+color: "#C4472D"
+periods:
+  - id: five-emperors
+    start: -3000
+    end: -2069
+    certainty: legendary
+  - id: xia
+    start: -2069
+    end: -1599
+    certainty: traditional
+  - id: shang
+    start: -1599
+    end: -1045
+    certainty: traditional
+  - id: western-zhou
+    start: -1045
+    end: -770
+  - id: spring-autumn
+    start: -769
+    end: -475
+  - id: warring-states
+    start: -474
+    end: -220
+  - id: qin
+    start: -220
+    end: -206
+  - id: chu-han
+    start: -205
+    end: -201
+  - id: western-han
+    start: -201
+    end: 8
+  - id: xin
+    start: 9
+    end: 23
+  - id: eastern-han
+    start: 25
+    end: 220
+  - id: three-kingdoms
+    start: 220
+    end: 266
+  - id: western-jin
+    start: 266
+    end: 316
+  - id: eastern-jin
+    start: 317
+    end: 420
+  - id: north-south
+    start: 420
+    end: 589
+  - id: sui
+    start: 589
+    end: 618
+  - id: tang
+    start: 618
+    end: 907
+  - id: five-dynasties
+    start: 907
+    end: 960
+  - id: northern-song
+    start: 960
+    end: 1127
+  - id: southern-song
+    start: 1127
+    end: 1279
+  - id: yuan
+    start: 1279
+    end: 1368
+  - id: ming
+    start: 1368
+    end: 1644
+  - id: qing
+    start: 1644
+    end: 1912
+  - id: roc
+    start: 1912
+    end: 1949
+  - id: prc
+    start: 1949
+    end: 2000

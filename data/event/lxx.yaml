@@ -1,0 +1,11 @@
+id: lxx
+civ: bible
+type: null
+importance: 3
+start:
+  year: -249
+  circa: true
+places: []
+participants:
+  - person: ptolemy-2
+reviewed: false

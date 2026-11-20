@@ -1,0 +1,26 @@
+name: 日本
+periods:
+  jomon:
+    name: 绳文时代
+  yayoi:
+    name: 弥生时代
+  kofun:
+    name: 古坟时代
+  asuka:
+    name: 飞鸟时代
+  nara:
+    name: 奈良
+  heian:
+    name: 平安时代
+  kamakura:
+    name: 镰仓幕府
+  muromachi:
+    name: 室町幕府
+  azuchi-momoyama:
+    name: 安土桃山
+  edo:
+    name: 江户幕府
+  meiji-taisho:
+    name: 明治与大正
+  showa-heisei:
+    name: 昭和与平成

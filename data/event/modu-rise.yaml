@@ -1,0 +1,11 @@
+id: modu-rise
+civ: steppe
+type: null
+importance: 3
+start:
+  year: -208
+places: []
+participants:
+  - person: modu
+  - person: touman
+reviewed: false

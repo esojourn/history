@@ -1,0 +1,16 @@
+id: antiochus-4
+wikidata: null
+civ: meso
+importance: 3
+birth:
+  year: -214
+  circa: true
+death:
+  year: -163
+reign:
+  - start: -174
+    end: -163
+birthplace: null
+deathplace: null
+places: []
+reviewed: false

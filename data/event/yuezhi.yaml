@@ -1,0 +1,14 @@
+id: yuezhi
+civ: steppe
+type: null
+importance: 3
+start:
+  year: -175
+  circa: true
+end:
+  year: -160
+places: []
+participants:
+  - person: modu
+  - person: laoshang
+reviewed: false
