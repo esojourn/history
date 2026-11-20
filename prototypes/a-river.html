@@ -281,7 +281,7 @@ function desktop() {
     S.t0 = year - (X - G) / S.k; S.hx = X; draw();
   }, { passive: false });
   let dragging = null;
-  svg.addEventListener('pointerdown', e => { dragging = { x: e.clientX, t0: S.t0, moved: false }; svg.setPointerCapture(e.pointerId); });
+  svg.addEventListener('pointerdown', e => { dragging = { x: e.clientX, t0: S.t0, moved: false }; try { svg.setPointerCapture(e.pointerId); } catch (_) {} });
   svg.addEventListener('pointermove', e => {
     if (dragging) {
       if (Math.abs(e.clientX - dragging.x) > 4) { dragging.moved = true; svg.classList.add('drag'); }
