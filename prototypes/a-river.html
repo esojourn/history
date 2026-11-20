@@ -20,6 +20,7 @@
   #river .grid { stroke: var(--line); stroke-width: 1; opacity: .7; }
   #river .tick { font-size: 11px; fill: var(--ink-2); }
   #river .band { cursor: zoom-in; }
+  #river.lv-people .band { cursor: pointer; }
   #river .bn { font-size: 13px; }
   #river .by { font-size: 11px; fill: var(--ink-2); }
   #river .ln { font: 15px var(--kai); }
@@ -82,7 +83,7 @@
     </div>
     <input class="find" id="find" list="names" placeholder="找人物，如 汉尼拔" aria-label="找人物">
     <datalist id="names"></datalist>
-    <span class="hint">滚轮缩放，上下左右拖动；点左栏的文明名称，展开或收起它的人物</span>
+    <span class="hint">滚轮缩放，上下左右拖动；点文明的名称或色带，展开或收起它的人物和大事</span>
   </header>
   <div class="wrap">
     <div class="stage"><svg id="river" role="img" aria-label="各文明时间轴"></svg></div>
@@ -160,16 +161,16 @@ function desktop() {
     };
 
     // 第一步：每条泳道显示谁、占多高。
-    // 展开的泳道按缩放程度放人；收起的只留最重要的几位，大事写在色带那一行里。
-    // 被选中的人和与他相关的人，不管在哪条泳道都会显示。
+    // 展开的泳道按缩放程度放人和大事；收起的只剩色带一条。
+    // 例外：被选中的人和与他相关的人、事，即使在收起的泳道里也会显示，否则跨文明的关系线没处落脚。
     let yy = AX + 6;
     const L = H.lanes.map(l => {
       const open = S.open.has(l.id), all = PL[l.id];
       let shown = [], evs = [];
       if (f > 0.02) {
-        const base = open ? all.filter(p => p.imp >= zImp) : all.some(p => p.imp >= 4) ? all.filter(p => p.imp >= 4) : all.slice(0, 1);
+        const base = open ? all.filter(p => p.imp >= zImp) : [];
         shown = base.concat(all.filter(p => !base.includes(p) && hot(p)));
-        evs = EL[l.id].filter(e => e.imp >= (open ? eImp : 4) || e === selE || (selP && e.who.includes(selP)));
+        evs = EL[l.id].filter(e => (open && e.imp >= eImp) || e === selE || (selP && e.who.includes(selP)));
       }
       const nRows = H.pack(shown, p => p.b0, p => p.d, 1.5);
       // 展开时大事在色带下面最多排三行，用到几行就留几行
@@ -268,6 +269,7 @@ function desktop() {
     if (hy != null) o.push(`<g pointer-events="none"><line class="cross" x1="${S.hx}" x2="${S.hx}" y1="${sy + AX - 6}" y2="${total}"/><rect x="${S.hx - 48}" y="${sy + 4}" width="96" height="19" rx="9.5" fill="var(--ink)"/><text class="ct" x="${S.hx}" y="${sy + 17.5}" text-anchor="middle">${H.fmtFull(Math.round(hy))}</text></g>`);
 
     svg.innerHTML = o.join('');
+    svg.classList.toggle('lv-people', tog);
     $('#lvl').textContent = k < 0.5 ? '当前：世界层，显示各文明的时代' : f < 0.5 ? '当前：朝代层，继续放大会出现人物'
       : '当前：人物层。条的长度是寿命，底部粗线是在位时间，一头渐隐表示生年或卒年不详';
     $('#note').hidden = !(f > 0.6 && (t0 > hi + 30 || t0 + (W - G) / k < lo - 30));
@@ -302,6 +304,7 @@ function desktop() {
     S.sel = sel;
     detail.classList.toggle('on', !!sel);
     if (!sel) return draw();
+    S.open.add((sel.t === 'p' ? H.P[sel.id] : H.E[sel.id]).lane);   // 选中谁，就把他所在的文明展开
     detail.innerHTML = '<button class="close" aria-label="关闭">×</button>' + (sel.t === 'p' ? H.detail(sel.id) : H.eventDetail(sel.id));
     detail.scrollTop = 0;
     const a = sel.t === 'p' ? H.P[sel.id].b0 : H.E[sel.id].s, b = sel.t === 'p' ? H.P[sel.id].d : H.E[sel.id].e;
@@ -313,9 +316,13 @@ function desktop() {
     const p = t.closest('[data-p]'), e = t.closest('[data-e]'), ln = t.closest('[data-lane]'), b = t.closest('[data-band]');
     if (p) return select({ t: 'p', id: p.dataset.p });
     if (e) return select({ t: 'e', id: e.dataset.e });
-    if (ln) { S.open.has(ln.dataset.lane) ? S.open.delete(ln.dataset.lane) : S.open.add(ln.dataset.lane); return draw(); }
+    const toggle = id => { S.open.has(id) ? S.open.delete(id) : S.open.add(id); draw(); };
+    if (ln) return toggle(ln.dataset.lane);
     if (b) {
-      const [id, i] = b.dataset.band.split(':'), band = H.lane(id).bands[i], pad = (band[2] - band[1]) * .12 + 2;
+      const [id, i] = b.dataset.band.split(':');
+      // 已经在人物层：点色带是展开或收起这个文明。还没到人物层：点色带是放大到这个时期。
+      if (S.k > 3) return toggle(id);
+      const band = H.lane(id).bands[i], pad = (band[2] - band[1]) * .12 + 2;
       return fly(band[1] - pad, band[2] + pad);
     }
     if (S.sel) select(null);
