@@ -38,7 +38,7 @@
       ['两次大战', 1914, 1945], ['战后', 1945, 2000]] },
     { id: 'india', name: '印度', c: '#C9702B', bands: [
       ['印度河文明', B(2600), B(1900), 't'], ['吠陀时代', B(1500), B(600), 't'], ['列国时代', B(600), B(322)],
-      ['孔雀王朝', B(322), B(185)], ['贵霜等诸国', B(185), 320], ['笈多王朝', 320, 550],
+      ['孔雀王朝', B(322), B(185)], ['巽伽等诸国', B(185), 30], ['贵霜等诸国', 30, 320], ['笈多王朝', 320, 550],
       ['诸王国并立', 550, 1206], ['德里苏丹国', 1206, 1526], ['莫卧儿帝国', 1526, 1857],
       ['英属印度', 1858, 1947], ['共和国', 1947, 2000]] },
     { id: 'china', name: '中国', c: '#C4472D', bands: [
@@ -100,11 +100,18 @@
     P('zhou-yafu', '周亚夫', B(199), B(143), 2, 'han', 'xihan', '太尉', '周勃之子，细柳营治军严明，三个月平定七国之乱。'),
     P('liu-pi', '刘濞', B(215), B(154), 2, 'han', 'xihan', '吴王', '高祖之侄，经营吴国四十年，发动七国之乱，兵败被杀。'),
   ];
-  H.P = Object.fromEntries(H.people.map(p => [p.id, p]));
+  // 建索引。扩充数据（world.js）加完人物和事件后要再调一次。
+  H.reg = () => {
+    H.P = Object.fromEntries(H.people.map(p => [p.id, p]));
+    H.E = Object.fromEntries((H.events || []).map(e => [e.id, e]));
+    H.people.forEach(p => { p.b0 = p.b != null ? p.b : p.e0 != null ? p.e0 : EST[p.id] != null ? EST[p.id] : p.d - 50; });
+  };
   // 生年不详者，从估计的年份画一段渐隐的条（估计值只用于作图，不显示为数字）
   const EST = { 'zhou-bo': B(240), 'chen-ping': B(240), 'yu-ji': B(230) };
-  H.people.forEach(p => { p.b0 = p.b != null ? p.b : (EST[p.id] != null ? EST[p.id] : p.d - 50); });
-  H.life = p => `${p.b == null ? '生年不详' : (p.circa ? '约' : '') + H.fmt(p.b)}—${H.fmt(p.d)}`;
+  H.reg();
+  // dq = 卒年不详（d 只是作图用的估计值）　dc = 卒年为约数
+  H.life = p => (p.b == null && p.dq ? '生卒年不详'
+    : `${p.b == null ? '生年不详' : (p.circa ? '约' : '') + H.fmt(p.b)}—${p.dq ? '卒年不详' : (p.dc ? '约' : '') + H.fmt(p.d)}`);
 
   /* ---------- 事件 ---------- */
   const E = (id, n, s, e, imp, who, sum) => ({ id, n, s, e: e == null ? s : e, imp, who, sum });
@@ -124,8 +131,8 @@
     E('wenjing', '文景之治', B(180), B(141), 4, ['liu-heng', 'liu-qi'], '两代皇帝与民休息，国力恢复。'),
     E('qiguo', '七国之乱', B(154), null, 4, ['liu-qi', 'liu-pi', 'zhou-yafu', 'chao-cuo'], '吴楚等七国以“诛晁错”为名起兵，三个月即被平定。'),
   ];
-  H.E = Object.fromEntries(H.events.map(e => [e.id, e]));
-  H.span = e => (e.e > e.s ? `${H.fmt(e.s)}—${H.fmt(e.e)}` : H.fmt(e.s));
+  H.reg();
+  H.span = e => (e.circa ? '约' : '') + (e.e > e.s ? `${H.fmt(e.s)}—${H.fmt(e.e)}` : H.fmt(e.s));
 
   /* ---------- 同期的世界 ---------- */
   H.world = [
@@ -200,9 +207,10 @@
   H.detail = id => {
     const p = H.P[id], rs = H.relsOf(id), es = H.eventsOf(id);
     return `<div class="d-head"><h2>${p.n}</h2>${p.alt ? `<span class="d-alt">${p.alt}</span>` : ''}</div>
+      ${p.lane ? `<p class="d-lane"><i style="background:${H.lane(p.lane).c}"></i>${H.lane(p.lane).name}</p>` : ''}
       <p class="d-meta"><b>${H.life(p)}</b>　${p.role}${p.reign ? `，${H.fmt(p.reign[0])}—${H.fmt(p.reign[1])} 在位` : ''}</p>
       <p class="d-sum">${p.sum}</p>
-      <h3>关系</h3>
+      ${rs.length ? '<h3>关系</h3>' : ''}
       <ul class="d-rels">${rs.map(r => `<li><button data-go="${r.o.id}"><i style="background:${H.RT[r.t].c}"></i><b>${r.o.n}</b><span>${r.label}</span></button></li>`).join('')}</ul>
       ${es.length ? `<h3>参与的事件</h3><ul class="d-evs">${es.map(e => `<li><b>${H.span(e)}</b>${e.n}</li>`).join('')}</ul>` : ''}`;
   };
@@ -210,7 +218,7 @@
     const e = H.E[id];
     return `<div class="d-head"><h2>${e.n}</h2></div>
       <p class="d-meta"><b>${H.span(e)}</b></p><p class="d-sum">${e.sum}</p>
-      <h3>相关人物</h3>
+      ${e.who.length ? '<h3>相关人物</h3>' : ''}
       <ul class="d-rels">${e.who.map(w => `<li><button data-go="${w}"><i style="background:${H.FAC[H.P[w].fac].c}"></i><b>${H.P[w].n}</b><span>${H.P[w].role}</span></button></li>`).join('')}</ul>`;
   };
   H.legend = () => Object.values(H.RT).map(t =>

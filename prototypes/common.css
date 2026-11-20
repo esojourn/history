@@ -38,6 +38,8 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .d-head { display: flex; align-items: baseline; gap: 10px; }
 .d-head h2 { font: 30px/1.2 var(--kai); }
 .d-alt { color: var(--ink-2); font-family: var(--kai); font-size: 17px; }
+.d-lane { margin: 4px 0 0; font-size: 12px; color: var(--ink-2); }
+.d-lane i { display: inline-block; width: 8px; height: 8px; margin-right: 6px; }
 .d-meta { margin: 6px 0 10px; color: var(--ink-2); font-size: 13px; }
 .d-meta b { color: var(--ink); font-weight: 600; }
 .d-sum { margin: 0 0 14px; }
