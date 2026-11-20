@@ -1,0 +1,62 @@
+/* 三个方案共用的色彩、字体和详情卡。字体只用系统自带的，不依赖外部资源。 */
+:root {
+  --paper: #EEF1ED; --paper-2: #E2E7E2; --card: #F9FBF8;
+  --ink: #1B2A31; --ink-2: #55676C; --ink-3: #8A9A9C; --line: #C8D0CB;
+  --zhu: #C4472D; --qing: #2F6F9F; --lv: #2F8F83; --huang: #B5851A; --zhe: #A0623A;
+  --kai: "STKaiti", "KaiTi", "Kaiti SC", "楷体", serif;
+  --hei: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--paper); color: var(--ink);
+  font: 14px/1.6 var(--hei); font-variant-numeric: tabular-nums;
+  -webkit-text-size-adjust: 100%;
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid var(--qing); outline-offset: 2px; }
+h1, h2, h3 { margin: 0; font-weight: 400; }
+
+.bar {
+  display: flex; align-items: center; gap: 14px; padding: 8px 16px;
+  border-bottom: 1px solid var(--line); background: var(--paper); min-height: 48px;
+}
+.bar h1 { font: 22px/1 var(--kai); letter-spacing: .08em; white-space: nowrap; }
+.bar .hint { color: var(--ink-3); font-size: 12px; margin-left: auto; white-space: nowrap; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--card); }
+.seg button { border: 0; background: none; padding: 5px 12px; font-size: 13px; border-right: 1px solid var(--line); }
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.find { border: 1px solid var(--line); border-radius: 6px; background: var(--card); padding: 5px 10px; font: inherit; width: 150px; color: var(--ink); }
+
+.lg { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--ink-2); margin-right: 12px; white-space: nowrap; }
+.lg i { width: 18px; height: 0; display: inline-block; }
+
+/* 详情卡 */
+.detail { background: var(--card); border-left: 1px solid var(--line); padding: 18px 18px 24px; overflow: auto; }
+.detail .close { float: right; border: 0; background: none; font-size: 20px; line-height: 1; color: var(--ink-3); padding: 2px 6px; }
+.d-head { display: flex; align-items: baseline; gap: 10px; }
+.d-head h2 { font: 30px/1.2 var(--kai); }
+.d-alt { color: var(--ink-2); font-family: var(--kai); font-size: 17px; }
+.d-meta { margin: 6px 0 10px; color: var(--ink-2); font-size: 13px; }
+.d-meta b { color: var(--ink); font-weight: 600; }
+.d-sum { margin: 0 0 14px; }
+.detail h3 { font-size: 12px; color: var(--ink-3); margin: 14px 0 6px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+.d-rels, .d-evs { list-style: none; margin: 0; padding: 0; }
+.d-rels { display: flex; flex-wrap: wrap; gap: 6px; }
+.d-rels button { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--paper); border-radius: 4px; padding: 3px 9px 3px 7px; font-size: 13px; }
+.d-rels button:hover { border-color: var(--ink-2); }
+.d-rels i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.d-rels b { font-weight: 600; }
+.d-rels span { color: var(--ink-2); font-size: 12px; }
+.d-evs li { display: flex; gap: 10px; padding: 2px 0; font-size: 13px; }
+.d-evs b { color: var(--ink-2); font-weight: 400; min-width: 86px; }
+
+/* 手机底部抽屉 */
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; max-height: 42%; z-index: 20;
+  border: 0; border-top: 1px solid var(--line); border-radius: 14px 14px 0 0;
+  box-shadow: 0 -8px 28px rgba(27, 42, 49, .16); transform: translateY(105%); transition: transform .25s ease;
+}
+.sheet.on { transform: none; }
+@media (prefers-reduced-motion: reduce) { .sheet { transition: none; } }

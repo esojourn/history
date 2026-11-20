@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>方案 C：人物关系网</title>
+<link rel="stylesheet" href="common.css">
+<style>
+  body { display: flex; flex-direction: column; overflow: hidden; }
+  [hidden] { display: none !important; }
+  svg text { font-family: var(--hei); fill: var(--ink); }
+  .node { cursor: pointer; }
+  .nm { font-size: 13px; text-anchor: middle; paint-order: stroke; stroke: var(--paper); stroke-width: 4px; stroke-linejoin: round; }
+  .el { font-size: 11px; text-anchor: middle; paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }
+
+  /* ---------- 桌面 ---------- */
+  #d { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+  .wrap { position: relative; flex: 1; min-height: 0; }
+  #graph { position: absolute; inset: 0; width: 100%; height: 100%; }
+  #graph .yr { font-size: 11px; fill: var(--ink-3); }
+  #graph .fac { font: 17px var(--kai); fill: var(--ink-3); }
+  #detail { position: absolute; top: 0; right: 0; bottom: 0; width: 330px; display: none; box-shadow: -10px 0 30px rgba(27, 42, 49, .08); }
+  #detail.on { display: block; }
+  .foot { display: flex; align-items: center; gap: 14px; padding: 8px 16px; border-top: 1px solid var(--line); }
+  .foot label { font-size: 13px; white-space: nowrap; }
+  .foot input[type=range] { flex: 1; accent-color: var(--ink); }
+  .foot output { font-size: 13px; min-width: 300px; color: var(--ink-2); }
+  .foot output b { color: var(--ink); font: 18px var(--kai); margin-right: 8px; }
+  .foot button { border: 1px solid var(--line); background: var(--card); border-radius: 6px; padding: 4px 10px; font-size: 13px; }
+
+  /* ---------- 手机 ---------- */
+  #m { flex: 1; min-height: 0; overflow: auto; }
+  #m .bar { position: sticky; top: 0; z-index: 5; padding: 8px 12px; }
+  #m .bar h1 { font-size: 20px; }
+  #pick { display: flex; gap: 6px; overflow-x: auto; padding: 8px 12px; border-bottom: 1px solid var(--line); scrollbar-width: none; }
+  #pick button { flex: none; border: 1px solid var(--line); background: var(--card); border-radius: 14px; padding: 3px 12px; font-size: 13px; }
+  #pick button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  #ego { display: block; width: 100%; }
+  #ego .me { font: 22px var(--kai); text-anchor: middle; }
+  #ego .tip { font-size: 11px; fill: var(--ink-3); text-anchor: middle; }
+  #mdetail { border-left: 0; border-top: 1px solid var(--line); padding-bottom: 60px; }
+  .mleg { padding: 4px 12px 10px; }
+</style>
+</head>
+<body>
+
+<div id="d" hidden>
+  <header class="bar">
+    <h1>人物关系网</h1>
+    <input class="find" id="find" list="names" placeholder="找人物，如 韩信" aria-label="找人物">
+    <datalist id="names"></datalist>
+    <span id="legend"></span>
+    <span class="hint">圆越大越重要；点人物只看他的关系</span>
+  </header>
+  <div class="wrap"><svg id="graph" role="img" aria-label="人物关系网"></svg><aside id="detail" class="detail"></aside></div>
+  <footer class="foot">
+    <label for="year">拖动年份</label>
+    <input type="range" id="year" min="-261" max="-140" step="1" value="-205">
+    <output id="yout"></output>
+    <button id="allyears">看全部时期</button>
+  </footer>
+</div>
+
+<div id="m" hidden>
+  <header class="bar"><h1>人物关系网</h1><span class="hint">点周围的人，换他到中间</span></header>
+  <nav id="pick" aria-label="选人物"></nav>
+  <svg id="ego" role="img" aria-label="所选人物的关系"></svg>
+  <div class="mleg" id="mleg"></div>
+  <div id="mdetail" class="detail"></div>
+</div>
+
+<script src="common.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+const R = p => 5 + p.imp * 3;
+const edgeAttr = t => `stroke="${H.RT[t].c}"${H.RT[t].dash ? ` stroke-dasharray="${H.RT[t].dash}"` : ''}`;
+
+/* ================= 桌面：整张关系网，横向大致按年代，纵向按阵营 ================= */
+function desktop() {
+  const svg = $('#graph'), detail = $('#detail'), yearIn = $('#year');
+  const S = { sel: null, year: null };
+  const FY = { qin: .16, chu: .36, han: .62, xiongnu: .92 };
+  let W, Ht, x;
+
+  function layout() {
+    W = svg.clientWidth; Ht = svg.clientHeight;
+    const L = 86, Rt = 40 + (detail.classList.contains('on') ? 330 : 0);   // 详情卡打开时，把网让到左边
+    x = y => L + (y - H.B(234)) / (H.B(146) - H.B(234)) * (W - L - Rt);
+    H.people.forEach((p, i) => {
+      p.tx = x(H.clamp(p.d - 13, H.B(230), H.B(150)));
+      p.ty = Ht * FY[p.fac] + ((i * 37) % 23 - 11);
+      p.x = p.tx; p.y = p.ty;
+    });
+    // 松弛：往目标位置靠，再把挤在一起的推开，有关系的拉近一点
+    for (let it = 0; it < 320; it++) {
+      const a = .08;
+      H.people.forEach(p => { p.x += (p.tx - p.x) * a; p.y += (p.ty - p.y) * a * .5; });
+      H.rels.forEach(r => {
+        const p = H.P[r.a], q = H.P[r.b], dx = q.x - p.x, dy = q.y - p.y, d = Math.hypot(dx, dy) || 1, g = (d - 120) / d * .012;
+        p.x += dx * g; p.y += dy * g; q.x -= dx * g; q.y -= dy * g;
+      });
+      for (let i = 0; i < H.people.length; i++) for (let j = i + 1; j < H.people.length; j++) {
+        const p = H.people[i], q = H.people[j];
+        let dx = q.x - p.x, dy = (q.y - p.y) * 1.25, d = Math.hypot(dx, dy) || 1;
+        const min = R(p) + R(q) + 56;
+        if (d < min) { const s = (min - d) / d * .5; p.x -= dx * s; q.x += dx * s; p.y -= dy * s * .8; q.y += dy * s * .8; }
+      }
+      H.people.forEach(p => { p.x = H.clamp(p.x, L, W - Rt); p.y = H.clamp(p.y, 44, Ht - 34); });
+    }
+  }
+
+  function render() {
+    const sel = S.sel, rs = sel ? H.relsOf(sel) : [], near = new Set(rs.map(r => r.o.id));
+    const alive = p => S.year == null || (p.b0 <= S.year && p.d >= S.year);
+    const o = [];
+    for (let n = 230; n >= 150; n -= 10) o.push(`<line x1="${x(H.B(n))}" x2="${x(H.B(n))}" y1="26" y2="${Ht}" stroke="var(--line)" opacity=".55"/><text class="yr" x="${x(H.B(n)) + 4}" y="20">前${n}</text>`);
+    o.push(`<text class="yr" x="14" y="20">活跃年代</text>`);
+    Object.entries(H.FAC).forEach(([id, f]) => o.push(`<text class="fac" x="14" y="${Ht * FY[id] + 6}">${f.n}</text>`));
+    if (S.year != null) o.push(`<line x1="${x(S.year)}" x2="${x(S.year)}" y1="26" y2="${Ht}" stroke="var(--ink)" opacity=".5"/>`);
+
+    H.rels.forEach(r => {
+      const p = H.P[r.a], q = H.P[r.b], mine = sel && (r.a === sel || r.b === sel);
+      const op = sel ? (mine ? 1 : .05) : (alive(p) && alive(q) ? .55 : .07);
+      o.push(`<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" ${edgeAttr(r.t)} stroke-width="${mine ? 2.2 : 1.4}" opacity="${op}"/>`);
+      if (mine) o.push(`<text class="el" x="${(p.x + q.x) / 2}" y="${(p.y + q.y) / 2 + 4}" fill="${H.RT[r.t].c}" style="fill:${H.RT[r.t].c}">${r.label}</text>`);
+    });
+    H.people.forEach(p => {
+      const c = H.FAC[p.fac].c, on = sel ? p.id === sel || near.has(p.id) : alive(p);
+      o.push(`<g class="node" data-p="${p.id}" opacity="${on ? 1 : .16}"><circle cx="${p.x}" cy="${p.y}" r="${R(p)}" fill="${c}" fill-opacity="${p.id === sel ? .95 : .3}" stroke="${c}" stroke-width="1.5"/><text class="nm" x="${p.x}" y="${p.y + R(p) + 15}"${p.id === sel ? ' font-weight="700"' : ''}>${p.n}</text></g>`);
+    });
+    svg.setAttribute('viewBox', `0 0 ${W} ${Ht}`);
+    svg.innerHTML = o.join('');
+
+    const out = $('#yout');
+    if (S.year == null) out.innerHTML = '<b>全部时期</b>拖动滑块，只看某一年在世的人';
+    else {
+      const n = H.people.filter(alive).length, ev = H.events.filter(e => e.s <= S.year && e.e >= S.year).map(e => e.n);
+      out.innerHTML = `<b>${H.fmtFull(S.year)}</b>在世 ${n} 人${ev.length ? '，' + ev.join('、') : ''}`;
+    }
+  }
+
+  function select(id) {
+    const was = detail.classList.contains('on');
+    S.sel = id;
+    detail.classList.toggle('on', !!id);
+    if (id) { detail.innerHTML = '<button class="close" aria-label="关闭">×</button>' + H.detail(id); detail.scrollTop = 0; }
+    if (was !== !!id) layout();
+    render();
+  }
+  svg.addEventListener('click', e => { const n = e.target.closest('[data-p]'); select(n ? n.dataset.p : null); });
+  detail.addEventListener('click', e => {
+    const go = e.target.closest('[data-go]');
+    if (go) select(go.dataset.go); else if (e.target.closest('.close')) select(null);
+  });
+  yearIn.addEventListener('input', () => { S.year = +yearIn.value; render(); });
+  $('#allyears').addEventListener('click', () => { S.year = null; render(); });
+  $('#names').innerHTML = H.people.map(p => `<option value="${p.n}">`).join('');
+  $('#find').addEventListener('change', e => {
+    const q = e.target.value.trim(), p = q && H.people.find(p => p.n.includes(q) || (p.alt || '').includes(q));
+    if (p) { select(p.id); e.target.value = ''; }
+  });
+  $('#legend').innerHTML = H.legend();
+  addEventListener('resize', () => { layout(); render(); });
+  layout(); render();
+  const h = location.hash.slice(1);
+  if (H.P[h]) select(h);
+}
+
+/* ================= 手机：一次只看一个人，他在中间，相关的人围一圈 ================= */
+function mobile() {
+  const svg = $('#ego'), pick = $('#pick');
+  const ORDER = ['kin', 'lord', 'mentor', 'ally', 'rival'];
+  function show(id) {
+    const me = H.P[id], rs = H.relsOf(id).sort((a, b) => ORDER.indexOf(a.t) - ORDER.indexOf(b.t));
+    const W = svg.clientWidth, Ht = Math.min(W + 10, 400), cx = W / 2, cy = Ht / 2 - 4, two = rs.length > 9;
+    const o = [], nodes = [];
+    rs.forEach((r, i) => {
+      const a = -Math.PI / 2 + (i + .5) / rs.length * Math.PI * 2, rad = (two && i % 2 ? .62 : 1) * (Math.min(W, Ht) / 2 - 52);
+      const X = cx + Math.cos(a) * rad * 1.08, Y = cy + Math.sin(a) * rad, c = H.FAC[r.o.fac].c;
+      o.push(`<line x1="${cx}" y1="${cy}" x2="${X}" y2="${Y}" ${edgeAttr(r.t)} stroke-width="2"/>`);
+      nodes.push(`<g class="node" data-p="${r.o.id}"><circle cx="${X}" cy="${Y}" r="24" fill="transparent"/><circle cx="${X}" cy="${Y}" r="${R(r.o) - 2}" fill="${c}" fill-opacity=".3" stroke="${c}" stroke-width="1.5"/><text class="nm" x="${X}" y="${Y + R(r.o) + 12}">${r.o.n}</text><text class="el" x="${X}" y="${Y + R(r.o) + 25}" style="fill:${H.RT[r.t].c}">${r.label.split('，')[0]}</text></g>`);
+    });
+    const c = H.FAC[me.fac].c;
+    o.push(nodes.join(''), `<circle cx="${cx}" cy="${cy}" r="30" fill="${c}"/><text class="me" x="${cx}" y="${cy + 7}" style="fill:var(--paper)">${me.n.length > 2 ? me.n.slice(-2) : me.n}</text>`);
+    svg.setAttribute('height', Ht); svg.setAttribute('viewBox', `0 0 ${W} ${Ht}`);
+    svg.innerHTML = o.join('');
+    $('#mdetail').innerHTML = H.detail(id);
+    pick.querySelectorAll('button').forEach(b => {
+      b.setAttribute('aria-pressed', b.dataset.p === id);
+      if (b.dataset.p === id) b.scrollIntoView({ block: 'nearest', inline: 'center' });
+    });
+  }
+  pick.innerHTML = H.byWeight(H.people).map(p => `<button data-p="${p.id}">${p.n}</button>`).join('');
+  $('#mleg').innerHTML = H.legend();
+  $('#m').addEventListener('click', e => {
+    const t = e.target.closest('[data-p], [data-go]');
+    if (t) { show(t.dataset.p || t.dataset.go); $('#m').scrollTo({ top: 0 }); }
+  });
+  const h = location.hash.slice(1);
+  show(H.P[h] ? h : 'han-xin');
+}
+
+if (H.isMobile()) { $('#m').hidden = false; mobile(); } else { $('#d').hidden = false; desktop(); }
+let wasMobile = H.isMobile();
+addEventListener('resize', () => { if (H.isMobile() !== wasMobile) location.reload(); });
+</script>
+</body>
+</html>

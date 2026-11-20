@@ -12,3 +12,12 @@
 ## 文档
 
 - [项目计划](docs/plan.md) —— 展现形式、数据模型、技术方案、路线图、待确认事项
+
+## 展现形式示例
+
+`prototypes/` 里有三种候选形式的可交互示例，每种都有桌面版和手机版。不需要安装任何东西：
+
+- 直接双击 [prototypes/index.html](prototypes/index.html) 用浏览器打开；
+- 或者在本目录运行 `python -m http.server 4173 --directory prototypes`，然后访问 <http://localhost:4173>。
+
+示例数据只为演示形式，年代还没有逐条核对。

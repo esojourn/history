@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>方案 B：历史长卷</title>
+<link rel="stylesheet" href="common.css">
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { height: auto; }
+  .bar { position: sticky; top: 0; z-index: 10; }
+  .bar .vol { color: var(--ink-2); font-size: 13px; white-space: nowrap; }
+  .chips { display: flex; gap: 6px; margin-left: auto; }
+  .chips a { border: 1px solid var(--line); background: var(--card); border-radius: 14px; padding: 2px 12px; font-size: 13px; color: inherit; text-decoration: none; white-space: nowrap; }
+  .chips a.on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  .page { display: grid; grid-template-columns: 150px minmax(0, 1fr); max-width: 1180px; margin: 0 auto; }
+  /* 左栏：整部中国史的目录，只有三段有内容 */
+  .rail { position: sticky; top: 49px; align-self: start; height: calc(100vh - 49px); overflow: auto; padding: 18px 0 18px 16px; border-right: 1px solid var(--line); scrollbar-width: none; }
+  .rail a, .rail span { display: block; padding: 1px 10px; font: 16px/1.55 var(--kai); color: var(--ink-3); text-decoration: none; border-left: 3px solid transparent; }
+  .rail a { color: var(--ink); }
+  .rail a.on { border-left-color: var(--zhu); background: color-mix(in srgb, var(--zhu) 12%, transparent); }
+  .rail small { display: block; font: 11px var(--hei); color: var(--ink-3); padding: 0 10px 8px 13px; }
+
+  .ch { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 0 36px; padding: 34px 28px 30px 36px; border-bottom: 1px solid var(--line); }
+  .ch > * { grid-column: 1; }
+  .ch > header .yrs { color: var(--zhu); font-size: 14px; }
+  .ch > header h2 { font: 54px/1.15 var(--kai); letter-spacing: .06em; }
+  .ch > header p { margin: 6px 0 0; color: var(--ink-2); font-size: 15px; max-width: 34em; }
+  .ch h3 { font-size: 12px; color: var(--ink-3); margin: 26px 0 10px; }
+
+  /* 同期的世界 */
+  .world { grid-column: 2; grid-row: 1 / span 3; position: sticky; top: 70px; align-self: start; border-left: 1px solid var(--line); padding-left: 18px; }
+  .world summary { font: 18px var(--kai); cursor: pointer; list-style: none; margin-bottom: 8px; }
+  .world summary::-webkit-details-marker { display: none; }
+  .world ul { list-style: none; margin: 0; padding: 0; }
+  .world li { padding: 5px 0 5px 12px; border-left: 3px solid var(--c); margin-bottom: 6px; font-size: 13px; }
+  .world li b { font-weight: 600; margin-right: 8px; }
+  .world li em { display: block; font-style: normal; color: var(--ink-2); font-size: 12px; }
+
+  /* 大事：一根竖线串起来 */
+  .evs { list-style: none; margin: 0; padding: 0; }
+  .evs li { display: grid; grid-template-columns: 96px 1fr; gap: 0 18px; }
+  .evs .y { text-align: right; color: var(--ink-2); font-size: 13px; padding-top: 2px; }
+  .evs .t { border-left: 2px solid var(--ink); padding: 0 0 14px 16px; position: relative; }
+  .evs li:last-child .t { padding-bottom: 0; }
+  .evs .t::before { content: ""; position: absolute; left: -6px; top: 6px; width: 8px; height: 8px; background: var(--ink); transform: rotate(45deg); }
+  .evs .t b { font-weight: 600; font-size: 15px; }
+  .evs .t p { margin: 1px 0 4px; color: var(--ink-2); font-size: 13px; }
+  .who { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .who a, .rel a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; font-size: 13px; }
+
+  /* 人物：一人一行，生卒条用同一把尺 */
+  .scale { position: relative; height: 16px; margin-left: 134px; font-size: 10.5px; color: var(--ink-3); border-bottom: 1px solid var(--line); }
+  .scale span { position: absolute; bottom: 1px; transform: translateX(-50%); white-space: nowrap; }
+  .p { display: grid; grid-template-columns: 116px 1fr; gap: 0 18px; padding: 12px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 70px; }
+  .p .n b { display: block; font: 24px/1.2 var(--kai); font-weight: 400; }
+  .p .n small { color: var(--ink-2); font-size: 12px; }
+  .life { position: relative; height: 12px; background: var(--paper-2); margin-bottom: 7px; }
+  .life i { position: absolute; top: 0; bottom: 0; }
+  .life .era { background: color-mix(in srgb, var(--zhu) 14%, transparent); }
+  .life .bar-l { background: var(--c); opacity: .38; border-radius: 2px; }
+  .life .bar-l.q { background: linear-gradient(90deg, transparent, var(--c)); }
+  .life .rg { top: auto; height: 4px; background: var(--c); }
+  .p .sum { margin: 0 0 5px; }
+  .p .role { color: var(--ink-2); font-size: 12px; margin-right: 8px; }
+  .rel { display: flex; flex-wrap: wrap; gap: 3px 14px; font-size: 13px; }
+  .rel span { white-space: nowrap; }
+  .rel i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; }
+  .rel em { font-style: normal; color: var(--ink-2); font-size: 12px; margin-left: 4px; }
+  .p.flash { animation: flash 1.6s ease; }
+  @keyframes flash { 0%, 40% { background: color-mix(in srgb, var(--huang) 26%, transparent); } 100% { background: transparent; } }
+  .end { padding: 26px 36px 80px; color: var(--ink-3); font-size: 13px; }
+
+  @media (max-width: 720px) {
+    .bar { gap: 8px; padding: 8px 12px; flex-wrap: wrap; }
+    .bar h1 { font-size: 20px; }
+    .bar .vol { display: none; }
+    .page { display: block; }
+    .rail { display: none; }
+    .ch { display: block; padding: 22px 14px 18px; }
+    .ch > header h2 { font-size: 42px; }
+    .world { position: static; border-left: 0; padding: 8px 12px; margin: 14px 0 0; background: var(--paper-2); }
+    .world summary { font-size: 16px; margin: 0; }
+    .world summary::after { content: "　展开"; font: 12px var(--hei); color: var(--ink-3); }
+    .world[open] summary { margin-bottom: 8px; }
+    .world[open] summary::after { content: "　收起"; }
+    .evs li { grid-template-columns: 74px 1fr; gap: 0 12px; }
+    .scale { display: none; }
+    .p { display: block; }
+    .p .n { display: flex; align-items: baseline; gap: 10px; margin-bottom: 5px; }
+    .p .n b { font-size: 23px; }
+    .end { padding: 20px 14px 60px; }
+  }
+</style>
+</head>
+<body>
+<header class="bar">
+  <h1>历史长卷</h1>
+  <span class="vol">中国卷，秦至西汉前期</span>
+  <nav class="chips" id="chips" aria-label="章节"></nav>
+</header>
+<div class="page">
+  <nav class="rail" id="rail" aria-label="中国史目录"></nav>
+  <main id="main"></main>
+</div>
+
+<script src="common.js"></script>
+<script>
+const S0 = H.B(290), S1 = H.B(138), pct = y => ((H.clamp(y, S0, S1) - S0) / (S1 - S0) * 100).toFixed(2) + '%';
+const link = id => `<a href="#p-${id}" data-go="${id}">${H.P[id].n}</a>`;
+const CH_OF_BAND = { 秦: 'qin', 楚汉: 'chuhan', 西汉: 'xihan' };
+const evCh = e => (e.s <= H.B(207) ? 'qin' : e.s <= H.B(202) ? 'chuhan' : 'xihan');
+
+// 左栏目录
+document.querySelector('#rail').innerHTML = '<small>中国史目录</small>' + H.lane('china').bands.map(b =>
+  CH_OF_BAND[b[0]] ? `<a href="#ch-${CH_OF_BAND[b[0]]}">${b[0]}</a>` : `<span>${b[0]}</span>`
+).join('') + '<small style="padding-top:10px">灰色的朝代示例里没有录入</small>';
+document.querySelector('#chips').innerHTML = H.chapters.map(c => `<a href="#ch-${c.id}">${c.n}</a>`).join('');
+
+const scale = '<div class="scale">' + [280, 260, 240, 220, 200, 180, 160, 140].map(n => `<span style="left:${pct(H.B(n))}">前${n}</span>`).join('') + '</div>';
+
+document.querySelector('#main').innerHTML = H.chapters.map(c => {
+  const mid = (c.s + c.e) / 2;
+  const world = H.lanes.filter(l => l.id !== 'china').map(l => {
+    const b = H.bandAt(l, mid), ws = H.world.filter(w => w.lane === l.id && w.s <= c.e + 8 && w.e >= c.s - 8);
+    return b || ws.length ? `<li style="--c:${l.c}"><b>${l.name}</b>${b ? b[0] : ''}${ws.map(w => `<em>${H.span(w)}　${w.n}</em>`).join('')}</li>` : '';
+  }).join('');
+  const evs = H.events.filter(e => evCh(e) === c.id).sort((a, b) => a.s - b.s);
+  const ppl = H.people.filter(p => p.ch === c.id).sort((a, b) => a.b0 - b.b0);
+  return `<section class="ch" id="ch-${c.id}">
+    <header><span class="yrs">${H.fmtFull(c.s)} 至 ${H.fmtFull(c.e)}</span><h2>${c.n}</h2><p>${c.sum}</p></header>
+    <details class="world" open><summary>此时的世界</summary><ul>${world}</ul></details>
+    <div class="evs-wrap"><h3>大事</h3><ol class="evs">${evs.map(e => `<li><div class="y">${H.span(e)}</div><div class="t"><b>${e.n}</b><p>${e.sum}</p><div class="who">${e.who.map(link).join('')}</div></div></li>`).join('')}</ol></div>
+    <div class="ppl"><h3>人物，按出生先后</h3>${scale}${ppl.map(p => {
+      const col = H.FAC[p.fac].c;
+      return `<article class="p" id="p-${p.id}" style="--c:${col}">
+        <div class="n"><b>${p.n}</b><small>${H.life(p)}</small></div>
+        <div><div class="life"><i class="era" style="left:${pct(c.s)};right:calc(100% - ${pct(c.e)})"></i><i class="bar-l${p.b == null ? ' q' : ''}" style="left:${pct(p.b0)};right:calc(100% - ${pct(p.d)})"></i>${p.reign ? `<i class="rg" style="left:${pct(p.reign[0])};right:calc(100% - ${pct(p.reign[1])})"></i>` : ''}</div>
+        <p class="sum"><span class="role">${p.role}</span>${p.sum}</p>
+        <div class="rel">${H.relsOf(p.id).map(r => `<span><i style="background:${H.RT[r.t].c}"></i>${link(r.o.id)}<em>${r.label}</em></span>`).join('')}</div></div>
+      </article>`;
+    }).join('')}</div>
+  </section>`;
+}).join('') + `<p class="end">示例到此为止。正式版里每个朝代一章，其他文明各成一卷。<br>关系的颜色：${H.legend()}</p>`;
+
+if (H.isMobile()) document.querySelectorAll('.world').forEach(d => (d.open = false));
+
+// 点人名：滚到那个人，闪一下
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-go]');
+  if (!a) return;
+  const el = document.getElementById('p-' + a.dataset.go);
+  el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
+});
+
+// 滚动时标出当前章节
+const marks = [...document.querySelectorAll('#chips a, #rail a')];
+const io = new IntersectionObserver(es => es.forEach(en => {
+  if (en.isIntersecting) marks.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id));
+}), { rootMargin: '-30% 0px -60% 0px' });
+document.querySelectorAll('.ch').forEach(s => io.observe(s));
+</script>
+</body>
+</html>
