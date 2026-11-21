@@ -1,0 +1,14 @@
+id: wang-meng
+wikidata: null
+civ: china
+faction: qianqin
+importance: 3
+birth: { year: 325 }
+death: { year: 375 }
+birthplace: juxian-beihai
+deathplace: changan
+places:
+  - { place: ye }
+  - { place: changan, start: 357, end: 375 }
+  - { place: ye, start: 370, end: 372 }
+reviewed: false

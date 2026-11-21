@@ -1,0 +1,17 @@
+id: liu-yu
+wikidata: null
+civ: china
+faction: liusong
+importance: 4
+birth: { year: 363 }
+death: { year: 422 }
+reign:
+  - { start: 420, end: 422 }
+birthplace: dantu
+deathplace: jianye
+places:
+  - { place: dantu }
+  - { place: jianye, start: 404, end: 422 }
+  - { place: guanggu, start: 409, end: 410 }
+  - { place: changan, start: 417, end: 417 }
+reviewed: false

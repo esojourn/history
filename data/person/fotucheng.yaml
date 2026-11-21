@@ -1,0 +1,14 @@
+id: fotucheng
+wikidata: null
+civ: china
+faction: houzhao
+importance: 2
+birth: { unknown: true, approx: 250 }
+death: { year: 348 }
+birthplace: unknown
+deathplace: ye
+places:
+  - { place: luoyang, start: 310, end: 311 }
+  - { place: xiangguo }
+  - { place: ye, start: 335, end: 348 }
+reviewed: false

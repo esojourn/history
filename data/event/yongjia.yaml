@@ -1,0 +1,15 @@
+id: yongjia
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 311 }
+places: [ningping, luoyang, pingyang]
+participants:
+  - person: sima-chi
+  - person: sima-yue
+  - person: wang-yan
+  - person: liu-cong
+  - person: liu-yao
+  - person: shi-le
+reviewed: false

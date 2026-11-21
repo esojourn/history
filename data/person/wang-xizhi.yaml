@@ -1,0 +1,15 @@
+id: wang-xizhi
+wikidata: null
+civ: china
+faction: jin
+importance: 4
+birth: { year: 303, circa: true }
+death: { year: 361, circa: true }
+birthplace: langya
+deathplace: shanyin
+places:
+  - { place: jianye }
+  - { place: wuchang }
+  - { place: shanyin, start: 351, end: 361 }
+  - { place: lanting, start: 353, end: 353 }
+reviewed: false

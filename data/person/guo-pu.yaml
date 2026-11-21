@@ -1,0 +1,13 @@
+id: guo-pu
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 276 }
+death: { year: 324 }
+birthplace: wenxi
+deathplace: wuchang
+places:
+  - { place: jianye }
+  - { place: wuchang }
+reviewed: false

@@ -1,0 +1,11 @@
+id: huanwen-mieshu
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 346 }
+end: { year: 347 }
+places: [jiangling, chengdu]
+participants:
+  - person: huan-wen
+reviewed: false

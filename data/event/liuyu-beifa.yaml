@@ -1,0 +1,14 @@
+id: liuyu-beifa
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 409 }
+end: { year: 417 }
+places: [guanggu, pengcheng, luoyang, changan]
+participants:
+  - person: liu-yu
+  - person: yao-xing
+  - person: helian-bobo
+  - person: lu-xun-tianshi
+reviewed: false

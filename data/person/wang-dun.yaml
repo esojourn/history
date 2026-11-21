@@ -1,0 +1,15 @@
+id: wang-dun
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 266 }
+death: { year: 324 }
+birthplace: langya
+deathplace: gushu
+places:
+  - { place: luoyang }
+  - { place: wuchang, start: 315, end: 323 }
+  - { place: jianye, start: 322, end: 322 }
+  - { place: gushu, start: 323, end: 324 }
+reviewed: false

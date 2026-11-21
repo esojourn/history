@@ -1,0 +1,14 @@
+id: zuo-si
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { unknown: true, approx: 250 }
+death: { unknown: true, approx: 305 }
+birthplace: linzi
+deathplace: jizhou
+places:
+  - { place: linzi }
+  - { place: luoyang }
+  - { place: jizhou }
+reviewed: false

@@ -1,0 +1,14 @@
+id: houzhao-founding
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 319 }
+end: { year: 329 }
+places: [xiangguo, luoyang, changan, shanggui]
+participants:
+  - person: shi-le
+  - person: shi-hu
+  - person: liu-yao
+  - person: fotucheng
+reviewed: false

@@ -1,0 +1,14 @@
+id: wen-jiao
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 288 }
+death: { year: 329 }
+birthplace: qixian
+deathplace: wuchang
+places:
+  - { place: jinyang }
+  - { place: jianye, start: 317, end: 326 }
+  - { place: wuchang, start: 326, end: 329 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: beiwei-founding
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: 386 }
+end: { year: 398 }
+places: [shengle, zhongshan, ye, pingcheng]
+participants:
+  - person: tuoba-gui
+  - person: murong-chui
+reviewed: false

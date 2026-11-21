@@ -1,0 +1,13 @@
+id: xie-daoyun
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { unknown: true, approx: 340 }
+death: { unknown: true, approx: 405 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jianye }
+  - { place: shanyin }
+reviewed: false

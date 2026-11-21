@@ -1,0 +1,15 @@
+id: xie-xuan
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 343 }
+death: { year: 388 }
+birthplace: unknown
+deathplace: shanyin
+places:
+  - { place: guangling, start: 377, end: 384 }
+  - { place: feishui, start: 383, end: 383 }
+  - { place: pengcheng, start: 384, end: 384 }
+  - { place: shanyin, start: 387, end: 388 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: sun-en
+wikidata: null
+civ: china
+faction: sunlu
+importance: 2
+birth: { unknown: true, approx: 360 }
+death: { year: 402 }
+birthplace: unknown
+deathplace: linhai
+places:
+  - { place: shanyin, start: 399, end: 399 }
+  - { place: dantu, start: 401, end: 401 }
+  - { place: linhai, start: 402, end: 402 }
+reviewed: false

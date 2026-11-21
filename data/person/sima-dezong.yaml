@@ -1,0 +1,16 @@
+id: sima-dezong
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 382 }
+death: { year: 419 }
+reign:
+  - { start: 396, end: 419 }
+birthplace: jianye
+deathplace: jianye
+places:
+  - { place: jianye }
+  - { place: xunyang, start: 404, end: 404 }
+  - { place: jiangling, start: 404, end: 405 }
+reviewed: false

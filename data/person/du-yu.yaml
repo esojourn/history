@@ -1,0 +1,14 @@
+id: du-yu
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 222 }
+death: { year: 285 }
+birthplace: duling
+deathplace: dengxian
+places:
+  - { place: luoyang }
+  - { place: xiangyang, start: 278, end: 285 }
+  - { place: jiangling, start: 280, end: 280 }
+reviewed: false

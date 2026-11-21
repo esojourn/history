@@ -1,0 +1,13 @@
+id: sandufu
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 281, circa: true }
+places: [luoyang]
+participants:
+  - person: zuo-si
+  - person: huangfu-mi
+  - person: zhang-hua
+  - person: lu-ji
+reviewed: false

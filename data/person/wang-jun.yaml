@@ -1,0 +1,14 @@
+id: wang-jun
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 206 }
+death: { year: 286, circa: true }
+birthplace: hu
+deathplace: unknown
+places:
+  - { place: chengdu, start: 272, end: 279 }
+  - { place: jianye, start: 280, end: 280 }
+  - { place: luoyang, start: 280, end: 286 }
+reviewed: false

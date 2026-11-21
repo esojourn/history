@@ -1,0 +1,14 @@
+id: pan-yue
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 247 }
+death: { year: 300 }
+birthplace: zhongmou
+deathplace: luoyang
+places:
+  - { place: luoyang }
+  - { place: heyang }
+  - { place: changan }
+reviewed: false

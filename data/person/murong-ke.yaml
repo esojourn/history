@@ -1,0 +1,14 @@
+id: murong-ke
+wikidata: null
+civ: china
+faction: yan
+importance: 2
+birth: { unknown: true, approx: 321 }
+death: { year: 367 }
+birthplace: unknown
+deathplace: ye
+places:
+  - { place: longcheng }
+  - { place: ye, start: 357, end: 367 }
+  - { place: luoyang, start: 365, end: 365 }
+reviewed: false

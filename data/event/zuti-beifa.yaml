@@ -1,0 +1,14 @@
+id: zuti-beifa
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 313 }
+end: { year: 321 }
+places: [dantu, qiao, yongqiu]
+participants:
+  - person: zu-ti
+  - person: sima-rui
+  - person: shi-le
+  - person: shi-hu
+reviewed: false

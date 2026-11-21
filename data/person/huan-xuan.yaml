@@ -1,0 +1,16 @@
+id: huan-xuan
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 369 }
+death: { year: 404 }
+reign:
+  - { start: 403, end: 404 }
+birthplace: unknown
+deathplace: jiangling
+places:
+  - { place: jiangling }
+  - { place: jianye, start: 402, end: 404 }
+  - { place: gushu, start: 402, end: 403 }
+reviewed: false

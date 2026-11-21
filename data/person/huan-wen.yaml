@@ -1,0 +1,17 @@
+id: huan-wen
+wikidata: null
+civ: china
+faction: jin
+importance: 4
+birth: { year: 312 }
+death: { year: 373 }
+birthplace: longkang
+deathplace: gushu
+places:
+  - { place: jianye }
+  - { place: jiangling, start: 345, end: 363 }
+  - { place: chengdu, start: 347, end: 347 }
+  - { place: luoyang, start: 356, end: 356 }
+  - { place: gushu, start: 364, end: 373 }
+  - { place: fangtou, start: 369, end: 369 }
+reviewed: false

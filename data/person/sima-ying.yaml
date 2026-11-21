@@ -1,0 +1,14 @@
+id: sima-ying
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 279 }
+death: { year: 306 }
+birthplace: luoyang
+deathplace: ye
+places:
+  - { place: ye, start: 299, end: 304 }
+  - { place: luoyang, start: 304, end: 304 }
+  - { place: changan, start: 304, end: 305 }
+reviewed: false

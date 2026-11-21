@@ -1,0 +1,20 @@
+id: bawang
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 291 }
+end: { year: 306 }
+places: [luoyang, jinyong, ye, changan, xu]
+participants:
+  - person: sima-zhong
+  - person: jia-nanfeng
+  - person: sima-lun
+  - person: sima-jiong
+  - person: sima-ai
+  - person: sima-ying
+  - person: sima-yong
+  - person: sima-yue
+  - person: zhang-hua
+  - person: lu-ji
+reviewed: false

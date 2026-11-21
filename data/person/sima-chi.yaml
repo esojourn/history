@@ -1,0 +1,15 @@
+id: sima-chi
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 284 }
+death: { year: 313 }
+reign:
+  - { start: 307, end: 311 }
+birthplace: luoyang
+deathplace: pingyang
+places:
+  - { place: luoyang }
+  - { place: pingyang, start: 311, end: 313 }
+reviewed: false

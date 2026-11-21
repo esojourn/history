@@ -1,0 +1,15 @@
+id: yao-chang
+wikidata: null
+civ: china
+faction: houqin
+importance: 2
+birth: { year: 330, circa: true }
+death: { year: 394, circa: true }
+reign:
+  - { start: 384, end: 394 }
+birthplace: chiting
+deathplace: unknown
+places:
+  - { place: changan, start: 386, end: 394 }
+  - { place: xinping, start: 385, end: 385 }
+reviewed: false

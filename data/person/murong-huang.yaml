@@ -1,0 +1,14 @@
+id: murong-huang
+wikidata: null
+civ: china
+faction: yan
+importance: 2
+birth: { year: 297 }
+death: { year: 348 }
+reign:
+  - { start: 337, end: 348 }
+birthplace: unknown
+deathplace: longcheng
+places:
+  - { place: longcheng, start: 342, end: 348 }
+reviewed: false

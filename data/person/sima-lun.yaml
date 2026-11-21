@@ -1,0 +1,13 @@
+id: sima-lun
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { unknown: true, approx: 240 }
+death: { year: 301 }
+birthplace: unknown
+deathplace: jinyong
+places:
+  - { place: changan }
+  - { place: luoyang, start: 300, end: 301 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: sima-yao
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 362 }
+death: { year: 396 }
+reign:
+  - { start: 372, end: 396 }
+birthplace: jianye
+deathplace: jianye
+places:
+  - { place: jianye }
+reviewed: false

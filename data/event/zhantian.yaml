@@ -1,0 +1,11 @@
+id: zhantian
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 280 }
+places: [luoyang]
+participants:
+  - person: sima-yan
+  - person: du-yu
+reviewed: false

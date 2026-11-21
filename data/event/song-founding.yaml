@@ -1,0 +1,10 @@
+id: song-founding
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: 420 }
+places: [jianye]
+participants:
+  - person: liu-yu
+reviewed: false

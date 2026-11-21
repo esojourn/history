@@ -1,0 +1,10 @@
+id: bailian-she
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 402 }
+places: [lushan]
+participants:
+  - person: huiyuan
+reviewed: false

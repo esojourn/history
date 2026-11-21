@@ -1,0 +1,13 @@
+id: western-jin-fall
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 316 }
+places: [changan, pingyang]
+participants:
+  - person: sima-ye
+  - person: liu-yao
+  - person: liu-cong
+  - person: liu-kun
+reviewed: false

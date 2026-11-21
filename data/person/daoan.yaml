@@ -1,0 +1,14 @@
+id: daoan
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 312, circa: true }
+death: { year: 385 }
+birthplace: fuliu
+deathplace: changan
+places:
+  - { place: ye }
+  - { place: xiangyang, start: 365, end: 379 }
+  - { place: changan, start: 379, end: 385 }
+reviewed: false

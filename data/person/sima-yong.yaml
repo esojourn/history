@@ -1,0 +1,12 @@
+id: sima-yong
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { unknown: true, approx: 265 }
+death: { year: 307 }
+birthplace: unknown
+deathplace: xinan
+places:
+  - { place: changan, start: 299, end: 306 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: huangfu-mi
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 215 }
+death: { year: 282 }
+birthplace: anding
+deathplace: unknown
+places:
+  - { place: xinan }
+reviewed: false

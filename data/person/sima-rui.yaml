@@ -1,0 +1,16 @@
+id: sima-rui
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 276 }
+death: { year: 323 }
+reign:
+  - { start: 318, end: 323 }
+birthplace: luoyang
+deathplace: jianye
+places:
+  - { place: luoyang }
+  - { place: xiapi, start: 305, end: 307 }
+  - { place: jianye, start: 307, end: 323 }
+reviewed: false

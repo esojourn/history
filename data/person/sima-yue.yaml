@@ -1,0 +1,14 @@
+id: sima-yue
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { unknown: true, approx: 265 }
+death: { year: 311 }
+birthplace: unknown
+deathplace: xiangxian
+places:
+  - { place: luoyang }
+  - { place: xu }
+  - { place: xiangxian, start: 310, end: 311 }
+reviewed: false

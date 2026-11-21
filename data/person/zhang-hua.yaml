@@ -1,0 +1,13 @@
+id: zhang-hua
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 232 }
+death: { year: 300 }
+birthplace: fangcheng
+deathplace: luoyang
+places:
+  - { place: luoyang }
+  - { place: yan }
+reviewed: false

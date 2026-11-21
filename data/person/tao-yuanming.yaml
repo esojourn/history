@@ -1,0 +1,14 @@
+id: tao-yuanming
+wikidata: null
+civ: china
+faction: jin
+importance: 4
+birth: { year: 365, circa: true }
+death: { year: 427 }
+birthplace: xunyang
+deathplace: xunyang
+places:
+  - { place: xunyang }
+  - { place: jiangling }
+  - { place: pengze, start: 405, end: 405 }
+reviewed: false

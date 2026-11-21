@@ -1,0 +1,14 @@
+id: yu-liang
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 289 }
+death: { year: 340 }
+birthplace: yingchuan
+deathplace: wuchang
+places:
+  - { place: jianye }
+  - { place: xunyang, start: 328, end: 328 }
+  - { place: wuchang, start: 334, end: 340 }
+reviewed: false

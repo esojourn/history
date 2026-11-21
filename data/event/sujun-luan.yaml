@@ -1,0 +1,15 @@
+id: sujun-luan
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 327 }
+end: { year: 329 }
+places: [jianye, xunyang, wuchang]
+participants:
+  - person: su-jun
+  - person: yu-liang
+  - person: tao-kan
+  - person: wen-jiao
+  - person: wang-dao
+reviewed: false

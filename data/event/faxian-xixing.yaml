@@ -1,0 +1,11 @@
+id: faxian-xixing
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 399 }
+end: { year: 412 }
+places: [changan, dunhuang, yutian, pataliputra, shiziguo, laoshan]
+participants:
+  - person: faxian
+reviewed: false

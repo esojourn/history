@@ -1,0 +1,17 @@
+id: wangdun-luan
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 322 }
+end: { year: 324 }
+places: [wuchang, jianye, gushu]
+participants:
+  - person: wang-dun
+  - person: sima-rui
+  - person: sima-shao
+  - person: wang-dao
+  - person: wen-jiao
+  - person: su-jun
+  - person: guo-pu
+reviewed: false

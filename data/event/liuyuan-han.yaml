@@ -1,0 +1,14 @@
+id: liuyuan-han
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 304 }
+end: { year: 308 }
+places: [zuoguocheng, pingyang]
+participants:
+  - person: liu-yuan
+  - person: liu-cong
+  - person: shi-le
+  - person: sima-ying
+reviewed: false

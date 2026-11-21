@@ -1,0 +1,14 @@
+id: qianyan-founding
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 337 }
+end: { year: 352 }
+places: [longcheng, ji, ye]
+participants:
+  - person: murong-huang
+  - person: murong-ke
+  - person: murong-chui
+  - person: shi-hu
+reviewed: false

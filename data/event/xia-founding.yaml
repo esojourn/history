@@ -1,0 +1,13 @@
+id: xia-founding
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 407 }
+end: { year: 418 }
+places: [tongwan, changan]
+participants:
+  - person: helian-bobo
+  - person: yao-xing
+  - person: liu-yu
+reviewed: false

@@ -1,0 +1,14 @@
+id: kumarajiva
+wikidata: null
+civ: china
+faction: houqin
+importance: 4
+birth: { year: 344, circa: true }
+death: { year: 413, circa: true }
+birthplace: qiuci
+deathplace: changan
+places:
+  - { place: qiuci }
+  - { place: guzang, start: 385, end: 401 }
+  - { place: changan, start: 401, end: 413 }
+reviewed: false

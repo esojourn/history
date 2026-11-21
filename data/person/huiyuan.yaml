@@ -1,0 +1,13 @@
+id: huiyuan
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 334 }
+death: { year: 416 }
+birthplace: yanmen
+deathplace: lushan
+places:
+  - { place: xiangyang, start: 365, end: 378 }
+  - { place: lushan, start: 381, end: 416 }
+reviewed: false

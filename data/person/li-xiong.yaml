@@ -1,0 +1,14 @@
+id: li-xiong
+wikidata: null
+civ: china
+faction: chenghan
+importance: 2
+birth: { year: 274 }
+death: { year: 334 }
+reign:
+  - { start: 304, end: 334 }
+birthplace: unknown
+deathplace: chengdu
+places:
+  - { place: chengdu, start: 304, end: 334 }
+reviewed: false

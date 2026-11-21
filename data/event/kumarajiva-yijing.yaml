@@ -1,0 +1,13 @@
+id: kumarajiva-yijing
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 401 }
+end: { year: 413 }
+places: [changan]
+participants:
+  - person: kumarajiva
+  - person: yao-xing
+  - person: huiyuan
+reviewed: false

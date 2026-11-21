@@ -1,0 +1,14 @@
+id: lu-xun-tianshi
+wikidata: null
+civ: china
+faction: sunlu
+importance: 2
+birth: { unknown: true, approx: 365 }
+death: { year: 411 }
+birthplace: unknown
+deathplace: jiaozhi
+places:
+  - { place: panyu, start: 404, end: 410 }
+  - { place: xunyang, start: 410, end: 410 }
+  - { place: jiaozhi, start: 411, end: 411 }
+reviewed: false

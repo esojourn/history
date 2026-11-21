@@ -1,0 +1,13 @@
+id: gan-bao
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { unknown: true, approx: 283 }
+death: { year: 336 }
+birthplace: xincai
+deathplace: unknown
+places:
+  - { place: jianye }
+  - { place: shanyin }
+reviewed: false

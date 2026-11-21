@@ -1,0 +1,16 @@
+id: feishui
+wikidata: null
+civ: china
+type: battle
+importance: 5
+start: { year: 383 }
+places: [shouchun, feishui]
+participants:
+  - person: fu-jian
+  - person: xie-an
+  - person: xie-xuan
+  - person: murong-chui
+  - person: yao-chang
+  - person: sima-yao
+  - person: daoan
+reviewed: false

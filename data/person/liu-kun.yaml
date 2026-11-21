@@ -1,0 +1,14 @@
+id: liu-kun
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 271 }
+death: { year: 318 }
+birthplace: zhongshan
+deathplace: ji
+places:
+  - { place: luoyang }
+  - { place: jinyang, start: 307, end: 316 }
+  - { place: ji, start: 317, end: 318 }
+reviewed: false

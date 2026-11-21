@@ -1,0 +1,14 @@
+id: sima-shao
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 299 }
+death: { year: 325 }
+reign:
+  - { start: 323, end: 325 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye, start: 307, end: 325 }
+reviewed: false

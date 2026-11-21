@@ -1,0 +1,17 @@
+id: liu-yao
+wikidata: null
+civ: china
+faction: hanzhao
+importance: 2
+birth: { unknown: true, approx: 275 }
+death: { year: 329 }
+reign:
+  - { start: 318, end: 329 }
+birthplace: unknown
+deathplace: xiangguo
+places:
+  - { place: pingyang }
+  - { place: luoyang, start: 311, end: 311 }
+  - { place: changan, start: 316, end: 328 }
+  - { place: xiangguo, start: 329, end: 329 }
+reviewed: false

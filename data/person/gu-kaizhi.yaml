@@ -1,0 +1,13 @@
+id: gu-kaizhi
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 348, circa: true }
+death: { year: 409, circa: true }
+birthplace: wuxi
+deathplace: unknown
+places:
+  - { place: jianye }
+  - { place: jiangling }
+reviewed: false

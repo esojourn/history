@@ -1,0 +1,14 @@
+id: huanxuan-cuanwei
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 402 }
+end: { year: 404 }
+places: [jianye, gushu, dantu, xunyang, jiangling]
+participants:
+  - person: huan-xuan
+  - person: sima-dezong
+  - person: sima-daozi
+  - person: liu-yu
+reviewed: false

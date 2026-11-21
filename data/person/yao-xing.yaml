@@ -1,0 +1,14 @@
+id: yao-xing
+wikidata: null
+civ: china
+faction: houqin
+importance: 2
+birth: { year: 366 }
+death: { year: 416 }
+reign:
+  - { start: 394, end: 416 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan, start: 394, end: 416 }
+reviewed: false

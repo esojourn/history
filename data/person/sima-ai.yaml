@@ -1,0 +1,12 @@
+id: sima-ai
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 277 }
+death: { year: 304 }
+birthplace: luoyang
+deathplace: jinyong
+places:
+  - { place: luoyang, start: 301, end: 304 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: sima-ye
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 300 }
+death: { year: 318 }
+reign:
+  - { start: 313, end: 316 }
+birthplace: unknown
+deathplace: pingyang
+places:
+  - { place: changan, start: 312, end: 316 }
+  - { place: pingyang, start: 316, end: 318 }
+reviewed: false

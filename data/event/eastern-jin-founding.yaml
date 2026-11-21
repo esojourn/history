@@ -1,0 +1,15 @@
+id: eastern-jin-founding
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: 317 }
+end: { year: 318 }
+places: [jianye]
+participants:
+  - person: sima-rui
+  - person: wang-dao
+  - person: wang-dun
+  - person: liu-kun
+  - person: wen-jiao
+reviewed: false

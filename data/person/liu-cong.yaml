@@ -1,0 +1,15 @@
+id: liu-cong
+wikidata: null
+civ: china
+faction: hanzhao
+importance: 2
+birth: { unknown: true, approx: 275 }
+death: { year: 318 }
+reign:
+  - { start: 310, end: 318 }
+birthplace: unknown
+deathplace: pingyang
+places:
+  - { place: luoyang }
+  - { place: pingyang, start: 310, end: 318 }
+reviewed: false

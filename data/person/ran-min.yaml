@@ -1,0 +1,15 @@
+id: ran-min
+wikidata: null
+civ: china
+faction: houzhao
+importance: 2
+birth: { unknown: true, approx: 322 }
+death: { year: 352 }
+reign:
+  - { start: 350, end: 352 }
+birthplace: neihuang
+deathplace: longcheng
+places:
+  - { place: ye, start: 349, end: 352 }
+  - { place: xiangguo, start: 351, end: 351 }
+reviewed: false

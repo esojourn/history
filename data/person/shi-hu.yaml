@@ -1,0 +1,15 @@
+id: shi-hu
+wikidata: null
+civ: china
+faction: houzhao
+importance: 2
+birth: { year: 295 }
+death: { year: 349 }
+reign:
+  - { start: 334, end: 349 }
+birthplace: unknown
+deathplace: ye
+places:
+  - { place: xiangguo }
+  - { place: ye, start: 335, end: 349 }
+reviewed: false

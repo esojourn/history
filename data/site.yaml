@@ -8,3 +8,4 @@ views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 vie
   - { id: bible, range: [-2260, 1655], open: [bible] }
   - { id: focus, range: [-261, -137] }
   - { id: sanguo, range: [15, 290] }
+  - { id: liangjin, range: [270, 430] }

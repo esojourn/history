@@ -1,0 +1,14 @@
+id: wang-yan
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 256 }
+death: { year: 311 }
+birthplace: langya
+deathplace: ningping
+places:
+  - { place: luoyang }
+  - { place: xiangxian, start: 310, end: 311 }
+  - { place: ningping, start: 311, end: 311 }
+reviewed: false

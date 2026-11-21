@@ -1,0 +1,18 @@
+id: murong-chui
+wikidata: null
+civ: china
+faction: yan
+importance: 3
+birth: { year: 326 }
+death: { year: 396 }
+reign:
+  - { start: 384, end: 396 }
+birthplace: unknown
+deathplace: juyang
+places:
+  - { place: longcheng }
+  - { place: fangtou, start: 369, end: 369 }
+  - { place: changan, start: 369, end: 383 }
+  - { place: ye, start: 384, end: 385 }
+  - { place: zhongshan, start: 386, end: 396 }
+reviewed: false

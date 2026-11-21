@@ -1,0 +1,14 @@
+id: huanwen-beifa
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 354 }
+end: { year: 369 }
+places: [changan, luoyang, fangtou, xiangyang]
+participants:
+  - person: huan-wen
+  - person: wang-meng
+  - person: murong-chui
+  - person: murong-ke
+reviewed: false

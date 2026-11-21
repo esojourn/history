@@ -1,0 +1,11 @@
+id: chenghan-founding
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 301 }
+end: { year: 306 }
+places: [chengdu, hanzhong]
+participants:
+  - person: li-xiong
+reviewed: false

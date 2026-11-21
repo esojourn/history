@@ -1,0 +1,13 @@
+id: jia-nanfeng
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 257 }
+death: { year: 300 }
+birthplace: unknown
+deathplace: jinyong
+places:
+  - { place: luoyang, start: 272, end: 300 }
+  - { place: jinyong, start: 300, end: 300 }
+reviewed: false

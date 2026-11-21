@@ -1,0 +1,11 @@
+id: canhebei
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 395 }
+places: [canhebei]
+participants:
+  - person: tuoba-gui
+  - person: murong-chui
+reviewed: false

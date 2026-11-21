@@ -1,0 +1,12 @@
+id: guo-xiang
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { unknown: true, approx: 255 }
+death: { year: 312 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: luoyang }
+reviewed: false

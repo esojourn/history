@@ -1,0 +1,17 @@
+id: shi-le
+wikidata: null
+civ: china
+faction: houzhao
+importance: 4
+birth: { year: 274 }
+death: { year: 333 }
+reign:
+  - { start: 319, end: 333 }
+birthplace: wuxiang
+deathplace: xiangguo
+places:
+  - { place: wuxiang }
+  - { place: ningping, start: 311, end: 311 }
+  - { place: xiangguo, start: 312, end: 333 }
+  - { place: luoyang, start: 328, end: 328 }
+reviewed: false

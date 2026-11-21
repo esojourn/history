@@ -1,0 +1,16 @@
+id: helian-bobo
+wikidata: null
+civ: china
+faction: xia
+importance: 2
+birth: { year: 381 }
+death: { year: 425 }
+reign:
+  - { start: 407, end: 425 }
+birthplace: unknown
+deathplace: tongwan
+places:
+  - { place: shuofang }
+  - { place: tongwan, start: 413, end: 425 }
+  - { place: changan, start: 418, end: 418 }
+reviewed: false

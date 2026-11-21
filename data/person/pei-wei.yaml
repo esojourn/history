@@ -1,0 +1,12 @@
+id: pei-wei
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 267 }
+death: { year: 300 }
+birthplace: wenxi
+deathplace: luoyang
+places:
+  - { place: luoyang }
+reviewed: false

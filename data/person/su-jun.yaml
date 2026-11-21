@@ -1,0 +1,14 @@
+id: su-jun
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { unknown: true, approx: 285 }
+death: { year: 328 }
+birthplace: yexian
+deathplace: jianye
+places:
+  - { place: yexian }
+  - { place: guangling }
+  - { place: jianye, start: 328, end: 328 }
+reviewed: false

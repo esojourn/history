@@ -1,0 +1,16 @@
+id: tao-kan
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 259 }
+death: { year: 334 }
+birthplace: poyang
+deathplace: wuchang
+places:
+  - { place: xunyang }
+  - { place: jiangling }
+  - { place: panyu, start: 315, end: 325 }
+  - { place: jianye, start: 328, end: 329 }
+  - { place: wuchang }
+reviewed: false

@@ -1,0 +1,17 @@
+id: sima-zhong
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 259 }
+death: { year: 307 }
+reign:
+  - { start: 290, end: 307 }
+birthplace: luoyang
+deathplace: luoyang
+places:
+  - { place: luoyang }
+  - { place: jinyong, start: 301, end: 301 }
+  - { place: ye, start: 304, end: 304 }
+  - { place: changan, start: 304, end: 306 }
+reviewed: false

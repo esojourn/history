@@ -1,0 +1,14 @@
+id: lu-ji
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 261 }
+death: { year: 303 }
+birthplace: wu
+deathplace: luoyang
+places:
+  - { place: wu }
+  - { place: luoyang, start: 289, end: 303 }
+  - { place: ye, start: 301, end: 303 }
+reviewed: false

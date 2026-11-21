@@ -1,0 +1,15 @@
+id: yiguan-nandu
+wikidata: null
+civ: china
+type: migration
+importance: 4
+start: { year: 307 }
+end: { year: 329 }
+places: [luoyang, jianye, dantu, guangling, xiangyang]
+participants:
+  - person: sima-rui
+  - person: wang-dao
+  - person: zu-ti
+  - person: guo-pu
+  - person: su-jun
+reviewed: false

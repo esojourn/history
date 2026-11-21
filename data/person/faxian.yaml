@@ -1,0 +1,18 @@
+id: faxian
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 337, circa: true }
+death: { year: 422, circa: true }
+birthplace: pingyang
+deathplace: jiangling
+places:
+  - { place: changan }
+  - { place: yutian }
+  - { place: pataliputra }
+  - { place: shiziguo }
+  - { place: laoshan, start: 412, end: 412 }
+  - { place: jianye, start: 413 }
+  - { place: jiangling }
+reviewed: false

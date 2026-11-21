@@ -1,0 +1,15 @@
+id: sunen-luxun
+wikidata: null
+civ: china
+type: uprising
+importance: 3
+start: { year: 399 }
+end: { year: 411 }
+places: [shangyu, shanyin, dantu, jianye, panyu, xunyang, jiaozhi]
+participants:
+  - person: sun-en
+  - person: lu-xun-tianshi
+  - person: liu-yu
+  - person: sima-daozi
+  - person: xie-daoyun
+reviewed: false

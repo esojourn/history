@@ -1,0 +1,14 @@
+id: wang-dao
+wikidata: null
+civ: china
+faction: jin
+importance: 4
+birth: { year: 276 }
+death: { year: 339 }
+birthplace: langya
+deathplace: jianye
+places:
+  - { place: luoyang }
+  - { place: xiapi, start: 305, end: 307 }
+  - { place: jianye, start: 307, end: 339 }
+reviewed: false

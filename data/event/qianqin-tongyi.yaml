@@ -1,0 +1,13 @@
+id: qianqin-tongyi
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 370 }
+end: { year: 376 }
+places: [ye, jinyang, chengdu, guzang, shengle, changan]
+participants:
+  - person: fu-jian
+  - person: wang-meng
+  - person: murong-chui
+reviewed: false

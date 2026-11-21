@@ -1,0 +1,16 @@
+id: ge-hong
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 283 }
+death: { year: 343, circa: true }
+birthplace: jurong
+deathplace: luofu
+places:
+  - { place: jurong }
+  - { place: luoyang }
+  - { place: panyu }
+  - { place: jianye }
+  - { place: luofu }
+reviewed: false

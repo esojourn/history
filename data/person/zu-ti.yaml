@@ -1,0 +1,15 @@
+id: zu-ti
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 266 }
+death: { year: 321 }
+birthplace: qiuxian
+deathplace: yongqiu
+places:
+  - { place: luoyang }
+  - { place: dantu, start: 311, end: 313 }
+  - { place: qiao, start: 317, end: 320 }
+  - { place: yongqiu, start: 320, end: 321 }
+reviewed: false

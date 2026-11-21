@@ -1,0 +1,13 @@
+id: sima-daozi
+wikidata: null
+civ: china
+faction: jin
+importance: 2
+birth: { year: 364 }
+death: { year: 402 }
+birthplace: jianye
+deathplace: ancheng
+places:
+  - { place: jianye }
+  - { place: ancheng, start: 402, end: 402 }
+reviewed: false
