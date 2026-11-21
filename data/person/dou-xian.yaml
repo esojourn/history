@@ -1,0 +1,13 @@
+id: dou-xian
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: 50 }
+death: { year: 92 }
+birthplace: pingling
+deathplace: unknown
+places:
+  - { place: luoyang }
+  - { place: yanran, start: 89, end: 89 }
+reviewed: false

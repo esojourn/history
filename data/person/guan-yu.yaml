@@ -1,0 +1,16 @@
+id: guan-yu
+wikidata: null
+civ: china
+faction: shu
+importance: 4
+birth: { unknown: true, approx: 160 }
+death: { year: 220 }
+birthplace: xie
+deathplace: linju
+places:
+  - { place: zhuo }
+  - { place: xiapi, start: 199, end: 200 }
+  - { place: xu, start: 200, end: 200 }
+  - { place: jiangling, start: 209, end: 219 }
+  - { place: fancheng, start: 219, end: 219 }
+reviewed: false

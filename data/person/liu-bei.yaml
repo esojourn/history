@@ -1,0 +1,19 @@
+id: liu-bei
+wikidata: null
+civ: china
+faction: shu
+importance: 5
+birth: { year: 161 }
+death: { year: 223 }
+reign:
+  - { start: 221, end: 223 }
+birthplace: zhuo
+deathplace: baidi
+places:
+  - { place: zhuo }
+  - { place: xiapi, start: 194, end: 196 }
+  - { place: xinye, start: 201, end: 208 }
+  - { place: jiangling, start: 210, end: 211 }
+  - { place: chengdu, start: 214, end: 221 }
+  - { place: baidi, start: 222, end: 223 }
+reviewed: false

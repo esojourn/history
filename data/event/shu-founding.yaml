@@ -1,0 +1,12 @@
+id: shu-founding
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 221 }
+places: [chengdu]
+participants:
+  - person: liu-bei
+  - person: zhuge-liang
+  - person: liu-shan
+reviewed: false

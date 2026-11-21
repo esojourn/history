@@ -1,0 +1,13 @@
+id: li-ying
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: 110 }
+death: { year: 169 }
+birthplace: yingchuan
+deathplace: luoyang
+places:
+  - { place: yingchuan }
+  - { place: luoyang }
+reviewed: false

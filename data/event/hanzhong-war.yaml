@@ -1,0 +1,14 @@
+id: hanzhong-war
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 217 }
+end: { year: 219 }
+places: [hanzhong, dingjunshan]
+participants:
+  - person: liu-bei
+  - person: cao-cao
+  - person: zhang-fei
+  - person: zhao-yun
+reviewed: false

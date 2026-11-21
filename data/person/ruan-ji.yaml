@@ -1,0 +1,14 @@
+id: ruan-ji
+wikidata: null
+civ: china
+faction: wei
+importance: 2
+birth: { year: 210 }
+death: { year: 263 }
+birthplace: chenliu
+deathplace: unknown
+places:
+  - { place: chenliu }
+  - { place: luoyang }
+  - { place: shanyang }
+reviewed: false

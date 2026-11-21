@@ -1,0 +1,15 @@
+id: cao-pi
+wikidata: null
+civ: china
+faction: wei
+importance: 4
+birth: { year: 187 }
+death: { year: 226 }
+reign:
+  - { start: 220, end: 226 }
+birthplace: qiao
+deathplace: luoyang
+places:
+  - { place: ye, start: 204, end: 220 }
+  - { place: luoyang, start: 220, end: 226 }
+reviewed: false

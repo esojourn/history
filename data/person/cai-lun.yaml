@@ -1,0 +1,12 @@
+id: cai-lun
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { unknown: true, approx: 60 }
+death: { year: 121 }
+birthplace: guiyang
+deathplace: luoyang
+places:
+  - { place: luoyang }
+reviewed: false

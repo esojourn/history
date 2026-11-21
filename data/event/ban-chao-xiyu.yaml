@@ -1,0 +1,13 @@
+id: ban-chao-xiyu
+wikidata: null
+civ: china
+type: diplomatic
+importance: 4
+start: { year: 73 }
+end: { year: 102 }
+places: [shanshan, shule, qiuci]
+participants:
+  - person: ban-chao
+  - person: liu-zhuang
+  - person: liu-da
+reviewed: false

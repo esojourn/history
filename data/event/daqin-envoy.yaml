@@ -1,0 +1,11 @@
+id: daqin-envoy
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: 166 }
+places: [rinan, luoyang]
+participants:
+  - person: liu-zhi
+  - person: marcus-aurelius
+reviewed: false

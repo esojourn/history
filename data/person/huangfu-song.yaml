@@ -1,0 +1,14 @@
+id: huangfu-song
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: 130 }
+death: { year: 195 }
+birthplace: anding
+deathplace: unknown
+places:
+  - { place: yingchuan, start: 184, end: 184 }
+  - { place: guangzong, start: 184, end: 184 }
+  - { place: changan }
+reviewed: false

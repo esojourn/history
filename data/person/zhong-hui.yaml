@@ -1,0 +1,14 @@
+id: zhong-hui
+wikidata: null
+civ: china
+faction: wei
+importance: 2
+birth: { year: 225 }
+death: { year: 264 }
+birthplace: yingchuan
+deathplace: chengdu
+places:
+  - { place: luoyang }
+  - { place: hanzhong, start: 263, end: 263 }
+  - { place: chengdu, start: 264, end: 264 }
+reviewed: false

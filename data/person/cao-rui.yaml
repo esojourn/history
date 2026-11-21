@@ -1,0 +1,15 @@
+id: cao-rui
+wikidata: null
+civ: china
+faction: wei
+importance: 2
+birth: { year: 205, circa: true }
+death: { year: 239 }
+reign:
+  - { start: 226, end: 239 }
+birthplace: unknown
+deathplace: luoyang
+places:
+  - { place: ye }
+  - { place: luoyang, start: 226, end: 239 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: ma-yuan
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: -13 }
+death: { year: 49 }
+birthplace: maoling
+deathplace: hutou
+places:
+  - { place: maoling }
+  - { place: luoyang, start: 28 }
+  - { place: jiaozhi, start: 42, end: 44 }
+  - { place: hutou, start: 49, end: 49 }
+reviewed: false

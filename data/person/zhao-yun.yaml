@@ -1,0 +1,14 @@
+id: zhao-yun
+wikidata: null
+civ: china
+faction: shu
+importance: 2
+birth: { unknown: true, approx: 168 }
+death: { year: 229 }
+birthplace: zhending
+deathplace: unknown
+places:
+  - { place: zhending }
+  - { place: chengdu, start: 214, end: 227 }
+  - { place: hanzhong, start: 227, end: 229 }
+reviewed: false

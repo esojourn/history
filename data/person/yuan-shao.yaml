@@ -1,0 +1,14 @@
+id: yuan-shao
+wikidata: null
+civ: china
+faction: qunxiong
+importance: 4
+birth: { unknown: true, approx: 150 }
+death: { year: 202 }
+birthplace: ruyang
+deathplace: ye
+places:
+  - { place: luoyang }
+  - { place: ye, start: 191, end: 202 }
+  - { place: guandu, start: 200, end: 200 }
+reviewed: false

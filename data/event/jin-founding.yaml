@@ -1,0 +1,10 @@
+id: jin-founding
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: 266 }
+places: [luoyang]
+participants:
+  - person: sima-yan
+reviewed: false

@@ -1,0 +1,14 @@
+id: lu-su
+wikidata: null
+civ: china
+faction: wu
+importance: 3
+birth: { year: 172 }
+death: { year: 217 }
+birthplace: dongcheng
+deathplace: lukou
+places:
+  - { place: dongcheng }
+  - { place: wu, start: 200, end: 208 }
+  - { place: lukou, start: 210, end: 217 }
+reviewed: false

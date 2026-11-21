@@ -1,0 +1,16 @@
+id: chibi
+wikidata: null
+civ: china
+type: battle
+importance: 5
+start: { year: 208 }
+places: [chibi, xiangyang, jiangling]
+participants:
+  - person: cao-cao
+  - person: sun-quan
+  - person: liu-bei
+  - person: zhou-yu
+  - person: lu-su
+  - person: zhuge-liang
+  - person: liu-biao
+reviewed: false

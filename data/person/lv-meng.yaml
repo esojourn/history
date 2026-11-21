@@ -1,0 +1,15 @@
+id: lv-meng
+wikidata: null
+civ: china
+faction: wu
+importance: 3
+birth: { year: 178 }
+death: { year: 220 }
+birthplace: fupo
+deathplace: gongan
+places:
+  - { place: wu }
+  - { place: lukou, start: 217, end: 219 }
+  - { place: jiangling, start: 219, end: 219 }
+  - { place: gongan, start: 219, end: 220 }
+reviewed: false

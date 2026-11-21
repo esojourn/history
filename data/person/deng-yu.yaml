@@ -1,0 +1,15 @@
+id: deng-yu
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: 2 }
+death: { year: 58 }
+birthplace: xinye
+deathplace: unknown
+places:
+  - { place: xinye }
+  - { place: ye, start: 24, end: 24 }
+  - { place: changan, start: 25, end: 27 }
+  - { place: luoyang }
+reviewed: false

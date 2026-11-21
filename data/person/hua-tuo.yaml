@@ -1,0 +1,14 @@
+id: hua-tuo
+wikidata: null
+civ: china
+importance: 3
+birth: { unknown: true, approx: 145 }
+death: { year: 208, circa: true }
+birthplace: qiao
+deathplace: xu
+places:
+  - { place: qiao }
+  - { place: pengcheng }
+  - { place: guangling }
+  - { place: xu }
+reviewed: false

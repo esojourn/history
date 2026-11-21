@@ -1,0 +1,14 @@
+id: ji-kang
+wikidata: null
+civ: china
+faction: wei
+importance: 3
+birth: { year: 223, circa: true }
+death: { year: 262, circa: true }
+birthplace: zhi
+deathplace: luoyang
+places:
+  - { place: zhi }
+  - { place: shanyang }
+  - { place: luoyang }
+reviewed: false

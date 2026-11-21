@@ -1,0 +1,10 @@
+id: didongyi
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 132 }
+places: [luoyang]
+participants:
+  - person: zhang-heng
+reviewed: false

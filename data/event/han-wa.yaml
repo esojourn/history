@@ -1,0 +1,10 @@
+id: han-wa
+wikidata: null
+civ: china
+type: diplomatic
+importance: 2
+start: { year: 57 }
+places: [luoyang, na-koku]
+participants:
+  - person: liu-xiu
+reviewed: false

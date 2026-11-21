@@ -1,0 +1,15 @@
+id: shu-fall
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 263 }
+end: { year: 264 }
+places: [hanzhong, jiange, mianzhu, chengdu]
+participants:
+  - person: deng-ai
+  - person: zhong-hui
+  - person: jiang-wei
+  - person: liu-shan
+  - person: sima-zhao
+reviewed: false

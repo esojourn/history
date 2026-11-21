@@ -1,0 +1,12 @@
+id: wu-fall
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 279 }
+end: { year: 280 }
+places: [jiangling, wuchang, jianye]
+participants:
+  - person: sima-yan
+  - person: sun-hao
+reviewed: false

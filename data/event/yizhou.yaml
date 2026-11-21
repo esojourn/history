@@ -1,0 +1,14 @@
+id: yizhou
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 211 }
+end: { year: 214 }
+places: [chengdu]
+participants:
+  - person: liu-bei
+  - person: zhuge-liang
+  - person: zhang-fei
+  - person: zhao-yun
+reviewed: false

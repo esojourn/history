@@ -1,0 +1,11 @@
+id: wu-founding
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 229 }
+places: [wuchang, jianye]
+participants:
+  - person: sun-quan
+  - person: lu-xun
+reviewed: false

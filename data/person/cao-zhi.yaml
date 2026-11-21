@@ -1,0 +1,13 @@
+id: cao-zhi
+wikidata: null
+civ: china
+faction: wei
+importance: 3
+birth: { year: 192 }
+death: { year: 232 }
+birthplace: unknown
+deathplace: chen
+places:
+  - { place: ye, start: 204, end: 220 }
+  - { place: chen, start: 232, end: 232 }
+reviewed: false

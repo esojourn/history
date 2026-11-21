@@ -1,0 +1,14 @@
+id: liu-zhi
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: 132 }
+death: { year: 168 }
+reign:
+  - { start: 146, end: 168 }
+birthplace: unknown
+deathplace: luoyang
+places:
+  - { place: luoyang }
+reviewed: false

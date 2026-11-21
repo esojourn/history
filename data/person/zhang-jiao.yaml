@@ -1,0 +1,13 @@
+id: zhang-jiao
+wikidata: null
+civ: china
+faction: huangjin
+importance: 3
+birth: { unknown: true, approx: 140 }
+death: { year: 184 }
+birthplace: julu
+deathplace: guangzong
+places:
+  - { place: julu }
+  - { place: guangzong, start: 184, end: 184 }
+reviewed: false

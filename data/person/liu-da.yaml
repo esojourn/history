@@ -1,0 +1,14 @@
+id: liu-da
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: 57, circa: true }
+death: { year: 88 }
+reign:
+  - { start: 75, end: 88 }
+birthplace: unknown
+deathplace: luoyang
+places:
+  - { place: luoyang }
+reviewed: false

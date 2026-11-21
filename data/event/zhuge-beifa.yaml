@@ -1,0 +1,16 @@
+id: zhuge-beifa
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 228 }
+end: { year: 234 }
+places: [hanzhong, qishan, jieting, wuzhangyuan]
+participants:
+  - person: zhuge-liang
+  - person: sima-yi
+  - person: cao-rui
+  - person: zhao-yun
+  - person: jiang-wei
+  - person: liu-shan
+reviewed: false

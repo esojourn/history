@@ -1,0 +1,14 @@
+id: lv-bu
+wikidata: null
+civ: china
+faction: qunxiong
+importance: 3
+birth: { unknown: true, approx: 158 }
+death: { year: 199 }
+birthplace: jiuyuan
+deathplace: xiapi
+places:
+  - { place: luoyang, start: 189, end: 190 }
+  - { place: changan, start: 190, end: 192 }
+  - { place: xiapi, start: 196, end: 199 }
+reviewed: false

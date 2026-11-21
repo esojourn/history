@@ -1,0 +1,12 @@
+id: eastern-han-founding
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: 25 }
+end: { year: 36 }
+places: [hao, luoyang, changan, chengdu]
+participants:
+  - person: liu-xiu
+  - person: deng-yu
+reviewed: false

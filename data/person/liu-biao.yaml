@@ -1,0 +1,13 @@
+id: liu-biao
+wikidata: null
+civ: china
+faction: qunxiong
+importance: 2
+birth: { year: 142 }
+death: { year: 208 }
+birthplace: gaoping
+deathplace: xiangyang
+places:
+  - { place: luoyang }
+  - { place: xiangyang, start: 190, end: 208 }
+reviewed: false

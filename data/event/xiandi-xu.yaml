@@ -1,0 +1,12 @@
+id: xiandi-xu
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 196 }
+places: [luoyang, xu]
+participants:
+  - person: cao-cao
+  - person: liu-xie
+  - person: xun-yu
+reviewed: false

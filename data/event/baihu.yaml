@@ -1,0 +1,11 @@
+id: baihu
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 79 }
+places: [luoyang]
+participants:
+  - person: liu-da
+  - person: ban-gu
+reviewed: false

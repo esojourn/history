@@ -1,0 +1,18 @@
+id: zhuge-liang
+wikidata: null
+civ: china
+faction: shu
+importance: 5
+birth: { year: 181 }
+death: { year: 234 }
+birthplace: yangdu
+deathplace: wuzhangyuan
+places:
+  - { place: longzhong, start: 197, end: 207 }
+  - { place: jiangling, start: 209, end: 214 }
+  - { place: chengdu, start: 214, end: 227 }
+  - { place: nanzhong, start: 225, end: 225 }
+  - { place: hanzhong, start: 227, end: 234 }
+  - { place: qishan, start: 228, end: 231 }
+  - { place: wuzhangyuan, start: 234, end: 234 }
+reviewed: false

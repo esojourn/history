@@ -1,0 +1,10 @@
+id: cai-lun-paper
+wikidata: null
+civ: china
+type: cultural
+importance: 4
+start: { year: 105 }
+places: [luoyang]
+participants:
+  - person: cai-lun
+reviewed: false

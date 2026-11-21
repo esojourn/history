@@ -1,0 +1,17 @@
+id: liu-xie
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: 181 }
+death: { year: 234 }
+reign:
+  - { start: 189, end: 220 }
+birthplace: luoyang
+deathplace: shanyang
+places:
+  - { place: luoyang, start: 181, end: 190 }
+  - { place: changan, start: 190, end: 195 }
+  - { place: xu, start: 196, end: 220 }
+  - { place: shanyang, start: 220, end: 234 }
+reviewed: false

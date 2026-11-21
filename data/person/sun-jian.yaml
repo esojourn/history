@@ -1,0 +1,15 @@
+id: sun-jian
+wikidata: null
+civ: china
+faction: wu
+importance: 3
+birth: { year: 155, circa: true }
+death: { year: 191, circa: true }
+birthplace: fuchun
+deathplace: xiangyang
+places:
+  - { place: fuchun }
+  - { place: changsha, start: 187, end: 190 }
+  - { place: luoyang, start: 191, end: 191 }
+  - { place: xiangyang, start: 191, end: 191 }
+reviewed: false

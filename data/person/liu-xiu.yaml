@@ -1,0 +1,18 @@
+id: liu-xiu
+wikidata: null
+civ: china
+faction: han
+importance: 5
+birth: { year: -4 }
+death: { year: 57 }
+reign:
+  - { start: 25, end: 57 }
+birthplace: jiyang-chenliu
+deathplace: luoyang
+places:
+  - { place: nanyang }
+  - { place: kunyang, start: 23, end: 23 }
+  - { place: handan, start: 24, end: 24 }
+  - { place: hao, start: 25, end: 25 }
+  - { place: luoyang, start: 25, end: 57 }
+reviewed: false

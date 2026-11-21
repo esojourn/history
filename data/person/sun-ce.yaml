@@ -1,0 +1,14 @@
+id: sun-ce
+wikidata: null
+civ: china
+faction: wu
+importance: 3
+birth: { year: 175 }
+death: { year: 200 }
+birthplace: unknown
+deathplace: dantu
+places:
+  - { place: shu-lujiang }
+  - { place: shouchun, start: 194, end: 195 }
+  - { place: wu, start: 196, end: 200 }
+reviewed: false

@@ -1,0 +1,17 @@
+id: sun-quan
+wikidata: null
+civ: china
+faction: wu
+importance: 5
+birth: { year: 182 }
+death: { year: 252 }
+reign:
+  - { start: 229, end: 252 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: wu, start: 200, end: 211 }
+  - { place: jianye, start: 211, end: 221 }
+  - { place: wuchang, start: 221, end: 229 }
+  - { place: jianye, start: 229, end: 252 }
+reviewed: false

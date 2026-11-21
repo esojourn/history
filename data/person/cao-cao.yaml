@@ -1,0 +1,18 @@
+id: cao-cao
+wikidata: null
+civ: china
+faction: wei
+importance: 5
+birth: { year: 155 }
+death: { year: 220 }
+birthplace: qiao
+deathplace: luoyang
+places:
+  - { place: qiao }
+  - { place: luoyang }
+  - { place: chenliu, start: 189, end: 190 }
+  - { place: xu, start: 196, end: 204 }
+  - { place: guandu, start: 200, end: 200 }
+  - { place: ye, start: 204, end: 220 }
+  - { place: chibi, start: 208, end: 208 }
+reviewed: false

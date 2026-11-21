@@ -1,0 +1,15 @@
+id: zhou-yu
+wikidata: null
+civ: china
+faction: wu
+importance: 4
+birth: { year: 175 }
+death: { year: 210 }
+birthplace: shu-lujiang
+deathplace: baqiu
+places:
+  - { place: shu-lujiang }
+  - { place: wu, start: 198, end: 208 }
+  - { place: chibi, start: 208, end: 208 }
+  - { place: jiangling, start: 208, end: 210 }
+reviewed: false

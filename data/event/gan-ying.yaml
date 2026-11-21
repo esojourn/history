@@ -1,0 +1,10 @@
+id: gan-ying
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: 97 }
+places: [tiaozhi]
+participants:
+  - person: ban-chao
+reviewed: false

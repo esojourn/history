@@ -1,0 +1,14 @@
+id: zhang-fei
+wikidata: null
+civ: china
+faction: shu
+importance: 3
+birth: { unknown: true, approx: 165 }
+death: { year: 221 }
+birthplace: zhuo
+deathplace: langzhong
+places:
+  - { place: zhuo }
+  - { place: jiangling, start: 209, end: 211 }
+  - { place: langzhong, start: 214, end: 221 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: han-wei-shan
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: 220 }
+places: [xu, luoyang]
+participants:
+  - person: cao-pi
+  - person: liu-xie
+reviewed: false

@@ -1,0 +1,15 @@
+id: lu-xun
+wikidata: null
+civ: china
+faction: wu
+importance: 3
+birth: { year: 183 }
+death: { year: 245 }
+birthplace: wu
+deathplace: unknown
+places:
+  - { place: wu }
+  - { place: lukou, start: 219, end: 219 }
+  - { place: yiling, start: 221, end: 222 }
+  - { place: wuchang, start: 229, end: 245 }
+reviewed: false

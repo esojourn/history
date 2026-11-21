@@ -1,0 +1,14 @@
+id: dong-zhuo
+wikidata: null
+civ: china
+faction: qunxiong
+importance: 4
+birth: { unknown: true, approx: 138 }
+death: { year: 192 }
+birthplace: lintao
+deathplace: changan
+places:
+  - { place: lintao }
+  - { place: luoyang, start: 189, end: 190 }
+  - { place: changan, start: 190, end: 192 }
+reviewed: false

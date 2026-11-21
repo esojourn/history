@@ -1,0 +1,14 @@
+id: guandu
+wikidata: null
+civ: china
+type: battle
+importance: 5
+start: { year: 200 }
+places: [guandu]
+participants:
+  - person: cao-cao
+  - person: yuan-shao
+  - person: xun-yu
+  - person: guan-yu
+  - person: liu-bei
+reviewed: false

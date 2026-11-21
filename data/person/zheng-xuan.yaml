@@ -1,0 +1,14 @@
+id: zheng-xuan
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: 127 }
+death: { year: 200 }
+birthplace: gaomi
+deathplace: yuancheng
+places:
+  - { place: gaomi }
+  - { place: luoyang }
+  - { place: changan }
+reviewed: false

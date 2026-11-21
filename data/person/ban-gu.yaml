@@ -1,0 +1,14 @@
+id: ban-gu
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: 32 }
+death: { year: 92 }
+birthplace: anling
+deathplace: luoyang
+places:
+  - { place: anling }
+  - { place: luoyang }
+  - { place: yanran, start: 89, end: 89 }
+reviewed: false

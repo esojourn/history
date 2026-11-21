@@ -1,0 +1,13 @@
+id: xu-shen
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: 58, circa: true }
+death: { year: 147, circa: true }
+birthplace: zhaoling
+deathplace: zhaoling
+places:
+  - { place: zhaoling }
+  - { place: luoyang }
+reviewed: false

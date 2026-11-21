@@ -1,0 +1,14 @@
+id: chen-shou
+wikidata: null
+civ: china
+faction: jin
+importance: 3
+birth: { year: 233 }
+death: { year: 297 }
+birthplace: anhan
+deathplace: luoyang
+places:
+  - { place: anhan }
+  - { place: chengdu }
+  - { place: luoyang, start: 266, end: 297 }
+reviewed: false

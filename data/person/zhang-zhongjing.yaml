@@ -1,0 +1,11 @@
+id: zhang-zhongjing
+wikidata: null
+civ: china
+importance: 3
+birth: { unknown: true, approx: 150 }
+death: { unknown: true, approx: 219 }
+birthplace: nanyang
+deathplace: unknown
+places:
+  - { place: nanyang }
+reviewed: false

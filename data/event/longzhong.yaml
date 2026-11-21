@@ -1,0 +1,11 @@
+id: longzhong
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 207 }
+places: [longzhong, xinye]
+participants:
+  - person: liu-bei
+  - person: zhuge-liang
+reviewed: false

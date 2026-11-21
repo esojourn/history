@@ -1,0 +1,16 @@
+id: huangjin
+wikidata: null
+civ: china
+type: uprising
+importance: 5
+start: { year: 184 }
+places: [julu, guangzong, yingchuan, nanyang]
+participants:
+  - person: zhang-jiao
+  - person: huangfu-song
+  - person: liu-hong
+  - person: cao-cao
+  - person: sun-jian
+  - person: liu-bei
+  - person: dong-zhuo
+reviewed: false

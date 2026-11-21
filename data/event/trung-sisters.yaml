@@ -1,0 +1,11 @@
+id: trung-sisters
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 40 }
+end: { year: 43 }
+places: [jiaozhi]
+participants:
+  - person: ma-yuan
+reviewed: false

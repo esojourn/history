@@ -1,0 +1,10 @@
+id: kunyang
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 23 }
+places: [kunyang]
+participants:
+  - person: liu-xiu
+reviewed: false

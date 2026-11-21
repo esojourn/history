@@ -1,0 +1,10 @@
+id: nanzhong-campaign
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 225 }
+places: [nanzhong]
+participants:
+  - person: zhuge-liang
+reviewed: false

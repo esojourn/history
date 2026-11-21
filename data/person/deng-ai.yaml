@@ -1,0 +1,15 @@
+id: deng-ai
+wikidata: null
+civ: china
+faction: wei
+importance: 3
+birth: { year: 197, circa: true }
+death: { year: 264 }
+birthplace: jiyang-nanyang
+deathplace: mianzhu
+places:
+  - { place: yingchuan }
+  - { place: shouchun }
+  - { place: jiange, start: 263, end: 263 }
+  - { place: chengdu, start: 263, end: 264 }
+reviewed: false

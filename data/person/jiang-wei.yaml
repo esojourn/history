@@ -1,0 +1,15 @@
+id: jiang-wei
+wikidata: null
+civ: china
+faction: shu
+importance: 3
+birth: { year: 202 }
+death: { year: 264 }
+birthplace: ji-tianshui
+deathplace: chengdu
+places:
+  - { place: ji-tianshui }
+  - { place: hanzhong, start: 228, end: 262 }
+  - { place: jiange, start: 263, end: 263 }
+  - { place: chengdu, start: 264, end: 264 }
+reviewed: false

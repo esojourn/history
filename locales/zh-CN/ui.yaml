@@ -28,11 +28,12 @@ view.world: 世界
 view.china: 中国
 view.bible: 圣经历史
 view.focus: 秦汉之际
+view.sanguo: 东汉三国
 open.default: 只展开中国
 open.all: 全部展开
 open.none: 全部收起
 hint.desktop: 滚轮缩放，上下左右拖动；点文明的名称或色带，展开或收起它的人物和大事
-note.range: 这一段还没有录入人物。目前圣经历史录了全程，其他文明只录了公元前 262 至前 138 年。
+note.range: 这一段还没有录入人物。目前圣经历史录了全程，中国另录了东汉至三国（公元 23 至 280 年），其他文明只录了公元前 262 至前 138 年。
 note.closed: 这一段录有人物的文明：{lanes}。点它的名称或色带可以展开。
 note.back: 回到秦汉之际
 river.noPeople: 这一时期没有留下姓名的人物

@@ -1,0 +1,10 @@
+id: yongping-qiufa
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 67, circa: true }
+places: [luoyang]
+participants:
+  - person: liu-zhuang
+reviewed: false

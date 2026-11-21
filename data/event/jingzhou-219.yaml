@@ -1,0 +1,16 @@
+id: jingzhou-219
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 219 }
+end: { year: 220 }
+places: [fancheng, xiangyang, jiangling, gongan, linju]
+participants:
+  - person: guan-yu
+  - person: lv-meng
+  - person: lu-xun
+  - person: sun-quan
+  - person: cao-cao
+  - person: sima-yi
+reviewed: false

@@ -1,0 +1,13 @@
+id: xun-yu
+wikidata: null
+civ: china
+faction: wei
+importance: 3
+birth: { year: 163 }
+death: { year: 212 }
+birthplace: yingchuan
+deathplace: shouchun
+places:
+  - { place: yingchuan }
+  - { place: xu, start: 196, end: 212 }
+reviewed: false

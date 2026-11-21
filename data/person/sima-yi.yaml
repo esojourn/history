@@ -1,0 +1,16 @@
+id: sima-yi
+wikidata: null
+civ: china
+faction: wei
+importance: 4
+birth: { year: 179 }
+death: { year: 251 }
+birthplace: wen
+deathplace: luoyang
+places:
+  - { place: wen }
+  - { place: ye }
+  - { place: luoyang }
+  - { place: changan, start: 231, end: 235 }
+  - { place: gaopingling, start: 249, end: 249 }
+reviewed: false

@@ -16,3 +16,21 @@
 - id: parthia
   civ: meso
   color: "#6B4A2F"
+- id: huangjin
+  civ: china
+  color: "#B59B1B"
+- id: qunxiong
+  civ: china
+  color: "#6F6A62"
+- id: wei
+  civ: china
+  color: "#2F5F9F"
+- id: shu
+  civ: china
+  color: "#3E8E5A"
+- id: wu
+  civ: china
+  color: "#C9781B"
+- id: jin
+  civ: china
+  color: "#6A4C93"

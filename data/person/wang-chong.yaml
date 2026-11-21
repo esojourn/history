@@ -1,0 +1,13 @@
+id: wang-chong
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: 27 }
+death: { year: 97, circa: true }
+birthplace: shangyu
+deathplace: shangyu
+places:
+  - { place: shangyu }
+  - { place: luoyang }
+reviewed: false

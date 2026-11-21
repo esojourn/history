@@ -1,0 +1,12 @@
+id: yanran
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 89 }
+end: { year: 91 }
+places: [yanran]
+participants:
+  - person: dou-xian
+  - person: ban-gu
+reviewed: false
