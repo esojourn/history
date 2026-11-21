@@ -1,13 +1,14 @@
 id: yuezhi
 civ: steppe
-type: null
+type: migration
 importance: 3
 start:
   year: -175
   circa: true
 end:
-  year: -160
-places: []
+  year: -129
+  circa: true
+places: [hexi, ili, guishui]
 participants:
   - person: modu
   - person: laoshang

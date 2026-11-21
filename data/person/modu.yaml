@@ -1,17 +1,20 @@
 id: modu
-wikidata: null
+wikidata: Q382816
 civ: steppe
 faction: xiongnu
 importance: 4
 birth:
-  year: -233
-  circa: true
+  unknown: true
+  approx: -233
 death:
   year: -173
 reign:
   - start: -208
     end: -173
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: henan-di }
+  - { place: mayi, start: -200, end: -200 }
+  - { place: baideng, start: -199, end: -199 }
 reviewed: false

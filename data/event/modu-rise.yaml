@@ -1,10 +1,10 @@
 id: modu-rise
 civ: steppe
-type: null
+type: political
 importance: 3
 start:
   year: -208
-places: []
+places: [unknown]
 participants:
   - person: modu
   - person: touman

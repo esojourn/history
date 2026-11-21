@@ -1,16 +1,18 @@
 id: zhao-tuo
-wikidata: null
+wikidata: Q701895
 civ: yue
 importance: 3
 birth:
-  year: -239
-  circa: true
+  unknown: true
+  approx: -239
 death:
   year: -136
 reign:
   - start: -203
     end: -136
-birthplace: null
-deathplace: null
-places: []
+birthplace: zhending
+deathplace: unknown
+places:
+  - { place: longchuan }
+  - { place: panyu }
 reviewed: false

@@ -1,5 +1,5 @@
 id: zhonghang-yue
-wikidata: null
+wikidata: Q10876611
 civ: steppe
 faction: xiongnu
 importance: 1
@@ -9,7 +9,7 @@ birth:
 death:
   unknown: true
   approx: -159
-birthplace: null
-deathplace: null
+birthplace: yan
+deathplace: unknown
 places: []
 reviewed: false

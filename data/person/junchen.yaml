@@ -1,5 +1,5 @@
 id: junchen
-wikidata: null
+wikidata: Q2660024
 civ: steppe
 faction: xiongnu
 importance: 2
@@ -11,7 +11,8 @@ death:
 reign:
   - start: -160
     end: -125
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: mayi, start: -132, end: -132 }
 reviewed: false

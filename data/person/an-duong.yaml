@@ -1,5 +1,5 @@
 id: an-duong
-wikidata: null
+wikidata: Q1274690
 civ: yue
 importance: 1
 birth:
@@ -8,7 +8,8 @@ birth:
 death:
   year: -178
   circa: true
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: co-loa }
 reviewed: false

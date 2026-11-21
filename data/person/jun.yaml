@@ -1,14 +1,15 @@
 id: jun
-wikidata: null
+wikidata: Q711336
 civ: korea
 importance: 1
 birth:
   unknown: true
-  approx: -239
+  approx: -259
 death:
   unknown: true
   approx: -189
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: han-di }
 reviewed: false

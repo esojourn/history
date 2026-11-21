@@ -1,5 +1,5 @@
 id: laoshang
-wikidata: null
+wikidata: Q2593729
 civ: steppe
 faction: xiongnu
 importance: 2
@@ -8,10 +8,12 @@ birth:
   approx: -209
 death:
   year: -160
+  circa: true
 reign:
   - start: -173
     end: -160
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: xiaoguan, start: -165, end: -165 }
 reviewed: false

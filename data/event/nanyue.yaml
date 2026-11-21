@@ -1,10 +1,11 @@
 id: nanyue
 civ: yue
-type: null
+type: founding
 importance: 3
 start:
   year: -203
-places: []
+  circa: true
+places: [panyu]
 participants:
   - person: zhao-tuo
 reviewed: false

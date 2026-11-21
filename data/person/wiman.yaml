@@ -1,5 +1,5 @@
 id: wiman
-wikidata: null
+wikidata: Q701346
 civ: korea
 importance: 3
 birth:
@@ -8,7 +8,8 @@ birth:
 death:
   unknown: true
   approx: -169
-birthplace: null
-deathplace: null
-places: []
+birthplace: yan
+deathplace: unknown
+places:
+  - { place: wangxian }
 reviewed: false

@@ -1,5 +1,5 @@
 id: touman
-wikidata: null
+wikidata: Q719747
 civ: steppe
 faction: xiongnu
 importance: 2
@@ -8,7 +8,8 @@ birth:
   approx: -261
 death:
   year: -208
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: henan-di }
 reviewed: false

@@ -1,10 +1,11 @@
 id: wiman-joseon
 civ: korea
-type: null
+type: founding
 importance: 3
 start:
   year: -193
-places: []
+  circa: true
+places: [wangxian]
 participants:
   - person: wiman
   - person: jun

@@ -1,11 +1,11 @@
 id: donghu
 civ: steppe
-type: null
+type: war
 importance: 2
 start:
   year: -205
   circa: true
-places: []
+places: [henan-di]
 participants:
   - person: modu
 reviewed: false

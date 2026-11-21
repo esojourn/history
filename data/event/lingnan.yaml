@@ -1,10 +1,10 @@
 id: lingnan
 civ: yue
-type: null
+type: war
 importance: 3
 start:
   year: -213
-places: []
+places: [panyu]
 participants:
   - person: ying-zheng
   - person: zhao-tuo
