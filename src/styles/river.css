@@ -89,3 +89,9 @@ dialog.about::backdrop { background: rgba(0,0,0,.4); }
 .about-body th, .about-body td { border: 1px solid #ddd; padding: .3rem .5rem; vertical-align: top; }
 .about-body pre { background: #f5f5f5; padding: .6rem; overflow-x: auto; }
 .about-gh { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; font-weight: bold; }
+/* 手机：左右滑动换文明时，新内容从滑动方向进来 */
+#mbody.swl > * { animation: swl .22s ease-out; }
+#mbody.swr > * { animation: swr .22s ease-out; }
+@keyframes swl { from { transform: translateX(40px); opacity: .3; } }
+@keyframes swr { from { transform: translateX(-40px); opacity: .3; } }
+@media (prefers-reduced-motion: reduce) { #mbody.swl > *, #mbody.swr > * { animation: none; } }

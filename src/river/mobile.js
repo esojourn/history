@@ -160,6 +160,36 @@ export function mobile(H, card, search) {
     }
   }
 
+  // 换文明：仍看同一年。那个文明这一年没有人物，就看离这一年最近的一段
+  function switchLane(id, dir) {
+    const v = yearAt();
+    if (M.sel) setHash(null);
+    M.lane = id; M.sel = null; M.full = false; showCard();
+    if (M.mode === 'people') {
+      M.seg = v == null ? defaultSeg(M.lane) : nearSeg(M.lane, v); paint();
+      if (v != null && seg()) body.scrollTop = Math.max(0, y(H.clamp(v, lo, hi)) - REF); else toStart();
+      body.scrollLeft = dir < 0 ? body.scrollWidth : 0;   // 从右边滑进来的，先看到它的右边缘
+    } else { paint(); if (v != null) bandsTo(v); }
+    if (dir) { body.classList.remove('swl', 'swr'); void body.offsetWidth; body.classList.add(dir > 0 ? 'swl' : 'swr'); }
+  }
+
+  // 左右滑动换到相邻的文明（顺序同顶上的标签）。人物多、图比屏幕宽时，要先把图滑到头，再滑一次才换
+  let sw = null;
+  body.addEventListener('touchstart', e => {
+    if (e.touches.length !== 1) { sw = null; return; }
+    const tc = e.touches[0], max = body.scrollWidth - body.clientWidth;
+    sw = { x: tc.clientX, y: tc.clientY, atL: body.scrollLeft <= 24, atR: body.scrollLeft >= max - 24 };   // 离边缘不到 24 像素也算到头
+  }, { passive: true });
+  body.addEventListener('touchcancel', () => { sw = null; });
+  body.addEventListener('touchend', e => {
+    if (!sw || e.touches.length) return;
+    const tc = e.changedTouches[0], dx = tc.clientX - sw.x, dy = tc.clientY - sw.y, s = sw; sw = null;
+    if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
+    const i = H.lanes.findIndex(l => l.id === M.lane), dir = dx < 0 ? 1 : -1, nx = H.lanes[i + dir];
+    if (!nx || (dir > 0 ? !s.atR : !s.atL)) return;
+    switchLane(nx.id, dir);
+  }, { passive: true });
+
   let sraf = 0;
   body.addEventListener('scroll', () => { if (M.mode === 'people' && !sraf) sraf = requestAnimationFrame(() => { sraf = 0; people(true); }); });
   $('#m').addEventListener('click', e => {
@@ -171,15 +201,7 @@ export function mobile(H, card, search) {
       M.mode = m.dataset.m; if (m.dataset.seg != null) M.seg = +m.dataset.seg; clear(); paint();
       if (M.mode === 'people') toStart(); else if (v != null) bandsTo(v);   // 从人物回到朝代：停在刚才看的那一段
     }
-    else if (lane) {
-      // 换文明：仍看同一年。那个文明这一年没有人物，就看离这一年最近的一段
-      const v = yearAt();
-      M.lane = lane.dataset.lane; clear();
-      if (M.mode === 'people') {
-        M.seg = v == null ? defaultSeg(M.lane) : nearSeg(M.lane, v); paint();
-        if (v != null && seg()) body.scrollTop = Math.max(0, y(H.clamp(v, lo, hi)) - REF); else toStart();
-      } else { paint(); if (v != null) bandsTo(v); }
-    }
+    else if (lane) switchLane(lane.dataset.lane);
     else if (sg) { M.seg = +sg.dataset.seg; clear(); setHash(null); paint(); toStart(); }
     else if (el.closest('[data-all]')) { M.all = !M.all; paint(true); }
     else if (to) { HIST.push(M.sel); select(to, true); }
