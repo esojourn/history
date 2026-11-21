@@ -1,10 +1,11 @@
 id: rededication
 civ: bible
-type: null
+type: cultural
 importance: 3
 start:
   year: -163
-places: []
+  circa: true
+places: [jerusalem]
 participants:
   - person: judas
 reviewed: false

@@ -1,16 +1,19 @@
 id: liu-heng
-wikidata: null
+wikidata: Q7221
 civ: china
 faction: han
 importance: 4
 birth:
   year: -202
+  circa: true
 death:
   year: -156
 reign:
   - start: -179
     end: -156
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: zhongdu, start: -195, end: -179 }
+  - { place: changan, start: -179, end: -156 }
 reviewed: false

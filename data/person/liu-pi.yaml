@@ -1,13 +1,17 @@
 id: liu-pi
-wikidata: null
+wikidata: Q701523
 civ: china
 faction: han
 importance: 2
 birth:
   year: -214
+  circa: true
 death:
   year: -153
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: dantu
+places:
+  - { place: pei }
+  - { place: guangling, start: -195, end: -153 }
+  - { place: suiyang, start: -153, end: -153 }
 reviewed: false

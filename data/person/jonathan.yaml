@@ -1,5 +1,5 @@
 id: jonathan
-wikidata: null
+wikidata: Q75043
 civ: bible
 importance: 2
 birth:
@@ -7,7 +7,11 @@ birth:
   approx: -194
 death:
   year: -142
-birthplace: null
-deathplace: null
-places: []
+  circa: true
+birthplace: unknown
+deathplace: baskama
+places:
+  - { place: modein }
+  - { place: jerusalem, start: -151 }
+  - { place: baskama, start: -142, end: -142 }
 reviewed: false

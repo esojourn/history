@@ -1,5 +1,5 @@
 id: menander
-wikidata: null
+wikidata: Q347878
 civ: india
 importance: 3
 birth:
@@ -11,7 +11,9 @@ death:
 reign:
   - start: -164
     end: -129
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: sagala }
+  - { place: taxila }
 reviewed: false

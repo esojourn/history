@@ -1,5 +1,5 @@
 id: hu-hai
-wikidata: null
+wikidata: Q7196
 civ: china
 faction: qin
 importance: 3
@@ -11,7 +11,9 @@ death:
 reign:
   - start: -209
     end: -206
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: wangyi
+places:
+  - { place: xianyang }
+  - { place: shaqiu, start: -209, end: -209 }
 reviewed: false

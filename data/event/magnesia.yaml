@@ -1,10 +1,10 @@
 id: magnesia
 civ: meso
-type: null
+type: battle
 importance: 3
 start:
   year: -189
-places: []
+places: [magnesia]
 participants:
   - person: antiochus-3
 reviewed: false

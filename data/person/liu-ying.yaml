@@ -1,5 +1,5 @@
 id: liu-ying
-wikidata: null
+wikidata: Q7214
 civ: china
 faction: han
 importance: 2
@@ -10,7 +10,9 @@ death:
 reign:
   - start: -194
     end: -187
-birthplace: null
-deathplace: null
-places: []
+birthplace: pei
+deathplace: changan
+places:
+  - { place: pei }
+  - { place: changan, start: -194, end: -187 }
 reviewed: false

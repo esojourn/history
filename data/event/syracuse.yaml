@@ -1,10 +1,14 @@
 id: syracuse
+wikidata: Q533090
 civ: greece
-type: null
+type: battle
 importance: 3
 start:
+  year: -212
+end:
   year: -211
-places: []
+  circa: true
+places: [syracuse]
 participants:
   - person: archimedes
   - person: marcellus

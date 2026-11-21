@@ -1,0 +1,20 @@
+---
+// 每个人物一个独立页面，有自己的网址，可以直接发给别人，也便于搜索引擎收录。
+// 内容与时间长河里的全屏卡片是同一段代码生成的。
+import Base from '../../../layouts/Base.astro';
+import '../../../styles/detail.css';
+import { LANGS, build } from '../../../lib/dataset.mjs';
+import { createModel } from '../../../lib/model.js';
+import { makeCard } from '../../../lib/card.js';
+
+export function getStaticPaths() {
+  return LANGS.flatMap(l => build(l.code).people.map(p => ({ params: { lang: l.code, id: p.id } })));
+}
+const { lang, id } = Astro.params;
+const data = build(lang), H = createModel(structuredClone(data), `/${lang}/`), p = H.P[id];
+const html = makeCard(H)({ t: 'p', id }, { full: true, page: true });
+---
+<Base title={`${p.n} · ${H.t('site.title')}`} desc={p.sum} lang={data.htmlLang} bodyClass="page">
+  <header class="page-top"><a href={`/${lang}/`}>{H.t('site.title')}</a></header>
+  <main class="detail full page" set:html={html} />
+</Base>

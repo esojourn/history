@@ -1,5 +1,5 @@
 id: antiochus-4
-wikidata: null
+wikidata: Q3356
 civ: meso
 importance: 3
 birth:
@@ -10,7 +10,12 @@ death:
 reign:
   - start: -174
     end: -163
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: tabae
+places:
+  - { place: rome }
+  - { place: athens }
+  - { place: antioch, start: -174 }
+  - { place: alexandria, start: -168, end: -167 }
+  - { place: jerusalem, start: -168, end: -167 }
 reviewed: false

@@ -1,4 +1,15 @@
 name: 七十士译本始译
-summary: 传统说法：应托勒密二世之请，在亚历山大把希伯来经卷译成希腊文。
-body: ""
-sources: []
+summary: 相传应托勒密二世之请，犹太学者在亚历山大把律法书译成希腊文。
+body: |-
+  七十士译本是希伯来经卷最早的希腊文译本。它的起源主要见于《阿里斯提亚书信》。据这封书信，掌管王室图书馆的法勒隆人德米特里向托勒密二世建议收入犹太人的律法书，国王于是致信耶路撒冷的大祭司以利亚撒，请他派人前来翻译。
+
+  书信说，以利亚撒从十二支派各选六人，共七十二位长老，带着经卷来到亚历山大，在法罗斯岛上用七十二天译成。“七十士”之名由此而来。书信所说的只是律法书，即摩西五经。后来的传述又添了情节，如斐洛说译者各自翻译而字句全同，《巴比伦塔木德》说七十二人被分置在七十二间屋内。
+
+  学者一般认为《阿里斯提亚书信》是公元前 2 世纪犹太人托名之作，其中的细节属于传统说法，不能当作实录；但五经在公元前 3 世纪于亚历山大译成希腊文这一点，大体为学界接受，本条的年份只是据托勒密二世在位年代所取的约数。其余经卷是在此后一两个世纪里陆续译出的。
+sources:
+  - 《阿里斯提亚书信》
+  - 约瑟夫斯《犹太古史》卷 12 第 2 章 https://penelope.uchicago.edu/josephus/ant-12.html
+  - 斐洛《摩西传》卷 2 第 25—44 节 https://www.earlychristianwritings.com/yonge/book25.html
+  - 《巴比伦塔木德·经卷篇》9a https://www.sefaria.org/Megillah.9a
+  - Wikipedia, "Letter of Aristeas" https://en.wikipedia.org/wiki/Letter_of_Aristeas
+  - Wikipedia, "Septuagint" https://en.wikipedia.org/wiki/Septuagint

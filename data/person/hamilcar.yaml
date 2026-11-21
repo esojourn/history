@@ -1,5 +1,5 @@
 id: hamilcar
-wikidata: null
+wikidata: Q185101
 civ: rome
 faction: carthage
 importance: 2
@@ -8,7 +8,11 @@ birth:
   circa: true
 death:
   year: -227
-birthplace: null
-deathplace: null
-places: []
+  circa: true
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: eryx, start: -243, end: -240 }
+  - { place: carthage, start: -240, end: -236 }
+  - { place: gades, start: -236 }
 reviewed: false

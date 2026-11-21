@@ -1,5 +1,5 @@
 id: ying-zheng
-wikidata: null
+wikidata: Q7192
 civ: china
 faction: qin
 importance: 5
@@ -10,7 +10,8 @@ death:
 reign:
   - start: -246
     end: -209
-birthplace: null
-deathplace: null
-places: []
+birthplace: handan
+deathplace: shaqiu
+places:
+  - { place: xianyang }
 reviewed: false

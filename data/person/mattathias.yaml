@@ -1,5 +1,5 @@
 id: mattathias
-wikidata: null
+wikidata: Q75048
 civ: bible
 importance: 2
 birth:
@@ -7,7 +7,10 @@ birth:
   approx: -229
 death:
   year: -165
-birthplace: null
-deathplace: null
-places: []
+  circa: true
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+  - { place: modein }
 reviewed: false

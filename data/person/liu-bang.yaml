@@ -1,5 +1,5 @@
 id: liu-bang
-wikidata: null
+wikidata: Q7210
 civ: china
 faction: han
 importance: 5
@@ -11,7 +11,12 @@ death:
 reign:
   - start: -201
     end: -194
-birthplace: null
-deathplace: null
-places: []
+birthplace: feng
+deathplace: changan
+places:
+  - { place: pei }
+  - { place: hanzhong, start: -205, end: -205 }
+  - { place: xingyang, start: -204, end: -202 }
+  - { place: luoyang, start: -201, end: -201 }
+  - { place: changan }
 reviewed: false

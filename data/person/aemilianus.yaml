@@ -1,12 +1,17 @@
 id: aemilianus
-wikidata: null
+wikidata: Q2307
 civ: rome
 importance: 3
 birth:
   year: -184
+  circa: true
 death:
   year: -128
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: pydna, start: -167, end: -167 }
+  - { place: carthage, start: -148, end: -145 }
+  - { place: numantia, start: -133, end: -132 }
 reviewed: false

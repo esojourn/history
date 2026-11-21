@@ -1,5 +1,5 @@
 id: antiochus-2
-wikidata: null
+wikidata: Q222930
 civ: meso
 importance: 2
 birth:
@@ -9,7 +9,9 @@ death:
 reign:
   - start: -260
     end: -245
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: ephesus
+places:
+  - { place: antioch }
+  - { place: ephesus }
 reviewed: false

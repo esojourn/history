@@ -1,11 +1,11 @@
 id: lxx
 civ: bible
-type: null
+type: cultural
 importance: 3
 start:
   year: -249
   circa: true
-places: []
+places: [alexandria]
 participants:
   - person: ptolemy-2
 reviewed: false

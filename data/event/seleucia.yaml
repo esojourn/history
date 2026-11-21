@@ -1,10 +1,10 @@
 id: seleucia
 civ: meso
-type: null
+type: war
 importance: 3
 start:
   year: -140
-places: []
+places: [seleucia-tigris]
 participants:
   - person: mithridates-1
 reviewed: false

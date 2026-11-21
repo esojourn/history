@@ -1,10 +1,11 @@
 id: jingxing
+wikidata: Q835015
 civ: china
-type: null
+type: battle
 importance: 2
 start:
-  year: -203
-places: []
+  year: -204
+places: [jingxing]
 participants:
   - person: han-xin
 reviewed: false

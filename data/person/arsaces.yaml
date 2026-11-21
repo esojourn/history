@@ -1,5 +1,5 @@
 id: arsaces
-wikidata: null
+wikidata: Q315913
 civ: meso
 faction: parthia
 importance: 3
@@ -12,7 +12,8 @@ death:
 reign:
   - start: -246
     end: -216
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: asaak, start: -246 }
 reviewed: false

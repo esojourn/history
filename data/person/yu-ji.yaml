@@ -1,5 +1,5 @@
 id: yu-ji
-wikidata: null
+wikidata: Q3275211
 civ: china
 faction: chu
 importance: 1
@@ -7,8 +7,10 @@ birth:
   unknown: true
   approx: -229
 death:
-  year: -201
-birthplace: null
-deathplace: null
-places: []
+  unknown: true
+  approx: -201
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: gaixia, start: -201, end: -201 }
 reviewed: false

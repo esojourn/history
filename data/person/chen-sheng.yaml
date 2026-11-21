@@ -1,5 +1,5 @@
 id: chen-sheng
-wikidata: null
+wikidata: Q699882
 civ: china
 faction: chu
 importance: 3
@@ -8,7 +8,9 @@ birth:
   approx: -257
 death:
   year: -207
-birthplace: null
-deathplace: null
-places: []
+birthplace: yangcheng
+deathplace: xiachengfu
+places:
+  - { place: dazexiang, start: -208, end: -208 }
+  - { place: chen, start: -208, end: -207 }
 reviewed: false

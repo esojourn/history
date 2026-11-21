@@ -1,12 +1,16 @@
 id: aratus
-wikidata: null
+wikidata: Q317331
 civ: greece
 importance: 2
 birth:
   year: -270
 death:
   year: -212
-birthplace: null
-deathplace: null
-places: []
+birthplace: sicyon
+deathplace: aigion
+places:
+  - { place: argos, start: -263, end: -250 }
+  - { place: sicyon, start: -250 }
+  - { place: corinth, start: -242, end: -242 }
+  - { place: aigion }
 reviewed: false

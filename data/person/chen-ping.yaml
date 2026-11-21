@@ -1,5 +1,5 @@
 id: chen-ping
-wikidata: null
+wikidata: Q707658
 civ: china
 faction: han
 importance: 3
@@ -7,8 +7,11 @@ birth:
   unknown: true
   approx: -239
 death:
-  year: -177
-birthplace: null
-deathplace: null
-places: []
+  year: -178
+birthplace: yangwu
+deathplace: unknown
+places:
+  - { place: xingyang, start: -204, end: -203 }
+  - { place: baideng, start: -199, end: -199 }
+  - { place: changan }
 reviewed: false

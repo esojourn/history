@@ -1,10 +1,11 @@
 id: pydna
+wikidata: Q504739
 civ: greece
-type: null
+type: battle
 importance: 4
 start:
   year: -167
-places: []
+places: [pydna]
 participants:
   - person: perseus
   - person: polybius

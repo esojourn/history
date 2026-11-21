@@ -1,11 +1,11 @@
 id: parthia
 civ: meso
-type: null
+type: founding
 importance: 4
 start:
   year: -246
   circa: true
-places: []
+places: [asaak]
 participants:
   - person: arsaces
   - person: antiochus-2

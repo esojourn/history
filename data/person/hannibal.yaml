@@ -1,5 +1,5 @@
 id: hannibal
-wikidata: null
+wikidata: Q36456
 civ: rome
 faction: carthage
 importance: 5
@@ -8,7 +8,12 @@ birth:
 death:
   year: -182
   circa: true
-birthplace: null
-deathplace: null
-places: []
+birthplace: carthage
+deathplace: libyssa
+places:
+  - { place: new-carthage, start: -220, end: -217 }
+  - { place: cannae, start: -215, end: -215 }
+  - { place: carthage, start: -202, end: -194 }
+  - { place: ephesus, start: -194, end: -189 }
+  - { place: libyssa }
 reviewed: false

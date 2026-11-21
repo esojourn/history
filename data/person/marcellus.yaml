@@ -1,5 +1,5 @@
 id: marcellus
-wikidata: null
+wikidata: Q312306
 civ: rome
 importance: 2
 birth:
@@ -7,7 +7,10 @@ birth:
   circa: true
 death:
   year: -207
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: venusia
+places:
+  - { place: syracuse, start: -213, end: -210 }
+  - { place: rome }
+  - { place: venusia, start: -207, end: -207 }
 reviewed: false

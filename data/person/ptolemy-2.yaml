@@ -1,5 +1,5 @@
 id: ptolemy-2
-wikidata: null
+wikidata: Q39576
 civ: egypt
 importance: 3
 birth:
@@ -8,9 +8,10 @@ birth:
 death:
   year: -245
 reign:
-  - start: -282
+  - start: -283
     end: -245
-birthplace: null
-deathplace: null
-places: []
+birthplace: kos
+deathplace: unknown
+places:
+  - { place: alexandria }
 reviewed: false

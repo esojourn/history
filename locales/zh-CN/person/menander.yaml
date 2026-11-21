@@ -1,7 +1,20 @@
 name: 米南德一世
 aliases:
   - 弥兰陀王
+  - 弥兰王
 role: 印度-希腊国王
-summary: 统治印度西北。佛经《弥兰陀王问经》里的弥兰陀王就是他。
-body: ""
-sources: []
+summary: 统治印度西北的希腊裔国王，即佛典《弥兰陀王问经》中的弥兰陀王。
+body: |-
+  公元前 2 世纪统治印度西北部的希腊裔国王。他的生卒和在位年代没有文献明载，只能依据钱币推定，学者多置于约前 165 或前 155 年至前 130 年之间。《弥兰陀王问经》说他生在阿荔散地方的一个村子，此地在何处有不同看法，本条出生地按不详处理。
+
+  希腊、罗马文献提到他的地方很少。斯特拉波《地理学》引阿波罗多洛斯之说，称巴克特里亚的希腊人征服的部族比亚历山大还多，尤其是米南德，“如果他确实渡过许帕尼斯河东进”。《厄立特里亚海航行记》说，婆卢羯车的市面上仍流通着印有阿波罗多托斯和米南德名号的旧钱。他的钱币数量多、出土范围广，正面用希腊文，背面用佉卢文，称“救主米南德王”，常见雅典娜像。
+
+  巴利文《弥兰陀王问经》记弥兰陀王在奢羯罗城与比丘那先问答佛理，汉译有《那先比丘经》；佛教传统说他后来让位于子、出家修行。普鲁塔克所记不同：米南德死于军中，诸城争着安葬他，最后分取骨灰，各自建碑纪念。他是否真的皈依佛教，学界看法不一。
+sources:
+  - 《弥兰陀王问经》（巴利文）；汉译《那先比丘经》（据英文维基条目转引）
+  - 斯特拉波《地理学》11.11.1 https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/11K*.html
+  - 普鲁塔克《道德论集·治国箴言》821D–E https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Praecepta_gerendae_reipublicae*.html
+  - 《厄立特里亚海航行记》第 47 节 https://depts.washington.edu/silkroad/texts/periplus/periplus.html
+  - 米南德一世钱币（希腊文、佉卢文双语铭文）（据英文维基条目转引）
+  - Wikipedia, "Menander I" https://en.wikipedia.org/wiki/Menander_I
+  - Wikipedia, "Milinda Panha" https://en.wikipedia.org/wiki/Milinda_Panha

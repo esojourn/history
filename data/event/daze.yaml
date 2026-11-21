@@ -1,10 +1,11 @@
 id: daze
+wikidata: Q760021
 civ: china
-type: null
+type: uprising
 importance: 4
 start:
   year: -208
-places: []
+places: [dazexiang, chen]
 participants:
   - person: chen-sheng
 reviewed: false

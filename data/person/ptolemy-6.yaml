@@ -1,16 +1,20 @@
 id: ptolemy-6
-wikidata: null
+wikidata: Q39952
 civ: egypt
 importance: 2
 birth:
   year: -185
-  circa: true
 death:
   year: -144
 reign:
   - start: -179
+    end: -163
+  - start: -162
     end: -144
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: antioch
+places:
+  - { place: alexandria }
+  - { place: rome, start: -163, end: -163 }
+  - { place: antioch, start: -144, end: -144 }
 reviewed: false

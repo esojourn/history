@@ -1,12 +1,13 @@
 id: burn
+wikidata: Q1147887
 civ: china
-type: null
+type: cultural
 importance: 3
 start:
   year: -212
 end:
   year: -211
-places: []
+places: [xianyang]
 participants:
   - person: ying-zheng
   - person: li-si

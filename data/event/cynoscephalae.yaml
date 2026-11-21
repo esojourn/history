@@ -1,10 +1,11 @@
 id: cynoscephalae
+wikidata: Q391087
 civ: greece
-type: null
+type: battle
 importance: 2
 start:
   year: -196
-places: []
+places: [cynoscephalae]
 participants:
   - person: philip-v
 reviewed: false

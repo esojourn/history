@@ -1,5 +1,5 @@
 id: zhao-gao
-wikidata: null
+wikidata: Q197436
 civ: china
 faction: qin
 importance: 3
@@ -8,7 +8,9 @@ birth:
   approx: -256
 death:
   year: -206
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: xianyang
+places:
+  - { place: xianyang }
+  - { place: shaqiu, start: -209, end: -209 }
 reviewed: false

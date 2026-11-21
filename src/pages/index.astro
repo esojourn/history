@@ -1,0 +1,5 @@
+---
+// 站点根目录：转到默认语言
+import { LANGS } from '../lib/dataset.mjs';
+return Astro.redirect(`/${LANGS[0].code}/`);
+---

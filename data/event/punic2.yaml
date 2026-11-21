@@ -1,12 +1,13 @@
 id: punic2
+wikidata: Q6271
 civ: rome
-type: null
+type: war
 importance: 5
 start:
   year: -217
 end:
   year: -200
-places: []
+places: [saguntum, cannae, syracuse, new-carthage, zama]
 participants:
   - person: hannibal
   - person: scipio

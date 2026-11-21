@@ -1,10 +1,11 @@
 id: julu
+wikidata: Q3270429
 civ: china
-type: null
+type: battle
 importance: 4
 start:
   year: -206
-places: []
+places: [julu]
 participants:
   - person: xiang-yu
 reviewed: false

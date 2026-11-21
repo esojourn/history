@@ -1,13 +1,16 @@
 id: fan-zeng
-wikidata: null
+wikidata: Q1195629
 civ: china
 faction: chu
 importance: 3
 birth:
   year: -276
+  circa: true
 death:
   year: -203
-birthplace: null
-deathplace: null
-places: []
+birthplace: juchao
+deathplace: unknown
+places:
+  - { place: hongmen, start: -205, end: -205 }
+  - { place: xingyang, start: -203, end: -203 }
 reviewed: false

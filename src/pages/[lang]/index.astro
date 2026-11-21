@@ -1,0 +1,53 @@
+---
+// 时间长河。这里只有页面骨架；图和交互在 src/river/ 里，数据由浏览器从 /data/<语言>.json 取。
+import Base from '../../layouts/Base.astro';
+import '../../styles/river.css';
+import '../../styles/detail.css';
+import { LANGS, build } from '../../lib/dataset.mjs';
+import { createModel } from '../../lib/model.js';
+
+export function getStaticPaths() {
+  return LANGS.map(l => ({ params: { lang: l.code } }));
+}
+const { lang } = Astro.params;
+const data = build(lang), t = createModel(structuredClone(data)).t;
+---
+<Base title={t('site.title')} desc={t('site.desc')} lang={data.htmlLang} bodyClass="river">
+  <div id="app" data-src={`/data/${lang}.json`} data-base={`/${lang}/`} style="display:contents">
+    <div id="d" hidden>
+      <header class="bar">
+        <h1>{t('site.title')}</h1>
+        <div class="seg" role="group">
+          {data.site.views.map(v => <button data-view={v.id}>{t(`view.${v.id}`)}</button>)}
+        </div>
+        <div class="seg" role="group">
+          <button data-open="default">{t('open.default')}</button><button data-open="all">{t('open.all')}</button><button data-open="none">{t('open.none')}</button>
+        </div>
+        <button class="find" id="find">{t('search.open')}</button>
+        <span class="hint">{t('hint.desktop')}</span>
+      </header>
+      <div class="wrap">
+        <div class="stage"><svg id="river" role="img" aria-label={t('river.aria')}></svg></div>
+        <div id="note" hidden>{t('note.range')}<button data-view="focus">{t('note.back')}</button></div>
+        <aside id="detail" class="detail"></aside>
+      </div>
+      <footer class="foot"><span id="legend"></span><span class="lvl" id="lvl"></span></footer>
+    </div>
+
+    <div id="m" hidden>
+      <header class="bar">
+        <h1>{t('site.title')}</h1>
+        <button class="find" id="mfind">{t('search.open')}</button>
+        <div class="seg" role="group">
+          <button data-m="bands" aria-pressed="true">{t('m.bands')}</button><button data-m="people" aria-pressed="false">{t('m.people')}</button>
+        </div>
+      </header>
+      <nav id="mtabs"></nav>
+      <div id="mbody"></div>
+      <aside id="msheet" class="detail sheet"></aside>
+    </div>
+  </div>
+  <script>
+    import '../../river/main.js';
+  </script>
+</Base>

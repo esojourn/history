@@ -1,5 +1,5 @@
 id: peng-yue
-wikidata: null
+wikidata: Q3274896
 civ: china
 faction: han
 importance: 2
@@ -8,7 +8,10 @@ birth:
   approx: -245
 death:
   year: -195
-birthplace: null
-deathplace: null
-places: []
+birthplace: changyi
+deathplace: luoyang
+places:
+  - { place: changyi }
+  - { place: gaixia, start: -201, end: -201 }
+  - { place: dingtao, start: -201, end: -195 }
 reviewed: false

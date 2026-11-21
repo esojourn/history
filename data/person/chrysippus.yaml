@@ -1,5 +1,5 @@
 id: chrysippus
-wikidata: null
+wikidata: Q211411
 civ: greece
 importance: 2
 birth:
@@ -8,7 +8,8 @@ birth:
 death:
   year: -205
   circa: true
-birthplace: null
-deathplace: null
-places: []
+birthplace: soli
+deathplace: athens
+places:
+  - { place: athens }
 reviewed: false

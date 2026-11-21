@@ -1,5 +1,5 @@
 id: polybius
-wikidata: null
+wikidata: Q131169
 civ: greece
 importance: 3
 birth:
@@ -8,7 +8,10 @@ birth:
 death:
   year: -117
   circa: true
-birthplace: null
-deathplace: null
-places: []
+birthplace: megalopolis
+deathplace: unknown
+places:
+  - { place: megalopolis }
+  - { place: rome, start: -166, end: -149 }
+  - { place: carthage, start: -145, end: -145 }
 reviewed: false

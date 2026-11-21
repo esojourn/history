@@ -1,11 +1,11 @@
 id: earth
 civ: egypt
-type: null
+type: cultural
 importance: 3
 start:
   year: -239
   circa: true
-places: []
+places: [alexandria, syene]
 participants:
   - person: eratosthenes
 reviewed: false

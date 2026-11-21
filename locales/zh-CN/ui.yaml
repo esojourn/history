@@ -1,0 +1,108 @@
+# 界面文字。翻译成别的语言时，复制这个文件到 locales/<语言>/ui.yaml 再逐条翻译。
+# {n} 这样的花括号是程序填进去的内容，翻译时保留。
+
+site.title: 时间长河
+site.desc: 把各个文明的历史放在同一条时间轴上，对照着看。
+
+# 年份
+year.bc: 前{n}
+year.ad: "{n}"
+year.ad1: 公元1
+year.bcFull: 公元前 {n} 年
+year.adFull: 公元 {n} 年
+circa: 约
+life.unknown: 生卒年不详
+life.bUnknown: 生年不详
+life.dUnknown: 卒年不详
+
+# 关系类型
+rel.kin: 亲属
+rel.lord: 君臣
+rel.rival: 敌对
+rel.ally: 同盟、同袍
+rel.mentor: 举荐、师友
+
+# 时间长河：顶栏
+view.world: 世界
+view.china: 中国
+view.focus: 秦汉之际
+open.default: 只展开中国
+open.all: 全部展开
+open.none: 全部收起
+hint.desktop: 滚轮缩放，上下左右拖动；点文明的名称或色带，展开或收起它的人物和大事
+note.range: 目前只录入了公元前 262 至前 138 年的人物。
+note.back: 回到秦汉之际
+river.noPeople: 这一时期没有留下姓名的人物
+river.aria: 各文明时间轴
+lvl.world: 当前：世界层，显示各文明的时代
+lvl.dynasty: 当前：朝代层，继续放大会出现人物
+lvl.people: 当前：人物层。条的长度是寿命，底部粗线是在位时间，一头渐隐表示生年或卒年不详
+
+# 时间长河：手机
+m.bands: 朝代
+m.people: 人物
+m.onlyOrder: 只排先后，不标年份
+m.years: "{n} 年"
+m.traditional: ，传统说法
+m.seePeople: 看这一段的人物
+m.mainOnly: 只看主要人物
+m.showAll: 显示全部 {n} 位人物
+m.guests: 虚线框是其他文明里与他相关的人，点一下就到那个文明去。
+
+# 搜索
+search.open: 搜索人物、事件
+search.placeholder: 输入名字、称号、身份或简介里的字
+search.aria: 搜索人物和事件
+search.people: 人物
+search.events: 事件
+search.none: 没有找到含“{q}”的{kind}。
+search.other: "{kind}里有 {n} 条，点上面的“{kind}”查看。"
+search.scope: 目前只收了公元前 262 至前 138 年前后的内容。
+
+# 详情卡
+card.back: 返回 {name}
+card.full: 展开全屏
+card.unfull: 收起全屏
+card.close: 关闭
+card.page: 单独打开这一页
+card.inRiver: 在时间长河里查看
+card.lived: 享年{circa} {n} 岁
+card.reign: "{a}—{b} 在位（{n} 年）"
+card.born: 生于{place}
+card.died: 卒于{place}
+card.at: 地点：{place}
+card.rels: 关系
+card.events: 参与的事件
+card.expandP: 展开全屏：生平年表、地点、同时代的人
+card.expandE: 展开全屏：相关人物、前后的事、同期的其他文明
+card.chron: 生平年表
+card.age: "{circa}{n} 岁"
+card.ageAt: 时年{age}
+card.places: 地点
+card.peers: 同时代的其他文明人物
+card.world: "{y}前后的世界"
+card.who: 相关人物
+card.duration: 历时 {n} 年
+card.before: 此前
+card.after: 此后
+card.near: "{lane}：前后的事"
+card.elsewhere: 前后五年内，其他文明的事
+card.sources: 信息出处
+source.ai: 本条文字由 AI 模型 Claude Fable 5.2 凭训练记忆写成，尚未对照史料查证，可能有误。
+source.recalled: 以下书目由 Claude Fable 5.2 凭训练记忆标注，尚未核对：
+source.mixed: 本条文字由 AI 模型 Claude Fable 5.2 整理：一部分查阅了上面列出的出处，其余凭训练记忆写成，尚未核对，可能有误。
+chron.born: 出生
+chron.bornCirca: 约于此年出生
+chron.reignStart: 开始在位
+chron.reignEnd: 在位结束
+chron.died: 去世
+chron.diedCirca: 约于此年去世
+chron.to: 至{y}
+place.birth: 出生地
+place.death: 去世地
+place.active: 活动地
+place.event: 发生地
+place.unknown: 史料未载
+place.modern: 今{m}
+place.disputed: 地望有争议
+review.pending: 本条文字由 AI 模型 Claude Fable 5.2 查阅以上出处后整理，尚未经人工逐句核对。

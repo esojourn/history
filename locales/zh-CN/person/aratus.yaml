@@ -1,6 +1,12 @@
 name: 阿拉托斯
-aliases: []
+aliases: [西库昂的阿拉托斯]
 role: 亚该亚同盟将军
 summary: 领导亚该亚同盟联合希腊诸城，周旋于马其顿与斯巴达之间。
-body: ""
-sources: []
+body: |-
+  伯罗奔尼撒北部的西库昂人，公元前 271 年生。据普鲁塔克，他七岁时父亲克莱尼亚斯在政变中被杀，他被送到阿尔戈斯，在那里长大。前 251 年他带领流亡者夜袭西库昂，赶走僭主，随后让这座城加入亚该亚同盟。前 245 年他第一次当选同盟将军，前 243 年趁夜攻取马其顿驻军把守的科林斯卫城，此后同盟不断扩大。
+
+  斯巴达王克莱奥梅尼三世进逼时，他转而向昔日的对手马其顿求援，把科林斯卫城交还给安提柯三世，联军于前 222 年在塞拉西亚击败斯巴达。腓力五世即位后他一度是其主要谋士，后因美塞尼等事疏远。前 213 年他在第十七次将军任上死于埃吉翁，归葬西库昂；波利比乌斯和普鲁塔克都说他是被腓力派人慢慢毒死的。他写过回忆录，波利比乌斯曾取材于此，今已不存。
+sources:
+  - 普鲁塔克《阿拉托斯传》 https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Aratus*.html
+  - 波利比乌斯《历史》卷二第 40—52 章；卷八第 12 章 https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/8*.html
+  - 英文维基百科“Aratus of Sicyon”（核对年份） https://en.wikipedia.org/wiki/Aratus_of_Sicyon

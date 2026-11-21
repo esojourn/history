@@ -1,10 +1,11 @@
 id: desecration
 civ: bible
-type: null
+type: cultural
 importance: 3
 start:
   year: -166
-places: []
+  circa: true
+places: [jerusalem]
 participants:
   - person: antiochus-4
 reviewed: false

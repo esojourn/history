@@ -1,13 +1,16 @@
 id: chao-cuo
-wikidata: null
+wikidata: Q1185798
 civ: china
 faction: han
 importance: 2
 birth:
-  year: -199
+  unknown: true
+  approx: -199
 death:
   year: -153
-birthplace: null
-deathplace: null
-places: []
+birthplace: yingchuan
+deathplace: changan
+places:
+  - { place: yingchuan }
+  - { place: changan }
 reviewed: false

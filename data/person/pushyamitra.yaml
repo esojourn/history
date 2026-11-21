@@ -1,5 +1,5 @@
 id: pushyamitra
-wikidata: null
+wikidata: Q119973
 civ: india
 importance: 2
 birth:
@@ -11,7 +11,8 @@ death:
 reign:
   - start: -184
     end: -148
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: pataliputra }
 reviewed: false

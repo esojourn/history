@@ -1,5 +1,5 @@
 id: ptolemy-5
-wikidata: null
+wikidata: Q39957
 civ: egypt
 importance: 2
 birth:
@@ -9,7 +9,9 @@ death:
 reign:
   - start: -203
     end: -179
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: alexandria }
+  - { place: memphis, start: -195, end: -195 }
 reviewed: false

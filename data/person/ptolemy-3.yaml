@@ -1,5 +1,5 @@
 id: ptolemy-3
-wikidata: null
+wikidata: Q39602
 civ: egypt
 importance: 3
 birth:
@@ -10,7 +10,9 @@ death:
 reign:
   - start: -245
     end: -221
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: alexandria }
+  - { place: antioch, start: -245, end: -245 }
 reviewed: false

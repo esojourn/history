@@ -1,5 +1,5 @@
 id: onias-3
-wikidata: null
+wikidata: Q740779
 civ: bible
 importance: 1
 birth:
@@ -8,7 +8,9 @@ birth:
 death:
   year: -170
   circa: true
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: antioch
+places:
+  - { place: jerusalem }
+  - { place: antioch }
 reviewed: false

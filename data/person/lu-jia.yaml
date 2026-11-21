@@ -1,14 +1,18 @@
 id: lu-jia
-wikidata: null
+wikidata: Q838188
 civ: china
 faction: han
 importance: 2
 birth:
-  year: -239
-  circa: true
+  unknown: true
+  approx: -239
 death:
-  year: -169
-birthplace: null
-deathplace: null
-places: []
+  unknown: true
+  approx: -169
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan }
+  - { place: panyu, start: -195, end: -195 }
+  - { place: panyu, start: -178, end: -178 }
 reviewed: false

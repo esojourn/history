@@ -1,6 +1,16 @@
 name: 费边
-aliases: []
+aliases: [ 昆图斯·费边·马克西姆斯, 拖延者 ]
 role: 罗马独裁官
 summary: 以拖延、消耗的办法对付汉尼拔，人称“拖延者”。
-body: ""
-sources: []
+body: |-
+  全名昆图斯·费边·马克西姆斯·维鲁科苏斯，出身罗马贵族费边氏族，生年不详，一般推定在公元前 280 年前后。据普鲁塔克，“维鲁科苏斯”这个绰号得自他上唇的一颗疣。他五次出任执政官，第一次在前 233 年，因战胜利古里亚人举行了凯旋式。
+
+  前 217 年罗马军队在特拉西梅诺湖覆没后，他被推为独裁官。他让军队沿高地尾随汉尼拔，不与之决战，只袭击其征粮队伍。这种打法在罗马很不得人心，骑兵长官米努基乌斯被破格授予与他同等的指挥权，随后贸然出战中伏，靠费边赶来救援才脱身，事后自愿重归其节制。
+
+  坎尼战败之后，他的办法成为罗马的既定方针。前 209 年他第五次任执政官，收复塔兰托。前 205 年他在元老院反对西庇阿渡海进攻非洲的计划，没有被采纳。前 203 年去世，没有看到战争结束。诗人恩尼乌斯称他“一个人靠拖延挽救了我们的国家”，“拖延者”的称号即由此而来。
+sources:
+  - 普鲁塔克《费边传》 https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Fabius_Maximus*.html
+  - 波利比乌斯《历史》卷三第 87—105 章 https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/3*.html
+  - 英文维基百科“Quintus Fabius Maximus Verrucosus”（核对年份） https://en.wikipedia.org/wiki/Quintus_Fabius_Maximus_Verrucosus
+recalled:
+  - 李维《罗马史》卷二十二第 8—30 章；卷二十七第 15—16 章；卷二十八第 40—42 章；卷三十第 26 章（去世，并引恩尼乌斯诗句）

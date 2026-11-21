@@ -1,5 +1,5 @@
 id: ptolemy-4
-wikidata: null
+wikidata: Q39595
 civ: egypt
 importance: 2
 birth:
@@ -8,9 +8,11 @@ birth:
 death:
   year: -203
 reign:
-  - start: -220
+  - start: -221
     end: -203
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: alexandria
+places:
+  - { place: alexandria }
+  - { place: raphia, start: -216, end: -216 }
 reviewed: false

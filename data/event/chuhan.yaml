@@ -1,12 +1,13 @@
 id: chuhan
+wikidata: Q1151705
 civ: china
-type: null
+type: war
 importance: 5
 start:
   year: -205
 end:
   year: -201
-places: []
+places: [hanzhong, pengcheng, xingyang, gaixia]
 participants:
   - person: liu-bang
   - person: xiang-yu

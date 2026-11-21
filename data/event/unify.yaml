@@ -1,12 +1,13 @@
 id: unify
+wikidata: Q2986801
 civ: china
-type: null
+type: war
 importance: 5
 start:
   year: -229
 end:
   year: -220
-places: []
+places: [handan, linzi]
 participants:
   - person: ying-zheng
   - person: li-si

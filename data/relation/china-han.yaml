@@ -57,8 +57,16 @@
 - from: lu-jia
   to: liu-bang
   type: lord
-  year: -199
+  year: -195
 - from: lu-jia
   to: chen-ping
   type: ally
   year: -180
+- from: liu-ying
+  to: cao-shen
+  type: lord
+  year: -192
+- from: liu-heng
+  to: zhou-yafu
+  type: lord
+  year: -157

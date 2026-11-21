@@ -1,13 +1,17 @@
 id: fan-kuai
-wikidata: null
+wikidata: Q1149550
 civ: china
 faction: han
 importance: 2
 birth:
-  year: -241
+  unknown: true
+  approx: -241
 death:
   year: -188
-birthplace: null
-deathplace: null
-places: []
+birthplace: pei
+deathplace: unknown
+places:
+  - { place: pei }
+  - { place: hongmen, start: -205, end: -205 }
+  - { place: changan }
 reviewed: false

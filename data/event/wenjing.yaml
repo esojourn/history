@@ -1,12 +1,13 @@
 id: wenjing
+wikidata: Q6148003
 civ: china
-type: null
+type: political
 importance: 4
 start:
   year: -179
 end:
   year: -140
-places: []
+places: [changan]
 participants:
   - person: liu-heng
   - person: liu-qi

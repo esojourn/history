@@ -1,5 +1,5 @@
 id: xiang-yu
-wikidata: null
+wikidata: Q182266
 civ: china
 faction: chu
 importance: 5
@@ -10,7 +10,12 @@ death:
 reign:
   - start: -205
     end: -201
-birthplace: null
-deathplace: null
-places: []
+birthplace: xiaxiang
+deathplace: wujiang
+places:
+  - { place: wu, end: -208 }
+  - { place: julu, start: -206, end: -206 }
+  - { place: pengcheng, start: -205, end: -201 }
+  - { place: xingyang, start: -204, end: -202 }
+  - { place: gaixia, start: -201, end: -201 }
 reviewed: false

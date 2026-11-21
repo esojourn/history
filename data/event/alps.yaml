@@ -1,10 +1,11 @@
 id: alps
+wikidata: Q1337302
 civ: rome
-type: null
+type: war
 importance: 3
 start:
   year: -217
-places: []
+places: [new-carthage, alps]
 participants:
   - person: hannibal
 reviewed: false

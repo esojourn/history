@@ -1,5 +1,5 @@
 id: zhou-bo
-wikidata: null
+wikidata: Q5366233
 civ: china
 faction: han
 importance: 3
@@ -8,7 +8,9 @@ birth:
   approx: -239
 death:
   year: -168
-birthplace: null
-deathplace: null
-places: []
+birthplace: pei
+deathplace: unknown
+places:
+  - { place: pei }
+  - { place: changan }
 reviewed: false

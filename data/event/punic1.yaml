@@ -1,12 +1,13 @@
 id: punic1
+wikidata: Q6286
 civ: rome
-type: null
+type: war
 importance: 4
 start:
   year: -263
 end:
   year: -240
-places: []
+places: [messana, aegates]
 participants:
   - person: hamilcar
 reviewed: false

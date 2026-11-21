@@ -1,11 +1,11 @@
 id: maurya-end
 civ: india
-type: null
+type: political
 importance: 3
 start:
   year: -184
   circa: true
-places: []
+places: [pataliputra]
 participants:
   - person: pushyamitra
 reviewed: false

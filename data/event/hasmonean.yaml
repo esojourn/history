@@ -1,10 +1,11 @@
 id: hasmonean
 civ: bible
-type: null
+type: founding
 importance: 3
 start:
   year: -141
-places: []
+  circa: true
+places: [jerusalem]
 participants:
   - person: simon
 reviewed: false

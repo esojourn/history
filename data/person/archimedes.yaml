@@ -1,5 +1,5 @@
 id: archimedes
-wikidata: null
+wikidata: Q8739
 civ: greece
 importance: 4
 birth:
@@ -7,7 +7,9 @@ birth:
   circa: true
 death:
   year: -211
-birthplace: null
-deathplace: null
-places: []
+  circa: true
+birthplace: syracuse
+deathplace: syracuse
+places:
+  - { place: syracuse }
 reviewed: false

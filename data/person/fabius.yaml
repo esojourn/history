@@ -1,5 +1,5 @@
 id: fabius
-wikidata: null
+wikidata: Q274545
 civ: rome
 importance: 3
 birth:
@@ -7,7 +7,9 @@ birth:
   circa: true
 death:
   year: -202
-birthplace: null
-deathplace: null
-places: []
+birthplace: rome
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: tarentum, start: -208, end: -208 }
 reviewed: false

@@ -1,13 +1,19 @@
 id: jia-yi
-wikidata: null
+wikidata: Q301650
 civ: china
 faction: han
 importance: 2
 birth:
   year: -199
+  circa: true
 death:
   year: -167
-birthplace: null
-deathplace: null
-places: []
+  circa: true
+birthplace: luoyang
+deathplace: unknown
+places:
+  - { place: luoyang }
+  - { place: changan }
+  - { place: changsha }
+  - { place: suiyang }
 reviewed: false

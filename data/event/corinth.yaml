@@ -1,9 +1,10 @@
 id: corinth
+wikidata: Q587983
 civ: greece
-type: null
+type: battle
 importance: 3
 start:
   year: -145
-places: []
+places: [corinth]
 participants: []
 reviewed: false

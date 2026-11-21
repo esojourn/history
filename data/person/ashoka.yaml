@@ -1,5 +1,5 @@
 id: ashoka
-wikidata: null
+wikidata: Q8589
 civ: india
 importance: 5
 birth:
@@ -7,10 +7,15 @@ birth:
   circa: true
 death:
   year: -231
+  circa: true
 reign:
   - start: -267
     end: -231
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: pataliputra
+places:
+  - { place: pataliputra }
+  - { place: ujjain }
+  - { place: taxila }
+  - { place: kalinga, start: -260, end: -260 }
 reviewed: false

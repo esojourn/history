@@ -1,12 +1,14 @@
 id: cato
-wikidata: null
+wikidata: Q180081
 civ: rome
 importance: 3
 birth:
   year: -233
 death:
   year: -148
-birthplace: null
-deathplace: null
-places: []
+birthplace: tusculum
+deathplace: unknown
+places:
+  - { place: tusculum }
+  - { place: rome }
 reviewed: false

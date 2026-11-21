@@ -1,5 +1,5 @@
 id: philip-v
-wikidata: null
+wikidata: Q237248
 civ: greece
 importance: 3
 birth:
@@ -9,7 +9,10 @@ death:
 reign:
   - start: -220
     end: -178
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: amphipolis
+places:
+  - { place: pella }
+  - { place: cynoscephalae, start: -196, end: -196 }
+  - { place: amphipolis }
 reviewed: false

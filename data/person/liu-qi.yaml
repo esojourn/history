@@ -1,16 +1,19 @@
 id: liu-qi
-wikidata: null
+wikidata: Q7224
 civ: china
 faction: han
 importance: 3
 birth:
   year: -187
+  circa: true
 death:
   year: -140
 reign:
   - start: -156
     end: -140
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: zhongdu, end: -179 }
+  - { place: changan, start: -179, end: -140 }
 reviewed: false

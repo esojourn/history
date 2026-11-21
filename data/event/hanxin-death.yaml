@@ -1,10 +1,11 @@
 id: hanxin-death
+wikidata: null
 civ: china
-type: null
+type: political
 importance: 3
 start:
   year: -195
-places: []
+places: [changan]
 participants:
   - person: han-xin
   - person: lv-zhi

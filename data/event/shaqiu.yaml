@@ -1,10 +1,11 @@
 id: shaqiu
+wikidata: Q11139460
 civ: china
-type: null
+type: political
 importance: 4
 start:
   year: -209
-places: []
+places: [shaqiu]
 participants:
   - person: ying-zheng
   - person: zhao-gao

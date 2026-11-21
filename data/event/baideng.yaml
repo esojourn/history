@@ -1,10 +1,11 @@
 id: baideng
+wikidata: Q3271565
 civ: china
-type: null
+type: battle
 importance: 3
 start:
   year: -199
-places: []
+places: [mayi, baideng]
 participants:
   - person: liu-bang
   - person: modu

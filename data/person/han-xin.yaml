@@ -1,14 +1,19 @@
 id: han-xin
-wikidata: null
+wikidata: Q574498
 civ: china
 faction: han
 importance: 4
 birth:
-  year: -230
-  circa: true
+  unknown: true
+  approx: -230
 death:
   year: -195
-birthplace: null
-deathplace: null
-places: []
+birthplace: huaiyin
+deathplace: changan
+places:
+  - { place: hanzhong, start: -205, end: -205 }
+  - { place: jingxing, start: -204, end: -204 }
+  - { place: linzi, start: -202, end: -201 }
+  - { place: gaixia, start: -201, end: -201 }
+  - { place: xiapi, start: -201, end: -200 }
 reviewed: false

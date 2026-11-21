@@ -1,5 +1,5 @@
 id: judas
-wikidata: null
+wikidata: Q111559
 civ: bible
 importance: 4
 birth:
@@ -7,7 +7,11 @@ birth:
   approx: -199
 death:
   year: -159
-birthplace: null
-deathplace: null
-places: []
+  circa: true
+birthplace: unknown
+deathplace: elasa
+places:
+  - { place: modein }
+  - { place: jerusalem, start: -163 }
+  - { place: elasa, start: -159, end: -159 }
 reviewed: false

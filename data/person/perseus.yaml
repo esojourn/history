@@ -1,5 +1,5 @@
 id: perseus
-wikidata: null
+wikidata: Q207363
 civ: greece
 importance: 2
 birth:
@@ -7,10 +7,14 @@ birth:
   circa: true
 death:
   year: -165
+  circa: true
 reign:
   - start: -178
     end: -167
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: alba-fucens
+places:
+  - { place: pella }
+  - { place: pydna, start: -167, end: -167 }
+  - { place: alba-fucens, start: -166 }
 reviewed: false

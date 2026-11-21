@@ -1,16 +1,20 @@
 id: simon
-wikidata: null
+wikidata: Q359711
 civ: bible
 importance: 2
 birth:
   unknown: true
   approx: -204
 death:
-  year: -134
+  year: -133
+  circa: true
 reign:
   - start: -141
-    end: -134
-birthplace: null
-deathplace: null
-places: []
+    end: -133
+birthplace: unknown
+deathplace: jericho
+places:
+  - { place: modein }
+  - { place: jerusalem, start: -141 }
+  - { place: jericho, start: -133, end: -133 }
 reviewed: false

@@ -1,5 +1,5 @@
 id: meng-tian
-wikidata: null
+wikidata: Q1151702
 civ: china
 faction: qin
 importance: 2
@@ -8,7 +8,9 @@ birth:
   approx: -259
 death:
   year: -209
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: yangzhou-shangjun
+places:
+  - { place: shangjun }
+  - { place: henan-di }
 reviewed: false

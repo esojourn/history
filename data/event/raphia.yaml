@@ -1,10 +1,10 @@
 id: raphia
 civ: egypt
-type: null
+type: battle
 importance: 3
 start:
   year: -216
-places: []
+places: [raphia]
 participants:
   - person: ptolemy-4
   - person: antiochus-3

@@ -1,5 +1,5 @@
 id: cao-shen
-wikidata: null
+wikidata: Q126832
 civ: china
 faction: han
 importance: 2
@@ -8,7 +8,10 @@ birth:
   approx: -239
 death:
   year: -189
-birthplace: null
-deathplace: null
-places: []
+birthplace: pei
+deathplace: unknown
+places:
+  - { place: pei }
+  - { place: linzi, start: -200, end: -192 }
+  - { place: changan, start: -192, end: -189 }
 reviewed: false

@@ -1,11 +1,11 @@
 id: envoys
 civ: india
-type: null
+type: diplomatic
 importance: 3
 start:
-  year: -249
+  year: -255
   circa: true
-places: []
+places: [pataliputra]
 participants:
   - person: ashoka
   - person: antiochus-2

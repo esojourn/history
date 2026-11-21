@@ -1,17 +1,20 @@
 id: mithridates-1
-wikidata: null
+wikidata: Q312442
 civ: meso
 faction: parthia
 importance: 3
 birth:
-  year: -194
-  circa: true
+  unknown: true
+  approx: -214
 death:
-  year: -131
+  year: -137
+  circa: true
 reign:
   - start: -170
-    end: -131
-birthplace: null
-deathplace: null
-places: []
+    end: -137
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ecbatana, start: -147 }
+  - { place: seleucia-tigris, start: -140 }
 reviewed: false

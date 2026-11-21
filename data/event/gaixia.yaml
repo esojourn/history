@@ -1,10 +1,11 @@
 id: gaixia
+wikidata: Q1349891
 civ: china
-type: null
+type: battle
 importance: 5
 start:
   year: -201
-places: []
+places: [gaixia, wujiang]
 participants:
   - person: xiang-yu
   - person: liu-bang

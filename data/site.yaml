@@ -1,8 +1,8 @@
-extent:
-  - -3000
-  - 2000
-focus:
-  - -261
-  - -137
-default_open:
-  - china
+# 时间长河的整体设置。年份用天文纪年：公元前 n 年 = 1 - n。
+extent: [-3000, 2000]        # 时间轴的两端
+focus: [-261, -137]          # 目前录有人物的范围（公元前 262—前 138 年）
+default_open: [china]        # 进入人物层时默认展开的文明
+views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 view.<id>
+  - { id: world, range: [-3000, 2000] }
+  - { id: china, range: [-2149, 2000] }
+  - { id: focus, range: [-261, -137] }

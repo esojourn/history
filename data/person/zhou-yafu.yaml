@@ -1,13 +1,17 @@
 id: zhou-yafu
-wikidata: null
+wikidata: Q3235773
 civ: china
 faction: han
 importance: 2
 birth:
-  year: -198
+  unknown: true
+  approx: -198
 death:
   year: -142
-birthplace: null
-deathplace: null
-places: []
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan }
+  - { place: xingyang, start: -153, end: -153 }
+  - { place: changyi, start: -153, end: -153 }
 reviewed: false
