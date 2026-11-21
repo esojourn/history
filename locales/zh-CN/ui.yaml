@@ -52,6 +52,10 @@ m.mainOnly: 只看主要人物
 m.showAll: 显示全部 {n} 位人物
 m.prevSeg: 上一段
 m.nextSeg: 下一段
+m.overview: ‹ 总览
+m.backBands: 回到朝代总览
+m.allShort: 全部 {n} 人
+m.mainShort: 只看主要
 m.guests: 虚线框是其他文明里与他相关的人，点一下就到那个文明去。
 
 # 搜索

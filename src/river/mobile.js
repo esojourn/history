@@ -30,12 +30,29 @@ export function mobile(H, card, search) {
   // 一年占多少像素：一百来年的一段 12；几百年的一段 8；只排先后的一段压得很扁
   let lo = f0, hi = f1, KY = 12;
   const y = v => (v - lo) * KY + TOP;
+  // 换文明时保持在同一年：取屏幕上方 REF 像素处对应的年份，换过去以后让同一年仍在这个位置
+  const REF = 110;
+  function yearAt() {
+    if (M.mode === 'people') return seg() ? lo + (body.scrollTop + REF - TOP) / KY : null;
+    const at = body.scrollTop + REF, l = H.lane(M.lane);
+    for (const el of body.querySelectorAll('.mband')) if (el.offsetTop + el.offsetHeight > at) {
+      const b = l.bands[+el.dataset.i]; return b[1] + (b[2] - b[1]) * H.clamp((at - el.offsetTop) / el.offsetHeight, 0, 1);
+    }
+    return null;
+  }
+  function bandsTo(v) {
+    const bs = H.lane(M.lane).bands, dist = b => v < b[1] ? b[1] - v : v > b[2] ? v - b[2] : 0;
+    let i = 0; bs.forEach((b, j) => { if (dist(b) < dist(bs[i])) i = j; });
+    const el = body.querySelector(`.mband[data-i="${i}"]`), b = bs[i];
+    if (el) body.scrollTop = Math.max(0, el.offsetTop + el.offsetHeight * H.clamp((v - b[1]) / (b[2] - b[1] || 1), 0, 1) - REF);
+  }
+  const nearSeg = (lane, v) => { const ss = SEG[lane], dist = s => v < s.lo ? s.lo - v : v > s.hi ? v - s.hi : 0; let i = 0; ss.forEach((s, j) => { if (dist(s) < dist(ss[i])) i = j; }); return i; };
 
   function bands() {
     const l = H.lane(M.lane);
     body.innerHTML = `<div style="--c:${l.c};padding:10px 0 40px">` + l.bands.map((b, i) => {
       const h = H.clamp((b[2] - b[1]) * .26, 40, 230), si = segs().findIndex(s => s.bands.includes(i));
-      return `<div class="mband ${b[3] || ''}"${inFocus(b) ? ' data-focus' : ''}><div class="yr">${b[3] === 'l' ? '' : (b[3] ? t('circa') : '') + H.fmt(b[1])}</div>
+      return `<div class="mband ${b[3] || ''}" data-i="${i}"${inFocus(b) ? ' data-focus' : ''}><div class="yr">${b[3] === 'l' ? '' : (b[3] ? t('circa') : '') + H.fmt(b[1])}</div>
         <div class="blk" style="min-height:${h}px"><b>${b[0]}</b>
         <small>${b[3] === 'l' ? t('m.onlyOrder') : t('m.years', { n: b[2] - b[1] }) + (b[3] ? t('m.traditional') : '')}</small>
         ${si >= 0 ? `<button class="go" data-m="people" data-seg="${si}">${t('m.seePeople')}</button>` : ''}</div></div>`;
@@ -46,7 +63,8 @@ export function mobile(H, card, search) {
 
   function people(keepScroll) {
     const sg = seg();
-    if (!sg) { body.innerHTML = `<p class="mnote">${t('river.noPeople')}</p>`; return; }
+    const back = `<button class="back" data-m="bands" aria-label="${t('m.backBands')}">${t('m.overview')}</button>`;
+    if (!sg) { body.innerHTML = `<div class="mseg">${back}</div><p class="mnote">${t('river.noPeople')}</p>`; return; }
     lo = sg.lo; hi = sg.hi; KY = sg.ns ? 1.6 : hi - lo > 330 ? 8 : 12;
     const mine = PL[M.lane].filter(p => within(p, lo, hi)), few = mine.length <= FEW;
     const selP = M.sel && M.sel.t === 'p' ? M.sel.id : null, selE = M.sel && M.sel.t === 'e' ? H.E[M.sel.id] : null;
@@ -93,9 +111,12 @@ export function mobile(H, card, search) {
       const xs = selE.who.map(w => H.P[w]).filter(p => colsAll.includes(p)).map(cx), Y = y(selE.s);
       if (xs.length) o.push(`<g pointer-events="none"><line x1="${AXW - 4}" x2="${Math.max(...xs)}" y1="${Y}" y2="${Y}" stroke="var(--ink)" stroke-width="1.4"/>${xs.map(v => `<circle cx="${v}" cy="${Y}" r="3.4" fill="var(--ink)"/>`).join('')}</g>`);
     }
-    // 分了几段的文明：顶上一条钉住的小栏，写明现在是哪一段，可以翻到上一段、下一段
-    const n = segs().length, nav = n > 1 ? `<div class="mseg" style="width:${body.clientWidth}px"><button data-seg="${M.seg - 1}"${M.seg ? '' : ' disabled'} aria-label="${t('m.prevSeg')}">‹</button>
-      <span><b>${sg.name}</b>${sg.ns ? t('m.onlyOrder') : `${H.fmt(Math.round(lo))}—${H.fmt(Math.round(hi))}`}</span><button data-seg="${M.seg + 1}"${M.seg < n - 1 ? '' : ' disabled'} aria-label="${t('m.nextSeg')}">›</button></div>` : '';
+    // 顶上一条钉住的小栏：回到朝代总览；写明现在是哪一段，分了几段的可以翻到上一段、下一段；人多时可显示全部人物
+    const n = segs().length, nav = `<div class="mseg" style="width:${body.clientWidth}px">${back}
+      ${n > 1 ? `<button data-seg="${M.seg - 1}"${M.seg ? '' : ' disabled'} aria-label="${t('m.prevSeg')}">‹</button>` : ''}
+      <span><b>${sg.name}</b><i>${sg.ns ? t('m.onlyOrder') : `${H.fmt(Math.round(lo))}—${H.fmt(Math.round(hi))}`}</i></span>
+      ${n > 1 ? `<button data-seg="${M.seg + 1}"${M.seg < n - 1 ? '' : ' disabled'} aria-label="${t('m.nextSeg')}">›</button>` : ''}
+      ${few ? '' : `<button class="all" data-all aria-pressed="${M.all}">${M.all ? t('m.mainShort') : t('m.allShort', { n: mine.length })}</button>`}</div>`;
     body.innerHTML = `${nav}<svg id="mpeople" width="${Wd}" height="${Ht}" viewBox="0 0 ${Wd} ${Ht}">${o.join('')}</svg>
       <div class="mmore">${few ? '' : `<button data-all>${M.all ? t('m.mainOnly') : t('m.showAll', { n: mine.length })}</button><br>`}${guests.length ? t('m.guests') : ''}</div>`;
     if (body.scrollTop !== st) body.scrollTop = st;
@@ -145,8 +166,20 @@ export function mobile(H, card, search) {
     const el = e.target, m = el.closest('[data-m]'), lane = el.closest('[data-lane]'), sg = el.closest('.mseg [data-seg]'), p = el.closest('[data-p]'), ev = el.closest('[data-e]');
     const to = cardTarget(e);
     const clear = () => { M.sel = null; M.all = false; M.full = false; showCard(); };
-    if (m) { M.mode = m.dataset.m; if (m.dataset.seg != null) M.seg = +m.dataset.seg; clear(); paint(); if (M.mode === 'people') toStart(); }
-    else if (lane) { M.lane = lane.dataset.lane; M.seg = defaultSeg(M.lane); clear(); paint(); if (M.mode === 'people') toStart(); }
+    if (m) {
+      const v = M.mode === 'people' ? yearAt() : null;
+      M.mode = m.dataset.m; if (m.dataset.seg != null) M.seg = +m.dataset.seg; clear(); paint();
+      if (M.mode === 'people') toStart(); else if (v != null) bandsTo(v);   // 从人物回到朝代：停在刚才看的那一段
+    }
+    else if (lane) {
+      // 换文明：仍看同一年。那个文明这一年没有人物，就看离这一年最近的一段
+      const v = yearAt();
+      M.lane = lane.dataset.lane; clear();
+      if (M.mode === 'people') {
+        M.seg = v == null ? defaultSeg(M.lane) : nearSeg(M.lane, v); paint();
+        if (v != null && seg()) body.scrollTop = Math.max(0, y(H.clamp(v, lo, hi)) - REF); else toStart();
+      } else { paint(); if (v != null) bandsTo(v); }
+    }
     else if (sg) { M.seg = +sg.dataset.seg; clear(); setHash(null); paint(); toStart(); }
     else if (el.closest('[data-all]')) { M.all = !M.all; paint(true); }
     else if (to) { HIST.push(M.sel); select(to, true); }
