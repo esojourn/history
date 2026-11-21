@@ -4,7 +4,7 @@ import { makeCard } from '../lib/card.js';
 import { createSearch } from './search.js';
 import { desktop } from './desktop.js';
 import { mobile } from './mobile.js';
-import { isMobile, fontButtons } from './util.js';
+import { isMobile, fontButtons, fitBars } from './util.js';
 
 (async () => {
   const app = document.querySelector('#app');
@@ -15,6 +15,7 @@ import { isMobile, fontButtons } from './util.js';
 
   if (isMobile()) { document.querySelector('#m').hidden = false; mobile(H, card, search); }
   else { document.querySelector('#d').hidden = false; desktop(H, card, search); }
+  fitBars();
 })();
 
 // 跨过手机和桌面的分界线时重新载入，换成另一套布局

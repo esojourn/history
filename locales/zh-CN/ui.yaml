@@ -50,7 +50,7 @@ lvl.dynasty: 当前：朝代层，继续放大会出现人物
 lvl.people: 当前：人物层。条的长度是寿命，底部粗线是在位时间，一头渐隐表示生年或卒年不详
 
 # 时间长河：手机
-m.bands: 朝代
+m.bands: 时代
 m.people: 人物
 m.onlyOrder: 只排先后，不标年份
 m.years: "{n} 年"
@@ -62,7 +62,7 @@ m.prevSeg: 上一段
 m.nextSeg: 下一段
 m.nextSegTo: 下一段：{name} ›
 m.overview: ‹ 总览
-m.backBands: 回到朝代总览
+m.backBands: 回到时代总览
 m.allShort: 全部 {n} 人
 m.mainShort: 只看主要
 m.guests: 虚线框是其他文明里与他相关的人，点一下就到那个文明去。

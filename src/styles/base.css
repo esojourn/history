@@ -64,6 +64,8 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 }
 .sheet.on { transform: none; }
 @media (prefers-reduced-motion: reduce) { .sheet { transition: none; } }
-/* 字号放大后顶栏的按钮不折行；放不下时提示文字先省略，手机上整行换到下一行 */
+/* 顶栏：按钮不折行。放不下时提示文字先省略；还放不下就隐藏标题（见 util.js fitBars），再不行才换行 */
+.bar { flex-wrap: wrap; }
 .bar button { white-space: nowrap; }
-.bar h1, .bar .seg, .bar .about-btn { flex-shrink: 0; }
+.bar h1, .bar .seg { flex-shrink: 0; }
+.bar.notitle h1 { display: none; }

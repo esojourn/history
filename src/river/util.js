@@ -21,6 +21,16 @@ export function fontButtons() {
     sync(); dispatchEvent(new Event('fzchange'));
   });
   sync();
+  addEventListener('fzchange', fitBars); addEventListener('resize', fitBars);
+}
+// 顶栏一行放不下（会换行）时隐藏标题“世界历史”
+export function fitBars() {
+  document.querySelectorAll('.bar').forEach(bar => {
+    if (!bar.offsetParent) return;
+    bar.classList.remove('notitle');
+    const tops = [...bar.children].filter(c => c.offsetParent).map(c => c.getBoundingClientRect().top);
+    if (Math.max(...tops) - Math.min(...tops) > 12) bar.classList.add('notitle');
+  });
 }
 
 export const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;

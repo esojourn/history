@@ -3,7 +3,7 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 
 /* ---------- 桌面 ---------- */
 #d { display: flex; flex-direction: column; flex: 1; min-height: 0; }
-#d .hint { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+#d .hint { overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1 1 0; text-align: right; }
 .wrap { position: relative; flex: 1; min-height: 0; }
 .stage { position: absolute; inset: 0; overflow-y: auto; overflow-x: hidden; }
 #river { display: block; width: 100%; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
@@ -33,17 +33,14 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 #detail.on { display: block; }
 #detail.full { position: fixed; inset: 0; width: auto; z-index: 30; box-shadow: none; }
 .sheet.full { top: 0; max-height: none; border-radius: 0; }
-#mfind { flex: 1 1 50%; min-width: 0; width: auto; order: 3; }
+#mfind { flex: 1 1 4.5em; min-width: 0; width: auto; }
 .foot { display: flex; align-items: center; padding: 6px 16px; border-top: 1px solid var(--line); min-height: 32px; }
 .foot .lvl { margin-left: auto; font-size: calc(12px * var(--fz)); color: var(--ink-2); }
 
 /* ---------- 手机 ---------- */
 #m { display: flex; flex-direction: column; flex: 1; min-height: 0; }
-#m .bar { gap: 8px 10px; padding: 8px 12px; flex-wrap: wrap; }
+#m .bar { gap: 8px; padding: 8px 10px; }
 #m .bar h1 { font-size: calc(20px * var(--fz)); }
-/* 手机顶栏两行：标题、说明、字号一行；搜索、朝代/人物一行 */
-#m .bar .seg { order: 4; }
-#m .bar .seg.fz { order: 2; margin-left: auto; }
 #mtabs { display: flex; gap: 6px; overflow-x: auto; padding: 8px 12px; border-bottom: 1px solid var(--line); scrollbar-width: none; }
 #mtabs button { flex: none; border: 1px solid var(--line); background: var(--card); border-radius: 14px; padding: 3px 12px; font-size: calc(13px * var(--fz)); }
 #mtabs button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
@@ -78,8 +75,6 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 .mseg button:disabled { opacity: .3; }
 
 /* 说明弹窗（内容取自 README） */
-.about-btn { margin-left: .4rem; }
-#d .bar .about-btn { order: 0; }
 dialog.about { width: min(860px, 94vw); max-height: 88vh; padding: 0; border: 1px solid #ccc; border-radius: 8px; overflow: auto; }
 dialog.about::backdrop { background: rgba(0,0,0,.4); }
 .about-close { position: sticky; top: 0; text-align: right; background: #fff; padding: .3rem .6rem 0; }
