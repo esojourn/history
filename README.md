@@ -48,7 +48,23 @@
 - `npm run validate`：检查数据（年份先后、引用的人物和地点是否存在等），并列出还缺什么。
 - `npm run build`：先校验，再生成 `dist/`。整个 `dist/` 目录是纯静态文件，放到任何能放静态文件的主机上即可。
 
-目录：`data/` 结构数据，`locales/zh-CN/` 中文文字，`src/` 站点代码，`scripts/` 校验脚本。
+目录：`data/` 结构数据，`locales/zh-CN/` 中文文字，`src/` 站点代码，`scripts/` 校验脚本，`deploy/` 服务器更新脚本。
+
+### 更新线上版本
+
+内容推送到 GitHub 后，登录服务器，以 root 执行：
+
+```bash
+history-update
+```
+
+它会拉取 GitHub `main` 分支最新代码、检查数据并构建，然后换上新版本，并检查网站能否打开；检查不通过会自动退回原版本。其他用法：
+
+- `history-update list`：看服务器上保留了哪些版本、当前是哪个。
+- `history-update rollback`：退回上一个版本（也可在后面写版本号，退回指定版本）。
+- `history-update <提交哈希>`：发布指定的某个提交。
+
+服务器上保留最近 5 个版本。脚本是 [deploy/update.sh](deploy/update.sh)，`/usr/local/bin/history-update` 指向服务器上代码副本里的这个文件，所以脚本本身的修改推送后，下一次更新时就自动生效。
 
 ## 展现形式示例
 
