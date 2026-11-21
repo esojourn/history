@@ -1,0 +1,13 @@
+id: lot
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -2150 }
+death: { unknown: true, approx: -2050 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: haran }
+  - { place: bethel }
+  - { place: sodom }
+reviewed: false

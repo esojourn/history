@@ -1,0 +1,15 @@
+id: elisha
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -889 }
+death: { unknown: true, approx: -797 }
+birthplace: abel-meholah
+deathplace: unknown
+places:
+  - { place: gilgal }
+  - { place: jericho }
+  - { place: carmel }
+  - { place: samaria }
+  - { place: damascus }
+reviewed: false

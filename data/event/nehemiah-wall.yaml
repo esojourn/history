@@ -1,0 +1,11 @@
+id: nehemiah-wall
+civ: bible
+type: political
+importance: 4
+start: { year: -444 }
+places: [susa, jerusalem]
+participants:
+  - person: nehemiah
+  - person: artaxerxes-1
+  - person: ezra
+reviewed: false

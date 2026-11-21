@@ -1,0 +1,10 @@
+id: temple-built
+civ: bible
+type: cultural
+importance: 5
+start: { year: -965, circa: true }
+end: { year: -958, circa: true }
+places: [jerusalem]
+participants:
+  - person: solomon
+reviewed: false

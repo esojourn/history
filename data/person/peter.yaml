@@ -1,0 +1,15 @@
+id: peter
+wikidata: null
+civ: bible
+importance: 5
+birth: { unknown: true, approx: -1 }
+death: { year: 65, circa: true }
+birthplace: bethsaida
+deathplace: rome
+places:
+  - { place: capernaum, end: 30 }
+  - { place: jerusalem, start: 30 }
+  - { place: caesarea }
+  - { place: antioch }
+  - { place: rome, end: 65 }
+reviewed: false

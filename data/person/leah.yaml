@@ -1,0 +1,13 @@
+id: leah
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -1945 }
+death: { unknown: true, approx: -1885 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: haran }
+  - { place: shechem }
+  - { place: hebron }
+reviewed: false

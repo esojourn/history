@@ -25,10 +25,12 @@ export function createModel(data, base = '/') {
 
   H.life = p => {
     const c = H.t('circa');
+    if (p.ns) return H.t('life.order');
     if (p.b == null && p.dq) return H.t('life.unknown');
     return `${p.b == null ? H.t('life.bUnknown') : (p.circa ? c : '') + H.fmt(p.b)}—${p.dq ? H.t('life.dUnknown') : (p.dc ? c : '') + H.fmt(p.d)}`;
   };
-  H.span = e => (e.circa ? H.t('circa') : '') + (e.e > e.s ? `${H.fmt(e.s)}—${H.fmt(e.e)}` : H.fmt(e.s));
+  H.span = e => (e.ns ? H.t('life.order') : (e.circa ? H.t('circa') : '') + (e.e > e.s ? `${H.fmt(e.s)}—${H.fmt(e.e)}` : H.fmt(e.s)));
+  H.when = e => (e.ns ? '' : H.span(e));   // 列表里用：只排先后的事不必每行都重复那句话
 
   // 一个人的全部关系。没有标年份的，取双方都在世那段时间的中点来画线
   H.relsOf = id => H.rels.filter(r => r.a === id || r.b === id).map(r => {

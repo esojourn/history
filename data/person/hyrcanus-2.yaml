@@ -1,0 +1,12 @@
+id: hyrcanus-2
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -109 }
+death: { year: -29 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+  - { place: babylon, start: -39 }
+reviewed: false

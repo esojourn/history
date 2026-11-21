@@ -1,0 +1,14 @@
+id: deborah
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -1260 }
+death: { unknown: true, approx: -1190 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ramah }
+  - { place: bethel }
+  - { place: kedesh-naphtali }
+  - { place: tabor }
+reviewed: false

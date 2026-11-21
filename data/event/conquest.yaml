@@ -1,0 +1,11 @@
+id: conquest
+civ: bible
+type: war
+importance: 4
+start: { year: -1405, circa: true }
+end: { year: -1399, circa: true }
+places: [jericho, gilgal, shiloh]
+participants:
+  - person: joshua
+  - person: caleb
+reviewed: false

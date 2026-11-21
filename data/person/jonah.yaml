@@ -1,0 +1,12 @@
+id: jonah
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -809 }
+death: { unknown: true, approx: -749 }
+birthplace: gath-hepher
+deathplace: unknown
+places:
+  - { place: gath-hepher }
+  - { place: nineveh }
+reviewed: false

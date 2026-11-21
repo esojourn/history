@@ -1,0 +1,9 @@
+id: herod-temple
+civ: bible
+type: cultural
+importance: 3
+start: { year: -19, circa: true }
+places: [jerusalem]
+participants:
+  - person: herod
+reviewed: false

@@ -1,0 +1,13 @@
+id: artaxerxes-1
+wikidata: null
+civ: meso
+importance: 2
+birth: { unknown: true, approx: -489 }
+death: { year: -423 }
+reign:
+  - { start: -464, end: -423 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: susa }
+reviewed: false

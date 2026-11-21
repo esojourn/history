@@ -1,0 +1,12 @@
+id: pilate
+wikidata: null
+civ: rome
+importance: 3
+birth: { unknown: true, approx: -11 }
+death: { unknown: true, approx: 39 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: caesarea, start: 26, end: 36 }
+  - { place: jerusalem, start: 26, end: 36 }
+reviewed: false

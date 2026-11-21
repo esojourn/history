@@ -1,0 +1,10 @@
+id: david-jerusalem
+civ: bible
+type: founding
+importance: 4
+start: { year: -1002, circa: true }
+places: [hebron, jerusalem]
+participants:
+  - person: david
+  - person: joab
+reviewed: false

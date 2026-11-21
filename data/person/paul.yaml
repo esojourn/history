@@ -1,0 +1,15 @@
+id: paul
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 5, circa: true }
+death: { year: 65, circa: true }
+birthplace: tarsus
+deathplace: rome
+places:
+  - { place: jerusalem }
+  - { place: antioch }
+  - { place: corinth, start: 50, end: 52 }
+  - { place: ephesus }
+  - { place: rome, start: 60 }
+reviewed: false

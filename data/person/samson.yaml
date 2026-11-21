@@ -1,0 +1,13 @@
+id: samson
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -1110 }
+death: { unknown: true, approx: -1070 }
+birthplace: zorah
+deathplace: gaza
+places:
+  - { place: zorah }
+  - { place: hebron }
+  - { place: gaza }
+reviewed: false

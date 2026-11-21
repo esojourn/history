@@ -1,0 +1,14 @@
+id: manasseh
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -708, circa: true }
+death: { year: -641, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+  - { place: babylon }
+reign:
+  - { start: -696, end: -641 }
+reviewed: false

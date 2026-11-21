@@ -1,0 +1,11 @@
+id: first-deportation
+civ: bible
+type: war
+importance: 3
+start: { year: -596 }
+places: [jerusalem, babylon]
+participants:
+  - person: nebuchadnezzar-2
+  - person: jehoiachin
+  - person: ezekiel
+reviewed: false

@@ -1,0 +1,13 @@
+id: jehoiachin
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: -614, circa: true }
+death: { unknown: true, approx: -555 }
+reign: [{ start: -596, end: -596 }]
+birthplace: unknown
+deathplace: babylon
+places:
+  - { place: jerusalem, end: -596 }
+  - { place: babylon, start: -596 }
+reviewed: false

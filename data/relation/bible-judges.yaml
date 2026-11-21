@@ -1,0 +1,13 @@
+- from: deborah
+  to: barak
+  type: ally
+- from: boaz
+  to: ruth
+  type: kin
+- from: hannah
+  to: samuel
+  type: kin
+- from: eli
+  to: samuel
+  type: mentor
+  year: -1090

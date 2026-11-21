@@ -1,0 +1,11 @@
+id: adam
+wikidata: null
+civ: bible
+importance: 5
+era: primeval
+seq: [1, 6]
+birthplace: eden
+deathplace: unknown
+places:
+  - { place: eden }
+reviewed: false

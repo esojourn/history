@@ -1,0 +1,11 @@
+id: jephthah
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1150 }
+death: { unknown: true, approx: -1090 }
+birthplace: gilead
+deathplace: gilead
+places:
+  - { place: gilead }
+reviewed: false

@@ -1,0 +1,12 @@
+id: rachel
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1942 }
+death: { unknown: true, approx: -1900 }
+birthplace: unknown
+deathplace: bethlehem
+places:
+  - { place: haran }
+  - { place: bethel }
+reviewed: false

@@ -1,0 +1,13 @@
+id: hoshea
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -769 }
+death: { unknown: true, approx: -715 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: samaria }
+reign:
+  - { start: -731, end: -721 }
+reviewed: false

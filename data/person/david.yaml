@@ -1,0 +1,15 @@
+id: david
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: -1039, circa: true }
+death: { year: -969, circa: true }
+reign: [{ start: -1009, end: -969 }]
+birthplace: bethlehem
+deathplace: jerusalem
+places:
+  - { place: bethlehem }
+  - { place: gibeah }
+  - { place: hebron, start: -1009, end: -1002 }
+  - { place: jerusalem, start: -1002, end: -969 }
+reviewed: false

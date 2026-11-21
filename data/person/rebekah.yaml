@@ -1,0 +1,14 @@
+id: rebekah
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -2040 }
+death: { unknown: true, approx: -1920 }
+long_life: true          # 雅各约 77 岁离家时（创 27—28 章）利百加仍在世
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: haran }
+  - { place: gerar }
+  - { place: beersheba }
+reviewed: false

@@ -28,7 +28,7 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
       </header>
       <div class="wrap">
         <div class="stage"><svg id="river" role="img" aria-label={t('river.aria')}></svg></div>
-        <div id="note" hidden>{t('note.range')}<button data-view="focus">{t('note.back')}</button></div>
+        <div id="note" hidden><span id="note-t"></span><button data-view="focus">{t('note.back')}</button></div>
         <aside id="detail" class="detail"></aside>
       </div>
       <footer class="foot"><span id="legend"></span><span class="lvl" id="lvl"></span></footer>

@@ -1,0 +1,13 @@
+id: judah
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1918 }
+death: { unknown: true, approx: -1820 }
+birthplace: haran
+deathplace: unknown
+places:
+  - { place: hebron }
+  - { place: dothan, start: -1897, end: -1897 }
+  - { place: goshen, start: -1875 }
+reviewed: false

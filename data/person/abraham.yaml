@@ -1,0 +1,16 @@
+id: abraham
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: -2165, circa: true }
+death: { year: -1990, circa: true }
+long_life: true
+birthplace: ur
+deathplace: unknown
+places:
+  - { place: haran }
+  - { place: shechem, start: -2090 }
+  - { place: egypt }
+  - { place: hebron }
+  - { place: beersheba }
+reviewed: false

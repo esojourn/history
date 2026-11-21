@@ -1,0 +1,18 @@
+id: jesus-ministry
+civ: bible
+type: cultural
+importance: 4
+start: { year: 27, circa: true }
+end: { year: 30, circa: true }
+places: [galilee, capernaum, jerusalem]
+participants:
+  - person: jesus
+  - person: john-baptist
+  - person: peter
+  - person: john-apostle
+  - person: james-zebedee
+  - person: matthew
+  - person: thomas
+  - person: mary-magdalene
+  - person: judas-iscariot
+reviewed: false

@@ -1,0 +1,13 @@
+id: absalom
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1006 }
+death: { unknown: true, approx: -976 }
+birthplace: hebron
+deathplace: ephraim-forest
+places:
+  - { place: hebron }
+  - { place: jerusalem }
+  - { place: ephraim-forest }
+reviewed: false

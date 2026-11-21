@@ -1,0 +1,14 @@
+id: ahaz
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -755 }
+death: { year: -714, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+  - { place: damascus }
+reign:
+  - { start: -734, end: -714 }
+reviewed: false

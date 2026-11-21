@@ -1,0 +1,15 @@
+id: sarah
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: -2155, circa: true }
+death: { year: -2028, circa: true }
+long_life: true
+birthplace: unknown
+deathplace: hebron
+places:
+  - { place: haran }
+  - { place: egypt }
+  - { place: gerar }
+  - { place: hebron }
+reviewed: false

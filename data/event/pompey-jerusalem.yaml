@@ -1,0 +1,10 @@
+id: pompey-jerusalem
+civ: bible
+type: war
+importance: 4
+start: { year: -62 }
+places: [jerusalem]
+participants:
+  - person: pompey
+  - person: hyrcanus-2
+reviewed: false

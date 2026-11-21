@@ -1,0 +1,12 @@
+id: judas-iscariot
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1 }
+death: { year: 30, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: galilee, start: 27 }
+  - { place: jerusalem, start: 30, end: 30 }
+reviewed: false

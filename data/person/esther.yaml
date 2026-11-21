@@ -1,0 +1,11 @@
+id: esther
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -504 }
+death: { unknown: true, approx: -449 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: susa }
+reviewed: false

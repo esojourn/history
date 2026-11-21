@@ -1,0 +1,16 @@
+id: moses
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: -1525, circa: true }
+death: { year: -1405, circa: true }
+long_life: true
+birthplace: goshen
+deathplace: nebo
+places:
+  - { place: egypt }
+  - { place: midian }
+  - { place: sinai, start: -1445 }
+  - { place: kadesh-barnea }
+  - { place: moab, end: -1405 }
+reviewed: false

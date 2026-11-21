@@ -1,0 +1,11 @@
+id: abraham-call
+civ: bible
+type: migration
+importance: 4
+start: { year: -2090, circa: true }
+places: [haran, shechem]
+participants:
+  - person: abraham
+  - person: sarah
+  - person: lot
+reviewed: false

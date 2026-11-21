@@ -1,0 +1,14 @@
+id: omri
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -929 }
+death: { year: -873, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: tirzah, start: -884 }
+  - { place: samaria }
+reign:
+  - { start: -884, end: -873 }
+reviewed: false

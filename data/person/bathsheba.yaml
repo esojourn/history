@@ -1,0 +1,11 @@
+id: bathsheba
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1020 }
+death: { unknown: true, approx: -950 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+reviewed: false

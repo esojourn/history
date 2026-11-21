@@ -1,0 +1,10 @@
+id: saul-king
+civ: bible
+type: founding
+importance: 3
+start: { year: -1049, circa: true }
+places: [mizpah, gilgal]
+participants:
+  - person: samuel
+  - person: saul
+reviewed: false

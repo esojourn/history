@@ -1,0 +1,10 @@
+id: kingdom-split
+civ: bible
+type: political
+importance: 5
+start: { year: -929, circa: true }
+places: [shechem]
+participants:
+  - person: rehoboam
+  - person: jeroboam-1
+reviewed: false

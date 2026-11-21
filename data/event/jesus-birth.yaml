@@ -1,0 +1,12 @@
+id: jesus-birth
+civ: bible
+type: cultural
+importance: 5
+start: { year: -4, circa: true }
+places: [bethlehem]
+participants:
+  - person: jesus
+  - person: mary
+  - person: joseph-of-nazareth
+  - person: herod
+reviewed: false

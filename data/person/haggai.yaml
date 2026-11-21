@@ -1,0 +1,11 @@
+id: haggai
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -579 }
+death: { unknown: true, approx: -514 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem, start: -519 }
+reviewed: false

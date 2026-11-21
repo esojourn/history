@@ -1,0 +1,11 @@
+id: noah
+wikidata: null
+civ: bible
+importance: 5
+era: primeval
+seq: [10, 15]
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ararat }
+reviewed: false

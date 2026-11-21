@@ -1,0 +1,11 @@
+id: jacob-egypt
+civ: bible
+type: migration
+importance: 4
+start: { year: -1875, circa: true }
+places: [beersheba, goshen]
+participants:
+  - person: jacob
+  - person: joseph
+  - person: judah
+reviewed: false

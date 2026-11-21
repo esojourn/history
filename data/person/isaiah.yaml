@@ -1,0 +1,11 @@
+id: isaiah
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: -769 }
+death: { unknown: true, approx: -685 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+reviewed: false

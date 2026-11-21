@@ -57,6 +57,12 @@ for (const [id, p] of Object.entries(raw.person)) {
   if (!raw.polity[p.civ]) err(w, `civ“${p.civ}”不存在`);
   if (p.faction && !factions.has(p.faction)) err(w, `faction“${p.faction}”不存在`);
   if (!(p.importance >= 1 && p.importance <= 5)) err(w, 'importance 应为 1–5');
+  if (p.seq != null) {
+    const band = (raw.polity[p.civ]?.periods || []).find(x => x.id === p.era);
+    if (!band || band.certainty !== 'legendary') err(w, 'seq 只用于“只排先后”的时期，era 要写那个时期的 id');
+    if (!Array.isArray(p.seq) || p.seq.length !== 2 || !p.seq.every(isInt) || p.seq[0] > p.seq[1] || p.seq[0] < 1) err(w, 'seq 应为 [起, 止] 两个正整数');
+    if (!p.noscale) continue;
+  }
   const bu = unknown(p.birth), du = unknown(p.death);
   if (!p.birth || !p.death) { err(w, '缺 birth 或 death（不详请写 { unknown: true, approx: 年份 }）'); continue; }
   if (!bu && !isInt(p.birth.year)) err(w, 'birth.year 应为整数');
@@ -65,7 +71,8 @@ for (const [id, p] of Object.entries(raw.person)) {
   const b = bu ? (isInt(p.birth.approx) ? p.birth.approx : null) : p.birth.year, d = du ? p.death.approx : p.death.year;
   if (isInt(b) && isInt(d)) {
     if (d < b) err(w, '卒年早于生年');
-    if (d - b > 110) err(w, `寿命 ${d - b} 岁，请核对`);
+    // long_life: true —— 史料明确记载、或由记载可以推知的高寿（如圣经所记族长的岁数），核对过才加
+    if (d - b > 110 && !p.noscale && !p.long_life) err(w, `寿命 ${d - b} 岁，请核对（史料确有记载的，加 long_life: true）`);
   }
   life[id] = [isInt(b) ? b : d - 50, d];
   for (const r of p.reign || []) {
@@ -91,6 +98,11 @@ for (const [id, e] of Object.entries(raw.event)) {
   const w = `event/${id}`, t = tx.event[id] || {};
   if (e.id !== id) err(w, 'id 与文件名不一致');
   if (!raw.polity[e.civ]) err(w, `civ“${e.civ}”不存在`);
+  if (e.seq != null) {
+    const band = (raw.polity[e.civ]?.periods || []).find(x => x.id === e.era);
+    if (!band || band.certainty !== 'legendary') err(w, 'seq 只用于“只排先后”的时期，era 要写那个时期的 id');
+    if (!isInt(e.seq) || e.seq < 1) err(w, '事件的 seq 应为一个正整数');
+  }
   if (!e.start || !isInt(e.start.year)) { err(w, 'start.year 应为整数'); continue; }
   if (e.end && (!isInt(e.end.year) || e.end.year < e.start.year)) err(w, 'end 早于 start');
   if (e.type == null) warn('事件没有类型', w); else if (!EVENT_TYPES.has(e.type)) err(w, `type“${e.type}”不在规定的几种之内`);

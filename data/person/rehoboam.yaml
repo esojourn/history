@@ -1,0 +1,14 @@
+id: rehoboam
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -970, circa: true }
+death: { year: -912, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: shechem, start: -929, end: -929 }
+  - { place: jerusalem }
+reign:
+  - { start: -929, end: -912 }
+reviewed: false

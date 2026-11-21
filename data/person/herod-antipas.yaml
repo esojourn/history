@@ -1,0 +1,15 @@
+id: herod-antipas
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -19, circa: true }
+death: { unknown: true, approx: 40 }
+reign:
+  - { start: -3, end: 39 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: galilee, start: -3, end: 39 }
+  - { place: machaerus }
+  - { place: jerusalem }
+reviewed: false

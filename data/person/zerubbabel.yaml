@@ -1,0 +1,12 @@
+id: zerubbabel
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -569 }
+death: { unknown: true, approx: -509 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: babylon }
+  - { place: jerusalem, start: -537 }
+reviewed: false

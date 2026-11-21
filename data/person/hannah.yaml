@@ -1,0 +1,12 @@
+id: hannah
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -1130 }
+death: { unknown: true, approx: -1070 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ramah }
+  - { place: shiloh }
+reviewed: false

@@ -1,0 +1,13 @@
+id: matthew
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 1 }
+death: { unknown: true, approx: 70 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: capernaum }
+  - { place: galilee, start: 27, end: 30 }
+  - { place: jerusalem, start: 30 }
+reviewed: false

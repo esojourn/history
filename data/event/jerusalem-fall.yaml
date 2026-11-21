@@ -1,0 +1,12 @@
+id: jerusalem-fall
+civ: bible
+type: war
+importance: 5
+start: { year: -587 }
+end: { year: -585 }
+places: [jerusalem]
+participants:
+  - person: nebuchadnezzar-2
+  - person: zedekiah
+  - person: jeremiah
+reviewed: false

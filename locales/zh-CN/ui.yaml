@@ -14,6 +14,7 @@ circa: 约
 life.unknown: 生卒年不详
 life.bUnknown: 生年不详
 life.dUnknown: 卒年不详
+life.order: 只排先后，不标年份
 
 # 关系类型
 rel.kin: 亲属
@@ -25,12 +26,14 @@ rel.mentor: 举荐、师友
 # 时间长河：顶栏
 view.world: 世界
 view.china: 中国
+view.bible: 圣经历史
 view.focus: 秦汉之际
 open.default: 只展开中国
 open.all: 全部展开
 open.none: 全部收起
 hint.desktop: 滚轮缩放，上下左右拖动；点文明的名称或色带，展开或收起它的人物和大事
-note.range: 目前只录入了公元前 262 至前 138 年的人物。
+note.range: 这一段还没有录入人物。目前圣经历史录了全程，其他文明只录了公元前 262 至前 138 年。
+note.closed: 这一段录有人物的文明：{lanes}。点它的名称或色带可以展开。
 note.back: 回到秦汉之际
 river.noPeople: 这一时期没有留下姓名的人物
 river.aria: 各文明时间轴
@@ -47,6 +50,8 @@ m.traditional: ，传统说法
 m.seePeople: 看这一段的人物
 m.mainOnly: 只看主要人物
 m.showAll: 显示全部 {n} 位人物
+m.prevSeg: 上一段
+m.nextSeg: 下一段
 m.guests: 虚线框是其他文明里与他相关的人，点一下就到那个文明去。
 
 # 搜索
@@ -57,7 +62,7 @@ search.people: 人物
 search.events: 事件
 search.none: 没有找到含“{q}”的{kind}。
 search.other: "{kind}里有 {n} 条，点上面的“{kind}”查看。"
-search.scope: 目前只收了公元前 262 至前 138 年前后的内容。
+search.scope: 目前圣经历史收了全程，其他文明只收了公元前 262 至前 138 年前后的内容。
 
 # 详情卡
 card.back: 返回 {name}

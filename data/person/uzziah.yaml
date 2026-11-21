@@ -1,0 +1,13 @@
+id: uzziah
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -807, circa: true }
+death: { year: -739, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+reign:
+  - { start: -791, end: -739 }
+reviewed: false

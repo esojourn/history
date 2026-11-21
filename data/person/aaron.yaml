@@ -1,0 +1,15 @@
+id: aaron
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: -1528, circa: true }
+death: { year: -1406, circa: true }
+long_life: true
+birthplace: goshen
+deathplace: hor
+places:
+  - { place: egypt }
+  - { place: sinai, start: -1445 }
+  - { place: kadesh-barnea }
+  - { place: hor, start: -1406, end: -1406 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: nebuchadnezzar-2
+wikidata: null
+civ: meso
+importance: 4
+birth: { unknown: true, approx: -633 }
+death: { year: -561 }
+reign: [{ start: -604, end: -561 }]
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: babylon }
+  - { place: carchemish, start: -604, end: -604 }
+  - { place: jerusalem, start: -596, end: -596 }
+reviewed: false

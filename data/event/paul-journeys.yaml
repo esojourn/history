@@ -1,0 +1,14 @@
+id: paul-journeys
+civ: bible
+type: migration
+importance: 4
+start: { year: 46, circa: true }
+end: { year: 57, circa: true }
+places: [antioch, cyprus, lystra, philippi, corinth, ephesus]
+participants:
+  - person: paul
+  - person: barnabas
+  - person: mark
+  - person: timothy
+  - person: luke
+reviewed: false

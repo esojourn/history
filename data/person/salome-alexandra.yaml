@@ -1,0 +1,13 @@
+id: salome-alexandra
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -140, circa: true }
+death: { year: -66 }
+reign:
+  - { start: -75, end: -66 }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+reviewed: false

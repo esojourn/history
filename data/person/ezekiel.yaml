@@ -1,0 +1,12 @@
+id: ezekiel
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -622 }
+death: { unknown: true, approx: -569 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem, end: -596 }
+  - { place: chebar, start: -596 }
+reviewed: false

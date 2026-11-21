@@ -1,0 +1,13 @@
+id: second-temple
+civ: bible
+type: cultural
+importance: 4
+start: { year: -519 }
+end: { year: -514 }
+places: [jerusalem]
+participants:
+  - person: zerubbabel
+  - person: joshua-priest
+  - person: haggai
+  - person: zechariah
+reviewed: false

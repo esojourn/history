@@ -1,0 +1,14 @@
+id: isaac
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: -2065, circa: true }
+death: { year: -1885, circa: true }
+long_life: true
+birthplace: unknown
+deathplace: hebron
+places:
+  - { place: gerar }
+  - { place: beersheba }
+  - { place: hebron }
+reviewed: false

@@ -1,0 +1,15 @@
+id: titus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 39 }
+death: { year: 81 }
+reign:
+  - { start: 79, end: 81 }
+birthplace: rome
+deathplace: aquae-cutiliae
+places:
+  - { place: galilee, start: 67, end: 67 }
+  - { place: jerusalem, start: 70, end: 70 }
+  - { place: rome }
+reviewed: false

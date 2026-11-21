@@ -1,0 +1,13 @@
+id: mary-magdalene
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 1 }
+death: { unknown: true, approx: 60 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: magdala }
+  - { place: galilee, start: 27 }
+  - { place: jerusalem, start: 30 }
+reviewed: false

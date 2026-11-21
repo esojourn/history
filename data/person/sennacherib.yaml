@@ -1,0 +1,14 @@
+id: sennacherib
+wikidata: null
+civ: meso
+importance: 3
+birth: { unknown: true, approx: -744 }
+death: { year: -680 }
+reign: [{ start: -704, end: -680 }]
+birthplace: unknown
+deathplace: nineveh
+places:
+  - { place: nineveh }
+  - { place: lachish, start: -700, end: -700 }
+  - { place: babylon, start: -688, end: -688 }
+reviewed: false

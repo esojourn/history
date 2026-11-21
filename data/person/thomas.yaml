@@ -1,0 +1,12 @@
+id: thomas
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: 1 }
+death: { unknown: true, approx: 72 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: galilee }
+  - { place: jerusalem, start: 30 }
+reviewed: false

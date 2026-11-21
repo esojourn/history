@@ -1,0 +1,11 @@
+id: paul-rome
+civ: bible
+type: migration
+importance: 3
+start: { year: 60, circa: true }
+end: { year: 62, circa: true }
+places: [caesarea, rome]
+participants:
+  - person: paul
+  - person: luke
+reviewed: false

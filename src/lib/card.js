@@ -13,7 +13,7 @@ export function makeCard(H) {
   const pLink = (p, cls = '') => `<a href="${H.url('person', p.id)}" data-go="${p.id}"${cls ? ` class="${cls}"` : ''}>`;
   const eLink = e => `<a href="${H.url('event', e.id)}" data-goe="${e.id}">`;
   const laneTag = id => { const l = H.lane(id); return `<p class="d-lane"><i style="background:${l.c}"></i>${l.name}</p>`; };
-  const ageAt = (p, y) => (p.b == null ? '' : t('card.age', { circa: p.circa ? t('circa') + ' ' : '', n: Math.round(y - p.b) }));
+  const ageAt = (p, y) => (p.b == null || p.ns ? '' : t('card.age', { circa: p.circa ? t('circa') + ' ' : '', n: Math.round(y - p.b) }));
 
   const bar = (o, kind, id) => (o.page
     ? `<div class="d-bar"><a class="d-river" href="${H.riverUrl(kind, id)}">${t('card.inRiver')}</a></div>`
@@ -54,7 +54,7 @@ export function makeCard(H) {
   /* ---------- 人物 ---------- */
   function person(id, o) {
     const p = H.P[id], rs = H.relsOf(id), es = H.eventsOf(id).sort((a, b) => a.s - b.s);
-    const lived = p.b != null && !p.dq ? '，' + t('card.lived', { circa: p.circa || p.dc ? t('circa') : '', n: p.d - p.b }) : '';
+    const lived = p.b != null && !p.dq && !p.ns ? '，' + t('card.lived', { circa: p.circa || p.dc ? t('circa') : '', n: p.d - p.b }) : '';
     const reign = p.reigns.map(r => '，' + t('card.reign', { a: H.fmt(r[0]), b: H.fmt(r[1]), n: r[1] - r[0] })).join('');
     const where = [p.bp && placeShort(p.bp) && p.bp !== 'unknown' ? t('card.born', { place: placeShort(p.bp) }) : '',
       p.dp && placeShort(p.dp) && p.dp !== 'unknown' ? t('card.died', { place: placeShort(p.dp) }) : ''].filter(Boolean).join('，');
@@ -64,7 +64,7 @@ export function makeCard(H) {
 
     if (!o.full) return wrap(top + text +
       (rs.length ? `<h3>${t('card.rels')}</h3><ul class="d-rels">${rs.map(r => `<li>${pLink(r.o)}<i style="background:${H.RT[r.t].c}"></i><b>${r.o.n}</b><span>${r.label}</span></a></li>`).join('')}</ul>` : '') +
-      (es.length ? `<h3>${t('card.events')}</h3><ul class="d-evs">${es.map(e => `<li>${eLink(e)}<b>${H.span(e)}</b><span>${e.n}</span></a></li>`).join('')}</ul>` : '') +
+      (es.length ? `<h3>${t('card.events')}</h3><ul class="d-evs">${es.map(e => `<li>${eLink(e)}<b>${H.when(e)}</b><span>${e.n}</span></a></li>`).join('')}</ul>` : '') +
       `<button class="d-full d-expand">${t('card.expandP')}</button>` + sources(p));
 
     // 生平年表：出生、在位、有明确年份的关系、参与的事件、去世，按时间排
@@ -75,7 +75,8 @@ export function makeCard(H) {
     es.forEach(e => rows.push([e.s, `${eLink(e)}${e.n}</a>${e.e > e.s ? `<span>${t('chron.to', { y: H.fmt(e.e) })}</span>` : ''}<p>${esc(e.sum)}</p>`]));
     if (!p.dq) rows.push([p.d + .5, t(p.dc ? 'chron.diedCirca' : 'chron.died')]);
     rows.sort((a, b) => a[0] - b[0]);
-    const chron = `<h3>${t('card.chron')}</h3><ol class="d-chron">${rows.map(([y, html]) => {
+    // 只排先后的人物（太初）没有年份可排，年表、同时代的人、当时的世界都不出
+    const chron = p.ns ? '' : `<h3>${t('card.chron')}</h3><ol class="d-chron">${rows.map(([y, html]) => {
       const Y = Math.round(y + (y % 1 ? (y > p.d ? -.5 : .5) : 0));
       return `<li><span class="y">${H.fmt(Y)}</span><span class="a">${Y === p.b ? '' : ageAt(p, Y)}</span><div>${html}</div></li>`;
     }).join('')}</ol>`;
@@ -83,11 +84,11 @@ export function makeCard(H) {
     const groups = ORDER.filter(k => H.RT[k]).map(k => {
       const g = rs.filter(r => r.t === k);
       return g.length ? `<p class="d-group"><i style="border-top:2px ${H.RT[k].dash ? 'dashed' : 'solid'} ${H.RT[k].c}"></i>${H.RT[k].n}</p><ul class="d-list">${g.map(r =>
-        `<li>${pLink(r.o)}${r.o.n}</a><span>${r.label}</span><small>${r.o.role}，${H.life(r.o)}${r.o.lane !== p.lane ? '，' + H.lane(r.o.lane).name : ''}</small></li>`).join('')}</ul>` : '';
+        `<li>${pLink(r.o)}${r.o.n}</a><span>${r.label}</span><small>${r.o.role}${r.o.ns ? '' : '，' + H.life(r.o)}${r.o.lane !== p.lane ? '，' + H.lane(r.o.lane).name : ''}</small></li>`).join('')}</ul>` : '';
     }).join('');
     const yrs = x => (x.s == null ? '' : x.e != null && x.e !== x.s ? `${H.fmt(x.s)}—${H.fmt(x.e)}` : H.fmt(x.s));
     const places = placeRow(t('place.birth'), p.bp) + placeRow(t('place.death'), p.dp) + p.pl.map(x => placeRow(t('place.active'), x.p, yrs(x))).join('');
-    const peers = H.people.filter(q => q.lane !== p.lane && Math.min(q.d, p.d) - Math.max(q.b0, p.b0) >= 10)
+    const peers = p.ns ? [] : H.people.filter(q => q.lane !== p.lane && !q.ns && Math.min(q.d, p.d) - Math.max(q.b0, p.b0) >= 10)
       .sort((a, b) => b.imp - a.imp || a.b0 - b.b0).slice(0, 8);
     const mid = p.reigns.length ? (p.reigns[0][0] + p.reigns[0][1]) / 2 : (p.b0 + p.d) / 2;
 
@@ -95,7 +96,7 @@ export function makeCard(H) {
       ${rs.length ? `<h3>${t('card.rels')}</h3>${groups}` : ''}
       ${places ? `<h3>${t('card.places')}</h3><ul class="d-list d-places">${places}</ul>` : ''}
       ${peers.length ? `<h3>${t('card.peers')}</h3><ul class="d-list">${peers.map(q => `<li>${pLink(q)}${q.n}</a><span>${q.role}</span><small>${H.lane(q.lane).name}，${H.life(q)}</small></li>`).join('')}</ul>` : ''}
-      ${world(mid)}</div></div>`);
+      ${p.ns ? '' : world(mid)}</div></div>`);
   }
 
   /* ---------- 事件 ---------- */
@@ -111,8 +112,8 @@ export function makeCard(H) {
       `<button class="d-full d-expand">${t('card.expandE')}</button>` + sources(e));
 
     const same = H.events.filter(x => x.lane === e.lane).sort((a, b) => a.s - b.s || a.e - b.e), i = same.indexOf(e);
-    const near = (list, label) => (list.length ? `<p class="d-group">${label}</p><ul class="d-list">${list.map(x => `<li><small>${H.span(x)}</small>${eLink(x)}${x.n}</a></li>`).join('')}</ul>` : '');
-    const elsewhere = H.events.filter(x => x.lane !== e.lane && x.s <= e.e + 5 && x.e >= e.s - 5).sort((a, b) => a.s - b.s).slice(0, 8);
+    const near = (list, label) => (list.length ? `<p class="d-group">${label}</p><ul class="d-list">${list.map(x => `<li><small>${H.when(x)}</small>${eLink(x)}${x.n}</a></li>`).join('')}</ul>` : '');
+    const elsewhere = e.ns ? [] : H.events.filter(x => x.lane !== e.lane && !x.ns && x.s <= e.e + 5 && x.e >= e.s - 5).sort((a, b) => a.s - b.s).slice(0, 8);
     const places = e.pl.map(x => placeRow(t('place.event'), x)).join('');
 
     return wrap(top + `<div class="d-cols"><div class="d-main">${text}
@@ -121,7 +122,7 @@ export function makeCard(H) {
       <div class="d-side">${places ? `<h3>${t('card.places')}</h3><ul class="d-list d-places">${places}</ul>` : ''}
       <h3>${t('card.near', { lane: H.lane(e.lane).name })}</h3>${near(same.slice(Math.max(0, i - 2), i), t('card.before'))}${near(same.slice(i + 1, i + 3), t('card.after'))}
       ${elsewhere.length ? `<h3>${t('card.elsewhere')}</h3><ul class="d-list">${elsewhere.map(x => `<li><small>${H.span(x)}</small>${eLink(x)}${x.n}</a><small>${H.lane(x.lane).name}</small></li>`).join('')}</ul>` : ''}
-      ${world(e.s)}</div></div>`);
+      ${e.ns ? '' : world(e.s)}</div></div>`);
   }
 
   return (sel, o = {}) => (sel.t === 'p' ? person(sel.id, o) : event(sel.id, o));

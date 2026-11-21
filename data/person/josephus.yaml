@@ -1,0 +1,13 @@
+id: josephus
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 37 }
+death: { year: 100, circa: true }
+birthplace: jerusalem
+deathplace: unknown
+places:
+  - { place: jerusalem }
+  - { place: galilee, start: 66, end: 67 }
+  - { place: rome, start: 71 }
+reviewed: false

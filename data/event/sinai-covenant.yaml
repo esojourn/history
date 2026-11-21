@@ -1,0 +1,10 @@
+id: sinai-covenant
+civ: bible
+type: founding
+importance: 5
+start: { year: -1445, circa: true }
+places: [sinai]
+participants:
+  - person: moses
+  - person: aaron
+reviewed: false

@@ -1,0 +1,12 @@
+id: amos
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -799 }
+death: { unknown: true, approx: -739 }
+birthplace: tekoa
+deathplace: unknown
+places:
+  - { place: tekoa }
+  - { place: bethel }
+reviewed: false

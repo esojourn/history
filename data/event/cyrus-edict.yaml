@@ -1,0 +1,11 @@
+id: cyrus-edict
+civ: bible
+type: political
+importance: 4
+start: { year: -537 }
+places: [babylon, jerusalem]
+participants:
+  - person: cyrus-2
+  - person: zerubbabel
+  - person: joshua-priest
+reviewed: false

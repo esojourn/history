@@ -1,0 +1,14 @@
+id: pompey
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -105 }
+death: { year: -47 }
+birthplace: unknown
+deathplace: egypt
+places:
+  - { place: rome }
+  - { place: damascus, start: -62, end: -62 }
+  - { place: jerusalem, start: -62, end: -62 }
+  - { place: egypt, start: -47, end: -47 }
+reviewed: false

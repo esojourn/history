@@ -1,0 +1,15 @@
+id: jehu
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -879 }
+death: { year: -813, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: gilead, start: -840, end: -840 }
+  - { place: jezreel, start: -840, end: -840 }
+  - { place: samaria, start: -840 }
+reign:
+  - { start: -840, end: -813 }
+reviewed: false

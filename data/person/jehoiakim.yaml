@@ -1,0 +1,13 @@
+id: jehoiakim
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: -633, circa: true }
+death: { year: -597, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+reign:
+  - { start: -608, end: -597 }
+reviewed: false

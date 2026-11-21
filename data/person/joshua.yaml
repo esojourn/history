@@ -1,0 +1,15 @@
+id: joshua
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: -1489 }
+death: { unknown: true, approx: -1379 }
+birthplace: egypt
+deathplace: timnath-serah
+places:
+  - { place: kadesh-barnea, start: -1444 }
+  - { place: jericho, start: -1405 }
+  - { place: gilgal, start: -1405 }
+  - { place: shiloh }
+  - { place: shechem }
+reviewed: false

@@ -1,0 +1,10 @@
+id: sodom
+civ: bible
+type: cultural
+importance: 3
+start: { year: -2066, circa: true }
+places: [sodom]
+participants:
+  - person: abraham
+  - person: lot
+reviewed: false

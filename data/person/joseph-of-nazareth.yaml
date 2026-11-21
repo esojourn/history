@@ -1,0 +1,13 @@
+id: joseph-of-nazareth
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -39 }
+death: { unknown: true, approx: 20 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: nazareth }
+  - { place: bethlehem, start: -4, end: -4 }
+  - { place: egypt }
+reviewed: false

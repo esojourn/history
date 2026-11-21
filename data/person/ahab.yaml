@@ -1,0 +1,16 @@
+id: ahab
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -904 }
+death: { year: -852, circa: true }
+birthplace: unknown
+deathplace: gilead
+places:
+  - { place: samaria }
+  - { place: jezreel }
+  - { place: carmel }
+  - { place: gilead, start: -852, end: -852 }
+reign:
+  - { start: -873, end: -852 }
+reviewed: false

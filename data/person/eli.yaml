@@ -1,0 +1,11 @@
+id: eli
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1182 }
+death: { unknown: true, approx: -1084 }
+birthplace: unknown
+deathplace: shiloh
+places:
+  - { place: shiloh }
+reviewed: false

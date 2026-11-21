@@ -1,0 +1,12 @@
+id: daniel
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -619 }
+death: { unknown: true, approx: -529 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem, end: -604 }
+  - { place: babylon, start: -604 }
+reviewed: false

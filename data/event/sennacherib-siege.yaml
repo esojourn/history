@@ -1,0 +1,11 @@
+id: sennacherib-siege
+civ: bible
+type: war
+importance: 4
+start: { year: -700 }
+places: [lachish, jerusalem]
+participants:
+  - person: sennacherib
+  - person: hezekiah
+  - person: isaiah
+reviewed: false

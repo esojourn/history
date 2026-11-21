@@ -1,0 +1,13 @@
+id: jeroboam-2
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -819 }
+death: { year: -752, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: samaria }
+reign:
+  - { start: -792, end: -752 }
+reviewed: false

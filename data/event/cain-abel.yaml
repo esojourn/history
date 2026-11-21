@@ -1,0 +1,11 @@
+id: cain-abel
+civ: bible
+type: cultural
+importance: 2
+era: primeval
+seq: 3
+places: unknown
+participants:
+  - person: cain
+  - person: abel
+reviewed: false

@@ -1,0 +1,10 @@
+id: ezra-return
+civ: bible
+type: migration
+importance: 3
+start: { year: -457 }
+places: [babylon, jerusalem]
+participants:
+  - person: ezra
+  - person: artaxerxes-1
+reviewed: false

@@ -1,0 +1,12 @@
+id: jonathan-saul
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1069 }
+death: { year: -1009, circa: true }
+birthplace: unknown
+deathplace: gilboa
+places:
+  - { place: gibeah }
+  - { place: gilboa, start: -1009, end: -1009 }
+reviewed: false

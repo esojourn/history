@@ -1,0 +1,11 @@
+id: boaz
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -1180 }
+death: { unknown: true, approx: -1110 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: bethlehem }
+reviewed: false

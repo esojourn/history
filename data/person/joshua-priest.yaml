@@ -1,0 +1,12 @@
+id: joshua-priest
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -574 }
+death: { unknown: true, approx: -504 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: babylon }
+  - { place: jerusalem, start: -537 }
+reviewed: false

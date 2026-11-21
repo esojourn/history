@@ -1,0 +1,12 @@
+id: ezra
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: -499 }
+death: { unknown: true, approx: -429 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: babylon }
+  - { place: jerusalem, start: -457 }
+reviewed: false

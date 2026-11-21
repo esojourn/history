@@ -1,0 +1,15 @@
+id: jeremiah
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: -649 }
+death: { unknown: true, approx: -569 }
+birthplace: anathoth
+deathplace: unknown
+places:
+  - { place: anathoth }
+  - { place: jerusalem, end: -585 }
+  - { place: mizpah, start: -585 }
+  - { place: tahpanhes }
+  - { place: egypt }
+reviewed: false

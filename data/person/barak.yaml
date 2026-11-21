@@ -1,0 +1,12 @@
+id: barak
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -1255 }
+death: { unknown: true, approx: -1190 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: kedesh-naphtali }
+  - { place: tabor }
+reviewed: false

@@ -1,0 +1,10 @@
+id: jerusalem-70
+civ: bible
+type: war
+importance: 5
+start: { year: 70 }
+places: [jerusalem]
+participants:
+  - person: titus
+  - person: josephus
+reviewed: false

@@ -1,0 +1,10 @@
+id: gilboa
+civ: bible
+type: battle
+importance: 3
+start: { year: -1009, circa: true }
+places: [gilboa]
+participants:
+  - person: saul
+  - person: jonathan-saul
+reviewed: false

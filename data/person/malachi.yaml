@@ -1,0 +1,11 @@
+id: malachi
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -489 }
+death: { unknown: true, approx: -419 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+reviewed: false

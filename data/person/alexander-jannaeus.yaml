@@ -1,0 +1,16 @@
+id: alexander-jannaeus
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -126, circa: true }
+death: { year: -75 }
+reign:
+  - { start: -102, end: -75 }
+birthplace: unknown
+deathplace: gilead
+places:
+  - { place: galilee }
+  - { place: jerusalem, start: -102 }
+  - { place: gaza }
+  - { place: shechem }
+reviewed: false

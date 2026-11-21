@@ -1,0 +1,14 @@
+id: ishmael
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -2079, circa: true }
+death: { year: -1942, circa: true }
+long_life: true
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: hebron }
+  - { place: beersheba }
+  - { place: paran }
+reviewed: false

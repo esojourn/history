@@ -1,0 +1,15 @@
+id: samuel
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: -1104 }
+death: { unknown: true, approx: -1014 }
+birthplace: ramah
+deathplace: ramah
+places:
+  - { place: shiloh }
+  - { place: mizpah }
+  - { place: gilgal }
+  - { place: bethel }
+  - { place: ramah }
+reviewed: false

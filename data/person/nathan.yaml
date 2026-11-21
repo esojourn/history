@@ -1,0 +1,11 @@
+id: nathan
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1040 }
+death: { unknown: true, approx: -960 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+reviewed: false

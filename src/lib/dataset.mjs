@@ -17,8 +17,26 @@ const readDir = rel => {
 };
 const readFile = rel => { const f = path.join(ROOT, rel); return fs.existsSync(f) ? read(f) : null; };
 
+// 太初（创世到巴别）只排先后、不标年份（plan.md 3.1）。数据里不写年份，写：
+//   era: primeval          所在的时期
+//   seq: [2, 6]            人物：在先后次序里从第几位到第几位；事件写一个数，如 seq: 3
+// 这里把次序换算成时期色带里均匀排开的位置，只供作图，并标上 noscale，页面上不显示成年份。
+function placeUnscaled(raw) {
+  const all = [...Object.values(raw.person), ...Object.values(raw.event)].filter(x => x.seq != null);
+  for (const x of all) {
+    const band = (raw.polity[x.civ]?.periods || []).find(p => p.id === x.era);
+    if (!band) continue;                       // 校验脚本会报错
+    const max = Math.max(...all.filter(y => y.civ === x.civ && y.era === x.era).flatMap(y => y.seq));
+    const slot = (band.end - band.start) / (max + 1), at = n => Math.round(band.start + slot * n);
+    x.noscale = true;
+    if (Array.isArray(x.seq)) { x.birth = { year: at(x.seq[0] - 0.3) }; x.death = { year: at(x.seq[1] + 0.3) }; }
+    else x.start = { year: at(x.seq) };
+  }
+  return raw;
+}
+
 export function loadRaw() {
-  return {
+  return placeUnscaled({
     site: readFile('data/site.yaml'),
     polity: readDir('data/polity'),
     faction: readFile('data/faction.yaml') || [],
@@ -27,7 +45,7 @@ export function loadRaw() {
     event: readDir('data/event'),
     place: readDir('data/place'),
     relation: readDir('data/relation'),       // { 组: [关系, …] }
-  };
+  });
 }
 
 export function loadText(dir) {
@@ -86,7 +104,7 @@ function compose(code) {
       role: t.role || '', sum: t.summary || '', body: (t.body || '').trim(), src: t.sources || [], rec: (t.recalled || []).length ? t.recalled : undefined,
       bp: placeRef(p.birthplace), dp: placeRef(p.deathplace),
       pl: p.places === 'unknown' ? [] : (p.places || []).map(x => (typeof x === 'string' ? { p: x } : und({ p: x.place, s: x.start, e: x.end }))),
-      wd: p.wikidata, rev: p.reviewed ? 1 : undefined,
+      wd: p.wikidata, rev: p.reviewed ? 1 : undefined, ns: p.noscale ? 1 : undefined,
     });
   });
 
@@ -97,7 +115,7 @@ function compose(code) {
       s: e.start.year, e: e.end ? e.end.year : e.start.year, circa: e.start.circa ? 1 : undefined,
       who: (e.participants || []).map(x => x.person), sum: t.summary || '', body: (t.body || '').trim(), src: t.sources || [], rec: (t.recalled || []).length ? t.recalled : undefined,
       pl: e.places === 'unknown' ? ['unknown'] : (e.places || []).map(String),
-      wd: e.wikidata, rev: e.reviewed ? 1 : undefined,
+      wd: e.wikidata, rev: e.reviewed ? 1 : undefined, ns: e.noscale ? 1 : undefined,
     });
   });
   // who 为空数组时 und() 会去掉它，补回来，页面代码就不用到处判空

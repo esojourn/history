@@ -1,0 +1,15 @@
+id: john-apostle
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: 6 }
+death: { unknown: true, approx: 100 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: galilee }
+  - { place: jerusalem, start: 30 }
+  - { place: samaria }
+  - { place: patmos }
+  - { place: ephesus }
+reviewed: false

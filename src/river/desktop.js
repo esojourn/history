@@ -8,6 +8,7 @@ export function desktop(H, card, search) {
   const S = { t0: H.EXTENT[0], k: 0.2, sel: null, hx: null, open: new Set(H.site.default_open), full: false };
   const HIST = [], nameOf = s => (s.t === 'p' ? H.P[s.id] : H.E[s.id]).n;   // HIST：在详情卡里一路点过来的人和事，用来“返回”
   const VIEWS = Object.fromEntries(H.site.views.map(v => [v.id, v.range]));
+  const VOPEN = Object.fromEntries(H.site.views.map(v => [v.id, v.open]));   // 有的快捷视图顺带展开某个文明
   const PL = {}, EL = {};
   H.lanes.forEach(l => { PL[l.id] = H.byWeight(H.people.filter(p => p.lane === l.id)); EL[l.id] = H.events.filter(e => e.lane === l.id); });
   let W = 0, raf = 0, POS = {}, EPOS = {};
@@ -116,7 +117,7 @@ export function desktop(H, card, search) {
         POS[p.id] = Y + 8;
         if (X2 < G || X1 > W) return;
         o.push(`<g class="pp${p.id === selP ? ' sel' : ''}" data-p="${p.id}" opacity="${!S.sel || hot(p) ? 1 : .13}">
-          <rect x="${X1}" y="${Y}" width="${X2 - X1}" height="16" rx="3" fill="${fade || c}" fill-opacity="${fade ? 1 : .2}"${p.id === selP ? ` stroke="${c}" stroke-width="1.5"` : ''}/>
+          <rect x="${X1}" y="${Y}" width="${X2 - X1}" height="16" rx="3" fill="${fade || c}" fill-opacity="${fade ? 1 : .2}"${p.id === selP ? ` stroke="${c}" stroke-width="1.5"` : p.ns ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".7"` : ''}/>
           ${p.reigns.map(rg => `<rect x="${x(rg[0])}" y="${Y + 13}" width="${x(rg[1]) - x(rg[0])}" height="3" fill="${c}"/>`).join('')}
           <text class="pn" x="${Math.max(X1, G) + 6}" y="${Y + 12}">${p.n}${rel ? `<tspan class="rl" dx="7" fill="${H.RT[rel.t].c}">${rel.label}</tspan>` : ''}</text></g>`);
       });
@@ -156,7 +157,10 @@ export function desktop(H, card, search) {
     svg.innerHTML = o.join('');
     svg.classList.toggle('lv-people', tog);
     $('#lvl').textContent = t(k < 0.5 ? 'lvl.world' : f < 0.5 ? 'lvl.dynasty' : 'lvl.people');
-    $('#note').hidden = !(f > 0.6 && (t0 > hi + 30 || t0 + (W - G) / k < lo - 30));
+    // 人物层的提示：眼前这一段没有录人物；或者录了，但那个文明还收着
+    const t1 = t0 + (W - G) / k, have = H.lanes.filter(l => PL[l.id].some(p => p.d > t0 && p.b0 < t1));
+    const msg = f < 0.6 ? '' : !have.length ? t('note.range') : have.every(l => !S.open.has(l.id)) ? t('note.closed', { lanes: have.map(l => l.name).join('、') }) : '';
+    $('#note').hidden = !msg; $('#note-t').textContent = msg;
     const dflt = H.site.default_open;
     const mode = S.open.size === H.lanes.length ? 'all' : S.open.size === 0 ? 'none' : S.open.size === dflt.length && dflt.every(id => S.open.has(id)) ? 'default' : '';
     document.querySelectorAll('#d [data-open]').forEach(b => b.setAttribute('aria-pressed', b.dataset.open === mode));
@@ -201,8 +205,16 @@ export function desktop(H, card, search) {
     if (!sel) return draw();
     S.open.add((sel.t === 'p' ? H.P[sel.id] : H.E[sel.id]).lane);   // 选中谁，就把他所在的文明展开
     const a = sel.t === 'p' ? H.P[sel.id].b0 : H.E[sel.id].s, b = sel.t === 'p' ? H.P[sel.id].d : H.E[sel.id].e;
-    if (S.k < 3.8 || b < S.t0 || a > S.t0 + plotW() / S.k) return fly(lo, hi, reveal);
+    if (S.k < 3.8 || b < S.t0 || a > S.t0 + plotW() / S.k) return fly(...around(a, b), reveal);
     render(); reveal();
+  }
+
+  // 飞到某个人、某件事那里时看多大一段：在样板时段里的，看整个样板时段；别处的，以他为中心看同样长的一段（寿命很长的就看全他的一生）
+  function around(a, b) {
+    if (a < hi && b > lo) return [lo, hi];
+    // 再长也不超过“人物层”能看清的宽度，否则飞过去只见色带不见人
+    const span = Math.min(Math.max(hi - lo, (b - a) * 1.25), plotW() / 3.9), c = (a + b) / 2;
+    return [c - span / 2, c + span / 2];
   }
 
   function click(el) {
@@ -216,6 +228,7 @@ export function desktop(H, card, search) {
       // 已经在人物层：点色带是展开或收起这个文明。还没到人物层：点色带是放大到这个时期。
       if (S.k > 3) return toggle(id);
       const band = H.lane(id).bands[i], pad = (band[2] - band[1]) * .12 + 2;
+      S.open.add(id);   // 点哪个文明的时期，放大过去的同时把它展开
       return fly(band[1] - pad, band[2] + pad);
     }
     if (S.sel) select(null);
@@ -254,7 +267,7 @@ export function desktop(H, card, search) {
 
   $('#d').addEventListener('click', e => {
     const v = e.target.closest('button[data-view]'), op = e.target.closest('[data-open]');
-    if (v) { stage.scrollTop = 0; fly(...VIEWS[v.dataset.view]); }
+    if (v) { stage.scrollTop = 0; (VOPEN[v.dataset.view] || []).forEach(id => S.open.add(id)); fly(...VIEWS[v.dataset.view]); }
     if (op) {
       S.open = new Set(op.dataset.open === 'all' ? H.lanes.map(l => l.id) : op.dataset.open === 'default' ? H.site.default_open : []);
       if (S.k < 3.8) fly(lo, hi); else draw();

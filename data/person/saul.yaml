@@ -1,0 +1,15 @@
+id: saul
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: -1089 }
+death: { year: -1009, circa: true }
+reign: [{ start: -1049, end: -1009 }]
+birthplace: unknown
+deathplace: gilboa
+places:
+  - { place: gibeah }
+  - { place: mizpah, start: -1049, end: -1049 }
+  - { place: gilgal }
+  - { place: gilboa, start: -1009, end: -1009 }
+reviewed: false

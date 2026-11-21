@@ -1,0 +1,12 @@
+id: solomon
+wikidata: null
+civ: bible
+importance: 5
+birth: { unknown: true, approx: -989 }
+death: { year: -929, circa: true }
+reign: [{ start: -969, end: -929 }]
+birthplace: jerusalem
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+reviewed: false

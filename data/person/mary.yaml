@@ -1,0 +1,14 @@
+id: mary
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -21 }
+death: { unknown: true, approx: 45 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: nazareth }
+  - { place: bethlehem, start: -4, end: -4 }
+  - { place: egypt }
+  - { place: jerusalem, start: 30 }
+reviewed: false

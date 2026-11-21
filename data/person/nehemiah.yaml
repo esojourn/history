@@ -1,0 +1,12 @@
+id: nehemiah
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: -489 }
+death: { unknown: true, approx: -414 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: susa }
+  - { place: jerusalem, start: -444 }
+reviewed: false

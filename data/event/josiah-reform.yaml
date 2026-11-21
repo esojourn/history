@@ -1,0 +1,10 @@
+id: josiah-reform
+civ: bible
+type: cultural
+importance: 4
+start: { year: -621 }
+places: [jerusalem]
+participants:
+  - person: josiah
+  - person: jeremiah
+reviewed: false

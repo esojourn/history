@@ -1,0 +1,17 @@
+id: herod
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: -72, circa: true }
+death: { year: -3 }
+reign:
+  - { start: -36, end: -3 }
+birthplace: unknown
+deathplace: jericho
+places:
+  - { place: galilee, start: -46 }
+  - { place: rome, start: -39, end: -39 }
+  - { place: jerusalem, start: -36 }
+  - { place: caesarea }
+  - { place: jericho }
+reviewed: false

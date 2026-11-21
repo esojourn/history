@@ -1,0 +1,11 @@
+id: fall
+civ: bible
+type: cultural
+importance: 4
+era: primeval
+seq: 2
+places: [eden]
+participants:
+  - person: adam
+  - person: eve
+reviewed: false

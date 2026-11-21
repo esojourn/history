@@ -1,0 +1,12 @@
+id: ehud
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -1340 }
+death: { unknown: true, approx: -1260 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jericho }
+  - { place: gilgal }
+reviewed: false

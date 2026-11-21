@@ -1,0 +1,13 @@
+id: athaliah
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -884 }
+death: { year: -834, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+reign:
+  - { start: -840, end: -834 }
+reviewed: false

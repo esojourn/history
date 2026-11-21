@@ -1,21 +1,22 @@
 id: bible
 order: 1
 color: "#B5851A"
+# 族长到士师的年份是按圣经自己给的数字倒推的约数（《列王纪上》6:1、《出埃及记》12:40），见 docs/plan.md 3.2。
 periods:
   - id: primeval
     start: -3000
-    end: -2099
+    end: -2165
     certainty: legendary
   - id: patriarchs
-    start: -2099
-    end: -1799
+    start: -2165
+    end: -1875
     certainty: traditional
   - id: egypt-sojourn
-    start: -1799
-    end: -1299
+    start: -1875
+    end: -1445
     certainty: traditional
   - id: exodus-judges
-    start: -1299
+    start: -1445
     end: -1049
     certainty: traditional
   - id: united-monarchy
@@ -29,9 +30,9 @@ periods:
     end: -537
   - id: second-temple
     start: -537
-    end: -3
+    end: -5
   - id: new-testament
-    start: -3
+    start: -5
     end: 100
   - id: early-church
     start: 100

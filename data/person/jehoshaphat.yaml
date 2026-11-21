@@ -1,0 +1,14 @@
+id: jehoshaphat
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -906, circa: true }
+death: { year: -847, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+  - { place: gilead, start: -852, end: -852 }
+reign:
+  - { start: -871, end: -847 }
+reviewed: false

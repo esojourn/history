@@ -1,0 +1,17 @@
+id: jeroboam-1
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -969 }
+death: { year: -909, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: egypt }
+  - { place: shechem, start: -929 }
+  - { place: bethel }
+  - { place: dan }
+  - { place: tirzah }
+reign:
+  - { start: -929, end: -909 }
+reviewed: false

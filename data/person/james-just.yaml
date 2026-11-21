@@ -1,0 +1,12 @@
+id: james-just
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: 1 }
+death: { year: 62 }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: nazareth }
+  - { place: jerusalem }
+reviewed: false

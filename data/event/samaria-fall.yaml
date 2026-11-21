@@ -1,0 +1,9 @@
+id: samaria-fall
+civ: bible
+type: war
+importance: 5
+start: { year: -721, circa: true }
+places: [samaria]
+participants:
+  - person: hoshea
+reviewed: false

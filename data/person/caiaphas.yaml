@@ -1,0 +1,11 @@
+id: caiaphas
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -14 }
+death: { unknown: true, approx: 46 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem, start: 18, end: 36 }
+reviewed: false

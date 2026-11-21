@@ -1,0 +1,13 @@
+id: mark
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 12 }
+death: { unknown: true, approx: 68 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+  - { place: antioch }
+  - { place: cyprus }
+reviewed: false

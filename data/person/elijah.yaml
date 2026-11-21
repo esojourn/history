@@ -1,0 +1,15 @@
+id: elijah
+wikidata: null
+civ: bible
+importance: 4
+birth: { unknown: true, approx: -909 }
+death: { unknown: true, approx: -849 }
+birthplace: gilead
+deathplace: unknown
+places:
+  - { place: carmel }
+  - { place: sinai }
+  - { place: jezreel }
+  - { place: samaria }
+  - { place: jordan-river }
+reviewed: false

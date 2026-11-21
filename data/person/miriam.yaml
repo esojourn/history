@@ -1,0 +1,14 @@
+id: miriam
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1533 }
+death: { year: -1406, circa: true }
+long_life: true
+birthplace: goshen
+deathplace: kadesh-barnea
+places:
+  - { place: egypt }
+  - { place: sinai, start: -1445 }
+  - { place: kadesh-barnea }
+reviewed: false

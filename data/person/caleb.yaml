@@ -1,0 +1,12 @@
+id: caleb
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -1484, circa: true }
+death: { unknown: true, approx: -1390 }
+birthplace: egypt
+deathplace: unknown
+places:
+  - { place: kadesh-barnea, start: -1444 }
+  - { place: hebron, start: -1399 }
+reviewed: false

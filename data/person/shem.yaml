@@ -1,0 +1,11 @@
+id: shem
+wikidata: null
+civ: bible
+importance: 2
+era: primeval
+seq: [12, 17]
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ararat }
+reviewed: false

@@ -1,0 +1,14 @@
+id: jesus
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: -4, circa: true }
+death: { year: 30, circa: true }
+birthplace: bethlehem
+deathplace: golgotha
+places:
+  - { place: nazareth }
+  - { place: galilee, start: 27 }
+  - { place: capernaum, start: 27 }
+  - { place: jerusalem, start: 30, end: 30 }
+reviewed: false

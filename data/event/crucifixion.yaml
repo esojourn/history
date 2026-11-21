@@ -1,0 +1,17 @@
+id: crucifixion
+civ: bible
+type: cultural
+importance: 5
+start: { year: 30, circa: true }
+places: [jerusalem, golgotha]
+participants:
+  - person: jesus
+  - person: pilate
+  - person: caiaphas
+  - person: herod-antipas
+  - person: judas-iscariot
+  - person: peter
+  - person: john-apostle
+  - person: mary
+  - person: mary-magdalene
+reviewed: false

@@ -1,0 +1,11 @@
+id: creation
+civ: bible
+type: cultural
+importance: 5
+era: primeval
+seq: 1
+places: [eden]
+participants:
+  - person: adam
+  - person: eve
+reviewed: false

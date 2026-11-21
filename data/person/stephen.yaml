@@ -1,0 +1,11 @@
+id: stephen
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 1 }
+death: { year: 34, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+reviewed: false

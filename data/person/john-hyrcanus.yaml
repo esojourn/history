@@ -1,0 +1,15 @@
+id: john-hyrcanus
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -170 }
+death: { year: -103 }
+reign:
+  - { start: -133, end: -103 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem, start: -133 }
+  - { place: shechem }
+  - { place: samaria }
+reviewed: false

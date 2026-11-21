@@ -1,0 +1,13 @@
+id: luke
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 10 }
+death: { unknown: true, approx: 84 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: philippi }
+  - { place: caesarea }
+  - { place: rome }
+reviewed: false

@@ -1,0 +1,11 @@
+id: gamaliel
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -19 }
+death: { unknown: true, approx: 52 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jerusalem }
+reviewed: false

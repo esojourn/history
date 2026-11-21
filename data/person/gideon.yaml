@@ -1,0 +1,12 @@
+id: gideon
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -1220 }
+death: { unknown: true, approx: -1150 }
+birthplace: unknown
+deathplace: ophrah
+places:
+  - { place: ophrah }
+  - { place: jezreel }
+reviewed: false

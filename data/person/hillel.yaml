@@ -1,0 +1,12 @@
+id: hillel
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -69 }
+death: { unknown: true, approx: 10 }
+birthplace: unknown       # 生于巴比伦只是拉比传统，写在正文里
+deathplace: unknown
+places:
+  - { place: babylon }
+  - { place: jerusalem }
+reviewed: false

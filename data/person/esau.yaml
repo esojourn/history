@@ -1,0 +1,13 @@
+id: esau
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: -2005, circa: true }
+death: { unknown: true, approx: -1880 }
+long_life: true          # 创 35:29：以撒（约前 1886 年卒）下葬时以扫仍在世，已过 120 岁
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: beersheba }
+  - { place: seir }
+reviewed: false

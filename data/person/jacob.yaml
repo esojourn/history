@@ -1,0 +1,16 @@
+id: jacob
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: -2005, circa: true }
+death: { year: -1858, circa: true }
+long_life: true
+birthplace: unknown
+deathplace: goshen
+places:
+  - { place: beersheba }
+  - { place: haran }
+  - { place: shechem }
+  - { place: hebron }
+  - { place: goshen, start: -1875 }
+reviewed: false

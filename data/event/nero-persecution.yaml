@@ -1,0 +1,10 @@
+id: nero-persecution
+civ: bible
+type: political
+importance: 3
+start: { year: 64 }
+places: [rome]
+participants:
+  - person: peter
+  - person: paul
+reviewed: false

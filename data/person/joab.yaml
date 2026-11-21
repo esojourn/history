@@ -1,0 +1,12 @@
+id: joab
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: -1040 }
+death: { year: -969, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: hebron, start: -1009, end: -1002 }
+  - { place: jerusalem, start: -1002 }
+reviewed: false

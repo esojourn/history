@@ -1,0 +1,15 @@
+id: asa
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: -934 }
+death: { year: -869, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+  - { place: ramah }
+  - { place: mizpah }
+reign:
+  - { start: -910, end: -869 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: kadesh-spies
+civ: bible
+type: political
+importance: 3
+start: { year: -1444, circa: true }
+places: [kadesh-barnea]
+participants:
+  - person: moses
+  - person: joshua
+  - person: caleb
+reviewed: false

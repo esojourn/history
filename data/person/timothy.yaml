@@ -1,0 +1,14 @@
+id: timothy
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 17 }
+death: { unknown: true, approx: 97 }
+birthplace: lystra
+deathplace: unknown
+places:
+  - { place: lystra }
+  - { place: philippi }
+  - { place: corinth }
+  - { place: ephesus }
+reviewed: false

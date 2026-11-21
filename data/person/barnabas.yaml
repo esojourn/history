@@ -1,0 +1,14 @@
+id: barnabas
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 1 }
+death: { unknown: true, approx: 61 }
+birthplace: cyprus
+deathplace: unknown
+places:
+  - { place: jerusalem }
+  - { place: antioch }
+  - { place: cyprus }
+  - { place: lystra }
+reviewed: false

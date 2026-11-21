@@ -1,0 +1,12 @@
+id: ruth
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: -1160 }
+death: { unknown: true, approx: -1090 }
+birthplace: moab
+deathplace: unknown
+places:
+  - { place: moab }
+  - { place: bethlehem }
+reviewed: false

@@ -1,0 +1,11 @@
+id: exodus
+civ: bible
+type: migration
+importance: 5
+start: { year: -1445, circa: true }
+places: [goshen]
+participants:
+  - person: moses
+  - person: aaron
+  - person: miriam
+reviewed: false

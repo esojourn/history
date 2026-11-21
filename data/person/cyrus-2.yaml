@@ -1,0 +1,15 @@
+id: cyrus-2
+wikidata: null
+civ: meso
+importance: 4
+birth: { unknown: true, approx: -599 }
+death: { year: -529 }
+reign:
+  - { start: -558, end: -529 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ecbatana, start: -549 }
+  - { place: babylon, start: -538 }
+  - { place: pasargadae }
+reviewed: false

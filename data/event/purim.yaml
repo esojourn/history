@@ -1,0 +1,10 @@
+id: purim
+civ: bible
+type: cultural
+importance: 2
+start: { year: -472, circa: true }
+places: [susa]
+participants:
+  - person: esther
+  - person: mordecai
+reviewed: false

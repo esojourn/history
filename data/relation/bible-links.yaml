@@ -1,0 +1,22 @@
+# 圣经历史里跨时期的关系（两端的人物分属不同时期的关系组）
+- { from: caleb, to: othniel, type: kin, year: -1395 }
+- { from: solomon, to: rehoboam, type: kin, year: -935 }
+- { from: solomon, to: jeroboam-1, type: rival, year: -935 }
+- { from: elijah, to: ahab, type: rival, year: -860 }
+- { from: elijah, to: jezebel, type: rival, year: -858 }
+- { from: elisha, to: jehu, type: mentor, year: -840 }
+- { from: jonah, to: jeroboam-2, type: mentor, year: -770 }
+- { from: isaiah, to: ahaz, type: mentor, year: -733 }
+- { from: isaiah, to: hezekiah, type: mentor, year: -700 }
+- { from: sennacherib, to: hezekiah, type: rival, year: -700 }
+- { from: jeremiah, to: jehoiakim, type: rival, year: -603 }
+- { from: jeremiah, to: zedekiah, type: mentor, year: -587 }
+- { from: nebuchadnezzar-2, to: jehoiakim, type: lord, year: -603 }
+- { from: nebuchadnezzar-2, to: zedekiah, type: lord, year: -596 }
+- { from: jehoiakim, to: jehoiachin, type: kin, year: -597 }
+- { from: cyrus-2, to: zerubbabel, type: lord, year: -537 }
+- { from: herod, to: jesus, type: rival, year: -4 }
+- { from: jesus, to: james-just, type: kin, year: 28 }
+- { from: peter, to: paul, type: ally, year: 49 }
+- { from: peter, to: mark, type: mentor, year: 60 }
+- { from: herod, to: herod-antipas, type: kin, year: -5 }

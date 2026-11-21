@@ -1,0 +1,11 @@
+id: joseph-sold
+civ: bible
+type: migration
+importance: 3
+start: { year: -1897, circa: true }
+places: [shechem, dothan, egypt]
+participants:
+  - person: joseph
+  - person: judah
+  - person: jacob
+reviewed: false
