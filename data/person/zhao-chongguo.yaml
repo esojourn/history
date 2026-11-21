@@ -1,0 +1,14 @@
+id: zhao-chongguo
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -136 }
+death: { year: -51 }
+birthplace: shanggui
+deathplace: unknown
+places:
+  - { place: shanggui }
+  - { place: changan }
+  - { place: huangzhong, start: -60, end: -59 }
+reviewed: false

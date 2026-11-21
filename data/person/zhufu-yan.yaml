@@ -1,0 +1,13 @@
+id: zhufu-yan
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -175 }
+death: { year: -125 }
+birthplace: linzi
+deathplace: unknown
+places:
+  - { place: linzi }
+  - { place: changan, start: -133, end: -125 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: liu-yan
+wikidata: null
+civ: china
+faction: lvlin
+importance: 2
+birth: { unknown: true, approx: -16 }
+death: { year: 23 }
+birthplace: caiyang
+deathplace: nanyang
+places:
+  - { place: caiyang }
+  - { place: nanyang, start: 22, end: 23 }
+reviewed: false

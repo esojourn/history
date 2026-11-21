@@ -1,0 +1,12 @@
+id: liu-xiang
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: -76, circa: true }
+death: { year: -5 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan }
+reviewed: false

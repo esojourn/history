@@ -1,0 +1,12 @@
+id: dayuan-war
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: -103 }
+end: { year: -100 }
+places: [dayuan, dunhuang]
+participants:
+  - person: li-guangli
+  - person: liu-che
+reviewed: false

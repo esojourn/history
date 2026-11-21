@@ -1,0 +1,15 @@
+id: li-ling
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -133 }
+death: { year: -73 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan }
+  - { place: hexi }
+  - { place: junji, start: -98, end: -98 }
+  - { place: chanyu-ting, start: -98, end: -73 }
+reviewed: false

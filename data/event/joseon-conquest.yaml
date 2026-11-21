@@ -1,0 +1,11 @@
+id: joseon-conquest
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: -108 }
+end: { year: -107 }
+places: [wangxian]
+participants:
+  - person: liu-che
+reviewed: false

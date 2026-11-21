@@ -1,0 +1,14 @@
+id: fu-jiezi
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -120 }
+death: { year: -64 }
+birthplace: beidi
+deathplace: unknown
+places:
+  - { place: changan }
+  - { place: qiuci }
+  - { place: shanshan, start: -76, end: -76 }
+reviewed: false

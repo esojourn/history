@@ -1,0 +1,13 @@
+id: xinan-yi
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: -134 }
+end: { year: -108 }
+places: [nanzhong, dian]
+participants:
+  - person: liu-che
+  - person: sima-xiangru
+  - person: zhang-qian
+reviewed: false

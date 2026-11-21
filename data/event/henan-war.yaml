@@ -1,0 +1,12 @@
+id: henan-war
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -126 }
+places: [henan-di, shuofang]
+participants:
+  - person: wei-qing
+  - person: liu-che
+  - person: zhufu-yan
+reviewed: false

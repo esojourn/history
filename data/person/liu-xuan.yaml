@@ -1,0 +1,17 @@
+id: liu-xuan
+wikidata: null
+civ: china
+faction: lvlin
+importance: 2
+birth: { unknown: true, approx: -20 }
+death: { year: 25 }
+reign:
+  - { start: 23, end: 25 }
+birthplace: caiyang
+deathplace: changan
+places:
+  - { place: caiyang }
+  - { place: nanyang, start: 22, end: 23 }
+  - { place: luoyang, start: 23, end: 24 }
+  - { place: changan, start: 24, end: 25 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: li-guang
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { unknown: true, approx: -184 }
+death: { year: -118 }
+birthplace: chengji
+deathplace: unknown
+places:
+  - { place: chengji }
+  - { place: shangjun }
+  - { place: changan }
+  - { place: mobei, start: -118, end: -118 }
+reviewed: false

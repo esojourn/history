@@ -1,0 +1,14 @@
+id: mobei
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: -118 }
+places: [mobei, langjuxu]
+participants:
+  - person: wei-qing
+  - person: huo-qubing
+  - person: li-guang
+  - person: yizhixie
+  - person: liu-che
+reviewed: false

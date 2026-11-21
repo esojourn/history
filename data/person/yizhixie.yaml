@@ -1,0 +1,15 @@
+id: yizhixie
+wikidata: null
+civ: steppe
+faction: xiongnu
+importance: 3
+birth: { unknown: true, approx: -170 }
+death: { year: -113 }
+reign:
+  - { start: -125, end: -113 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: chanyu-ting }
+  - { place: mobei, start: -118, end: -113 }
+reviewed: false

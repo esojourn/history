@@ -1,0 +1,13 @@
+id: sang-hongyang
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: -151, circa: true }
+death: { year: -79 }
+birthplace: luoyang
+deathplace: changan
+places:
+  - { place: luoyang }
+  - { place: changan }
+reviewed: false

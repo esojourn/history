@@ -1,0 +1,14 @@
+id: su-wu
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: -139, circa: true }
+death: { year: -59 }
+birthplace: duling
+deathplace: changan
+places:
+  - { place: changan }
+  - { place: chanyu-ting, start: -99, end: -99 }
+  - { place: beihai, start: -99, end: -80 }
+reviewed: false

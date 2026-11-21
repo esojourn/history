@@ -1,0 +1,13 @@
+id: jin-midi
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -133 }
+death: { year: -85 }
+birthplace: hexi
+deathplace: changan
+places:
+  - { place: hexi, start: -133, end: -120 }
+  - { place: changan, start: -120, end: -85 }
+reviewed: false

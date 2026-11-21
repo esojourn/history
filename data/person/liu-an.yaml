@@ -1,0 +1,12 @@
+id: liu-an
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -178 }
+death: { year: -121 }
+birthplace: unknown
+deathplace: shouchun
+places:
+  - { place: shouchun, start: -163, end: -121 }
+reviewed: false

@@ -1,0 +1,16 @@
+id: huhanye
+wikidata: null
+civ: steppe
+faction: xiongnu
+importance: 4
+birth: { unknown: true, approx: -90 }
+death: { year: -30 }
+reign:
+  - { start: -57, end: -30 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: chanyu-ting }
+  - { place: ganquan, start: -50, end: -50 }
+  - { place: changan, start: -32, end: -32 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: huan-kuan
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -110 }
+death: { unknown: true, approx: -45 }
+birthplace: runan
+deathplace: unknown
+places:
+  - { place: runan }
+  - { place: changan }
+reviewed: false

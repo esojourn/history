@@ -1,0 +1,13 @@
+id: huo-guang
+wikidata: null
+civ: china
+faction: han
+importance: 4
+birth: { unknown: true, approx: -130 }
+death: { year: -67 }
+birthplace: pingyang
+deathplace: changan
+places:
+  - { place: pingyang }
+  - { place: changan, start: -120, end: -67 }
+reviewed: false

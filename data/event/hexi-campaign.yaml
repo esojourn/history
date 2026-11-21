@@ -1,0 +1,13 @@
+id: hexi-campaign
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -120 }
+places: [hexi]
+participants:
+  - person: huo-qubing
+  - person: yizhixie
+  - person: jin-midi
+  - person: liu-che
+reviewed: false

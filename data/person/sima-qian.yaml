@@ -1,0 +1,14 @@
+id: sima-qian
+wikidata: null
+civ: china
+faction: han
+importance: 5
+birth: { year: -144, circa: true }
+death: { unknown: true, approx: -85 }
+birthplace: xiayang
+deathplace: unknown
+places:
+  - { place: xiayang }
+  - { place: changan }
+  - { place: taishan, start: -109, end: -109 }
+reviewed: false

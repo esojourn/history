@@ -1,0 +1,13 @@
+id: dong-xian
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -22 }
+death: { year: 0 }
+birthplace: yunyang
+deathplace: changan
+places:
+  - { place: yunyang }
+  - { place: changan }
+reviewed: false

@@ -1,0 +1,16 @@
+id: chen-tang
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -80 }
+death: { unknown: true, approx: -5 }
+birthplace: xiaqiu
+deathplace: changan
+places:
+  - { place: xiaqiu }
+  - { place: changan }
+  - { place: wulei, start: -35, end: -35 }
+  - { place: zhizhi-cheng, start: -35, end: -35 }
+  - { place: dunhuang }
+reviewed: false

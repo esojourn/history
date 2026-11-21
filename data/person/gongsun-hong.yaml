@@ -1,0 +1,13 @@
+id: gongsun-hong
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -199 }
+death: { year: -120 }
+birthplace: xue
+deathplace: changan
+places:
+  - { place: xue }
+  - { place: changan, start: -129, end: -120 }
+reviewed: false

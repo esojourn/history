@@ -1,0 +1,13 @@
+id: liu-ju
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -127 }
+death: { year: -90 }
+birthplace: changan
+deathplace: hu
+places:
+  - { place: changan, start: -127, end: -90 }
+  - { place: hu, start: -90, end: -90 }
+reviewed: false

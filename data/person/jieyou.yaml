@@ -1,0 +1,13 @@
+id: jieyou
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -119, circa: true }
+death: { year: -48 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: chigu, start: -100, end: -50 }
+  - { place: changan, start: -50, end: -48 }
+reviewed: false

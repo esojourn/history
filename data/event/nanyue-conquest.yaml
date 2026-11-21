@@ -1,0 +1,11 @@
+id: nanyue-conquest
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: -111 }
+end: { year: -110 }
+places: [panyu]
+participants:
+  - person: liu-che
+reviewed: false

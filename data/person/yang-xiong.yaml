@@ -1,0 +1,13 @@
+id: yang-xiong
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: -52 }
+death: { year: 18 }
+birthplace: chengdu
+deathplace: changan
+places:
+  - { place: chengdu }
+  - { place: changan }
+reviewed: false

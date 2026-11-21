@@ -1,0 +1,11 @@
+id: luntai
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: -88 }
+places: [changan, luntai]
+participants:
+  - person: liu-che
+  - person: sang-hongyang
+reviewed: false

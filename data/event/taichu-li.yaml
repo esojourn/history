@@ -1,0 +1,12 @@
+id: taichu-li
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: -103 }
+places: [changan]
+participants:
+  - person: liu-che
+  - person: luoxia-hong
+  - person: sima-qian
+reviewed: false

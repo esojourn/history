@@ -1,0 +1,15 @@
+id: li-guangli
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -140 }
+death: { year: -88, circa: true }
+birthplace: zhongshan
+deathplace: chanyu-ting
+places:
+  - { place: changan }
+  - { place: dunhuang, start: -103, end: -101 }
+  - { place: dayuan, start: -101, end: -100 }
+  - { place: chanyu-ting, start: -89, end: -88 }
+reviewed: false

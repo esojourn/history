@@ -34,3 +34,9 @@
 - id: jin
   civ: china
   color: "#6A4C93"
+- id: xin
+  civ: china
+  color: "#5E7F8C"
+- id: lvlin
+  civ: china
+  color: "#5A8F3A"

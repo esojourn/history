@@ -1,0 +1,13 @@
+id: wei-zifu
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -158 }
+death: { year: -90 }
+birthplace: pingyang
+deathplace: changan
+places:
+  - { place: pingyang }
+  - { place: changan, start: -138, end: -90 }
+reviewed: false

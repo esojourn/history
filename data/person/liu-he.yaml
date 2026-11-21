@@ -1,0 +1,16 @@
+id: liu-he
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -91, circa: true }
+death: { year: -58 }
+reign:
+  - { start: -73, end: -73 }
+birthplace: changyi
+deathplace: haihun
+places:
+  - { place: changyi, start: -91, end: -62 }
+  - { place: changan, start: -73, end: -73 }
+  - { place: haihun, start: -62, end: -58 }
+reviewed: false

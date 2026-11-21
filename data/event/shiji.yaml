@@ -1,0 +1,13 @@
+id: shiji
+wikidata: null
+civ: china
+type: cultural
+importance: 4
+start: { year: -103 }
+end: { year: -90, circa: true }
+places: [changan]
+participants:
+  - person: sima-qian
+  - person: liu-che
+  - person: li-ling
+reviewed: false

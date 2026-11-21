@@ -1,0 +1,11 @@
+id: xiyu-duhu
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: -59 }
+places: [wulei, jushi]
+participants:
+  - person: zheng-ji
+  - person: liu-xun
+reviewed: false

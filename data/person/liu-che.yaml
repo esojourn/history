@@ -1,0 +1,17 @@
+id: liu-che
+wikidata: null
+civ: china
+faction: han
+importance: 5
+birth: { year: -155 }
+death: { year: -86 }
+reign:
+  - { start: -140, end: -86 }
+birthplace: changan
+deathplace: wuzuo-gong
+places:
+  - { place: changan, start: -140, end: -86 }
+  - { place: ganquan }
+  - { place: taishan, start: -109, end: -109 }
+  - { place: wuzuo-gong, start: -86, end: -86 }
+reviewed: false

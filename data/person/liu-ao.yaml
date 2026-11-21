@@ -1,0 +1,14 @@
+id: liu-ao
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -50 }
+death: { year: -6 }
+reign:
+  - { start: -32, end: -6 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan }
+reviewed: false

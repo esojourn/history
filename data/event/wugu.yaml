@@ -1,0 +1,14 @@
+id: wugu
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: -91 }
+end: { year: -90 }
+places: [changan, ganquan, hu]
+participants:
+  - person: liu-che
+  - person: liu-ju
+  - person: wei-zifu
+  - person: liu-xun
+reviewed: false

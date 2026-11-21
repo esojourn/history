@@ -1,0 +1,13 @@
+id: wang-zhengjun
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -70 }
+death: { year: 13 }
+birthplace: yuancheng
+deathplace: changan
+places:
+  - { place: yuancheng }
+  - { place: changan, start: -53, end: 13 }
+reviewed: false

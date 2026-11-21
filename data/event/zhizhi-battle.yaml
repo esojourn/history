@@ -1,0 +1,12 @@
+id: zhizhi-battle
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -35 }
+places: [zhizhi-cheng, wulei]
+participants:
+  - person: chen-tang
+  - person: zhizhi
+  - person: liu-shi
+reviewed: false

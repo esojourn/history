@@ -1,0 +1,15 @@
+id: hulugu
+wikidata: null
+civ: steppe
+faction: xiongnu
+importance: 2
+birth: { unknown: true, approx: -125 }
+death: { year: -84 }
+reign:
+  - { start: -95, end: -84 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: chanyu-ting }
+  - { place: yanran, start: -89, end: -89 }
+reviewed: false

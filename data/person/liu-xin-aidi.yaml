@@ -1,0 +1,15 @@
+id: liu-xin-aidi
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -24 }
+death: { year: 0 }
+reign:
+  - { start: -6, end: 0 }
+birthplace: dingtao
+deathplace: changan
+places:
+  - { place: dingtao, start: -24, end: -7 }
+  - { place: changan, start: -7, end: 0 }
+reviewed: false

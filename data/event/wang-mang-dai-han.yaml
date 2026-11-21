@@ -1,0 +1,14 @@
+id: wang-mang-dai-han
+wikidata: null
+civ: china
+type: political
+importance: 5
+start: { year: 6 }
+end: { year: 9 }
+places: [changan]
+participants:
+  - person: wang-mang
+  - person: wang-zhengjun
+  - person: liu-xin
+  - person: liu-kan
+reviewed: false

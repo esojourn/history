@@ -1,0 +1,15 @@
+id: zhizhi
+wikidata: null
+civ: steppe
+faction: xiongnu
+importance: 3
+birth: { unknown: true, approx: -92 }
+death: { year: -35 }
+reign:
+  - { start: -55, end: -35 }
+birthplace: unknown
+deathplace: zhizhi-cheng
+places:
+  - { place: chanyu-ting, start: -53, end: -48 }
+  - { place: zhizhi-cheng, start: -43, end: -35 }
+reviewed: false

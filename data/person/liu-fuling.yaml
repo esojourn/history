@@ -1,0 +1,14 @@
+id: liu-fuling
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -93 }
+death: { year: -73 }
+reign:
+  - { start: -86, end: -73 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan, start: -86, end: -73 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: liu-xin
+wikidata: null
+civ: china
+faction: xin
+importance: 3
+birth: { year: -49, circa: true }
+death: { year: 23 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan }
+reviewed: false

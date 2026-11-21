@@ -1,0 +1,16 @@
+id: sima-xiangru
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { year: -178, circa: true }
+death: { year: -117 }
+birthplace: chengdu
+deathplace: maoling
+places:
+  - { place: chengdu }
+  - { place: suiyang }
+  - { place: changan }
+  - { place: nanzhong }
+  - { place: maoling }
+reviewed: false

@@ -1,0 +1,13 @@
+id: dongfang-shuo
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -160 }
+death: { unknown: true, approx: -92 }
+birthplace: yanci
+deathplace: unknown
+places:
+  - { place: yanci }
+  - { place: changan }
+reviewed: false

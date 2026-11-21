@@ -1,0 +1,12 @@
+id: wudanyu
+wikidata: null
+civ: steppe
+type: political
+importance: 2
+start: { year: -57 }
+end: { year: -53 }
+places: [chanyu-ting]
+participants:
+  - person: huhanye
+  - person: zhizhi
+reviewed: false

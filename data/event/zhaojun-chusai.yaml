@@ -1,0 +1,12 @@
+id: zhaojun-chusai
+wikidata: null
+civ: china
+type: diplomatic
+importance: 4
+start: { year: -32 }
+places: [changan, chanyu-ting]
+participants:
+  - person: wang-zhaojun
+  - person: huhanye
+  - person: liu-shi
+reviewed: false

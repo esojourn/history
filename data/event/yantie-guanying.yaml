@@ -1,0 +1,13 @@
+id: yantie-guanying
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: -118 }
+end: { year: -109 }
+places: [changan]
+participants:
+  - person: liu-che
+  - person: sang-hongyang
+  - person: zhang-tang
+reviewed: false

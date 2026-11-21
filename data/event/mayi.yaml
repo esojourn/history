@@ -1,0 +1,12 @@
+id: mayi
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: -132 }
+places: [mayi]
+participants:
+  - person: liu-che
+  - person: junchen
+  - person: li-guang
+reviewed: false

@@ -1,0 +1,15 @@
+id: huo-qubing
+wikidata: null
+civ: china
+faction: han
+importance: 4
+birth: { year: -139 }
+death: { year: -116 }
+birthplace: pingyang
+deathplace: unknown
+places:
+  - { place: changan }
+  - { place: hexi, start: -120, end: -120 }
+  - { place: mobei, start: -118, end: -118 }
+  - { place: langjuxu, start: -118, end: -118 }
+reviewed: false

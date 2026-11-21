@@ -1,0 +1,12 @@
+id: huhanye-chao
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: -50 }
+places: [ganquan, changan]
+participants:
+  - person: huhanye
+  - person: liu-xun
+  - person: xiao-wangzhi
+reviewed: false

@@ -1,0 +1,13 @@
+id: zhang-tang
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -165 }
+death: { year: -115 }
+birthplace: duling
+deathplace: changan
+places:
+  - { place: duling }
+  - { place: changan }
+reviewed: false

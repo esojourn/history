@@ -1,0 +1,14 @@
+id: qiedihou
+wikidata: null
+civ: steppe
+faction: xiongnu
+importance: 2
+birth: { unknown: true, approx: -140 }
+death: { year: -95 }
+reign:
+  - { start: -100, end: -95 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: chanyu-ting }
+reviewed: false

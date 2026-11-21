@@ -1,0 +1,14 @@
+id: suwu-mission
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: -99 }
+end: { year: -80 }
+places: [chanyu-ting, beihai]
+participants:
+  - person: su-wu
+  - person: qiedihou
+  - person: li-ling
+  - person: liu-fuling
+reviewed: false

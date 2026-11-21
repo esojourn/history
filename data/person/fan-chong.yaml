@@ -1,0 +1,16 @@
+id: fan-chong
+wikidata: null
+civ: china
+faction: lvlin
+importance: 3
+birth: { unknown: true, approx: -20 }
+death: { year: 27 }
+birthplace: langya
+deathplace: luoyang
+places:
+  - { place: ju, start: 18, end: 18 }
+  - { place: taishan }
+  - { place: changan, start: 25, end: 26 }
+  - { place: yiyang, start: 27, end: 27 }
+  - { place: luoyang, start: 27, end: 27 }
+reviewed: false

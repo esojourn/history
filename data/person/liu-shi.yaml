@@ -1,0 +1,14 @@
+id: liu-shi
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { year: -74, circa: true }
+death: { year: -32 }
+reign:
+  - { start: -48, end: -32 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan }
+reviewed: false

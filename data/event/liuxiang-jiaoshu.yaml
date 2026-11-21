@@ -1,0 +1,13 @@
+id: liuxiang-jiaoshu
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: -25 }
+end: { year: -5 }
+places: [changan]
+participants:
+  - person: liu-xiang
+  - person: liu-xin
+  - person: liu-ao
+reviewed: false

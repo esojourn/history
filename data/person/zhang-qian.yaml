@@ -1,0 +1,16 @@
+id: zhang-qian
+wikidata: null
+civ: china
+faction: han
+importance: 4
+birth: { unknown: true, approx: -164 }
+death: { year: -113 }
+birthplace: chenggu
+deathplace: unknown
+places:
+  - { place: changan }
+  - { place: chanyu-ting, start: -137, end: -128 }
+  - { place: dayuan, start: -128, end: -128 }
+  - { place: guishui, start: -127, end: -127 }
+  - { place: chigu, start: -118, end: -115 }
+reviewed: false

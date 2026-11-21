@@ -1,0 +1,14 @@
+id: xiao-wangzhi
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -110 }
+death: { year: -46 }
+birthplace: lanling
+deathplace: changan
+places:
+  - { place: lanling }
+  - { place: duling }
+  - { place: changan }
+reviewed: false

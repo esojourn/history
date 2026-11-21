@@ -1,0 +1,15 @@
+id: lulin-chimei
+wikidata: null
+civ: china
+type: uprising
+importance: 4
+start: { year: 17 }
+end: { year: 27 }
+places: [lvlin, ju, nanyang, changan, yiyang]
+participants:
+  - person: fan-chong
+  - person: liu-xuan
+  - person: liu-yan
+  - person: liu-xiu
+  - person: wang-mang
+reviewed: false

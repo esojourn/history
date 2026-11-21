@@ -1,0 +1,12 @@
+id: xin-fall
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 23 }
+places: [changan]
+participants:
+  - person: wang-mang
+  - person: liu-xuan
+  - person: liu-xin
+reviewed: false

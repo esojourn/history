@@ -1,0 +1,13 @@
+id: yantie-huiyi
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: -80 }
+places: [changan]
+participants:
+  - person: sang-hongyang
+  - person: huo-guang
+  - person: liu-fuling
+  - person: huan-kuan
+reviewed: false

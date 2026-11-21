@@ -1,0 +1,13 @@
+id: changyi-feili
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: -73 }
+places: [changan]
+participants:
+  - person: huo-guang
+  - person: liu-he
+  - person: liu-xun
+  - person: bing-ji
+reviewed: false

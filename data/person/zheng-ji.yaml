@@ -1,0 +1,14 @@
+id: zheng-ji
+wikidata: null
+civ: china
+faction: han
+importance: 2
+birth: { unknown: true, approx: -110 }
+death: { year: -48 }
+birthplace: kuaiji
+deathplace: unknown
+places:
+  - { place: luntai }
+  - { place: jushi, start: -67, end: -67 }
+  - { place: wulei, start: -59, end: -48 }
+reviewed: false

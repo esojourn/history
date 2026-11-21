@@ -1,0 +1,16 @@
+id: wang-mang
+wikidata: null
+civ: china
+faction: xin
+importance: 5
+birth: { year: -44 }
+death: { year: 23 }
+reign:
+  - { start: 9, end: 23 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan }
+  - { place: xinye, start: -4, end: -1 }
+  - { place: yuancheng }
+reviewed: false

@@ -1,0 +1,14 @@
+id: wang-zhaojun
+wikidata: null
+civ: china
+faction: han
+importance: 3
+birth: { unknown: true, approx: -51 }
+death: { unknown: true, approx: -18 }
+birthplace: zigui
+deathplace: unknown
+places:
+  - { place: zigui }
+  - { place: changan }
+  - { place: chanyu-ting, start: -32 }
+reviewed: false

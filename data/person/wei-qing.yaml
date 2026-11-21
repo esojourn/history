@@ -1,0 +1,16 @@
+id: wei-qing
+wikidata: null
+civ: china
+faction: han
+importance: 4
+birth: { unknown: true, approx: -155 }
+death: { year: -105 }
+birthplace: pingyang
+deathplace: changan
+places:
+  - { place: pingyang }
+  - { place: changan }
+  - { place: henan-di, start: -126, end: -126 }
+  - { place: shuofang, start: -123, end: -123 }
+  - { place: mobei, start: -118, end: -118 }
+reviewed: false

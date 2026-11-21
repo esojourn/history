@@ -1,0 +1,12 @@
+id: wang-mang-gaizhi
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 9 }
+end: { year: 23 }
+places: [changan]
+participants:
+  - person: wang-mang
+  - person: liu-xin
+reviewed: false

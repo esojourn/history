@@ -1,0 +1,13 @@
+id: zhang-qian-xiyu
+wikidata: null
+civ: china
+type: diplomatic
+importance: 5
+start: { year: -137 }
+end: { year: -114 }
+places: [changan, hexi, dayuan, guishui, chigu]
+participants:
+  - person: zhang-qian
+  - person: liu-che
+  - person: junchen
+reviewed: false

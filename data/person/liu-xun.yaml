@@ -1,0 +1,16 @@
+id: liu-xun
+wikidata: null
+civ: china
+faction: han
+importance: 4
+birth: { year: -90 }
+death: { year: -48 }
+reign:
+  - { start: -73, end: -48 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan }
+  - { place: duling }
+  - { place: ganquan, start: -50, end: -50 }
+reviewed: false
