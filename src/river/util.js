@@ -7,6 +7,22 @@ export const fades = (H, pre) => Object.entries(H.FAC).map(([id, f]) =>
   grad(`${pre}b-${id}`, f.c, [[0, 0], [.35, .22], [.65, .22], [1, 0]], pre === 'v')).join('');
 export const fadeOf = (p, pre) => (p.b == null && p.dq ? `url(#${pre}b-${p.fac})` : p.b == null ? `url(#${pre}l-${p.fac})` : p.dq ? `url(#${pre}r-${p.fac})` : null);
 
+// 字号：1 是最小（原来的大小），往上放大几档。选择记在浏览器里，各页面通用（Base.astro 载入时就套用）。
+// 网页文字靠 CSS 变量 --fz 放大；时间长河的图整张按同一倍数放大，字和条一起变大，不会互相挤压。
+export const FZ = [1, 1.15, 1.3, 1.5];
+export const fz = () => +getComputedStyle(document.documentElement).getPropertyValue('--fz') || 1;
+export function fontButtons() {
+  const sync = () => document.querySelectorAll('[data-fz]').forEach(b => { b.disabled = b.dataset.fz < 0 ? fz() <= FZ[0] : fz() >= FZ[FZ.length - 1]; });
+  document.addEventListener('click', e => {
+    const b = e.target.closest('[data-fz]'); if (!b) return;
+    const i = FZ.findIndex(v => v >= fz() - .001), z = FZ[Math.max(0, Math.min(FZ.length - 1, i + +b.dataset.fz))];
+    document.documentElement.style.setProperty('--fz', z);
+    try { localStorage.setItem('fz', z); } catch (_) {}
+    sync(); dispatchEvent(new Event('fzchange'));
+  });
+  sync();
+}
+
 export const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 export const isMobile = () => matchMedia('(max-width: 720px)').matches;
 

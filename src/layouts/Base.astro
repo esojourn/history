@@ -9,6 +9,7 @@ const { title, desc, lang, bodyClass } = Astro.props;
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
   {desc && <meta name="description" content={desc}>}
+  <script is:inline>/* 用户上次选的字号（时间长河页的 A− A+），所有页面都套用 */ try { const z = +localStorage.getItem('fz'); if (z > 1) document.documentElement.style.setProperty('--fz', z); } catch (e) {}</script>
 </head>
 <body class={bodyClass}>
   <slot />

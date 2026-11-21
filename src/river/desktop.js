@@ -1,5 +1,5 @@
 // 桌面版时间长河：横向泳道。滚轮缩放时换一层内容，每条泳道可以展开或收起。
-import { fades, fadeOf, reduceMotion, setHash, readHash, cardTarget } from './util.js';
+import { fades, fadeOf, reduceMotion, setHash, readHash, cardTarget, fz } from './util.js';
 
 export function desktop(H, card, search) {
   const $ = s => document.querySelector(s), t = H.t, reduce = reduceMotion();
@@ -11,12 +11,12 @@ export function desktop(H, card, search) {
   const VOPEN = Object.fromEntries(H.site.views.map(v => [v.id, v.open]));   // 有的快捷视图顺带展开某个文明
   const PL = {}, EL = {};
   H.lanes.forEach(l => { PL[l.id] = H.byWeight(H.people.filter(p => p.lane === l.id)); EL[l.id] = H.events.filter(e => e.lane === l.id); });
-  let W = 0, raf = 0, POS = {}, EPOS = {};
+  let W = 0, raf = 0, POS = {}, EPOS = {}, Z = fz();   // Z：字号放大倍数。图整张放大 Z 倍，下面的尺寸都是放大前的
 
   const defs = '<defs>' + H.lanes.map(l =>
     `<pattern id="hatch-${l.id}" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="${l.c}" stroke-width="1.6" stroke-opacity=".45"/></pattern>`).join('') + fades(H, 'h') + '</defs>';
 
-  const plotW = () => W - G - (detail.classList.contains('on') ? 330 : 0);
+  const plotW = () => W - G - (detail.classList.contains('on') ? detail.offsetWidth / Z : 0);
   const kMin = () => (W - G) / (H.EXTENT[1] - H.EXTENT[0]);
   const fix = () => {
     S.k = H.clamp(S.k, kMin(), CAP);
@@ -25,8 +25,8 @@ export function desktop(H, card, search) {
   const draw = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; render(); }); };
 
   function render() {
-    W = stage.clientWidth; fix();
-    const { t0, k } = S, x = y => (y - t0) * k + G, sy = stage.scrollTop;
+    W = stage.clientWidth / Z; fix();
+    const { t0, k } = S, x = y => (y - t0) * k + G, sy = stage.scrollTop / Z;
     const f = H.clamp((k - 2.2) / 1.6, 0, 1);            // 人物层展开的程度
     const zImp = k < 5 ? 3 : k < 8 ? 2 : 1, eImp = k < 5 ? 4 : k < 8 ? 3 : 1;
     const selP = S.sel && S.sel.t === 'p' ? S.sel.id : null;
@@ -67,8 +67,8 @@ export function desktop(H, card, search) {
       const r = { l, open, shown, evs, evH, evRow, y: yy, bandH: H.lerp(46, BH, f), h: H.lerp(46, full, f) };
       yy += r.h + 6; return r;
     });
-    const total = Math.max(yy + 6, stage.clientHeight);
-    svg.setAttribute('height', total); svg.setAttribute('viewBox', `0 0 ${W} ${total}`);
+    const total = Math.max(yy + 6, stage.clientHeight / Z);
+    svg.setAttribute('height', total * Z); svg.setAttribute('viewBox', `0 0 ${W} ${total}`);
 
     // 竖格线（年份数字在最后画，因为要钉在顶上）
     const ticks = [], step = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000].find(s => s * k >= 72) || 1000;
@@ -183,8 +183,9 @@ export function desktop(H, card, search) {
   // 选中的人或事不在屏幕里时，上下滚到能看见的位置
   function reveal() {
     if (!S.sel) return;
-    const v = S.sel.t === 'p' ? POS[S.sel.id] : EPOS[S.sel.id];
+    let v = S.sel.t === 'p' ? POS[S.sel.id] : EPOS[S.sel.id];
     if (v == null) return;
+    v *= Z;
     if (v < stage.scrollTop + AX + 12 || v > stage.scrollTop + stage.clientHeight - 24) stage.scrollTop = Math.max(0, v - stage.clientHeight * .4);
   }
 
@@ -235,7 +236,7 @@ export function desktop(H, card, search) {
   }
 
   /* 缩放与拖动。内容多了以后页面会比屏幕高：拖动同时管左右和上下，在左栏上滚轮是上下滚 */
-  const px = e => e.clientX - svg.getBoundingClientRect().left;
+  const px = e => (e.clientX - svg.getBoundingClientRect().left) / Z;
   svg.addEventListener('wheel', e => {
     const X = px(e);
     if (X < G) return;
@@ -253,7 +254,7 @@ export function desktop(H, card, search) {
     if (dragging) {
       if (Math.abs(e.clientX - dragging.x) > 4 || Math.abs(e.clientY - dragging.y) > 4) { dragging.moved = true; svg.classList.add('drag'); }
       if (dragging.moved) {
-        S.t0 = dragging.t0 - (e.clientX - dragging.x) / S.k; S.hx = null;
+        S.t0 = dragging.t0 - (e.clientX - dragging.x) / Z / S.k; S.hx = null;
         stage.scrollTop = dragging.st - (e.clientY - dragging.y); draw();
       }
     } else { S.hx = px(e); draw(); }
@@ -289,8 +290,13 @@ export function desktop(H, card, search) {
   });
   $('#legend').innerHTML = Object.values(H.RT).map(r => `<span class="lg"><i style="border-top:2px ${r.dash ? 'dashed' : 'solid'} ${r.c}"></i>${r.n}</span>`).join('');
   addEventListener('resize', draw);
+  // 换字号：保持屏幕正中的年份和上下位置不变
+  addEventListener('fzchange', () => {
+    const c = S.t0 + plotW() / S.k / 2, top = stage.scrollTop / Z;
+    Z = fz(); W = stage.clientWidth / Z; S.t0 = c - plotW() / S.k / 2; render(); stage.scrollTop = top * Z;
+  });
 
-  W = stage.clientWidth; S.k = kMin(); render();
+  W = stage.clientWidth / Z; S.k = kMin(); render();
   // 地址里的 #focus、#all、#person/han-xin 之类，直接打开对应的视图
   const { sel, view } = readHash(H), zoomIn = w => { S.k = w / (hi - lo); S.t0 = lo; };
   if (sel) { zoomIn(W - G - 330); select(sel); }

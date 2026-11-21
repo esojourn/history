@@ -4,13 +4,14 @@ import { makeCard } from '../lib/card.js';
 import { createSearch } from './search.js';
 import { desktop } from './desktop.js';
 import { mobile } from './mobile.js';
-import { isMobile } from './util.js';
+import { isMobile, fontButtons } from './util.js';
 
 (async () => {
   const app = document.querySelector('#app');
   const data = await (await fetch(app.dataset.src)).json();
   const H = createModel(data, app.dataset.base);
   const card = makeCard(H), search = createSearch(H);
+  fontButtons();
 
   if (isMobile()) { document.querySelector('#m').hidden = false; mobile(H, card, search); }
   else { document.querySelector('#d').hidden = false; desktop(H, card, search); }

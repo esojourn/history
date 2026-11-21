@@ -1,5 +1,5 @@
 // 手机版时间长河：时间自上而下，人名竖排，一次看一个文明里的一段。
-import { fades, fadeOf, setHash, readHash, cardTarget, reduceMotion } from './util.js';
+import { fades, fadeOf, setHash, readHash, cardTarget, reduceMotion, fz } from './util.js';
 
 export function mobile(H, card, search) {
   const $ = s => document.querySelector(s), t = H.t;
@@ -28,12 +28,12 @@ export function mobile(H, card, search) {
   const defaultSeg = lane => Math.max(0, SEG[lane].findIndex(s => s.lo < f1 && s.hi > f0));
   const segOf = (lane, a, b) => { const mid = (a + b) / 2, i = SEG[lane].findIndex(s => mid >= s.lo && mid <= s.hi); return i >= 0 ? i : Math.max(0, SEG[lane].findIndex(s => b > s.lo && a < s.hi)); };
   // 一年占多少像素：一百来年的一段 12；几百年的一段 8；只排先后的一段压得很扁
-  let lo = f0, hi = f1, KY = 12;
+  let lo = f0, hi = f1, KY = 12, Z = fz();   // Z：字号放大倍数。人物图整张放大 Z 倍，y() 等是放大前的尺寸，滚动位置是放大后的
   const y = v => (v - lo) * KY + TOP;
   // 换文明时保持在同一年：取屏幕上方 REF 像素处对应的年份，换过去以后让同一年仍在这个位置
   const REF = 110;
   function yearAt() {
-    if (M.mode === 'people') return seg() ? lo + (body.scrollTop + REF - TOP) / KY : null;
+    if (M.mode === 'people') return seg() ? lo + ((body.scrollTop + REF) / Z - TOP) / KY : null;
     const at = body.scrollTop + REF, l = H.lane(M.lane);
     for (const el of body.querySelectorAll('.mband')) if (el.offsetTop + el.offsetHeight > at) {
       const b = l.bands[+el.dataset.i]; return b[1] + (b[2] - b[1]) * H.clamp((at - el.offsetTop) / el.offsetHeight, 0, 1);
@@ -73,7 +73,7 @@ export function mobile(H, card, search) {
     const list = mine.filter(p => few || M.all || p.imp >= MAIN || p.id === selP || lit.has(p.id) || litE.has(p.id));
     const guests = H.people.filter(p => p.lane !== M.lane && within(p, lo, hi) && (lit.has(p.id) || litE.has(p.id))).sort((a, b) => a.b0 - b.b0);
     const colsAll = list.concat(guests), cols = H.pack(colsAll, p => p.b0, p => p.d, 30 / KY, 'col');
-    const Wd = Math.max(AXW + cols * CW + 8, body.clientWidth), Ht = y(hi) + 20;
+    const Wd = Math.max(AXW + cols * CW + 8, body.clientWidth / Z), Ht = y(hi) + 20;
     const st = keepScroll ? body.scrollTop : 0, o = ['<defs>' + fades(H, 'v') + '</defs>'];
 
     // 左栏：事件优先，空处补十年刻度（只排先后的一段没有刻度）
@@ -96,7 +96,7 @@ export function mobile(H, card, search) {
     colsAll.forEach(p => {
       const c = H.FAC[p.fac].c, y1 = y(Math.max(p.b0, lo - 1)), y2 = y(Math.min(p.d, hi + 1)), guest = p.lane !== M.lane, fade = fadeOf(p, 'v');
       const on = !M.sel || p.id === selP || lit.has(p.id) || litE.has(p.id);
-      const ny = H.clamp(st + 8, y1 + 5, Math.max(y1 + 5, y2 - p.n.length * 14 - 3));
+      const ny = H.clamp(st / Z + 8, y1 + 5, Math.max(y1 + 5, y2 - p.n.length * 14 - 3));
       o.push(`<g class="pp" data-p="${p.id}" opacity="${on ? 1 : .15}">
         <rect x="${cx(p) - 12}" y="${y1}" width="24" height="${Math.max(0, y2 - y1)}" rx="3" fill="${fade || c}" fill-opacity="${fade ? 1 : .22}"${p.id === selP ? ` stroke="${c}" stroke-width="1.5"` : guest || p.ns ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".8"` : ''}/>
         ${p.reigns.map(rg => `<rect x="${cx(p) + 9}" y="${y(Math.max(rg[0], lo - 1))}" width="3" height="${Math.max(0, y(Math.min(rg[1], hi + 1)) - y(Math.max(rg[0], lo - 1)))}" fill="${c}"/>`).join('')}
@@ -117,7 +117,7 @@ export function mobile(H, card, search) {
       <span><b>${sg.name}</b><i>${sg.ns ? t('m.onlyOrder') : `${H.fmt(Math.round(lo))}—${H.fmt(Math.round(hi))}`}</i></span>
       ${n > 1 ? `<button data-seg="${M.seg + 1}"${M.seg < n - 1 ? '' : ' disabled'} aria-label="${t('m.nextSeg')}">›</button>` : ''}
       ${few ? '' : `<button class="all" data-all aria-pressed="${M.all}">${M.all ? t('m.mainShort') : t('m.allShort', { n: mine.length })}</button>`}</div>`;
-    body.innerHTML = `${nav}<svg id="mpeople" width="${Wd}" height="${Ht}" viewBox="0 0 ${Wd} ${Ht}">${o.join('')}</svg>
+    body.innerHTML = `${nav}<svg id="mpeople" width="${Wd * Z}" height="${Ht * Z}" viewBox="0 0 ${Wd} ${Ht}">${o.join('')}</svg>
       <div class="mmore">${M.seg < n - 1 ? `<button class="mnext" data-seg="${M.seg + 1}">${t('m.nextSegTo', { name: segs()[M.seg + 1].name })}</button><br>` : ''}${few ? '' : `<button data-all>${M.all ? t('m.mainOnly') : t('m.showAll', { n: mine.length })}</button><br>`}${guests.length ? t('m.guests') : ''}</div>`;
     if (body.scrollTop !== st) body.scrollTop = st;
   }
@@ -130,7 +130,7 @@ export function mobile(H, card, search) {
     M.mode === 'bands' ? bands() : people(keep);
   }
   // 换了文明、换了一段或刚进人物层：滚到这一段最早的人物那里
-  const toStart = () => { const sg = seg(), m = sg ? PL[M.lane].filter(p => within(p, sg.lo, sg.hi)) : []; body.scrollTop = m.length ? Math.max(0, y(Math.max(lo, m[0].b0)) - 20) : 0; };
+  const toStart = () => { const sg = seg(), m = sg ? PL[M.lane].filter(p => within(p, sg.lo, sg.hi)) : []; body.scrollTop = m.length ? Math.max(0, (y(Math.max(lo, m[0].b0)) - 20) * Z) : 0; };
 
   function showCard() {
     sheet.classList.toggle('on', !!M.sel);
@@ -156,7 +156,7 @@ export function mobile(H, card, search) {
     if (sel) {
       // 滚到他最早的一条关系附近，让关系线露在抽屉上方
       const first = sel.t === 'p' ? Math.min(H.P[sel.id].d - 10 / (KY / 12), ...H.relsOf(sel.id).map(r => r.year)) : H.E[sel.id].s;
-      body.scrollTop = Math.max(0, y(Math.max(first, lo)) - 90);
+      body.scrollTop = Math.max(0, y(Math.max(first, lo)) * Z - 90);
     }
   }
 
@@ -167,7 +167,7 @@ export function mobile(H, card, search) {
     M.lane = id; M.sel = null; M.full = false; showCard();
     if (M.mode === 'people') {
       M.seg = v == null ? defaultSeg(M.lane) : nearSeg(M.lane, v); paint();
-      if (v != null && seg()) body.scrollTop = Math.max(0, y(H.clamp(v, lo, hi)) - REF); else toStart();
+      if (v != null && seg()) body.scrollTop = Math.max(0, y(H.clamp(v, lo, hi)) * Z - REF); else toStart();
       body.scrollLeft = dir < 0 ? body.scrollWidth : 0;   // 从右边滑进来的，先看到它的右边缘
     } else { paint(); if (v != null) bandsTo(v); }
     slide(dir * 40, 0);
@@ -210,6 +210,13 @@ export function mobile(H, card, search) {
     if (!nx || (dir > 0 ? !s.atR : !s.atL)) return;
     switchLane(nx.id, dir);
   }, { passive: true });
+
+  // 换字号：仍停在同一年
+  addEventListener('fzchange', () => {
+    const v = yearAt(); Z = fz(); paint(true);
+    if (v == null) return;
+    if (M.mode === 'people') { if (seg()) body.scrollTop = Math.max(0, y(H.clamp(v, lo, hi)) * Z - REF); } else bandsTo(v);
+  });
 
   let sraf = 0;
   body.addEventListener('scroll', () => { if (M.mode === 'people' && !sraf) sraf = requestAnimationFrame(() => { sraf = 0; people(true); }); });

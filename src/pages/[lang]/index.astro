@@ -27,6 +27,7 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
         </div>
         <button class="find" id="find">{t('search.open')}</button>
         <button class="about-btn" data-about>{t('about.open')}</button>
+        <div class="seg fz" role="group" aria-label={t('fz.label')}><button data-fz="-1" aria-label={t('fz.smaller')}>A−</button><button data-fz="1" aria-label={t('fz.bigger')}>A+</button></div>
         <span class="hint">{t('hint.desktop')}</span>
       </header>
       <div class="wrap">
@@ -42,6 +43,7 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
         <h1>{t('site.title')}</h1>
         <button class="find" id="mfind">{t('search.open')}</button>
         <button class="about-btn" data-about>{t('about.open')}</button>
+        <div class="seg fz" role="group" aria-label={t('fz.label')}><button data-fz="-1" aria-label={t('fz.smaller')}>A−</button><button data-fz="1" aria-label={t('fz.bigger')}>A+</button></div>
         <div class="seg" role="group">
           <button data-m="bands" aria-pressed="true">{t('m.bands')}</button><button data-m="people" aria-pressed="false">{t('m.people')}</button>
         </div>
