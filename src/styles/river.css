@@ -74,3 +74,17 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 .mseg button.back, .mseg button.all { width: auto; padding: 0 9px; font-size: 13px; }
 .mseg button.all[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .mseg button:disabled { opacity: .3; }
+
+/* 说明弹窗（内容取自 README） */
+.about-btn { margin-left: .4rem; }
+#d .bar .about-btn { order: 0; }
+dialog.about { width: min(860px, 94vw); max-height: 88vh; padding: 0; border: 1px solid #ccc; border-radius: 8px; overflow: auto; }
+dialog.about::backdrop { background: rgba(0,0,0,.4); }
+.about-close { position: sticky; top: 0; text-align: right; background: #fff; padding: .3rem .6rem 0; }
+.about-close button { font-size: 1.5rem; line-height: 1; border: 0; background: none; cursor: pointer; }
+.about-body { padding: 0 1.4rem 1.4rem; line-height: 1.75; font-size: .95rem; }
+.about-body img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+.about-body table { border-collapse: collapse; font-size: .85rem; display: block; overflow-x: auto; }
+.about-body th, .about-body td { border: 1px solid #ddd; padding: .3rem .5rem; vertical-align: top; }
+.about-body pre { background: #f5f5f5; padding: .6rem; overflow-x: auto; }
+.about-gh { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; font-weight: bold; }

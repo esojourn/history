@@ -1,7 +1,7 @@
 # 界面文字。翻译成别的语言时，复制这个文件到 locales/<语言>/ui.yaml 再逐条翻译。
 # {n} 这样的花括号是程序填进去的内容，翻译时保留。
 
-site.title: 时间长河
+site.title: 世界历史
 site.desc: 把各个文明的历史放在同一条时间轴上，对照着看。
 
 # 年份
@@ -24,7 +24,7 @@ rel.ally: 同盟、同袍
 rel.mentor: 举荐、师友
 
 # 时间长河：顶栏
-view.world: 世界
+view.world: 概览
 view.china: 中国
 view.bible: 圣经历史
 view.focus: 秦汉之际
@@ -32,6 +32,9 @@ view.sanguo: 东汉三国
 open.default: 只展开中国
 open.all: 全部展开
 open.none: 全部收起
+about.open: 说明
+about.close: 关闭
+about.github: 源代码与数据：
 hint.desktop: 滚轮缩放，上下左右拖动；点文明的名称或色带，展开或收起它的人物和大事
 note.range: 这一段还没有录入人物。目前圣经历史录了全程，中国录了秦汉至三国（公元前 262 年至公元 280 年），匈奴另录了西汉中后期的几位单于，其他文明只录了公元前 262 至前 138 年。
 note.closed: 这一段录有人物的文明：{lanes}。点它的名称或色带可以展开。
