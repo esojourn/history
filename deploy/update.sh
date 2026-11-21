@@ -22,6 +22,8 @@ RELEASES="$BASE/releases"
 CURRENT="$BASE/current"
 KEEP=5
 DOMAINS="history.alz-ai.cn lishi.alz-ai.cn"
+# 构建专用的 Node.js，装在 $BASE/node/ 下，不动系统自带的 node（同机还有别的站点）
+NODE_VERSION="24.22.3"
 
 say()  { printf '\033[1;34m==>\033[0m %s\n' "$*"; }
 ok()   { printf '\033[1;32m✓\033[0m %s\n' "$*"; }
@@ -79,6 +81,24 @@ prune() {
   done
 }
 
+# 确保构建专用的 Node.js 已安装，并放到 PATH 最前面
+ensure_node() {
+  local dir="$BASE/node/v$NODE_VERSION"
+  if [ ! -x "$dir/bin/node" ]; then
+    local arch
+    case "$(uname -m)" in
+      x86_64) arch=x64 ;; aarch64) arch=arm64 ;; *) die "不认识的 CPU 架构 $(uname -m)" ;;
+    esac
+    say "安装构建用的 Node.js $NODE_VERSION 到 $dir"
+    mkdir -p "$dir.tmp"
+    curl -fsSL "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$arch.tar.xz" \
+      | tar -xJ --strip-components=1 -C "$dir.tmp"
+    mv "$dir.tmp" "$dir"
+  fi
+  export PATH="$dir/bin:$PATH"
+  echo "  使用 Node.js $(node -v)"
+}
+
 cmd_update() {
   local ref="${1:-origin/$BRANCH}" force="${2:-}"
 
@@ -100,6 +120,8 @@ cmd_update() {
     ok "线上已经是 $hash，无需更新（如要重新构建：history-update $hash --force）"
     return 0
   fi
+
+  ensure_node
 
   say "安装依赖"
   npm ci --no-audit --no-fund --loglevel=error
@@ -133,6 +155,8 @@ main() {
   [ "$(id -u)" = 0 ] || die "请用 root 执行"
   exec 9>"$BASE/.deploy.lock"
   flock -n 9 || die "另一个更新正在进行，请稍后再试"
+  set -E
+  trap 'printf "\033[1;31m✗ 更新中断（第 %s 行出错），线上当前版本：%s\033[0m\n" "$LINENO" "$(current_release)" >&2' ERR
 
   case "${1:-}" in
     list)        cmd_list ;;
