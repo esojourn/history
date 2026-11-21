@@ -1,0 +1,12 @@
+id: thomas-more
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1478 }
+death: { year: 1535 }
+birthplace: london
+deathplace: london
+places:
+  - { place: london }
+  - { place: oxford }
+reviewed: false

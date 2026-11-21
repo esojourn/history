@@ -54,3 +54,11 @@ periods:
   - id: pre-reformation
     start: 1294
     end: 1517
+  # 以下两段按同书第三部“改教时期的教会”的脉络划分：
+  # 九十五条论纲（1517）→ 奥格斯堡和约（1555）→ 威斯特伐利亚和约（1648）。
+  - id: reformation
+    start: 1517
+    end: 1555
+  - id: confessional-wars
+    start: 1555
+    end: 1648

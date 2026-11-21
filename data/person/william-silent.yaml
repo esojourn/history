@@ -1,0 +1,13 @@
+id: william-silent
+wikidata: null
+civ: rome
+importance: 4
+birth: { year: 1533 }
+death: { year: 1584 }
+birthplace: dillenburg
+deathplace: delft
+places:
+  - { place: brussels, start: 1544, end: 1567 }
+  - { place: dillenburg, start: 1567, end: 1572 }
+  - { place: delft, start: 1572, end: 1584 }
+reviewed: false

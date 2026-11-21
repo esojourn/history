@@ -1,0 +1,12 @@
+id: john-of-leiden
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1509 }
+death: { year: 1536 }
+birthplace: leiden
+deathplace: munster
+places:
+  - { place: leiden }
+  - { place: munster, start: 1534, end: 1536 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: marburg-colloquy
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1529 }
+places: [marburg]
+participants:
+  - person: luther
+  - person: zwingli
+  - person: melanchthon
+  - person: bucer
+reviewed: false

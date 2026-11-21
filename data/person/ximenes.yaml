@@ -1,0 +1,12 @@
+id: ximenes
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1436 }
+death: { year: 1517 }
+birthplace: torrelaguna
+deathplace: roa
+places:
+  - { place: toledo, start: 1495, end: 1517 }
+  - { place: alcala }
+reviewed: false

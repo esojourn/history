@@ -1,0 +1,14 @@
+id: mary-1
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1516 }
+death: { year: 1558 }
+reign:
+  - { start: 1553, end: 1558 }
+birthplace: greenwich
+deathplace: london
+places:
+  - { place: london }
+  - { place: greenwich }
+reviewed: false

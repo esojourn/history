@@ -1,0 +1,13 @@
+id: beza
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1519 }
+death: { year: 1605 }
+birthplace: vezelay
+deathplace: geneva
+places:
+  - { place: orleans, start: 1528, end: 1539 }
+  - { place: paris, start: 1539, end: 1548 }
+  - { place: geneva, start: 1558, end: 1605 }
+reviewed: false

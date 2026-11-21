@@ -1,0 +1,13 @@
+id: aleander
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1480 }
+death: { year: 1542 }
+birthplace: motta-di-livenza
+deathplace: rome
+places:
+  - { place: paris, start: 1508, end: 1513 }
+  - { place: worms, start: 1521, end: 1521 }
+  - { place: rome }
+reviewed: false

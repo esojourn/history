@@ -1,0 +1,12 @@
+id: staupitz
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1460, circa: true }
+death: { year: 1524 }
+birthplace: motterwitz
+deathplace: salzburg
+places:
+  - { place: wittenberg, start: 1502, end: 1512 }
+  - { place: salzburg, start: 1520, end: 1524 }
+reviewed: false

@@ -1,0 +1,10 @@
+id: edict-of-nantes
+wikidata: null
+civ: bible
+type: political
+importance: 4
+start: { year: 1598 }
+places: [nantes]
+participants:
+  - person: henry-4-france
+reviewed: false

@@ -1,0 +1,13 @@
+id: paul-3
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1468 }
+death: { year: 1549 }
+reign:
+  - { start: 1534, end: 1549 }
+birthplace: canino
+deathplace: rome
+places:
+  - { place: rome, start: 1493, end: 1549 }
+reviewed: false

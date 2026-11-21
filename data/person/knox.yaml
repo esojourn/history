@@ -1,0 +1,14 @@
+id: knox
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1514, circa: true }
+death: { year: 1572 }
+birthplace: haddington
+deathplace: edinburgh
+places:
+  - { place: st-andrews, start: 1547, end: 1547 }
+  - { place: london, start: 1549, end: 1554 }
+  - { place: geneva, start: 1554, end: 1559 }
+  - { place: edinburgh, start: 1559, end: 1572 }
+reviewed: false

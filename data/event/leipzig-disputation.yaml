@@ -1,0 +1,13 @@
+id: leipzig-disputation
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1519 }
+places: [leipzig]
+participants:
+  - person: luther
+  - person: eck
+  - person: karlstadt
+  - person: melanchthon
+reviewed: false

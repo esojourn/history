@@ -1,0 +1,15 @@
+id: adrian-6
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1459 }
+death: { year: 1523 }
+reign:
+  - { start: 1522, end: 1523 }
+birthplace: utrecht
+deathplace: rome
+places:
+  - { place: utrecht }
+  - { place: toledo, start: 1516, end: 1522 }
+  - { place: rome, start: 1522, end: 1523 }
+reviewed: false

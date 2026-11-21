@@ -1,0 +1,12 @@
+id: council-of-trent
+wikidata: null
+civ: bible
+type: cultural
+importance: 5
+start: { year: 1545 }
+end: { year: 1563 }
+places: [trent, bologna]
+participants:
+  - person: paul-3
+  - person: charles-5
+reviewed: false

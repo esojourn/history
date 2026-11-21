@@ -1,0 +1,12 @@
+id: hutter
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1500, circa: true }
+death: { year: 1536 }
+birthplace: st-lorenzen
+deathplace: innsbruck
+places:
+  - { place: moravia, start: 1533, end: 1535 }
+  - { place: innsbruck, start: 1535, end: 1536 }
+reviewed: false

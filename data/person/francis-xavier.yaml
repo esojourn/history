@@ -1,0 +1,13 @@
+id: francis-xavier
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1506 }
+death: { year: 1552 }
+birthplace: javier
+deathplace: shangchuan
+places:
+  - { place: paris, start: 1525, end: 1536 }
+  - { place: goa, start: 1542, end: 1552 }
+  - { place: shangchuan, start: 1552, end: 1552 }
+reviewed: false

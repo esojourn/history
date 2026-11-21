@@ -1,0 +1,13 @@
+id: zwingli
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 1484 }
+death: { year: 1531 }
+birthplace: wildhaus
+deathplace: kappel
+places:
+  - { place: basel, start: 1502, end: 1506 }
+  - { place: zurich, start: 1519, end: 1531 }
+  - { place: marburg, start: 1529, end: 1529 }
+reviewed: false

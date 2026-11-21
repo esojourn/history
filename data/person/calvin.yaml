@@ -1,0 +1,16 @@
+id: calvin
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 1509 }
+death: { year: 1564 }
+birthplace: noyon
+deathplace: geneva
+places:
+  - { place: paris, start: 1523, end: 1533 }
+  - { place: orleans, start: 1528, end: 1529 }
+  - { place: bourges, start: 1529, end: 1531 }
+  - { place: basel, start: 1535, end: 1536 }
+  - { place: strasbourg, start: 1538, end: 1541 }
+  - { place: geneva, start: 1541, end: 1564 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: spalatin
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1484 }
+death: { year: 1545 }
+birthplace: spalt
+deathplace: altenburg
+places:
+  - { place: wittenberg }
+  - { place: torgau }
+  - { place: altenburg, start: 1525, end: 1545 }
+reviewed: false

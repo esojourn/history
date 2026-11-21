@@ -1,0 +1,8 @@
+id: peace-of-westphalia
+wikidata: null
+civ: bible
+type: diplomatic
+importance: 5
+start: { year: 1648 }
+places: [munster, osnabruck]
+reviewed: false

@@ -1,0 +1,12 @@
+id: st-bartholomew
+wikidata: null
+civ: bible
+type: political
+importance: 4
+start: { year: 1572 }
+places: [paris]
+participants:
+  - person: coligny
+  - person: catherine-medici
+  - person: henry-4-france
+reviewed: false

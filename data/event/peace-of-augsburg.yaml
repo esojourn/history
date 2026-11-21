@@ -1,0 +1,10 @@
+id: peace-of-augsburg
+wikidata: null
+civ: bible
+type: diplomatic
+importance: 4
+start: { year: 1555 }
+places: [augsburg]
+participants:
+  - person: charles-5
+reviewed: false

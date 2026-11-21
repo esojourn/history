@@ -1,0 +1,15 @@
+id: tyndale
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1494, circa: true }
+death: { year: 1536 }
+birthplace: gloucestershire
+deathplace: vilvoorde
+places:
+  - { place: oxford }
+  - { place: london, start: 1523, end: 1524 }
+  - { place: worms, start: 1526, end: 1526 }
+  - { place: antwerp, start: 1528, end: 1535 }
+  - { place: vilvoorde, start: 1535, end: 1536 }
+reviewed: false

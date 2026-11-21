@@ -1,0 +1,14 @@
+id: diet-of-worms
+wikidata: null
+civ: bible
+type: political
+importance: 5
+start: { year: 1521 }
+places: [worms, wartburg]
+participants:
+  - person: charles-5
+  - person: luther
+  - person: aleander
+  - person: frederick-wise
+  - person: spalatin
+reviewed: false

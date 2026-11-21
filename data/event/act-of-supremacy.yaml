@@ -1,0 +1,12 @@
+id: act-of-supremacy
+wikidata: null
+civ: bible
+type: political
+importance: 4
+start: { year: 1534 }
+places: [london]
+participants:
+  - person: henry-8
+  - person: cranmer
+  - person: thomas-more
+reviewed: false

@@ -1,0 +1,15 @@
+id: frederick-wise
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1463 }
+death: { year: 1525 }
+reign:
+  - { start: 1486, end: 1525 }
+birthplace: torgau
+deathplace: lochau
+places:
+  - { place: wittenberg }
+  - { place: torgau }
+  - { place: worms, start: 1521, end: 1521 }
+reviewed: false

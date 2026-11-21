@@ -1,0 +1,13 @@
+id: catherine-medici
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1519 }
+death: { year: 1589 }
+birthplace: florence
+deathplace: blois
+places:
+  - { place: florence }
+  - { place: paris, start: 1533, end: 1589 }
+  - { place: blois }
+reviewed: false

@@ -1,0 +1,14 @@
+id: lefevre
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1455, circa: true }
+death: { year: 1536 }
+birthplace: etaples
+deathplace: nerac
+places:
+  - { place: paris }
+  - { place: meaux, start: 1521, end: 1525 }
+  - { place: strasbourg, start: 1525, end: 1526 }
+  - { place: nerac, start: 1531, end: 1536 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: melanchthon
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1497 }
+death: { year: 1560 }
+birthplace: bretten
+deathplace: wittenberg
+places:
+  - { place: heidelberg, start: 1509, end: 1512 }
+  - { place: wittenberg, start: 1518, end: 1560 }
+  - { place: marburg, start: 1529, end: 1529 }
+  - { place: augsburg, start: 1530, end: 1530 }
+reviewed: false

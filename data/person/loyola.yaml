@@ -1,0 +1,13 @@
+id: loyola
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1491 }
+death: { year: 1556 }
+birthplace: loyola
+deathplace: rome
+places:
+  - { place: manresa, start: 1522, end: 1523 }
+  - { place: paris, start: 1528, end: 1535 }
+  - { place: rome, start: 1537, end: 1556 }
+reviewed: false

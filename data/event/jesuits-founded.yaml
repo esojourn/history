@@ -1,0 +1,13 @@
+id: jesuits-founded
+wikidata: null
+civ: bible
+type: founding
+importance: 4
+start: { year: 1534 }
+end: { year: 1540 }
+places: [paris, rome]
+participants:
+  - person: loyola
+  - person: francis-xavier
+  - person: paul-3
+reviewed: false

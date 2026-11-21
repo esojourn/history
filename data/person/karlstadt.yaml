@@ -1,0 +1,13 @@
+id: karlstadt
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1486, circa: true }
+death: { year: 1541 }
+birthplace: karlstadt-main
+deathplace: basel
+places:
+  - { place: wittenberg, start: 1505, end: 1524 }
+  - { place: leipzig, start: 1519, end: 1519 }
+  - { place: basel, start: 1534, end: 1541 }
+reviewed: false

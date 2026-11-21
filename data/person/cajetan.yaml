@@ -1,0 +1,12 @@
+id: cajetan
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1469 }
+death: { year: 1534 }
+birthplace: gaeta
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: augsburg, start: 1518, end: 1518 }
+reviewed: false

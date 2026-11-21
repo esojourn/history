@@ -1,0 +1,17 @@
+id: charles-5
+wikidata: null
+civ: rome
+importance: 5
+birth: { year: 1500 }
+death: { year: 1558 }
+reign:
+  - { start: 1519, end: 1556 }
+birthplace: ghent
+deathplace: yuste
+places:
+  - { place: brussels }
+  - { place: worms, start: 1521, end: 1521 }
+  - { place: augsburg, start: 1530, end: 1530 }
+  - { place: valladolid }
+  - { place: yuste, start: 1557, end: 1558 }
+reviewed: false

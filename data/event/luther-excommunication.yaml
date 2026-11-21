@@ -1,0 +1,14 @@
+id: luther-excommunication
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1520 }
+end: { year: 1521 }
+places: [rome, wittenberg]
+participants:
+  - person: leo-10
+  - person: luther
+  - person: eck
+  - person: aleander
+reviewed: false

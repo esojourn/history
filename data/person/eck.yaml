@@ -1,0 +1,14 @@
+id: eck
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1486 }
+death: { year: 1543 }
+birthplace: egg-an-der-gunz
+deathplace: ingolstadt
+places:
+  - { place: ingolstadt, start: 1510, end: 1543 }
+  - { place: leipzig, start: 1519, end: 1519 }
+  - { place: rome, start: 1520, end: 1520 }
+  - { place: augsburg, start: 1530, end: 1530 }
+reviewed: false

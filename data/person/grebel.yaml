@@ -1,0 +1,11 @@
+id: grebel
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1498, circa: true }
+death: { year: 1526 }
+birthplace: zurich
+deathplace: maienfeld
+places:
+  - { place: zurich, start: 1520, end: 1525 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: maurice-saxony
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1521 }
+death: { year: 1553 }
+reign:
+  - { start: 1541, end: 1553 }
+birthplace: freiberg
+deathplace: sievershausen
+places:
+  - { place: leipzig }
+  - { place: wittenberg, start: 1547, end: 1547 }
+  - { place: innsbruck, start: 1552, end: 1552 }
+reviewed: false

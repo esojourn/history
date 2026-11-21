@@ -1,0 +1,11 @@
+id: katharina-von-bora
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1499 }
+death: { year: 1552 }
+birthplace: lippendorf
+deathplace: torgau
+places:
+  - { place: wittenberg, start: 1523, end: 1552 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: cranmer
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1489 }
+death: { year: 1556 }
+birthplace: aslockton
+deathplace: oxford
+places:
+  - { place: cambridge, start: 1503, end: 1529 }
+  - { place: canterbury, start: 1533, end: 1553 }
+  - { place: london }
+  - { place: oxford, start: 1554, end: 1556 }
+reviewed: false

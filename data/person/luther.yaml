@@ -1,0 +1,14 @@
+id: luther
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 1483 }
+death: { year: 1546 }
+birthplace: eisleben
+deathplace: eisleben
+places:
+  - { place: erfurt, start: 1501, end: 1511 }
+  - { place: wittenberg, start: 1511, end: 1546 }
+  - { place: worms, start: 1521, end: 1521 }
+  - { place: wartburg, start: 1521, end: 1522 }
+reviewed: false

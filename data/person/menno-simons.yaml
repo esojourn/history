@@ -1,0 +1,13 @@
+id: menno-simons
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1496 }
+death: { year: 1561 }
+birthplace: witmarsum
+deathplace: wustenfelde
+places:
+  - { place: witmarsum, start: 1531, end: 1536 }
+  - { place: groningen }
+  - { place: wustenfelde, start: 1554, end: 1561 }
+reviewed: false

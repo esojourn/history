@@ -1,0 +1,12 @@
+id: servetus
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1511, circa: true }
+death: { year: 1553 }
+birthplace: villanueva-de-sigena
+deathplace: geneva
+places:
+  - { place: paris, start: 1536, end: 1538 }
+  - { place: geneva, start: 1553, end: 1553 }
+reviewed: false

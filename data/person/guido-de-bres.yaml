@@ -1,0 +1,14 @@
+id: guido-de-bres
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1522 }
+death: { year: 1567 }
+birthplace: mons
+deathplace: valenciennes
+places:
+  - { place: london, start: 1548, end: 1552 }
+  - { place: geneva, start: 1557, end: 1559 }
+  - { place: tournai, start: 1559, end: 1561 }
+  - { place: valenciennes, start: 1566, end: 1567 }
+reviewed: false

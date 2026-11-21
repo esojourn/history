@@ -1,0 +1,14 @@
+id: edward-6
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 1537 }
+death: { year: 1553 }
+reign:
+  - { start: 1547, end: 1553 }
+birthplace: hampton-court
+deathplace: greenwich
+places:
+  - { place: london }
+  - { place: hampton-court }
+reviewed: false

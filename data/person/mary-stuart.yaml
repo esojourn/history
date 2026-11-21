@@ -1,0 +1,14 @@
+id: mary-stuart
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1542 }
+death: { year: 1587 }
+reign:
+  - { start: 1542, end: 1567 }
+birthplace: linlithgow
+deathplace: fotheringhay
+places:
+  - { place: paris, start: 1548, end: 1561 }
+  - { place: edinburgh, start: 1561, end: 1567 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: zurich-reformation
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1523 }
+end: { year: 1525 }
+places: [zurich]
+participants:
+  - person: zwingli
+  - person: grebel
+reviewed: false

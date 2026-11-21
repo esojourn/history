@@ -1,0 +1,14 @@
+id: farel
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1489 }
+death: { year: 1565 }
+birthplace: gap
+deathplace: neuchatel
+places:
+  - { place: paris, start: 1509, end: 1521 }
+  - { place: meaux, start: 1521, end: 1523 }
+  - { place: geneva, start: 1532, end: 1538 }
+  - { place: neuchatel, start: 1538, end: 1565 }
+reviewed: false

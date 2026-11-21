@@ -1,0 +1,12 @@
+id: tetzel
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1465, circa: true }
+death: { year: 1519 }
+birthplace: pirna
+deathplace: leipzig
+places:
+  - { place: leipzig }
+  - { place: magdeburg, start: 1517, end: 1517 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: spanish-armada
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: 1588 }
+places: [english-channel, gravelines]
+participants:
+  - person: philip-2
+  - person: elizabeth-1
+reviewed: false

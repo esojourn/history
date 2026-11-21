@@ -1,0 +1,14 @@
+id: leo-10
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1475 }
+death: { year: 1521 }
+reign:
+  - { start: 1513, end: 1521 }
+birthplace: florence
+deathplace: rome
+places:
+  - { place: florence }
+  - { place: rome, start: 1513, end: 1521 }
+reviewed: false

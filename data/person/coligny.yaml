@@ -1,0 +1,13 @@
+id: coligny
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1519 }
+death: { year: 1572 }
+birthplace: chatillon-coligny
+deathplace: paris
+places:
+  - { place: paris }
+  - { place: chatillon-coligny }
+  - { place: la-rochelle }
+reviewed: false

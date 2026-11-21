@@ -1,0 +1,11 @@
+id: thirty-years-war
+wikidata: null
+civ: rome
+type: war
+importance: 5
+start: { year: 1618 }
+end: { year: 1648 }
+places: [prague, bohemia, magdeburg, lutzen]
+participants:
+  - person: gustavus-adolphus
+reviewed: false

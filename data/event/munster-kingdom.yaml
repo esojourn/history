@@ -1,0 +1,11 @@
+id: munster-kingdom
+wikidata: null
+civ: bible
+type: uprising
+importance: 3
+start: { year: 1534 }
+end: { year: 1535 }
+places: [munster]
+participants:
+  - person: john-of-leiden
+reviewed: false

@@ -1,0 +1,11 @@
+id: peasants-war
+wikidata: null
+civ: rome
+type: uprising
+importance: 3
+start: { year: 1524 }
+end: { year: 1525 }
+places: [frankenhausen, muhlhausen]
+participants:
+  - person: luther
+reviewed: false

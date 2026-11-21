@@ -1,0 +1,11 @@
+id: elizabethan-settlement
+wikidata: null
+civ: bible
+type: political
+importance: 3
+start: { year: 1559 }
+end: { year: 1563 }
+places: [london]
+participants:
+  - person: elizabeth-1
+reviewed: false

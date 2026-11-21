@@ -35,3 +35,9 @@ periods:
   pre-reformation:
     name: 改教前夜
     note: 阿维农、大分裂、威克里夫与胡斯（1294—1517 年）
+  reformation:
+    name: 宗教改革
+    note: 路德、慈运理、加尔文与各国改教（1517—1555 年）
+  confessional-wars:
+    name: 新旧教相争
+    note: 特兰托会议、宗教战争，至威斯特伐利亚和约（1555—1648 年）

@@ -1,0 +1,14 @@
+id: bucer
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1491 }
+death: { year: 1551 }
+birthplace: selestat
+deathplace: cambridge
+places:
+  - { place: heidelberg, start: 1517, end: 1518 }
+  - { place: strasbourg, start: 1523, end: 1549 }
+  - { place: marburg, start: 1529, end: 1529 }
+  - { place: cambridge, start: 1549, end: 1551 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: geneva-reformation
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1536 }
+end: { year: 1541 }
+places: [geneva]
+participants:
+  - person: farel
+  - person: calvin
+reviewed: false

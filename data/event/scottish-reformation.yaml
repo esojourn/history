@@ -1,0 +1,11 @@
+id: scottish-reformation
+wikidata: null
+civ: bible
+type: cultural
+importance: 4
+start: { year: 1559 }
+end: { year: 1560 }
+places: [edinburgh, st-andrews]
+participants:
+  - person: knox
+reviewed: false

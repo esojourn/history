@@ -1,0 +1,13 @@
+id: dutch-revolt
+wikidata: null
+civ: rome
+type: war
+importance: 4
+start: { year: 1568 }
+end: { year: 1609 }
+places: [netherlands, brussels, leiden, antwerp]
+participants:
+  - person: william-silent
+  - person: philip-2
+  - person: elizabeth-1
+reviewed: false

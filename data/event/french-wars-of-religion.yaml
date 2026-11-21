@@ -1,0 +1,13 @@
+id: french-wars-of-religion
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: 1562 }
+end: { year: 1598 }
+places: [paris, la-rochelle]
+participants:
+  - person: catherine-medici
+  - person: coligny
+  - person: henry-4-france
+reviewed: false

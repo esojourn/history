@@ -1,0 +1,13 @@
+id: ninety-five-theses
+wikidata: null
+civ: bible
+type: cultural
+importance: 5
+start: { year: 1517 }
+places: [wittenberg]
+participants:
+  - person: luther
+  - person: tetzel
+  - person: leo-10
+  - person: frederick-wise
+reviewed: false
