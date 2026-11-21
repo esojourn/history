@@ -1,0 +1,14 @@
+id: richard-1
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1157 }
+death: { year: 1199 }
+reign:
+  - { start: 1189, end: 1199 }
+birthplace: oxford
+deathplace: chalus
+places:
+  - { place: acre, start: 1191, end: 1192 }
+  - { place: london }
+reviewed: false

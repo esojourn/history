@@ -1,0 +1,11 @@
+id: first-crusade
+wikidata: null
+civ: bible
+type: war
+importance: 5
+start: { year: 1095 }
+end: { year: 1099 }
+places: [clermont, constantinople, nicaea, antioch, jerusalem]
+participants:
+  - person: urban-2
+reviewed: false

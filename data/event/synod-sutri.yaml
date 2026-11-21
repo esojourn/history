@@ -1,0 +1,11 @@
+id: synod-sutri
+wikidata: null
+civ: bible
+type: political
+importance: 3
+start: { year: 1046 }
+places: [sutri, rome]
+participants:
+  - person: henry-3
+  - person: benedict-9
+reviewed: false

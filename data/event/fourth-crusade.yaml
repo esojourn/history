@@ -1,0 +1,11 @@
+id: fourth-crusade
+wikidata: null
+civ: bible
+type: war
+importance: 3
+start: { year: 1202 }
+end: { year: 1204 }
+places: [venice, constantinople]
+participants:
+  - person: innocent-3
+reviewed: false

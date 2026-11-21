@@ -1,0 +1,16 @@
+id: john-23-pisa
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1370, circa: true }
+death: { year: 1419 }
+reign:
+  - { start: 1410, end: 1415 }
+birthplace: naples
+deathplace: florence
+places:
+  - { place: bologna }
+  - { place: rome }
+  - { place: constance, start: 1414, end: 1415 }
+  - { place: florence, start: 1419, end: 1419 }
+reviewed: false

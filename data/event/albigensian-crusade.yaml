@@ -1,0 +1,12 @@
+id: albigensian-crusade
+wikidata: null
+civ: bible
+type: war
+importance: 3
+start: { year: 1209 }
+end: { year: 1229 }
+places: [albi, beziers, toulouse]
+participants:
+  - person: innocent-3
+  - person: dominic
+reviewed: false

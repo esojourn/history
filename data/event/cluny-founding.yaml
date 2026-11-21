@@ -1,0 +1,8 @@
+id: cluny-founding
+wikidata: null
+civ: bible
+type: founding
+importance: 4
+start: { year: 910 }
+places: [cluny]
+reviewed: false

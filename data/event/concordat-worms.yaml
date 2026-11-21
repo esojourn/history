@@ -1,0 +1,8 @@
+id: concordat-worms
+wikidata: null
+civ: bible
+type: diplomatic
+importance: 4
+start: { year: 1122 }
+places: [worms]
+reviewed: false

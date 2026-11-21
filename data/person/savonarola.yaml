@@ -1,0 +1,12 @@
+id: savonarola
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1452 }
+death: { year: 1498 }
+birthplace: ferrara
+deathplace: florence
+places:
+  - { place: bologna, start: 1475, end: 1482 }
+  - { place: florence, start: 1490, end: 1498 }
+reviewed: false

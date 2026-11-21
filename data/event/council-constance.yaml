@@ -1,0 +1,14 @@
+id: council-constance
+wikidata: null
+civ: bible
+type: cultural
+importance: 5
+start: { year: 1414 }
+end: { year: 1418 }
+places: [constance]
+participants:
+  - person: sigismund
+  - person: john-23-pisa
+  - person: hus
+  - person: martin-5
+reviewed: false

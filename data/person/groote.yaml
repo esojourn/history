@@ -1,0 +1,13 @@
+id: groote
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1340 }
+death: { year: 1384 }
+birthplace: deventer
+deathplace: deventer
+places:
+  - { place: paris, start: 1355, end: 1358 }
+  - { place: utrecht }
+  - { place: deventer, start: 1374, end: 1384 }
+reviewed: false

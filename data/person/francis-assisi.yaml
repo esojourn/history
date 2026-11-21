@@ -1,0 +1,13 @@
+id: francis-assisi
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1181, circa: true }
+death: { year: 1226 }
+birthplace: assisi
+deathplace: assisi
+places:
+  - { place: assisi }
+  - { place: rome, start: 1209, end: 1209 }
+  - { place: damietta, start: 1219, end: 1219 }
+reviewed: false

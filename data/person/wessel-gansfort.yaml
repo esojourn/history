@@ -1,0 +1,14 @@
+id: wessel-gansfort
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1419 }
+death: { year: 1489 }
+birthplace: groningen
+deathplace: groningen
+places:
+  - { place: zwolle, start: 1432, end: 1449 }
+  - { place: cologne }
+  - { place: paris }
+  - { place: groningen }
+reviewed: false

@@ -1,0 +1,11 @@
+id: anagni-1303
+wikidata: null
+civ: bible
+type: political
+importance: 4
+start: { year: 1303 }
+places: [anagni]
+participants:
+  - person: boniface-8
+  - person: philip-4
+reviewed: false

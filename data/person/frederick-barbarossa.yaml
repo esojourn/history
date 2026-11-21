@@ -1,0 +1,16 @@
+id: frederick-barbarossa
+wikidata: null
+civ: rome
+importance: 4
+birth: { year: 1122 }
+death: { year: 1190 }
+reign:
+  - { start: 1152, end: 1190 }
+birthplace: unknown
+deathplace: saleph
+places:
+  - { place: rome, start: 1155, end: 1155 }
+  - { place: milan, start: 1162, end: 1162 }
+  - { place: legnano, start: 1176, end: 1176 }
+  - { place: venice, start: 1177, end: 1177 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: nicholas-1
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 820, circa: true }
+death: { year: 867 }
+reign:
+  - { start: 858, end: 867 }
+birthplace: rome
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

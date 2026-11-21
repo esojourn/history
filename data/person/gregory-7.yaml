@@ -1,0 +1,16 @@
+id: gregory-7
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 1020, circa: true }
+death: { year: 1085 }
+reign:
+  - { start: 1073, end: 1085 }
+birthplace: sovana
+deathplace: salerno
+places:
+  - { place: rome }
+  - { place: cologne, start: 1047, end: 1049 }
+  - { place: canossa, start: 1077, end: 1077 }
+  - { place: salerno, start: 1084, end: 1085 }
+reviewed: false

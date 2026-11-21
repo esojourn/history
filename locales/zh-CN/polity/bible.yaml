@@ -26,3 +26,12 @@ periods:
     name: 大公会议时期
   missions-era:
     name: 蛮族归信
+  papal-alliance:
+    name: 教皇与帝国
+    note: 丕平献土至东西教会分裂（754—1054 年）
+  papal-zenith:
+    name: 教皇权势鼎盛
+    note: 授职权之争、十字军、英诺森三世（1054—1294 年）
+  pre-reformation:
+    name: 改教前夜
+    note: 阿维农、大分裂、威克里夫与胡斯（1294—1517 年）

@@ -1,0 +1,16 @@
+id: saladin
+wikidata: null
+civ: meso
+importance: 3
+birth: { year: 1137, circa: true }
+death: { year: 1193 }
+reign:
+  - { start: 1174, end: 1193 }
+birthplace: tikrit
+deathplace: damascus
+places:
+  - { place: cairo, start: 1169, end: 1182 }
+  - { place: damascus }
+  - { place: hattin, start: 1187, end: 1187 }
+  - { place: jerusalem, start: 1187, end: 1187 }
+reviewed: false

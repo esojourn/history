@@ -1,0 +1,13 @@
+id: wycliffe
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 1328, circa: true }
+death: { year: 1384 }
+birthplace: yorkshire
+deathplace: lutterworth
+places:
+  - { place: oxford }
+  - { place: london, start: 1377, end: 1378 }
+  - { place: lutterworth, start: 1381, end: 1384 }
+reviewed: false

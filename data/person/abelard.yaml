@@ -1,0 +1,14 @@
+id: abelard
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1079 }
+death: { year: 1142 }
+birthplace: le-pallet
+deathplace: saint-marcel-chalon
+places:
+  - { place: paris }
+  - { place: saint-denis, start: 1118, end: 1121 }
+  - { place: sens, start: 1141, end: 1141 }
+  - { place: cluny, start: 1141, end: 1142 }
+reviewed: false

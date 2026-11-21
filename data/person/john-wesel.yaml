@@ -1,0 +1,13 @@
+id: john-wesel
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1400, circa: true }
+death: { year: 1481 }
+birthplace: oberwesel
+deathplace: mainz
+places:
+  - { place: erfurt, start: 1441, end: 1460 }
+  - { place: worms, start: 1463, end: 1477 }
+  - { place: mainz, start: 1479, end: 1481 }
+reviewed: false

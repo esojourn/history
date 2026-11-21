@@ -1,0 +1,13 @@
+id: dominic
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1170, circa: true }
+death: { year: 1221 }
+birthplace: caleruega
+deathplace: bologna
+places:
+  - { place: toulouse, start: 1206, end: 1217 }
+  - { place: rome, start: 1215, end: 1220 }
+  - { place: bologna }
+reviewed: false

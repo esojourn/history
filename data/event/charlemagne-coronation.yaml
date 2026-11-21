@@ -1,0 +1,11 @@
+id: charlemagne-coronation
+wikidata: null
+civ: bible
+type: political
+importance: 5
+start: { year: 800 }
+places: [rome]
+participants:
+  - person: charlemagne
+  - person: leo-3
+reviewed: false

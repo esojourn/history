@@ -1,0 +1,12 @@
+id: canossa
+wikidata: null
+civ: bible
+type: political
+importance: 5
+start: { year: 1077 }
+places: [canossa]
+participants:
+  - person: gregory-7
+  - person: henry-4
+  - person: hugh-cluny
+reviewed: false

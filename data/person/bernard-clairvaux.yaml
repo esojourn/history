@@ -1,0 +1,13 @@
+id: bernard-clairvaux
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1090 }
+death: { year: 1153 }
+birthplace: fontaines-les-dijon
+deathplace: clairvaux
+places:
+  - { place: citeaux, start: 1112, end: 1115 }
+  - { place: clairvaux, start: 1115, end: 1153 }
+  - { place: sens, start: 1141, end: 1141 }
+reviewed: false

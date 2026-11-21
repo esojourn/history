@@ -1,0 +1,13 @@
+id: michael-cerularius
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1000, circa: true }
+death: { year: 1059 }
+reign:
+  - { start: 1043, end: 1058 }
+birthplace: constantinople
+deathplace: unknown
+places:
+  - { place: constantinople }
+reviewed: false

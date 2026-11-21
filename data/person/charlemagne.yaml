@@ -1,0 +1,15 @@
+id: charlemagne
+wikidata: null
+civ: rome
+importance: 5
+birth: { year: 748, circa: true }
+death: { year: 814 }
+reign:
+  - { start: 768, end: 814 }
+birthplace: unknown
+deathplace: aachen
+places:
+  - { place: aachen }
+  - { place: pavia, start: 774, end: 774 }
+  - { place: rome, start: 800, end: 800 }
+reviewed: false

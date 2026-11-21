@@ -1,0 +1,15 @@
+id: innocent-3
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 1161, circa: true }
+death: { year: 1216 }
+reign:
+  - { start: 1198, end: 1216 }
+birthplace: gavignano
+deathplace: perugia
+places:
+  - { place: paris }
+  - { place: bologna }
+  - { place: rome }
+reviewed: false

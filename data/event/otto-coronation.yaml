@@ -1,0 +1,11 @@
+id: otto-coronation
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: 962 }
+places: [rome]
+participants:
+  - person: otto-1
+  - person: john-12
+reviewed: false

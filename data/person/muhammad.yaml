@@ -1,0 +1,12 @@
+id: muhammad
+wikidata: null
+civ: meso
+importance: 4
+birth: { year: 570, circa: true }
+death: { year: 632 }
+birthplace: mecca
+deathplace: medina
+places:
+  - { place: mecca }
+  - { place: medina, start: 622, end: 632 }
+reviewed: false

@@ -1,0 +1,10 @@
+id: papal-election-decree
+wikidata: null
+civ: bible
+type: founding
+importance: 3
+start: { year: 1059 }
+places: [rome]
+participants:
+  - person: gregory-7
+reviewed: false

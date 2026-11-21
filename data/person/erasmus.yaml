@@ -1,0 +1,14 @@
+id: erasmus
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1466, circa: true }
+death: { year: 1536 }
+birthplace: rotterdam
+deathplace: basel
+places:
+  - { place: deventer, start: 1475, end: 1484 }
+  - { place: paris, start: 1495, end: 1499 }
+  - { place: oxford }
+  - { place: basel, start: 1514, end: 1529 }
+reviewed: false

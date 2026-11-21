@@ -1,0 +1,8 @@
+id: fall-of-constantinople
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: 1453 }
+places: [constantinople]
+reviewed: false

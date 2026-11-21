@@ -1,0 +1,8 @@
+id: treaty-verdun
+wikidata: null
+civ: rome
+type: political
+importance: 2
+start: { year: 843 }
+places: [verdun]
+reviewed: false

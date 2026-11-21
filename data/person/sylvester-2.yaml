@@ -1,0 +1,15 @@
+id: sylvester-2
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 946, circa: true }
+death: { year: 1003 }
+reign:
+  - { start: 999, end: 1003 }
+birthplace: aurillac
+deathplace: rome
+places:
+  - { place: reims, start: 972, end: 997 }
+  - { place: ravenna, start: 998, end: 999 }
+  - { place: rome, start: 999, end: 1003 }
+reviewed: false

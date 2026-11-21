@@ -1,0 +1,12 @@
+id: donation-of-pepin
+wikidata: null
+civ: bible
+type: founding
+importance: 4
+start: { year: 754 }
+end: { year: 756 }
+places: [saint-denis, pavia, ravenna, rome]
+participants:
+  - person: pepin-short
+  - person: stephen-2
+reviewed: false

@@ -1,0 +1,15 @@
+id: pepin-short
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 714, circa: true }
+death: { year: 768 }
+reign:
+  - { start: 751, end: 768 }
+birthplace: unknown
+deathplace: saint-denis
+places:
+  - { place: saint-denis, start: 754, end: 754 }
+  - { place: pavia, start: 754, end: 756 }
+  - { place: saint-denis }
+reviewed: false

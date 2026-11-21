@@ -1,0 +1,12 @@
+id: thomas-kempis
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1380, circa: true }
+death: { year: 1471 }
+birthplace: kempen
+deathplace: zwolle
+places:
+  - { place: deventer, start: 1392, end: 1399 }
+  - { place: zwolle, start: 1399, end: 1471 }
+reviewed: false

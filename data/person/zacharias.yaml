@@ -1,0 +1,14 @@
+id: zacharias
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 690 }
+death: { year: 752 }
+reign:
+  - { start: 741, end: 752 }
+birthplace: calabria
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: ravenna, start: 743, end: 743 }
+reviewed: false

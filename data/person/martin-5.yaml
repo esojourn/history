@@ -1,0 +1,15 @@
+id: martin-5
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1369 }
+death: { year: 1431 }
+reign:
+  - { start: 1417, end: 1431 }
+birthplace: genazzano
+deathplace: rome
+places:
+  - { place: constance, start: 1417, end: 1418 }
+  - { place: florence, start: 1419, end: 1420 }
+  - { place: rome, start: 1420, end: 1431 }
+reviewed: false

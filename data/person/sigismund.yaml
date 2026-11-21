@@ -1,0 +1,16 @@
+id: sigismund
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1368 }
+death: { year: 1437 }
+reign:
+  - { start: 1411, end: 1437 }
+birthplace: nuremberg
+deathplace: znojmo
+places:
+  - { place: constance, start: 1414, end: 1418 }
+  - { place: prague }
+  - { place: rome, start: 1433, end: 1433 }
+  - { place: basel, start: 1433, end: 1434 }
+reviewed: false

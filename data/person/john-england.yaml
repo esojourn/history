@@ -1,0 +1,15 @@
+id: john-england
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1166 }
+death: { year: 1216 }
+reign:
+  - { start: 1199, end: 1216 }
+birthplace: oxford
+deathplace: newark
+places:
+  - { place: london }
+  - { place: canterbury }
+  - { place: runnymede, start: 1215, end: 1215 }
+reviewed: false

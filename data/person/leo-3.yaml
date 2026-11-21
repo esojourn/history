@@ -1,0 +1,13 @@
+id: leo-3
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 750 }
+death: { year: 816 }
+reign:
+  - { start: 795, end: 816 }
+birthplace: rome
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

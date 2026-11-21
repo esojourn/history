@@ -1,0 +1,11 @@
+id: avignon-papacy
+wikidata: null
+civ: bible
+type: political
+importance: 4
+start: { year: 1309 }
+end: { year: 1377 }
+places: [avignon]
+participants:
+  - person: philip-4
+reviewed: false

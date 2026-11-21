@@ -1,0 +1,15 @@
+id: leo-9
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1002 }
+death: { year: 1054 }
+reign:
+  - { start: 1049, end: 1054 }
+birthplace: eguisheim
+deathplace: rome
+places:
+  - { place: toul, start: 1026, end: 1049 }
+  - { place: reims, start: 1049, end: 1049 }
+  - { place: rome }
+reviewed: false

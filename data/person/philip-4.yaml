@@ -1,0 +1,13 @@
+id: philip-4
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1268 }
+death: { year: 1314 }
+reign:
+  - { start: 1285, end: 1314 }
+birthplace: fontainebleau
+deathplace: fontainebleau
+places:
+  - { place: paris }
+reviewed: false

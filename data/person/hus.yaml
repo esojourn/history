@@ -1,0 +1,12 @@
+id: hus
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 1370, circa: true }
+death: { year: 1415 }
+birthplace: husinec
+deathplace: constance
+places:
+  - { place: prague }
+  - { place: constance, start: 1414, end: 1415 }
+reviewed: false

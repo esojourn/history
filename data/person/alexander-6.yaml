@@ -1,0 +1,14 @@
+id: alexander-6
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1431 }
+death: { year: 1503 }
+reign:
+  - { start: 1492, end: 1503 }
+birthplace: xativa
+deathplace: rome
+places:
+  - { place: bologna }
+  - { place: rome }
+reviewed: false

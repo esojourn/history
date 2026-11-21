@@ -1,0 +1,12 @@
+id: western-schism
+wikidata: null
+civ: bible
+type: political
+importance: 4
+start: { year: 1378 }
+end: { year: 1417 }
+places: [rome, avignon, pisa]
+participants:
+  - person: john-23-pisa
+  - person: martin-5
+reviewed: false

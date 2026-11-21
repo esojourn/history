@@ -1,0 +1,13 @@
+id: john-12
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 937, circa: true }
+death: { year: 964 }
+reign:
+  - { start: 955, end: 964 }
+birthplace: rome
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

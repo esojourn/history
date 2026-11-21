@@ -1,0 +1,16 @@
+id: benedict-9
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1012, circa: true }
+death: { year: 1056, circa: true }
+reign:
+  - { start: 1032, end: 1044 }
+  - { start: 1045, end: 1045 }
+  - { start: 1047, end: 1048 }
+birthplace: rome
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: tusculum }
+reviewed: false

@@ -1,0 +1,12 @@
+id: peter-waldo
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1140, circa: true }
+death: { year: 1205, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: lyon }
+  - { place: rome, start: 1179, end: 1179 }
+reviewed: false

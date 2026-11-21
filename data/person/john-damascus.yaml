@@ -1,0 +1,13 @@
+id: john-damascus
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 675, circa: true }
+death: { year: 749 }
+birthplace: damascus
+deathplace: mar-saba
+places:
+  - { place: damascus }
+  - { place: mar-saba }
+  - { place: jerusalem }
+reviewed: false

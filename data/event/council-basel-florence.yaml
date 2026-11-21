@@ -1,0 +1,11 @@
+id: council-basel-florence
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1431 }
+end: { year: 1449 }
+places: [basel, ferrara, florence]
+participants:
+  - person: sigismund
+reviewed: false

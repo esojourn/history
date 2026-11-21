@@ -1,0 +1,16 @@
+id: urban-2
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1035, circa: true }
+death: { year: 1099 }
+reign:
+  - { start: 1088, end: 1099 }
+birthplace: chatillon-sur-marne
+deathplace: rome
+places:
+  - { place: reims }
+  - { place: cluny }
+  - { place: clermont, start: 1095, end: 1095 }
+  - { place: rome }
+reviewed: false

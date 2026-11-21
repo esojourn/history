@@ -43,3 +43,14 @@ periods:
   - id: missions-era
     start: 476
     end: 754
+  # 以下三段按祁伯尔《历史的轨迹》第二部“中世纪教会”的脉络划分：
+  # 丕平献土（754）→ 东西教会分裂（1054）→ 波尼法修八世即位（1294）→ 改教前夕（1517）。
+  - id: papal-alliance
+    start: 754
+    end: 1054
+  - id: papal-zenith
+    start: 1054
+    end: 1294
+  - id: pre-reformation
+    start: 1294
+    end: 1517

@@ -1,0 +1,13 @@
+id: anselm
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1033 }
+death: { year: 1109 }
+birthplace: aosta
+deathplace: canterbury
+places:
+  - { place: bec, start: 1060, end: 1093 }
+  - { place: canterbury, start: 1093, end: 1109 }
+  - { place: rome, start: 1098, end: 1099 }
+reviewed: false

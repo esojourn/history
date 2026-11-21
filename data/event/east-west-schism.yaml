@@ -1,0 +1,11 @@
+id: east-west-schism
+wikidata: null
+civ: bible
+type: cultural
+importance: 5
+start: { year: 1054 }
+places: [constantinople, rome]
+participants:
+  - person: michael-cerularius
+  - person: leo-9
+reviewed: false

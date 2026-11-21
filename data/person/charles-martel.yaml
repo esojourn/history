@@ -1,0 +1,12 @@
+id: charles-martel
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 688, circa: true }
+death: { year: 741 }
+birthplace: unknown
+deathplace: quierzy
+places:
+  - { place: tours, start: 732, end: 732 }
+  - { place: saint-denis }
+reviewed: false

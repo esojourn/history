@@ -1,0 +1,15 @@
+id: thomas-aquinas
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 1225, circa: true }
+death: { year: 1274 }
+birthplace: roccasecca
+deathplace: fossanova
+places:
+  - { place: monte-cassino, start: 1230, end: 1239 }
+  - { place: naples }
+  - { place: cologne, start: 1248, end: 1252 }
+  - { place: paris }
+  - { place: rome }
+reviewed: false

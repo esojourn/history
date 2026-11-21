@@ -1,0 +1,17 @@
+id: alexander-3
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1100, circa: true }
+death: { year: 1181 }
+reign:
+  - { start: 1159, end: 1181 }
+birthplace: siena
+deathplace: civita-castellana
+places:
+  - { place: bologna }
+  - { place: rome }
+  - { place: sens, start: 1163, end: 1165 }
+  - { place: anagni }
+  - { place: venice, start: 1177, end: 1177 }
+reviewed: false

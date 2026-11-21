@@ -1,0 +1,12 @@
+id: hugh-cluny
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1024 }
+death: { year: 1109 }
+birthplace: semur
+deathplace: cluny
+places:
+  - { place: cluny }
+  - { place: canossa, start: 1077, end: 1077 }
+reviewed: false
