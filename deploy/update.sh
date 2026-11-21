@@ -126,8 +126,12 @@ cmd_update() {
   say "安装依赖"
   npm ci --no-audit --no-fund --loglevel=error
 
-  say "检查数据并构建"
-  npm run build
+  say "检查数据并构建（完整日志：$BASE/last-build.log）"
+  if ! ASTRO_TELEMETRY_DISABLED=1 npm run build >"$BASE/last-build.log" 2>&1; then
+    tail -n 40 "$BASE/last-build.log"
+    die "构建失败，线上版本未改动（仍是 $(current_release)）"
+  fi
+  grep -E '^(文明|没有错误|错误)|page\(s\) built' "$BASE/last-build.log" | sed 's/^/  /' || true
 
   say "放置新版本 $hash"
   local tmp="$RELEASES/$hash.tmp"
