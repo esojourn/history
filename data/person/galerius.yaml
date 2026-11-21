@@ -1,0 +1,15 @@
+id: galerius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 258, circa: true }
+death: { year: 311 }
+reign:
+  - { start: 305, end: 311 }
+birthplace: serdica
+deathplace: serdica
+places:
+  - { place: nicomedia }
+  - { place: thessalonica }
+  - { place: serdica }
+reviewed: false

@@ -1,0 +1,17 @@
+id: julian
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 331, circa: true }
+death: { year: 363 }
+reign:
+  - { start: 361, end: 363 }
+birthplace: constantinople
+deathplace: maranga
+places:
+  - { place: nicomedia }
+  - { place: athens, start: 355, end: 355 }
+  - { place: paris, start: 358, end: 360 }
+  - { place: constantinople, start: 361, end: 362 }
+  - { place: antioch, start: 362, end: 363 }
+reviewed: false

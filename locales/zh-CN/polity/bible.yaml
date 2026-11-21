@@ -1,4 +1,4 @@
-name: 圣经历史
+name: 圣经与教会历史
 periods:
   primeval:
     name: 太初
@@ -21,3 +21,8 @@ periods:
     name: 新约时代
   early-church:
     name: 早期教会
+    note: 逼迫中的教会（至 313 年米兰诏谕）
+  council-era:
+    name: 大公会议时期
+  missions-era:
+    name: 蛮族归信

@@ -1,0 +1,9 @@
+id: council-ephesus
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 431 }
+places: [ephesus]
+participants: []
+reviewed: false

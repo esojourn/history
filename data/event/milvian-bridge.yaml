@@ -1,0 +1,10 @@
+id: milvian-bridge
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: 312 }
+places: [milvian-bridge, rome]
+participants:
+  - person: constantine
+reviewed: false

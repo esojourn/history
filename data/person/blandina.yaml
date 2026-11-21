@@ -1,0 +1,11 @@
+id: blandina
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: 150 }
+death: { year: 177 }
+birthplace: unknown
+deathplace: lyon
+places:
+  - { place: lyon }
+reviewed: false

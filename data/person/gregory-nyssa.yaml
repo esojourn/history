@@ -1,0 +1,13 @@
+id: gregory-nyssa
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 335, circa: true }
+death: { year: 395, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: caesarea-cappadocia }
+  - { place: nyssa }
+  - { place: constantinople, start: 381, end: 381 }
+reviewed: false

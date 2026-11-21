@@ -1,0 +1,12 @@
+id: polycarp
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 69, circa: true }
+death: { year: 156, circa: true }
+birthplace: unknown
+deathplace: smyrna
+places:
+  - { place: smyrna }
+  - { place: rome, start: 155, end: 155 }
+reviewed: false

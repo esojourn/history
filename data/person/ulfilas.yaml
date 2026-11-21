@@ -1,0 +1,11 @@
+id: ulfilas
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 311, circa: true }
+death: { year: 383 }
+birthplace: unknown
+deathplace: constantinople
+places:
+  - { place: constantinople }
+reviewed: false

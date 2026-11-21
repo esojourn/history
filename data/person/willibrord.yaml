@@ -1,0 +1,13 @@
+id: willibrord
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 658, circa: true }
+death: { year: 739 }
+birthplace: northumbria
+deathplace: echternach
+places:
+  - { place: ireland, start: 678, end: 690 }
+  - { place: utrecht, start: 695, end: 739 }
+  - { place: echternach }
+reviewed: false

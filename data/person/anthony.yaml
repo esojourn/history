@@ -1,0 +1,12 @@
+id: anthony
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 251, circa: true }
+death: { year: 356 }
+birthplace: egypt
+deathplace: egypt
+places:
+  - { place: egypt }
+  - { place: alexandria, start: 311, end: 311 }
+reviewed: false

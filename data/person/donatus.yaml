@@ -1,0 +1,11 @@
+id: donatus
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 270 }
+death: { year: 355, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: carthage }
+reviewed: false

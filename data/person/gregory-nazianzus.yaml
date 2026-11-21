@@ -1,0 +1,13 @@
+id: gregory-nazianzus
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 329, circa: true }
+death: { year: 390, circa: true }
+birthplace: nazianzus
+deathplace: nazianzus
+places:
+  - { place: athens, start: 350, end: 358 }
+  - { place: nazianzus }
+  - { place: constantinople, start: 379, end: 381 }
+reviewed: false

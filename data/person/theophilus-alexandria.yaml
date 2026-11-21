@@ -1,0 +1,12 @@
+id: theophilus-alexandria
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: 345 }
+death: { year: 412 }
+birthplace: unknown
+deathplace: alexandria
+places:
+  - { place: alexandria }
+  - { place: constantinople, start: 403, end: 403 }
+reviewed: false

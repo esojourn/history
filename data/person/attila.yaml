@@ -1,0 +1,13 @@
+id: attila
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: 406 }
+death: { year: 453 }
+reign:
+  - { start: 434, end: 453 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: milan }
+reviewed: false

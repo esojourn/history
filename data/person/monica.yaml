@@ -1,0 +1,13 @@
+id: monica
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 332, circa: true }
+death: { year: 387 }
+birthplace: tagaste
+deathplace: ostia
+places:
+  - { place: tagaste }
+  - { place: milan, start: 385, end: 387 }
+  - { place: ostia, start: 387, end: 387 }
+reviewed: false

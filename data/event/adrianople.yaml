@@ -1,0 +1,10 @@
+id: adrianople
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: 378 }
+places: [adrianople]
+participants:
+  - person: valens
+reviewed: false

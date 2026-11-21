@@ -1,0 +1,15 @@
+id: marcus-aurelius
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 121 }
+death: { year: 180 }
+reign:
+  - { start: 161, end: 180 }
+birthplace: rome
+deathplace: vindobona
+places:
+  - { place: rome }
+  - { place: vindobona }
+  - { place: sirmium }
+reviewed: false

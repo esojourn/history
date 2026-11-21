@@ -1,0 +1,11 @@
+id: anicetus
+wikidata: null
+civ: bible
+importance: 1
+birth: { unknown: true, approx: 110 }
+death: { year: 166, circa: true }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

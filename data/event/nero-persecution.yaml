@@ -5,6 +5,7 @@ importance: 3
 start: { year: 64 }
 places: [rome]
 participants:
+  - person: nero
   - person: peter
   - person: paul
 reviewed: false

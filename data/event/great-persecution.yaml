@@ -1,0 +1,12 @@
+id: great-persecution
+wikidata: null
+civ: bible
+type: political
+importance: 4
+start: { year: 303 }
+end: { year: 311 }
+places: [nicomedia]
+participants:
+  - person: diocletian
+  - person: galerius
+reviewed: false

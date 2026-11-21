@@ -1,0 +1,12 @@
+id: augustine-canterbury
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 545 }
+death: { year: 604, circa: true }
+birthplace: unknown
+deathplace: canterbury
+places:
+  - { place: rome, end: 596 }
+  - { place: canterbury, start: 597, end: 604 }
+reviewed: false

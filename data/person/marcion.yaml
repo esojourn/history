@@ -1,0 +1,12 @@
+id: marcion
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 85 }
+death: { year: 160, circa: true }
+birthplace: sinope
+deathplace: unknown
+places:
+  - { place: sinope }
+  - { place: rome, start: 140, end: 144 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: decius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 201, circa: true }
+death: { year: 251 }
+reign:
+  - { start: 249, end: 251 }
+birthplace: sirmium
+deathplace: abritus
+places:
+  - { place: rome }
+  - { place: abritus }
+reviewed: false

@@ -1,0 +1,14 @@
+id: nero
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 37 }
+death: { year: 68 }
+reign:
+  - { start: 54, end: 68 }
+birthplace: antium
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: antium }
+reviewed: false

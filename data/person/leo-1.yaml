@@ -1,0 +1,13 @@
+id: leo-1
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 400, circa: true }
+death: { year: 461 }
+reign:
+  - { start: 440, end: 461 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

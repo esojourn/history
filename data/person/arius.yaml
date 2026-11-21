@@ -1,0 +1,12 @@
+id: arius
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 256, circa: true }
+death: { year: 336 }
+birthplace: libya
+deathplace: constantinople
+places:
+  - { place: alexandria, end: 325 }
+  - { place: constantinople, start: 336, end: 336 }
+reviewed: false

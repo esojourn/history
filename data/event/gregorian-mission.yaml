@@ -1,0 +1,12 @@
+id: gregorian-mission
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 596 }
+end: { year: 597 }
+places: [rome, canterbury]
+participants:
+  - person: gregory-great
+  - person: augustine-canterbury
+reviewed: false

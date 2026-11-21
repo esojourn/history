@@ -1,0 +1,13 @@
+id: ignatius
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: 35 }
+death: { year: 110, circa: true }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: antioch }
+  - { place: smyrna }
+  - { place: rome }
+reviewed: false

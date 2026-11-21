@@ -37,3 +37,9 @@ periods:
   - id: early-church
     start: 100
     end: 313
+  - id: council-era
+    start: 313
+    end: 476
+  - id: missions-era
+    start: 476
+    end: 754

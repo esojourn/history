@@ -1,0 +1,13 @@
+id: origen
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 185, circa: true }
+death: { year: 253, circa: true }
+birthplace: alexandria
+deathplace: tyre
+places:
+  - { place: alexandria, end: 231 }
+  - { place: caesarea, start: 231 }
+  - { place: tyre }
+reviewed: false

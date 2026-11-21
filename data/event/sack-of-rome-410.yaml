@@ -1,0 +1,10 @@
+id: sack-of-rome-410
+wikidata: null
+civ: rome
+type: battle
+importance: 4
+start: { year: 410 }
+places: [rome]
+participants:
+  - person: alaric
+reviewed: false

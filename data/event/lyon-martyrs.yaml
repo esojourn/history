@@ -1,0 +1,12 @@
+id: lyon-martyrs
+wikidata: null
+civ: bible
+type: political
+importance: 2
+start: { year: 177 }
+places: [lyon]
+participants:
+  - person: blandina
+  - person: irenaeus
+  - person: marcus-aurelius
+reviewed: false

@@ -1,0 +1,15 @@
+id: theodosius-1
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 347 }
+death: { year: 395 }
+reign:
+  - { start: 379, end: 395 }
+birthplace: cauca
+deathplace: milan
+places:
+  - { place: thessalonica, start: 379, end: 380 }
+  - { place: constantinople, start: 380, end: 394 }
+  - { place: milan, start: 388, end: 391 }
+reviewed: false

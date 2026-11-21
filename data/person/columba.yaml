@@ -1,0 +1,12 @@
+id: columba
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 521, circa: true }
+death: { year: 597 }
+birthplace: ireland
+deathplace: iona
+places:
+  - { place: ireland }
+  - { place: iona, start: 563, end: 597 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: justin-martyr
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 100, circa: true }
+death: { year: 165, circa: true }
+birthplace: shechem
+deathplace: rome
+places:
+  - { place: shechem }
+  - { place: ephesus }
+  - { place: rome }
+reviewed: false

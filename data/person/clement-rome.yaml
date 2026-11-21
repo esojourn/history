@@ -1,0 +1,11 @@
+id: clement-rome
+wikidata: null
+civ: bible
+importance: 2
+birth: { unknown: true, approx: 35 }
+death: { year: 99, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+reviewed: false

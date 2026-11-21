@@ -1,0 +1,12 @@
+id: council-nicaea
+wikidata: null
+civ: bible
+type: cultural
+importance: 5
+start: { year: 325 }
+places: [nicaea]
+participants:
+  - person: constantine
+  - person: arius
+  - person: athanasius
+reviewed: false

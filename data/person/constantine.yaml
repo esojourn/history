@@ -1,0 +1,17 @@
+id: constantine
+wikidata: null
+civ: rome
+importance: 5
+birth: { year: 272, circa: true }
+death: { year: 337 }
+reign:
+  - { start: 306, end: 337 }
+birthplace: naissus
+deathplace: nicomedia
+places:
+  - { place: eboracum, start: 306, end: 306 }
+  - { place: trier, start: 306, end: 312 }
+  - { place: rome, start: 312, end: 312 }
+  - { place: nicaea, start: 325, end: 325 }
+  - { place: constantinople, start: 330, end: 337 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: boniface
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 675, circa: true }
+death: { year: 754 }
+birthplace: crediton
+deathplace: dokkum
+places:
+  - { place: utrecht, start: 719, end: 722 }
+  - { place: geismar }
+  - { place: rome, start: 738, end: 739 }
+  - { place: dokkum }
+reviewed: false

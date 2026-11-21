@@ -1,0 +1,11 @@
+id: simeon-stylites
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 390, circa: true }
+death: { year: 459 }
+birthplace: sisan
+deathplace: telanissos
+places:
+  - { place: telanissos }
+reviewed: false

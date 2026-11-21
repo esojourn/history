@@ -1,0 +1,13 @@
+id: decian-persecution
+wikidata: null
+civ: bible
+type: political
+importance: 3
+start: { year: 250 }
+end: { year: 251 }
+places: [rome, carthage, alexandria]
+participants:
+  - person: decius
+  - person: cyprian
+  - person: origen
+reviewed: false

@@ -1,0 +1,15 @@
+id: jerome
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 347, circa: true }
+death: { year: 420 }
+birthplace: stridon
+deathplace: bethlehem
+places:
+  - { place: rome, start: 360, end: 366 }
+  - { place: antioch, start: 373, end: 379 }
+  - { place: constantinople, start: 380, end: 381 }
+  - { place: rome, start: 382, end: 385 }
+  - { place: bethlehem, start: 386, end: 420 }
+reviewed: false

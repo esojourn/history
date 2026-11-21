@@ -1,0 +1,14 @@
+id: valerian
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 199, circa: true }
+death: { unknown: true, approx: 262 }
+reign:
+  - { start: 253, end: 260 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: antioch }
+reviewed: false

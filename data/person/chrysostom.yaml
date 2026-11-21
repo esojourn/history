@@ -1,0 +1,13 @@
+id: chrysostom
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 349, circa: true }
+death: { year: 407 }
+birthplace: antioch
+deathplace: comana-pontus
+places:
+  - { place: antioch, end: 397 }
+  - { place: constantinople, start: 398, end: 404 }
+  - { place: comana-pontus }
+reviewed: false

@@ -1,0 +1,13 @@
+id: irenaeus
+wikidata: null
+civ: bible
+importance: 3
+birth: { unknown: true, approx: 130 }
+death: { year: 202, circa: true }
+birthplace: smyrna
+deathplace: lyon
+places:
+  - { place: smyrna }
+  - { place: rome, start: 177, end: 177 }
+  - { place: lyon }
+reviewed: false

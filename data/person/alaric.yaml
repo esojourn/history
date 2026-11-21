@@ -1,0 +1,14 @@
+id: alaric
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 370, circa: true }
+death: { year: 410 }
+reign:
+  - { start: 395, end: 410 }
+birthplace: danube-delta
+deathplace: consentia
+places:
+  - { place: rome, start: 408, end: 410 }
+  - { place: consentia }
+reviewed: false

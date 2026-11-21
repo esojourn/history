@@ -1,0 +1,15 @@
+id: clovis
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 466, circa: true }
+death: { year: 511 }
+reign:
+  - { start: 481, end: 511 }
+birthplace: tournai
+deathplace: paris
+places:
+  - { place: tournai }
+  - { place: reims, start: 496, end: 496 }
+  - { place: paris }
+reviewed: false

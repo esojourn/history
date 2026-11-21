@@ -1,0 +1,10 @@
+id: edict-of-milan
+wikidata: null
+civ: bible
+type: political
+importance: 5
+start: { year: 313 }
+places: [milan, nicomedia]
+participants:
+  - person: constantine
+reviewed: false

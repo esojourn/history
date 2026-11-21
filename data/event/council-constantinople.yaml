@@ -1,0 +1,12 @@
+id: council-constantinople
+wikidata: null
+civ: bible
+type: cultural
+importance: 4
+start: { year: 381 }
+places: [constantinople]
+participants:
+  - person: theodosius-1
+  - person: gregory-nazianzus
+  - person: gregory-nyssa
+reviewed: false

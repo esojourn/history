@@ -1,0 +1,11 @@
+id: cyprian
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 200, circa: true }
+death: { year: 258 }
+birthplace: carthage
+deathplace: carthage
+places:
+  - { place: carthage }
+reviewed: false

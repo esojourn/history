@@ -1,0 +1,15 @@
+id: augustine
+wikidata: null
+civ: bible
+importance: 5
+birth: { year: 354 }
+death: { year: 430 }
+birthplace: tagaste
+deathplace: hippo
+places:
+  - { place: tagaste, end: 370 }
+  - { place: carthage, start: 370, end: 383 }
+  - { place: rome, start: 383, end: 384 }
+  - { place: milan, start: 384, end: 387 }
+  - { place: hippo, start: 391, end: 430 }
+reviewed: false

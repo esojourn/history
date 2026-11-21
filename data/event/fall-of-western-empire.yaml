@@ -1,0 +1,9 @@
+id: fall-of-western-empire
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: 476 }
+places: [ravenna]
+participants: []
+reviewed: false

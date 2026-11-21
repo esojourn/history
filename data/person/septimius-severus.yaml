@@ -1,0 +1,15 @@
+id: septimius-severus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 145 }
+death: { year: 211 }
+reign:
+  - { start: 193, end: 211 }
+birthplace: leptis-magna
+deathplace: eboracum
+places:
+  - { place: leptis-magna }
+  - { place: rome }
+  - { place: eboracum }
+reviewed: false

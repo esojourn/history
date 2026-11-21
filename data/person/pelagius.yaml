@@ -1,0 +1,13 @@
+id: pelagius
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 354, circa: true }
+death: { unknown: true, approx: 420 }
+birthplace: britain
+deathplace: unknown
+places:
+  - { place: rome, start: 385, end: 409 }
+  - { place: carthage, start: 410, end: 411 }
+  - { place: jerusalem, start: 412, end: 418 }
+reviewed: false

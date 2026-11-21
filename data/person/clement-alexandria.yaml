@@ -1,0 +1,12 @@
+id: clement-alexandria
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 150, circa: true }
+death: { year: 215, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: alexandria }
+  - { place: caesarea-cappadocia, start: 202 }
+reviewed: false

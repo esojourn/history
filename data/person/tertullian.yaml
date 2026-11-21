@@ -1,0 +1,12 @@
+id: tertullian
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 155, circa: true }
+death: { year: 220, circa: true }
+birthplace: carthage
+deathplace: carthage
+places:
+  - { place: carthage }
+  - { place: rome }
+reviewed: false

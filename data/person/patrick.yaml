@@ -1,0 +1,12 @@
+id: patrick
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 387, circa: true }
+death: { year: 461, circa: true }
+birthplace: britain
+deathplace: ireland
+places:
+  - { place: britain }
+  - { place: ireland }
+reviewed: false

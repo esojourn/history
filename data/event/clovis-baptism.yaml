@@ -1,0 +1,10 @@
+id: clovis-baptism
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 496, circa: true }
+places: [reims]
+participants:
+  - person: clovis
+reviewed: false

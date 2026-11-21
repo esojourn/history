@@ -1,0 +1,12 @@
+id: basil
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 330, circa: true }
+death: { year: 379 }
+birthplace: caesarea-cappadocia
+deathplace: caesarea-cappadocia
+places:
+  - { place: athens, start: 351, end: 356 }
+  - { place: caesarea-cappadocia }
+reviewed: false

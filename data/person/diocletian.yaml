@@ -1,0 +1,15 @@
+id: diocletian
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 244, circa: true }
+death: { year: 311, circa: true }
+reign:
+  - { start: 284, end: 305 }
+birthplace: salona
+deathplace: spalatum
+places:
+  - { place: nicomedia }
+  - { place: rome }
+  - { place: spalatum }
+reviewed: false
