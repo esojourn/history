@@ -23,13 +23,14 @@ export function fontButtons() {
   sync();
   addEventListener('fzchange', fitBars); addEventListener('resize', fitBars);
 }
-// 顶栏一行放不下（会换行）时隐藏标题“世界历史”
+// 顶栏一行放不下（会换行）时，先隐藏标题“世界历史”，还放不下再隐藏最右边的“说明”按钮
 export function fitBars() {
+  const wraps = bar => { const tops = [...bar.children].filter(c => c.offsetParent).map(c => c.getBoundingClientRect().top); return Math.max(...tops) - Math.min(...tops) > 12; };
   document.querySelectorAll('.bar').forEach(bar => {
     if (!bar.offsetParent) return;
-    bar.classList.remove('notitle');
-    const tops = [...bar.children].filter(c => c.offsetParent).map(c => c.getBoundingClientRect().top);
-    if (Math.max(...tops) - Math.min(...tops) > 12) bar.classList.add('notitle');
+    bar.classList.remove('notitle', 'noabout');
+    if (wraps(bar)) bar.classList.add('notitle');
+    if (wraps(bar)) bar.classList.add('noabout');
   });
 }
 
