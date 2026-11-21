@@ -4,8 +4,8 @@ import { fades, fadeOf, setHash, readHash, cardTarget } from './util.js';
 export function mobile(H, card, search) {
   const $ = s => document.querySelector(s), t = H.t;
   const body = $('#mbody'), sheet = $('#msheet'), tabs = $('#mtabs');
-  const AXW = 98, CW = 31, TOP = 14, MAIN = 4, FEW = 9, [f0, f1] = H.FOCUS;   // 人多的一段默认只排重要度 4 以上的，手机上不挤
-  const M = { mode: 'bands', lane: H.site.default_open[0] || H.lanes[0].id, seg: 0, all: false, sel: null, full: false };
+  const AXW = 98, CW = 31, TOP = 14, MAIN = 4, FEW = 9, [f0, f1] = H.FOCUS;   // 默认排出这一段的全部人物；人多时可点“只看主要”，只排重要度 4 以上的
+  const M = { mode: 'bands', lane: H.site.default_open[0] || H.lanes[0].id, seg: 0, all: true, sel: null, full: false };
   const HIST = [], nameOf = s => (s.t === 'p' ? H.P[s.id] : H.E[s.id]).n;
   const PL = {}, SEG = {};
   const inFocus = b => b[1] < f1 && b[2] > f0;
@@ -147,7 +147,7 @@ export function mobile(H, card, search) {
     if (sel) {
       const x = sel.t === 'p' ? H.P[sel.id] : H.E[sel.id], lane = x.lane;
       const a = sel.t === 'p' ? x.b0 : x.s, b = sel.t === 'p' ? x.d : x.e, cur = seg();
-      if (lane !== M.lane) { M.lane = lane; M.all = false; M.seg = segOf(lane, a, b); }
+      if (lane !== M.lane) { M.lane = lane; M.seg = segOf(lane, a, b); }
       else if (!cur || b < cur.lo || a > cur.hi) M.seg = segOf(lane, a, b);
       M.mode = 'people';
     }
@@ -165,7 +165,7 @@ export function mobile(H, card, search) {
   $('#m').addEventListener('click', e => {
     const el = e.target, m = el.closest('[data-m]'), lane = el.closest('[data-lane]'), sg = el.closest('.mseg [data-seg]'), p = el.closest('[data-p]'), ev = el.closest('[data-e]');
     const to = cardTarget(e);
-    const clear = () => { M.sel = null; M.all = false; M.full = false; showCard(); };
+    const clear = () => { M.sel = null; M.full = false; showCard(); };   // “全部 / 只看主要”的选择一直保留
     if (m) {
       const v = M.mode === 'people' ? yearAt() : null;
       M.mode = m.dataset.m; if (m.dataset.seg != null) M.seg = +m.dataset.seg; clear(); paint();
