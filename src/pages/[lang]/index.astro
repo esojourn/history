@@ -7,8 +7,6 @@ import { LANGS, build } from '../../lib/dataset.mjs';
 import { createModel } from '../../lib/model.js';
 import { Content as Readme } from '../../../README.md';   // “说明”弹窗的内容直接取自仓库的 README
 const REPO = 'https://github.com/esojourn/history';
-// README 里用 <img> 写的图 Astro 不处理，这里把 docs/images 打包进站点，交给浏览器端替换地址
-const IMGS = Object.fromEntries(Object.entries(import.meta.glob('../../../docs/images/*', { eager: true, import: 'default' })).map(([k, v]) => ['docs/images/' + k.split('/').pop(), v.src]));
 
 export function getStaticPaths() {
   return LANGS.map(l => ({ params: { lang: l.code } }));
@@ -53,7 +51,7 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
       <aside id="msheet" class="detail sheet"></aside>
     </div>
   </div>
-  <dialog id="about" class="about" data-imgs={JSON.stringify(IMGS)}>
+  <dialog id="about" class="about">
     <form method="dialog" class="about-close"><button aria-label={t('about.close')}>×</button></form>
     <div class="about-body">
       <Readme />
@@ -61,11 +59,10 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
     </div>
   </dialog>
   <script>
-    // 说明弹窗：README 里指向仓库文件的相对链接、图片，改指到 GitHub
+    // 说明弹窗：README 里指向仓库文件的相对链接改指到 GitHub
     const dlg = document.getElementById('about');
-    const GH = 'https://github.com/esojourn/history/blob/main/', IMGS = JSON.parse(dlg.dataset.imgs);
+    const GH = 'https://github.com/esojourn/history/blob/main/';
     dlg.querySelectorAll('.about-body a[href]').forEach(a => { const h = a.getAttribute('href'); if (!/^(https?:|#|mailto:)/.test(h)) a.href = GH + h; a.target = '_blank'; a.rel = 'noopener'; });
-    dlg.querySelectorAll('.about-body img').forEach(i => { const h = i.getAttribute('src'); if (IMGS[h]) i.src = IMGS[h]; i.loading = 'lazy'; });
     document.querySelectorAll('[data-about]').forEach(b => b.addEventListener('click', () => dlg.showModal()));
     dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
   </script>
