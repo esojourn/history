@@ -57,6 +57,7 @@ m.mainOnly: 只看主要人物
 m.showAll: 显示全部 {n} 位人物
 m.prevSeg: 上一段
 m.nextSeg: 下一段
+m.nextSegTo: 下一段：{name} ›
 m.overview: ‹ 总览
 m.backBands: 回到朝代总览
 m.allShort: 全部 {n} 人

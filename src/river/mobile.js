@@ -1,5 +1,5 @@
 // 手机版时间长河：时间自上而下，人名竖排，一次看一个文明里的一段。
-import { fades, fadeOf, setHash, readHash, cardTarget } from './util.js';
+import { fades, fadeOf, setHash, readHash, cardTarget, reduceMotion } from './util.js';
 
 export function mobile(H, card, search) {
   const $ = s => document.querySelector(s), t = H.t;
@@ -118,7 +118,7 @@ export function mobile(H, card, search) {
       ${n > 1 ? `<button data-seg="${M.seg + 1}"${M.seg < n - 1 ? '' : ' disabled'} aria-label="${t('m.nextSeg')}">›</button>` : ''}
       ${few ? '' : `<button class="all" data-all aria-pressed="${M.all}">${M.all ? t('m.mainShort') : t('m.allShort', { n: mine.length })}</button>`}</div>`;
     body.innerHTML = `${nav}<svg id="mpeople" width="${Wd}" height="${Ht}" viewBox="0 0 ${Wd} ${Ht}">${o.join('')}</svg>
-      <div class="mmore">${few ? '' : `<button data-all>${M.all ? t('m.mainOnly') : t('m.showAll', { n: mine.length })}</button><br>`}${guests.length ? t('m.guests') : ''}</div>`;
+      <div class="mmore">${M.seg < n - 1 ? `<button class="mnext" data-seg="${M.seg + 1}">${t('m.nextSegTo', { name: segs()[M.seg + 1].name })}</button><br>` : ''}${few ? '' : `<button data-all>${M.all ? t('m.mainOnly') : t('m.showAll', { n: mine.length })}</button><br>`}${guests.length ? t('m.guests') : ''}</div>`;
     if (body.scrollTop !== st) body.scrollTop = st;
   }
 
@@ -170,7 +170,20 @@ export function mobile(H, card, search) {
       if (v != null && seg()) body.scrollTop = Math.max(0, y(H.clamp(v, lo, hi)) - REF); else toStart();
       body.scrollLeft = dir < 0 ? body.scrollWidth : 0;   // 从右边滑进来的，先看到它的右边缘
     } else { paint(); if (v != null) bandsTo(v); }
-    if (dir) { body.classList.remove('swl', 'swr'); void body.offsetWidth; body.classList.add(dir > 0 ? 'swl' : 'swr'); }
+    slide(dir * 40, 0);
+  }
+  // 换过去时内容从滑动方向轻轻进来。动画加在外层容器上、只播一次，滚动时人物图重画也不会再闪
+  function slide(dx, dy) {
+    if ((!dx && !dy) || reduceMotion()) return;
+    body.animate([{ transform: `translate(${dx}px, ${dy}px)` }, { transform: 'none' }], { duration: 200, easing: 'ease-out' });
+  }
+  // 翻到同一文明的上一段、下一段（dir = -1 / 1）。往下翻从这一段开头看起，往上翻从那一段末尾看起
+  function goSeg(i, dir) {
+    if (!segs()[i]) return;
+    if (M.sel) setHash(null);
+    M.seg = i; M.sel = null; M.full = false; showCard(); paint();
+    if (dir < 0) body.scrollTop = body.scrollHeight; else toStart();
+    slide(0, dir * 60);
   }
 
   // 左右滑动换到相邻的文明（顺序同顶上的标签）。人物多、图比屏幕宽时，要先把图滑到头，再滑一次才换
@@ -178,12 +191,20 @@ export function mobile(H, card, search) {
   body.addEventListener('touchstart', e => {
     if (e.touches.length !== 1) { sw = null; return; }
     const tc = e.touches[0], max = body.scrollWidth - body.clientWidth;
-    sw = { x: tc.clientX, y: tc.clientY, atL: body.scrollLeft <= 24, atR: body.scrollLeft >= max - 24 };   // 离边缘不到 24 像素也算到头
+    const maxY = body.scrollHeight - body.clientHeight;
+    sw = { x: tc.clientX, y: tc.clientY, atL: body.scrollLeft <= 24, atR: body.scrollLeft >= max - 24,   // 离边缘不到 24 像素也算到头
+      atT: body.scrollTop <= 2, atB: body.scrollTop >= maxY - 2 };
   }, { passive: true });
   body.addEventListener('touchcancel', () => { sw = null; });
   body.addEventListener('touchend', e => {
     if (!sw || e.touches.length) return;
     const tc = e.changedTouches[0], dx = tc.clientX - sw.x, dy = tc.clientY - sw.y, s = sw; sw = null;
+    // 上下滑：已经在这一段的尽头，再往外滑一次，就翻到相邻的上一段、下一段（看着某人的卡片时不翻）
+    if (Math.abs(dy) >= 70 && Math.abs(dy) > Math.abs(dx) * 1.6) {
+      const dir = dy < 0 ? 1 : -1;
+      if (M.mode === 'people' && !M.sel && (dir > 0 ? s.atB : s.atT)) goSeg(M.seg + dir, dir);
+      return;
+    }
     if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
     const i = H.lanes.findIndex(l => l.id === M.lane), dir = dx < 0 ? 1 : -1, nx = H.lanes[i + dir];
     if (!nx || (dir > 0 ? !s.atR : !s.atL)) return;
@@ -193,7 +214,7 @@ export function mobile(H, card, search) {
   let sraf = 0;
   body.addEventListener('scroll', () => { if (M.mode === 'people' && !sraf) sraf = requestAnimationFrame(() => { sraf = 0; people(true); }); });
   $('#m').addEventListener('click', e => {
-    const el = e.target, m = el.closest('[data-m]'), lane = el.closest('[data-lane]'), sg = el.closest('.mseg [data-seg]'), p = el.closest('[data-p]'), ev = el.closest('[data-e]');
+    const el = e.target, m = el.closest('[data-m]'), lane = el.closest('[data-lane]'), sg = el.closest('.mseg [data-seg], .mmore [data-seg]'), p = el.closest('[data-p]'), ev = el.closest('[data-e]');
     const to = cardTarget(e);
     const clear = () => { M.sel = null; M.full = false; showCard(); };   // “全部 / 只看主要”的选择一直保留
     if (m) {
