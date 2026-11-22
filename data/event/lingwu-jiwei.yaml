@@ -1,0 +1,13 @@
+id: lingwu-jiwei
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 756 }
+places: [lingwu]
+participants:
+  - person: li-heng
+  - person: li-longji
+  - person: li-fuguo
+  - person: guo-ziyi
+reviewed: false

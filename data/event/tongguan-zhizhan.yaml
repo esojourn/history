@@ -1,0 +1,12 @@
+id: tongguan-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 756 }
+places: [tongguan]
+participants:
+  - person: geshu-han
+  - person: li-longji
+  - person: yang-guozhong
+reviewed: false

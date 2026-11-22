@@ -1,0 +1,13 @@
+id: kukai
+wikidata: null
+civ: japan
+importance: 2
+birth: { year: 774 }
+death: { year: 835 }
+birthplace: sanuki
+deathplace: koya
+places:
+  - { place: changan, start: 804, end: 806 }
+  - { place: heiankyo, start: 809, end: 835 }
+  - { place: koya, start: 816, end: 835 }
+reviewed: false

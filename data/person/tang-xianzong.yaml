@@ -1,0 +1,14 @@
+id: tang-xianzong
+wikidata: null
+civ: china
+faction: tang
+importance: 4
+birth: { year: 778 }
+death: { year: 820 }
+reign:
+  - { start: 805, end: 820 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 778, end: 820 }
+reviewed: false

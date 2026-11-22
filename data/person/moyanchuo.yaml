@@ -1,0 +1,12 @@
+id: moyanchuo
+wikidata: null
+civ: steppe
+faction: huihe
+importance: 2
+birth: { unknown: true, approx: 710 }
+death: { year: 759 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: mobei, start: 747, end: 759 }
+reviewed: false

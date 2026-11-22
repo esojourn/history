@@ -1,0 +1,12 @@
+id: liuyan-licai
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 764, circa: true }
+end: { year: 779 }
+places: [changan, guangling]
+participants:
+  - person: liu-yan-tang
+  - person: li-yu
+reviewed: false

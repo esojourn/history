@@ -1,0 +1,12 @@
+id: tian-chengsi
+wikidata: null
+civ: china
+faction: fanzhen
+importance: 2
+birth: { year: 705 }
+death: { year: 779 }
+birthplace: unknown
+deathplace: weizhou
+places:
+  - { place: weizhou, start: 763, end: 779 }
+reviewed: false

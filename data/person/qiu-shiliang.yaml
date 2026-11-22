@@ -1,0 +1,13 @@
+id: qiu-shiliang
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 781 }
+death: { year: 843 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan, start: 805, end: 843 }
+  - { place: daminggong, start: 835, end: 835 }
+reviewed: false

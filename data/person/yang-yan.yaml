@@ -1,0 +1,12 @@
+id: yang-yan
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 727 }
+death: { year: 781 }
+birthplace: fengxiang
+deathplace: unknown
+places:
+  - { place: changan, start: 779, end: 781 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: li-he
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 790, circa: true }
+death: { year: 816, circa: true }
+birthplace: changgu
+deathplace: changgu
+places:
+  - { place: changgu, start: 790, end: 816 }
+  - { place: changan, start: 811, end: 814 }
+reviewed: false

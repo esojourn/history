@@ -1,0 +1,15 @@
+id: yongzhen-gexin
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 805 }
+places: [changan]
+participants:
+  - person: li-song
+  - person: wang-shuwen
+  - person: liu-zongyuan
+  - person: liu-yuxi
+  - person: tang-xianzong
+  - person: wei-gao
+reviewed: false

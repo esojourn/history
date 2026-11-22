@@ -1,0 +1,14 @@
+id: tian-lingzi
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { unknown: true, approx: 830 }
+death: { year: 893 }
+birthplace: unknown
+deathplace: chengdu
+places:
+  - { place: changan, start: 873, end: 880 }
+  - { place: chengdu, start: 881, end: 885 }
+  - { place: chengdu, start: 886, end: 893 }
+reviewed: false

@@ -1,0 +1,9 @@
+id: changqing-huimeng
+wikidata: null
+civ: china
+type: diplomatic
+importance: 2
+start: { year: 821 }
+end: { year: 823 }
+places: [changan, luoxie]
+reviewed: false

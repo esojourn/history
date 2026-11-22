@@ -1,0 +1,12 @@
+id: heshuo-sanzhen
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 763 }
+places: [weizhou, ji, zhending]
+participants:
+  - person: tian-chengsi
+  - person: pugu-huaien
+  - person: li-yu
+reviewed: false

@@ -1,0 +1,12 @@
+id: mazu-daoyi
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 709 }
+death: { year: 788 }
+birthplace: unknown
+deathplace: hongzhou
+places:
+  - { place: hongzhou, start: 769, end: 788 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: suiyang-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 757 }
+places: [suiyang]
+participants:
+  - person: zhang-xun
+  - person: an-qingxu
+reviewed: false

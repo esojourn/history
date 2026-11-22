@@ -1,0 +1,15 @@
+id: han-yu
+wikidata: null
+civ: china
+faction: tang
+importance: 4
+birth: { year: 768 }
+death: { year: 824 }
+birthplace: heyang
+deathplace: changan
+places:
+  - { place: changan, start: 786, end: 819 }
+  - { place: runan, start: 817, end: 817 }
+  - { place: chaozhou, start: 819, end: 820 }
+  - { place: changan, start: 820, end: 824 }
+reviewed: false

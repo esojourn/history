@@ -1,0 +1,12 @@
+id: li-jifu
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 758 }
+death: { year: 814 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan, start: 805, end: 814 }
+reviewed: false

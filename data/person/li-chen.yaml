@@ -1,0 +1,14 @@
+id: li-chen
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 810 }
+death: { year: 859 }
+reign:
+  - { start: 846, end: 859 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 810, end: 859 }
+reviewed: false

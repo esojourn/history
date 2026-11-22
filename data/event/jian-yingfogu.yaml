@@ -1,0 +1,12 @@
+id: jian-yingfogu
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 819 }
+places: [changan, fengxiang, chaozhou]
+participants:
+  - person: han-yu
+  - person: tang-xianzong
+  - person: pei-du
+reviewed: false

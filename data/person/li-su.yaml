@@ -1,0 +1,13 @@
+id: li-su
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 773 }
+death: { year: 821 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: runan, start: 816, end: 817 }
+  - { place: weizhou, start: 820, end: 821 }
+reviewed: false

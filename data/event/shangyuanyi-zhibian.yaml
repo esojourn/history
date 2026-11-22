@@ -1,0 +1,11 @@
+id: shangyuanyi-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 884 }
+places: [bianzhou]
+participants:
+  - person: zhu-wen
+  - person: li-keyong
+reviewed: false

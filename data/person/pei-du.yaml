@@ -1,0 +1,14 @@
+id: pei-du
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 765 }
+death: { year: 839 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 815, end: 830 }
+  - { place: runan, start: 817, end: 817 }
+  - { place: luoyang, start: 835, end: 838 }
+reviewed: false

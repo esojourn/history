@@ -1,0 +1,11 @@
+id: pangxun-qiyi
+wikidata: null
+civ: china
+type: uprising
+importance: 2
+start: { year: 868 }
+end: { year: 869 }
+places: [guilin, pengcheng]
+participants:
+  - person: pang-xun
+reviewed: false

@@ -1,0 +1,14 @@
+id: zhang-yichao
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 799 }
+death: { year: 872 }
+birthplace: dunhuang
+deathplace: changan
+places:
+  - { place: dunhuang, start: 799, end: 867 }
+  - { place: guzang, start: 861, end: 861 }
+  - { place: changan, start: 867, end: 872 }
+reviewed: false

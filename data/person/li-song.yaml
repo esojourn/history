@@ -1,0 +1,14 @@
+id: li-song
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 761 }
+death: { year: 806 }
+reign:
+  - { start: 805, end: 805 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 761, end: 806 }
+reviewed: false

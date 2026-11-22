@@ -1,0 +1,12 @@
+id: guwen-yundong
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 790, circa: true }
+end: { year: 830, circa: true }
+places: [changan]
+participants:
+  - person: han-yu
+  - person: liu-zongyuan
+reviewed: false

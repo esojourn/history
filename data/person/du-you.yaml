@@ -1,0 +1,13 @@
+id: du-you
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 735 }
+death: { year: 812 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: guangling, start: 790, end: 803 }
+  - { place: changan, start: 803, end: 812 }
+reviewed: false

@@ -1,0 +1,18 @@
+id: li-xuan-xizong
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 862 }
+death: { year: 888 }
+reign:
+  - { start: 873, end: 888 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 873, end: 880 }
+  - { place: chengdu, start: 881, end: 885 }
+  - { place: fengxiang, start: 886, end: 887 }
+  - { place: hanzhong, start: 886, end: 887 }
+  - { place: changan, start: 888, end: 888 }
+reviewed: false

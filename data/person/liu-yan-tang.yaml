@@ -1,0 +1,14 @@
+id: liu-yan-tang
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 716, circa: true }
+death: { year: 780 }
+birthplace: caozhou
+deathplace: zhongzhou
+places:
+  - { place: changan, start: 763, end: 779 }
+  - { place: guangling, start: 763, end: 779 }
+  - { place: zhongzhou, start: 780, end: 780 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: shi-chaoyi
+wikidata: null
+civ: china
+faction: anshi
+importance: 2
+birth: { unknown: true, approx: 730 }
+death: { year: 763 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: luoyang, start: 761, end: 762 }
+  - { place: ji, start: 762, end: 763 }
+reviewed: false

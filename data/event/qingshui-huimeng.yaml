@@ -1,0 +1,11 @@
+id: qingshui-huimeng
+wikidata: null
+civ: china
+type: diplomatic
+importance: 2
+start: { year: 783 }
+places: [qingshui]
+participants:
+  - person: trisong-detsen
+  - person: li-kuo
+reviewed: false

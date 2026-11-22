@@ -1,0 +1,15 @@
+id: trisong-detsen
+wikidata: null
+civ: china
+faction: tubo
+importance: 3
+birth: { year: 742 }
+death: { year: 797, circa: true }
+reign:
+  - { start: 755, end: 797 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: luoxie, start: 755, end: 797 }
+  - { place: samye, start: 779, end: 797 }
+reviewed: false

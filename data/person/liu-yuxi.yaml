@@ -1,0 +1,17 @@
+id: liu-yuxi
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 772 }
+death: { year: 842 }
+birthplace: jiaxing
+deathplace: luoyang
+places:
+  - { place: changan, start: 793, end: 805 }
+  - { place: langzhou, start: 805, end: 815 }
+  - { place: lianzhou, start: 815, end: 819 }
+  - { place: kuizhou, start: 821, end: 824 }
+  - { place: wu, start: 831, end: 834 }
+  - { place: luoyang, start: 836, end: 842 }
+reviewed: false

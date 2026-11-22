@@ -1,0 +1,13 @@
+id: an-qingxu
+wikidata: null
+civ: china
+faction: anshi
+importance: 2
+birth: { unknown: true, approx: 725 }
+death: { year: 759 }
+birthplace: unknown
+deathplace: ye
+places:
+  - { place: luoyang, start: 756, end: 757 }
+  - { place: ye, start: 757, end: 759 }
+reviewed: false

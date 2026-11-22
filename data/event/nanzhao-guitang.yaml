@@ -1,0 +1,12 @@
+id: nanzhao-guitang
+wikidata: null
+civ: china
+type: diplomatic
+importance: 2
+start: { year: 794 }
+places: [yangjumie]
+participants:
+  - person: yimouxun
+  - person: wei-gao
+  - person: li-kuo
+reviewed: false

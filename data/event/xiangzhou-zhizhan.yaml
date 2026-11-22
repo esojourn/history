@@ -1,0 +1,15 @@
+id: xiangzhou-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 758 }
+end: { year: 759 }
+places: [ye]
+participants:
+  - person: guo-ziyi
+  - person: li-guangbi
+  - person: yu-chaoen
+  - person: shi-siming
+  - person: an-qingxu
+reviewed: false

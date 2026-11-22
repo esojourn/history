@@ -1,0 +1,16 @@
+id: huangchao-ru-changan
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 880 }
+end: { year: 883 }
+places: [changan, chengdu]
+participants:
+  - person: huang-chao
+  - person: li-xuan-xizong
+  - person: tian-lingzi
+  - person: zhu-wen
+  - person: li-keyong
+  - person: wei-zhuang
+reviewed: false

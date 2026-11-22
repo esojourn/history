@@ -1,0 +1,15 @@
+id: ennin
+wikidata: null
+civ: japan
+importance: 2
+birth: { year: 794 }
+death: { year: 864 }
+birthplace: shimotsuke
+deathplace: hiei
+places:
+  - { place: hiei, start: 808, end: 838 }
+  - { place: chishan, start: 839, end: 840 }
+  - { place: wutai, start: 840, end: 840 }
+  - { place: changan, start: 840, end: 845 }
+  - { place: hiei, start: 847, end: 864 }
+reviewed: false

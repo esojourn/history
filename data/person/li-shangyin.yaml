@@ -1,0 +1,15 @@
+id: li-shangyin
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 813, circa: true }
+death: { year: 858, circa: true }
+birthplace: henei
+deathplace: xingyang
+places:
+  - { place: changan, start: 837, end: 851 }
+  - { place: guilin, start: 847, end: 848 }
+  - { place: pengcheng, start: 849, end: 850 }
+  - { place: chengdu, start: 851, end: 855 }
+reviewed: false

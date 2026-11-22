@@ -1,0 +1,15 @@
+id: yuanhe-zhongxing
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 806 }
+end: { year: 820 }
+places: [changan]
+participants:
+  - person: tang-xianzong
+  - person: pei-du
+  - person: li-jifu
+  - person: li-su
+  - person: wu-yuanji
+reviewed: false

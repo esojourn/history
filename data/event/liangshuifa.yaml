@@ -1,0 +1,12 @@
+id: liangshuifa
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 780 }
+places: [changan]
+participants:
+  - person: yang-yan
+  - person: li-kuo
+  - person: lu-zhi
+reviewed: false

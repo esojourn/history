@@ -1,0 +1,12 @@
+id: pingliang-jiemeng
+wikidata: null
+civ: china
+type: diplomatic
+importance: 2
+start: { year: 787 }
+places: [pingliang]
+participants:
+  - person: li-kuo
+  - person: trisong-detsen
+  - person: li-sheng
+reviewed: false

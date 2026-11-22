@@ -1,0 +1,11 @@
+id: tubo-zhan-hexi
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 763 }
+end: { year: 786, circa: true }
+places: [guzang, dunhuang]
+participants:
+  - person: trisong-detsen
+reviewed: false

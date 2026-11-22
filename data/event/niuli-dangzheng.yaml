@@ -1,0 +1,16 @@
+id: niuli-dangzheng
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 808, circa: true }
+end: { year: 849 }
+places: [changan]
+participants:
+  - person: niu-sengru
+  - person: li-deyu
+  - person: li-jifu
+  - person: li-shangyin
+  - person: li-ang
+  - person: li-chen
+reviewed: false

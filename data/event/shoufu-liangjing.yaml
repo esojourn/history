@@ -1,0 +1,15 @@
+id: shoufu-liangjing
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 757 }
+places: [changan, luoyang]
+participants:
+  - person: li-yu
+  - person: guo-ziyi
+  - person: li-heng
+  - person: li-bi
+  - person: moyanchuo
+  - person: an-qingxu
+reviewed: false

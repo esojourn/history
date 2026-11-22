@@ -1,0 +1,12 @@
+id: guiyijun
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 848 }
+end: { year: 851 }
+places: [dunhuang, changan]
+participants:
+  - person: zhang-yichao
+  - person: li-chen
+reviewed: false

@@ -1,0 +1,12 @@
+id: xue-tao
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 768, circa: true }
+death: { year: 832 }
+birthplace: changan
+deathplace: chengdu
+places:
+  - { place: chengdu, start: 785, end: 832 }
+reviewed: false

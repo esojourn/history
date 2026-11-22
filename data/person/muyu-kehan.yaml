@@ -1,0 +1,13 @@
+id: muyu-kehan
+wikidata: null
+civ: steppe
+faction: huihe
+importance: 2
+birth: { unknown: true, approx: 730 }
+death: { year: 779 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ordubaliq, start: 759, end: 779 }
+  - { place: luoyang, start: 762, end: 763 }
+reviewed: false

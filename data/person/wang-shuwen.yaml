@@ -1,0 +1,13 @@
+id: wang-shuwen
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 753 }
+death: { year: 806 }
+birthplace: shanyin
+deathplace: yuzhou
+places:
+  - { place: changan, start: 780, end: 805 }
+  - { place: yuzhou, start: 805, end: 806 }
+reviewed: false

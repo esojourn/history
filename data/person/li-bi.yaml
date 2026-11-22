@@ -1,0 +1,14 @@
+id: li-bi
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 722 }
+death: { year: 789 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 722, end: 789 }
+  - { place: lingwu, start: 756, end: 757 }
+  - { place: fengxiang, start: 757, end: 757 }
+reviewed: false

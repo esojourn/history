@@ -1,0 +1,13 @@
+id: pugu-huaien-zhipan
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 764 }
+end: { year: 765 }
+places: [jinyang, lingwu, changan]
+participants:
+  - person: pugu-huaien
+  - person: guo-ziyi
+  - person: li-yu
+reviewed: false

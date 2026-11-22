@@ -1,0 +1,13 @@
+id: zhang-xun
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 709 }
+death: { year: 757 }
+birthplace: unknown
+deathplace: suiyang
+places:
+  - { place: yongqiu, start: 756, end: 756 }
+  - { place: suiyang, start: 757, end: 757 }
+reviewed: false

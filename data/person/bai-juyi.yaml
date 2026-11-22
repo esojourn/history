@@ -1,0 +1,16 @@
+id: bai-juyi
+wikidata: null
+civ: china
+faction: tang
+importance: 4
+birth: { year: 772 }
+death: { year: 846 }
+birthplace: xinzheng
+deathplace: luoyang
+places:
+  - { place: changan, start: 800, end: 815 }
+  - { place: xunyang, start: 815, end: 818 }
+  - { place: hangzhou, start: 822, end: 824 }
+  - { place: wu, start: 825, end: 826 }
+  - { place: luoyang, start: 829, end: 846 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: lu-zhi
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 754 }
+death: { year: 805 }
+birthplace: jiaxing
+deathplace: zhongzhou
+places:
+  - { place: changan, start: 779, end: 794 }
+  - { place: fengtian, start: 783, end: 784 }
+  - { place: zhongzhou, start: 795, end: 805 }
+reviewed: false

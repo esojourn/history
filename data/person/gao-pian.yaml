@@ -1,0 +1,14 @@
+id: gao-pian
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 821 }
+death: { year: 887 }
+birthplace: unknown
+deathplace: guangling
+places:
+  - { place: jiaozhi, start: 864, end: 866 }
+  - { place: chengdu, start: 875, end: 878 }
+  - { place: guangling, start: 879, end: 887 }
+reviewed: false

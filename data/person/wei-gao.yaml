@@ -1,0 +1,12 @@
+id: wei-gao
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 745 }
+death: { year: 805 }
+birthplace: changan
+deathplace: chengdu
+places:
+  - { place: chengdu, start: 785, end: 805 }
+reviewed: false

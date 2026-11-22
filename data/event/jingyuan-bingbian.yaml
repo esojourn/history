@@ -1,0 +1,15 @@
+id: jingyuan-bingbian
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 783 }
+end: { year: 784 }
+places: [changan, fengtian, hanzhong]
+participants:
+  - person: li-kuo
+  - person: zhu-ci
+  - person: lu-zhi
+  - person: li-sheng
+  - person: li-xilie
+reviewed: false

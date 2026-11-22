@@ -1,0 +1,17 @@
+id: li-ye-zhaozong
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 867 }
+death: { year: 904 }
+reign:
+  - { start: 888, end: 904 }
+birthplace: changan
+deathplace: luoyang
+places:
+  - { place: changan, start: 888, end: 904 }
+  - { place: huazhou, start: 896, end: 898 }
+  - { place: fengxiang, start: 902, end: 903 }
+  - { place: luoyang, start: 904, end: 904 }
+reviewed: false

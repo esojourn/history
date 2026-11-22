@@ -1,0 +1,15 @@
+id: li-keyong
+wikidata: null
+civ: china
+faction: shatuo
+importance: 3
+birth: { year: 856 }
+death: { year: 908 }
+birthplace: unknown
+deathplace: jinyang
+places:
+  - { place: yanmen, start: 878, end: 880 }
+  - { place: changan, start: 883, end: 883 }
+  - { place: bianzhou, start: 884, end: 884 }
+  - { place: jinyang, start: 883, end: 908 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: niu-sengru
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 779 }
+death: { year: 848 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 805, end: 832 }
+  - { place: guangling, start: 832, end: 837 }
+  - { place: luoyang, start: 838, end: 846 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: wu-yuanji
+wikidata: null
+civ: china
+faction: fanzhen
+importance: 2
+birth: { year: 783 }
+death: { year: 817 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: runan, start: 814, end: 817 }
+reviewed: false

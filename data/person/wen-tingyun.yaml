@@ -1,0 +1,12 @@
+id: wen-tingyun
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 812, circa: true }
+death: { year: 866, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 840, end: 866 }
+reviewed: false

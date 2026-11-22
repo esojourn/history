@@ -1,0 +1,14 @@
+id: zhu-ci
+wikidata: null
+civ: china
+faction: fanzhen
+importance: 2
+birth: { year: 742 }
+death: { year: 784 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ji, start: 772, end: 774 }
+  - { place: changan, start: 774, end: 784 }
+  - { place: fengtian, start: 783, end: 784 }
+reviewed: false

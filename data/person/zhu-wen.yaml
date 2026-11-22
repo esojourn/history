@@ -1,0 +1,16 @@
+id: zhu-wen
+wikidata: null
+civ: china
+faction: houliang
+importance: 4
+birth: { year: 852 }
+death: { year: 912 }
+reign:
+  - { start: 907, end: 912 }
+birthplace: dangshan
+deathplace: luoyang
+places:
+  - { place: changan, start: 880, end: 882 }
+  - { place: bianzhou, start: 883, end: 912 }
+  - { place: luoyang, start: 904, end: 912 }
+reviewed: false

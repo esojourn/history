@@ -1,0 +1,12 @@
+id: huihu-wajie
+wikidata: null
+civ: steppe
+type: war
+importance: 2
+start: { year: 840 }
+end: { year: 846 }
+places: [ordubaliq, mobei]
+participants:
+  - person: li-yan-wuzong
+  - person: li-deyu
+reviewed: false

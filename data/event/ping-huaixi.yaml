@@ -1,0 +1,15 @@
+id: ping-huaixi
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 815 }
+end: { year: 817 }
+places: [runan]
+participants:
+  - person: tang-xianzong
+  - person: pei-du
+  - person: li-su
+  - person: wu-yuanji
+  - person: han-yu
+reviewed: false

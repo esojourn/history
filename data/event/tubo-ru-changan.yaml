@@ -1,0 +1,12 @@
+id: tubo-ru-changan
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 763 }
+places: [changan]
+participants:
+  - person: trisong-detsen
+  - person: li-yu
+  - person: guo-ziyi
+reviewed: false

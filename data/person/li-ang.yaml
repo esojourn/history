@@ -1,0 +1,15 @@
+id: li-ang
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 809 }
+death: { year: 840 }
+reign:
+  - { start: 826, end: 840 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 809, end: 840 }
+  - { place: daminggong, start: 835, end: 835 }
+reviewed: false

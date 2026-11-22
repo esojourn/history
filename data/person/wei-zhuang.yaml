@@ -1,0 +1,14 @@
+id: wei-zhuang
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 836, circa: true }
+death: { year: 910 }
+birthplace: changan
+deathplace: chengdu
+places:
+  - { place: changan, start: 880, end: 881 }
+  - { place: luoyang, start: 883, end: 883 }
+  - { place: chengdu, start: 901, end: 910 }
+reviewed: false

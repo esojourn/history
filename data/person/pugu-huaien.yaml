@@ -1,0 +1,14 @@
+id: pugu-huaien
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { unknown: true, approx: 710 }
+death: { year: 765 }
+birthplace: unknown
+deathplace: lingwu
+places:
+  - { place: lingwu, start: 755, end: 762 }
+  - { place: luoyang, start: 762, end: 762 }
+  - { place: jinyang, start: 763, end: 764 }
+reviewed: false

@@ -112,3 +112,21 @@
 - id: xinluo
   civ: korea
   color: "#5A86A8"
+- id: fanzhen
+  civ: china
+  color: "#6E5A3C"
+- id: huihe
+  civ: steppe
+  color: "#4E7A8C"
+- id: nanzhao
+  civ: china
+  color: "#3F8A6E"
+- id: tangmo
+  civ: china
+  color: "#A0522D"
+- id: houliang
+  civ: china
+  color: "#5B6B8C"
+- id: shatuo
+  civ: china
+  color: "#7C5C7A"

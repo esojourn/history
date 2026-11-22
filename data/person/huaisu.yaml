@@ -1,0 +1,13 @@
+id: huaisu
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 737, circa: true }
+death: { year: 799, circa: true }
+birthplace: yongzhou
+deathplace: unknown
+places:
+  - { place: yongzhou, start: 737, end: 770 }
+  - { place: changan, start: 770, end: 780 }
+reviewed: false

@@ -1,0 +1,10 @@
+id: chajing
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 780, circa: true }
+places: [huzhou]
+participants:
+  - person: lu-yu
+reviewed: false

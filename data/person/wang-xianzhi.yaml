@@ -1,0 +1,13 @@
+id: wang-xianzhi
+wikidata: null
+civ: china
+faction: tangmo
+importance: 2
+birth: { unknown: true, approx: 835 }
+death: { year: 878 }
+birthplace: puzhou-sd
+deathplace: huangmei
+places:
+  - { place: puzhou-sd, start: 874, end: 875 }
+  - { place: huangmei, start: 878, end: 878 }
+reviewed: false

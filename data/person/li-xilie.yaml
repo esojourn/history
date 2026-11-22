@@ -1,0 +1,12 @@
+id: li-xilie
+wikidata: null
+civ: china
+faction: fanzhen
+importance: 2
+birth: { unknown: true, approx: 740 }
+death: { year: 786 }
+birthplace: unknown
+deathplace: runan
+places:
+  - { place: runan, start: 779, end: 786 }
+reviewed: false

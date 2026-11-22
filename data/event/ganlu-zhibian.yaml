@@ -1,0 +1,11 @@
+id: ganlu-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 835 }
+places: [daminggong, changan]
+participants:
+  - person: li-ang
+  - person: qiu-shiliang
+reviewed: false

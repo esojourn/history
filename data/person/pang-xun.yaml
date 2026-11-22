@@ -1,0 +1,13 @@
+id: pang-xun
+wikidata: null
+civ: china
+faction: tangmo
+importance: 2
+birth: { unknown: true, approx: 830 }
+death: { year: 869 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: guilin, start: 862, end: 868 }
+  - { place: pengcheng, start: 868, end: 869 }
+reviewed: false

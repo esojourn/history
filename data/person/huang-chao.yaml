@@ -1,0 +1,19 @@
+id: huang-chao
+wikidata: null
+civ: china
+faction: tangmo
+importance: 4
+birth: { unknown: true, approx: 835 }
+death: { year: 884 }
+reign:
+  - { start: 880, end: 884 }
+birthplace: caozhou
+deathplace: taishan
+places:
+  - { place: caozhou, start: 875, end: 875 }
+  - { place: panyu, start: 879, end: 879 }
+  - { place: luoyang, start: 880, end: 880 }
+  - { place: changan, start: 880, end: 883 }
+  - { place: chen, start: 883, end: 884 }
+  - { place: taishan, start: 884, end: 884 }
+reviewed: false

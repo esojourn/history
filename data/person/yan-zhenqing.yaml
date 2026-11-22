@@ -1,0 +1,16 @@
+id: yan-zhenqing
+wikidata: null
+civ: china
+faction: tang
+importance: 4
+birth: { year: 709 }
+death: { year: 784, circa: true }
+birthplace: changan
+deathplace: runan
+places:
+  - { place: changan, start: 734, end: 753 }
+  - { place: pingyuan, start: 753, end: 756 }
+  - { place: fengxiang, start: 757, end: 757 }
+  - { place: huzhou, start: 773, end: 777 }
+  - { place: runan, start: 783, end: 784 }
+reviewed: false

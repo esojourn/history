@@ -1,0 +1,16 @@
+id: yuan-zhen
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 779 }
+death: { year: 831 }
+birthplace: luoyang
+deathplace: ezhou
+places:
+  - { place: changan, start: 793, end: 810 }
+  - { place: jiangling, start: 810, end: 814 }
+  - { place: changan, start: 820, end: 822 }
+  - { place: kuaiji, start: 823, end: 829 }
+  - { place: ezhou, start: 830, end: 831 }
+reviewed: false

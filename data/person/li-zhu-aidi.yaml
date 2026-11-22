@@ -1,0 +1,15 @@
+id: li-zhu-aidi
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 892 }
+death: { year: 908 }
+reign:
+  - { start: 904, end: 907 }
+birthplace: changan
+deathplace: caozhou
+places:
+  - { place: luoyang, start: 904, end: 907 }
+  - { place: caozhou, start: 907, end: 908 }
+reviewed: false

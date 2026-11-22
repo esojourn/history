@@ -1,0 +1,15 @@
+id: li-guangbi
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 708 }
+death: { year: 764 }
+birthplace: longcheng
+deathplace: pengcheng
+places:
+  - { place: jinyang, start: 756, end: 757 }
+  - { place: heyang, start: 759, end: 760 }
+  - { place: luoyang, start: 761, end: 761 }
+  - { place: pengcheng, start: 762, end: 764 }
+reviewed: false

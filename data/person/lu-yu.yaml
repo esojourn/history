@@ -1,0 +1,13 @@
+id: lu-yu
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 733 }
+death: { year: 804 }
+birthplace: jingling
+deathplace: unknown
+places:
+  - { place: jingling, start: 733, end: 755 }
+  - { place: huzhou, start: 760, end: 804 }
+reviewed: false

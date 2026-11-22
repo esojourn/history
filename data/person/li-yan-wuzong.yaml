@@ -1,0 +1,14 @@
+id: li-yan-wuzong
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 814 }
+death: { year: 846 }
+reign:
+  - { start: 840, end: 846 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 814, end: 846 }
+reviewed: false

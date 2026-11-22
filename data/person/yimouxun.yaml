@@ -1,0 +1,15 @@
+id: yimouxun
+wikidata: null
+civ: china
+faction: nanzhao
+importance: 2
+birth: { year: 754 }
+death: { year: 808 }
+reign:
+  - { start: 779, end: 808 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: taihe-cheng, start: 779, end: 794 }
+  - { place: yangjumie, start: 794, end: 808 }
+reviewed: false

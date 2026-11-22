@@ -1,0 +1,15 @@
+id: li-deyu
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 787 }
+death: { year: 850 }
+birthplace: unknown
+deathplace: yazhou
+places:
+  - { place: changan, start: 820, end: 846 }
+  - { place: dantu, start: 822, end: 829 }
+  - { place: chengdu, start: 830, end: 832 }
+  - { place: yazhou, start: 849, end: 850 }
+reviewed: false

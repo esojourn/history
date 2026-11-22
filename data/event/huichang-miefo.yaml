@@ -1,0 +1,14 @@
+id: huichang-miefo
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 842 }
+end: { year: 846 }
+places: [changan, wutai]
+participants:
+  - person: li-yan-wuzong
+  - person: li-deyu
+  - person: ennin
+  - person: li-chen
+reviewed: false

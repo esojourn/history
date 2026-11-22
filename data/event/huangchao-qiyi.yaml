@@ -1,0 +1,16 @@
+id: huangchao-qiyi
+wikidata: null
+civ: china
+type: uprising
+importance: 4
+start: { year: 874 }
+end: { year: 884 }
+places: [puzhou-sd, caozhou, panyu, changan, taishan]
+participants:
+  - person: wang-xianzhi
+  - person: huang-chao
+  - person: li-xuan-xizong
+  - person: gao-pian
+  - person: li-keyong
+  - person: zhu-wen
+reviewed: false

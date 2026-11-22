@@ -1,0 +1,15 @@
+id: guo-ziyi
+wikidata: null
+civ: china
+faction: tang
+importance: 4
+birth: { year: 697 }
+death: { year: 781 }
+birthplace: huazhou
+deathplace: changan
+places:
+  - { place: lingwu, start: 755, end: 757 }
+  - { place: changan, start: 757, end: 781 }
+  - { place: luoyang, start: 757, end: 757 }
+  - { place: jinyang, start: 762, end: 763 }
+reviewed: false

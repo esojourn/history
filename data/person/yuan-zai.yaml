@@ -1,0 +1,12 @@
+id: yuan-zai
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { unknown: true, approx: 713 }
+death: { year: 777 }
+birthplace: fengxiang
+deathplace: changan
+places:
+  - { place: changan, start: 762, end: 777 }
+reviewed: false

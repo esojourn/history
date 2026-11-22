@@ -1,0 +1,16 @@
+id: du-mu
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 803 }
+death: { year: 852, circa: true }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 803, end: 828 }
+  - { place: xuancheng, start: 828, end: 833 }
+  - { place: guangling, start: 833, end: 835 }
+  - { place: huzhou, start: 850, end: 851 }
+  - { place: changan, start: 851, end: 852 }
+reviewed: false

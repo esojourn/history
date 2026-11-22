@@ -1,0 +1,16 @@
+id: shi-siming
+wikidata: null
+civ: china
+faction: anshi
+importance: 3
+birth: { year: 703 }
+death: { year: 761 }
+birthplace: longcheng
+deathplace: unknown
+places:
+  - { place: longcheng, start: 703, end: 742 }
+  - { place: zhending, start: 756, end: 756 }
+  - { place: ji, start: 757, end: 761 }
+  - { place: ye, start: 759, end: 759 }
+  - { place: luoyang, start: 759, end: 761 }
+reviewed: false

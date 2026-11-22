@@ -1,0 +1,13 @@
+id: li-fuguo
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 704 }
+death: { year: 762 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: lingwu, start: 756, end: 756 }
+  - { place: changan, start: 757, end: 762 }
+reviewed: false
