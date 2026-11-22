@@ -1,0 +1,14 @@
+id: caishi-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1161 }
+places: [caishi, guazhou]
+participants:
+  - person: yu-yunwen
+  - person: wanyan-liang
+  - person: wanyan-yong
+  - person: liu-qi-song
+  - person: zhao-gou
+reviewed: false

@@ -1,0 +1,13 @@
+id: zhang-jun
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1086 }
+death: { year: 1154 }
+birthplace: chengji
+deathplace: hangzhou
+places:
+  - { place: yinxian, start: 1129, end: 1130 }
+  - { place: hangzhou, start: 1141, end: 1154 }
+reviewed: false

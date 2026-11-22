@@ -1,0 +1,17 @@
+id: liu-yu-qi
+wikidata: null
+civ: china
+faction: jinchao
+importance: 2
+birth: { year: 1073 }
+death: { year: 1146 }
+reign:
+  - { start: 1130, end: 1137 }
+birthplace: fucheng-hb
+deathplace: unknown
+places:
+  - { place: qizhou-sd, start: 1128, end: 1130 }
+  - { place: weizhou, start: 1130, end: 1132 }
+  - { place: bianzhou, start: 1132, end: 1137 }
+  - { place: linhuang, start: 1137, end: 1146 }
+reviewed: false

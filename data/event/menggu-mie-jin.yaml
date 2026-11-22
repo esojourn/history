@@ -1,0 +1,18 @@
+id: menggu-mie-jin
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 1231 }
+end: { year: 1234 }
+places: [sanfengshan, bianzhou, runan]
+participants:
+  - person: ogedei
+  - person: tolui
+  - person: subutai
+  - person: wanyan-shouxu
+  - person: meng-gong
+  - person: yelu-chucai
+  - person: zhao-yun-lizong
+  - person: yuan-haowen
+reviewed: false

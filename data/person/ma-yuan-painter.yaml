@@ -1,0 +1,12 @@
+id: ma-yuan-painter
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { unknown: true, approx: 1150 }
+death: { unknown: true, approx: 1225 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: hangzhou }
+reviewed: false

@@ -1,0 +1,14 @@
+id: diaoyucheng-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1259 }
+places: [diaoyucheng]
+participants:
+  - person: mongke
+  - person: kublai
+  - person: jia-sidao
+  - person: zhao-yun-lizong
+  - person: hulegu
+reviewed: false

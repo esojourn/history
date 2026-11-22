@@ -1,0 +1,12 @@
+id: shoushi-li
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 1276 }
+end: { year: 1281 }
+places: [dadu, yangcheng]
+participants:
+  - person: guo-shoujing
+  - person: kublai
+reviewed: false

@@ -1,0 +1,16 @@
+id: wanyan-yong
+wikidata: null
+civ: china
+faction: jinchao
+importance: 4
+birth: { year: 1123 }
+death: { year: 1189 }
+reign:
+  - { start: 1161, end: 1189 }
+birthplace: unknown
+deathplace: ji
+places:
+  - { place: liaodong, start: 1161, end: 1161 }
+  - { place: ji, start: 1162, end: 1189 }
+  - { place: huiningfu, start: 1184, end: 1185 }
+reviewed: false

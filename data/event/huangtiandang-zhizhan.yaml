@@ -1,0 +1,13 @@
+id: huangtiandang-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1130 }
+places: [huangtiandang, jianye]
+participants:
+  - person: han-shizhong
+  - person: wanyan-zongbi
+  - person: yue-fei
+  - person: zhao-gou
+reviewed: false

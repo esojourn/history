@@ -1,0 +1,13 @@
+id: batu
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 3
+birth: { year: 1207, circa: true }
+death: { year: 1255, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: kiev, start: 1240, end: 1240 }
+  - { place: sarai, start: 1242, end: 1255 }
+reviewed: false

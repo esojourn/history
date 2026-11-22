@@ -1,0 +1,15 @@
+id: hulegu
+wikidata: null
+civ: meso
+faction: menggu
+importance: 3
+birth: { year: 1217, circa: true }
+death: { year: 1265 }
+reign:
+  - { start: 1256, end: 1265 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: baghdad, start: 1258, end: 1258 }
+  - { place: maragheh, start: 1259, end: 1265 }
+reviewed: false

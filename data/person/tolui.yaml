@@ -1,0 +1,13 @@
+id: tolui
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 3
+birth: { year: 1192, circa: true }
+death: { year: 1232 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: mobei }
+  - { place: sanfengshan, start: 1232, end: 1232 }
+reviewed: false

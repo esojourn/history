@@ -1,0 +1,13 @@
+id: han-shantong
+wikidata: null
+civ: china
+faction: yuanmo
+importance: 2
+birth: { unknown: true, approx: 1310 }
+death: { year: 1351 }
+birthplace: luancheng
+deathplace: yingzhou-ah
+places:
+  - { place: luancheng }
+  - { place: yingzhou-ah, start: 1351, end: 1351 }
+reviewed: false

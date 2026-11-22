@@ -1,0 +1,11 @@
+id: shunchang-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1140 }
+places: [yingzhou-ah]
+participants:
+  - person: liu-qi-song
+  - person: wanyan-zongbi
+reviewed: false

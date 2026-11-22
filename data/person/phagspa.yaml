@@ -1,0 +1,15 @@
+id: phagspa
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 3
+birth: { year: 1235 }
+death: { year: 1280 }
+birthplace: sakya
+deathplace: sakya
+places:
+  - { place: sakya, start: 1235, end: 1252 }
+  - { place: shangdu, start: 1253, end: 1264 }
+  - { place: dadu, start: 1269, end: 1274 }
+  - { place: sakya, start: 1276, end: 1280 }
+reviewed: false

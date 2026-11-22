@@ -1,0 +1,17 @@
+id: zhu-xi
+wikidata: null
+civ: china
+faction: songchao
+importance: 5
+birth: { year: 1130 }
+death: { year: 1200 }
+birthplace: youxi
+deathplace: jianyang-fj
+places:
+  - { place: youxi, start: 1130, end: 1143 }
+  - { place: jianyang-fj, start: 1143, end: 1200 }
+  - { place: lushan, start: 1179, end: 1181 }
+  - { place: ehu, start: 1175, end: 1175 }
+  - { place: changsha, start: 1194, end: 1194 }
+  - { place: hangzhou, start: 1194, end: 1194 }
+reviewed: false

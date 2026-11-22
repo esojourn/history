@@ -1,0 +1,14 @@
+id: ayurbarwada
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 2
+birth: { year: 1285 }
+death: { year: 1320 }
+reign:
+  - { start: 1311, end: 1320 }
+birthplace: unknown
+deathplace: dadu
+places:
+  - { place: dadu }
+reviewed: false

@@ -1,0 +1,15 @@
+id: wen-tianxiang
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 1236 }
+death: { year: 1283 }
+birthplace: jizhou-jx
+deathplace: dadu
+places:
+  - { place: jizhou-jx, start: 1236, end: 1255 }
+  - { place: hangzhou, start: 1256, end: 1276 }
+  - { place: fuzhou-fj, start: 1276, end: 1277 }
+  - { place: dadu, start: 1279, end: 1283 }
+reviewed: false

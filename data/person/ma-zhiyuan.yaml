@@ -1,0 +1,13 @@
+id: ma-zhiyuan
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 2
+birth: { unknown: true, approx: 1250 }
+death: { unknown: true, approx: 1321 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: dadu }
+  - { place: hangzhou }
+reviewed: false

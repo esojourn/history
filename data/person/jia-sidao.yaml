@@ -1,0 +1,15 @@
+id: jia-sidao
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1213 }
+death: { year: 1275 }
+birthplace: tiantai-xian
+deathplace: zhangzhou
+places:
+  - { place: jiangling, start: 1246, end: 1254 }
+  - { place: ezhou, start: 1259, end: 1259 }
+  - { place: hangzhou, start: 1260, end: 1275 }
+  - { place: dingjiazhou, start: 1275, end: 1275 }
+reviewed: false

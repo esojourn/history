@@ -1,0 +1,17 @@
+id: yue-fei
+wikidata: null
+civ: china
+faction: songchao
+importance: 5
+birth: { year: 1103 }
+death: { year: 1142 }
+birthplace: tangyin
+deathplace: hangzhou
+places:
+  - { place: tangyin, start: 1103, end: 1122 }
+  - { place: jianye, start: 1130, end: 1130 }
+  - { place: xiangyang, start: 1134, end: 1134 }
+  - { place: ezhou, start: 1135, end: 1141 }
+  - { place: yancheng-hn, start: 1140, end: 1140 }
+  - { place: hangzhou, start: 1141, end: 1142 }
+reviewed: false

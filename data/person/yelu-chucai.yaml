@@ -1,0 +1,14 @@
+id: yelu-chucai
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 3
+birth: { year: 1190 }
+death: { year: 1244 }
+birthplace: ji
+deathplace: karakorum
+places:
+  - { place: ji, start: 1190, end: 1218 }
+  - { place: samarkand, start: 1219, end: 1224 }
+  - { place: karakorum, start: 1229, end: 1244 }
+reviewed: false

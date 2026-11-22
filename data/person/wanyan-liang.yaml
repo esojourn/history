@@ -1,0 +1,18 @@
+id: wanyan-liang
+wikidata: null
+civ: china
+faction: jinchao
+importance: 3
+birth: { year: 1122 }
+death: { year: 1161 }
+reign:
+  - { start: 1150, end: 1161 }
+birthplace: unknown
+deathplace: guazhou
+places:
+  - { place: huiningfu, start: 1122, end: 1153 }
+  - { place: ji, start: 1153, end: 1161 }
+  - { place: bianzhou, start: 1161, end: 1161 }
+  - { place: caishi, start: 1161, end: 1161 }
+  - { place: guazhou, start: 1161, end: 1161 }
+reviewed: false

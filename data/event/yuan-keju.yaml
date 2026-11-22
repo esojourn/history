@@ -1,0 +1,11 @@
+id: yuan-keju
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 1313 }
+end: { year: 1315 }
+places: [dadu]
+participants:
+  - person: ayurbarwada
+reviewed: false

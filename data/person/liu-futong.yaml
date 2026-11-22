@@ -1,0 +1,15 @@
+id: liu-futong
+wikidata: null
+civ: china
+faction: yuanmo
+importance: 3
+birth: { unknown: true, approx: 1320 }
+death: { year: 1363, circa: true }
+birthplace: yingzhou-ah
+deathplace: unknown
+places:
+  - { place: yingzhou-ah, start: 1351, end: 1355 }
+  - { place: qiao, start: 1355, end: 1358 }
+  - { place: bianzhou, start: 1358, end: 1359 }
+  - { place: shouchun, start: 1359, end: 1363 }
+reviewed: false

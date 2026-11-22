@@ -1,0 +1,13 @@
+id: qin-jiushao
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1208, circa: true }
+death: { unknown: true, approx: 1261 }
+birthplace: puzhou-sc
+deathplace: unknown
+places:
+  - { place: puzhou-sc }
+  - { place: hangzhou }
+reviewed: false

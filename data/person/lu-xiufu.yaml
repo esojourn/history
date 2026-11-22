@@ -1,0 +1,14 @@
+id: lu-xiufu
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1236 }
+death: { year: 1279 }
+birthplace: yancheng-js
+deathplace: yamen
+places:
+  - { place: guangling, start: 1260, end: 1275 }
+  - { place: fuzhou-fj, start: 1276, end: 1277 }
+  - { place: yamen, start: 1278, end: 1279 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: mukhali
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 2
+birth: { year: 1170 }
+death: { year: 1223 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: mobei }
+  - { place: ji, start: 1217, end: 1223 }
+reviewed: false

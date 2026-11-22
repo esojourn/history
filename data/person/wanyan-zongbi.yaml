@@ -1,0 +1,17 @@
+id: wanyan-zongbi
+wikidata: null
+civ: china
+faction: jinchao
+importance: 4
+birth: { unknown: true, approx: 1095 }
+death: { year: 1148 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: huiningfu }
+  - { place: yinxian, start: 1130, end: 1130 }
+  - { place: huangtiandang, start: 1130, end: 1130 }
+  - { place: heshangyuan, start: 1131, end: 1131 }
+  - { place: bianzhou, start: 1140, end: 1141 }
+  - { place: yancheng-hn, start: 1140, end: 1140 }
+reviewed: false

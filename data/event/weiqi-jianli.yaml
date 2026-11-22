@@ -1,0 +1,14 @@
+id: weiqi-jianli
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 1130 }
+end: { year: 1137 }
+places: [weizhou, bianzhou]
+participants:
+  - person: liu-yu-qi
+  - person: wanyan-wuqimai
+  - person: wanyan-zonghan
+  - person: yue-fei
+reviewed: false

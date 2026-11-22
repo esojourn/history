@@ -1,0 +1,10 @@
+id: xingsheng-zhidu
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 1260, circa: true }
+places: [dadu]
+participants:
+  - person: kublai
+reviewed: false

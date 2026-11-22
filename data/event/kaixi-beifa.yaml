@@ -1,0 +1,16 @@
+id: kaixi-beifa
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 1206 }
+end: { year: 1208 }
+places: [hangzhou, xiangyang]
+participants:
+  - person: han-tuozhou
+  - person: shi-miyuan
+  - person: zhao-kuo-ningzong
+  - person: wanyan-jing
+  - person: xin-qiji
+  - person: lu-you
+reviewed: false

@@ -1,0 +1,18 @@
+id: zhao-gou
+wikidata: null
+civ: china
+faction: songchao
+importance: 5
+birth: { year: 1107 }
+death: { year: 1187 }
+reign:
+  - { start: 1127, end: 1162 }
+birthplace: bianzhou
+deathplace: hangzhou
+places:
+  - { place: bianzhou, start: 1107, end: 1126 }
+  - { place: suiyang, start: 1127, end: 1127 }
+  - { place: guangling, start: 1128, end: 1129 }
+  - { place: yinxian, start: 1129, end: 1130 }
+  - { place: hangzhou, start: 1138, end: 1187 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: yehuling-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1211 }
+places: [yehuling]
+participants:
+  - person: temujin
+  - person: mukhali
+reviewed: false

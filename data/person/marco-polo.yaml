@@ -1,0 +1,16 @@
+id: marco-polo
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1254 }
+death: { year: 1324 }
+birthplace: venice
+deathplace: venice
+places:
+  - { place: venice, start: 1254, end: 1271 }
+  - { place: shangdu, start: 1275, end: 1275 }
+  - { place: dadu, start: 1275, end: 1291 }
+  - { place: hangzhou }
+  - { place: quanzhou, start: 1291, end: 1291 }
+  - { place: venice, start: 1295, end: 1324 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: yuan-haowen
+wikidata: null
+civ: china
+faction: jinchao
+importance: 3
+birth: { year: 1190 }
+death: { year: 1257 }
+birthplace: xinzhou-sx
+deathplace: zhending
+places:
+  - { place: xinzhou-sx, start: 1190, end: 1220 }
+  - { place: bianzhou, start: 1231, end: 1233 }
+  - { place: xinzhou-sx, start: 1239, end: 1257 }
+reviewed: false

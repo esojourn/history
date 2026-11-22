@@ -1,0 +1,15 @@
+id: zhang-shicheng
+wikidata: null
+civ: china
+faction: yuanmo
+importance: 3
+birth: { year: 1321 }
+death: { year: 1367 }
+birthplace: taizhou-js
+deathplace: jianye
+places:
+  - { place: taizhou-js, start: 1321, end: 1353 }
+  - { place: gaoyou, start: 1353, end: 1356 }
+  - { place: wu, start: 1356, end: 1367 }
+  - { place: jianye, start: 1367, end: 1367 }
+reviewed: false

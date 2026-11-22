@@ -1,0 +1,14 @@
+id: ming-jianli
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: 1368 }
+places: [jianye, dadu]
+participants:
+  - person: zhu-yuanzhang
+  - person: xu-da
+  - person: liu-ji
+  - person: toghon-temur
+  - person: koko-temur
+reviewed: false

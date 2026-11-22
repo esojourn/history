@@ -1,0 +1,16 @@
+id: lu-jiuyuan
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 1139 }
+death: { year: 1193 }
+birthplace: jinxi
+deathplace: jingmen
+places:
+  - { place: jinxi, start: 1139, end: 1171 }
+  - { place: ehu, start: 1175, end: 1175 }
+  - { place: lushan, start: 1181, end: 1181 }
+  - { place: hangzhou, start: 1182, end: 1186 }
+  - { place: jingmen, start: 1191, end: 1193 }
+reviewed: false

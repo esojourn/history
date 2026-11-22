@@ -1,0 +1,15 @@
+id: liu-ji
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1311 }
+death: { year: 1375 }
+birthplace: qingtian
+deathplace: qingtian
+places:
+  - { place: qingtian, start: 1311, end: 1333 }
+  - { place: jianye, start: 1360, end: 1371 }
+  - { place: poyanghu, start: 1363, end: 1363 }
+  - { place: qingtian, start: 1371, end: 1375 }
+reviewed: false

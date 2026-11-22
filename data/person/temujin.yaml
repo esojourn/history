@@ -1,0 +1,18 @@
+id: temujin
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 5
+birth: { year: 1162, circa: true }
+death: { year: 1227 }
+reign:
+  - { start: 1206, end: 1227 }
+birthplace: onon
+deathplace: unknown
+places:
+  - { place: onon, start: 1162, end: 1206 }
+  - { place: otrar, start: 1219, end: 1220 }
+  - { place: samarkand, start: 1220, end: 1220 }
+  - { place: xingqingfu, start: 1226, end: 1227 }
+  - { place: liupanshan, start: 1227, end: 1227 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: ariq-boke
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 2
+birth: { unknown: true, approx: 1220 }
+death: { year: 1266 }
+reign:
+  - { start: 1260, end: 1264 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: karakorum, start: 1259, end: 1264 }
+reviewed: false

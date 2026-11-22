@@ -1,0 +1,13 @@
+id: longxing-beifa
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 1163 }
+end: { year: 1165 }
+places: [fuli, jianye]
+participants:
+  - person: zhao-shen
+  - person: zhang-jun-hanzhou
+  - person: wanyan-yong
+reviewed: false

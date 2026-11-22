@@ -1,0 +1,16 @@
+id: mongke
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 4
+birth: { year: 1209 }
+death: { year: 1259 }
+reign:
+  - { start: 1251, end: 1259 }
+birthplace: unknown
+deathplace: diaoyucheng
+places:
+  - { place: karakorum, start: 1251, end: 1258 }
+  - { place: kiev, start: 1240, end: 1240 }
+  - { place: diaoyucheng, start: 1259, end: 1259 }
+reviewed: false

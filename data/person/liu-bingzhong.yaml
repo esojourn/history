@@ -1,0 +1,14 @@
+id: liu-bingzhong
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 3
+birth: { year: 1216 }
+death: { year: 1274 }
+birthplace: xingzhou
+deathplace: shangdu
+places:
+  - { place: xingzhou, start: 1216, end: 1242 }
+  - { place: shangdu, start: 1256, end: 1274 }
+  - { place: dadu, start: 1267, end: 1274 }
+reviewed: false

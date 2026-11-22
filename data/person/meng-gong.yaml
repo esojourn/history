@@ -1,0 +1,15 @@
+id: meng-gong
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1195 }
+death: { year: 1246 }
+birthplace: zaoyang
+deathplace: jiangling
+places:
+  - { place: zaoyang, start: 1195, end: 1230 }
+  - { place: runan, start: 1233, end: 1234 }
+  - { place: xiangyang, start: 1239, end: 1239 }
+  - { place: jiangling, start: 1239, end: 1246 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: wu-jie
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1093 }
+death: { year: 1139 }
+birthplace: jingning
+deathplace: unknown
+places:
+  - { place: heshangyuan, start: 1131, end: 1131 }
+  - { place: hanzhong, start: 1133, end: 1139 }
+reviewed: false

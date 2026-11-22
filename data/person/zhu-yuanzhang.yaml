@@ -1,0 +1,17 @@
+id: zhu-yuanzhang
+wikidata: null
+civ: china
+faction: mingchao
+importance: 5
+birth: { year: 1328 }
+death: { year: 1398 }
+reign:
+  - { start: 1368, end: 1398 }
+birthplace: zhongli
+deathplace: jianye
+places:
+  - { place: zhongli, start: 1328, end: 1352 }
+  - { place: hezhou-ah, start: 1355, end: 1355 }
+  - { place: jianye, start: 1356, end: 1398 }
+  - { place: poyanghu, start: 1363, end: 1363 }
+reviewed: false

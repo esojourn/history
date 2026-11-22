@@ -1,0 +1,10 @@
+id: hailing-qiandu
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1153 }
+places: [ji, huiningfu]
+participants:
+  - person: wanyan-liang
+reviewed: false

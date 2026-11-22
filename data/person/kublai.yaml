@@ -1,0 +1,18 @@
+id: kublai
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 5
+birth: { year: 1215 }
+death: { year: 1294 }
+reign:
+  - { start: 1260, end: 1294 }
+birthplace: unknown
+deathplace: dadu
+places:
+  - { place: mobei, start: 1215, end: 1251 }
+  - { place: dali, start: 1253, end: 1253 }
+  - { place: shangdu, start: 1256, end: 1294 }
+  - { place: ezhou, start: 1259, end: 1259 }
+  - { place: dadu, start: 1267, end: 1294 }
+reviewed: false

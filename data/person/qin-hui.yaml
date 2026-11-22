@@ -1,0 +1,13 @@
+id: qin-hui
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 1090, circa: true }
+death: { year: 1155 }
+birthplace: jianye
+deathplace: hangzhou
+places:
+  - { place: bianzhou, start: 1115, end: 1127 }
+  - { place: hangzhou, start: 1131, end: 1155 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: liu-qi-song
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1098 }
+death: { year: 1162 }
+birthplace: chengji
+deathplace: hangzhou
+places:
+  - { place: yingzhou-ah, start: 1140, end: 1140 }
+  - { place: jiangling, start: 1150, end: 1161 }
+  - { place: hangzhou, start: 1162, end: 1162 }
+reviewed: false

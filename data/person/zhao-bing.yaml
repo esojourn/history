@@ -1,0 +1,16 @@
+id: zhao-bing
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1272 }
+death: { year: 1279 }
+reign:
+  - { start: 1278, end: 1279 }
+birthplace: hangzhou
+deathplace: yamen
+places:
+  - { place: hangzhou, start: 1272, end: 1276 }
+  - { place: fuzhou-fj, start: 1276, end: 1277 }
+  - { place: yamen, start: 1278, end: 1279 }
+reviewed: false

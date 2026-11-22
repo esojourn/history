@@ -1,0 +1,11 @@
+id: baghdad-1258
+wikidata: null
+civ: meso
+type: battle
+importance: 4
+start: { year: 1258 }
+places: [baghdad]
+participants:
+  - person: hulegu
+  - person: mongke
+reviewed: false

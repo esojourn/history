@@ -1,0 +1,13 @@
+id: hubilie-alibuge
+wikidata: null
+civ: steppe
+type: war
+importance: 3
+start: { year: 1260 }
+end: { year: 1264 }
+places: [shangdu, karakorum]
+participants:
+  - person: kublai
+  - person: ariq-boke
+  - person: hulegu
+reviewed: false

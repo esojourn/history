@@ -1,0 +1,12 @@
+id: menggu-mie-dali
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 1253 }
+end: { year: 1254 }
+places: [dali]
+participants:
+  - person: kublai
+  - person: mongke
+reviewed: false

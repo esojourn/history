@@ -1,0 +1,14 @@
+id: yang-wanli
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1127 }
+death: { year: 1206 }
+birthplace: jizhou-jx
+deathplace: jizhou-jx
+places:
+  - { place: jizhou-jx, start: 1127, end: 1154 }
+  - { place: hangzhou, start: 1165, end: 1192 }
+  - { place: jizhou-jx, start: 1192, end: 1206 }
+reviewed: false

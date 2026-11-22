@@ -1,0 +1,13 @@
+id: huang-daopo
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 2
+birth: { unknown: true, approx: 1245 }
+death: { unknown: true, approx: 1310 }
+birthplace: wunijing
+deathplace: wunijing
+places:
+  - { place: yazhou-sanya }
+  - { place: wunijing, start: 1295 }
+reviewed: false

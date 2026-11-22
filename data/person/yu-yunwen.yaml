@@ -1,0 +1,14 @@
+id: yu-yunwen
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1110 }
+death: { year: 1174 }
+birthplace: renshou
+deathplace: unknown
+places:
+  - { place: caishi, start: 1161, end: 1161 }
+  - { place: hangzhou, start: 1162, end: 1171 }
+  - { place: chengdu, start: 1172, end: 1174 }
+reviewed: false

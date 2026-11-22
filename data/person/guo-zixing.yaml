@@ -1,0 +1,14 @@
+id: guo-zixing
+wikidata: null
+civ: china
+faction: yuanmo
+importance: 2
+birth: { unknown: true, approx: 1300 }
+death: { year: 1355 }
+birthplace: dingyuan
+deathplace: hezhou-ah
+places:
+  - { place: dingyuan }
+  - { place: zhongli, start: 1352, end: 1354 }
+  - { place: hezhou-ah, start: 1355, end: 1355 }
+reviewed: false

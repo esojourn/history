@@ -1,0 +1,16 @@
+id: bayan-baarin
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 3
+birth: { year: 1236 }
+death: { year: 1295 }
+birthplace: unknown
+deathplace: dadu
+places:
+  - { place: xiangyang, start: 1274, end: 1274 }
+  - { place: dingjiazhou, start: 1275, end: 1275 }
+  - { place: hangzhou, start: 1276, end: 1276 }
+  - { place: karakorum, start: 1289, end: 1293 }
+  - { place: dadu, start: 1294, end: 1295 }
+reviewed: false

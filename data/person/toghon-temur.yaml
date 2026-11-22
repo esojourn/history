@@ -1,0 +1,16 @@
+id: toghon-temur
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 3
+birth: { year: 1320 }
+death: { year: 1370 }
+reign:
+  - { start: 1333, end: 1370 }
+birthplace: unknown
+deathplace: yingchang
+places:
+  - { place: dadu, start: 1333, end: 1368 }
+  - { place: shangdu, start: 1368, end: 1369 }
+  - { place: yingchang, start: 1369, end: 1370 }
+reviewed: false

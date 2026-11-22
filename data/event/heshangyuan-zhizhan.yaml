@@ -1,0 +1,11 @@
+id: heshangyuan-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 1131 }
+places: [heshangyuan]
+participants:
+  - person: wu-jie
+  - person: wanyan-zongbi
+reviewed: false

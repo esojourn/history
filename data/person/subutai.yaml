@@ -1,0 +1,15 @@
+id: subutai
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 3
+birth: { year: 1176 }
+death: { year: 1248 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: mobei }
+  - { place: samarkand, start: 1220, end: 1220 }
+  - { place: bianzhou, start: 1232, end: 1233 }
+  - { place: kiev, start: 1240, end: 1240 }
+reviewed: false

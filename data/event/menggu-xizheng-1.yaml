@@ -1,0 +1,15 @@
+id: menggu-xizheng-1
+wikidata: null
+civ: steppe
+type: war
+importance: 4
+start: { year: 1219 }
+end: { year: 1225 }
+places: [otrar, samarkand]
+participants:
+  - person: temujin
+  - person: tolui
+  - person: ogedei
+  - person: subutai
+  - person: yelu-chucai
+reviewed: false

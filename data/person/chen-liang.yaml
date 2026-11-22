@@ -1,0 +1,13 @@
+id: chen-liang
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1143 }
+death: { year: 1194 }
+birthplace: yongkang
+deathplace: yongkang
+places:
+  - { place: yongkang, start: 1143, end: 1194 }
+  - { place: yanshan-jx, start: 1188, end: 1188 }
+reviewed: false

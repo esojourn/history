@@ -1,0 +1,14 @@
+id: zhao-mengfu
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 3
+birth: { year: 1254 }
+death: { year: 1322 }
+birthplace: huzhou
+deathplace: huzhou
+places:
+  - { place: huzhou, start: 1254, end: 1286 }
+  - { place: dadu, start: 1287, end: 1319 }
+  - { place: huzhou, start: 1319, end: 1322 }
+reviewed: false

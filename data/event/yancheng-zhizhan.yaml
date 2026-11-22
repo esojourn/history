@@ -1,0 +1,13 @@
+id: yancheng-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1140 }
+places: [yancheng-hn, xu]
+participants:
+  - person: yue-fei
+  - person: wanyan-zongbi
+  - person: zhao-gou
+  - person: qin-hui
+reviewed: false

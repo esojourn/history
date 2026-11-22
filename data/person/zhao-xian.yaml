@@ -1,0 +1,17 @@
+id: zhao-xian
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1271 }
+death: { year: 1323 }
+reign:
+  - { start: 1274, end: 1276 }
+birthplace: hangzhou
+deathplace: unknown
+places:
+  - { place: hangzhou, start: 1271, end: 1276 }
+  - { place: shangdu, start: 1276, end: 1276 }
+  - { place: dadu, start: 1276, end: 1288 }
+  - { place: sakya, start: 1288 }
+reviewed: false

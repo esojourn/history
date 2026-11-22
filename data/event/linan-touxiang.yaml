@@ -1,0 +1,15 @@
+id: linan-touxiang
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1276 }
+places: [hangzhou, dingjiazhou]
+participants:
+  - person: bayan-baarin
+  - person: zhao-xian
+  - person: wen-tianxiang
+  - person: lv-wenhuan
+  - person: lu-xiufu
+  - person: zhang-shijie
+reviewed: false

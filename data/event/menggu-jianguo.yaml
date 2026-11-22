@@ -1,0 +1,12 @@
+id: menggu-jianguo
+wikidata: null
+civ: steppe
+type: founding
+importance: 5
+start: { year: 1206 }
+places: [onon]
+participants:
+  - person: temujin
+  - person: mukhali
+  - person: subutai
+reviewed: false

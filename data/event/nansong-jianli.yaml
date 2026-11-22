@@ -1,0 +1,13 @@
+id: nansong-jianli
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: 1127 }
+places: [suiyang]
+participants:
+  - person: zhao-gou
+  - person: li-gang
+  - person: zong-ze
+  - person: zhang-bangchang
+reviewed: false

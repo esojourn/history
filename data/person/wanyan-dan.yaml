@@ -1,0 +1,14 @@
+id: wanyan-dan
+wikidata: null
+civ: china
+faction: jinchao
+importance: 2
+birth: { year: 1119 }
+death: { year: 1150 }
+reign:
+  - { start: 1135, end: 1150 }
+birthplace: huiningfu
+deathplace: huiningfu
+places:
+  - { place: huiningfu }
+reviewed: false

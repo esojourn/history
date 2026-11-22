@@ -1,0 +1,13 @@
+id: song-ci
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1186 }
+death: { year: 1249 }
+birthplace: jianyang-fj
+deathplace: panyu
+places:
+  - { place: jianyang-fj, start: 1186, end: 1216 }
+  - { place: panyu, start: 1249, end: 1249 }
+reviewed: false

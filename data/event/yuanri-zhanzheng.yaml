@@ -1,0 +1,12 @@
+id: yuanri-zhanzheng
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 1274 }
+end: { year: 1281 }
+places: [hakata]
+participants:
+  - person: kublai
+  - person: hojo-tokimune
+reviewed: false

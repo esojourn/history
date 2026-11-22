@@ -1,0 +1,13 @@
+id: guan-hanqing
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 3
+birth: { unknown: true, approx: 1225 }
+death: { unknown: true, approx: 1300 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: dadu }
+  - { place: hangzhou }
+reviewed: false

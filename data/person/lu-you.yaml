@@ -1,0 +1,16 @@
+id: lu-you
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 1125 }
+death: { year: 1210 }
+birthplace: unknown
+deathplace: shanyin
+places:
+  - { place: shanyin, start: 1125, end: 1153 }
+  - { place: kuizhou, start: 1170, end: 1172 }
+  - { place: hanzhong, start: 1172, end: 1172 }
+  - { place: chengdu, start: 1173, end: 1178 }
+  - { place: shanyin, start: 1190, end: 1210 }
+reviewed: false

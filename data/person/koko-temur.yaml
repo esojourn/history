@@ -1,0 +1,13 @@
+id: koko-temur
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 2
+birth: { unknown: true, approx: 1330 }
+death: { year: 1375 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jinyang, start: 1362, end: 1368 }
+  - { place: karakorum, start: 1370, end: 1375 }
+reviewed: false

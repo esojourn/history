@@ -1,0 +1,11 @@
+id: menggu-mie-xixia
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 1205 }
+end: { year: 1227 }
+places: [xingqingfu, lingwu]
+participants:
+  - person: temujin
+reviewed: false

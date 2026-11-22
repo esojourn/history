@@ -1,0 +1,14 @@
+id: menggu-xizheng-2
+wikidata: null
+civ: steppe
+type: war
+importance: 4
+start: { year: 1235 }
+end: { year: 1242 }
+places: [kiev, sarai]
+participants:
+  - person: batu
+  - person: subutai
+  - person: mongke
+  - person: ogedei
+reviewed: false

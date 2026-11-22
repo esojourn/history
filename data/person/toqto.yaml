@@ -1,0 +1,15 @@
+id: toqto
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 3
+birth: { year: 1314 }
+death: { year: 1355 }
+birthplace: unknown
+deathplace: dali
+places:
+  - { place: dadu, start: 1340, end: 1354 }
+  - { place: pengcheng, start: 1352, end: 1352 }
+  - { place: gaoyou, start: 1354, end: 1354 }
+  - { place: dali, start: 1355, end: 1355 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: zhang-hongfan
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 2
+birth: { year: 1238 }
+death: { year: 1280 }
+birthplace: dingxing
+deathplace: dadu
+places:
+  - { place: xiangyang, start: 1268, end: 1273 }
+  - { place: yamen, start: 1279, end: 1279 }
+  - { place: dadu, start: 1280, end: 1280 }
+reviewed: false

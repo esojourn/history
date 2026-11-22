@@ -1,0 +1,12 @@
+id: shi-miyuan
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1164 }
+death: { year: 1233 }
+birthplace: yinxian
+deathplace: hangzhou
+places:
+  - { place: hangzhou, start: 1207, end: 1233 }
+reviewed: false

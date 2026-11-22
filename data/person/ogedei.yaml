@@ -1,0 +1,16 @@
+id: ogedei
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 4
+birth: { year: 1186 }
+death: { year: 1241 }
+reign:
+  - { start: 1229, end: 1241 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: mobei }
+  - { place: runan, start: 1232, end: 1232 }
+  - { place: karakorum, start: 1235, end: 1241 }
+reviewed: false

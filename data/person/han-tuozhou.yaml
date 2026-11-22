@@ -1,0 +1,12 @@
+id: han-tuozhou
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1152 }
+death: { year: 1207 }
+birthplace: xiangzhou-ay
+deathplace: hangzhou
+places:
+  - { place: hangzhou, start: 1194, end: 1207 }
+reviewed: false

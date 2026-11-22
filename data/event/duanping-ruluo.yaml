@@ -1,0 +1,11 @@
+id: duanping-ruluo
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 1234 }
+places: [bianzhou, luoyang]
+participants:
+  - person: zhao-yun-lizong
+  - person: ogedei
+reviewed: false

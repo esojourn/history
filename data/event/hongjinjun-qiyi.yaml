@@ -1,0 +1,16 @@
+id: hongjinjun-qiyi
+wikidata: null
+civ: china
+type: uprising
+importance: 4
+start: { year: 1351 }
+places: [yingzhou-ah]
+participants:
+  - person: han-shantong
+  - person: liu-futong
+  - person: guo-zixing
+  - person: zhu-yuanzhang
+  - person: chen-youliang
+  - person: toqto
+  - person: toghon-temur
+reviewed: false

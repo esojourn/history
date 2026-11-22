@@ -1,0 +1,15 @@
+id: xin-qiji
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 1140 }
+death: { year: 1207 }
+birthplace: qizhou-sd
+deathplace: yanshan-jx
+places:
+  - { place: qizhou-sd, start: 1140, end: 1161 }
+  - { place: changsha, start: 1180, end: 1181 }
+  - { place: yanshan-jx, start: 1194, end: 1207 }
+  - { place: dantu, start: 1204, end: 1205 }
+reviewed: false

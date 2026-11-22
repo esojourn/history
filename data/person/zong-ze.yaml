@@ -1,0 +1,13 @@
+id: zong-ze
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1060 }
+death: { year: 1128 }
+birthplace: yiwu
+deathplace: bianzhou
+places:
+  - { place: yiwu, start: 1060, end: 1091 }
+  - { place: bianzhou, start: 1127, end: 1128 }
+reviewed: false

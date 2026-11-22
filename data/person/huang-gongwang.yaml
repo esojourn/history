@@ -1,0 +1,14 @@
+id: huang-gongwang
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 2
+birth: { year: 1269 }
+death: { year: 1354 }
+birthplace: changshu
+deathplace: unknown
+places:
+  - { place: changshu }
+  - { place: fuchun, start: 1347, end: 1350 }
+  - { place: hangzhou }
+reviewed: false

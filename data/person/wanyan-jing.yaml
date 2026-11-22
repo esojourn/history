@@ -1,0 +1,14 @@
+id: wanyan-jing
+wikidata: null
+civ: china
+faction: jinchao
+importance: 2
+birth: { year: 1168 }
+death: { year: 1208 }
+reign:
+  - { start: 1189, end: 1208 }
+birthplace: unknown
+deathplace: ji
+places:
+  - { place: ji }
+reviewed: false

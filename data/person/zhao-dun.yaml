@@ -1,0 +1,14 @@
+id: zhao-dun
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1147 }
+death: { year: 1200 }
+reign:
+  - { start: 1189, end: 1194 }
+birthplace: unknown
+deathplace: hangzhou
+places:
+  - { place: hangzhou }
+reviewed: false

@@ -1,0 +1,13 @@
+id: poyanghu-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1363 }
+places: [poyanghu, hongzhou]
+participants:
+  - person: zhu-yuanzhang
+  - person: chen-youliang
+  - person: liu-ji
+  - person: xu-da
+reviewed: false

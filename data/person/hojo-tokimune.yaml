@@ -1,0 +1,12 @@
+id: hojo-tokimune
+wikidata: null
+civ: japan
+importance: 3
+birth: { year: 1251 }
+death: { year: 1284 }
+birthplace: kamakura
+deathplace: kamakura
+places:
+  - { place: kamakura, start: 1251, end: 1284 }
+  - { place: hakata, start: 1274, end: 1281 }
+reviewed: false

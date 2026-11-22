@@ -1,0 +1,15 @@
+id: zhao-yun-lizong
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1205 }
+death: { year: 1264 }
+reign:
+  - { start: 1224, end: 1264 }
+birthplace: shanyin
+deathplace: hangzhou
+places:
+  - { place: shanyin, start: 1205, end: 1221 }
+  - { place: hangzhou, start: 1221, end: 1264 }
+reviewed: false

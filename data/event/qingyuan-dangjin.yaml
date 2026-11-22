@@ -1,0 +1,13 @@
+id: qingyuan-dangjin
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1195 }
+end: { year: 1202 }
+places: [hangzhou]
+participants:
+  - person: han-tuozhou
+  - person: zhu-xi
+  - person: zhao-kuo-ningzong
+reviewed: false

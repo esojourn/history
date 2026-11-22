@@ -1,0 +1,14 @@
+id: zhao-kuo-ningzong
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1168 }
+death: { year: 1224 }
+reign:
+  - { start: 1194, end: 1224 }
+birthplace: unknown
+deathplace: hangzhou
+places:
+  - { place: hangzhou }
+reviewed: false

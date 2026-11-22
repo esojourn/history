@@ -1,0 +1,12 @@
+id: gaoyou-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 1354 }
+places: [gaoyou]
+participants:
+  - person: toqto
+  - person: zhang-shicheng
+  - person: toghon-temur
+reviewed: false

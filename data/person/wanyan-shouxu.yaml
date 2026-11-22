@@ -1,0 +1,16 @@
+id: wanyan-shouxu
+wikidata: null
+civ: china
+faction: jinchao
+importance: 2
+birth: { year: 1198 }
+death: { year: 1234 }
+reign:
+  - { start: 1224, end: 1234 }
+birthplace: unknown
+deathplace: runan
+places:
+  - { place: bianzhou, start: 1224, end: 1233 }
+  - { place: suiyang, start: 1233, end: 1233 }
+  - { place: runan, start: 1233, end: 1234 }
+reviewed: false

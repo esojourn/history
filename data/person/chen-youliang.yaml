@@ -1,0 +1,15 @@
+id: chen-youliang
+wikidata: null
+civ: china
+faction: yuanmo
+importance: 3
+birth: { year: 1320 }
+death: { year: 1363 }
+birthplace: mianyang-hb
+deathplace: poyanghu
+places:
+  - { place: mianyang-hb, start: 1320, end: 1351 }
+  - { place: xunyang, start: 1359, end: 1363 }
+  - { place: caishi, start: 1360, end: 1360 }
+  - { place: poyanghu, start: 1363, end: 1363 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: zhang-shijie
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { unknown: true, approx: 1235 }
+death: { year: 1279 }
+birthplace: zhuo
+deathplace: unknown
+places:
+  - { place: fuzhou-fj, start: 1276, end: 1277 }
+  - { place: yamen, start: 1278, end: 1279 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: fuping-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 1130 }
+places: [fuping]
+participants:
+  - person: zhang-jun-hanzhou
+  - person: wu-jie
+  - person: liu-qi-song
+  - person: wanyan-zongbi
+reviewed: false

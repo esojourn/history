@@ -1,0 +1,11 @@
+id: ehu-zhihui
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 1175 }
+places: [ehu]
+participants:
+  - person: zhu-xi
+  - person: lu-jiuyuan
+reviewed: false

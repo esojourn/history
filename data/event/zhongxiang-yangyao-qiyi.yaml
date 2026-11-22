@@ -1,0 +1,11 @@
+id: zhongxiang-yangyao-qiyi
+wikidata: null
+civ: china
+type: uprising
+importance: 2
+start: { year: 1130 }
+end: { year: 1135 }
+places: [langzhou]
+participants:
+  - person: yue-fei
+reviewed: false

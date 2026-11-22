@@ -1,0 +1,14 @@
+id: xiangyang-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1267 }
+end: { year: 1273 }
+places: [xiangyang, fancheng]
+participants:
+  - person: lv-wenhuan
+  - person: kublai
+  - person: jia-sidao
+  - person: zhang-hongfan
+reviewed: false

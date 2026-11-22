@@ -1,0 +1,14 @@
+id: guo-shoujing
+wikidata: null
+civ: china
+faction: yuanchao
+importance: 4
+birth: { year: 1231 }
+death: { year: 1316 }
+birthplace: xingzhou
+deathplace: dadu
+places:
+  - { place: xingzhou, start: 1231, end: 1261 }
+  - { place: shangdu, start: 1262, end: 1262 }
+  - { place: dadu, start: 1276, end: 1316 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: yamen-haizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1279 }
+places: [yamen]
+participants:
+  - person: zhang-hongfan
+  - person: lu-xiufu
+  - person: zhang-shijie
+  - person: zhao-bing
+  - person: wen-tianxiang
+  - person: kublai
+reviewed: false

@@ -1,0 +1,17 @@
+id: xu-da
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1332 }
+death: { year: 1385 }
+birthplace: zhongli
+deathplace: jianye
+places:
+  - { place: zhongli, start: 1332, end: 1353 }
+  - { place: jianye, start: 1356, end: 1385 }
+  - { place: poyanghu, start: 1363, end: 1363 }
+  - { place: wu, start: 1366, end: 1367 }
+  - { place: dadu, start: 1368, end: 1368 }
+  - { place: ji, start: 1371, end: 1384 }
+reviewed: false

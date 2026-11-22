@@ -1,0 +1,15 @@
+id: yuefei-zhisi
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 1141 }
+end: { year: 1142 }
+places: [hangzhou]
+participants:
+  - person: yue-fei
+  - person: qin-hui
+  - person: zhang-jun
+  - person: han-shizhong
+  - person: zhao-gou
+reviewed: false

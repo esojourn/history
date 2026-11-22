@@ -211,3 +211,15 @@
 - id: songmin
   civ: china
   color: "#9E3B3B"
+- id: menggu
+  civ: steppe
+  color: "#7A6A3A"
+- id: yuanchao
+  civ: china
+  color: "#5B7B8C"
+- id: yuanmo
+  civ: china
+  color: "#A8553A"
+- id: mingchao
+  civ: china
+  color: "#B23A48"

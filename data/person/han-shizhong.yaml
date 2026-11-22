@@ -1,0 +1,15 @@
+id: han-shizhong
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1089 }
+death: { year: 1151 }
+birthplace: yanzhou-sx
+deathplace: hangzhou
+places:
+  - { place: yanzhou-sx, start: 1089, end: 1120 }
+  - { place: huangtiandang, start: 1130, end: 1130 }
+  - { place: huaiyin, start: 1135, end: 1141 }
+  - { place: hangzhou, start: 1141, end: 1151 }
+reviewed: false

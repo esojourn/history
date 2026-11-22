@@ -1,0 +1,16 @@
+id: zhang-jun-hanzhou
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1097 }
+death: { year: 1164 }
+birthplace: mianzhu
+deathplace: yugan
+places:
+  - { place: hanzhong, start: 1129, end: 1131 }
+  - { place: fuping, start: 1130, end: 1130 }
+  - { place: hangzhou, start: 1135, end: 1137 }
+  - { place: yongzhou, start: 1144, end: 1155 }
+  - { place: jianye, start: 1163, end: 1164 }
+reviewed: false
