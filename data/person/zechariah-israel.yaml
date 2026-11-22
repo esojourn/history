@@ -1,0 +1,14 @@
+id: zechariah-israel
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -785 }
+death: { year: -752, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: samaria }
+reign:
+  - { start: -752, end: -752 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: shallum-israel
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -790 }
+death: { year: -751, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: samaria }
+reign:
+  - { start: -751, end: -751 }
+reviewed: false

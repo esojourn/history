@@ -1,0 +1,14 @@
+id: pekahiah
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -770 }
+death: { year: -739, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: samaria }
+reign:
+  - { start: -741, end: -739 }
+reviewed: false

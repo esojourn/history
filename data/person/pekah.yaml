@@ -1,0 +1,16 @@
+id: pekah
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -775 }
+death: { year: -731, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: gilead }
+  - { place: samaria }
+  - { place: jerusalem }
+reign:
+  - { start: -739, end: -731 }
+reviewed: false

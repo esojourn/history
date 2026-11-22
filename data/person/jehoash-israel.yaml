@@ -1,0 +1,16 @@
+id: jehoash-israel
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -825 }
+death: { year: -781, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: samaria }
+  - { place: beth-shemesh }
+  - { place: jerusalem }
+reign:
+  - { start: -797, end: -781 }
+reviewed: false

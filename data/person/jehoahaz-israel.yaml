@@ -1,0 +1,14 @@
+id: jehoahaz-israel
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -845 }
+death: { year: -797, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: samaria }
+reign:
+  - { start: -813, end: -797 }
+reviewed: false

@@ -1,0 +1,16 @@
+id: jehoahaz-judah
+wikidata: null
+civ: bible
+faction: judah
+importance: 1
+birth: { year: -631, circa: true }
+death: { unknown: true, approx: -590 }
+birthplace: unknown
+deathplace: egypt
+places:
+  - { place: jerusalem }
+  - { place: riblah, start: -608, end: -608 }
+  - { place: egypt, start: -608 }
+reign:
+  - { start: -608, end: -608 }
+reviewed: false

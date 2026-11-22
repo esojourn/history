@@ -1,0 +1,17 @@
+id: joram-israel
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -880 }
+death: { year: -840, circa: true }
+birthplace: unknown
+deathplace: jezreel
+places:
+  - { place: samaria }
+  - { place: moab }
+  - { place: gilead, start: -840, end: -840 }
+  - { place: jezreel, start: -840, end: -840 }
+reign:
+  - { start: -851, end: -840 }
+reviewed: false

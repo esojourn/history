@@ -1,0 +1,17 @@
+id: ahaziah-judah
+wikidata: null
+civ: bible
+faction: judah
+importance: 1
+birth: { year: -862, circa: true }
+death: { year: -840, circa: true }
+birthplace: unknown
+deathplace: megiddo
+places:
+  - { place: jerusalem }
+  - { place: gilead, start: -840, end: -840 }
+  - { place: jezreel, start: -840, end: -840 }
+  - { place: megiddo, start: -840, end: -840 }
+reign:
+  - { start: -840, end: -840 }
+reviewed: false

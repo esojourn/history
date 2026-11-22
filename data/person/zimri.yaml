@@ -1,0 +1,14 @@
+id: zimri
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -925 }
+death: { year: -884, circa: true }
+birthplace: unknown
+deathplace: tirzah
+places:
+  - { place: tirzah }
+reign:
+  - { start: -884, end: -884 }
+reviewed: false

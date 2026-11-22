@@ -1,0 +1,15 @@
+id: menahem
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -790 }
+death: { year: -741, circa: true }
+birthplace: unknown
+deathplace: samaria
+places:
+  - { place: tirzah }
+  - { place: samaria }
+reign:
+  - { start: -751, end: -741 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: abijah
+wikidata: null
+civ: bible
+faction: judah
+importance: 1
+birth: { unknown: true, approx: -950 }
+death: { year: -910, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+  - { place: bethel }
+reign:
+  - { start: -912, end: -910 }
+reviewed: false

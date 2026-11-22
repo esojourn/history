@@ -1,0 +1,16 @@
+id: baasha
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -940 }
+death: { year: -885, circa: true }
+birthplace: unknown
+deathplace: tirzah
+places:
+  - { place: gibbethon, start: -908, end: -908 }
+  - { place: tirzah }
+  - { place: ramah }
+reign:
+  - { start: -908, end: -885 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: jotham
+wikidata: null
+civ: bible
+faction: judah
+importance: 1
+birth: { year: -774, circa: true }
+death: { year: -731, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+reign:
+  - { start: -749, end: -734 }
+reviewed: false

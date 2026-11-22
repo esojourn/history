@@ -1,0 +1,15 @@
+id: nadab
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -940 }
+death: { year: -908, circa: true }
+birthplace: unknown
+deathplace: gibbethon
+places:
+  - { place: tirzah }
+  - { place: gibbethon, start: -908, end: -908 }
+reign:
+  - { start: -909, end: -908 }
+reviewed: false

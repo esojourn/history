@@ -1,0 +1,15 @@
+id: jehoram-judah
+wikidata: null
+civ: bible
+faction: judah
+importance: 1
+birth: { year: -879, circa: true }
+death: { year: -840, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+  - { place: edom }
+reign:
+  - { start: -847, end: -840 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: joash-judah
+wikidata: null
+civ: bible
+faction: judah
+importance: 2
+birth: { year: -841, circa: true }
+death: { year: -795, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+reign:
+  - { start: -834, end: -795 }
+reviewed: false

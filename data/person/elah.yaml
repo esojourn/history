@@ -1,0 +1,14 @@
+id: elah
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -915 }
+death: { year: -884, circa: true }
+birthplace: unknown
+deathplace: tirzah
+places:
+  - { place: tirzah }
+reign:
+  - { start: -885, end: -884 }
+reviewed: false

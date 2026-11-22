@@ -1,0 +1,14 @@
+id: amon-judah
+wikidata: null
+civ: bible
+faction: judah
+importance: 1
+birth: { year: -663, circa: true }
+death: { year: -639, circa: true }
+birthplace: unknown
+deathplace: jerusalem
+places:
+  - { place: jerusalem }
+reign:
+  - { start: -641, end: -639 }
+reviewed: false

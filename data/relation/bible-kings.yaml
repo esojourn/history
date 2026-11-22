@@ -26,18 +26,10 @@
   to: jezebel
   type: rival
   year: -840
-- from: jehu
-  to: jeroboam-2
-  type: kin
-  year: -815
 - from: asa
   to: jehoshaphat
   type: kin
   year: -870
-- from: uzziah
-  to: ahaz
-  type: kin
-  year: -740
 - from: ahaz
   to: hezekiah
   type: kin
@@ -46,10 +38,6 @@
   to: manasseh
   type: kin
   year: -686
-- from: manasseh
-  to: josiah
-  type: kin
-  year: -642
 - from: josiah
   to: jehoiakim
   type: kin
@@ -62,3 +50,163 @@
   to: zedekiah
   type: kin
   year: -600
+- from: rehoboam
+  to: abijah
+  type: kin
+  year: -912
+- from: abijah
+  to: asa
+  type: kin
+  year: -910
+- from: abijah
+  to: jeroboam-1
+  type: rival
+  year: -911
+- from: jeroboam-1
+  to: nadab
+  type: kin
+  year: -909
+- from: baasha
+  to: nadab
+  type: rival
+  year: -908
+- from: baasha
+  to: asa
+  type: rival
+  year: -895
+- from: baasha
+  to: elah
+  type: kin
+  year: -885
+- from: zimri
+  to: elah
+  type: rival
+  year: -884
+- from: omri
+  to: zimri
+  type: rival
+  year: -884
+- from: omri
+  to: tibni
+  type: rival
+  year: -882
+- from: ahab
+  to: ahaziah-israel
+  type: kin
+  year: -852
+- from: ahab
+  to: joram-israel
+  type: kin
+  year: -852
+- from: jehoshaphat
+  to: jehoram-judah
+  type: kin
+  year: -848
+- from: jehoram-judah
+  to: athaliah
+  type: kin
+  year: -850
+- from: jehoram-judah
+  to: ahaziah-judah
+  type: kin
+  year: -841
+- from: athaliah
+  to: ahaziah-judah
+  type: kin
+  year: -841
+- from: joram-israel
+  to: ahaziah-judah
+  type: kin
+  year: -840
+- from: jehu
+  to: joram-israel
+  type: rival
+  year: -840
+- from: jehu
+  to: ahaziah-judah
+  type: rival
+  year: -840
+- from: ahaziah-judah
+  to: joash-judah
+  type: kin
+  year: -840
+- from: athaliah
+  to: joash-judah
+  type: rival
+  year: -834
+- from: jehu
+  to: jehoahaz-israel
+  type: kin
+  year: -813
+- from: jehoahaz-israel
+  to: jehoash-israel
+  type: kin
+  year: -797
+- from: jehoash-israel
+  to: jeroboam-2
+  type: kin
+  year: -790
+- from: joash-judah
+  to: amaziah
+  type: kin
+  year: -796
+- from: jehoash-israel
+  to: amaziah
+  type: rival
+  year: -790
+- from: amaziah
+  to: uzziah
+  type: kin
+  year: -780
+- from: uzziah
+  to: jotham
+  type: kin
+  year: -750
+- from: jotham
+  to: ahaz
+  type: kin
+  year: -735
+- from: jeroboam-2
+  to: zechariah-israel
+  type: kin
+  year: -753
+- from: shallum-israel
+  to: zechariah-israel
+  type: rival
+  year: -752
+- from: menahem
+  to: shallum-israel
+  type: rival
+  year: -751
+- from: menahem
+  to: pekahiah
+  type: kin
+  year: -741
+- from: pekah
+  to: pekahiah
+  type: rival
+  year: -739
+- from: pekah
+  to: ahaz
+  type: rival
+  year: -734
+- from: hoshea
+  to: pekah
+  type: rival
+  year: -731
+- from: manasseh
+  to: amon-judah
+  type: kin
+  year: -650
+- from: amon-judah
+  to: josiah
+  type: kin
+  year: -639
+- from: josiah
+  to: jehoahaz-judah
+  type: kin
+  year: -609
+- from: jehoahaz-judah
+  to: jehoiakim
+  type: kin
+  year: -608

@@ -1,0 +1,17 @@
+id: amaziah
+wikidata: null
+civ: bible
+faction: judah
+importance: 1
+birth: { year: -820, circa: true }
+death: { year: -766, circa: true }
+birthplace: unknown
+deathplace: lachish
+places:
+  - { place: jerusalem }
+  - { place: edom }
+  - { place: beth-shemesh }
+  - { place: lachish, start: -766, end: -766 }
+reign:
+  - { start: -795, end: -766 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: tibni
+wikidata: null
+civ: bible
+faction: israel
+importance: 1
+birth: { unknown: true, approx: -925 }
+death: { year: -879, circa: true }
+birthplace: unknown
+deathplace: unknown
+places: unknown
+reign:
+  - { start: -884, end: -879 }
+reviewed: false
