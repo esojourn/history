@@ -1,0 +1,16 @@
+id: yelu-longxu
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 3
+birth: { year: 972 }
+death: { year: 1031 }
+reign:
+  - { start: 982, end: 1031 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: linhuang, start: 982, end: 1031 }
+  - { place: puyang, start: 1004, end: 1004 }
+  - { place: zhongjing-liao, start: 1007, end: 1031 }
+reviewed: false

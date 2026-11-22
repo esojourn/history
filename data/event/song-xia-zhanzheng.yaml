@@ -1,0 +1,15 @@
+id: song-xia-zhanzheng
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 1040 }
+end: { year: 1044 }
+places: [yanzhou-sx, haoshuichuan, dingchuanzhai]
+participants:
+  - person: li-yuanhao
+  - person: zhao-zhen
+  - person: fan-zhongyan
+  - person: han-qi
+  - person: di-qing
+reviewed: false

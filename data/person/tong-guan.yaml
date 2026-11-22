@@ -1,0 +1,15 @@
+id: tong-guan
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1054 }
+death: { year: 1126 }
+birthplace: bianzhou
+deathplace: nanxiong
+places:
+  - { place: bianzhou }
+  - { place: yanzhou-sx, start: 1108, end: 1120 }
+  - { place: hangzhou, start: 1121, end: 1121 }
+  - { place: ji, start: 1122, end: 1122 }
+reviewed: false

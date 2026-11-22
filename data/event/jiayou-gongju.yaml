@@ -1,0 +1,17 @@
+id: jiayou-gongju
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 1057 }
+places: [bianzhou]
+participants:
+  - person: ouyang-xiu
+  - person: mei-yaochen
+  - person: su-shi
+  - person: su-zhe
+  - person: zeng-gong
+  - person: cheng-hao
+  - person: zhang-zai
+  - person: lv-huiqing
+reviewed: false

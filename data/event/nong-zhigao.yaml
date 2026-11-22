@@ -1,0 +1,12 @@
+id: nong-zhigao
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 1052 }
+end: { year: 1053 }
+places: [yongzhou-gx, panyu, kunlunguan]
+participants:
+  - person: di-qing
+  - person: zhao-zhen
+reviewed: false

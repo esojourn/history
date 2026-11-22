@@ -1,0 +1,15 @@
+id: yuanyou-dangji
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 1102 }
+end: { year: 1106 }
+places: [bianzhou]
+participants:
+  - person: zhao-ji
+  - person: cai-jing
+  - person: su-zhe
+  - person: huang-tingjian
+  - person: cheng-yi
+reviewed: false

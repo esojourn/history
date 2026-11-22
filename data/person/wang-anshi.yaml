@@ -1,0 +1,15 @@
+id: wang-anshi
+wikidata: null
+civ: china
+faction: songchao
+importance: 5
+birth: { year: 1021 }
+death: { year: 1086 }
+birthplace: linjiang
+deathplace: jianye
+places:
+  - { place: yinxian, start: 1047, end: 1050 }
+  - { place: jianye, start: 1067, end: 1068 }
+  - { place: bianzhou, start: 1068, end: 1076 }
+  - { place: jianye, start: 1076, end: 1086 }
+reviewed: false

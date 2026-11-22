@@ -1,0 +1,14 @@
+id: cheng-hao
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1032 }
+death: { year: 1085 }
+birthplace: huangpi
+deathplace: luoyang
+places:
+  - { place: huangpi, start: 1032, end: 1046 }
+  - { place: bianzhou, start: 1069, end: 1070 }
+  - { place: luoyang, start: 1072, end: 1085 }
+reviewed: false

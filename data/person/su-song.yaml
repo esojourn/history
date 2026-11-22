@@ -1,0 +1,13 @@
+id: su-song
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1020 }
+death: { year: 1101 }
+birthplace: quanzhou
+deathplace: dantu
+places:
+  - { place: bianzhou, start: 1056, end: 1097 }
+  - { place: dantu, start: 1097, end: 1101 }
+reviewed: false

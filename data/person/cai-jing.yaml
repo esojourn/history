@@ -1,0 +1,13 @@
+id: cai-jing
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1047 }
+death: { year: 1126 }
+birthplace: xianyou
+deathplace: changsha
+places:
+  - { place: bianzhou, start: 1086, end: 1126 }
+  - { place: hangzhou, start: 1100, end: 1102 }
+reviewed: false

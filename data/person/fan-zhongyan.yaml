@@ -1,0 +1,16 @@
+id: fan-zhongyan
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 989 }
+death: { year: 1052 }
+birthplace: pengcheng
+deathplace: pengcheng
+places:
+  - { place: suiyang, start: 1011, end: 1015 }
+  - { place: yanzhou-sx, start: 1040, end: 1041 }
+  - { place: bianzhou, start: 1043, end: 1045 }
+  - { place: hangzhou, start: 1049, end: 1050 }
+  - { place: qingzhou, start: 1051, end: 1052 }
+reviewed: false

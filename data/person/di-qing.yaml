@@ -1,0 +1,15 @@
+id: di-qing
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1008 }
+death: { year: 1057 }
+birthplace: fenzhou
+deathplace: chen
+places:
+  - { place: yanzhou-sx, start: 1038, end: 1045 }
+  - { place: kunlunguan, start: 1053, end: 1053 }
+  - { place: bianzhou, start: 1052, end: 1056 }
+  - { place: chen, start: 1056, end: 1057 }
+reviewed: false

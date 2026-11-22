@@ -1,0 +1,14 @@
+id: li-jiqian
+wikidata: null
+civ: china
+faction: xixia
+importance: 2
+birth: { year: 963 }
+death: { year: 1004 }
+birthplace: yinzhou-sb
+deathplace: unknown
+places:
+  - { place: yinzhou-sb, start: 963, end: 982 }
+  - { place: tongwan, start: 982, end: 1002 }
+  - { place: lingwu, start: 1002, end: 1004 }
+reviewed: false

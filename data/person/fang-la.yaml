@@ -1,0 +1,13 @@
+id: fang-la
+wikidata: null
+civ: china
+faction: songmin
+importance: 2
+birth: { unknown: true, approx: 1075 }
+death: { year: 1121 }
+birthplace: qingxi
+deathplace: bianzhou
+places:
+  - { place: qingxi, start: 1120, end: 1121 }
+  - { place: hangzhou, start: 1120, end: 1121 }
+reviewed: false

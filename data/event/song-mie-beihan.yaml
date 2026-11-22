@@ -1,0 +1,12 @@
+id: song-mie-beihan
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 979 }
+places: [jinyang]
+participants:
+  - person: zhao-guangyi
+  - person: pan-mei
+  - person: yang-ye
+reviewed: false

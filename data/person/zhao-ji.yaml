@@ -1,0 +1,16 @@
+id: zhao-ji
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 1082 }
+death: { year: 1135 }
+reign:
+  - { start: 1100, end: 1126 }
+birthplace: bianzhou
+deathplace: wuguocheng
+places:
+  - { place: bianzhou, start: 1082, end: 1127 }
+  - { place: huiningfu, start: 1128, end: 1130 }
+  - { place: wuguocheng, start: 1130, end: 1135 }
+reviewed: false

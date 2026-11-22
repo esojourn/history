@@ -1,0 +1,15 @@
+id: shen-kuo
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 1031 }
+death: { year: 1095 }
+birthplace: hangzhou
+deathplace: dantu
+places:
+  - { place: hangzhou, start: 1031, end: 1051 }
+  - { place: bianzhou, start: 1066, end: 1077 }
+  - { place: yanzhou-sx, start: 1080, end: 1082 }
+  - { place: dantu, start: 1088, end: 1095 }
+reviewed: false

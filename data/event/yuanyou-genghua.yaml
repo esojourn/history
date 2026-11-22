@@ -1,0 +1,16 @@
+id: yuanyou-genghua
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1085 }
+end: { year: 1093 }
+places: [bianzhou]
+participants:
+  - person: gao-taihou
+  - person: sima-guang
+  - person: zhao-xu-zhezong
+  - person: su-shi
+  - person: cheng-yi
+  - person: su-zhe
+reviewed: false

@@ -1,0 +1,14 @@
+id: su-zhe
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1039 }
+death: { year: 1112 }
+birthplace: meishan
+deathplace: xu
+places:
+  - { place: meishan, start: 1039, end: 1056 }
+  - { place: bianzhou, start: 1086, end: 1093 }
+  - { place: xu, start: 1104, end: 1112 }
+reviewed: false

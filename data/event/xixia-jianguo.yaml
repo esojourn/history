@@ -1,0 +1,10 @@
+id: xixia-jianguo
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 1038 }
+places: [xingqingfu]
+participants:
+  - person: li-yuanhao
+reviewed: false

@@ -1,0 +1,13 @@
+id: lv-huiqing
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1032 }
+death: { year: 1111 }
+birthplace: quanzhou
+deathplace: unknown
+places:
+  - { place: bianzhou, start: 1069, end: 1075 }
+  - { place: yanzhou-sx, start: 1090, end: 1100 }
+reviewed: false

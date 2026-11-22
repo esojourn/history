@@ -1,0 +1,13 @@
+id: fangla-qiyi
+wikidata: null
+civ: china
+type: uprising
+importance: 3
+start: { year: 1120 }
+end: { year: 1121 }
+places: [qingxi, hangzhou]
+participants:
+  - person: fang-la
+  - person: tong-guan
+  - person: zhao-ji
+reviewed: false

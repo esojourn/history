@@ -1,0 +1,13 @@
+id: fan-kuan
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { unknown: true, approx: 950 }
+death: { unknown: true, approx: 1032 }
+birthplace: huayuan
+deathplace: unknown
+places:
+  - { place: huayuan }
+  - { place: changan }
+reviewed: false

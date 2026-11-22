@@ -1,0 +1,15 @@
+id: zeng-gong
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1019 }
+death: { year: 1083 }
+birthplace: nanfeng
+deathplace: jianye
+places:
+  - { place: nanfeng, start: 1019, end: 1057 }
+  - { place: bianzhou, start: 1060, end: 1069 }
+  - { place: qizhou-sd, start: 1071, end: 1072 }
+  - { place: fuzhou-fj, start: 1077, end: 1078 }
+reviewed: false

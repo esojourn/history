@@ -1,0 +1,11 @@
+id: tianshu-fengshan
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 1008 }
+places: [taishan, bianzhou]
+participants:
+  - person: zhao-heng
+  - person: wang-qinruo
+reviewed: false

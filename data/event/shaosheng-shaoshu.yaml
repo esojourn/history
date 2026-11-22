@@ -1,0 +1,16 @@
+id: shaosheng-shaoshu
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 1094 }
+end: { year: 1100 }
+places: [bianzhou, huizhou-gd, danzhou]
+participants:
+  - person: zhao-xu-zhezong
+  - person: zhang-dun
+  - person: su-shi
+  - person: su-zhe
+  - person: qin-guan
+  - person: huang-tingjian
+reviewed: false

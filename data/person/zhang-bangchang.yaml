@@ -1,0 +1,12 @@
+id: zhang-bangchang
+wikidata: null
+civ: china
+faction: songchao
+importance: 1
+birth: { year: 1081 }
+death: { year: 1127 }
+birthplace: unknown
+deathplace: changsha
+places:
+  - { place: bianzhou, start: 1126, end: 1127 }
+reviewed: false

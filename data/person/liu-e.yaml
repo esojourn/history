@@ -1,0 +1,12 @@
+id: liu-e
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 969 }
+death: { year: 1033 }
+birthplace: chengdu
+deathplace: bianzhou
+places:
+  - { place: bianzhou }
+reviewed: false

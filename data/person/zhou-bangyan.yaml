@@ -1,0 +1,14 @@
+id: zhou-bangyan
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1056 }
+death: { year: 1121 }
+birthplace: hangzhou
+deathplace: suiyang
+places:
+  - { place: hangzhou, start: 1056, end: 1078 }
+  - { place: bianzhou, start: 1078, end: 1087 }
+  - { place: bianzhou, start: 1116, end: 1118 }
+reviewed: false

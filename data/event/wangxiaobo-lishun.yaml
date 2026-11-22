@@ -1,0 +1,11 @@
+id: wangxiaobo-lishun
+wikidata: null
+civ: china
+type: uprising
+importance: 2
+start: { year: 993 }
+end: { year: 995 }
+places: [qingcheng, chengdu]
+participants:
+  - person: zhao-guangyi
+reviewed: false

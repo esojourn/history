@@ -1,0 +1,13 @@
+id: li-gang
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1083 }
+death: { year: 1140 }
+birthplace: unknown
+deathplace: fuzhou-fj
+places:
+  - { place: bianzhou, start: 1112, end: 1126 }
+  - { place: fuzhou-fj, start: 1138, end: 1140 }
+reviewed: false

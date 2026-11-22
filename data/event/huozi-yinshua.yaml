@@ -1,0 +1,11 @@
+id: huozi-yinshua
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 1041, circa: true }
+end: { year: 1048, circa: true }
+places: unknown
+participants:
+  - person: bi-sheng
+reviewed: false

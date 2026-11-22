@@ -1,0 +1,13 @@
+id: zhang-dun
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1035 }
+death: { year: 1105 }
+birthplace: jianzhou-fj
+deathplace: unknown
+places:
+  - { place: bianzhou, start: 1069, end: 1085 }
+  - { place: bianzhou, start: 1094, end: 1100 }
+reviewed: false

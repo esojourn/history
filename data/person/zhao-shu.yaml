@@ -1,0 +1,14 @@
+id: zhao-shu
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1032 }
+death: { year: 1067 }
+reign:
+  - { start: 1063, end: 1067 }
+birthplace: bianzhou
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 1032, end: 1067 }
+reviewed: false

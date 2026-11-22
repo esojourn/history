@@ -1,0 +1,13 @@
+id: mei-yaochen
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1002 }
+death: { year: 1060 }
+birthplace: xuancheng
+deathplace: bianzhou
+places:
+  - { place: luoyang, start: 1031, end: 1034 }
+  - { place: bianzhou, start: 1051, end: 1060 }
+reviewed: false

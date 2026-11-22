@@ -1,0 +1,11 @@
+id: wuyue-nadi
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 978 }
+places: [hangzhou, bianzhou]
+participants:
+  - person: qian-chu
+  - person: zhao-guangyi
+reviewed: false

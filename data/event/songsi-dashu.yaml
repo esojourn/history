@@ -1,0 +1,13 @@
+id: songsi-dashu
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 977 }
+end: { year: 1013 }
+places: [bianzhou]
+participants:
+  - person: zhao-guangyi
+  - person: zhao-heng
+  - person: wang-qinruo
+reviewed: false

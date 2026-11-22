@@ -1,0 +1,13 @@
+id: li-cheng
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 919 }
+death: { year: 967 }
+birthplace: unknown
+deathplace: chen
+places:
+  - { place: qingzhou }
+  - { place: chen, start: 967, end: 967 }
+reviewed: false

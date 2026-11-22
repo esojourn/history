@@ -1,0 +1,16 @@
+id: jin-mie-liao
+wikidata: null
+civ: steppe
+type: war
+importance: 3
+start: { year: 1114 }
+end: { year: 1125 }
+places: [linhuang, zhongjing-liao, jiashan, yingzhou-sx]
+participants:
+  - person: wanyan-aguda
+  - person: wanyan-wuqimai
+  - person: yelu-yanxi
+  - person: wanyan-zonghan
+  - person: wanyan-zongwang
+  - person: yelu-dashi
+reviewed: false

@@ -202,3 +202,12 @@
 - id: qidan
   civ: steppe
   color: "#8A5A44"
+- id: xixia
+  civ: china
+  color: "#5E8C61"
+- id: jinchao
+  civ: china
+  color: "#4A6FA5"
+- id: songmin
+  civ: china
+  color: "#9E3B3B"

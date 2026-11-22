@@ -1,0 +1,13 @@
+id: li-gonglin
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1049 }
+death: { year: 1106 }
+birthplace: shuzhou-ah
+deathplace: shuzhou-ah
+places:
+  - { place: bianzhou, start: 1070, end: 1100 }
+  - { place: shuzhou-ah, start: 1100, end: 1106 }
+reviewed: false

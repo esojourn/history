@@ -1,0 +1,14 @@
+id: zhang-zai
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1020 }
+death: { year: 1077 }
+birthplace: changan
+deathplace: lintong
+places:
+  - { place: meixian, start: 1035, end: 1077 }
+  - { place: bianzhou, start: 1056, end: 1057 }
+  - { place: bianzhou, start: 1069, end: 1070 }
+reviewed: false

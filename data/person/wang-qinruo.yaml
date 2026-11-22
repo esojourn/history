@@ -1,0 +1,12 @@
+id: wang-qinruo
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 962 }
+death: { year: 1025 }
+birthplace: linjiang
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 992, end: 1025 }
+reviewed: false

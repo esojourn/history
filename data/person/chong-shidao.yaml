@@ -1,0 +1,14 @@
+id: chong-shidao
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1051 }
+death: { year: 1126 }
+birthplace: luoyang
+deathplace: bianzhou
+places:
+  - { place: yanzhou-sx, start: 1090, end: 1121 }
+  - { place: ji, start: 1122, end: 1122 }
+  - { place: bianzhou, start: 1126, end: 1126 }
+reviewed: false

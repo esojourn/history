@@ -1,0 +1,19 @@
+id: su-shi
+wikidata: null
+civ: china
+faction: songchao
+importance: 5
+birth: { year: 1037 }
+death: { year: 1101 }
+birthplace: meishan
+deathplace: changzhou-js
+places:
+  - { place: meishan, start: 1037, end: 1056 }
+  - { place: hangzhou, start: 1071, end: 1074 }
+  - { place: pengcheng, start: 1077, end: 1079 }
+  - { place: huangzhou, start: 1080, end: 1084 }
+  - { place: hangzhou, start: 1089, end: 1091 }
+  - { place: huizhou-gd, start: 1094, end: 1097 }
+  - { place: danzhou, start: 1097, end: 1100 }
+  - { place: bianzhou }
+reviewed: false

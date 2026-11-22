@@ -1,0 +1,12 @@
+id: song-mie-nanhan
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 970 }
+end: { year: 971 }
+places: [panyu]
+participants:
+  - person: zhao-kuangyin
+  - person: pan-mei
+reviewed: false

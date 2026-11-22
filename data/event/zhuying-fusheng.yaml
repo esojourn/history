@@ -1,0 +1,11 @@
+id: zhuying-fusheng
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 976 }
+places: [bianzhou]
+participants:
+  - person: zhao-kuangyin
+  - person: zhao-guangyi
+reviewed: false

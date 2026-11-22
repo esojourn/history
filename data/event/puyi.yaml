@@ -1,0 +1,14 @@
+id: puyi
+wikidata: null
+civ: china
+type: political
+importance: 1
+start: { year: 1065 }
+end: { year: 1066 }
+places: [bianzhou]
+participants:
+  - person: zhao-shu
+  - person: han-qi
+  - person: ouyang-xiu
+  - person: sima-guang
+reviewed: false

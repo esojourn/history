@@ -1,0 +1,13 @@
+id: cheng-yi
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1033 }
+death: { year: 1107 }
+birthplace: huangpi
+deathplace: luoyang
+places:
+  - { place: luoyang, start: 1056, end: 1107 }
+  - { place: bianzhou, start: 1086, end: 1087 }
+reviewed: false

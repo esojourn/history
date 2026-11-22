@@ -1,0 +1,11 @@
+id: gaolianghe-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 979 }
+places: [gaolianghe, ji]
+participants:
+  - person: zhao-guangyi
+  - person: yelu-xiuge
+reviewed: false

@@ -1,0 +1,15 @@
+id: chanyuan-zhimeng
+wikidata: null
+civ: china
+type: diplomatic
+importance: 5
+start: { year: 1004 }
+end: { year: 1005 }
+places: [puyang]
+participants:
+  - person: zhao-heng
+  - person: kou-zhun
+  - person: xiao-chuo
+  - person: yelu-longxu
+  - person: wang-qinruo
+reviewed: false

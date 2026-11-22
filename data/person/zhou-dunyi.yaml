@@ -1,0 +1,13 @@
+id: zhou-dunyi
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1017 }
+death: { year: 1073 }
+birthplace: daozhou
+deathplace: xunyang
+places:
+  - { place: daozhou, start: 1017, end: 1031 }
+  - { place: lushan, start: 1071, end: 1073 }
+reviewed: false

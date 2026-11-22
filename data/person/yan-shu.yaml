@@ -1,0 +1,13 @@
+id: yan-shu
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 991 }
+death: { year: 1055 }
+birthplace: linchuan
+deathplace: bianzhou
+places:
+  - { place: linchuan, start: 991, end: 1005 }
+  - { place: bianzhou, start: 1005, end: 1055 }
+reviewed: false

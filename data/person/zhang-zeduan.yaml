@@ -1,0 +1,12 @@
+id: zhang-zeduan
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { unknown: true, approx: 1085 }
+death: { unknown: true, approx: 1145 }
+birthplace: dongwu
+deathplace: unknown
+places:
+  - { place: bianzhou }
+reviewed: false

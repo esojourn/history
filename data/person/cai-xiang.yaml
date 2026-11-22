@@ -1,0 +1,14 @@
+id: cai-xiang
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1012 }
+death: { year: 1067 }
+birthplace: xianyou
+deathplace: unknown
+places:
+  - { place: bianzhou, start: 1030, end: 1063 }
+  - { place: fuzhou-fj, start: 1044, end: 1056 }
+  - { place: quanzhou, start: 1056, end: 1059 }
+reviewed: false

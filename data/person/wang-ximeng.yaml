@@ -1,0 +1,12 @@
+id: wang-ximeng
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1096, circa: true }
+death: { unknown: true, approx: 1120 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: bianzhou, start: 1110, end: 1113 }
+reviewed: false

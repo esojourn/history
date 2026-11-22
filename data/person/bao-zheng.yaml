@@ -1,0 +1,13 @@
+id: bao-zheng
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 999 }
+death: { year: 1062 }
+birthplace: hefei
+deathplace: bianzhou
+places:
+  - { place: hefei, start: 999, end: 1037 }
+  - { place: bianzhou, start: 1044, end: 1062 }
+reviewed: false

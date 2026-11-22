@@ -1,0 +1,12 @@
+id: gao-taihou
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1032 }
+death: { year: 1093 }
+birthplace: unknown
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 1047, end: 1093 }
+reviewed: false

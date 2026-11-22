@@ -1,0 +1,14 @@
+id: sima-guang
+wikidata: null
+civ: china
+faction: songchao
+importance: 5
+birth: { year: 1019 }
+death: { year: 1086 }
+birthplace: guangshan
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 1038, end: 1071 }
+  - { place: luoyang, start: 1071, end: 1085 }
+  - { place: bianzhou, start: 1085, end: 1086 }
+reviewed: false

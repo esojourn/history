@@ -1,0 +1,12 @@
+id: wanyan-xiyin
+wikidata: null
+civ: china
+faction: jinchao
+importance: 2
+birth: { unknown: true, approx: 1080 }
+death: { year: 1140 }
+birthplace: huiningfu
+deathplace: unknown
+places:
+  - { place: huiningfu }
+reviewed: false

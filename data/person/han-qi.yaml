@@ -1,0 +1,15 @@
+id: han-qi
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1008 }
+death: { year: 1075 }
+birthplace: quanzhou
+deathplace: xiangzhou-ay
+places:
+  - { place: yanzhou-sx, start: 1040, end: 1043 }
+  - { place: bianzhou, start: 1043, end: 1045 }
+  - { place: bianzhou, start: 1058, end: 1067 }
+  - { place: xiangzhou-ay, start: 1072, end: 1075 }
+reviewed: false

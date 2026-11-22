@@ -1,0 +1,16 @@
+id: yelu-yanxi
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 2
+birth: { year: 1075 }
+death: { year: 1128 }
+reign:
+  - { start: 1101, end: 1125 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: linhuang, start: 1101, end: 1120 }
+  - { place: jiashan, start: 1122, end: 1125 }
+  - { place: yingzhou-sx, start: 1125, end: 1125 }
+reviewed: false

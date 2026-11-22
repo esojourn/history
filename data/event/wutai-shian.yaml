@@ -1,0 +1,12 @@
+id: wutai-shian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1079 }
+places: [huzhou, bianzhou, huangzhou]
+participants:
+  - person: su-shi
+  - person: su-zhe
+  - person: zhao-xu-shenzong
+reviewed: false

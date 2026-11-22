@@ -1,0 +1,12 @@
+id: lv-yijian
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 979 }
+death: { year: 1044 }
+birthplace: shouchun
+deathplace: unknown
+places:
+  - { place: bianzhou, start: 1022, end: 1043 }
+reviewed: false

@@ -1,0 +1,10 @@
+id: song-ping-jinghu
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 963 }
+places: [jiangling, changsha]
+participants:
+  - person: zhao-kuangyin
+reviewed: false

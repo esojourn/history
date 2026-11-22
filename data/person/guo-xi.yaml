@@ -1,0 +1,12 @@
+id: guo-xi
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1000, circa: true }
+death: { year: 1090, circa: true }
+birthplace: heyang
+deathplace: unknown
+places:
+  - { place: bianzhou, start: 1068, end: 1085 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: haishang-zhimeng
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: 1118 }
+end: { year: 1123 }
+places: [dengzhou-sd, bianzhou, huiningfu]
+participants:
+  - person: zhao-ji
+  - person: wanyan-aguda
+  - person: tong-guan
+  - person: cai-jing
+reviewed: false

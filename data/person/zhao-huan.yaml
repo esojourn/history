@@ -1,0 +1,15 @@
+id: zhao-huan
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1100 }
+death: { year: 1156 }
+reign:
+  - { start: 1126, end: 1127 }
+birthplace: bianzhou
+deathplace: unknown
+places:
+  - { place: bianzhou, start: 1100, end: 1127 }
+  - { place: wuguocheng, start: 1130, end: 1141 }
+reviewed: false

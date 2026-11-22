@@ -1,0 +1,16 @@
+id: li-yuanhao
+wikidata: null
+civ: china
+faction: xixia
+importance: 4
+birth: { year: 1003 }
+death: { year: 1048 }
+reign:
+  - { start: 1038, end: 1048 }
+birthplace: unknown
+deathplace: xingqingfu
+places:
+  - { place: lingwu, start: 1003, end: 1032 }
+  - { place: xingqingfu, start: 1032, end: 1048 }
+  - { place: haoshuichuan, start: 1041, end: 1041 }
+reviewed: false

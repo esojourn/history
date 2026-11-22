@@ -1,0 +1,14 @@
+id: wanyan-zonghan
+wikidata: null
+civ: china
+faction: jinchao
+importance: 2
+birth: { year: 1080 }
+death: { year: 1137 }
+birthplace: huiningfu
+deathplace: unknown
+places:
+  - { place: pingcheng, start: 1122, end: 1126 }
+  - { place: jinyang, start: 1125, end: 1126 }
+  - { place: bianzhou, start: 1126, end: 1127 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: huang-tingjian
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 1045 }
+death: { year: 1105 }
+birthplace: fenning
+deathplace: yizhou-gx
+places:
+  - { place: fenning, start: 1045, end: 1067 }
+  - { place: bianzhou, start: 1085, end: 1094 }
+  - { place: yizhou-gx, start: 1104, end: 1105 }
+reviewed: false

@@ -1,0 +1,16 @@
+id: zhao-heng
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 968 }
+death: { year: 1022 }
+reign:
+  - { start: 997, end: 1022 }
+birthplace: bianzhou
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 968, end: 1022 }
+  - { place: puyang, start: 1004, end: 1005 }
+  - { place: taishan, start: 1008, end: 1008 }
+reviewed: false

@@ -1,0 +1,18 @@
+id: wang-anshi-bianfa
+wikidata: null
+civ: china
+type: political
+importance: 5
+start: { year: 1069 }
+end: { year: 1085 }
+places: [bianzhou]
+participants:
+  - person: zhao-xu-shenzong
+  - person: wang-anshi
+  - person: lv-huiqing
+  - person: zhang-dun
+  - person: sima-guang
+  - person: han-qi
+  - person: fu-bi
+  - person: su-shi
+reviewed: false

@@ -1,0 +1,12 @@
+id: songxia-yonglecheng
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 1081 }
+end: { year: 1082 }
+places: [lingwu, yonglecheng]
+participants:
+  - person: zhao-xu-shenzong
+  - person: shen-kuo
+reviewed: false

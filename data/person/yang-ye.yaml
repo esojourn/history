@@ -1,0 +1,14 @@
+id: yang-ye
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { unknown: true, approx: 935 }
+death: { year: 986 }
+birthplace: jinyang
+deathplace: unknown
+places:
+  - { place: jinyang, start: 951, end: 979 }
+  - { place: yanmen, start: 980, end: 986 }
+  - { place: chenjiagu, start: 986, end: 986 }
+reviewed: false

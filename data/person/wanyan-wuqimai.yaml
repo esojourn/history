@@ -1,0 +1,14 @@
+id: wanyan-wuqimai
+wikidata: null
+civ: china
+faction: jinchao
+importance: 3
+birth: { year: 1075 }
+death: { year: 1135 }
+reign:
+  - { start: 1123, end: 1135 }
+birthplace: huiningfu
+deathplace: huiningfu
+places:
+  - { place: huiningfu, start: 1075, end: 1135 }
+reviewed: false

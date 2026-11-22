@@ -1,0 +1,15 @@
+id: song-shu-yanjing
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 1122 }
+end: { year: 1123 }
+places: [ji]
+participants:
+  - person: zhao-ji
+  - person: tong-guan
+  - person: chong-shidao
+  - person: yelu-dashi
+  - person: wanyan-aguda
+reviewed: false

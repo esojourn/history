@@ -1,0 +1,13 @@
+id: jin-jianguo
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 1114 }
+end: { year: 1115 }
+places: [ningjiangzhou, huiningfu]
+participants:
+  - person: wanyan-aguda
+  - person: yelu-yanxi
+  - person: wanyan-wuqimai
+reviewed: false

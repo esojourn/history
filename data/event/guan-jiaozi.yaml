@@ -1,0 +1,12 @@
+id: guan-jiaozi
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 1023 }
+end: { year: 1024 }
+places: [chengdu]
+participants:
+  - person: liu-e
+  - person: zhao-zhen
+reviewed: false

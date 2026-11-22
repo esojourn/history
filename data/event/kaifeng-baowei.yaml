@@ -1,0 +1,15 @@
+id: kaifeng-baowei
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1126 }
+places: [bianzhou]
+participants:
+  - person: zhao-huan
+  - person: li-gang
+  - person: wanyan-zongwang
+  - person: chong-shidao
+  - person: zhang-bangchang
+  - person: zhao-ji
+reviewed: false

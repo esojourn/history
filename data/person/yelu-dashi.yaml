@@ -1,0 +1,14 @@
+id: yelu-dashi
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 3
+birth: { year: 1087 }
+death: { year: 1143 }
+birthplace: unknown
+deathplace: husiwoerduo
+places:
+  - { place: ji, start: 1115, end: 1122 }
+  - { place: kedun, start: 1124, end: 1130 }
+  - { place: husiwoerduo, start: 1134, end: 1143 }
+reviewed: false

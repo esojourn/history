@@ -1,0 +1,14 @@
+id: song-mie-nantang
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 974 }
+end: { year: 975 }
+places: [jianye, caishi]
+participants:
+  - person: zhao-kuangyin
+  - person: li-yu-houzhu
+  - person: cao-bin
+  - person: pan-mei
+reviewed: false

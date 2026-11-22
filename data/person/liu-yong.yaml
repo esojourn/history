@@ -1,0 +1,13 @@
+id: liu-yong
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { unknown: true, approx: 987 }
+death: { unknown: true, approx: 1053 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: bianzhou }
+  - { place: hangzhou }
+reviewed: false

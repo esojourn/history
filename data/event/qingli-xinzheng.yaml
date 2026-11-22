@@ -1,0 +1,16 @@
+id: qingli-xinzheng
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 1043 }
+end: { year: 1045 }
+places: [bianzhou]
+participants:
+  - person: zhao-zhen
+  - person: fan-zhongyan
+  - person: fu-bi
+  - person: han-qi
+  - person: ouyang-xiu
+  - person: cai-xiang
+reviewed: false

@@ -1,0 +1,15 @@
+id: cao-bin
+wikidata: null
+civ: china
+faction: songchao
+importance: 3
+birth: { year: 931 }
+death: { year: 999 }
+birthplace: zhending
+deathplace: bianzhou
+places:
+  - { place: chengdu, start: 965, end: 965 }
+  - { place: jianye, start: 974, end: 975 }
+  - { place: qigouguan, start: 986, end: 986 }
+  - { place: bianzhou, start: 960, end: 999 }
+reviewed: false

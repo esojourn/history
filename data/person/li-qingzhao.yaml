@@ -1,0 +1,16 @@
+id: li-qingzhao
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 1084 }
+death: { year: 1155, circa: true }
+birthplace: zhangqiu
+deathplace: unknown
+places:
+  - { place: zhangqiu, start: 1084, end: 1100 }
+  - { place: bianzhou, start: 1101, end: 1107 }
+  - { place: qingzhou, start: 1107, end: 1127 }
+  - { place: jianye, start: 1128, end: 1129 }
+  - { place: hangzhou, start: 1132 }
+reviewed: false

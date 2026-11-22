@@ -1,0 +1,14 @@
+id: qin-guan
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1049 }
+death: { year: 1100 }
+birthplace: gaoyou
+deathplace: tengzhou-gx
+places:
+  - { place: gaoyou, start: 1049, end: 1085 }
+  - { place: bianzhou, start: 1085, end: 1094 }
+  - { place: leizhou, start: 1098, end: 1100 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: yelu-xiuge
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 2
+birth: { unknown: true, approx: 940 }
+death: { year: 998 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ji, start: 979, end: 998 }
+  - { place: gaolianghe, start: 979, end: 979 }
+  - { place: qigouguan, start: 986, end: 986 }
+reviewed: false

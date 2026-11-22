@@ -1,0 +1,13 @@
+id: su-xun
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1009 }
+death: { year: 1066 }
+birthplace: meishan
+deathplace: bianzhou
+places:
+  - { place: meishan, start: 1009, end: 1056 }
+  - { place: bianzhou, start: 1056, end: 1066 }
+reviewed: false

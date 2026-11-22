@@ -1,0 +1,13 @@
+id: song-mie-houshu
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 964 }
+end: { year: 965 }
+places: [chengdu]
+participants:
+  - person: zhao-kuangyin
+  - person: meng-chang
+  - person: cao-bin
+reviewed: false

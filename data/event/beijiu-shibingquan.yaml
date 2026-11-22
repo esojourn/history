@@ -1,0 +1,11 @@
+id: beijiu-shibingquan
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 961 }
+places: [bianzhou]
+participants:
+  - person: zhao-kuangyin
+  - person: zhao-pu
+reviewed: false

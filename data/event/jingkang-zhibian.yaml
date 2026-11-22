@@ -1,0 +1,17 @@
+id: jingkang-zhibian
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 1126 }
+end: { year: 1127 }
+places: [bianzhou, jinyang]
+participants:
+  - person: zhao-ji
+  - person: zhao-huan
+  - person: wanyan-wuqimai
+  - person: wanyan-zonghan
+  - person: wanyan-zongwang
+  - person: zhang-bangchang
+  - person: li-gang
+reviewed: false

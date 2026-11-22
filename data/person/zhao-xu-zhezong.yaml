@@ -1,0 +1,14 @@
+id: zhao-xu-zhezong
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1077 }
+death: { year: 1100 }
+reign:
+  - { start: 1085, end: 1100 }
+birthplace: bianzhou
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 1077, end: 1100 }
+reviewed: false

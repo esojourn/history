@@ -1,0 +1,13 @@
+id: zizhi-tongjian
+wikidata: null
+civ: china
+type: cultural
+importance: 4
+start: { year: 1066 }
+end: { year: 1084 }
+places: [luoyang, bianzhou]
+participants:
+  - person: sima-guang
+  - person: zhao-shu
+  - person: zhao-xu-shenzong
+reviewed: false

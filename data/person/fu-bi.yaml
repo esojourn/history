@@ -1,0 +1,14 @@
+id: fu-bi
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 1004 }
+death: { year: 1083 }
+birthplace: luoyang
+deathplace: luoyang
+places:
+  - { place: linhuang, start: 1042, end: 1042 }
+  - { place: bianzhou, start: 1043, end: 1069 }
+  - { place: luoyang, start: 1071, end: 1083 }
+reviewed: false

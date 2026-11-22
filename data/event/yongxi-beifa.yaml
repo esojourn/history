@@ -1,0 +1,16 @@
+id: yongxi-beifa
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 986 }
+places: [qigouguan, chenjiagu, ji]
+participants:
+  - person: zhao-guangyi
+  - person: cao-bin
+  - person: pan-mei
+  - person: yang-ye
+  - person: yelu-xiuge
+  - person: xiao-chuo
+  - person: yelu-longxu
+reviewed: false
