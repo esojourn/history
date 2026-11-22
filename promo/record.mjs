@@ -1,5 +1,6 @@
 // 分镜录屏：用本机 Chrome 打开 dist/ 里的网站，按 narration.yaml 的镜头逐段操作并录下来。
-// 用法：node promo/record.mjs [镜头 id 前缀…] [--still]
+// 用法：node promo/record.mjs [镜头 id 前缀…] [--still] [--portrait]
+//   --portrait：竖屏版用的画幅（1200×1600，合成时缩到 1080×1440 放进 1080×1920 的竖屏画面），输出到 shots-v/、stills-v/
 //   不带参数：录全部镜头；带 s3 之类：只录这几段；--still：不录像，只在关键处截图，用来调试位置。
 // 输出：promo/out/shots/<id>.mp4（1920×1080，30fps），promo/out/stills/*.png
 import { chromium } from 'playwright-core';
@@ -13,11 +14,14 @@ const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.resolve(ROOT, '../dist');
 const OUT = path.join(ROOT, 'out');
 const CHROME = process.env.CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
-const W = 1920, HGT = 1080, FONT = 1.3;   // 视频里字要大一点：用网站自带的字号档 1.3
-const argv = process.argv.slice(2), STILL = argv.includes('--still'), only = argv.filter(a => !a.startsWith('--'));
+const argv = process.argv.slice(2), STILL = argv.includes('--still'), PORTRAIT = argv.includes('--portrait'), only = argv.filter(a => !a.startsWith('--'));
+const W = PORTRAIT ? 1200 : 1920, HGT = PORTRAIT ? 1600 : 1080, FONT = 1.3;   // 视频里字要大一点：用网站自带的字号档 1.3
+// 分镜里的坐标按 1920×1080 写，换画幅时按比例换算
+const sx = v => (v * W) / 1920, sy = v => (v * HGT) / 1080;
+const SHOTS_DIR = PORTRAIT ? 'shots-v' : 'shots', STILLS_DIR = PORTRAIT ? 'stills-v' : 'stills';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-fs.mkdirSync(path.join(OUT, 'shots'), { recursive: true });
-fs.mkdirSync(path.join(OUT, 'stills'), { recursive: true });
+fs.mkdirSync(path.join(OUT, SHOTS_DIR), { recursive: true });
+fs.mkdirSync(path.join(OUT, STILLS_DIR), { recursive: true });
 
 /* ---------- 本地静态服务器：直接放 dist/ ---------- */
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.ico': 'image/x-icon', '.webp': 'image/webp' };
@@ -116,14 +120,14 @@ async function yearAt(page, x, y) {
   return m[1] ? 1 - +m[2] : +m[2];
 }
 async function xOfYear(page, year, y) {
-  const xa = 500, xb = 1700, ya = await yearAt(page, xa, y), yb = await yearAt(page, xb, y);
+  const xa = sx(500), xb = sx(1700), ya = await yearAt(page, xa, y), yb = await yearAt(page, xb, y);
   return xa + ((year - ya) * (xb - xa)) / (yb - ya);
 }
 async function escape(page) { await page.keyboard.press('Escape'); await sleep(900); }
 
 /* ---------- 录像：Chrome 逐帧截屏（CDP screencast），再按时间戳补成 30fps ---------- */
 async function record(page, name, seconds, act) {
-  if (STILL) { await act(); await page.screenshot({ path: path.join(OUT, 'stills', name + '-end.png') }); return; }
+  if (STILL) { await act(); await page.screenshot({ path: path.join(OUT, STILLS_DIR, name + '-end.png') }); return; }
   const cdp = await page.context().newCDPSession(page), frames = [];
   cdp.on('Page.screencastFrame', f => {
     frames.push({ t: f.metadata.timestamp, b: f.data });
@@ -140,7 +144,7 @@ async function record(page, name, seconds, act) {
   await sleep(300);
   const end = Date.now() / 1000;
   await cdp.send('Page.stopScreencast');
-  const dir = path.join(OUT, 'frames', name);
+  const dir = path.join(OUT, PORTRAIT ? 'frames-v' : 'frames', name);
   fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
   const t0 = frames[0].t, list = [];
   frames.forEach((f, i) => {
@@ -151,7 +155,7 @@ async function record(page, name, seconds, act) {
   });
   list.push(`file '${String(frames.length - 1).padStart(5, '0')}.jpg'`);
   fs.writeFileSync(path.join(dir, 'list.txt'), list.join('\n'));
-  const out = path.join(OUT, 'shots', name + '.mp4');
+  const out = path.join(OUT, SHOTS_DIR, name + '.mp4');
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', path.join(dir, 'list.txt'),
     '-vf', `fps=30,scale=${W}:${HGT}:flags=lanczos,format=yuv420p`, '-c:v', 'libx264', '-preset', 'slow', '-crf', '14', out]);
   console.log(`  ${name}: ${frames.length} 帧，${(end - t0).toFixed(2)}s → ${path.relative(ROOT, out)}`);
@@ -169,14 +173,14 @@ const SHOTS = {
     await open(page, '/zh/');
     await page.evaluate(() => window.__cur(false));
     // 先放大到“朝代”一层，停在上古
-    await jump(page, 400, 600);
+    await jump(page, sx(400), sy(600));
     await wheel(page, -1100, 300); await sleep(600);
     const sweep = async () => {
       for (let i = 0; i < 4; i++) {
-        await jump(page, 1850, 40); await jump(page, 1850, 600);
+        await jump(page, sx(1850), 40); await jump(page, sx(1850), sy(600));
         await page.mouse.down();
-        for (let s = 1; s <= 24; s++) { await page.mouse.move(1850 - (1550 * s) / 24, 600); await sleep(16); }
-        await page.mouse.up(); await jump(page, 300, 40);
+        for (let s = 1; s <= 24; s++) { await page.mouse.move(sx(1850) - (sx(1550) * s) / 24, sy(600)); await sleep(16); }
+        await page.mouse.up(); await jump(page, sx(300), 40);
       }
       await page.evaluate(() => document.querySelector('#d [data-view="world"]').click());
     };
@@ -190,14 +194,14 @@ const SHOTS = {
     await open(page, '/zh/');
     const yChina = await page.evaluate(() => { const r = document.querySelector('#river [data-lane="china"]')?.getBoundingClientRect(); return r ? r.top + r.height / 2 : 300; });
     const x25 = await xOfYear(page, 25, yChina);
-    await jump(page, 960, 1000); await page.mouse.move(960, 1060);
+    await jump(page, W / 2, HGT - 80); await page.mouse.move(W / 2, HGT - 20);
     await record(page, 's2-zoom', T('s2-zoom'), async () => {
       await glide(page, 90, 200, 700);           // 左边一列：各文明
-      await glide(page, 90, 700, 1000);
-      await glide(page, 400, yChina, 500);       // 横着走：顶上的年份跟着变
-      await glide(page, 1600, yChina, 1100);
+      await glide(page, 90, sy(700), 1000);
+      await glide(page, sx(400), yChina, 500);       // 横着走：顶上的年份跟着变
+      await glide(page, sx(1600), yChina, 1100);
       await glide(page, x25, yChina, 600);
-      await wheel(page, -2150, 3800);             // 一路放大到人物层
+      await wheel(page, PORTRAIT ? -2450 : -2150, 3800);             // 一路放大到人物层
     });
     await page.context().close();
   },
@@ -207,7 +211,7 @@ const SHOTS = {
     const page = await newPage();
     await open(page, '/zh/#person/liu-xiu', 2000);
     await escape(page);
-    await jump(page, 1100, 700);
+    await jump(page, sx(1100), sy(700));
     const [x, y] = await personPt(page, 'liu-xiu');
     await record(page, 's3-person', T('s3-person'), async () => {
       await click(page, x, y, 900);
@@ -237,15 +241,15 @@ const SHOTS = {
     await sleep(600);
     if (!(await page.locator('#river [data-p="muhammad"]').count())) throw new Error('两河与波斯泳道没展开' + JSON.stringify(ln));
     const [, ly] = await personPt(page, 'li-shimin');
-    const x627 = await xOfYear(page, 627, 500);   // 贞观元年；两人的生卒条都跨过这一年
-    await jump(page, 1300, 900);
+    const x627 = await xOfYear(page, 627, sy(500));   // 贞观元年；两人的生卒条都跨过这一年
+    await jump(page, sx(1300), sy(900));
     await record(page, 's4-parallel', T('s4-parallel'), async () => {
       await click(page, x627, ly, 900);
       await sleep(1500);
       // 穆罕默德在下面另一条泳道里：画面平滑往下滚，鼠标停在同一年，顶上的十字线一直标着这一年
-      await glide(page, x627, 620, 500);
+      await glide(page, x627, sy(620), 500);
       const [, my] = await personPt(page, 'muhammad');
-      const from = await page.evaluate(() => document.querySelector('.stage').scrollTop), dy = my - 860;
+      const from = await page.evaluate(() => document.querySelector('.stage').scrollTop), dy = my - sy(860);
       const ms = 1700, n = Math.round(ms / 16), t0 = Date.now();
       for (let i = 1; i <= n; i++) {
         await page.evaluate(y => { document.querySelector('.stage').scrollTop = y; }, from + dy * ease(i / n));
@@ -264,7 +268,7 @@ const SHOTS = {
     let page = await newPage();
     await open(page, '/zh/#event/anshi-zhiluan', 2000);
     await escape(page);
-    await jump(page, 1200, 800);
+    await jump(page, sx(1200), sy(800));
     const e = await box(page, '#river [data-e="anshi-zhiluan"]');
     await record(page, 's5a-event', a, async () => {
       await click(page, e.x + 9, e.y + e.height / 2, 800);
@@ -297,7 +301,7 @@ const SHOTS = {
   async 's6-search'() {
     const page = await newPage();
     await open(page, '/zh/#sanguo', 1500);
-    await jump(page, 1000, 650);
+    await jump(page, sx(1000), sy(650));
     const f = await box(page, '#find');
     await record(page, 's6-search', T('s6-search'), async () => {
       await click(page, f.x + f.width / 2, f.y + f.height / 2, 600);

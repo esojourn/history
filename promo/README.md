@@ -14,6 +14,16 @@ node promo/cards.mjs          # 3. 片名、结尾卡、二维码 → promo/out/
 node promo/compose.mjs --music <音乐文件> --out history-promo.mp4   # 4. 合成 → promo/out/
 ```
 
+### 竖屏版（小红书等）
+
+1080×1920：上方是“历史长河”标题，中间是录屏画面，下方是字幕。结尾卡的二维码和网址打了马赛克（小红书不许引导去外站），用程序确认过扫不出来。
+
+```bash
+node promo/record.mjs --portrait     # 竖屏画幅（1200×1600）重录 → promo/out/shots-v/
+node promo/cards.mjs                 # 同时生成竖屏的片名、底板、结尾卡（end-v.png 打码，end-v-clear.png 不打码）
+node promo/compose.mjs --portrait --music <音乐文件>   # → promo/out/history-promo-vertical.mp4
+```
+
 - 旁白文字和字幕分行在 [narration.yaml](narration.yaml)。改了文字要从第 1 步重来（旁白长短变了，录屏时长跟着变）。
 - `node promo/record.mjs --still`：不录像，只截每个镜头的最后一帧到 `out/stills/`，用来检查位置。
 - `promo/out/` 是生成的文件，不进仓库。
