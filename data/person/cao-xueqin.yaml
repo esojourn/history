@@ -1,0 +1,13 @@
+id: cao-xueqin
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1715, circa: true }
+death: { year: 1763, circa: true }
+birthplace: jianye
+deathplace: dadu
+places:
+  - { place: jianye, start: 1715, end: 1728 }
+  - { place: dadu, start: 1728, end: 1763 }
+reviewed: false

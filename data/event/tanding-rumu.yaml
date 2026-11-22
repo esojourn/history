@@ -1,0 +1,12 @@
+id: tanding-rumu
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1712 }
+end: { year: 1729 }
+places: [dadu]
+participants:
+  - person: xuanye
+  - person: yinzhen
+reviewed: false

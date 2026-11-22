@@ -1,0 +1,13 @@
+id: chuanchu-bailianjiao
+wikidata: null
+civ: china
+type: uprising
+importance: 3
+start: { year: 1796 }
+end: { year: 1804 }
+places: [xiangyang, hanzhong, chengdu]
+participants:
+  - person: yongyan
+  - person: hongli
+  - person: heshen
+reviewed: false

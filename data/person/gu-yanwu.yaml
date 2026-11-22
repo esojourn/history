@@ -1,0 +1,14 @@
+id: gu-yanwu
+wikidata: null
+civ: china
+faction: nanming
+importance: 3
+birth: { year: 1613 }
+death: { year: 1682 }
+birthplace: kunshan
+deathplace: quwo
+places:
+  - { place: kunshan, start: 1613, end: 1657 }
+  - { place: jinyang, start: 1662, end: 1677 }
+  - { place: quwo, start: 1682, end: 1682 }
+reviewed: false

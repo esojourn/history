@@ -1,0 +1,14 @@
+id: castiglione
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1688 }
+death: { year: 1766 }
+birthplace: milan
+deathplace: dadu
+places:
+  - { place: milan, start: 1688, end: 1714 }
+  - { place: macau, start: 1715, end: 1715 }
+  - { place: dadu, start: 1715, end: 1766 }
+  - { place: yuanmingyuan, start: 1747, end: 1766 }
+reviewed: false

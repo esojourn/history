@@ -1,0 +1,14 @@
+id: wu-jingzi
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1701 }
+death: { year: 1754 }
+birthplace: quanjiao
+deathplace: guangling
+places:
+  - { place: quanjiao, start: 1701, end: 1733 }
+  - { place: jianye, start: 1733, end: 1754 }
+  - { place: guangling, start: 1754, end: 1754 }
+reviewed: false

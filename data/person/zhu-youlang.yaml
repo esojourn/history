@@ -1,0 +1,18 @@
+id: zhu-youlang
+wikidata: null
+civ: china
+faction: nanming
+importance: 3
+birth: { year: 1623 }
+death: { year: 1662 }
+reign:
+  - { start: 1646, end: 1662 }
+birthplace: unknown
+deathplace: dian
+places:
+  - { place: zhaoqing, start: 1646, end: 1647 }
+  - { place: guilin, start: 1647, end: 1650 }
+  - { place: dian, start: 1656, end: 1659 }
+  - { place: ava, start: 1659, end: 1662 }
+  - { place: dian, start: 1662, end: 1662 }
+reviewed: false

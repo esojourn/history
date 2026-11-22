@@ -1,0 +1,17 @@
+id: hong-chengchou
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1593 }
+death: { year: 1665 }
+birthplace: quanzhou
+deathplace: dadu
+places:
+  - { place: quanzhou, start: 1593, end: 1616 }
+  - { place: changan, start: 1629, end: 1638 }
+  - { place: jinzhou-ln, start: 1641, end: 1642 }
+  - { place: jianye, start: 1645, end: 1648 }
+  - { place: hengyang, start: 1653, end: 1659 }
+  - { place: dadu, start: 1659, end: 1665 }
+reviewed: false

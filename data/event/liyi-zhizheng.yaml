@@ -1,0 +1,13 @@
+id: liyi-zhizheng
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1704 }
+end: { year: 1742 }
+places: [rome, dadu]
+participants:
+  - person: xuanye
+  - person: yinzhen
+  - person: castiglione
+reviewed: false

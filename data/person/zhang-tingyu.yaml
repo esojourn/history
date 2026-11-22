@@ -1,0 +1,14 @@
+id: zhang-tingyu
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1672 }
+death: { year: 1755 }
+birthplace: tongcheng
+deathplace: tongcheng
+places:
+  - { place: tongcheng, start: 1672, end: 1700 }
+  - { place: dadu, start: 1700, end: 1750 }
+  - { place: tongcheng, start: 1750, end: 1755 }
+reviewed: false

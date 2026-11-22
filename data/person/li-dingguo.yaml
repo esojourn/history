@@ -1,0 +1,16 @@
+id: li-dingguo
+wikidata: null
+civ: china
+faction: nanming
+importance: 3
+birth: { year: 1621 }
+death: { year: 1662 }
+birthplace: yanzhou-sx
+deathplace: mengla
+places:
+  - { place: chengdu, start: 1644, end: 1646 }
+  - { place: dian, start: 1647, end: 1659 }
+  - { place: guilin, start: 1652, end: 1652 }
+  - { place: hengyang, start: 1652, end: 1652 }
+  - { place: mengla, start: 1662, end: 1662 }
+reviewed: false

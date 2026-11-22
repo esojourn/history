@@ -1,0 +1,15 @@
+id: wang-fuzhi
+wikidata: null
+civ: china
+faction: nanming
+importance: 3
+birth: { year: 1619 }
+death: { year: 1692 }
+birthplace: hengyang
+deathplace: hengyang
+places:
+  - { place: hengyang, start: 1619, end: 1648 }
+  - { place: zhaoqing, start: 1650, end: 1650 }
+  - { place: guilin, start: 1650, end: 1651 }
+  - { place: hengyang, start: 1651, end: 1692 }
+reviewed: false

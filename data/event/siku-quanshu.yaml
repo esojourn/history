@@ -1,0 +1,13 @@
+id: siku-quanshu
+wikidata: null
+civ: china
+type: cultural
+importance: 4
+start: { year: 1773 }
+end: { year: 1782 }
+places: [dadu, rehe]
+participants:
+  - person: hongli
+  - person: ji-yun
+  - person: dai-zhen
+reviewed: false

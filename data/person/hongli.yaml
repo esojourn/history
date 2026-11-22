@@ -1,0 +1,16 @@
+id: hongli
+wikidata: null
+civ: china
+faction: qingchao
+importance: 5
+birth: { year: 1711 }
+death: { year: 1799 }
+reign:
+  - { start: 1735, end: 1796 }
+birthplace: dadu
+deathplace: dadu
+places:
+  - { place: dadu, start: 1711, end: 1799 }
+  - { place: rehe, start: 1741, end: 1795 }
+  - { place: hangzhou, start: 1751, end: 1784 }
+reviewed: false

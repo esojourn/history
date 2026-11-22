@@ -1,0 +1,13 @@
+id: sanfan-zhiluan
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 1673 }
+end: { year: 1681 }
+places: [dian, hengyang, fuzhou-fj, panyu]
+participants:
+  - person: xuanye
+  - person: wu-sangui
+  - person: verbiest
+reviewed: false

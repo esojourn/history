@@ -1,0 +1,11 @@
+id: qing-tongyi-taiwan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1683 }
+places: [penghu, anping]
+participants:
+  - person: shi-lang
+  - person: xuanye
+reviewed: false

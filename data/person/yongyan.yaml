@@ -1,0 +1,15 @@
+id: yongyan
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1760 }
+death: { year: 1820 }
+reign:
+  - { start: 1796, end: 1820 }
+birthplace: yuanmingyuan
+deathplace: rehe
+places:
+  - { place: dadu, start: 1760, end: 1820 }
+  - { place: rehe, start: 1820, end: 1820 }
+reviewed: false

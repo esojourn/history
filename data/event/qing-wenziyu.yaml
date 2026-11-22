@@ -1,0 +1,13 @@
+id: qing-wenziyu
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1711 }
+end: { year: 1782 }
+places: [dadu]
+participants:
+  - person: xuanye
+  - person: yinzhen
+  - person: hongli
+reviewed: false

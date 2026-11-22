@@ -1,0 +1,14 @@
+id: shi-kefa
+wikidata: null
+civ: china
+faction: nanming
+importance: 3
+birth: { year: 1601, circa: true }
+death: { year: 1645 }
+birthplace: bianzhou
+deathplace: guangling
+places:
+  - { place: bianzhou, start: 1601, end: 1628 }
+  - { place: jianye, start: 1643, end: 1644 }
+  - { place: guangling, start: 1644, end: 1645 }
+reviewed: false

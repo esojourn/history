@@ -1,0 +1,12 @@
+id: yakesa-nibuchu
+wikidata: null
+civ: china
+type: diplomatic
+importance: 4
+start: { year: 1685 }
+end: { year: 1689 }
+places: [yakesa, nerchinsk]
+participants:
+  - person: xuanye
+  - person: verbiest
+reviewed: false

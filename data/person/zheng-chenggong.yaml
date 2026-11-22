@@ -1,0 +1,16 @@
+id: zheng-chenggong
+wikidata: null
+civ: china
+faction: nanming
+importance: 4
+birth: { year: 1624 }
+death: { year: 1662 }
+birthplace: hirado
+deathplace: anping
+places:
+  - { place: hirado, start: 1624, end: 1630 }
+  - { place: quanzhou, start: 1630, end: 1646 }
+  - { place: xiamen, start: 1646, end: 1661 }
+  - { place: jianye, start: 1659, end: 1659 }
+  - { place: anping, start: 1661, end: 1662 }
+reviewed: false

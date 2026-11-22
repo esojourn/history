@@ -1,0 +1,13 @@
+id: pu-songling
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1640 }
+death: { year: 1715 }
+birthplace: zichuan
+deathplace: zichuan
+places:
+  - { place: zichuan, start: 1640, end: 1715 }
+  - { place: baoying, start: 1670, end: 1671 }
+reviewed: false

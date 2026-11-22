@@ -1,0 +1,16 @@
+id: macartney
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1737 }
+death: { year: 1806 }
+birthplace: antrim
+deathplace: london
+places:
+  - { place: antrim, start: 1737, end: 1759 }
+  - { place: london, start: 1760, end: 1792 }
+  - { place: madras, start: 1780, end: 1785 }
+  - { place: rehe, start: 1793, end: 1793 }
+  - { place: dadu, start: 1793, end: 1793 }
+  - { place: london, start: 1794, end: 1806 }
+reviewed: false

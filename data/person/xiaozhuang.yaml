@@ -1,0 +1,14 @@
+id: xiaozhuang
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1613 }
+death: { year: 1688 }
+birthplace: khorchin
+deathplace: dadu
+places:
+  - { place: khorchin, start: 1613, end: 1625 }
+  - { place: shengjing, start: 1625, end: 1644 }
+  - { place: dadu, start: 1644, end: 1688 }
+reviewed: false

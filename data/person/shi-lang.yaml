@@ -1,0 +1,15 @@
+id: shi-lang
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1621 }
+death: { year: 1696 }
+birthplace: quanzhou
+deathplace: unknown
+places:
+  - { place: quanzhou, start: 1621, end: 1646 }
+  - { place: xiamen, start: 1646, end: 1651 }
+  - { place: penghu, start: 1683, end: 1683 }
+  - { place: anping, start: 1683, end: 1683 }
+reviewed: false

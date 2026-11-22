@@ -1,0 +1,11 @@
+id: junjichu
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 1729 }
+places: [dadu]
+participants:
+  - person: yinzhen
+  - person: zhang-tingyu
+reviewed: false

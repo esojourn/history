@@ -1,0 +1,11 @@
+id: yangzhou-zhiyi
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1645 }
+places: [guangling, jianye]
+participants:
+  - person: shi-kefa
+  - person: dorgon
+reviewed: false

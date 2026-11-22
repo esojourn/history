@@ -1,0 +1,12 @@
+id: heshen-zhisi
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 1799 }
+places: [dadu]
+participants:
+  - person: heshen
+  - person: yongyan
+  - person: hongli
+reviewed: false

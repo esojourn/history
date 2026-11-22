@@ -1,0 +1,12 @@
+id: macartney-mission
+wikidata: null
+civ: china
+type: diplomatic
+importance: 4
+start: { year: 1793 }
+places: [rehe, dadu, panyu]
+participants:
+  - person: macartney
+  - person: hongli
+  - person: heshen
+reviewed: false

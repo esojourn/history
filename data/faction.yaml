@@ -229,3 +229,9 @@
 - id: qingchao
   civ: china
   color: "#6B4C9A"
+- id: nanming
+  civ: china
+  color: "#D46A7E"
+- id: zhunger
+  civ: steppe
+  color: "#9C7A3C"

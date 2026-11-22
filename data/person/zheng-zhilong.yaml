@@ -1,0 +1,16 @@
+id: zheng-zhilong
+wikidata: null
+civ: china
+faction: nanming
+importance: 2
+birth: { year: 1604 }
+death: { year: 1661 }
+birthplace: quanzhou
+deathplace: dadu
+places:
+  - { place: macau, start: 1621, end: 1623 }
+  - { place: hirado, start: 1623, end: 1628 }
+  - { place: xiamen, start: 1628, end: 1646 }
+  - { place: fuzhou-fj, start: 1645, end: 1646 }
+  - { place: dadu, start: 1646, end: 1661 }
+reviewed: false

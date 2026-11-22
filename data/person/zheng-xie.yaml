@@ -1,0 +1,14 @@
+id: zheng-xie
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1693 }
+death: { year: 1766 }
+birthplace: xinghua-js
+deathplace: xinghua-js
+places:
+  - { place: xinghua-js, start: 1693, end: 1736 }
+  - { place: weixian, start: 1746, end: 1753 }
+  - { place: guangling, start: 1753, end: 1766 }
+reviewed: false

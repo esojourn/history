@@ -1,0 +1,14 @@
+id: adam-schall
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1592 }
+death: { year: 1666 }
+birthplace: cologne
+deathplace: dadu
+places:
+  - { place: cologne, start: 1592, end: 1611 }
+  - { place: rome, start: 1611, end: 1618 }
+  - { place: changan, start: 1627, end: 1630 }
+  - { place: dadu, start: 1630, end: 1666 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: nalan-xingde
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1655 }
+death: { year: 1685 }
+birthplace: dadu
+deathplace: dadu
+places:
+  - { place: dadu, start: 1655, end: 1685 }
+reviewed: false

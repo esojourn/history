@@ -1,0 +1,11 @@
+id: pingding-zhunger
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 1755 }
+end: { year: 1759 }
+places: [yili, dzungaria, shule]
+participants:
+  - person: hongli
+reviewed: false

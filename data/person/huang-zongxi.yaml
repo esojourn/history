@@ -1,0 +1,13 @@
+id: huang-zongxi
+wikidata: null
+civ: china
+faction: nanming
+importance: 3
+birth: { year: 1610 }
+death: { year: 1695 }
+birthplace: yuyao
+deathplace: yuyao
+places:
+  - { place: yuyao, start: 1610, end: 1695 }
+  - { place: dadu, start: 1628, end: 1629 }
+reviewed: false

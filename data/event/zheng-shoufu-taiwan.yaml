@@ -1,0 +1,11 @@
+id: zheng-shoufu-taiwan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1661 }
+end: { year: 1662 }
+places: [anping, penghu, xiamen]
+participants:
+  - person: zheng-chenggong
+reviewed: false

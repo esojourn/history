@@ -1,0 +1,12 @@
+id: tifa-ling
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1645 }
+places: [jiangyin, jianye, dadu]
+participants:
+  - person: dorgon
+  - person: gu-yanwu
+  - person: huang-zongxi
+reviewed: false

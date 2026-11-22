@@ -1,0 +1,13 @@
+id: verbiest
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1623 }
+death: { year: 1688 }
+birthplace: flanders
+deathplace: dadu
+places:
+  - { place: flanders, start: 1623, end: 1657 }
+  - { place: changan, start: 1659, end: 1660 }
+  - { place: dadu, start: 1660, end: 1688 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: kangxi-zheng-galdan
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 1690 }
+end: { year: 1697 }
+places: [ulan-butung, jaomodo, khovd]
+participants:
+  - person: xuanye
+  - person: galdan
+reviewed: false

@@ -1,0 +1,13 @@
+id: qingjun-ruguan
+wikidata: null
+civ: china
+type: battle
+importance: 5
+start: { year: 1644 }
+places: [shanhaiguan, dadu]
+participants:
+  - person: dorgon
+  - person: wu-sangui
+  - person: li-zicheng
+  - person: fulin
+reviewed: false

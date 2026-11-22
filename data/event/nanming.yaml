@@ -1,0 +1,20 @@
+id: nanming
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 1644 }
+end: { year: 1662 }
+places: [jianye, fuzhou-fj, zhaoqing, guilin, dian, xiamen]
+participants:
+  - person: shi-kefa
+  - person: zheng-chenggong
+  - person: zheng-zhilong
+  - person: zhu-youlang
+  - person: li-dingguo
+  - person: huang-zongxi
+  - person: wang-fuzhi
+  - person: dorgon
+  - person: hong-chengchou
+  - person: wu-sangui
+reviewed: false
