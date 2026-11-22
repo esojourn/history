@@ -1,0 +1,13 @@
+id: yao
+wikidata: null
+civ: china
+faction: wudi
+importance: 4
+era: five-emperors
+seq: [5, 7]
+certainty: legendary
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: pingyang }
+reviewed: false

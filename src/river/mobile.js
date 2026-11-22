@@ -98,7 +98,7 @@ export function mobile(H, card, search) {
       const on = !M.sel || p.id === selP || lit.has(p.id) || litE.has(p.id);
       const ny = H.clamp(st / Z + 8, y1 + 5, Math.max(y1 + 5, y2 - p.n.length * 14 - 3));
       o.push(`<g class="pp" data-p="${p.id}" opacity="${on ? 1 : .15}">
-        <rect x="${cx(p) - 12}" y="${y1}" width="24" height="${Math.max(0, y2 - y1)}" rx="3" fill="${fade || c}" fill-opacity="${fade ? 1 : .22}"${p.id === selP ? ` stroke="${c}" stroke-width="1.5"` : guest || p.ns ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".8"` : ''}/>
+        <rect x="${cx(p) - 12}" y="${y1}" width="24" height="${Math.max(0, y2 - y1)}" rx="3" fill="${fade || c}" fill-opacity="${fade ? 1 : .22}"${p.id === selP ? ` stroke="${c}" stroke-width="1.5"` : guest || p.ns || p.cert ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".8"` : ''}/>
         ${p.reigns.map(rg => `<rect x="${cx(p) + 9}" y="${y(Math.max(rg[0], lo - 1))}" width="3" height="${Math.max(0, y(Math.min(rg[1], hi + 1)) - y(Math.max(rg[0], lo - 1)))}" fill="${c}"/>`).join('')}
         <text class="vn" x="${cx(p) - 1}" y="${ny}"${p.id === selP ? ' font-weight="700"' : ''}>${p.n}</text></g>`);
     });
@@ -114,7 +114,7 @@ export function mobile(H, card, search) {
     // 顶上一条钉住的小栏：回到朝代总览；写明现在是哪一段，分了几段的可以翻到上一段、下一段；人多时可显示全部人物
     const n = segs().length, nav = `<div class="mseg" style="width:${body.clientWidth}px">${back}
       ${n > 1 ? `<button data-seg="${M.seg - 1}"${M.seg ? '' : ' disabled'} aria-label="${t('m.prevSeg')}">‹</button>` : ''}
-      <span><b>${sg.name}</b><i>${sg.ns ? t('m.onlyOrder') : `${H.fmt(Math.round(lo))}—${H.fmt(Math.round(hi))}`}</i></span>
+      <span><b>${sg.name}</b><i>${sg.ns ? t('m.onlyOrder') : `${(sg.bands || []).some(i => H.lane(M.lane).bands[i][3] === 't') ? t('circa') : ''}${H.fmt(Math.round(lo))}—${H.fmt(Math.round(hi))}`}</i></span>
       ${n > 1 ? `<button data-seg="${M.seg + 1}"${M.seg < n - 1 ? '' : ' disabled'} aria-label="${t('m.nextSeg')}">›</button>` : ''}
       ${few ? '' : `<button class="all" data-all aria-pressed="${M.all}">${M.all ? t('m.mainShort') : t('m.allShort', { n: mine.length })}</button>`}</div>`;
     body.innerHTML = `${nav}<svg id="mpeople" width="${Wd * Z}" height="${Ht * Z}" viewBox="0 0 ${Wd} ${Ht}">${o.join('')}</svg>

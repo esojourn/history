@@ -1,0 +1,14 @@
+id: jiang-taigong
+wikidata: null
+civ: china
+faction: qi
+importance: 4
+birth: { unknown: true, approx: -1140, certainty: traditional }
+death: { unknown: true, approx: -1035, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: zhouyuan }
+  - { place: muye }
+  - { place: linzi }
+reviewed: false

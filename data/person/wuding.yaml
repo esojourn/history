@@ -1,0 +1,14 @@
+id: wuding
+wikidata: null
+civ: china
+faction: shang
+importance: 4
+birth: { unknown: true, approx: -1285, certainty: traditional, scheme: xsz }
+death: { year: -1191, circa: true, certainty: traditional, scheme: xsz }
+reign:
+  - { start: -1249, end: -1191 }
+birthplace: unknown
+deathplace: yinxu
+places:
+  - { place: yinxu }
+reviewed: false

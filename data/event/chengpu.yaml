@@ -1,0 +1,11 @@
+id: chengpu
+wikidata: null
+civ: china
+type: battle
+importance: 5
+start: { year: -631 }
+places: [chengpu]
+participants:
+  - person: jin-wengong
+  - person: chu-chengwang
+reviewed: false

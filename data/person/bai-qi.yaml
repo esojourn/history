@@ -1,0 +1,15 @@
+id: bai-qi
+wikidata: null
+civ: china
+faction: qin
+importance: 4
+birth: { unknown: true, approx: -332 }
+death: { year: -256 }
+birthplace: meixian
+deathplace: duyou
+places:
+  - { place: longmen, start: -292, end: -292 }
+  - { place: ying-chu, start: -277, end: -277 }
+  - { place: changping, start: -259, end: -259 }
+  - { place: xianyang }
+reviewed: false

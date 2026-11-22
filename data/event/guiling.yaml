@@ -1,0 +1,14 @@
+id: guiling
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -353 }
+places: [guiling, handan, daliang]
+participants:
+  - person: sun-bin
+  - person: tian-ji
+  - person: pang-juan
+  - person: wei-huiwang
+  - person: qi-weiwang
+reviewed: false

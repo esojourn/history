@@ -1,0 +1,14 @@
+id: qi-weiwang
+wikidata: null
+civ: china
+faction: qi
+importance: 3
+birth: { unknown: true, approx: -378 }
+death: { year: -319 }
+reign:
+  - { start: -355, end: -319 }
+birthplace: linzi
+deathplace: linzi
+places:
+  - { place: linzi }
+reviewed: false

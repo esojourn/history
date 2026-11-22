@@ -1,0 +1,12 @@
+id: bigan
+wikidata: null
+civ: china
+faction: shang
+importance: 2
+birth: { unknown: true, approx: -1115, certainty: traditional }
+death: { unknown: true, approx: -1050, certainty: traditional }
+birthplace: unknown
+deathplace: zhaoge
+places:
+  - { place: zhaoge }
+reviewed: false

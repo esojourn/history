@@ -1,0 +1,14 @@
+id: kongzi
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 5
+birth: { year: -550 }
+death: { year: -478 }
+birthplace: zouyi
+deathplace: lu
+places:
+  - { place: lu }
+  - { place: puyang, start: -496, end: -484 }
+  - { place: chen }
+reviewed: false

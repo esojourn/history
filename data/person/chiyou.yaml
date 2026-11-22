@@ -1,0 +1,13 @@
+id: chiyou
+wikidata: null
+civ: china
+faction: wudi
+importance: 2
+era: five-emperors
+seq: [2, 2]
+certainty: legendary
+birthplace: unknown
+deathplace: zhuolu
+places:
+  - { place: zhuolu }
+reviewed: false

@@ -1,0 +1,13 @@
+id: danyang-lantian
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: -311 }
+places: [hanzhong]
+participants:
+  - person: chu-huaiwang
+  - person: zhang-yi
+  - person: qin-huiwen
+  - person: qu-yuan
+reviewed: false

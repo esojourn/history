@@ -1,0 +1,12 @@
+id: yan-ying
+wikidata: null
+civ: china
+faction: qi
+importance: 3
+birth: { unknown: true, approx: -578 }
+death: { year: -499 }
+birthplace: gaomi
+deathplace: linzi
+places:
+  - { place: linzi }
+reviewed: false

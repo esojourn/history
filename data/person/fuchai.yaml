@@ -1,0 +1,16 @@
+id: fuchai
+wikidata: null
+civ: china
+faction: wuguo
+importance: 3
+birth: { unknown: true, approx: -525 }
+death: { year: -472 }
+reign:
+  - { start: -494, end: -472 }
+birthplace: unknown
+deathplace: wu
+places:
+  - { place: wu }
+  - { place: fujiao, start: -493, end: -493 }
+  - { place: huangchi, start: -481, end: -481 }
+reviewed: false

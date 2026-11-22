@@ -1,0 +1,14 @@
+id: su-qin
+wikidata: null
+civ: china
+faction: yanguo
+importance: 3
+birth: { unknown: true, approx: -335 }
+death: { year: -283, circa: true }
+birthplace: luoyang
+deathplace: linzi
+places:
+  - { place: luoyang }
+  - { place: ji }
+  - { place: linzi }
+reviewed: false

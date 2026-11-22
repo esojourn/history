@@ -1,0 +1,13 @@
+id: zhao-kuo
+wikidata: null
+civ: china
+faction: zhao
+importance: 3
+birth: { unknown: true, approx: -290 }
+death: { year: -259 }
+birthplace: unknown
+deathplace: changping
+places:
+  - { place: handan }
+  - { place: changping, start: -259, end: -259 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: song-xianggong
+wikidata: null
+civ: china
+faction: zhuhou
+importance: 2
+birth: { unknown: true, approx: -680 }
+death: { year: -636 }
+reign:
+  - { start: -649, end: -636 }
+birthplace: suiyang
+deathplace: suiyang
+places:
+  - { place: suiyang }
+  - { place: hongshui, start: -637, end: -637 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: baosi
+wikidata: null
+civ: china
+faction: zhou
+importance: 2
+birth: { unknown: true, approx: -795 }
+death: { unknown: true, approx: -765 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: haojing }
+  - { place: lishan }
+reviewed: false

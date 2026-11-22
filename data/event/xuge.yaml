@@ -1,0 +1,10 @@
+id: xuge
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -706 }
+places: [xuge]
+participants:
+  - person: zheng-zhuanggong
+reviewed: false

@@ -1,0 +1,14 @@
+id: shang-yang
+wikidata: null
+civ: china
+faction: qin
+importance: 5
+birth: { year: -389, circa: true }
+death: { year: -337 }
+birthplace: puyang
+deathplace: mianchi
+places:
+  - { place: yueyang }
+  - { place: xianyang }
+  - { place: shang-yi }
+reviewed: false

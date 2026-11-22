@@ -1,0 +1,10 @@
+id: changshao
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -683 }
+places: [changshao]
+participants:
+  - person: qi-huangong
+reviewed: false

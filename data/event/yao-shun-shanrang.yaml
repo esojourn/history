@@ -1,0 +1,13 @@
+id: yao-shun-shanrang
+wikidata: null
+civ: china
+type: political
+importance: 4
+era: five-emperors
+seq: 7
+certainty: legendary
+places: [pingyang]
+participants:
+  - person: yao
+  - person: shun
+reviewed: false

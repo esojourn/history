@@ -1,0 +1,12 @@
+id: pangeng
+wikidata: null
+civ: china
+faction: shang
+importance: 3
+birth: { unknown: true, approx: -1340, certainty: traditional }
+death: { unknown: true, approx: -1275, certainty: traditional }
+birthplace: unknown
+deathplace: yinxu
+places:
+  - { place: yinxu }
+reviewed: false

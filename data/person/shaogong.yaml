@@ -1,0 +1,13 @@
+id: shaogong
+wikidata: null
+civ: china
+faction: zhou
+importance: 2
+birth: { unknown: true, approx: -1080, certainty: traditional }
+death: { unknown: true, approx: -995, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: haojing }
+  - { place: yan }
+reviewed: false

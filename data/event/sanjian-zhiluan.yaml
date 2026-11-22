@@ -1,0 +1,12 @@
+id: sanjian-zhiluan
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: -1041, circa: true, certainty: traditional, scheme: xsz }
+end: { year: -1039, circa: true, certainty: traditional, scheme: xsz }
+places: [zhaoge]
+participants:
+  - person: zhougong
+  - person: zhou-chengwang
+reviewed: false

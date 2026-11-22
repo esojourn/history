@@ -1,0 +1,12 @@
+id: zengzi
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 2
+birth: { year: -504, circa: true }
+death: { year: -434, circa: true }
+birthplace: unknown
+deathplace: lu
+places:
+  - { place: lu }
+reviewed: false

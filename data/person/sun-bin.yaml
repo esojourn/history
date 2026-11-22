@@ -1,0 +1,13 @@
+id: sun-bin
+wikidata: null
+civ: china
+faction: qi
+importance: 3
+birth: { unknown: true, approx: -380 }
+death: { unknown: true, approx: -316 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: daliang }
+  - { place: linzi }
+reviewed: false

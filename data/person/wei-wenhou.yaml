@@ -1,0 +1,15 @@
+id: wei-wenhou
+wikidata: null
+civ: china
+faction: weiguo
+importance: 3
+birth: { unknown: true, approx: -472 }
+death: { year: -395 }
+reign:
+  - { start: -444, end: -395 }
+birthplace: unknown
+deathplace: anyi
+places:
+  - { place: anyi }
+  - { place: xihe }
+reviewed: false

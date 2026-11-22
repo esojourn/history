@@ -1,0 +1,14 @@
+id: zhou-muwang
+wikidata: null
+civ: china
+faction: zhou
+importance: 2
+birth: { unknown: true, approx: -1010, certainty: traditional, scheme: xsz }
+death: { year: -921, circa: true, certainty: traditional, scheme: xsz }
+reign:
+  - { start: -975, end: -921 }
+birthplace: unknown
+deathplace: haojing
+places:
+  - { place: haojing }
+reviewed: false

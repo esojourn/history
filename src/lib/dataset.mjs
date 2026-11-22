@@ -64,6 +64,9 @@ export function loadText(dir) {
 
 const isUnknown = v => v === 'unknown' || (v && typeof v === 'object' && v.unknown);
 const und = o => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== undefined && v !== null && v !== '' && !(Array.isArray(v) && !v.length)));
+// 确定度（plan.md 3）：整条或任一年份标了 legendary → 'l'，traditional → 't'；scheme 取第一个写了的
+const certOf = (...ds) => { const c = ds.map(d => d && typeof d === 'object' && d.certainty); return c.includes('legendary') ? 'l' : c.includes('traditional') ? 't' : undefined; };
+const schemeOf = (...ds) => (ds.find(d => d && typeof d === 'object' && d.scheme) || {}).scheme;
 const placeRef = v => (v == null ? undefined : v === 'unknown' ? 'unknown' : String(v));
 
 // 构建一个站点要生成上百个页面，每页都要这份数据；几秒内重复要就给同一份，不必每次重读几百个文件。
@@ -106,6 +109,7 @@ function compose(code) {
       bp: placeRef(p.birthplace), dp: placeRef(p.deathplace),
       pl: p.places === 'unknown' ? [] : (p.places || []).map(x => (typeof x === 'string' ? { p: x } : und({ p: x.place, s: x.start, e: x.end }))),
       wd: p.wikidata, rev: p.reviewed ? 1 : undefined, ns: p.noscale ? 1 : undefined,
+      cert: certOf(p, p.birth, p.death), sch: schemeOf(p, p.birth, p.death),
     });
   });
 
@@ -117,6 +121,7 @@ function compose(code) {
       who: (e.participants || []).map(x => x.person), sum: t.summary || '', body: (t.body || '').trim(), src: t.sources || [], rec: (t.recalled || []).length ? t.recalled : undefined,
       pl: e.places === 'unknown' ? ['unknown'] : (e.places || []).map(String),
       wd: e.wikidata, rev: e.reviewed ? 1 : undefined, ns: e.noscale ? 1 : undefined,
+      cert: certOf(e, e.start, e.end), sch: schemeOf(e, e.start, e.end),
     });
   });
   // who 为空数组时 und() 会去掉它，补回来，页面代码就不用到处判空

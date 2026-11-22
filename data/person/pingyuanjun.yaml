@@ -1,0 +1,12 @@
+id: pingyuanjun
+wikidata: null
+civ: china
+faction: zhao
+importance: 3
+birth: { unknown: true, approx: -308 }
+death: { year: -250 }
+birthplace: handan
+deathplace: handan
+places:
+  - { place: handan }
+reviewed: false

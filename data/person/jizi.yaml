@@ -1,0 +1,12 @@
+id: jizi
+wikidata: null
+civ: china
+faction: shang
+importance: 2
+birth: { unknown: true, approx: -1110, certainty: traditional }
+death: { unknown: true, approx: -1020, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: zhaoge }
+reviewed: false

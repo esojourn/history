@@ -1,0 +1,15 @@
+id: wei-huiwang
+wikidata: null
+civ: china
+faction: weiguo
+importance: 3
+birth: { year: -399 }
+death: { year: -318 }
+reign:
+  - { start: -368, end: -318 }
+birthplace: anyi
+deathplace: daliang
+places:
+  - { place: anyi }
+  - { place: daliang }
+reviewed: false

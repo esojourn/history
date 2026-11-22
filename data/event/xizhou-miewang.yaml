@@ -1,0 +1,12 @@
+id: xizhou-miewang
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: -770 }
+places: [haojing, lishan]
+participants:
+  - person: zhou-youwang
+  - person: baosi
+  - person: zhou-pingwang
+reviewed: false

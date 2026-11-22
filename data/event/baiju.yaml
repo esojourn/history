@@ -1,0 +1,12 @@
+id: baiju
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: -505 }
+places: [baiju, ying-chu]
+participants:
+  - person: helv
+  - person: wu-zixu
+  - person: sun-wu
+reviewed: false

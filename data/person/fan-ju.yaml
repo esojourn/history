@@ -1,0 +1,12 @@
+id: fan-ju
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth: { unknown: true, approx: -310 }
+death: { year: -254, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: xianyang }
+reviewed: false

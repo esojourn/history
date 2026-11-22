@@ -1,0 +1,13 @@
+id: shang-tang
+wikidata: null
+civ: china
+faction: shang
+importance: 4
+birth: { unknown: true, approx: -1670, certainty: traditional }
+death: { unknown: true, approx: -1585, certainty: traditional }
+birthplace: unknown
+deathplace: bo-shang
+places:
+  - { place: bo-shang }
+  - { place: mingtiao }
+reviewed: false

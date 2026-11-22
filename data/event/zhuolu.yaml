@@ -1,0 +1,13 @@
+id: zhuolu
+wikidata: null
+civ: china
+type: battle
+importance: 2
+era: five-emperors
+seq: 2
+certainty: legendary
+places: [zhuolu]
+participants:
+  - person: huangdi
+  - person: chiyou
+reviewed: false

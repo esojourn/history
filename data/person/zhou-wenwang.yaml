@@ -1,0 +1,13 @@
+id: zhou-wenwang
+wikidata: null
+civ: china
+faction: zhou
+importance: 4
+birth: { unknown: true, approx: -1150, certainty: traditional }
+death: { unknown: true, approx: -1050, certainty: traditional }
+birthplace: zhouyuan
+deathplace: fengjing
+places:
+  - { place: zhouyuan }
+  - { place: fengjing }
+reviewed: false

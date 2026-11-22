@@ -1,0 +1,14 @@
+id: zhougong
+wikidata: null
+civ: china
+faction: zhou
+importance: 5
+birth: { unknown: true, approx: -1085, certainty: traditional }
+death: { unknown: true, approx: -1030, certainty: traditional }
+birthplace: zhouyuan
+deathplace: fengjing
+places:
+  - { place: haojing }
+  - { place: luoyang }
+  - { place: fengjing }
+reviewed: false

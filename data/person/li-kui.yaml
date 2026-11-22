@@ -1,0 +1,12 @@
+id: li-kui
+wikidata: null
+civ: china
+faction: weiguo
+importance: 3
+birth: { unknown: true, approx: -455 }
+death: { unknown: true, approx: -395 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: anyi }
+reviewed: false

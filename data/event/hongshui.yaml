@@ -1,0 +1,10 @@
+id: hongshui
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -637 }
+places: [hongshui]
+participants:
+  - person: song-xianggong
+reviewed: false

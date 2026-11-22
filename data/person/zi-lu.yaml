@@ -1,0 +1,13 @@
+id: zi-lu
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 2
+birth: { year: -541 }
+death: { year: -479 }
+birthplace: unknown
+deathplace: puyang
+places:
+  - { place: lu }
+  - { place: puyang }
+reviewed: false

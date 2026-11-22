@@ -1,0 +1,11 @@
+id: qin-mie-bashu
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: -315 }
+places: [chengdu, ba-guo]
+participants:
+  - person: qin-huiwen
+  - person: zhang-yi
+reviewed: false

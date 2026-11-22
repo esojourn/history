@@ -1,0 +1,11 @@
+id: bi-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: -596 }
+places: [bi-zheng]
+participants:
+  - person: chu-zhuangwang
+  - person: sunshu-ao
+reviewed: false

@@ -1,0 +1,16 @@
+id: handan-zhiwei
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: -258 }
+end: { year: -256 }
+places: [handan]
+participants:
+  - person: xinlingjun
+  - person: pingyuanjun
+  - person: chunshenjun
+  - person: qin-zhaoxiang
+  - person: bai-qi
+  - person: fan-ju
+reviewed: false

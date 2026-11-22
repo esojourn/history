@@ -1,0 +1,12 @@
+id: tian-ji
+wikidata: null
+civ: china
+faction: qi
+importance: 2
+birth: { unknown: true, approx: -385 }
+death: { unknown: true, approx: -315 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: linzi }
+reviewed: false

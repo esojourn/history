@@ -1,0 +1,12 @@
+id: baili-xi
+wikidata: null
+civ: china
+faction: qin
+importance: 2
+birth: { unknown: true, approx: -725 }
+death: { unknown: true, approx: -640 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: yong-qin }
+reviewed: false

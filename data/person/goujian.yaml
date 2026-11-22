@@ -1,0 +1,15 @@
+id: goujian
+wikidata: null
+civ: china
+faction: yueguo
+importance: 4
+birth: { unknown: true, approx: -520 }
+death: { year: -464 }
+reign:
+  - { start: -495, end: -464 }
+birthplace: unknown
+deathplace: kuaiji
+places:
+  - { place: kuaiji }
+  - { place: wu }
+reviewed: false

@@ -1,0 +1,11 @@
+id: yique
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -292 }
+places: [longmen]
+participants:
+  - person: bai-qi
+  - person: qin-zhaoxiang
+reviewed: false

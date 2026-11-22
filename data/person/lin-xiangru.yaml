@@ -1,0 +1,14 @@
+id: lin-xiangru
+wikidata: null
+civ: china
+faction: zhao
+importance: 3
+birth: { unknown: true, approx: -320 }
+death: { unknown: true, approx: -255 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: handan }
+  - { place: xianyang }
+  - { place: mianchi, start: -278, end: -278 }
+reviewed: false

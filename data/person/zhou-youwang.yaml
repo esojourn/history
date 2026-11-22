@@ -1,0 +1,15 @@
+id: zhou-youwang
+wikidata: null
+civ: china
+faction: zhou
+importance: 3
+birth: { unknown: true, approx: -800 }
+death: { year: -770 }
+reign:
+  - { start: -780, end: -770 }
+birthplace: unknown
+deathplace: lishan
+places:
+  - { place: haojing }
+  - { place: lishan }
+reviewed: false

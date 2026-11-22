@@ -1,0 +1,14 @@
+id: di-xin
+wikidata: null
+civ: china
+faction: shang
+importance: 4
+birth: { unknown: true, approx: -1110, certainty: traditional, scheme: xsz }
+death: { year: -1045, circa: true, certainty: traditional, scheme: xsz }
+reign:
+  - { start: -1074, end: -1045 }
+birthplace: unknown
+deathplace: zhaoge
+places:
+  - { place: zhaoge }
+reviewed: false

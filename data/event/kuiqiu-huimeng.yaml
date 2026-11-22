@@ -1,0 +1,11 @@
+id: kuiqiu-huimeng
+wikidata: null
+civ: china
+type: diplomatic
+importance: 4
+start: { year: -650 }
+places: [kuiqiu]
+participants:
+  - person: qi-huangong
+  - person: guan-zhong
+reviewed: false

@@ -1,0 +1,10 @@
+id: xia-dynasty
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: -2069, circa: true, certainty: traditional, scheme: xsz }
+places: [yangcheng, yangzhai]
+participants:
+  - person: xia-qi
+reviewed: false

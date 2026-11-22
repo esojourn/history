@@ -1,0 +1,14 @@
+id: chunshenjun
+wikidata: null
+civ: china
+faction: chu
+importance: 3
+birth: { unknown: true, approx: -314 }
+death: { year: -237 }
+birthplace: unknown
+deathplace: shouchun
+places:
+  - { place: chen }
+  - { place: wu }
+  - { place: shouchun }
+reviewed: false

@@ -1,0 +1,13 @@
+id: wu-zixu
+wikidata: null
+civ: china
+faction: wuguo
+importance: 4
+birth: { unknown: true, approx: -559 }
+death: { year: -483 }
+birthplace: unknown
+deathplace: wu
+places:
+  - { place: ying-chu }
+  - { place: wu }
+reviewed: false

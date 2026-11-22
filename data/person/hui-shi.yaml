@@ -1,0 +1,12 @@
+id: hui-shi
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 2
+birth: { unknown: true, approx: -370 }
+death: { unknown: true, approx: -310 }
+birthplace: suiyang
+deathplace: unknown
+places:
+  - { place: daliang }
+reviewed: false

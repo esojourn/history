@@ -1,0 +1,10 @@
+id: zhu-xingshu
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: -535 }
+places: [xinzheng]
+participants:
+  - person: zichan
+reviewed: false

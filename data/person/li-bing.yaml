@@ -1,0 +1,13 @@
+id: li-bing
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth: { unknown: true, approx: -300 }
+death: { unknown: true, approx: -235 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: chengdu }
+  - { place: dujiangyan }
+reviewed: false

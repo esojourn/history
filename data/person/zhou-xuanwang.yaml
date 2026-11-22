@@ -1,0 +1,14 @@
+id: zhou-xuanwang
+wikidata: null
+civ: china
+faction: zhou
+importance: 3
+birth: { unknown: true, approx: -850 }
+death: { year: -781 }
+reign:
+  - { start: -826, end: -781 }
+birthplace: unknown
+deathplace: haojing
+places:
+  - { place: haojing }
+reviewed: false

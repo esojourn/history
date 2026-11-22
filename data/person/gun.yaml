@@ -1,0 +1,13 @@
+id: gun
+wikidata: null
+civ: china
+faction: wudi
+importance: 2
+era: five-emperors
+seq: [6, 7]
+certainty: legendary
+birthplace: unknown
+deathplace: yushan
+places:
+  - { place: yushan }
+reviewed: false

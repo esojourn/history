@@ -1,0 +1,13 @@
+id: jie
+wikidata: null
+civ: china
+faction: xiachao
+importance: 3
+birth: { unknown: true, approx: -1650, certainty: traditional }
+death: { unknown: true, approx: -1597, certainty: traditional }
+birthplace: unknown
+deathplace: nanchao
+places:
+  - { place: erlitou }
+  - { place: mingtiao }
+reviewed: false

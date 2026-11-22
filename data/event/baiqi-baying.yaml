@@ -1,0 +1,13 @@
+id: baiqi-baying
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: -278 }
+end: { year: -277 }
+places: [yan-chu, ying-chu]
+participants:
+  - person: bai-qi
+  - person: qin-zhaoxiang
+  - person: qu-yuan
+reviewed: false

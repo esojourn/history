@@ -1,0 +1,13 @@
+id: banquan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+era: five-emperors
+seq: 1
+certainty: legendary
+places: [banquan]
+participants:
+  - person: huangdi
+  - person: yandi
+reviewed: false

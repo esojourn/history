@@ -130,6 +130,48 @@
 - id: shatuo
   civ: china
   color: "#7C5C7A"
+- id: wudi
+  civ: china
+  color: "#9A8C78"
+- id: xiachao
+  civ: china
+  color: "#7D6B4F"
+- id: shang
+  civ: china
+  color: "#8A5A2B"
+- id: zhou
+  civ: china
+  color: "#A23B3B"
+- id: qi
+  civ: china
+  color: "#2E7D9A"
+- id: jinguo
+  civ: china
+  color: "#5D4E8C"
+- id: wuguo
+  civ: china
+  color: "#C08A2E"
+- id: yueguo
+  civ: china
+  color: "#4A8C5C"
+- id: zhuhou
+  civ: china
+  color: "#7F7F7F"
+- id: weiguo
+  civ: china
+  color: "#3B6EA5"
+- id: zhao
+  civ: china
+  color: "#9C5B8A"
+- id: hanguo
+  civ: china
+  color: "#B06A4A"
+- id: yanguo
+  civ: china
+  color: "#4F7F8F"
+- id: zhuzi
+  civ: china
+  color: "#B5851A"
 - id: israel
   civ: bible
   color: "#3F8A3A"

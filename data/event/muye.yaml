@@ -1,0 +1,13 @@
+id: muye
+wikidata: null
+civ: china
+type: battle
+importance: 5
+start: { year: -1045, circa: true, certainty: traditional, scheme: xsz }
+places: [muye, zhaoge]
+participants:
+  - person: zhou-wuwang
+  - person: di-xin
+  - person: jiang-taigong
+  - person: zhougong
+reviewed: false

@@ -1,0 +1,14 @@
+id: pang-juan
+wikidata: null
+civ: china
+faction: weiguo
+importance: 2
+birth: { unknown: true, approx: -390 }
+death: { year: -341 }
+birthplace: unknown
+deathplace: maling
+places:
+  - { place: daliang }
+  - { place: guiling, start: -353, end: -353 }
+  - { place: maling, start: -341, end: -341 }
+reviewed: false

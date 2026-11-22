@@ -1,0 +1,12 @@
+id: yan-hui
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 2
+birth: { year: -520, circa: true }
+death: { year: -480, circa: true }
+birthplace: lu
+deathplace: lu
+places:
+  - { place: lu }
+reviewed: false

@@ -1,0 +1,10 @@
+id: shaqiu-gongbian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: -294 }
+places: [shaqiu]
+participants:
+  - person: zhao-wulingwang
+reviewed: false

@@ -1,0 +1,15 @@
+id: qi-huangong
+wikidata: null
+civ: china
+faction: qi
+importance: 4
+birth: { unknown: true, approx: -715 }
+death: { year: -642 }
+reign:
+  - { start: -684, end: -642 }
+birthplace: linzi
+deathplace: linzi
+places:
+  - { place: linzi }
+  - { place: kuiqiu, start: -650, end: -650 }
+reviewed: false

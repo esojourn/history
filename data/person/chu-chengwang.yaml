@@ -1,0 +1,14 @@
+id: chu-chengwang
+wikidata: null
+civ: china
+faction: chu
+importance: 2
+birth: { unknown: true, approx: -690 }
+death: { year: -625 }
+reign:
+  - { start: -670, end: -625 }
+birthplace: ying-chu
+deathplace: ying-chu
+places:
+  - { place: ying-chu }
+reviewed: false

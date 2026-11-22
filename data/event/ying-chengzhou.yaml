@@ -1,0 +1,12 @@
+id: ying-chengzhou
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: -1037, circa: true, certainty: traditional, scheme: xsz }
+places: [luoyang]
+participants:
+  - person: zhougong
+  - person: zhou-chengwang
+  - person: shaogong
+reviewed: false

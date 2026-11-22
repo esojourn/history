@@ -1,0 +1,12 @@
+id: zichan
+wikidata: null
+civ: china
+faction: zhuhou
+importance: 3
+birth: { unknown: true, approx: -580 }
+death: { year: -521 }
+birthplace: unknown
+deathplace: xinzheng
+places:
+  - { place: xinzheng }
+reviewed: false

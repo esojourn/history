@@ -1,0 +1,14 @@
+id: yan-zhaowang
+wikidata: null
+civ: china
+faction: yanguo
+importance: 3
+birth: { unknown: true, approx: -335 }
+death: { year: -278 }
+reign:
+  - { start: -310, end: -278 }
+birthplace: ji
+deathplace: ji
+places:
+  - { place: ji }
+reviewed: false

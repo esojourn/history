@@ -1,0 +1,15 @@
+id: qin-mugong
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth: { unknown: true, approx: -685 }
+death: { year: -620 }
+reign:
+  - { start: -658, end: -620 }
+birthplace: yong-qin
+deathplace: yong-qin
+places:
+  - { place: yong-qin }
+  - { place: xiao-shan, start: -626, end: -626 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: guoren-baodong
+wikidata: null
+civ: china
+type: uprising
+importance: 5
+start: { year: -840 }
+end: { year: -827 }
+places: [haojing, zhi-huozhou]
+participants:
+  - person: zhou-liwang
+  - person: zhou-xuanwang
+reviewed: false

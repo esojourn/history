@@ -1,0 +1,13 @@
+id: wu-qi
+wikidata: null
+civ: china
+faction: weiguo
+importance: 4
+birth: { unknown: true, approx: -440 }
+death: { year: -380 }
+birthplace: unknown
+deathplace: ying-chu
+places:
+  - { place: xihe }
+  - { place: ying-chu }
+reviewed: false

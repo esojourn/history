@@ -1,0 +1,15 @@
+id: zhou-chengwang
+wikidata: null
+civ: china
+faction: zhou
+importance: 3
+birth: { unknown: true, approx: -1055, certainty: traditional, scheme: xsz }
+death: { year: -1020, circa: true, certainty: traditional, scheme: xsz }
+reign:
+  - { start: -1041, end: -1020 }
+birthplace: unknown
+deathplace: haojing
+places:
+  - { place: haojing }
+  - { place: luoyang }
+reviewed: false

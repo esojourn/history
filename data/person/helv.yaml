@@ -1,0 +1,16 @@
+id: helv
+wikidata: null
+civ: china
+faction: wuguo
+importance: 3
+birth: { unknown: true, approx: -545 }
+death: { year: -495 }
+reign:
+  - { start: -513, end: -495 }
+birthplace: unknown
+deathplace: zuili
+places:
+  - { place: wu }
+  - { place: baiju, start: -505, end: -505 }
+  - { place: zuili, start: -495, end: -495 }
+reviewed: false

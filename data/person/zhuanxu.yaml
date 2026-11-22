@@ -1,0 +1,13 @@
+id: zhuanxu
+wikidata: null
+civ: china
+faction: wudi
+importance: 2
+era: five-emperors
+seq: [3, 4]
+certainty: legendary
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: puyang }
+reviewed: false

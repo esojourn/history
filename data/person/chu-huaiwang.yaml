@@ -1,0 +1,15 @@
+id: chu-huaiwang
+wikidata: null
+civ: china
+faction: chu
+importance: 3
+birth: { unknown: true, approx: -355 }
+death: { year: -295 }
+reign:
+  - { start: -327, end: -298 }
+birthplace: ying-chu
+deathplace: xianyang
+places:
+  - { place: ying-chu }
+  - { place: xianyang }
+reviewed: false

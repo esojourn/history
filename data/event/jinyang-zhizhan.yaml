@@ -1,0 +1,12 @@
+id: jinyang-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: -454 }
+end: { year: -452 }
+places: [jinyang]
+participants:
+  - person: zhibo
+  - person: zhao-xiangzi
+reviewed: false

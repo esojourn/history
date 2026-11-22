@@ -1,0 +1,13 @@
+id: zi-gong
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 2
+birth: { year: -519 }
+death: { unknown: true, approx: -446 }
+birthplace: puyang
+deathplace: unknown
+places:
+  - { place: lu }
+  - { place: puyang }
+reviewed: false

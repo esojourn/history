@@ -1,0 +1,15 @@
+id: zhouchu-fenfeng
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: -1045, circa: true, certainty: traditional, scheme: xsz }
+end: { year: -1020, circa: true, certainty: traditional, scheme: xsz }
+places: [haojing, lu, linzi, yan]
+participants:
+  - person: zhou-wuwang
+  - person: zhougong
+  - person: jiang-taigong
+  - person: shaogong
+  - person: zhou-chengwang
+reviewed: false

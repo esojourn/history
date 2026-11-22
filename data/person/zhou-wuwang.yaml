@@ -1,0 +1,16 @@
+id: zhou-wuwang
+wikidata: null
+civ: china
+faction: zhou
+importance: 5
+birth: { unknown: true, approx: -1090, certainty: traditional, scheme: xsz }
+death: { year: -1042, circa: true, certainty: traditional, scheme: xsz }
+reign:
+  - { start: -1045, end: -1042 }
+birthplace: zhouyuan
+deathplace: haojing
+places:
+  - { place: fengjing }
+  - { place: haojing }
+  - { place: muye }
+reviewed: false

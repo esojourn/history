@@ -1,0 +1,11 @@
+id: wanbi-guizhao
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: -282 }
+places: [xianyang, handan]
+participants:
+  - person: lin-xiangru
+  - person: qin-zhaoxiang
+reviewed: false

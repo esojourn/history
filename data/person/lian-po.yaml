@@ -1,0 +1,15 @@
+id: lian-po
+wikidata: null
+civ: china
+faction: zhao
+importance: 4
+birth: { unknown: true, approx: -327 }
+death: { unknown: true, approx: -243 }
+birthplace: unknown
+deathplace: shouchun
+places:
+  - { place: handan }
+  - { place: changping, start: -261, end: -259 }
+  - { place: daliang }
+  - { place: shouchun }
+reviewed: false

@@ -1,0 +1,11 @@
+id: wuqi-bianfa
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: -385, circa: true }
+end: { year: -380 }
+places: [ying-chu]
+participants:
+  - person: wu-qi
+reviewed: false

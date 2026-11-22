@@ -1,0 +1,13 @@
+id: dayu-zhishui
+wikidata: null
+civ: china
+type: political
+importance: 4
+era: five-emperors
+seq: 8
+certainty: legendary
+places: [yangcheng]
+participants:
+  - person: yu
+  - person: shun
+reviewed: false

@@ -1,0 +1,13 @@
+id: han-fei
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 4
+birth: { year: -279, circa: true }
+death: { year: -232 }
+birthplace: xinzheng
+deathplace: yunyang
+places:
+  - { place: xinzheng }
+  - { place: xianyang }
+reviewed: false

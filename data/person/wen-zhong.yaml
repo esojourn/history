@@ -1,0 +1,12 @@
+id: wen-zhong
+wikidata: null
+civ: china
+faction: yueguo
+importance: 2
+birth: { unknown: true, approx: -530 }
+death: { unknown: true, approx: -470 }
+birthplace: unknown
+deathplace: kuaiji
+places:
+  - { place: kuaiji }
+reviewed: false

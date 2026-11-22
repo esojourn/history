@@ -1,0 +1,10 @@
+id: xiao-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -626 }
+places: [xiao-shan]
+participants:
+  - person: qin-mugong
+reviewed: false

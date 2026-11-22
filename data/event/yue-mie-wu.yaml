@@ -1,0 +1,14 @@
+id: yue-mie-wu
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: -474 }
+end: { year: -472 }
+places: [wu]
+participants:
+  - person: goujian
+  - person: fuchai
+  - person: fan-li
+  - person: wen-zhong
+reviewed: false

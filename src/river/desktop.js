@@ -107,7 +107,7 @@ export function desktop(H, card, search) {
         if (Math.max(x2, x1 + 12 + e.n.length * 12.5) < G || x1 > W) return;
         const xa = Math.min(Math.max(x1, G + 10), Math.max(x2 - 20, x1));   // 从左边延伸进来的时间段，标记贴着左缘
         const dim = (selP && !e.who.includes(selP)) || (selE && e !== selE);
-        o.push(`<g class="ev" data-e="${e.id}" opacity="${dim ? .22 : 1}">${e.e > e.s ? `<rect x="${x1}" y="${Y + 14}" width="${x2 - x1}" height="3" fill="var(--ink)"/>` : ''}<path d="M${xa} ${Y + 1}l5 5-5 5-5-5z" fill="var(--ink)"/><text class="en" x="${xa + 9}" y="${Y + 10.5}"${e === selE ? ' font-weight="700"' : ''}>${e.n}</text></g>`);
+        o.push(`<g class="ev" data-e="${e.id}" opacity="${dim ? .22 : 1}">${e.e > e.s ? `<rect x="${x1}" y="${Y + 14}" width="${x2 - x1}" height="3" fill="var(--ink)"/>` : ''}<path d="M${xa} ${Y + 1}l5 5-5 5-5-5z"${e.cert || e.ns ? ' fill="var(--paper)" stroke="var(--ink)" stroke-width="1.2"' : ' fill="var(--ink)"'}/><text class="en" x="${xa + 9}" y="${Y + 10.5}"${e === selE ? ' font-weight="700"' : ''}>${e.n}</text></g>`);
       });
 
       // 人物：一人一根生卒条
@@ -117,7 +117,7 @@ export function desktop(H, card, search) {
         POS[p.id] = Y + 8;
         if (X2 < G || X1 > W) return;
         o.push(`<g class="pp${p.id === selP ? ' sel' : ''}" data-p="${p.id}" opacity="${!S.sel || hot(p) ? 1 : .13}">
-          <rect x="${X1}" y="${Y}" width="${X2 - X1}" height="16" rx="3" fill="${fade || c}" fill-opacity="${fade ? 1 : .2}"${p.id === selP ? ` stroke="${c}" stroke-width="1.5"` : p.ns ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".7"` : ''}/>
+          <rect x="${X1}" y="${Y}" width="${X2 - X1}" height="16" rx="3" fill="${fade || c}" fill-opacity="${fade ? 1 : .2}"${p.id === selP ? ` stroke="${c}" stroke-width="1.5"` : p.ns || p.cert ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".7"` : ''}/>
           ${p.reigns.map(rg => `<rect x="${x(rg[0])}" y="${Y + 13}" width="${x(rg[1]) - x(rg[0])}" height="3" fill="${c}"/>`).join('')}
           <text class="pn" x="${Math.max(X1, G) + 6}" y="${Y + 12}">${p.n}${rel ? `<tspan class="rl" dx="7" fill="${H.RT[rel.t].c}">${rel.label}</tspan>` : ''}</text></g>`);
       });

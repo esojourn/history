@@ -1,0 +1,14 @@
+id: leyi-faqi
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: -283 }
+end: { year: -279 }
+places: [linzi, jimo]
+participants:
+  - person: le-yi
+  - person: yan-zhaowang
+  - person: su-qin
+  - person: mengchangjun
+reviewed: false

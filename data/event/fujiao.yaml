@@ -1,0 +1,14 @@
+id: fujiao
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -493 }
+places: [fujiao, kuaiji]
+participants:
+  - person: fuchai
+  - person: goujian
+  - person: wu-zixu
+  - person: wen-zhong
+  - person: fan-li
+reviewed: false

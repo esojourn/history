@@ -1,0 +1,12 @@
+id: guan-zhong
+wikidata: null
+civ: china
+faction: qi
+importance: 4
+birth: { unknown: true, approx: -720 }
+death: { year: -644 }
+birthplace: yingshang
+deathplace: linzi
+places:
+  - { place: linzi }
+reviewed: false

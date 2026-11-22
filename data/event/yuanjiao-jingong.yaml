@@ -1,0 +1,11 @@
+id: yuanjiao-jingong
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: -265 }
+places: [xianyang]
+participants:
+  - person: fan-ju
+  - person: qin-zhaoxiang
+reviewed: false

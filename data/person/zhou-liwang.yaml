@@ -1,0 +1,15 @@
+id: zhou-liwang
+wikidata: null
+civ: china
+faction: zhou
+importance: 3
+birth: { unknown: true, approx: -900, certainty: traditional, scheme: xsz }
+death: { year: -827, certainty: traditional, scheme: xsz }
+reign:
+  - { start: -876, end: -840 }
+birthplace: unknown
+deathplace: zhi-huozhou
+places:
+  - { place: haojing }
+  - { place: zhi-huozhou }
+reviewed: false

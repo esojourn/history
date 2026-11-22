@@ -1,0 +1,15 @@
+id: zheng-zhuanggong
+wikidata: null
+civ: china
+faction: zhuhou
+importance: 3
+birth: { year: -756 }
+death: { year: -700 }
+reign:
+  - { start: -742, end: -700 }
+birthplace: xinzheng
+deathplace: xinzheng
+places:
+  - { place: xinzheng }
+  - { place: xuge, start: -706, end: -706 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: xunzi
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 4
+birth: { year: -312, circa: true }
+death: { year: -237, circa: true }
+birthplace: unknown
+deathplace: lanling
+places:
+  - { place: linzi }
+  - { place: lanling }
+reviewed: false

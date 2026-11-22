@@ -1,0 +1,10 @@
+id: pingwang-dongqian
+wikidata: null
+civ: china
+type: migration
+importance: 5
+start: { year: -769 }
+places: [haojing, luoyang]
+participants:
+  - person: zhou-pingwang
+reviewed: false

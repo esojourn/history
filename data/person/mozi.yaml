@@ -1,0 +1,14 @@
+id: mozi
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 4
+birth: { unknown: true, approx: -475 }
+death: { unknown: true, approx: -395 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: lu }
+  - { place: suiyang }
+  - { place: ying-chu }
+reviewed: false

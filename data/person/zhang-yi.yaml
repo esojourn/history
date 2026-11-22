@@ -1,0 +1,13 @@
+id: zhang-yi
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth: { unknown: true, approx: -360 }
+death: { year: -308 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: xianyang }
+  - { place: daliang }
+reviewed: false

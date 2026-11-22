@@ -1,0 +1,14 @@
+id: zhou-nanwang
+wikidata: null
+civ: china
+faction: zhou
+importance: 3
+birth: { unknown: true, approx: -340 }
+death: { year: -255 }
+reign:
+  - { start: -313, end: -255 }
+birthplace: luoyang
+deathplace: luoyang
+places:
+  - { place: luoyang }
+reviewed: false

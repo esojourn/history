@@ -1,0 +1,14 @@
+id: chu-pingwang
+wikidata: null
+civ: china
+faction: chu
+importance: 2
+birth: { unknown: true, approx: -560 }
+death: { year: -515 }
+reign:
+  - { start: -527, end: -515 }
+birthplace: unknown
+deathplace: ying-chu
+places:
+  - { place: ying-chu }
+reviewed: false

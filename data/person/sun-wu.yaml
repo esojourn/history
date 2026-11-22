@@ -1,0 +1,12 @@
+id: sun-wu
+wikidata: null
+civ: china
+faction: wuguo
+importance: 4
+birth: { unknown: true, approx: -545 }
+death: { unknown: true, approx: -470 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: wu }
+reviewed: false

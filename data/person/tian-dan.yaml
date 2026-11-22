@@ -1,0 +1,13 @@
+id: tian-dan
+wikidata: null
+civ: china
+faction: qi
+importance: 3
+birth: { unknown: true, approx: -320 }
+death: { unknown: true, approx: -250 }
+birthplace: linzi
+deathplace: unknown
+places:
+  - { place: linzi }
+  - { place: jimo }
+reviewed: false

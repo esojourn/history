@@ -1,0 +1,11 @@
+id: dujiangyan
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: -255, circa: true }
+places: [dujiangyan, chengdu]
+participants:
+  - person: li-bing
+  - person: qin-zhaoxiang
+reviewed: false

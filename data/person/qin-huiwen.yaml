@@ -1,0 +1,14 @@
+id: qin-huiwen
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth: { year: -355 }
+death: { year: -310 }
+reign:
+  - { start: -336, end: -310 }
+birthplace: yueyang
+deathplace: xianyang
+places:
+  - { place: xianyang }
+reviewed: false

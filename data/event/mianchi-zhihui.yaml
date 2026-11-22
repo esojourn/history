@@ -1,0 +1,12 @@
+id: mianchi-zhihui
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: -278 }
+places: [mianchi]
+participants:
+  - person: lin-xiangru
+  - person: lian-po
+  - person: qin-zhaoxiang
+reviewed: false

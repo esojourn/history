@@ -1,0 +1,12 @@
+id: sunshu-ao
+wikidata: null
+civ: china
+faction: chu
+importance: 2
+birth: { unknown: true, approx: -630 }
+death: { unknown: true, approx: -590 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ying-chu }
+reviewed: false

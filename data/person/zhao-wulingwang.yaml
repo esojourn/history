@@ -1,0 +1,15 @@
+id: zhao-wulingwang
+wikidata: null
+civ: china
+faction: zhao
+importance: 4
+birth: { unknown: true, approx: -340 }
+death: { year: -294 }
+reign:
+  - { start: -324, end: -298 }
+birthplace: handan
+deathplace: shaqiu
+places:
+  - { place: handan }
+  - { place: shaqiu }
+reviewed: false

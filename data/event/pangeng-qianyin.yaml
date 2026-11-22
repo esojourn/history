@@ -1,0 +1,10 @@
+id: pangeng-qianyin
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: -1299, circa: true, certainty: traditional, scheme: xsz }
+places: [yinxu]
+participants:
+  - person: pangeng
+reviewed: false

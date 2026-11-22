@@ -1,0 +1,8 @@
+id: mibing-zhihui
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: -545 }
+places: [suiyang]
+reviewed: false

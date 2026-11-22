@@ -1,0 +1,15 @@
+id: jin-wengong
+wikidata: null
+civ: china
+faction: jinguo
+importance: 4
+birth: { year: -696, circa: true }
+death: { year: -627 }
+reign:
+  - { start: -635, end: -627 }
+birthplace: jiang-jin
+deathplace: jiang-jin
+places:
+  - { place: jiang-jin }
+  - { place: chengpu, start: -631, end: -631 }
+reviewed: false

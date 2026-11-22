@@ -99,6 +99,7 @@ mark { background: color-mix(in srgb, var(--huang) 36%, transparent); color: inh
 .d-who a { font: calc(19px * var(--fz)) var(--kai); font-weight: 400; }
 .d-bar a { font-size: calc(12px * var(--fz)); color: var(--qing); text-underline-offset: 3px; white-space: nowrap; }
 
+.d-cert { margin: -4px 0 10px; color: var(--ink-2); font-size: calc(12.5px * var(--fz)); border-left: 2px dashed var(--ink-2); padding-left: 8px; }
 .d-where { margin: -4px 0 10px; color: var(--ink-2); font-size: calc(13px * var(--fz)); }
 .detail.full .d-where { font-size: calc(14px * var(--fz)); margin: 0 0 4px; }
 .d-places li { display: grid; grid-template-columns: 7.5em 1fr; gap: 0 8px; padding: 5px 0; border-bottom: 1px solid var(--line); }

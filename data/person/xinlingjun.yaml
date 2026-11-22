@@ -1,0 +1,13 @@
+id: xinlingjun
+wikidata: null
+civ: china
+faction: weiguo
+importance: 4
+birth: { unknown: true, approx: -300 }
+death: { year: -242 }
+birthplace: daliang
+deathplace: daliang
+places:
+  - { place: daliang }
+  - { place: handan, start: -256, end: -246 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: maling
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: -341 }
+places: [maling]
+participants:
+  - person: sun-bin
+  - person: tian-ji
+  - person: pang-juan
+  - person: wei-huiwang
+  - person: qi-weiwang
+reviewed: false

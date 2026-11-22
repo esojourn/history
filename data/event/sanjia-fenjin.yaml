@@ -1,0 +1,10 @@
+id: sanjia-fenjin
+wikidata: null
+civ: china
+type: political
+importance: 5
+start: { year: -402 }
+places: [luoyang, anyi, jinyang]
+participants:
+  - person: wei-wenhou
+reviewed: false

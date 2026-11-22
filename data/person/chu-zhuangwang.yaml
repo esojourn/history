@@ -1,0 +1,15 @@
+id: chu-zhuangwang
+wikidata: null
+civ: china
+faction: chu
+importance: 4
+birth: { unknown: true, approx: -630 }
+death: { year: -590 }
+reign:
+  - { start: -612, end: -590 }
+birthplace: ying-chu
+deathplace: ying-chu
+places:
+  - { place: ying-chu }
+  - { place: bi-zheng, start: -596, end: -596 }
+reviewed: false

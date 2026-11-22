@@ -1,0 +1,14 @@
+id: huangdi
+wikidata: null
+civ: china
+faction: wudi
+importance: 4
+era: five-emperors
+seq: [1, 3]
+certainty: legendary
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: banquan }
+  - { place: zhuolu }
+reviewed: false

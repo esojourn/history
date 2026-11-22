@@ -1,0 +1,12 @@
+id: wuguo-gongqin
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: -317 }
+places: [xianyang]
+participants:
+  - person: chu-huaiwang
+  - person: qin-huiwen
+  - person: zhang-yi
+reviewed: false

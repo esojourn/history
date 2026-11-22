@@ -17,6 +17,8 @@ export function makeCard(H) {
   const wrap = s => `<div class="d-wrap">${s}</div>`;
   const pLink = (p, cls = '') => `<a href="${H.url('person', p.id)}" data-go="${p.id}"${cls ? ` class="${cls}"` : ''}>`;
   const eLink = e => `<a href="${H.url('event', e.id)}" data-goe="${e.id}">`;
+  // 传说、传统说法的年代：在年份下面注明口径（plan.md 3）
+  const certNote = x => (x.cert ? `<p class="d-cert">${t('cert.' + x.cert)}${x.sch && x.cert === 't' ? t('cert.' + x.sch) : ''}</p>` : '');
   // 人物另属某个阵营（如北国以色列、南国犹大）时，在泳道名后注明，说明时间轴上那根条的颜色
   const laneTag = (id, fac) => { const l = H.lane(id), f = fac && fac !== id && H.FAC[fac];
     return `<p class="d-lane"><i style="background:${l.c}"></i>${l.name}${f ? `<span class="d-fac"><i style="background:${f.c}"></i>${f.n}</span>` : ''}</p>`; };
@@ -66,7 +68,7 @@ export function makeCard(H) {
     const where = [p.bp && placeShort(p.bp) && p.bp !== 'unknown' ? t('card.born', { place: placeShort(p.bp) }) : '',
       p.dp && placeShort(p.dp) && p.dp !== 'unknown' ? t('card.died', { place: placeShort(p.dp) }) : ''].filter(Boolean).join('，');
     const top = `${bar(o, 'person', id)}<div class="d-head"><${o.page ? 'h1' : 'h2'}>${p.n}</${o.page ? 'h1' : 'h2'}>${p.alt ? `<span class="d-alt">${p.alt}</span>` : ''}</div>${laneTag(p.lane, p.fac)}
-      <p class="d-meta"><b>${H.life(p)}</b>${lived}　${p.role}${reign}</p>${where ? `<p class="d-where">${where}</p>` : ''}`;
+      <p class="d-meta"><b>${H.life(p)}</b>${lived}　${p.role}${reign}</p>${certNote(p)}${where ? `<p class="d-where">${where}</p>` : ''}`;
     const text = `<p class="d-sum">${esc(p.sum)}</p>${paras(p.body)}`;
 
     if (!o.full) return wrap(top + text +
@@ -111,7 +113,7 @@ export function makeCard(H) {
     const e = H.E[id], who = e.who.map(w => H.P[w]).filter(Boolean);
     const at = e.pl.filter(x => x !== 'unknown' && H.places[x]).map(x => H.places[x].n).join('、');
     const top = `${bar(o, 'event', id)}<div class="d-head"><${o.page ? 'h1' : 'h2'}>${e.n}</${o.page ? 'h1' : 'h2'}></div>${laneTag(e.lane)}
-      <p class="d-meta"><b>${H.span(e)}</b>${e.e > e.s ? '，' + t('card.duration', { n: e.e - e.s }) : ''}</p>${at ? `<p class="d-where">${t('card.at', { place: at })}</p>` : ''}`;
+      <p class="d-meta"><b>${H.span(e)}</b>${e.e > e.s ? '，' + t('card.duration', { n: e.e - e.s }) : ''}</p>${certNote(e)}${at ? `<p class="d-where">${t('card.at', { place: at })}</p>` : ''}`;
     const text = `<p class="d-sum">${esc(e.sum)}</p>${paras(e.body)}`;
 
     if (!o.full) return wrap(top + text +

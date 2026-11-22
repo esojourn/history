@@ -1,0 +1,12 @@
+id: shangyang-bianfa
+wikidata: null
+civ: china
+type: political
+importance: 5
+start: { year: -355 }
+end: { year: -349 }
+places: [yueyang, xianyang]
+participants:
+  - person: shang-yang
+  - person: qin-xiaogong
+reviewed: false

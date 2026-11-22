@@ -1,0 +1,14 @@
+id: lv-buwei
+wikidata: null
+civ: china
+faction: qin
+importance: 4
+birth: { unknown: true, approx: -292 }
+death: { year: -234 }
+birthplace: yangzhai
+deathplace: luoyang
+places:
+  - { place: handan }
+  - { place: xianyang }
+  - { place: luoyang }
+reviewed: false

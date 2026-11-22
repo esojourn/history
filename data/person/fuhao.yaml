@@ -1,0 +1,12 @@
+id: fuhao
+wikidata: null
+civ: china
+faction: shang
+importance: 3
+birth: { unknown: true, approx: -1265, certainty: traditional }
+death: { unknown: true, approx: -1215, certainty: traditional }
+birthplace: unknown
+deathplace: yinxu
+places:
+  - { place: yinxu }
+reviewed: false

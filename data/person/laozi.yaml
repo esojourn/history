@@ -1,0 +1,12 @@
+id: laozi
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 5
+birth: { unknown: true, approx: -575 }
+death: { unknown: true, approx: -480 }
+birthplace: kuxian
+deathplace: unknown
+places:
+  - { place: luoyang }
+reviewed: false

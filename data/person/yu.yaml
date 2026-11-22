@@ -1,0 +1,15 @@
+id: yu
+wikidata: null
+civ: china
+faction: xiachao
+importance: 5
+era: five-emperors
+seq: [7, 10]
+certainty: legendary
+birthplace: unknown
+deathplace: kuaiji
+places:
+  - { place: yangcheng }
+  - { place: tushan }
+  - { place: kuaiji }
+reviewed: false

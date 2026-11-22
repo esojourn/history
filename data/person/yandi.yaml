@@ -1,0 +1,13 @@
+id: yandi
+wikidata: null
+civ: china
+faction: wudi
+importance: 2
+era: five-emperors
+seq: [1, 1]
+certainty: legendary
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: banquan }
+reviewed: false

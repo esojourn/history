@@ -1,0 +1,12 @@
+id: mingtiao
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: -1599, circa: true, certainty: traditional, scheme: xsz }
+places: [mingtiao]
+participants:
+  - person: shang-tang
+  - person: yi-yin
+  - person: jie
+reviewed: false

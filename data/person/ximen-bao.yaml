@@ -1,0 +1,12 @@
+id: ximen-bao
+wikidata: null
+civ: china
+faction: weiguo
+importance: 2
+birth: { unknown: true, approx: -460 }
+death: { unknown: true, approx: -390 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ye }
+reviewed: false

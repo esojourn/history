@@ -1,0 +1,11 @@
+id: huangchi-zhihui
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: -481 }
+places: [huangchi]
+participants:
+  - person: fuchai
+  - person: goujian
+reviewed: false

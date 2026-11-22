@@ -1,0 +1,13 @@
+id: fan-li
+wikidata: null
+civ: china
+faction: yueguo
+importance: 3
+birth: { unknown: true, approx: -536 }
+death: { unknown: true, approx: -448 }
+birthplace: nanyang
+deathplace: dingtao
+places:
+  - { place: kuaiji }
+  - { place: dingtao }
+reviewed: false

@@ -1,0 +1,13 @@
+id: le-yi
+wikidata: null
+civ: china
+faction: yanguo
+importance: 3
+birth: { unknown: true, approx: -320 }
+death: { unknown: true, approx: -255 }
+birthplace: zhongshan
+deathplace: unknown
+places:
+  - { place: ji }
+  - { place: linzi }
+reviewed: false

@@ -1,0 +1,13 @@
+id: zhibo
+wikidata: null
+civ: china
+faction: jinguo
+importance: 2
+birth: { unknown: true, approx: -506 }
+death: { year: -452 }
+birthplace: unknown
+deathplace: jinyang
+places:
+  - { place: jiang-jin }
+  - { place: jinyang, start: -454, end: -452 }
+reviewed: false

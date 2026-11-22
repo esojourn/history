@@ -1,0 +1,14 @@
+id: shun
+wikidata: null
+civ: china
+faction: wudi
+importance: 4
+era: five-emperors
+seq: [6, 9]
+certainty: legendary
+birthplace: unknown
+deathplace: cangwu
+places:
+  - { place: puban }
+  - { place: cangwu }
+reviewed: false

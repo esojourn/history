@@ -1,0 +1,12 @@
+id: shen-buhai
+wikidata: null
+civ: china
+faction: hanguo
+importance: 2
+birth: { year: -384, circa: true }
+death: { year: -336 }
+birthplace: unknown
+deathplace: xinzheng
+places:
+  - { place: xinzheng }
+reviewed: false

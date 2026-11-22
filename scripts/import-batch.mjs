@@ -6,6 +6,9 @@
 //   k: p  人物   id fac? imp b d reign? bp dp pl name al role sum body rec? civ?(默认 china)
 //   k: e  事件   id type imp s e? pl who name sum body rec? civ?
 //   年份：整数；"c57" = 约 57 年；"u150" = 不详（150 只用于作图）
+//   cert?: traditional | legendary | disputed —— 写进每个年份的 certainty（plan.md 3、4.2）
+//   sch?: 纪年口径，如 xsz（夏商周断代工程）—— 写进每个年份的 scheme
+//   era? + seq?：只排先后的时期（如 five-emperors）。人物 seq: [起, 止]，事件 seq: 数；此时不写 b d / s e
 //   pl：["luoyang", "xu 196 220", "ye 204"] —— 地点 id，后面可带起止年
 import fs from 'node:fs';
 import path from 'node:path';
@@ -14,12 +17,13 @@ import { parse } from 'yaml';
 const [file, ...flags] = process.argv.slice(2);
 const force = flags.includes('--force');
 const list = parse(fs.readFileSync(file, 'utf8'));
-const year = (v, inline = true) => {
+let ext = '';   // 当前条目的 certainty / scheme，附在每个年份后面
+const year = v => {
   const s = String(v);
-  if (s[0] === 'u') return `{ unknown: true, approx: ${+s.slice(1)} }`;
-  if (s[0] === 'c') return `{ year: ${+s.slice(1)}, circa: true }`;
+  if (s[0] === 'u') return `{ unknown: true, approx: ${+s.slice(1)}${ext} }`;
+  if (s[0] === 'c') return `{ year: ${+s.slice(1)}, circa: true${ext} }`;
   if (!Number.isInteger(+s)) throw new Error('年份写法有误：' + s);
-  return `{ year: ${+s} }`;
+  return `{ year: ${+s}${ext} }`;
 };
 const q = s => /^[\s\-?:,\[\]{}#&*!|>'"%@`]|: | #|^(true|false|null|~|yes|no)$|^[\d.+-]+$/i.test(s) ? JSON.stringify(s) : s;
 const seq = a => `[${(a || []).map(q).join(', ')}]`;
@@ -37,6 +41,8 @@ const put = (rel, content) => {
 
 for (const o of list) {
   const civ = o.civ || 'china';
+  ext = (o.cert ? `, certainty: ${o.cert}` : '') + (o.sch ? `, scheme: ${o.sch}` : '');
+  const order = o.era ? `era: ${o.era}\nseq: ${Array.isArray(o.seq) ? `[${o.seq.join(', ')}]` : +o.seq}\n${o.cert ? `certainty: ${o.cert}\n` : ''}` : '';
   if (!/^[a-z0-9-]+$/.test(o.id || '')) throw new Error('id 有误：' + o.id);
   if (o.k === 'l') {
     put(`data/place/${o.id}.yaml`, `id: ${o.id}\nwikidata: null\nlat: null\nlng: null\nprecision: ${o.prec}\n${o.cert ? `certainty: ${o.cert}\n` : ''}`);
@@ -47,13 +53,13 @@ for (const o of list) {
       return `  - { place: ${p}${a ? `, start: ${+a}` : ''}${b ? `, end: ${+b}` : ''} }`;
     }).join('\n') + '\n';
     put(`data/person/${o.id}.yaml`,
-      `id: ${o.id}\nwikidata: null\nciv: ${civ}\n${o.fac ? `faction: ${o.fac}\n` : ''}importance: ${o.imp}\nbirth: ${year(o.b)}\ndeath: ${year(o.d)}\n` +
+      `id: ${o.id}\nwikidata: null\nciv: ${civ}\n${o.fac ? `faction: ${o.fac}\n` : ''}importance: ${o.imp}\n` + (order || `birth: ${year(o.b)}\ndeath: ${year(o.d)}\n`) +
       ((o.reign || []).length ? 'reign:\n' + o.reign.map(r => `  - { start: ${r[0]}, end: ${r[1]} }`).join('\n') + '\n' : '') +
       `birthplace: ${o.bp}\ndeathplace: ${o.dp}\n${places}reviewed: false\n`);
     put(`locales/zh-CN/person/${o.id}.yaml`, text(o, `aliases: ${seq(o.al)}\nrole: ${q(o.role)}\n`));
   } else if (o.k === 'e') {
     put(`data/event/${o.id}.yaml`,
-      `id: ${o.id}\nwikidata: null\nciv: ${civ}\ntype: ${o.type}\nimportance: ${o.imp}\nstart: ${year(o.s)}\n${o.e != null ? `end: ${year(o.e)}\n` : ''}` +
+      `id: ${o.id}\nwikidata: null\nciv: ${civ}\ntype: ${o.type}\nimportance: ${o.imp}\n` + (order || `start: ${year(o.s)}\n${o.e != null ? `end: ${year(o.e)}\n` : ''}`) +
       `places: ${o.pl === 'unknown' ? 'unknown' : `[${o.pl.join(', ')}]`}\n` +
       ((o.who || []).length ? 'participants:\n' + o.who.map(p => `  - person: ${p}`).join('\n') + '\n' : '') + 'reviewed: false\n');
     put(`locales/zh-CN/event/${o.id}.yaml`, text(o, ''));

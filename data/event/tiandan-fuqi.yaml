@@ -1,0 +1,11 @@
+id: tiandan-fuqi
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -278 }
+places: [jimo, linzi]
+participants:
+  - person: tian-dan
+  - person: le-yi
+reviewed: false

@@ -1,0 +1,14 @@
+id: mengchangjun
+wikidata: null
+civ: china
+faction: qi
+importance: 3
+birth: { unknown: true, approx: -330 }
+death: { year: -278, circa: true }
+birthplace: unknown
+deathplace: xue
+places:
+  - { place: xue }
+  - { place: linzi }
+  - { place: xianyang }
+reviewed: false

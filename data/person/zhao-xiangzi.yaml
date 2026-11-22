@@ -1,0 +1,12 @@
+id: zhao-xiangzi
+wikidata: null
+civ: china
+faction: zhao
+importance: 3
+birth: { unknown: true, approx: -490 }
+death: { year: -424 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jinyang }
+reviewed: false

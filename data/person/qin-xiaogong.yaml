@@ -1,0 +1,15 @@
+id: qin-xiaogong
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth: { year: -380 }
+death: { year: -337 }
+reign:
+  - { start: -360, end: -337 }
+birthplace: yueyang
+deathplace: xianyang
+places:
+  - { place: yueyang }
+  - { place: xianyang }
+reviewed: false

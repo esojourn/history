@@ -1,0 +1,12 @@
+id: yi-yin
+wikidata: null
+civ: china
+faction: shang
+importance: 3
+birth: { unknown: true, approx: -1660, certainty: traditional }
+death: { unknown: true, approx: -1560, certainty: traditional }
+birthplace: unknown
+deathplace: bo-shang
+places:
+  - { place: bo-shang }
+reviewed: false

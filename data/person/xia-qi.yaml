@@ -1,0 +1,12 @@
+id: xia-qi
+wikidata: null
+civ: china
+faction: xiachao
+importance: 3
+birth: { unknown: true, approx: -2135, certainty: traditional }
+death: { unknown: true, approx: -2040, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: yangzhai }
+reviewed: false

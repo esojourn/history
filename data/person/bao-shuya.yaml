@@ -1,0 +1,12 @@
+id: bao-shuya
+wikidata: null
+civ: china
+faction: qi
+importance: 2
+birth: { unknown: true, approx: -725 }
+death: { unknown: true, approx: -640 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: linzi }
+reviewed: false

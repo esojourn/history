@@ -1,0 +1,14 @@
+id: mengzi
+wikidata: null
+civ: china
+faction: zhuzi
+importance: 4
+birth: { year: -371, circa: true }
+death: { year: -288, circa: true }
+birthplace: zou
+deathplace: zou
+places:
+  - { place: zou }
+  - { place: linzi }
+  - { place: daliang }
+reviewed: false

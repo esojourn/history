@@ -1,0 +1,17 @@
+id: changping-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 5
+start: { year: -261 }
+end: { year: -259 }
+places: [changping]
+participants:
+  - person: bai-qi
+  - person: zhao-kuo
+  - person: lian-po
+  - person: qin-zhaoxiang
+  - person: fan-ju
+  - person: lin-xiangru
+  - person: pingyuanjun
+reviewed: false

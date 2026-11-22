@@ -1,0 +1,8 @@
+id: zhaowang-nanzheng
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: -976, circa: true, certainty: traditional, scheme: xsz }
+places: [hanshui]
+reviewed: false
