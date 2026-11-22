@@ -206,13 +206,15 @@ export function desktop(H, card, search) {
     if (!sel) return draw();
     S.open.add((sel.t === 'p' ? H.P[sel.id] : H.E[sel.id]).lane);   // 选中谁，就把他所在的文明展开
     const a = sel.t === 'p' ? H.P[sel.id].b0 : H.E[sel.id].s, b = sel.t === 'p' ? H.P[sel.id].d : H.E[sel.id].e;
-    if (S.k < 3.8 || b < S.t0 || a > S.t0 + plotW() / S.k) return fly(...around(a, b), reveal);
+    // 他的生卒条露出来的不到一半（或者整个在屏幕外），就飞过去；只露出边上一小截不算看得见
+    const t1 = S.t0 + plotW() / S.k, seen = Math.min(b, t1) - Math.max(a, S.t0);
+    if (S.k < 3.8 || seen < Math.min(b - a, t1 - S.t0) * 0.5) return fly(...around(a, b), reveal);
     render(); reveal();
   }
 
   // 飞到某个人、某件事那里时看多大一段：在样板时段里的，看整个样板时段；别处的，以他为中心看同样长的一段（寿命很长的就看全他的一生）
   function around(a, b) {
-    if (a < hi && b > lo) return [lo, hi];
+    if (a >= lo - 5 && b <= hi + 5) return [lo, hi];   // 整个人都在样板时段里才看样板时段；只沾个边的（如阿育王），以他为中心
     // 再长也不超过“人物层”能看清的宽度，否则飞过去只见色带不见人
     const span = Math.min(Math.max(hi - lo, (b - a) * 1.25), plotW() / 3.9), c = (a + b) / 2;
     return [c - span / 2, c + span / 2];
@@ -302,4 +304,6 @@ export function desktop(H, card, search) {
   if (sel) { zoomIn(W - G - 330); select(sel); }
   else if (view === 'all') { S.open = new Set(H.lanes.map(l => l.id)); zoomIn(W - G); render(); }
   else if (VIEWS[view]) { const [a, b] = VIEWS[view]; S.k = (W - G) / (b - a); S.t0 = a; render(); }
+  // 页面已经打开时，在地址栏里改成另一个 #person/… 也跳过去（选中时写地址用的是 replaceState，不会触发这里）
+  addEventListener('hashchange', () => { const r = readHash(H); if (r.sel) select(r.sel); });
 }

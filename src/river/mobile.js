@@ -246,6 +246,7 @@ export function mobile(H, card, search) {
   paint();
   // 地址里的 #people、#rome（某个文明的人物）、#person/han-xin（某个人）
   const { sel, view } = readHash(H);
+  addEventListener('hashchange', () => { const r = readHash(H); if (r.sel) select(r.sel); });
   if (sel) select(sel);
   else if (view === 'people' || PL[view]) { if (PL[view]) { M.lane = view; M.seg = defaultSeg(view); } M.mode = 'people'; paint(); toStart(); }
 }
