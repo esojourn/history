@@ -1,0 +1,12 @@
+id: jingke-ciqin
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: -226 }
+places: [yishui, xianyang]
+participants:
+  - person: jing-ke
+  - person: yan-dan
+  - person: ying-zheng
+reviewed: false

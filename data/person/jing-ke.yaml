@@ -1,0 +1,15 @@
+id: jing-ke
+wikidata: null
+civ: china
+faction: yanguo
+importance: 4
+birth: { unknown: true, approx: -260 }
+death: { year: -226 }
+birthplace: puyang
+deathplace: xianyang
+places:
+  - { place: puyang }
+  - { place: ji }
+  - { place: yishui, start: -226, end: -226 }
+  - { place: xianyang }
+reviewed: false

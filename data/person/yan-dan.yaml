@@ -1,0 +1,15 @@
+id: yan-dan
+wikidata: null
+civ: china
+faction: yanguo
+importance: 3
+birth: { unknown: true, approx: -265 }
+death: { year: -225 }
+birthplace: unknown
+deathplace: yanshui
+places:
+  - { place: ji }
+  - { place: handan }
+  - { place: xianyang }
+  - { place: yanshui }
+reviewed: false

@@ -1,0 +1,12 @@
+id: wangjian-miechu
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: -224 }
+end: { year: -222 }
+places: [shouchun]
+participants:
+  - person: wang-jian-qin
+  - person: ying-zheng
+reviewed: false

@@ -1,0 +1,11 @@
+id: fei-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: -232 }
+places: [fei-zhao]
+participants:
+  - person: li-mu
+  - person: ying-zheng
+reviewed: false

@@ -1,0 +1,14 @@
+id: li-mu
+wikidata: null
+civ: china
+faction: zhao
+importance: 4
+birth: { unknown: true, approx: -300 }
+death: { year: -228 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: yanmen }
+  - { place: fei-zhao, start: -232, end: -232 }
+  - { place: handan }
+reviewed: false

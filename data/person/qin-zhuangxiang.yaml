@@ -1,0 +1,15 @@
+id: qin-zhuangxiang
+wikidata: null
+civ: china
+faction: qin
+importance: 3
+birth: { year: -280 }
+death: { year: -246 }
+reign:
+  - { start: -249, end: -246 }
+birthplace: unknown
+deathplace: xianyang
+places:
+  - { place: handan }
+  - { place: xianyang }
+reviewed: false

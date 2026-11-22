@@ -1,0 +1,15 @@
+id: wang-jian-qin
+wikidata: null
+civ: china
+faction: qin
+importance: 4
+birth: { unknown: true, approx: -305 }
+death: { unknown: true, approx: -215 }
+birthplace: pinyang
+deathplace: unknown
+places:
+  - { place: pinyang }
+  - { place: handan, start: -229, end: -228 }
+  - { place: shouchun, start: -224, end: -223 }
+  - { place: xianyang }
+reviewed: false
