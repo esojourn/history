@@ -1,0 +1,14 @@
+id: ge-yanyun
+wikidata: null
+civ: china
+type: diplomatic
+importance: 4
+start: { year: 936 }
+end: { year: 938 }
+places: [ji, pingcheng, jinyang]
+participants:
+  - person: shi-jingtang
+  - person: yelu-deguang
+  - person: sang-weihan
+  - person: liu-zhiyuan
+reviewed: false

@@ -1,0 +1,13 @@
+id: houtang-mie-qianshu
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 925 }
+places: [chengdu]
+participants:
+  - person: li-cunxu
+  - person: guo-chongtao
+  - person: wang-yan-qianshu
+  - person: meng-zhixiang
+reviewed: false

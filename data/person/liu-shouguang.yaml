@@ -1,0 +1,12 @@
+id: liu-shouguang
+wikidata: null
+civ: china
+faction: fanzhen
+importance: 2
+birth: { unknown: true, approx: 875 }
+death: { year: 914 }
+birthplace: unknown
+deathplace: jinyang
+places:
+  - { place: ji, start: 907, end: 913 }
+reviewed: false

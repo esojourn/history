@@ -1,0 +1,12 @@
+id: jing-hao
+wikidata: null
+civ: china
+faction: houliang
+importance: 3
+birth: { year: 850, circa: true }
+death: { unknown: true, approx: 920 }
+birthplace: henei
+deathplace: unknown
+places:
+  - { place: honggu, start: 907, end: 920 }
+reviewed: false

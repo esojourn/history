@@ -1,0 +1,18 @@
+id: li-cunxu
+wikidata: null
+civ: china
+faction: shatuo
+importance: 4
+birth: { year: 885 }
+death: { year: 926 }
+reign:
+  - { start: 923, end: 926 }
+birthplace: jinyang
+deathplace: luoyang
+places:
+  - { place: jinyang, start: 885, end: 923 }
+  - { place: luzhou-sx, start: 908, end: 908 }
+  - { place: weizhou, start: 916, end: 923 }
+  - { place: bianzhou, start: 923, end: 923 }
+  - { place: luoyang, start: 923, end: 926 }
+reviewed: false

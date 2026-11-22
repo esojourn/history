@@ -1,0 +1,15 @@
+id: li-jing-nantang
+wikidata: null
+civ: china
+faction: nantang
+importance: 3
+birth: { year: 916 }
+death: { year: 961 }
+reign:
+  - { start: 943, end: 961 }
+birthplace: unknown
+deathplace: hongzhou
+places:
+  - { place: jianye, start: 937, end: 961 }
+  - { place: hongzhou, start: 961, end: 961 }
+reviewed: false

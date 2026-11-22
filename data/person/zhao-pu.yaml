@@ -1,0 +1,12 @@
+id: zhao-pu
+wikidata: null
+civ: china
+faction: songchao
+importance: 2
+birth: { year: 922 }
+death: { year: 992 }
+birthplace: ji
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 959, end: 992 }
+reviewed: false

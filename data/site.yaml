@@ -15,3 +15,4 @@ views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 vie
   - { id: nanbei, range: [410, 600] }
   - { id: suitang, range: [580, 765] }
   - { id: tanglate, range: [745, 915] }
+  - { id: wudai, range: [900, 968], open: [china, steppe] }

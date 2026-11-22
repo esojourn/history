@@ -1,0 +1,12 @@
+id: wang-pu
+wikidata: null
+civ: china
+faction: houzhou
+importance: 3
+birth: { year: 906 }
+death: { year: 959 }
+birthplace: yunzhou-sd
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 950, end: 959 }
+reviewed: false

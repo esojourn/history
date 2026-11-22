@@ -1,0 +1,15 @@
+id: huayuan
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 935, circa: true }
+end: { year: 975 }
+places: [chengdu, jianye]
+participants:
+  - person: huang-quan
+  - person: gu-hongzhong
+  - person: meng-chang
+  - person: li-yu-houzhu
+  - person: li-jing-nantang
+reviewed: false

@@ -1,0 +1,15 @@
+id: qian-chu
+wikidata: null
+civ: china
+faction: nanfang
+importance: 2
+birth: { year: 929 }
+death: { year: 988 }
+reign:
+  - { start: 948, end: 978 }
+birthplace: hangzhou
+deathplace: nanyang
+places:
+  - { place: hangzhou, start: 929, end: 978 }
+  - { place: bianzhou, start: 978, end: 988 }
+reviewed: false

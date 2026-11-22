@@ -1,0 +1,12 @@
+id: he-ning
+wikidata: null
+civ: china
+faction: houjin
+importance: 2
+birth: { year: 898 }
+death: { year: 955 }
+birthplace: yunzhou-sd
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 916, end: 955 }
+reviewed: false

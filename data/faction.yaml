@@ -178,3 +178,27 @@
 - id: judah
   civ: bible
   color: "#7A3F9E"
+- id: houjin
+  civ: china
+  color: "#8C6D46"
+- id: houhan
+  civ: china
+  color: "#6A7F4F"
+- id: houzhou
+  civ: china
+  color: "#B5473A"
+- id: songchao
+  civ: china
+  color: "#C9A227"
+- id: nantang
+  civ: china
+  color: "#3D7EA6"
+- id: qianhoushu
+  civ: china
+  color: "#9B6B9E"
+- id: nanfang
+  civ: china
+  color: "#4F9A82"
+- id: qidan
+  civ: steppe
+  color: "#8A5A44"

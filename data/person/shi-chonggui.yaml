@@ -1,0 +1,15 @@
+id: shi-chonggui
+wikidata: null
+civ: china
+faction: houjin
+importance: 2
+birth: { year: 914 }
+death: { year: 974 }
+reign:
+  - { start: 942, end: 947 }
+birthplace: jinyang
+deathplace: jianzhou-liao
+places:
+  - { place: bianzhou, start: 942, end: 947 }
+  - { place: jianzhou-liao, start: 950, end: 974 }
+reviewed: false

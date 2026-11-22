@@ -1,0 +1,16 @@
+id: yelu-abaoji
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 4
+birth: { year: 872 }
+death: { year: 926 }
+reign:
+  - { start: 907, end: 926 }
+birthplace: unknown
+deathplace: fuyufu
+places:
+  - { place: linhuang, start: 907, end: 926 }
+  - { place: longquanfu, start: 926, end: 926 }
+  - { place: fuyufu, start: 926, end: 926 }
+reviewed: false

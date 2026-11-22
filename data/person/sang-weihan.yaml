@@ -1,0 +1,13 @@
+id: sang-weihan
+wikidata: null
+civ: china
+faction: houjin
+importance: 3
+birth: { year: 898 }
+death: { year: 947 }
+birthplace: luoyang
+deathplace: bianzhou
+places:
+  - { place: jinyang, start: 930, end: 936 }
+  - { place: bianzhou, start: 938, end: 947 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: gao-jixing
+wikidata: null
+civ: china
+faction: nanfang
+importance: 2
+birth: { year: 858 }
+death: { year: 928 }
+birthplace: shanzhou
+deathplace: jiangling
+places:
+  - { place: bianzhou, start: 885, end: 907 }
+  - { place: jiangling, start: 907, end: 928 }
+reviewed: false

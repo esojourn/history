@@ -1,0 +1,13 @@
+id: wang-shenzhi
+wikidata: null
+civ: china
+faction: nanfang
+importance: 3
+birth: { year: 862 }
+death: { year: 925 }
+birthplace: gushi
+deathplace: fuzhou-fj
+places:
+  - { place: gushi, start: 862, end: 885 }
+  - { place: fuzhou-fj, start: 893, end: 925 }
+reviewed: false

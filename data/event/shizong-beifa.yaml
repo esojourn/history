@@ -1,0 +1,11 @@
+id: shizong-beifa
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 959 }
+places: [waqiaoguan, yingzhou-hb]
+participants:
+  - person: chai-rong
+  - person: zhao-kuangyin
+reviewed: false

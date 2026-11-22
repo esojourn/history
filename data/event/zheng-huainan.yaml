@@ -1,0 +1,14 @@
+id: zheng-huainan
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 955 }
+end: { year: 958 }
+places: [shouchun, zhongli, guangling]
+participants:
+  - person: chai-rong
+  - person: li-jing-nantang
+  - person: zhao-kuangyin
+  - person: wang-pu
+reviewed: false

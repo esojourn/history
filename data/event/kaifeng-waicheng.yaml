@@ -1,0 +1,12 @@
+id: kaifeng-waicheng
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 955 }
+end: { year: 956 }
+places: [bianzhou]
+participants:
+  - person: chai-rong
+  - person: wang-pu
+reviewed: false

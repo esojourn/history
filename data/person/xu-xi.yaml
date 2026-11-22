@@ -1,0 +1,12 @@
+id: xu-xi
+wikidata: null
+civ: china
+faction: nantang
+importance: 2
+birth: { unknown: true, approx: 910 }
+death: { unknown: true, approx: 975 }
+birthplace: zhongling
+deathplace: unknown
+places:
+  - { place: jianye, start: 937, end: 975 }
+reviewed: false

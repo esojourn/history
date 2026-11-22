@@ -1,0 +1,13 @@
+id: juran
+wikidata: null
+civ: china
+faction: nantang
+importance: 2
+birth: { unknown: true, approx: 920 }
+death: { unknown: true, approx: 990 }
+birthplace: zhongling
+deathplace: unknown
+places:
+  - { place: jianye, start: 950, end: 975 }
+  - { place: bianzhou, start: 976, end: 990 }
+reviewed: false

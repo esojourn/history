@@ -1,0 +1,10 @@
+id: nanhan-jianguo
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 917 }
+places: [panyu]
+participants:
+  - person: liu-yan-nanhan
+reviewed: false

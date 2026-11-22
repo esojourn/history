@@ -1,0 +1,15 @@
+id: houtang-mieliang
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 923 }
+places: [weizhou, yunzhou-sd, bianzhou]
+participants:
+  - person: li-cunxu
+  - person: li-siyuan
+  - person: guo-chongtao
+  - person: zhu-youzhen
+  - person: wang-yanzhang
+  - person: jing-xiang
+reviewed: false

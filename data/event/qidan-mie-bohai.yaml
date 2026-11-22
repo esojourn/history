@@ -1,0 +1,13 @@
+id: qidan-mie-bohai
+wikidata: null
+civ: steppe
+type: war
+importance: 2
+start: { year: 926 }
+places: [longquanfu, fuyufu]
+participants:
+  - person: yelu-abaoji
+  - person: yelu-bei
+  - person: yelu-deguang
+  - person: shulu-ping
+reviewed: false

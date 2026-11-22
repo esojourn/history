@@ -1,0 +1,12 @@
+id: gu-hongzhong
+wikidata: null
+civ: china
+faction: nantang
+importance: 2
+birth: { unknown: true, approx: 910 }
+death: { unknown: true, approx: 980 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jianye, start: 943, end: 975 }
+reviewed: false

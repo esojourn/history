@@ -1,0 +1,12 @@
+id: dong-yuan
+wikidata: null
+civ: china
+faction: nantang
+importance: 3
+birth: { unknown: true, approx: 910 }
+death: { year: 962, circa: true }
+birthplace: zhongling
+deathplace: unknown
+places:
+  - { place: jianye, start: 937, end: 962 }
+reviewed: false

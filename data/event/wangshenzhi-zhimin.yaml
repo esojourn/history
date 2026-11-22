@@ -1,0 +1,11 @@
+id: wangshenzhi-zhimin
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 897 }
+end: { year: 925 }
+places: [fuzhou-fj]
+participants:
+  - person: wang-shenzhi
+reviewed: false

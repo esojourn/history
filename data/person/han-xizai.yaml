@@ -1,0 +1,13 @@
+id: han-xizai
+wikidata: null
+civ: china
+faction: nantang
+importance: 2
+birth: { year: 902 }
+death: { year: 970 }
+birthplace: beihai
+deathplace: jianye
+places:
+  - { place: luoyang, start: 923, end: 926 }
+  - { place: jianye, start: 937, end: 970 }
+reviewed: false

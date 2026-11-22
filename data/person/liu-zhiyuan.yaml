@@ -1,0 +1,15 @@
+id: liu-zhiyuan
+wikidata: null
+civ: china
+faction: houhan
+importance: 3
+birth: { year: 895 }
+death: { year: 948 }
+reign:
+  - { start: 947, end: 948 }
+birthplace: jinyang
+deathplace: bianzhou
+places:
+  - { place: jinyang, start: 895, end: 947 }
+  - { place: bianzhou, start: 947, end: 948 }
+reviewed: false

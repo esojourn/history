@@ -1,0 +1,14 @@
+id: liu-chengyou
+wikidata: null
+civ: china
+faction: houhan
+importance: 2
+birth: { year: 931 }
+death: { year: 951 }
+reign:
+  - { start: 948, end: 951 }
+birthplace: jinyang
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 947, end: 951 }
+reviewed: false

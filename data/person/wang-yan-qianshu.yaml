@@ -1,0 +1,14 @@
+id: wang-yan-qianshu
+wikidata: null
+civ: china
+faction: qianhoushu
+importance: 2
+birth: { year: 899 }
+death: { year: 926 }
+reign:
+  - { start: 918, end: 925 }
+birthplace: chengdu
+deathplace: unknown
+places:
+  - { place: chengdu, start: 899, end: 925 }
+reviewed: false

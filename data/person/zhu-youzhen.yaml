@@ -1,0 +1,14 @@
+id: zhu-youzhen
+wikidata: null
+civ: china
+faction: houliang
+importance: 2
+birth: { year: 888 }
+death: { year: 923 }
+reign:
+  - { start: 913, end: 923 }
+birthplace: unknown
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 913, end: 923 }
+reviewed: false

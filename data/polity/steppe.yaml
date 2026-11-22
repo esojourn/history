@@ -24,6 +24,12 @@ periods:
     end: 840
   - id: steppe-divided
     start: 840
+    end: 916
+  - id: liao
+    start: 916
+    end: 1125
+  - id: steppe-late
+    start: 1125
     end: 1206
   - id: mongol-empire
     start: 1206

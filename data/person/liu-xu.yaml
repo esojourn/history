@@ -1,0 +1,13 @@
+id: liu-xu
+wikidata: null
+civ: china
+faction: houjin
+importance: 2
+birth: { year: 887 }
+death: { year: 946 }
+birthplace: zhuo
+deathplace: bianzhou
+places:
+  - { place: luoyang, start: 926, end: 936 }
+  - { place: bianzhou, start: 937, end: 946 }
+reviewed: false

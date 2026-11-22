@@ -1,0 +1,17 @@
+id: li-siyuan
+wikidata: null
+civ: china
+faction: shatuo
+importance: 3
+birth: { year: 867 }
+death: { year: 933 }
+reign:
+  - { start: 926, end: 933 }
+birthplace: yingzhou-sx
+deathplace: luoyang
+places:
+  - { place: jinyang, start: 880, end: 923 }
+  - { place: yunzhou-sd, start: 923, end: 923 }
+  - { place: weizhou, start: 926, end: 926 }
+  - { place: luoyang, start: 926, end: 933 }
+reviewed: false

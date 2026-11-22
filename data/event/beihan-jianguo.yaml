@@ -1,0 +1,10 @@
+id: beihan-jianguo
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 951 }
+places: [jinyang]
+participants:
+  - person: liu-chong
+reviewed: false

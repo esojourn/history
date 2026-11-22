@@ -1,0 +1,13 @@
+id: jiujing-diaoban
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 932 }
+end: { year: 953 }
+places: [luoyang, bianzhou]
+participants:
+  - person: feng-dao
+  - person: li-siyuan
+  - person: meng-chang
+reviewed: false

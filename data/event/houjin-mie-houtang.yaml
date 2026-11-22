@@ -1,0 +1,16 @@
+id: houjin-mie-houtang
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 936 }
+end: { year: 937 }
+places: [jinyang, luoyang]
+participants:
+  - person: shi-jingtang
+  - person: yelu-deguang
+  - person: li-congke
+  - person: sang-weihan
+  - person: liu-zhiyuan
+  - person: yelu-bei
+reviewed: false

@@ -1,0 +1,13 @@
+id: qidan-jianguo
+wikidata: null
+civ: steppe
+type: founding
+importance: 3
+start: { year: 916 }
+places: [linhuang]
+participants:
+  - person: yelu-abaoji
+  - person: shulu-ping
+  - person: han-yanhui
+  - person: yelu-bei
+reviewed: false

@@ -1,0 +1,12 @@
+id: huang-quan
+wikidata: null
+civ: china
+faction: qianhoushu
+importance: 2
+birth: { year: 903, circa: true }
+death: { year: 965 }
+birthplace: chengdu
+deathplace: unknown
+places:
+  - { place: chengdu, start: 903, end: 965 }
+reviewed: false

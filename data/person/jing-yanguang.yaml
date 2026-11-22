@@ -1,0 +1,12 @@
+id: jing-yanguang
+wikidata: null
+civ: china
+faction: houjin
+importance: 1
+birth: { unknown: true, approx: 890 }
+death: { year: 947 }
+birthplace: shanzhou
+deathplace: chenqiao
+places:
+  - { place: bianzhou, start: 942, end: 944 }
+reviewed: false

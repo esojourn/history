@@ -1,0 +1,12 @@
+id: jiazhai-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 908 }
+places: [luzhou-sx]
+participants:
+  - person: li-cunxu
+  - person: zhou-dewei
+  - person: zhu-wen
+reviewed: false

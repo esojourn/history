@@ -1,0 +1,12 @@
+id: ma-yin
+wikidata: null
+civ: china
+faction: nanfang
+importance: 2
+birth: { year: 852 }
+death: { year: 930 }
+birthplace: yanling
+deathplace: changsha
+places:
+  - { place: changsha, start: 896, end: 930 }
+reviewed: false

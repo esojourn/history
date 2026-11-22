@@ -1,0 +1,14 @@
+id: guanxiu
+wikidata: null
+civ: china
+faction: qianhoushu
+importance: 2
+birth: { year: 832 }
+death: { year: 912 }
+birthplace: lanxi
+deathplace: chengdu
+places:
+  - { place: lanxi, start: 832, end: 890 }
+  - { place: hangzhou, start: 894, end: 896 }
+  - { place: chengdu, start: 903, end: 912 }
+reviewed: false

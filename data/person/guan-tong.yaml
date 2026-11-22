@@ -1,0 +1,12 @@
+id: guan-tong
+wikidata: null
+civ: china
+faction: houliang
+importance: 2
+birth: { unknown: true, approx: 880 }
+death: { unknown: true, approx: 950 }
+birthplace: changan
+deathplace: unknown
+places:
+  - { place: changan, start: 907, end: 923 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: xingjiaomen-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 926 }
+places: [luoyang, weizhou]
+participants:
+  - person: li-cunxu
+  - person: li-siyuan
+reviewed: false

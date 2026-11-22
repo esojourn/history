@@ -1,0 +1,13 @@
+id: shi-hongzhao
+wikidata: null
+civ: china
+faction: houhan
+importance: 1
+birth: { unknown: true, approx: 900 }
+death: { year: 950 }
+birthplace: xingyang
+deathplace: bianzhou
+places:
+  - { place: jinyang, start: 930, end: 947 }
+  - { place: bianzhou, start: 947, end: 950 }
+reviewed: false

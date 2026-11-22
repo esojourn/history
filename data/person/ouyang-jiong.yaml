@@ -1,0 +1,13 @@
+id: ouyang-jiong
+wikidata: null
+civ: china
+faction: qianhoushu
+importance: 2
+birth: { year: 896 }
+death: { year: 971 }
+birthplace: chengdu
+deathplace: unknown
+places:
+  - { place: chengdu, start: 896, end: 965 }
+  - { place: bianzhou, start: 965, end: 971 }
+reviewed: false

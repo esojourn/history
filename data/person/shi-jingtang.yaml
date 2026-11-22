@@ -1,0 +1,17 @@
+id: shi-jingtang
+wikidata: null
+civ: china
+faction: houjin
+importance: 4
+birth: { year: 892 }
+death: { year: 942 }
+reign:
+  - { start: 936, end: 942 }
+birthplace: jinyang
+deathplace: weizhou
+places:
+  - { place: jinyang, start: 892, end: 936 }
+  - { place: luoyang, start: 937, end: 938 }
+  - { place: bianzhou, start: 938, end: 941 }
+  - { place: weizhou, start: 941, end: 942 }
+reviewed: false

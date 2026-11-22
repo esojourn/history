@@ -1,0 +1,13 @@
+id: xu-wen
+wikidata: null
+civ: china
+faction: nantang
+importance: 2
+birth: { year: 862 }
+death: { year: 927 }
+birthplace: haizhou
+deathplace: jianye
+places:
+  - { place: guangling, start: 887, end: 918 }
+  - { place: jianye, start: 918, end: 927 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: baixiang-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 911 }
+places: [baixiang]
+participants:
+  - person: li-cunxu
+  - person: zhou-dewei
+  - person: li-siyuan
+  - person: zhu-wen
+reviewed: false

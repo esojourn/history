@@ -1,0 +1,14 @@
+id: yelu-bei
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 2
+birth: { year: 899 }
+death: { year: 937 }
+birthplace: unknown
+deathplace: luoyang
+places:
+  - { place: linhuang, start: 916, end: 926 }
+  - { place: longquanfu, start: 926, end: 930 }
+  - { place: luoyang, start: 930, end: 937 }
+reviewed: false

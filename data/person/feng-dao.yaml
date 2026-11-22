@@ -1,0 +1,15 @@
+id: feng-dao
+wikidata: null
+civ: china
+faction: shatuo
+importance: 3
+birth: { year: 882 }
+death: { year: 954 }
+birthplace: yingzhou-hb
+deathplace: bianzhou
+places:
+  - { place: ji, start: 907, end: 910 }
+  - { place: jinyang, start: 910, end: 923 }
+  - { place: luoyang, start: 926, end: 936 }
+  - { place: bianzhou, start: 937, end: 954 }
+reviewed: false

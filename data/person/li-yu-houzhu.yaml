@@ -1,0 +1,15 @@
+id: li-yu-houzhu
+wikidata: null
+civ: china
+faction: nantang
+importance: 4
+birth: { year: 937 }
+death: { year: 978 }
+reign:
+  - { start: 961, end: 975 }
+birthplace: jianye
+deathplace: bianzhou
+places:
+  - { place: jianye, start: 937, end: 975 }
+  - { place: bianzhou, start: 976, end: 978 }
+reviewed: false

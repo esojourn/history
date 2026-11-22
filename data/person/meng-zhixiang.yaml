@@ -1,0 +1,15 @@
+id: meng-zhixiang
+wikidata: null
+civ: china
+faction: qianhoushu
+importance: 3
+birth: { year: 874 }
+death: { year: 934 }
+reign:
+  - { start: 934, end: 934 }
+birthplace: xingzhou
+deathplace: chengdu
+places:
+  - { place: jinyang, start: 900, end: 925 }
+  - { place: chengdu, start: 926, end: 934 }
+reviewed: false

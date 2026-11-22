@@ -1,0 +1,17 @@
+id: guo-wei
+wikidata: null
+civ: china
+faction: houzhou
+importance: 4
+birth: { year: 904 }
+death: { year: 954 }
+reign:
+  - { start: 951, end: 954 }
+birthplace: xingzhou
+deathplace: bianzhou
+places:
+  - { place: luzhou-sx, start: 920, end: 925 }
+  - { place: jinyang, start: 937, end: 947 }
+  - { place: weizhou, start: 950, end: 950 }
+  - { place: bianzhou, start: 947, end: 954 }
+reviewed: false

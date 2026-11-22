@@ -1,0 +1,13 @@
+id: gaoping-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 954 }
+places: [gaoping-sx]
+participants:
+  - person: chai-rong
+  - person: liu-chong
+  - person: zhao-kuangyin
+  - person: feng-dao
+reviewed: false

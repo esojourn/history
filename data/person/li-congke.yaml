@@ -1,0 +1,15 @@
+id: li-congke
+wikidata: null
+civ: china
+faction: shatuo
+importance: 2
+birth: { year: 885 }
+death: { year: 937 }
+reign:
+  - { start: 934, end: 937 }
+birthplace: zhending
+deathplace: luoyang
+places:
+  - { place: fengxiang, start: 933, end: 934 }
+  - { place: luoyang, start: 934, end: 937 }
+reviewed: false

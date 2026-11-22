@@ -1,0 +1,11 @@
+id: qidan-wenzi
+wikidata: null
+civ: steppe
+type: cultural
+importance: 2
+start: { year: 920 }
+end: { year: 925, circa: true }
+places: [linhuang]
+participants:
+  - person: yelu-abaoji
+reviewed: false

@@ -1,0 +1,12 @@
+id: yang-ningshi
+wikidata: null
+civ: china
+faction: houzhou
+importance: 2
+birth: { year: 873 }
+death: { year: 954 }
+birthplace: huayin
+deathplace: luoyang
+places:
+  - { place: luoyang, start: 907, end: 954 }
+reviewed: false

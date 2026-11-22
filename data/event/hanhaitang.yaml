@@ -1,0 +1,10 @@
+id: hanhaitang
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 910 }
+places: [hangzhou]
+participants:
+  - person: qian-liu
+reviewed: false

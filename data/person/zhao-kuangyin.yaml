@@ -1,0 +1,17 @@
+id: zhao-kuangyin
+wikidata: null
+civ: china
+faction: songchao
+importance: 4
+birth: { year: 927 }
+death: { year: 976 }
+reign:
+  - { start: 960, end: 976 }
+birthplace: luoyang
+deathplace: bianzhou
+places:
+  - { place: luoyang, start: 927, end: 948 }
+  - { place: bianzhou, start: 951, end: 976 }
+  - { place: gaoping-sx, start: 954, end: 954 }
+  - { place: chenqiao, start: 960, end: 960 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: chenqiao-bingbian
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 960 }
+places: [chenqiao, bianzhou]
+participants:
+  - person: zhao-kuangyin
+  - person: zhao-pu
+  - person: fan-zhi
+reviewed: false

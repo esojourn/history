@@ -1,0 +1,13 @@
+id: feng-yansi
+wikidata: null
+civ: china
+faction: nantang
+importance: 3
+birth: { year: 903, circa: true }
+death: { year: 960 }
+birthplace: guangling
+deathplace: jianye
+places:
+  - { place: guangling, start: 903, end: 937 }
+  - { place: jianye, start: 937, end: 960 }
+reviewed: false

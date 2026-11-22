@@ -1,0 +1,15 @@
+id: liu-chong
+wikidata: null
+civ: china
+faction: houhan
+importance: 2
+birth: { year: 895 }
+death: { year: 954 }
+reign:
+  - { start: 951, end: 954 }
+birthplace: jinyang
+deathplace: jinyang
+places:
+  - { place: jinyang, start: 895, end: 954 }
+  - { place: gaoping-sx, start: 954, end: 954 }
+reviewed: false

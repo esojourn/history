@@ -1,0 +1,12 @@
+id: shulu-ping
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 3
+birth: { year: 879 }
+death: { year: 953 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: linhuang, start: 907, end: 947 }
+reviewed: false

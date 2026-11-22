@@ -1,0 +1,13 @@
+id: han-yanhui
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 2
+birth: { year: 882 }
+death: { year: 959 }
+birthplace: ji
+deathplace: unknown
+places:
+  - { place: ji, start: 882, end: 909 }
+  - { place: linhuang, start: 909, end: 959 }
+reviewed: false

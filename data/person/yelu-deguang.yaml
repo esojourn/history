@@ -1,0 +1,17 @@
+id: yelu-deguang
+wikidata: null
+civ: steppe
+faction: qidan
+importance: 4
+birth: { year: 902 }
+death: { year: 947 }
+reign:
+  - { start: 927, end: 947 }
+birthplace: unknown
+deathplace: luancheng
+places:
+  - { place: linhuang, start: 927, end: 947 }
+  - { place: jinyang, start: 936, end: 936 }
+  - { place: bianzhou, start: 947, end: 947 }
+  - { place: luancheng, start: 947, end: 947 }
+reviewed: false

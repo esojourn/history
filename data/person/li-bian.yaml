@@ -1,0 +1,15 @@
+id: li-bian
+wikidata: null
+civ: china
+faction: nantang
+importance: 3
+birth: { year: 888 }
+death: { year: 943 }
+reign:
+  - { start: 937, end: 943 }
+birthplace: pengcheng
+deathplace: jianye
+places:
+  - { place: guangling, start: 895, end: 927 }
+  - { place: jianye, start: 927, end: 943 }
+reviewed: false

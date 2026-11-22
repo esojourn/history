@@ -1,0 +1,12 @@
+id: nantang-mie-minchu
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 945 }
+end: { year: 951 }
+places: [jianzhou-fj, fuzhou-fj, changsha]
+participants:
+  - person: li-jing-nantang
+  - person: feng-yansi
+reviewed: false

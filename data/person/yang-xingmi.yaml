@@ -1,0 +1,13 @@
+id: yang-xingmi
+wikidata: null
+civ: china
+faction: nantang
+importance: 3
+birth: { year: 852 }
+death: { year: 905 }
+birthplace: hefei
+deathplace: guangling
+places:
+  - { place: hefei, start: 852, end: 887 }
+  - { place: guangling, start: 887, end: 905 }
+reviewed: false

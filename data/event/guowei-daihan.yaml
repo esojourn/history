@@ -1,0 +1,15 @@
+id: guowei-daihan
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 950 }
+end: { year: 951 }
+places: [weizhou, bianzhou]
+participants:
+  - person: guo-wei
+  - person: liu-chengyou
+  - person: shi-hongzhao
+  - person: fan-zhi
+  - person: liu-chong
+reviewed: false

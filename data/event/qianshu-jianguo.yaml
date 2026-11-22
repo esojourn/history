@@ -1,0 +1,11 @@
+id: qianshu-jianguo
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 907 }
+places: [chengdu]
+participants:
+  - person: wang-jian
+  - person: wei-zhuang
+reviewed: false

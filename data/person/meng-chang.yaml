@@ -1,0 +1,16 @@
+id: meng-chang
+wikidata: null
+civ: china
+faction: qianhoushu
+importance: 3
+birth: { year: 919 }
+death: { year: 965 }
+reign:
+  - { start: 934, end: 965 }
+birthplace: jinyang
+deathplace: bianzhou
+places:
+  - { place: jinyang, start: 919, end: 926 }
+  - { place: chengdu, start: 926, end: 965 }
+  - { place: bianzhou, start: 965, end: 965 }
+reviewed: false

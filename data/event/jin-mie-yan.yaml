@@ -1,0 +1,13 @@
+id: jin-mie-yan
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 911 }
+end: { year: 913 }
+places: [ji]
+participants:
+  - person: li-cunxu
+  - person: zhou-dewei
+  - person: liu-shouguang
+reviewed: false

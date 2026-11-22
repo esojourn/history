@@ -1,0 +1,12 @@
+id: huajianji
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 940 }
+places: [chengdu]
+participants:
+  - person: ouyang-jiong
+  - person: he-ning
+  - person: meng-chang
+reviewed: false

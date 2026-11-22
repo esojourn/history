@@ -1,0 +1,13 @@
+id: qian-liu
+wikidata: null
+civ: china
+faction: nanfang
+importance: 3
+birth: { year: 852 }
+death: { year: 932 }
+birthplace: linan
+deathplace: hangzhou
+places:
+  - { place: linan, start: 852, end: 887 }
+  - { place: hangzhou, start: 887, end: 932 }
+reviewed: false

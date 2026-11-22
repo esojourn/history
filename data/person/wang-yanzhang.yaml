@@ -1,0 +1,13 @@
+id: wang-yanzhang
+wikidata: null
+civ: china
+faction: houliang
+importance: 2
+birth: { year: 863 }
+death: { year: 923 }
+birthplace: yunzhou-sd
+deathplace: yunzhou-sd
+places:
+  - { place: bianzhou, start: 907, end: 923 }
+  - { place: yunzhou-sd, start: 923, end: 923 }
+reviewed: false

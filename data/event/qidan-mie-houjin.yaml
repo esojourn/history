@@ -1,0 +1,16 @@
+id: qidan-mie-houjin
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 944 }
+end: { year: 947 }
+places: [bianzhou, luancheng]
+participants:
+  - person: yelu-deguang
+  - person: shi-chonggui
+  - person: jing-yanguang
+  - person: sang-weihan
+  - person: feng-dao
+  - person: liu-zhiyuan
+reviewed: false

@@ -15,6 +15,12 @@ periods:
     name: 回鹘
   steppe-divided:
     name: 诸部并立
+  liao:
+    name: 辽（契丹）
+    note: 916 年耶律阿保机称帝，1125 年亡于金
+  steppe-late:
+    name: 诸部并立
+    note: 克烈、乃蛮、塔塔儿、蒙古诸部
   mongol-empire:
     name: 蒙古帝国
   mongol-tribes:

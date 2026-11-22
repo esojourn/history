@@ -1,0 +1,12 @@
+id: li-maozhen
+wikidata: null
+civ: china
+faction: fanzhen
+importance: 2
+birth: { year: 856 }
+death: { year: 924 }
+birthplace: boye
+deathplace: fengxiang
+places:
+  - { place: fengxiang, start: 887, end: 924 }
+reviewed: false

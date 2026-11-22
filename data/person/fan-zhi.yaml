@@ -1,0 +1,12 @@
+id: fan-zhi
+wikidata: null
+civ: china
+faction: houzhou
+importance: 2
+birth: { year: 911 }
+death: { year: 964 }
+birthplace: weizhou
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 937, end: 964 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: houhan-jianguo
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 947 }
+places: [jinyang, bianzhou]
+participants:
+  - person: liu-zhiyuan
+  - person: shi-hongzhao
+  - person: guo-wei
+reviewed: false

@@ -1,0 +1,14 @@
+id: guo-chongtao
+wikidata: null
+civ: china
+faction: shatuo
+importance: 2
+birth: { unknown: true, approx: 865 }
+death: { year: 926 }
+birthplace: yanmen
+deathplace: chengdu
+places:
+  - { place: jinyang, start: 900, end: 923 }
+  - { place: luoyang, start: 923, end: 925 }
+  - { place: chengdu, start: 925, end: 926 }
+reviewed: false

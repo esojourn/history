@@ -1,0 +1,14 @@
+id: zhoushizong-gaige
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 954 }
+end: { year: 959 }
+places: [bianzhou]
+participants:
+  - person: chai-rong
+  - person: wang-pu
+  - person: zhao-kuangyin
+  - person: fan-zhi
+reviewed: false

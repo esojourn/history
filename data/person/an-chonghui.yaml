@@ -1,0 +1,13 @@
+id: an-chonghui
+wikidata: null
+civ: china
+faction: shatuo
+importance: 2
+birth: { unknown: true, approx: 875 }
+death: { year: 931 }
+birthplace: yingzhou-sx
+deathplace: puban
+places:
+  - { place: luoyang, start: 926, end: 931 }
+  - { place: puban, start: 931, end: 931 }
+reviewed: false

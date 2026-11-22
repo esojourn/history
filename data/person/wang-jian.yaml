@@ -1,0 +1,15 @@
+id: wang-jian
+wikidata: null
+civ: china
+faction: qianhoushu
+importance: 3
+birth: { year: 847 }
+death: { year: 918 }
+reign:
+  - { start: 907, end: 918 }
+birthplace: wuyang
+deathplace: chengdu
+places:
+  - { place: hanzhong, start: 885, end: 887 }
+  - { place: chengdu, start: 891, end: 918 }
+reviewed: false

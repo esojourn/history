@@ -1,0 +1,17 @@
+id: chai-rong
+wikidata: null
+civ: china
+faction: houzhou
+importance: 4
+birth: { year: 921 }
+death: { year: 959 }
+reign:
+  - { start: 954, end: 959 }
+birthplace: xingzhou
+deathplace: bianzhou
+places:
+  - { place: bianzhou, start: 951, end: 959 }
+  - { place: gaoping-sx, start: 954, end: 954 }
+  - { place: shouchun, start: 956, end: 957 }
+  - { place: waqiaoguan, start: 959, end: 959 }
+reviewed: false
