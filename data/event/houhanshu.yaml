@@ -1,0 +1,11 @@
+id: houhanshu
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 432, circa: true }
+end: { year: 445 }
+places: [xuancheng, jianye]
+participants:
+  - person: fan-ye
+reviewed: false

@@ -1,0 +1,13 @@
+id: bao-zhao
+wikidata: null
+civ: china
+faction: liusong
+importance: 2
+birth: { year: 414, circa: true }
+death: { year: 466 }
+birthplace: unknown
+deathplace: jiangling
+places:
+  - { place: jianye }
+  - { place: jiangling, start: 465, end: 466 }
+reviewed: false

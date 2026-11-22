@@ -1,0 +1,10 @@
+id: shuijing-zhu
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 515, circa: true }
+places: [luoyang]
+participants:
+  - person: li-daoyuan
+reviewed: false

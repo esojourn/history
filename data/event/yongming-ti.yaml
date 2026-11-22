@@ -1,0 +1,14 @@
+id: yongming-ti
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 487, circa: true }
+end: { year: 493 }
+places: [jianye]
+participants:
+  - person: xiao-ziliang
+  - person: shen-yue
+  - person: xie-tiao
+  - person: xiao-yan
+reviewed: false

@@ -1,0 +1,13 @@
+id: li-chong
+wikidata: null
+civ: china
+faction: beiwei
+importance: 2
+birth: { year: 450 }
+death: { year: 498 }
+birthplace: unknown
+deathplace: luoyang
+places:
+  - { place: pingcheng }
+  - { place: luoyang, start: 493, end: 498 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: sui-founding
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: 580 }
+end: { year: 581 }
+places: [changan, ye]
+participants:
+  - person: yang-jian
+  - person: wei-xiaokuan
+reviewed: false

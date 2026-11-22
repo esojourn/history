@@ -1,0 +1,14 @@
+id: xiao-ze
+wikidata: null
+civ: china
+faction: nanqi
+importance: 2
+birth: { year: 440 }
+death: { year: 493 }
+reign:
+  - { start: 482, end: 493 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye }
+reviewed: false

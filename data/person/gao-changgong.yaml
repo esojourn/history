@@ -1,0 +1,13 @@
+id: gao-changgong
+wikidata: null
+civ: china
+faction: beiqi
+importance: 2
+birth: { year: 541, circa: true }
+death: { year: 573 }
+birthplace: unknown
+deathplace: ye
+places:
+  - { place: mangshan, start: 564, end: 564 }
+  - { place: ye }
+reviewed: false

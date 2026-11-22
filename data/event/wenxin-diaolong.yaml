@@ -1,0 +1,11 @@
+id: wenxin-diaolong
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 501, circa: true }
+places: [dinglinsi]
+participants:
+  - person: liu-yanhe
+  - person: shen-yue
+reviewed: false

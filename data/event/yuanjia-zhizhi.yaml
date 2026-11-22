@@ -1,0 +1,12 @@
+id: yuanjia-zhizhi
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 424 }
+end: { year: 453 }
+places: [jianye]
+participants:
+  - person: liu-yilong
+  - person: pei-songzhi
+reviewed: false

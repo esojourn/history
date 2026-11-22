@@ -1,0 +1,11 @@
+id: yungang-shiku
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 460 }
+end: { year: 524, circa: true }
+places: [yungang]
+participants:
+  - person: tanyao
+reviewed: false

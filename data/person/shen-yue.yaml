@@ -1,0 +1,12 @@
+id: shen-yue
+wikidata: null
+civ: china
+faction: liang
+importance: 3
+birth: { year: 441 }
+death: { year: 513 }
+birthplace: wukang
+deathplace: jianye
+places:
+  - { place: jianye }
+reviewed: false

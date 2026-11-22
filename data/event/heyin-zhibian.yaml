@@ -1,0 +1,11 @@
+id: heyin-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 528 }
+places: [heyin, luoyang]
+participants:
+  - person: erzhu-rong
+  - person: hu-taihou
+reviewed: false

@@ -1,0 +1,11 @@
+id: daming-li
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 462 }
+places: [jianye]
+participants:
+  - person: zu-chongzhi
+  - person: liu-jun
+reviewed: false

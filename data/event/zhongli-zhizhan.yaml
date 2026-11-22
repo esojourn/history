@@ -1,0 +1,10 @@
+id: zhongli-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 507 }
+places: [zhongli]
+participants:
+  - person: wei-rui
+reviewed: false

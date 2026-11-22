@@ -1,0 +1,13 @@
+id: yuwen-hu
+wikidata: null
+civ: china
+faction: beizhou
+importance: 2
+birth: { year: 513 }
+death: { year: 572 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: jiangling, start: 554, end: 554 }
+  - { place: changan, start: 556, end: 572 }
+reviewed: false

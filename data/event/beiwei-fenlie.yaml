@@ -1,0 +1,12 @@
+id: beiwei-fenlie
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 534 }
+end: { year: 535 }
+places: [luoyang, ye, changan]
+participants:
+  - person: gao-huan
+  - person: yuwen-tai
+reviewed: false

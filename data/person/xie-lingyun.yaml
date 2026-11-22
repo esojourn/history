@@ -1,0 +1,15 @@
+id: xie-lingyun
+wikidata: null
+civ: china
+faction: liusong
+importance: 3
+birth: { year: 385 }
+death: { year: 433 }
+birthplace: unknown
+deathplace: panyu
+places:
+  - { place: shining }
+  - { place: jianye }
+  - { place: yongjia, start: 422, end: 423 }
+  - { place: linchuan, start: 431, end: 432 }
+reviewed: false

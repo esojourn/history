@@ -1,0 +1,11 @@
+id: tiantai-zong
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 575 }
+places: [tiantai]
+participants:
+  - person: zhiyi
+  - person: chen-xu
+reviewed: false

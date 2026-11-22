@@ -1,0 +1,12 @@
+id: gao-yun
+wikidata: null
+civ: china
+faction: beiwei
+importance: 1
+birth: { year: 390 }
+death: { year: 487 }
+birthplace: unknown
+deathplace: pingcheng
+places:
+  - { place: pingcheng, start: 431, end: 487 }
+reviewed: false

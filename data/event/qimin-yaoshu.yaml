@@ -1,0 +1,11 @@
+id: qimin-yaoshu
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 533, circa: true }
+end: { year: 544, circa: true }
+places: [gaoyang]
+participants:
+  - person: jia-sixie
+reviewed: false

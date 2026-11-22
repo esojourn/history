@@ -1,0 +1,14 @@
+id: tanyao
+wikidata: null
+civ: china
+faction: beiwei
+importance: 2
+birth: { unknown: true, approx: 400 }
+death: { unknown: true, approx: 485 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: guzang }
+  - { place: pingcheng }
+  - { place: yungang, start: 460 }
+reviewed: false

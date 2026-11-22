@@ -1,0 +1,13 @@
+id: hulu-jin
+wikidata: null
+civ: china
+faction: beiqi
+importance: 1
+birth: { year: 488 }
+death: { year: 567 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jinyang }
+  - { place: yubi, start: 546, end: 546 }
+reviewed: false

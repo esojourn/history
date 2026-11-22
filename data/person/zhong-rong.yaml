@@ -1,0 +1,12 @@
+id: zhong-rong
+wikidata: null
+civ: china
+faction: liang
+importance: 2
+birth: { year: 468, circa: true }
+death: { year: 518, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jianye }
+reviewed: false

@@ -1,0 +1,13 @@
+id: shenmie-lun
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 489, circa: true }
+end: { year: 507 }
+places: [jianye]
+participants:
+  - person: fan-zhen
+  - person: xiao-ziliang
+  - person: xiao-yan
+reviewed: false

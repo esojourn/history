@@ -1,0 +1,11 @@
+id: sanguozhi-zhu
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 429 }
+places: [jianye]
+participants:
+  - person: pei-songzhi
+  - person: liu-yilong
+reviewed: false

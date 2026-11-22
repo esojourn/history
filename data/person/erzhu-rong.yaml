@@ -1,0 +1,15 @@
+id: erzhu-rong
+wikidata: null
+civ: china
+faction: beiwei
+importance: 3
+birth: { year: 493 }
+death: { year: 530 }
+birthplace: xiurong
+deathplace: luoyang
+places:
+  - { place: xiurong }
+  - { place: jinyang, start: 525, end: 530 }
+  - { place: heyin, start: 528, end: 528 }
+  - { place: luoyang, start: 528, end: 530 }
+reviewed: false

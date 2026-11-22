@@ -1,0 +1,14 @@
+id: wang-sengbian
+wikidata: null
+civ: china
+faction: liang
+importance: 2
+birth: { unknown: true, approx: 500 }
+death: { year: 555 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jiangling }
+  - { place: baqiu, start: 551, end: 551 }
+  - { place: jianye, start: 552, end: 555 }
+reviewed: false

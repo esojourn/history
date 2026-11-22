@@ -1,0 +1,15 @@
+id: gao-yang
+wikidata: null
+civ: china
+faction: beiqi
+importance: 3
+birth: { year: 526 }
+death: { year: 559 }
+reign:
+  - { start: 550, end: 559 }
+birthplace: unknown
+deathplace: jinyang
+places:
+  - { place: jinyang }
+  - { place: ye, start: 549, end: 559 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: yuwen-tai
+wikidata: null
+civ: china
+faction: beizhou
+importance: 4
+birth: { year: 507 }
+death: { year: 556 }
+birthplace: wuchuan
+deathplace: yunyang
+places:
+  - { place: wuchuan }
+  - { place: changan, start: 534, end: 556 }
+  - { place: jiangling, start: 554, end: 554 }
+reviewed: false

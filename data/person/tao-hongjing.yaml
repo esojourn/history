@@ -1,0 +1,13 @@
+id: tao-hongjing
+wikidata: null
+civ: china
+faction: liang
+importance: 3
+birth: { year: 456 }
+death: { year: 536 }
+birthplace: jianye
+deathplace: maoshan
+places:
+  - { place: jianye }
+  - { place: maoshan, start: 492, end: 536 }
+reviewed: false

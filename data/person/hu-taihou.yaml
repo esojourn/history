@@ -1,0 +1,12 @@
+id: hu-taihou
+wikidata: null
+civ: china
+faction: beiwei
+importance: 2
+birth: { unknown: true, approx: 490 }
+death: { year: 528 }
+birthplace: unknown
+deathplace: heyin
+places:
+  - { place: luoyang, start: 510, end: 528 }
+reviewed: false

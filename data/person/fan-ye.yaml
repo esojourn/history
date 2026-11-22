@@ -1,0 +1,13 @@
+id: fan-ye
+wikidata: null
+civ: china
+faction: liusong
+importance: 3
+birth: { year: 398 }
+death: { year: 445 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye }
+  - { place: xuancheng, start: 432 }
+reviewed: false

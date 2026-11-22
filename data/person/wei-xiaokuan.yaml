@@ -1,0 +1,14 @@
+id: wei-xiaokuan
+wikidata: null
+civ: china
+faction: beizhou
+importance: 2
+birth: { year: 509 }
+death: { year: 580 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: yubi, start: 542 }
+  - { place: ye, start: 580, end: 580 }
+  - { place: changan }
+reviewed: false

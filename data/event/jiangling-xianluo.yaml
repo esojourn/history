@@ -1,0 +1,13 @@
+id: jiangling-xianluo
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 554 }
+places: [jiangling]
+participants:
+  - person: xiao-yi
+  - person: yuwen-tai
+  - person: yuwen-hu
+  - person: yan-zhitui
+reviewed: false

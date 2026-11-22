@@ -1,0 +1,13 @@
+id: yang-xuanzhi
+wikidata: null
+civ: china
+faction: beiqi
+importance: 1
+birth: { unknown: true, approx: 500 }
+death: { unknown: true, approx: 560 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: luoyang }
+  - { place: ye }
+reviewed: false

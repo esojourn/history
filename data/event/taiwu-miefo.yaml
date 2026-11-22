@@ -1,0 +1,13 @@
+id: taiwu-miefo
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 446 }
+places: [changan, pingcheng]
+participants:
+  - person: tuoba-tao
+  - person: cui-hao
+  - person: kou-qianzhi
+  - person: tanyao
+reviewed: false

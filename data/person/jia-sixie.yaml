@@ -1,0 +1,12 @@
+id: jia-sixie
+wikidata: null
+civ: china
+faction: beiwei
+importance: 3
+birth: { unknown: true, approx: 480 }
+death: { unknown: true, approx: 550 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: gaoyang }
+reviewed: false

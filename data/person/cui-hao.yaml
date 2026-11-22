@@ -1,0 +1,12 @@
+id: cui-hao
+wikidata: null
+civ: china
+faction: beiwei
+importance: 3
+birth: { year: 381 }
+death: { year: 450 }
+birthplace: unknown
+deathplace: pingcheng
+places:
+  - { place: pingcheng }
+reviewed: false

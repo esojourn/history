@@ -1,0 +1,10 @@
+id: shipin
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 513, circa: true }
+places: [jianye]
+participants:
+  - person: zhong-rong
+reviewed: false

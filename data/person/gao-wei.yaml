@@ -1,0 +1,16 @@
+id: gao-wei
+wikidata: null
+civ: china
+faction: beiqi
+importance: 2
+birth: { year: 556 }
+death: { year: 577 }
+reign:
+  - { start: 565, end: 577 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: ye, start: 565, end: 577 }
+  - { place: jinyang }
+  - { place: changan, start: 577, end: 577 }
+reviewed: false

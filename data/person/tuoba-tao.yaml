@@ -1,0 +1,18 @@
+id: tuoba-tao
+wikidata: null
+civ: china
+faction: beiwei
+importance: 4
+birth: { year: 408 }
+death: { year: 452 }
+reign:
+  - { start: 423, end: 452 }
+birthplace: pingcheng
+deathplace: pingcheng
+places:
+  - { place: pingcheng, start: 423, end: 452 }
+  - { place: tongwan, start: 427, end: 427 }
+  - { place: guzang, start: 439, end: 439 }
+  - { place: changan, start: 446, end: 446 }
+  - { place: guabu, start: 450, end: 451 }
+reviewed: false

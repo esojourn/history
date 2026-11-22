@@ -1,0 +1,15 @@
+id: liu-jun
+wikidata: null
+civ: china
+faction: liusong
+importance: 2
+birth: { year: 430 }
+death: { year: 464 }
+reign:
+  - { start: 453, end: 464 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: xunyang, start: 452, end: 453 }
+  - { place: jianye, start: 453, end: 464 }
+reviewed: false

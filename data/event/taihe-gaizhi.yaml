@@ -1,0 +1,13 @@
+id: taihe-gaizhi
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: 484 }
+end: { year: 486 }
+places: [pingcheng]
+participants:
+  - person: feng-taihou
+  - person: yuan-hong
+  - person: li-chong
+reviewed: false

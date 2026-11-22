@@ -1,0 +1,16 @@
+id: tan-daoji
+wikidata: null
+civ: china
+faction: liusong
+importance: 3
+birth: { unknown: true, approx: 380 }
+death: { year: 436 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: dantu }
+  - { place: luoyang, start: 416, end: 416 }
+  - { place: changan, start: 417, end: 417 }
+  - { place: xunyang, start: 426, end: 436 }
+  - { place: huatai, start: 431, end: 431 }
+reviewed: false

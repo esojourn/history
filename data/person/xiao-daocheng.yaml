@@ -1,0 +1,16 @@
+id: xiao-daocheng
+wikidata: null
+civ: china
+faction: nanqi
+importance: 3
+birth: { year: 427 }
+death: { year: 482 }
+reign:
+  - { start: 479, end: 482 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: nanlanling }
+  - { place: huaiyin }
+  - { place: jianye, start: 474, end: 482 }
+reviewed: false

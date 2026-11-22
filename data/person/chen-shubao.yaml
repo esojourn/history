@@ -1,0 +1,15 @@
+id: chen-shubao
+wikidata: null
+civ: china
+faction: chen
+importance: 3
+birth: { year: 553 }
+death: { year: 604 }
+reign:
+  - { start: 582, end: 589 }
+birthplace: jiangling
+deathplace: luoyang
+places:
+  - { place: jianye, start: 562, end: 589 }
+  - { place: changan, start: 589 }
+reviewed: false

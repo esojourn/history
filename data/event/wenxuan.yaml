@@ -1,0 +1,11 @@
+id: wenxuan
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 526, circa: true }
+end: { year: 531 }
+places: [jianye]
+participants:
+  - person: xiao-tong
+reviewed: false

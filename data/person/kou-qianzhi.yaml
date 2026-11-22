@@ -1,0 +1,13 @@
+id: kou-qianzhi
+wikidata: null
+civ: china
+faction: beiwei
+importance: 2
+birth: { year: 365 }
+death: { year: 448 }
+birthplace: unknown
+deathplace: pingcheng
+places:
+  - { place: songshan }
+  - { place: pingcheng, start: 424, end: 448 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: bodhidharma
+wikidata: null
+civ: china
+faction: beiwei
+importance: 2
+birth: { unknown: true, approx: 450 }
+death: { unknown: true, approx: 530 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: luoyang }
+  - { place: songshan }
+reviewed: false

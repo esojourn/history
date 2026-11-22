@@ -1,0 +1,14 @@
+id: yu-xin
+wikidata: null
+civ: china
+faction: beizhou
+importance: 3
+birth: { year: 513 }
+death: { year: 581 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jianye }
+  - { place: jiangling, start: 549, end: 554 }
+  - { place: changan, start: 554, end: 581 }
+reviewed: false

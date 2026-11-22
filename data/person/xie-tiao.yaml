@@ -1,0 +1,14 @@
+id: xie-tiao
+wikidata: null
+civ: china
+faction: nanqi
+importance: 2
+birth: { year: 464 }
+death: { year: 499 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye }
+  - { place: jiangling, start: 490, end: 493 }
+  - { place: xuancheng, start: 495, end: 496 }
+reviewed: false

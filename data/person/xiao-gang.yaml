@@ -1,0 +1,14 @@
+id: xiao-gang
+wikidata: null
+civ: china
+faction: liang
+importance: 2
+birth: { year: 503 }
+death: { year: 551 }
+reign:
+  - { start: 549, end: 551 }
+birthplace: jianye
+deathplace: jianye
+places:
+  - { place: jianye }
+reviewed: false

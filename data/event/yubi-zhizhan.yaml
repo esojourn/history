@@ -1,0 +1,12 @@
+id: yubi-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 546 }
+places: [yubi]
+participants:
+  - person: gao-huan
+  - person: wei-xiaokuan
+  - person: hulu-jin
+reviewed: false

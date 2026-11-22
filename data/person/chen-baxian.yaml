@@ -1,0 +1,16 @@
+id: chen-baxian
+wikidata: null
+civ: china
+faction: chen
+importance: 3
+birth: { year: 503 }
+death: { year: 559 }
+reign:
+  - { start: 557, end: 559 }
+birthplace: changcheng-wuxing
+deathplace: jianye
+places:
+  - { place: panyu }
+  - { place: dantu, start: 553, end: 555 }
+  - { place: jianye, start: 555, end: 559 }
+reviewed: false

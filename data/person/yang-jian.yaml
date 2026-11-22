@@ -1,0 +1,15 @@
+id: yang-jian
+wikidata: null
+civ: china
+faction: sui
+importance: 5
+birth: { year: 541 }
+death: { year: 604 }
+reign:
+  - { start: 581, end: 604 }
+birthplace: fengyi
+deathplace: renshou-gong
+places:
+  - { place: changan, start: 581, end: 604 }
+  - { place: renshou-gong, start: 604, end: 604 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: yuanjia-beifa
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 430 }
+end: { year: 451 }
+places: [huatai, guabu, xuyi, pengcheng]
+participants:
+  - person: liu-yilong
+  - person: tuoba-tao
+  - person: tan-daoji
+reviewed: false

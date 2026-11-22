@@ -1,0 +1,15 @@
+id: hou-jing
+wikidata: null
+civ: china
+faction: beiqi
+importance: 3
+birth: { year: 503 }
+death: { year: 552 }
+birthplace: huaishuo
+deathplace: hudouzhou
+places:
+  - { place: huaishuo }
+  - { place: luoyang }
+  - { place: shouchun, start: 547, end: 548 }
+  - { place: jianye, start: 548, end: 552 }
+reviewed: false

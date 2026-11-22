@@ -1,0 +1,13 @@
+id: sui-mie-chen
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 588 }
+end: { year: 589 }
+places: [jianye, caishi, dantu, guangling]
+participants:
+  - person: yang-jian
+  - person: chen-shubao
+  - person: zhang-lihua
+reviewed: false

@@ -1,0 +1,12 @@
+id: su-chuo
+wikidata: null
+civ: china
+faction: beizhou
+importance: 2
+birth: { year: 498 }
+death: { year: 546 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan, start: 535, end: 546 }
+reviewed: false

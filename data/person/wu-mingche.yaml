@@ -1,0 +1,14 @@
+id: wu-mingche
+wikidata: null
+civ: china
+faction: chen
+importance: 2
+birth: { year: 504 }
+death: { year: 580 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: shouchun, start: 573, end: 573 }
+  - { place: pengcheng, start: 577, end: 578 }
+  - { place: changan, start: 578, end: 580 }
+reviewed: false

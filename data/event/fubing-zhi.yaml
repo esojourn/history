@@ -1,0 +1,12 @@
+id: fubing-zhi
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 542, circa: true }
+end: { year: 550 }
+places: [changan]
+participants:
+  - person: yuwen-tai
+  - person: su-chuo
+reviewed: false

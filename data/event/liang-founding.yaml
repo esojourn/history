@@ -1,0 +1,11 @@
+id: liang-founding
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 501 }
+end: { year: 502 }
+places: [xiangyang, jiangling, jianye]
+participants:
+  - person: xiao-yan
+reviewed: false

@@ -1,0 +1,13 @@
+id: li-daoyuan
+wikidata: null
+civ: china
+faction: beiwei
+importance: 3
+birth: { year: 470, circa: true }
+death: { year: 527 }
+birthplace: unknown
+deathplace: yinpanyi
+places:
+  - { place: luoyang }
+  - { place: yinpanyi, start: 527, end: 527 }
+reviewed: false

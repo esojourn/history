@@ -1,0 +1,14 @@
+id: taijian-beifa
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 573 }
+end: { year: 579 }
+places: [shouchun, pengcheng]
+participants:
+  - person: chen-xu
+  - person: wu-mingche
+  - person: yuwen-yong
+  - person: wei-xiaokuan
+reviewed: false

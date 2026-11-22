@@ -1,0 +1,11 @@
+id: beizhou-miefo
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 574 }
+end: { year: 577 }
+places: [changan, ye]
+participants:
+  - person: yuwen-yong
+reviewed: false

@@ -1,0 +1,16 @@
+id: gao-huan
+wikidata: null
+civ: china
+faction: beiqi
+importance: 4
+birth: { year: 496 }
+death: { year: 547 }
+birthplace: huaishuo
+deathplace: jinyang
+places:
+  - { place: huaishuo }
+  - { place: jinyang, start: 531, end: 547 }
+  - { place: luoyang, start: 532, end: 534 }
+  - { place: ye, start: 534, end: 547 }
+  - { place: yubi, start: 546, end: 546 }
+reviewed: false

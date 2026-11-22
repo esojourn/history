@@ -1,0 +1,16 @@
+id: zhiyi
+wikidata: null
+civ: china
+faction: chen
+importance: 3
+birth: { year: 538 }
+death: { year: 597 }
+birthplace: unknown
+deathplace: shichengsi
+places:
+  - { place: jianye, start: 567, end: 575 }
+  - { place: tiantai, start: 575, end: 585 }
+  - { place: jianye, start: 585, end: 589 }
+  - { place: guangling, start: 591, end: 591 }
+  - { place: tiantai, start: 595, end: 597 }
+reviewed: false

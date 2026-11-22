@@ -70,3 +70,24 @@
 - id: liusong
   civ: china
   color: "#B8433F"
+- id: nanqi
+  civ: china
+  color: "#4F7FBF"
+- id: liang
+  civ: china
+  color: "#C0612B"
+- id: chen
+  civ: china
+  color: "#9C6B9E"
+- id: beiqi
+  civ: china
+  color: "#5E6E2E"
+- id: beizhou
+  civ: china
+  color: "#7E4A35"
+- id: sui
+  civ: china
+  color: "#B8892E"
+- id: rouran
+  civ: steppe
+  color: "#8A8F5A"

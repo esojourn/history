@@ -1,0 +1,12 @@
+id: xiao-ziliang
+wikidata: null
+civ: china
+faction: nanqi
+importance: 2
+birth: { year: 460 }
+death: { year: 494 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye }
+reviewed: false

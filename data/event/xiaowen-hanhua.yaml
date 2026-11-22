@@ -1,0 +1,12 @@
+id: xiaowen-hanhua
+wikidata: null
+civ: china
+type: cultural
+importance: 4
+start: { year: 494 }
+end: { year: 496 }
+places: [luoyang]
+participants:
+  - person: yuan-hong
+  - person: wang-su
+reviewed: false

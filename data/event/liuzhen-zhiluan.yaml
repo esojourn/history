@@ -1,0 +1,16 @@
+id: liuzhen-zhiluan
+wikidata: null
+civ: china
+type: uprising
+importance: 4
+start: { year: 523 }
+end: { year: 530 }
+places: [woye, huaishuo, wuchuan, ye]
+participants:
+  - person: erzhu-rong
+  - person: gao-huan
+  - person: yuwen-tai
+  - person: hou-jing
+  - person: anagui
+  - person: hu-taihou
+reviewed: false

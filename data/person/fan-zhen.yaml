@@ -1,0 +1,13 @@
+id: fan-zhen
+wikidata: null
+civ: china
+faction: nanqi
+importance: 2
+birth: { year: 450, circa: true }
+death: { year: 515, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jianye }
+  - { place: panyu }
+reviewed: false

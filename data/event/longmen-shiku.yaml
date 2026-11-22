@@ -1,0 +1,10 @@
+id: longmen-shiku
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 493, circa: true }
+places: [longmen]
+participants:
+  - person: yuan-hong
+reviewed: false

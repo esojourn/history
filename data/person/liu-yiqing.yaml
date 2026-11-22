@@ -1,0 +1,15 @@
+id: liu-yiqing
+wikidata: null
+civ: china
+faction: liusong
+importance: 2
+birth: { year: 403 }
+death: { year: 444 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye }
+  - { place: jiangling, start: 432, end: 439 }
+  - { place: xunyang, start: 439, end: 440 }
+  - { place: guangling, start: 440 }
+reviewed: false

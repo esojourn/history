@@ -1,0 +1,13 @@
+id: wei-rui
+wikidata: null
+civ: china
+faction: liang
+importance: 2
+birth: { year: 442 }
+death: { year: 520 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: zhongli, start: 507, end: 507 }
+  - { place: jianye }
+reviewed: false

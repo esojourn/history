@@ -1,0 +1,13 @@
+id: chen-qingzhi
+wikidata: null
+civ: china
+faction: liang
+importance: 2
+birth: { year: 484 }
+death: { year: 539 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jianye }
+  - { place: luoyang, start: 529, end: 529 }
+reviewed: false

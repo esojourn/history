@@ -1,0 +1,14 @@
+id: xiao-yi
+wikidata: null
+civ: china
+faction: liang
+importance: 3
+birth: { year: 508 }
+death: { year: 555 }
+reign:
+  - { start: 552, end: 554 }
+birthplace: unknown
+deathplace: jiangling
+places:
+  - { place: jiangling, start: 540, end: 554 }
+reviewed: false

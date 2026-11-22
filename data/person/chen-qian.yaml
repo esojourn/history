@@ -1,0 +1,14 @@
+id: chen-qian
+wikidata: null
+civ: china
+faction: chen
+importance: 1
+birth: { year: 522 }
+death: { year: 566 }
+reign:
+  - { start: 559, end: 566 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye, start: 559, end: 566 }
+reviewed: false

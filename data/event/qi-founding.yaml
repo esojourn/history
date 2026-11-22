@@ -1,0 +1,10 @@
+id: qi-founding
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 479 }
+places: [jianye]
+participants:
+  - person: xiao-daocheng
+reviewed: false

@@ -1,0 +1,12 @@
+id: zhang-lihua
+wikidata: null
+civ: china
+faction: chen
+importance: 1
+birth: { unknown: true, approx: 560 }
+death: { year: 589 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye }
+reviewed: false

@@ -1,0 +1,12 @@
+id: beizhou-mie-beiqi
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 576 }
+end: { year: 577 }
+places: [pingyang, jinyang, ye]
+participants:
+  - person: yuwen-yong
+  - person: gao-wei
+reviewed: false

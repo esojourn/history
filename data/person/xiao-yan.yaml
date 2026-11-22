@@ -1,0 +1,16 @@
+id: xiao-yan
+wikidata: null
+civ: china
+faction: liang
+importance: 5
+birth: { year: 464 }
+death: { year: 549 }
+reign:
+  - { start: 502, end: 549 }
+birthplace: jianye
+deathplace: jianye
+places:
+  - { place: xiangyang, start: 498, end: 501 }
+  - { place: jianye, start: 501, end: 549 }
+  - { place: tongtaisi, start: 527, end: 547 }
+reviewed: false

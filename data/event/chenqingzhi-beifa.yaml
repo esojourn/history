@@ -1,0 +1,13 @@
+id: chenqingzhi-beifa
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 528 }
+end: { year: 529 }
+places: [suiyang, xingyang, luoyang]
+participants:
+  - person: chen-qingzhi
+  - person: erzhu-rong
+  - person: xiao-yan
+reviewed: false

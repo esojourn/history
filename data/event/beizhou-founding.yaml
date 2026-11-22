@@ -1,0 +1,10 @@
+id: beizhou-founding
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 557 }
+places: [changan]
+participants:
+  - person: yuwen-hu
+reviewed: false

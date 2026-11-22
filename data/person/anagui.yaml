@@ -1,0 +1,13 @@
+id: anagui
+wikidata: null
+civ: steppe
+faction: rouran
+importance: 2
+birth: { unknown: true, approx: 495 }
+death: { year: 552 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: mobei }
+  - { place: luoyang, start: 520, end: 521 }
+reviewed: false

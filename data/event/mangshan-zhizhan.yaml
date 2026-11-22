@@ -1,0 +1,12 @@
+id: mangshan-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 564 }
+places: [mangshan, luoyang]
+participants:
+  - person: gao-changgong
+  - person: hulu-guang
+  - person: yuwen-hu
+reviewed: false

@@ -1,0 +1,17 @@
+id: houjing-zhiluan
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 548 }
+end: { year: 552 }
+places: [shouchun, caishi, jianye, baqiu]
+participants:
+  - person: hou-jing
+  - person: xiao-yan
+  - person: xiao-gang
+  - person: xiao-yi
+  - person: wang-sengbian
+  - person: chen-baxian
+  - person: yu-xin
+reviewed: false

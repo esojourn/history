@@ -1,0 +1,12 @@
+id: zu-chongzhi
+wikidata: null
+civ: china
+faction: liusong
+importance: 3
+birth: { year: 429 }
+death: { year: 500 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jianye }
+reviewed: false

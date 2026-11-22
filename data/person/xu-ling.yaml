@@ -1,0 +1,13 @@
+id: xu-ling
+wikidata: null
+civ: china
+faction: chen
+importance: 2
+birth: { year: 507 }
+death: { year: 583 }
+birthplace: unknown
+deathplace: jianye
+places:
+  - { place: jianye }
+  - { place: ye, start: 548, end: 555 }
+reviewed: false

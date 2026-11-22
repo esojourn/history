@@ -1,0 +1,11 @@
+id: liangwu-chongfo
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 504, circa: true }
+end: { year: 547 }
+places: [jianye, tongtaisi]
+participants:
+  - person: xiao-yan
+reviewed: false

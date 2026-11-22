@@ -1,0 +1,14 @@
+id: tuoba-si
+wikidata: null
+civ: china
+faction: beiwei
+importance: 2
+birth: { year: 392 }
+death: { year: 423 }
+reign:
+  - { start: 409, end: 423 }
+birthplace: unknown
+deathplace: pingcheng
+places:
+  - { place: pingcheng, start: 409, end: 423 }
+reviewed: false

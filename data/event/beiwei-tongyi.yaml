@@ -1,0 +1,12 @@
+id: beiwei-tongyi
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 426 }
+end: { year: 439 }
+places: [tongwan, longcheng, guzang, pingcheng]
+participants:
+  - person: tuoba-tao
+  - person: cui-hao
+reviewed: false

@@ -1,0 +1,14 @@
+id: yan-zhitui
+wikidata: null
+civ: china
+faction: beiqi
+importance: 3
+birth: { year: 531 }
+death: { year: 591, circa: true }
+birthplace: jiangling
+deathplace: unknown
+places:
+  - { place: jiangling, start: 531, end: 554 }
+  - { place: ye, start: 556, end: 577 }
+  - { place: changan, start: 577 }
+reviewed: false

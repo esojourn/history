@@ -1,0 +1,12 @@
+id: tujue-mie-rouran
+wikidata: null
+civ: steppe
+type: war
+importance: 3
+start: { year: 552 }
+end: { year: 555 }
+places: [mobei]
+participants:
+  - person: anagui
+  - person: yuwen-tai
+reviewed: false

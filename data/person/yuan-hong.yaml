@@ -1,0 +1,15 @@
+id: yuan-hong
+wikidata: null
+civ: china
+faction: beiwei
+importance: 5
+birth: { year: 467 }
+death: { year: 499 }
+reign:
+  - { start: 471, end: 499 }
+birthplace: pingcheng
+deathplace: unknown
+places:
+  - { place: pingcheng, start: 467, end: 493 }
+  - { place: luoyang, start: 493, end: 499 }
+reviewed: false

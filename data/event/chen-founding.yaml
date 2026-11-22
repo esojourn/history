@@ -1,0 +1,10 @@
+id: chen-founding
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 557 }
+places: [jianye]
+participants:
+  - person: chen-baxian
+reviewed: false

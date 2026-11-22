@@ -1,0 +1,13 @@
+id: liu-yanhe
+wikidata: null
+civ: china
+faction: liang
+importance: 3
+birth: { year: 465, circa: true }
+death: { year: 520, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: dinglinsi }
+  - { place: jianye }
+reviewed: false

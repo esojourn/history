@@ -1,0 +1,12 @@
+id: pei-songzhi
+wikidata: null
+civ: china
+faction: liusong
+importance: 2
+birth: { year: 372 }
+death: { year: 451 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: jianye }
+reviewed: false

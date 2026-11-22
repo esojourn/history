@@ -1,0 +1,10 @@
+id: beiqi-founding
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 550 }
+places: [ye, jinyang]
+participants:
+  - person: gao-yang
+reviewed: false

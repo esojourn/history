@@ -1,0 +1,13 @@
+id: wang-su
+wikidata: null
+civ: china
+faction: beiwei
+importance: 1
+birth: { year: 464 }
+death: { year: 501 }
+birthplace: unknown
+deathplace: shouchun
+places:
+  - { place: luoyang, start: 493, end: 500 }
+  - { place: shouchun, start: 500, end: 501 }
+reviewed: false
