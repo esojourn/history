@@ -1,0 +1,13 @@
+id: he-ruobi
+wikidata: null
+civ: china
+faction: sui
+importance: 2
+birth: { year: 544 }
+death: { year: 607 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: guangling, start: 588, end: 589 }
+  - { place: jianye, start: 589, end: 589 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: taiping-gongzhu
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 665, circa: true }
+death: { year: 713 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: luoyang, start: 681, end: 705 }
+  - { place: changan, start: 706, end: 713 }
+reviewed: false

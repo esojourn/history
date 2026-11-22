@@ -1,0 +1,15 @@
+id: li-ji
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 594 }
+death: { year: 669 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: wagang, start: 611, end: 618 }
+  - { place: jinyang, start: 630, end: 645 }
+  - { place: pingrang, start: 668, end: 668 }
+  - { place: changan }
+reviewed: false

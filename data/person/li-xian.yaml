@@ -1,0 +1,18 @@
+id: li-xian
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 656 }
+death: { year: 710 }
+reign:
+  - { start: 684, end: 684 }
+  - { start: 705, end: 710 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: changan, start: 656, end: 684 }
+  - { place: fangzhou, start: 684, end: 698 }
+  - { place: luoyang, start: 698, end: 706 }
+  - { place: changan, start: 706, end: 710 }
+reviewed: false

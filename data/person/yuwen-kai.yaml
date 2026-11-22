@@ -1,0 +1,13 @@
+id: yuwen-kai
+wikidata: null
+civ: china
+faction: sui
+importance: 2
+birth: { year: 555 }
+death: { year: 612 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 582, end: 604 }
+  - { place: luoyang, start: 605, end: 612 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: jinyang-qibing
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: 617 }
+end: { year: 618 }
+places: [jinyang, changan]
+participants:
+  - person: li-yuan
+  - person: li-shimin
+  - person: li-jiancheng
+reviewed: false

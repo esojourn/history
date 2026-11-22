@@ -1,0 +1,13 @@
+id: feiwang-liwu
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 655 }
+places: [changan]
+participants:
+  - person: li-zhi
+  - person: wu-zetian
+  - person: zhangsun-wuji
+  - person: li-ji
+reviewed: false

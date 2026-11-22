@@ -1,0 +1,13 @@
+id: xiantian-zhengbian
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 713 }
+places: [changan]
+participants:
+  - person: li-longji
+  - person: taiping-gongzhu
+  - person: gao-lishi
+  - person: li-dan
+reviewed: false

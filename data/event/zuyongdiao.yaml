@@ -1,0 +1,10 @@
+id: zuyongdiao
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 624 }
+places: [changan]
+participants:
+  - person: li-yuan
+reviewed: false

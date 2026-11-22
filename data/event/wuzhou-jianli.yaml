@@ -1,0 +1,11 @@
+id: wuzhou-jianli
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: 690 }
+places: [luoyang]
+participants:
+  - person: wu-zetian
+  - person: li-dan
+reviewed: false

@@ -1,0 +1,17 @@
+id: li-bai
+wikidata: null
+civ: china
+faction: tang
+importance: 5
+birth: { year: 701 }
+death: { year: 762 }
+birthplace: unknown
+deathplace: dangtu
+places:
+  - { place: changlong, start: 705, end: 724 }
+  - { place: changan, start: 742, end: 744 }
+  - { place: luoyang, start: 744, end: 744 }
+  - { place: xunyang, start: 757, end: 758 }
+  - { place: baidi, start: 759, end: 759 }
+  - { place: dangtu, start: 762, end: 762 }
+reviewed: false

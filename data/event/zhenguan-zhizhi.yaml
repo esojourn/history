@@ -1,0 +1,16 @@
+id: zhenguan-zhizhi
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 627 }
+end: { year: 649 }
+places: [changan]
+participants:
+  - person: li-shimin
+  - person: wei-zheng
+  - person: fang-xuanling
+  - person: du-ruhui
+  - person: zhangsun-huanghou
+  - person: zhangsun-wuji
+reviewed: false

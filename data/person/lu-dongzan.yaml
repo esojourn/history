@@ -1,0 +1,13 @@
+id: lu-dongzan
+wikidata: null
+civ: china
+faction: tubo
+importance: 2
+birth: { unknown: true, approx: 600 }
+death: { year: 667 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 640, end: 641 }
+  - { place: luoxie, start: 650, end: 667 }
+reviewed: false

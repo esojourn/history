@@ -1,0 +1,12 @@
+id: yeon-gaesomun
+wikidata: null
+civ: korea
+faction: gaogouli
+importance: 3
+birth: { unknown: true, approx: 603 }
+death: { year: 665, circa: true }
+birthplace: unknown
+deathplace: pingrang
+places:
+  - { place: pingrang, start: 642, end: 665 }
+reviewed: false

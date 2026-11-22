@@ -1,0 +1,12 @@
+id: yuwen-huaji
+wikidata: null
+civ: china
+faction: sui
+importance: 2
+birth: { unknown: true, approx: 575 }
+death: { year: 619 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: guangling, start: 616, end: 618 }
+reviewed: false

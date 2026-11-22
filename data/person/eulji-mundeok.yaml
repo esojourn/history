@@ -1,0 +1,13 @@
+id: eulji-mundeok
+wikidata: null
+civ: korea
+faction: gaogouli
+importance: 2
+birth: { unknown: true, approx: 570 }
+death: { unknown: true, approx: 630 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: sashui, start: 612, end: 612 }
+  - { place: pingrang, start: 612, end: 612 }
+reviewed: false

@@ -1,0 +1,16 @@
+id: li-dan
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 662 }
+death: { year: 716 }
+reign:
+  - { start: 684, end: 690 }
+  - { start: 710, end: 712 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: luoyang, start: 684, end: 705 }
+  - { place: changan, start: 706, end: 716 }
+reviewed: false

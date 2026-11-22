@@ -1,0 +1,13 @@
+id: zhang-jianzhi
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 625 }
+death: { year: 706 }
+birthplace: xiangyang
+deathplace: xinzhou-gd
+places:
+  - { place: luoyang, start: 700, end: 705 }
+  - { place: xinzhou-gd, start: 706, end: 706 }
+reviewed: false

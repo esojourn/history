@@ -1,0 +1,12 @@
+id: fengxiansi-dafo
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 672 }
+end: { year: 675 }
+places: [longmen]
+participants:
+  - person: li-zhi
+  - person: wu-zetian
+reviewed: false

@@ -1,0 +1,14 @@
+id: chen-ziang
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 659, circa: true }
+death: { year: 700, circa: true }
+birthplace: shehong
+deathplace: shehong
+places:
+  - { place: shehong }
+  - { place: luoyang, start: 684, end: 698 }
+  - { place: ji, start: 696, end: 697 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: taizong-dongzheng
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 645 }
+places: [liaodong, anshi]
+participants:
+  - person: li-shimin
+  - person: li-ji
+  - person: yeon-gaesomun
+reviewed: false

@@ -1,0 +1,15 @@
+id: li-jing
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 571 }
+death: { year: 649 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: jiangling, start: 621, end: 621 }
+  - { place: dingxiang, start: 630, end: 630 }
+  - { place: yinshan, start: 630, end: 630 }
+  - { place: changan }
+reviewed: false

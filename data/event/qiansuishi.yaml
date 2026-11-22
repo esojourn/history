@@ -1,0 +1,11 @@
+id: qiansuishi
+wikidata: null
+civ: japan
+type: diplomatic
+importance: 2
+start: { year: 600 }
+end: { year: 614 }
+places: [asuka, luoyang]
+participants:
+  - person: yang-guang
+reviewed: false

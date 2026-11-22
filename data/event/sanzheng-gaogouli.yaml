@@ -1,0 +1,12 @@
+id: sanzheng-gaogouli
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 612 }
+end: { year: 614 }
+places: [ji, liaodong, sashui, pingrang]
+participants:
+  - person: yang-guang
+  - person: eulji-mundeok
+reviewed: false

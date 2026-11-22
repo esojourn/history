@@ -1,0 +1,13 @@
+id: li-jiancheng
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 589 }
+death: { year: 626 }
+birthplace: unknown
+deathplace: xuanwumen
+places:
+  - { place: jinyang, start: 617, end: 617 }
+  - { place: changan, start: 617, end: 626 }
+reviewed: false

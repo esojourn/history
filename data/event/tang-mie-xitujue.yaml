@@ -1,0 +1,12 @@
+id: tang-mie-xitujue
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 657 }
+end: { year: 658 }
+places: unknown
+participants:
+  - person: su-dingfang
+  - person: li-zhi
+reviewed: false

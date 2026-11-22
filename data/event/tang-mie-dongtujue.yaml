@@ -1,0 +1,15 @@
+id: tang-mie-dongtujue
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 629 }
+end: { year: 630 }
+places: [dingxiang, yinshan]
+participants:
+  - person: li-jing
+  - person: li-ji
+  - person: su-dingfang
+  - person: jieli
+  - person: li-shimin
+reviewed: false

@@ -1,0 +1,18 @@
+id: li-longji
+wikidata: null
+civ: china
+faction: tang
+importance: 5
+birth: { year: 685 }
+death: { year: 762 }
+reign:
+  - { start: 712, end: 756 }
+birthplace: luoyang
+deathplace: changan
+places:
+  - { place: luoyang, start: 685, end: 705 }
+  - { place: changan, start: 706, end: 756 }
+  - { place: huaqing-gong, start: 745, end: 755 }
+  - { place: chengdu, start: 756, end: 757 }
+  - { place: changan, start: 757, end: 762 }
+reviewed: false

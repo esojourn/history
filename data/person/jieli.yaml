@@ -1,0 +1,13 @@
+id: jieli
+wikidata: null
+civ: steppe
+faction: tujue
+importance: 3
+birth: { unknown: true, approx: 585 }
+death: { year: 634 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: dingxiang, start: 620, end: 630 }
+  - { place: changan, start: 630, end: 634 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: tanglong-zhengbian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 710 }
+places: [changan]
+participants:
+  - person: li-longji
+  - person: taiping-gongzhu
+  - person: wei-hou
+  - person: shangguan-waner
+  - person: li-dan
+reviewed: false

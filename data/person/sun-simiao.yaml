@@ -1,0 +1,13 @@
+id: sun-simiao
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { unknown: true, approx: 581 }
+death: { year: 682 }
+birthplace: huayuan
+deathplace: unknown
+places:
+  - { place: huayuan }
+  - { place: changan }
+reviewed: false

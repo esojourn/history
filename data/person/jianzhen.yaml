@@ -1,0 +1,14 @@
+id: jianzhen
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 688 }
+death: { year: 763 }
+birthplace: guangling
+deathplace: heijokyo
+places:
+  - { place: guangling, start: 688, end: 753 }
+  - { place: changan, start: 707, end: 713 }
+  - { place: heijokyo, start: 754, end: 763 }
+reviewed: false

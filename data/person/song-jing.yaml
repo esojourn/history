@@ -1,0 +1,13 @@
+id: song-jing
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 663 }
+death: { year: 737 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: luoyang, start: 700, end: 705 }
+  - { place: changan, start: 717, end: 720 }
+reviewed: false

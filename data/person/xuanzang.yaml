@@ -1,0 +1,16 @@
+id: xuanzang
+wikidata: null
+civ: china
+faction: tang
+importance: 4
+birth: { year: 602, circa: true }
+death: { year: 664 }
+birthplace: goushi
+deathplace: yuhua-gong
+places:
+  - { place: luoyang, start: 615, end: 618 }
+  - { place: chengdu, start: 618, end: 622 }
+  - { place: gaochang, start: 629, end: 630 }
+  - { place: nalanda, start: 631, end: 641 }
+  - { place: changan, start: 645, end: 664 }
+reviewed: false

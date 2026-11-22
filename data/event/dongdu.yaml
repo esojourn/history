@@ -1,0 +1,13 @@
+id: dongdu
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 605 }
+end: { year: 606 }
+places: [luoyang]
+participants:
+  - person: yang-guang
+  - person: yang-su
+  - person: yuwen-kai
+reviewed: false

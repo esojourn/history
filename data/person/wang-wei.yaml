@@ -1,0 +1,15 @@
+id: wang-wei
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 701, circa: true }
+death: { year: 761 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 721, end: 761 }
+  - { place: guzang, start: 737, end: 738 }
+  - { place: wangchuan, start: 745, end: 761 }
+  - { place: luoyang, start: 756, end: 757 }
+reviewed: false

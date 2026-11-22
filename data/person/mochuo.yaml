@@ -1,0 +1,12 @@
+id: mochuo
+wikidata: null
+civ: steppe
+faction: tujue
+importance: 2
+birth: { unknown: true, approx: 650 }
+death: { year: 716 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: yudujin, start: 691, end: 716 }
+reviewed: false

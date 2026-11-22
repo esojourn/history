@@ -1,0 +1,13 @@
+id: gao-jiong
+wikidata: null
+civ: china
+faction: sui
+importance: 3
+birth: { year: 541 }
+death: { year: 607 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 581, end: 607 }
+  - { place: jianye, start: 589, end: 589 }
+reviewed: false

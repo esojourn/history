@@ -1,0 +1,13 @@
+id: jiedushi
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 711 }
+end: { year: 742 }
+places: [guzang, ji, qiuci]
+participants:
+  - person: li-longji
+  - person: li-linfu
+  - person: an-lushan
+reviewed: false

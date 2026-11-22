@@ -1,0 +1,10 @@
+id: daluosi-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 751 }
+places: [talas]
+participants:
+  - person: gao-xianzhi
+reviewed: false

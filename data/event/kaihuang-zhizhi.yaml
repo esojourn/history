@@ -1,0 +1,14 @@
+id: kaihuang-zhizhi
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 581 }
+end: { year: 600 }
+places: [changan]
+participants:
+  - person: yang-jian
+  - person: gao-jiong
+  - person: su-wei
+  - person: dugu-qieluo
+reviewed: false

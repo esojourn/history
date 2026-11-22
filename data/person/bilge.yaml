@@ -1,0 +1,12 @@
+id: bilge
+wikidata: null
+civ: steppe
+faction: tujue
+importance: 2
+birth: { year: 683 }
+death: { year: 734 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: yudujin, start: 716, end: 734 }
+reviewed: false

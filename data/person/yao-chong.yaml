@@ -1,0 +1,13 @@
+id: yao-chong
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 650 }
+death: { year: 721 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: luoyang, start: 698, end: 705 }
+  - { place: changan, start: 713, end: 716 }
+reviewed: false

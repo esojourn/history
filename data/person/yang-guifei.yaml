@@ -1,0 +1,14 @@
+id: yang-guifei
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 719 }
+death: { year: 756 }
+birthplace: unknown
+deathplace: mawei
+places:
+  - { place: luoyang, start: 730, end: 735 }
+  - { place: changan, start: 735, end: 756 }
+  - { place: huaqing-gong, start: 745, end: 755 }
+reviewed: false

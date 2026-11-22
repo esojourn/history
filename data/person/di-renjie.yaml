@@ -1,0 +1,14 @@
+id: di-renjie
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 630 }
+death: { year: 700 }
+birthplace: unknown
+deathplace: luoyang
+places:
+  - { place: changan, start: 676, end: 679 }
+  - { place: pengze, start: 692, end: 696 }
+  - { place: luoyang, start: 691, end: 700 }
+reviewed: false

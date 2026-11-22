@@ -1,0 +1,11 @@
+id: jiangdu-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 618 }
+places: [guangling]
+participants:
+  - person: yang-guang
+  - person: yuwen-huaji
+reviewed: false

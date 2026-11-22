@@ -1,0 +1,14 @@
+id: tang-mie-gaogouli
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 660 }
+end: { year: 668 }
+places: [baijiangkou, pingrang]
+participants:
+  - person: su-dingfang
+  - person: li-ji
+  - person: kim-chunchu
+  - person: li-zhi
+reviewed: false

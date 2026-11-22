@@ -1,0 +1,12 @@
+id: keju-chuangli
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: 587, circa: true }
+end: { year: 607, circa: true }
+places: [changan, luoyang]
+participants:
+  - person: yang-jian
+  - person: yang-guang
+reviewed: false

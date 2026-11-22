@@ -1,0 +1,13 @@
+id: wu-daozi
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { unknown: true, approx: 680 }
+death: { unknown: true, approx: 759 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan }
+  - { place: luoyang }
+reviewed: false

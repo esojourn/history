@@ -1,0 +1,15 @@
+id: li-yuan
+wikidata: null
+civ: china
+faction: tang
+importance: 5
+birth: { year: 566 }
+death: { year: 635 }
+reign:
+  - { start: 618, end: 626 }
+birthplace: changan
+deathplace: changan
+places:
+  - { place: jinyang, start: 616, end: 617 }
+  - { place: changan, start: 617, end: 635 }
+reviewed: false

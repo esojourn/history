@@ -1,0 +1,14 @@
+id: hulao-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 621 }
+places: [hulao, luoyang]
+participants:
+  - person: li-shimin
+  - person: dou-jiande
+  - person: wang-shichong
+  - person: yuchi-gong
+  - person: li-yuanji
+reviewed: false

@@ -1,0 +1,17 @@
+id: xuanwumen-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 5
+start: { year: 626 }
+places: [xuanwumen]
+participants:
+  - person: li-shimin
+  - person: li-jiancheng
+  - person: li-yuanji
+  - person: li-yuan
+  - person: zhangsun-wuji
+  - person: yuchi-gong
+  - person: fang-xuanling
+  - person: du-ruhui
+reviewed: false

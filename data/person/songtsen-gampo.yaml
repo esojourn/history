@@ -1,0 +1,12 @@
+id: songtsen-gampo
+wikidata: null
+civ: china
+faction: tubo
+importance: 3
+birth: { year: 617, circa: true }
+death: { year: 650 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: luoxie, start: 629, end: 650 }
+reviewed: false

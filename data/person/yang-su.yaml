@@ -1,0 +1,15 @@
+id: yang-su
+wikidata: null
+civ: china
+faction: sui
+importance: 3
+birth: { unknown: true, approx: 544 }
+death: { year: 606 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: baidi, start: 588, end: 589 }
+  - { place: renshou-gong, start: 593, end: 595 }
+  - { place: jinyang, start: 604, end: 604 }
+  - { place: changan }
+reviewed: false

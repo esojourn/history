@@ -1,0 +1,12 @@
+id: jianzhen-dongdu
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 742 }
+end: { year: 754 }
+places: [guangling, heijokyo]
+participants:
+  - person: jianzhen
+  - person: abe-nakamaro
+reviewed: false

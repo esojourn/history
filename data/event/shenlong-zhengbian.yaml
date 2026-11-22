@@ -1,0 +1,15 @@
+id: shenlong-zhengbian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 705 }
+places: [luoyang]
+participants:
+  - person: zhang-jianzhi
+  - person: li-xian
+  - person: wu-zetian
+  - person: li-dan
+  - person: taiping-gongzhu
+  - person: yao-chong
+reviewed: false

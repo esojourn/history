@@ -1,0 +1,14 @@
+id: zhang-jiuling
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 678 }
+death: { year: 740 }
+birthplace: shaozhou
+deathplace: shaozhou
+places:
+  - { place: shaozhou }
+  - { place: changan, start: 733, end: 736 }
+  - { place: jiangling, start: 737, end: 740 }
+reviewed: false

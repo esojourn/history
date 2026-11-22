@@ -1,0 +1,8 @@
+id: baijiangkou-zhizhan
+wikidata: null
+civ: korea
+type: battle
+importance: 3
+start: { year: 663 }
+places: [baijiangkou]
+reviewed: false

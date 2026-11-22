@@ -1,0 +1,13 @@
+id: yixing
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 683 }
+death: { year: 727 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: songshan, start: 705, end: 717 }
+  - { place: changan, start: 717, end: 727 }
+reviewed: false

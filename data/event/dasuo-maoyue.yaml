@@ -1,0 +1,12 @@
+id: dasuo-maoyue
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 583 }
+end: { year: 585 }
+places: [changan]
+participants:
+  - person: yang-jian
+  - person: gao-jiong
+reviewed: false

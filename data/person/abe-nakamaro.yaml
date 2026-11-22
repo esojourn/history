@@ -1,0 +1,11 @@
+id: abe-nakamaro
+wikidata: null
+civ: japan
+importance: 2
+birth: { year: 698 }
+death: { year: 770 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan, start: 717, end: 770 }
+reviewed: false

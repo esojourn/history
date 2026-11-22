@@ -1,0 +1,17 @@
+id: yang-guang
+wikidata: null
+civ: china
+faction: sui
+importance: 5
+birth: { year: 569 }
+death: { year: 618 }
+reign:
+  - { start: 604, end: 618 }
+birthplace: changan
+deathplace: guangling
+places:
+  - { place: guangling, start: 590, end: 600 }
+  - { place: changan, start: 600, end: 605 }
+  - { place: luoyang, start: 605, end: 616 }
+  - { place: guangling, start: 616, end: 618 }
+reviewed: false

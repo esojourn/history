@@ -91,3 +91,24 @@
 - id: rouran
   civ: steppe
   color: "#8A8F5A"
+- id: suimo
+  civ: china
+  color: "#7A6A4F"
+- id: tang
+  civ: china
+  color: "#8E2F45"
+- id: anshi
+  civ: china
+  color: "#4A4A5E"
+- id: tubo
+  civ: china
+  color: "#6B5B95"
+- id: tujue
+  civ: steppe
+  color: "#7A6230"
+- id: gaogouli
+  civ: korea
+  color: "#3E7C6B"
+- id: xinluo
+  civ: korea
+  color: "#5A86A8"

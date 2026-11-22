@@ -1,0 +1,12 @@
+id: fang-xuanling
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 579 }
+death: { year: 648 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 617, end: 648 }
+reviewed: false

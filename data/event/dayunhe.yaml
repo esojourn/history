@@ -1,0 +1,12 @@
+id: dayunhe
+wikidata: null
+civ: china
+type: founding
+importance: 5
+start: { year: 605 }
+end: { year: 610 }
+places: [luoyang, guangling, ji, yuhang]
+participants:
+  - person: yang-guang
+  - person: yuwen-kai
+reviewed: false

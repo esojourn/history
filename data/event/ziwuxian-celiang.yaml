@@ -1,0 +1,11 @@
+id: ziwuxian-celiang
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 724 }
+end: { year: 725 }
+places: [shangcai]
+participants:
+  - person: yixing
+reviewed: false

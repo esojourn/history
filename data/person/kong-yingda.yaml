@@ -1,0 +1,12 @@
+id: kong-yingda
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 574 }
+death: { year: 648 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan }
+reviewed: false

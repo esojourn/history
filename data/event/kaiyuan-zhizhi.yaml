@@ -1,0 +1,14 @@
+id: kaiyuan-zhizhi
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 713 }
+end: { year: 741 }
+places: [changan, luoyang]
+participants:
+  - person: li-longji
+  - person: yao-chong
+  - person: song-jing
+  - person: zhang-jiuling
+reviewed: false

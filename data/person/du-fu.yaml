@@ -1,0 +1,15 @@
+id: du-fu
+wikidata: null
+civ: china
+faction: tang
+importance: 5
+birth: { year: 712 }
+death: { year: 770 }
+birthplace: gongxian
+deathplace: unknown
+places:
+  - { place: gongxian, start: 712, end: 735 }
+  - { place: changan, start: 746, end: 756 }
+  - { place: chengdu, start: 759, end: 765 }
+  - { place: kuizhou, start: 766, end: 768 }
+reviewed: false

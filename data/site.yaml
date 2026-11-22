@@ -11,3 +11,4 @@ views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 vie
   - { id: sanguo, range: [15, 290] }
   - { id: liangjin, range: [270, 430] }
   - { id: nanbei, range: [410, 600] }
+  - { id: suitang, range: [580, 765] }

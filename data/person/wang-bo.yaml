@@ -1,0 +1,13 @@
+id: wang-bo
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 650, circa: true }
+death: { year: 676 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 666, end: 669 }
+  - { place: hongzhou, start: 675, end: 675 }
+reviewed: false

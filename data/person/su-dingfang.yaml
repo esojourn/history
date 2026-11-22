@@ -1,0 +1,14 @@
+id: su-dingfang
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 592 }
+death: { year: 667 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: yinshan, start: 630, end: 630 }
+  - { place: baijiangkou, start: 660, end: 660 }
+  - { place: pingrang, start: 661, end: 662 }
+reviewed: false

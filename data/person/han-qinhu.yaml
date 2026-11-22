@@ -1,0 +1,13 @@
+id: han-qinhu
+wikidata: null
+civ: china
+faction: sui
+importance: 2
+birth: { year: 538 }
+death: { year: 592 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: caishi, start: 589, end: 589 }
+  - { place: jianye, start: 589, end: 589 }
+reviewed: false

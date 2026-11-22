@@ -1,0 +1,13 @@
+id: wencheng-rucang
+wikidata: null
+civ: china
+type: diplomatic
+importance: 3
+start: { year: 641 }
+places: [changan, luoxie]
+participants:
+  - person: wencheng-gongzhu
+  - person: songtsen-gampo
+  - person: lu-dongzan
+  - person: li-shimin
+reviewed: false

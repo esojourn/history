@@ -1,0 +1,15 @@
+id: anshi-zhiluan
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 755 }
+end: { year: 763 }
+places: [ji, luoyang, tongguan, changan]
+participants:
+  - person: an-lushan
+  - person: li-longji
+  - person: yang-guozhong
+  - person: gao-xianzhi
+  - person: yang-guifei
+reviewed: false

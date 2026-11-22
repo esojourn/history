@@ -1,0 +1,12 @@
+id: zhangsun-huanghou
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 601 }
+death: { year: 636 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan, start: 613, end: 636 }
+reviewed: false

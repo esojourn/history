@@ -1,0 +1,12 @@
+id: zhangsun-wuji
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { unknown: true, approx: 594 }
+death: { year: 659 }
+birthplace: unknown
+deathplace: qianzhou
+places:
+  - { place: changan, start: 617, end: 659 }
+reviewed: false

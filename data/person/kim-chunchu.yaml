@@ -1,0 +1,15 @@
+id: kim-chunchu
+wikidata: null
+civ: korea
+faction: xinluo
+importance: 2
+birth: { year: 603, circa: true }
+death: { year: 661 }
+reign:
+  - { start: 654, end: 661 }
+birthplace: unknown
+deathplace: gyeongju
+places:
+  - { place: gyeongju }
+  - { place: changan, start: 648, end: 648 }
+reviewed: false

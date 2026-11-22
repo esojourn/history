@@ -1,0 +1,13 @@
+id: daxing-cheng
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 582 }
+end: { year: 583 }
+places: [changan]
+participants:
+  - person: yang-jian
+  - person: gao-jiong
+  - person: yuwen-kai
+reviewed: false

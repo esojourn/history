@@ -1,0 +1,10 @@
+id: hou-tujue-fuguo
+wikidata: null
+civ: steppe
+type: founding
+importance: 2
+start: { year: 682 }
+places: [yudujin]
+participants:
+  - person: mochuo
+reviewed: false

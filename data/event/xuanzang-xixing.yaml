@@ -1,0 +1,12 @@
+id: xuanzang-xixing
+wikidata: null
+civ: china
+type: cultural
+importance: 4
+start: { year: 629 }
+end: { year: 645 }
+places: [changan, gaochang, suiye, nalanda]
+participants:
+  - person: xuanzang
+  - person: li-shimin
+reviewed: false

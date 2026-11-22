@@ -1,0 +1,13 @@
+id: wang-shichong
+wikidata: null
+civ: china
+faction: suimo
+importance: 2
+birth: { unknown: true, approx: 570 }
+death: { year: 621 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: guangling, start: 610, end: 617 }
+  - { place: luoyang, start: 617, end: 621 }
+reviewed: false

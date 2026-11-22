@@ -1,0 +1,14 @@
+id: gao-xianzhi
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { unknown: true, approx: 700 }
+death: { year: 756 }
+birthplace: unknown
+deathplace: tongguan
+places:
+  - { place: qiuci, start: 740, end: 751 }
+  - { place: talas, start: 751, end: 751 }
+  - { place: tongguan, start: 755, end: 756 }
+reviewed: false

@@ -1,0 +1,18 @@
+id: li-shimin
+wikidata: null
+civ: china
+faction: tang
+importance: 5
+birth: { year: 598, circa: true }
+death: { year: 649 }
+reign:
+  - { start: 626, end: 649 }
+birthplace: wugong
+deathplace: cuiwei-gong
+places:
+  - { place: jinyang, start: 615, end: 617 }
+  - { place: luoyang, start: 620, end: 621 }
+  - { place: hulao, start: 621, end: 621 }
+  - { place: changan, start: 618, end: 649 }
+  - { place: anshi, start: 645, end: 645 }
+reviewed: false

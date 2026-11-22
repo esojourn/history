@@ -1,0 +1,12 @@
+id: dugu-qieluo
+wikidata: null
+civ: china
+faction: sui
+importance: 3
+birth: { year: 544, circa: true }
+death: { year: 602 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 557, end: 602 }
+reviewed: false

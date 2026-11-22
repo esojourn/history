@@ -1,0 +1,12 @@
+id: qiantangshi
+wikidata: null
+civ: japan
+type: diplomatic
+importance: 3
+start: { year: 630 }
+end: { year: 838 }
+places: [heijokyo, changan]
+participants:
+  - person: abe-nakamaro
+  - person: jianzhen
+reviewed: false

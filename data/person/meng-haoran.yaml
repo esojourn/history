@@ -1,0 +1,14 @@
+id: meng-haoran
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 689 }
+death: { year: 740 }
+birthplace: xiangyang
+deathplace: xiangyang
+places:
+  - { place: xiangyang }
+  - { place: changan, start: 728, end: 729 }
+  - { place: jiangling, start: 737, end: 738 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: du-ruhui
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 585 }
+death: { year: 630 }
+birthplace: duling
+deathplace: changan
+places:
+  - { place: changan, start: 617, end: 630 }
+reviewed: false

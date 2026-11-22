@@ -1,0 +1,15 @@
+id: suimo-minbian
+wikidata: null
+civ: china
+type: uprising
+importance: 4
+start: { year: 611 }
+end: { year: 618 }
+places: [changbai-shandong, wagang, zhangnan, luoyang]
+participants:
+  - person: yang-guang
+  - person: dou-jiande
+  - person: li-mi
+  - person: wang-shichong
+  - person: li-yuan
+reviewed: false

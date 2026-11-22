@@ -1,0 +1,11 @@
+id: jingjiao-ruhua
+wikidata: null
+civ: china
+type: cultural
+importance: 2
+start: { year: 635 }
+places: [changan]
+participants:
+  - person: li-shimin
+  - person: fang-xuanling
+reviewed: false

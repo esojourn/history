@@ -1,0 +1,14 @@
+id: li-mi
+wikidata: null
+civ: china
+faction: suimo
+importance: 3
+birth: { year: 582 }
+death: { year: 619 }
+birthplace: unknown
+deathplace: xionger
+places:
+  - { place: wagang, start: 616, end: 618 }
+  - { place: luoyang, start: 617, end: 618 }
+  - { place: changan, start: 618, end: 618 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: huineng
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 638 }
+death: { year: 713 }
+birthplace: xinzhou-gd
+deathplace: xinzhou-gd
+places:
+  - { place: xinzhou-gd, start: 638, end: 661 }
+  - { place: huangmei, start: 661, end: 662 }
+  - { place: caoxi, start: 677, end: 713 }
+reviewed: false

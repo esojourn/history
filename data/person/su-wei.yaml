@@ -1,0 +1,13 @@
+id: su-wei
+wikidata: null
+civ: china
+faction: sui
+importance: 2
+birth: { year: 542 }
+death: { year: 623 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 581, end: 616 }
+  - { place: guangling, start: 616, end: 618 }
+reviewed: false

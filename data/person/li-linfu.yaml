@@ -1,0 +1,12 @@
+id: li-linfu
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { year: 683 }
+death: { year: 752 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan, start: 734, end: 752 }
+reviewed: false

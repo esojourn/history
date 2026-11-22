@@ -1,0 +1,13 @@
+id: li-yuanji
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 603 }
+death: { year: 626 }
+birthplace: unknown
+deathplace: xuanwumen
+places:
+  - { place: jinyang, start: 617, end: 619 }
+  - { place: changan, start: 619, end: 626 }
+reviewed: false

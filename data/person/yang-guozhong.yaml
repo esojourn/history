@@ -1,0 +1,13 @@
+id: yang-guozhong
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { unknown: true, approx: 700 }
+death: { year: 756 }
+birthplace: unknown
+deathplace: mawei
+places:
+  - { place: chengdu }
+  - { place: changan, start: 745, end: 756 }
+reviewed: false

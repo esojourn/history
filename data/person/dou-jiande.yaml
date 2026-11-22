@@ -1,0 +1,14 @@
+id: dou-jiande
+wikidata: null
+civ: china
+faction: suimo
+importance: 3
+birth: { year: 573 }
+death: { year: 621 }
+birthplace: zhangnan
+deathplace: changan
+places:
+  - { place: zhangnan, start: 611, end: 616 }
+  - { place: hulao, start: 621, end: 621 }
+  - { place: changan, start: 621, end: 621 }
+reviewed: false

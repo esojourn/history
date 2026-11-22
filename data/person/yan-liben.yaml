@@ -1,0 +1,12 @@
+id: yan-liben
+wikidata: null
+civ: china
+faction: tang
+importance: 2
+birth: { year: 601, circa: true }
+death: { year: 673 }
+birthplace: unknown
+deathplace: changan
+places:
+  - { place: changan }
+reviewed: false

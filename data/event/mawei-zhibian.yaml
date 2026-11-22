@@ -1,0 +1,13 @@
+id: mawei-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 756 }
+places: [mawei]
+participants:
+  - person: li-longji
+  - person: yang-guifei
+  - person: yang-guozhong
+  - person: gao-lishi
+reviewed: false

@@ -1,0 +1,12 @@
+id: qimin
+wikidata: null
+civ: steppe
+faction: tujue
+importance: 2
+birth: { unknown: true, approx: 560 }
+death: { year: 609 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: monan, start: 599, end: 609 }
+reviewed: false

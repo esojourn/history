@@ -1,0 +1,12 @@
+id: lu-fayan
+wikidata: null
+civ: china
+faction: sui
+importance: 2
+birth: { unknown: true, approx: 562 }
+death: { unknown: true, approx: 620 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: changan }
+reviewed: false

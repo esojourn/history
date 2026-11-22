@@ -1,0 +1,13 @@
+id: wencheng-gongzhu
+wikidata: null
+civ: china
+faction: tang
+importance: 3
+birth: { unknown: true, approx: 623 }
+death: { year: 680 }
+birthplace: unknown
+deathplace: luoxie
+places:
+  - { place: changan }
+  - { place: luoxie, start: 641, end: 680 }
+reviewed: false
