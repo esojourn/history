@@ -139,6 +139,16 @@ for (const [g, list] of Object.entries(raw.relation)) {
   });
 }
 
+/* ---------- 诗歌链接（locales/<语言>/hymn.yaml） ---------- */
+{
+  const bodies = [...Object.values(tx.person), ...Object.values(tx.event)].map(t => t.body || '').join('\n');
+  for (const [k, n] of Object.entries(tx.hymn || {})) {
+    if (!/^\d{2}-\d{3}$/.test(String(n))) err(`hymn.yaml“${k}”`, `诗歌站编号“${n}”格式不对，应像 01-200`);
+    if (!bodies.includes(`《${k}》`)) warn('登记的诗歌正文里没有提到', k);
+  }
+  if (!raw.site.hymn_url && Object.keys(tx.hymn || {}).length) err('data/site.yaml', '缺 hymn_url');
+}
+
 /* ---------- 输出 ---------- */
 const n = o => Object.keys(o).length;
 console.log(`文明 ${n(raw.polity)}　人物 ${n(raw.person)}　事件 ${n(raw.event)}　关系 ${Object.values(raw.relation).flat().length}　地点 ${n(raw.place)}`);

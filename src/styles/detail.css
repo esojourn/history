@@ -108,6 +108,8 @@ mark { background: color-mix(in srgb, var(--huang) 36%, transparent); color: inh
 .d-src { margin: 0; padding-left: 1.2em; font-size: calc(13px * var(--fz)); color: var(--ink-2); max-width: 44em; }
 .d-src li { margin: 3px 0; overflow-wrap: anywhere; }
 .d-src a { color: var(--qing); }
+.detail a.d-hymn { color: var(--qing); text-underline-offset: 3px; white-space: nowrap; }
+.d-hymn::after { content: "♪"; font-size: .8em; margin-left: 1px; }
 .d-recalled { margin: 12px 0 4px; font-size: calc(12px * var(--fz)); color: var(--ink-3); }
 .d-review { margin: 14px 0 0; padding: 8px 12px; border-left: 3px solid var(--huang); background: color-mix(in srgb, var(--huang) 10%, transparent); font-size: calc(12px * var(--fz)); color: var(--ink-2); max-width: 44em; }
 

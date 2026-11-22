@@ -8,7 +8,12 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 
 export function makeCard(H) {
   const t = H.t;
-  const paras = s => (s ? s.split(/\n\s*\n/).map(x => `<p class="d-more">${esc(x.trim())}</p>`).join('') : '');
+  // 正文里的《诗歌名》，在 locales/<语言>/hymn.yaml 登记过的，链到诗歌站，新窗口打开
+  const hymns = Object.fromEntries(Object.entries(H.hymns || {}).map(([k, u]) => [esc(k), u]));
+  const hymnRe = Object.keys(hymns).length
+    ? new RegExp(`《(${Object.keys(hymns).map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})》`, 'g') : null;
+  const hymnLinks = h => (hymnRe ? h.replace(hymnRe, (m, k) => `《<a class="d-hymn" href="${esc(hymns[k])}" target="_blank" rel="noopener">${k}</a>》`) : h);
+  const paras = s => (s ? s.split(/\n\s*\n/).map(x => `<p class="d-more">${hymnLinks(esc(x.trim()))}</p>`).join('') : '');
   const wrap = s => `<div class="d-wrap">${s}</div>`;
   const pLink = (p, cls = '') => `<a href="${H.url('person', p.id)}" data-go="${p.id}"${cls ? ` class="${cls}"` : ''}>`;
   const eLink = e => `<a href="${H.url('event', e.id)}" data-goe="${e.id}">`;

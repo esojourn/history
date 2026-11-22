@@ -1,5 +1,6 @@
 # 时间长河的整体设置。年份用天文纪年：公元前 n 年 = 1 - n。
 extent: [-3000, 2000]        # 时间轴的两端
+hymn_url: https://dingxuan.info/hymn/index.php?n=   # 正文里的诗歌链到这里，编号见 locales/<语言>/hymn.yaml
 focus: [-261, -137]          # 样板时段（公元前 262—前 138 年）：各文明都录了人物；圣经历史另录了全程
 default_open: [china]        # 进入人物层时默认展开的文明
 views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 view.<id>

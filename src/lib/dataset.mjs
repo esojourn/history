@@ -58,6 +58,7 @@ export function loadText(dir) {
     event: readDir(`${d}/event`),
     place: readDir(`${d}/place`),
     relation: readDir(`${d}/relation`),
+    hymn: readFile(`${d}/hymn.yaml`) || {},
   };
 }
 
@@ -132,5 +133,8 @@ function compose(code) {
     return [p.id, und({ n: t.name || p.id, modern: t.modern || '', note: t.note, lat: p.lat, lng: p.lng, prec: p.precision, cert: p.certainty, wd: p.wikidata })];
   }));
 
-  return { lang: lang.code, htmlLang: lang.html, ui, site: raw.site, lanes, fac, rt, people, events, rels, places };
+  // 正文里提到的诗歌 → 诗歌站上那一首的网址（locales/<语言>/hymn.yaml）
+  const hymns = Object.fromEntries(Object.entries({ ...base.hymn, ...tx.hymn }).map(([k, n]) => [k, raw.site.hymn_url + encodeURIComponent(n)]));
+
+  return { lang: lang.code, htmlLang: lang.html, ui, site: raw.site, lanes, fac, rt, people, events, rels, places, hymns };
 }
