@@ -4,7 +4,7 @@ import { fades, fadeOf, reduceMotion, setHash, readHash, cardTarget, fz } from '
 export function desktop(H, card, search) {
   const $ = s => document.querySelector(s), t = H.t, reduce = reduceMotion();
   const svg = $('#river'), stage = $('.stage'), detail = $('#detail');
-  const G = 132, AX = 34, BH = 24, RH = 21, ER = 18, CAP = 16, [lo, hi] = H.FOCUS;
+  const G = 132, AX = 34, BH = 24, RH = 21, ER = 18, CAP = 16, MINR = 3, [lo, hi] = H.FOCUS;
   const S = { t0: H.EXTENT[0], k: 0.2, sel: null, hx: null, open: new Set(H.site.default_open), full: false };
   const HIST = [], nameOf = s => (s.t === 'p' ? H.P[s.id] : H.E[s.id]).n;   // HIST：在详情卡里一路点过来的人和事，用来“返回”
   const VIEWS = Object.fromEntries(H.site.views.map(v => [v.id, v.range]));
@@ -45,6 +45,24 @@ export function desktop(H, card, search) {
       if (i >= 0) rows[i].push([left, right]);
       return i;
     };
+    // 人物在屏幕上占的横向范围：生卒条，或者条太短时连名字（选中某人时还有关系标签）一起算
+    const span = p => {
+      const a = x(p.b0), rel = lit.get(p.id);
+      return [a - 4, Math.max(x(p.d), a + 10 + p.n.length * 12.5 + (rel ? 7 + rel.label.length * 12 : 0)) + 4];
+    };
+    // 补空：重要的人已经按年份排好行（行号不随缩放变）；还空着的地方，按重要度依次让给其余的人。
+    // 只往已有的行里填（不足 MINR 行的按 MINR 行算），泳道不会因此变高；名字会和别人挤在一起的，才先不显示。
+    const fill = (all, shown, n) => {
+      const R = Math.max(n, MINR), rows = Array.from({ length: R }, () => []), had = new Set(shown);
+      shown.forEach(p => rows[p.row].push(span(p)));
+      all.forEach(p => {
+        if (had.has(p)) return;
+        const [a, b] = span(p), i = rows.findIndex(rw => rw.every(([c, d]) => b <= c || a >= d));
+        if (i < 0) return;
+        rows[i].push([a, b]); p.row = i; shown.push(p); n = Math.max(n, i + 1);
+      });
+      return n;
+    };
 
     // 第一步：每条泳道显示谁、占多高。
     // 展开的泳道按缩放程度放人和大事；收起的只剩色带一条。
@@ -52,16 +70,22 @@ export function desktop(H, card, search) {
     let yy = AX + 6;
     const L = H.lanes.map(l => {
       const open = S.open.has(l.id), all = PL[l.id];
-      let shown = [], evs = [];
+      let shown = [], evs = [], nRows = 0;
       if (f > 0.02) {
         const base = open ? all.filter(p => p.imp >= zImp) : [];
         shown = base.concat(all.filter(p => !base.includes(p) && hot(p)));
+        nRows = H.pack(shown, p => p.b0, p => p.d, 1.5);
+        if (open && zImp > 1) nRows = fill(all, shown, nRows);
         evs = EL[l.id].filter(e => (open && e.imp >= eImp) || e === selE || (selP && e.who.includes(selP)));
       }
-      const nRows = H.pack(shown, p => p.b0, p => p.d, 1.5);
-      // 展开时大事在色带下面最多排三行，用到几行就留几行
+      // 展开时大事在色带下面最多排三行，用到几行就留几行。
+      // 次要的大事同样补空：只填进重要大事已经占用的行（至少一行），放得下才显示
       const evRows = [[], [], []], evRow = new Map();
       if (open) byPriority(evs).forEach(e => { const i = place(e, evRows); if (i >= 0) evRow.set(e, i); });
+      if (open && f > 0.02 && eImp > 1) {
+        const cap = evRows.slice(0, Math.max(1, evRows.filter(rw => rw.length).length)), had = new Set(evs);
+        byPriority(EL[l.id].filter(e => !had.has(e))).forEach(e => { const i = place(e, cap); if (i >= 0) { evRow.set(e, i); evs.push(e); } });
+      }
       const used = evRows.filter(rw => rw.length).length, evH = used ? used * ER + 8 : 0;
       const full = BH + evH + (nRows ? nRows * RH + 8 : 0) + (open && !all.length ? 26 : 0) + 2;
       const r = { l, open, shown, evs, evH, evRow, y: yy, bandH: H.lerp(46, BH, f), h: H.lerp(46, full, f) };
