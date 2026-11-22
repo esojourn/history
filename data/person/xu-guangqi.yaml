@@ -1,0 +1,15 @@
+id: xu-guangqi
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1562 }
+death: { year: 1633 }
+birthplace: shanghai
+deathplace: dadu
+places:
+  - { place: shanghai, start: 1562, end: 1604 }
+  - { place: jianye, start: 1600, end: 1603 }
+  - { place: dadu, start: 1604, end: 1633 }
+  - { place: tianjin, start: 1613, end: 1619 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: limadou-ruhua
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1583 }
+end: { year: 1610 }
+places: [zhaoqing, jianye, dadu]
+participants:
+  - person: matteo-ricci
+  - person: xu-guangqi
+  - person: zhu-yijun
+reviewed: false

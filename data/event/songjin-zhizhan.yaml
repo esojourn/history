@@ -1,0 +1,12 @@
+id: songjin-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1640 }
+end: { year: 1642 }
+places: [jinzhou-ln, ningyuan]
+participants:
+  - person: hong-taiji
+  - person: zhu-youjian
+reviewed: false

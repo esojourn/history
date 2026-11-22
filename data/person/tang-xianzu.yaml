@@ -1,0 +1,15 @@
+id: tang-xianzu
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1550 }
+death: { year: 1616 }
+birthplace: linchuan
+deathplace: linchuan
+places:
+  - { place: linchuan, start: 1550, end: 1583 }
+  - { place: jianye, start: 1584, end: 1591 }
+  - { place: suichang, start: 1593, end: 1598 }
+  - { place: linchuan, start: 1598, end: 1616 }
+reviewed: false

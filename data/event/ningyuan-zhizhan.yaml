@@ -1,0 +1,12 @@
+id: ningyuan-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1626 }
+places: [ningyuan]
+participants:
+  - person: yuan-chonghuan
+  - person: nurhaci
+  - person: sun-chengzong
+reviewed: false

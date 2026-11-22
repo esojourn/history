@@ -1,0 +1,13 @@
+id: wanli-sandazheng
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 1592 }
+end: { year: 1600 }
+places: [xingqingfu, hanseong, pingrang, noryang, bozhou-gz]
+participants:
+  - person: zhu-yijun
+  - person: toyotomi-hideyoshi
+  - person: yi-sun-sin
+reviewed: false

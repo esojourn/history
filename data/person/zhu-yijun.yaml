@@ -1,0 +1,14 @@
+id: zhu-yijun
+wikidata: null
+civ: china
+faction: mingchao
+importance: 4
+birth: { year: 1563 }
+death: { year: 1620 }
+reign:
+  - { start: 1572, end: 1620 }
+birthplace: dadu
+deathplace: dadu
+places:
+  - { place: dadu, start: 1563, end: 1620 }
+reviewed: false

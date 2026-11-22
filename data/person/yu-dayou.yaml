@@ -1,0 +1,15 @@
+id: yu-dayou
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1503 }
+death: { year: 1579 }
+birthplace: quanzhou
+deathplace: unknown
+places:
+  - { place: quanzhou, start: 1503, end: 1535 }
+  - { place: hangzhou, start: 1554, end: 1560 }
+  - { place: fuzhou-fj, start: 1563, end: 1564 }
+  - { place: panyu, start: 1565, end: 1570 }
+reviewed: false

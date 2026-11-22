@@ -1,0 +1,15 @@
+id: donglin-dangzheng
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1604 }
+end: { year: 1627 }
+places: [donglin-shuyuan, dadu]
+participants:
+  - person: gu-xiancheng
+  - person: yang-lian
+  - person: wei-zhongxian
+  - person: zhu-youxiao
+  - person: zhu-yijun
+reviewed: false

@@ -1,0 +1,11 @@
+id: ningwang-zhiluan
+wikidata: null
+civ: china
+type: war
+importance: 2
+start: { year: 1519 }
+places: [hongzhou, poyanghu]
+participants:
+  - person: wang-shouren
+  - person: zhu-houzhao
+reviewed: false

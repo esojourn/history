@@ -1,0 +1,17 @@
+id: hong-taiji
+wikidata: null
+civ: china
+faction: qingchao
+importance: 5
+birth: { year: 1592 }
+death: { year: 1643 }
+reign:
+  - { start: 1626, end: 1643 }
+birthplace: hetuala
+deathplace: shengjing
+places:
+  - { place: hetuala, start: 1592, end: 1621 }
+  - { place: shengjing, start: 1625, end: 1643 }
+  - { place: dadu, start: 1629, end: 1630 }
+  - { place: jinzhou-ln, start: 1641, end: 1642 }
+reviewed: false

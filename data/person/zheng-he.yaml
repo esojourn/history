@@ -1,0 +1,17 @@
+id: zheng-he
+wikidata: null
+civ: china
+faction: mingchao
+importance: 4
+birth: { year: 1371 }
+death: { year: 1433, circa: true }
+birthplace: kunyang-yn
+deathplace: unknown
+places:
+  - { place: kunyang-yn, start: 1371, end: 1382 }
+  - { place: dadu, start: 1385, end: 1402 }
+  - { place: jianye, start: 1402, end: 1433 }
+  - { place: liujiagang, start: 1405, end: 1431 }
+  - { place: calicut, start: 1407, end: 1433 }
+  - { place: malacca, start: 1409, end: 1433 }
+reviewed: false

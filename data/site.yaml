@@ -18,3 +18,4 @@ views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 vie
   - { id: wudai, range: [900, 968], open: [china, steppe] }
   - { id: beisong, range: [955, 1135], open: [china, steppe] }
   - { id: nansongyuan, range: [1120, 1375], open: [china, steppe] }
+  - { id: ming, range: [1360, 1650], open: [china, steppe] }

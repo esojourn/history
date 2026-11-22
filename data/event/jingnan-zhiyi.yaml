@@ -1,0 +1,14 @@
+id: jingnan-zhiyi
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 1399 }
+end: { year: 1402 }
+places: [dadu, jianye]
+participants:
+  - person: zhu-di
+  - person: zhu-yunwen
+  - person: yao-guangxiao
+  - person: fang-xiaoru
+reviewed: false

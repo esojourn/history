@@ -1,0 +1,14 @@
+id: xu-jie
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1503 }
+death: { year: 1583 }
+birthplace: huating
+deathplace: huating
+places:
+  - { place: huating, start: 1503, end: 1523 }
+  - { place: dadu, start: 1523, end: 1568 }
+  - { place: huating, start: 1568, end: 1583 }
+reviewed: false

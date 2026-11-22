@@ -1,0 +1,13 @@
+id: yao-guangxiao
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1335 }
+death: { year: 1418 }
+birthplace: wu
+deathplace: dadu
+places:
+  - { place: wu, start: 1335, end: 1382 }
+  - { place: dadu, start: 1382, end: 1418 }
+reviewed: false

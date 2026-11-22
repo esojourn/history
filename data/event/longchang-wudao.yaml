@@ -1,0 +1,11 @@
+id: longchang-wudao
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 1508 }
+places: [longchang, yuyao]
+participants:
+  - person: wang-shouren
+  - person: liu-jin
+reviewed: false

@@ -1,0 +1,14 @@
+id: song-yingxing
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1587 }
+death: { year: 1666, circa: true }
+birthplace: fengxin
+deathplace: fengxin
+places:
+  - { place: fengxin, start: 1587, end: 1634 }
+  - { place: fenyi, start: 1634, end: 1638 }
+  - { place: fengxin, start: 1644, end: 1666 }
+reviewed: false

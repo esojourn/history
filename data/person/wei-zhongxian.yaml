@@ -1,0 +1,14 @@
+id: wei-zhongxian
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1568 }
+death: { year: 1627 }
+birthplace: suning
+deathplace: fucheng-hb
+places:
+  - { place: suning, start: 1568, end: 1589 }
+  - { place: dadu, start: 1589, end: 1627 }
+  - { place: fucheng-hb, start: 1627, end: 1627 }
+reviewed: false

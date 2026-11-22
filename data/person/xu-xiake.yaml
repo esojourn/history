@@ -1,0 +1,15 @@
+id: xu-xiake
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1587 }
+death: { year: 1641 }
+birthplace: jiangyin
+deathplace: jiangyin
+places:
+  - { place: jiangyin, start: 1587, end: 1641 }
+  - { place: huangshan, start: 1616, end: 1618 }
+  - { place: dian, start: 1638, end: 1640 }
+  - { place: jizushan, start: 1639, end: 1639 }
+reviewed: false

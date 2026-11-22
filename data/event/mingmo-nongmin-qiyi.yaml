@@ -1,0 +1,13 @@
+id: mingmo-nongmin-qiyi
+wikidata: null
+civ: china
+type: uprising
+importance: 4
+start: { year: 1627 }
+end: { year: 1645 }
+places: [mizhi, changan, bianzhou, xiangyang, chengdu, dadu]
+participants:
+  - person: li-zicheng
+  - person: zhang-xianzhong
+  - person: zhu-youjian
+reviewed: false

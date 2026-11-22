@@ -223,3 +223,9 @@
 - id: mingchao
   civ: china
   color: "#B23A48"
+- id: mingmo
+  civ: china
+  color: "#C0703A"
+- id: qingchao
+  civ: china
+  color: "#6B4C9A"

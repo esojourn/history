@@ -1,0 +1,13 @@
+id: beijing-baoweizhan
+wikidata: null
+civ: china
+type: battle
+importance: 3
+start: { year: 1449 }
+places: [dadu]
+participants:
+  - person: yu-qian
+  - person: zhu-qiyu
+  - person: esen
+  - person: zhu-qizhen
+reviewed: false

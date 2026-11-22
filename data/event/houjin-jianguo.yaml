@@ -1,0 +1,11 @@
+id: houjin-jianguo
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: 1616 }
+places: [hetuala]
+participants:
+  - person: nurhaci
+  - person: hong-taiji
+reviewed: false

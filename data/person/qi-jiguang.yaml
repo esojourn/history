@@ -1,0 +1,16 @@
+id: qi-jiguang
+wikidata: null
+civ: china
+faction: mingchao
+importance: 4
+birth: { year: 1528 }
+death: { year: 1588 }
+birthplace: dengzhou-sd
+deathplace: dengzhou-sd
+places:
+  - { place: dengzhou-sd, start: 1528, end: 1555 }
+  - { place: taizhou-zj, start: 1559, end: 1561 }
+  - { place: fuzhou-fj, start: 1562, end: 1564 }
+  - { place: jizhou-tj, start: 1568, end: 1583 }
+  - { place: dengzhou-sd, start: 1585, end: 1588 }
+reviewed: false

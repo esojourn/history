@@ -1,0 +1,13 @@
+id: yi-sun-sin
+wikidata: null
+civ: korea
+importance: 3
+birth: { year: 1545 }
+death: { year: 1598 }
+birthplace: hanseong
+deathplace: noryang
+places:
+  - { place: hanseong, start: 1545, end: 1576 }
+  - { place: yeosu, start: 1591, end: 1597 }
+  - { place: noryang, start: 1598, end: 1598 }
+reviewed: false

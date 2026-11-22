@@ -1,0 +1,11 @@
+id: anda-fenggong
+wikidata: null
+civ: china
+type: diplomatic
+importance: 2
+start: { year: 1571 }
+places: [guihua, pingcheng]
+participants:
+  - person: altan-khan
+  - person: zhang-juzheng
+reviewed: false

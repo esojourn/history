@@ -1,0 +1,16 @@
+id: wang-shouren
+wikidata: null
+civ: china
+faction: mingchao
+importance: 4
+birth: { year: 1472 }
+death: { year: 1529 }
+birthplace: yuyao
+deathplace: nanan-jx
+places:
+  - { place: yuyao, start: 1472, end: 1499 }
+  - { place: longchang, start: 1508, end: 1510 }
+  - { place: ganzhou, start: 1517, end: 1521 }
+  - { place: hongzhou, start: 1519, end: 1519 }
+  - { place: shanyin, start: 1521, end: 1527 }
+reviewed: false

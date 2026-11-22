@@ -1,0 +1,14 @@
+id: zhu-yunwen
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1377 }
+death: { unknown: true, approx: 1402 }
+reign:
+  - { start: 1398, end: 1402 }
+birthplace: jianye
+deathplace: unknown
+places:
+  - { place: jianye, start: 1377, end: 1402 }
+reviewed: false

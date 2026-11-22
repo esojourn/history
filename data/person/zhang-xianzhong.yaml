@@ -1,0 +1,15 @@
+id: zhang-xianzhong
+wikidata: null
+civ: china
+faction: mingmo
+importance: 3
+birth: { year: 1606 }
+death: { year: 1647 }
+birthplace: yanzhou-sx
+deathplace: xichong
+places:
+  - { place: yanzhou-sx, start: 1606, end: 1630 }
+  - { place: wuchang, start: 1643, end: 1643 }
+  - { place: chengdu, start: 1644, end: 1646 }
+  - { place: xichong, start: 1647, end: 1647 }
+reviewed: false

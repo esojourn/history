@@ -1,0 +1,15 @@
+id: xiong-tingbi
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1569 }
+death: { year: 1625 }
+birthplace: jiangxia
+deathplace: dadu
+places:
+  - { place: liaodong, start: 1608, end: 1611 }
+  - { place: liaodong, start: 1619, end: 1620 }
+  - { place: guangning, start: 1621, end: 1622 }
+  - { place: dadu, start: 1622, end: 1625 }
+reviewed: false

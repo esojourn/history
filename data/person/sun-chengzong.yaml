@@ -1,0 +1,16 @@
+id: sun-chengzong
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1563 }
+death: { year: 1638 }
+birthplace: gaoyang
+deathplace: gaoyang
+places:
+  - { place: gaoyang, start: 1563, end: 1604 }
+  - { place: dadu, start: 1604, end: 1622 }
+  - { place: shanhaiguan, start: 1622, end: 1625 }
+  - { place: shanhaiguan, start: 1629, end: 1631 }
+  - { place: gaoyang, start: 1631, end: 1638 }
+reviewed: false

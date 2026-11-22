@@ -1,0 +1,12 @@
+id: li-shizhen
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1518 }
+death: { year: 1593 }
+birthplace: qizhou-hb
+deathplace: qizhou-hb
+places:
+  - { place: qizhou-hb, start: 1518, end: 1593 }
+reviewed: false

@@ -1,0 +1,17 @@
+id: matteo-ricci
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1552 }
+death: { year: 1610 }
+birthplace: macerata
+deathplace: dadu
+places:
+  - { place: macerata, start: 1552, end: 1568 }
+  - { place: rome, start: 1568, end: 1577 }
+  - { place: goa, start: 1578, end: 1582 }
+  - { place: macau, start: 1582, end: 1583 }
+  - { place: zhaoqing, start: 1583, end: 1589 }
+  - { place: jianye, start: 1599, end: 1600 }
+  - { place: dadu, start: 1601, end: 1610 }
+reviewed: false

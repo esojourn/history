@@ -1,0 +1,12 @@
+id: dali-yi
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1521 }
+end: { year: 1524 }
+places: [dadu]
+participants:
+  - person: zhu-houcong
+  - person: yang-tinghe
+reviewed: false

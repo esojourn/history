@@ -1,0 +1,13 @@
+id: altan-khan
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 3
+birth: { year: 1507 }
+death: { year: 1582 }
+birthplace: unknown
+deathplace: guihua
+places:
+  - { place: guihua, start: 1540, end: 1582 }
+  - { place: dadu, start: 1550, end: 1550 }
+reviewed: false

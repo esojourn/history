@@ -1,0 +1,14 @@
+id: esen
+wikidata: null
+civ: steppe
+faction: menggu
+importance: 3
+birth: { unknown: true, approx: 1407 }
+death: { year: 1454 }
+birthplace: oirat
+deathplace: oirat
+places:
+  - { place: oirat, start: 1439, end: 1454 }
+  - { place: tumubao, start: 1449, end: 1449 }
+  - { place: dadu, start: 1449, end: 1449 }
+reviewed: false

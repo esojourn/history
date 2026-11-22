@@ -1,0 +1,13 @@
+id: zhenghe-xiaxiyang
+wikidata: null
+civ: china
+type: diplomatic
+importance: 5
+start: { year: 1405 }
+end: { year: 1433 }
+places: [liujiagang, changle, malacca, calicut, hormuz, malindi]
+participants:
+  - person: zheng-he
+  - person: zhu-di
+  - person: zhu-zhanji
+reviewed: false

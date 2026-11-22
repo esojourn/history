@@ -1,0 +1,12 @@
+id: wu-chengen
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1500, circa: true }
+death: { year: 1582, circa: true }
+birthplace: huaian
+deathplace: huaian
+places:
+  - { place: huaian, start: 1500, end: 1582 }
+reviewed: false

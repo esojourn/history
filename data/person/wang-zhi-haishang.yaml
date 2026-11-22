@@ -1,0 +1,14 @@
+id: wang-zhi-haishang
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { unknown: true, approx: 1500 }
+death: { year: 1560 }
+birthplace: huizhou
+deathplace: hangzhou
+places:
+  - { place: shuangyu, start: 1540, end: 1548 }
+  - { place: hirado, start: 1550, end: 1557 }
+  - { place: hangzhou, start: 1557, end: 1560 }
+reviewed: false

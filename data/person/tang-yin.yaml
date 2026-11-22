@@ -1,0 +1,13 @@
+id: tang-yin
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1470 }
+death: { year: 1524 }
+birthplace: wu
+deathplace: wu
+places:
+  - { place: wu, start: 1470, end: 1524 }
+  - { place: dadu, start: 1499, end: 1499 }
+reviewed: false

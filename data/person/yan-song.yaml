@@ -1,0 +1,14 @@
+id: yan-song
+wikidata: null
+civ: china
+faction: mingchao
+importance: 3
+birth: { year: 1480 }
+death: { year: 1567, circa: true }
+birthplace: fenyi
+deathplace: fenyi
+places:
+  - { place: fenyi, start: 1480, end: 1505 }
+  - { place: dadu, start: 1536, end: 1562 }
+  - { place: fenyi, start: 1562, end: 1567 }
+reviewed: false

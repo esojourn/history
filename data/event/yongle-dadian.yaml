@@ -1,0 +1,13 @@
+id: yongle-dadian
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 1403 }
+end: { year: 1408 }
+places: [jianye]
+participants:
+  - person: zhu-di
+  - person: xie-jin
+  - person: yao-guangxiao
+reviewed: false

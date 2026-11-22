@@ -1,0 +1,14 @@
+id: zhang-juzheng-gaige
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 1573 }
+end: { year: 1582 }
+places: [dadu]
+participants:
+  - person: zhang-juzheng
+  - person: zhu-yijun
+  - person: qi-jiguang
+  - person: li-chengliang
+reviewed: false

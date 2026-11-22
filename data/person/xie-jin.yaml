@@ -1,0 +1,15 @@
+id: xie-jin
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1369 }
+death: { year: 1415 }
+birthplace: jizhou-jx
+deathplace: dadu
+places:
+  - { place: jizhou-jx, start: 1369, end: 1388 }
+  - { place: jianye, start: 1388, end: 1407 }
+  - { place: jiaozhi, start: 1407, end: 1410 }
+  - { place: dadu, start: 1411, end: 1415 }
+reviewed: false

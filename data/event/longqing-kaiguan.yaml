@@ -1,0 +1,8 @@
+id: longqing-kaiguan
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1567 }
+places: [yuegang, macau]
+reviewed: false

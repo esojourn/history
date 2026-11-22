@@ -1,0 +1,14 @@
+id: zhu-youcheng
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1470 }
+death: { year: 1505 }
+reign:
+  - { start: 1487, end: 1505 }
+birthplace: dadu
+deathplace: dadu
+places:
+  - { place: dadu, start: 1470, end: 1505 }
+reviewed: false

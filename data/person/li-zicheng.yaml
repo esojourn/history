@@ -1,0 +1,16 @@
+id: li-zicheng
+wikidata: null
+civ: china
+faction: mingmo
+importance: 4
+birth: { year: 1606 }
+death: { year: 1645 }
+birthplace: mizhi
+deathplace: jiugongshan
+places:
+  - { place: mizhi, start: 1606, end: 1629 }
+  - { place: changan, start: 1643, end: 1644 }
+  - { place: dadu, start: 1644, end: 1644 }
+  - { place: shanhaiguan, start: 1644, end: 1644 }
+  - { place: jiugongshan, start: 1645, end: 1645 }
+reviewed: false

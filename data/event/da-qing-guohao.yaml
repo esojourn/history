@@ -1,0 +1,10 @@
+id: da-qing-guohao
+wikidata: null
+civ: china
+type: founding
+importance: 3
+start: { year: 1636 }
+places: [shengjing]
+participants:
+  - person: hong-taiji
+reviewed: false

@@ -1,0 +1,11 @@
+id: jiashen-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 5
+start: { year: 1644 }
+places: [dadu]
+participants:
+  - person: li-zicheng
+  - person: zhu-youjian
+reviewed: false

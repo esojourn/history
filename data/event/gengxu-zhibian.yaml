@@ -1,0 +1,12 @@
+id: gengxu-zhibian
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 1550 }
+places: [dadu, gubeikou]
+participants:
+  - person: altan-khan
+  - person: zhu-houcong
+  - person: yan-song
+reviewed: false

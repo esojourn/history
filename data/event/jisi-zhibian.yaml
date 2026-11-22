@@ -1,0 +1,14 @@
+id: jisi-zhibian
+wikidata: null
+civ: china
+type: battle
+importance: 2
+start: { year: 1629 }
+end: { year: 1630 }
+places: [dadu, ningyuan]
+participants:
+  - person: hong-taiji
+  - person: yuan-chonghuan
+  - person: zhu-youjian
+  - person: sun-chengzong
+reviewed: false

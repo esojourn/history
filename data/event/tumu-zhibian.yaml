@@ -1,0 +1,12 @@
+id: tumu-zhibian
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1449 }
+places: [tumubao, pingcheng]
+participants:
+  - person: zhu-qizhen
+  - person: wang-zhen
+  - person: esen
+reviewed: false

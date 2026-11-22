@@ -1,0 +1,13 @@
+id: fang-xiaoru
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1357 }
+death: { year: 1402 }
+birthplace: ninghai
+deathplace: jianye
+places:
+  - { place: ninghai, start: 1357, end: 1392 }
+  - { place: jianye, start: 1398, end: 1402 }
+reviewed: false

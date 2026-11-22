@@ -1,0 +1,15 @@
+id: zhu-houcong
+wikidata: null
+civ: china
+faction: mingchao
+importance: 4
+birth: { year: 1507 }
+death: { year: 1567 }
+reign:
+  - { start: 1521, end: 1567 }
+birthplace: zhongxiang
+deathplace: dadu
+places:
+  - { place: zhongxiang, start: 1507, end: 1521 }
+  - { place: dadu, start: 1521, end: 1567 }
+reviewed: false

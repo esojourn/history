@@ -1,0 +1,12 @@
+id: liu-jin
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1451 }
+death: { year: 1510 }
+birthplace: xingping
+deathplace: dadu
+places:
+  - { place: dadu, start: 1505, end: 1510 }
+reviewed: false

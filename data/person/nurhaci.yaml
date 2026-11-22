@@ -1,0 +1,18 @@
+id: nurhaci
+wikidata: null
+civ: china
+faction: qingchao
+importance: 5
+birth: { year: 1559 }
+death: { year: 1626 }
+reign:
+  - { start: 1616, end: 1626 }
+birthplace: hetuala
+deathplace: shengjing
+places:
+  - { place: hetuala, start: 1559, end: 1621 }
+  - { place: saerhu, start: 1619, end: 1619 }
+  - { place: liaodong, start: 1621, end: 1625 }
+  - { place: ningyuan, start: 1626, end: 1626 }
+  - { place: shengjing, start: 1625, end: 1626 }
+reviewed: false

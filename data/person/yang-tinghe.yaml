@@ -1,0 +1,13 @@
+id: yang-tinghe
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1459 }
+death: { year: 1529 }
+birthplace: chengdu
+deathplace: chengdu
+places:
+  - { place: chengdu, start: 1459, end: 1478 }
+  - { place: dadu, start: 1478, end: 1524 }
+reviewed: false

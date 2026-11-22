@@ -1,0 +1,14 @@
+id: zhu-qiyu
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1428 }
+death: { year: 1457 }
+reign:
+  - { start: 1449, end: 1457 }
+birthplace: dadu
+deathplace: dadu
+places:
+  - { place: dadu, start: 1428, end: 1457 }
+reviewed: false

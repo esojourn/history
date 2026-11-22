@@ -1,0 +1,15 @@
+id: yuan-chonghuan
+wikidata: null
+civ: china
+faction: mingchao
+importance: 4
+birth: { year: 1584 }
+death: { year: 1630 }
+birthplace: dongguan
+deathplace: dadu
+places:
+  - { place: dongguan, start: 1584, end: 1619 }
+  - { place: ningyuan, start: 1622, end: 1627 }
+  - { place: ningyuan, start: 1628, end: 1629 }
+  - { place: dadu, start: 1629, end: 1630 }
+reviewed: false

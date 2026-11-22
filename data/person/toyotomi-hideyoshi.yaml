@@ -1,0 +1,14 @@
+id: toyotomi-hideyoshi
+wikidata: null
+civ: japan
+importance: 4
+birth: { year: 1537, circa: true }
+death: { year: 1598 }
+birthplace: owari
+deathplace: fushimi
+places:
+  - { place: owari, start: 1537, end: 1558 }
+  - { place: heiankyo, start: 1582, end: 1598 }
+  - { place: osaka, start: 1583, end: 1598 }
+  - { place: fushimi, start: 1594, end: 1598 }
+reviewed: false

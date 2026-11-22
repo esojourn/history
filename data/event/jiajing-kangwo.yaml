@@ -1,0 +1,15 @@
+id: jiajing-kangwo
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 1552 }
+end: { year: 1566 }
+places: [taizhou-zj, shuangyu, fuzhou-fj, hangzhou]
+participants:
+  - person: qi-jiguang
+  - person: yu-dayou
+  - person: hu-zongxian
+  - person: wang-zhi-haishang
+  - person: zhu-houcong
+reviewed: false

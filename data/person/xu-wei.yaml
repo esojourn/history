@@ -1,0 +1,13 @@
+id: xu-wei
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1521 }
+death: { year: 1593 }
+birthplace: shanyin
+deathplace: shanyin
+places:
+  - { place: shanyin, start: 1521, end: 1593 }
+  - { place: hangzhou, start: 1557, end: 1562 }
+reviewed: false

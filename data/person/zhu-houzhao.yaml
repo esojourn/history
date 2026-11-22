@@ -1,0 +1,16 @@
+id: zhu-houzhao
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1491 }
+death: { year: 1521 }
+reign:
+  - { start: 1505, end: 1521 }
+birthplace: dadu
+deathplace: dadu
+places:
+  - { place: dadu, start: 1491, end: 1521 }
+  - { place: xuanfu, start: 1517, end: 1518 }
+  - { place: jianye, start: 1520, end: 1520 }
+reviewed: false

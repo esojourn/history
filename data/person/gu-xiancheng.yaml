@@ -1,0 +1,14 @@
+id: gu-xiancheng
+wikidata: null
+civ: china
+faction: mingchao
+importance: 2
+birth: { year: 1550 }
+death: { year: 1612 }
+birthplace: wuxi
+deathplace: wuxi
+places:
+  - { place: wuxi, start: 1550, end: 1580 }
+  - { place: dadu, start: 1580, end: 1594 }
+  - { place: donglin-shuyuan, start: 1604, end: 1612 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: duomen-zhibian
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 1457 }
+places: [dadu]
+participants:
+  - person: zhu-qizhen
+  - person: zhu-qiyu
+  - person: yu-qian
+reviewed: false

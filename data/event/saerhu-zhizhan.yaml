@@ -1,0 +1,12 @@
+id: saerhu-zhizhan
+wikidata: null
+civ: china
+type: battle
+importance: 4
+start: { year: 1619 }
+places: [saerhu, fushun, hetuala]
+participants:
+  - person: nurhaci
+  - person: hong-taiji
+  - person: zhu-yijun
+reviewed: false
