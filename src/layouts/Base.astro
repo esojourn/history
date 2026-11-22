@@ -1,6 +1,11 @@
 ---
 import '../styles/base.css';
 const { title, desc, lang, bodyClass } = Astro.props;
+// 访问统计：Google Analytics 4，直接用 gtag.js 装（没有用 GTM，免得两边都装造成重复计数）。
+// 只在正式构建（npm run build）里加，本地 npm run dev 不统计，免得把自己的访问算进去。
+// 大陆访客多半连不上谷歌，脚本异步加载，加载失败不影响网站使用，只是这部分访问统计不到。
+const GA_ID = 'G-PX5N2DB2FP';
+const analytics = import.meta.env.PROD;
 ---
 <!doctype html>
 <html lang={lang}>
@@ -10,6 +15,8 @@ const { title, desc, lang, bodyClass } = Astro.props;
   <title>{title}</title>
   {desc && <meta name="description" content={desc}>}
   <script is:inline>/* 用户上次选的字号（时间长河页的 A− A+），所有页面都套用 */ try { const z = +localStorage.getItem('fz'); if (z > 1) document.documentElement.style.setProperty('--fz', z); } catch (e) {}</script>
+  {analytics && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
+  {analytics && <script is:inline define:vars={{ GA_ID }}>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} window.gtag = gtag; gtag('js', new Date()); gtag('config', GA_ID);</script>}
 </head>
 <body class={bodyClass}>
   <slot />
