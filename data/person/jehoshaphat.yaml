@@ -1,6 +1,7 @@
 id: jehoshaphat
 wikidata: null
 civ: bible
+faction: judah
 importance: 2
 birth: { year: -906, circa: true }
 death: { year: -847, circa: true }

@@ -1,6 +1,7 @@
 id: elijah
 wikidata: null
 civ: bible
+faction: israel
 importance: 4
 birth: { unknown: true, approx: -909 }
 death: { unknown: true, approx: -849 }

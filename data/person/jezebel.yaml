@@ -1,6 +1,7 @@
 id: jezebel
 wikidata: null
 civ: bible
+faction: israel
 importance: 2
 birth: { unknown: true, approx: -899 }
 death: { year: -840, circa: true }

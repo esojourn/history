@@ -1,6 +1,7 @@
 id: ahaz
 wikidata: null
 civ: bible
+faction: judah
 importance: 1
 birth: { unknown: true, approx: -755 }
 death: { year: -714, circa: true }

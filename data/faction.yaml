@@ -130,3 +130,9 @@
 - id: shatuo
   civ: china
   color: "#7C5C7A"
+- id: israel
+  civ: bible
+  color: "#3F8A3A"
+- id: judah
+  civ: bible
+  color: "#7A3F9E"

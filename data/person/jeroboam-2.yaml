@@ -1,6 +1,7 @@
 id: jeroboam-2
 wikidata: null
 civ: bible
+faction: israel
 importance: 2
 birth: { unknown: true, approx: -819 }
 death: { year: -752, circa: true }

@@ -17,7 +17,9 @@ export function makeCard(H) {
   const wrap = s => `<div class="d-wrap">${s}</div>`;
   const pLink = (p, cls = '') => `<a href="${H.url('person', p.id)}" data-go="${p.id}"${cls ? ` class="${cls}"` : ''}>`;
   const eLink = e => `<a href="${H.url('event', e.id)}" data-goe="${e.id}">`;
-  const laneTag = id => { const l = H.lane(id); return `<p class="d-lane"><i style="background:${l.c}"></i>${l.name}</p>`; };
+  // 人物另属某个阵营（如北国以色列、南国犹大）时，在泳道名后注明，说明时间轴上那根条的颜色
+  const laneTag = (id, fac) => { const l = H.lane(id), f = fac && fac !== id && H.FAC[fac];
+    return `<p class="d-lane"><i style="background:${l.c}"></i>${l.name}${f ? `<span class="d-fac"><i style="background:${f.c}"></i>${f.n}</span>` : ''}</p>`; };
   const ageAt = (p, y) => (p.b == null || p.ns ? '' : t('card.age', { circa: p.circa ? t('circa') + ' ' : '', n: Math.round(y - p.b) }));
 
   const bar = (o, kind, id) => (o.page
@@ -63,7 +65,7 @@ export function makeCard(H) {
     const reign = p.reigns.map(r => '，' + t('card.reign', { a: H.fmt(r[0]), b: H.fmt(r[1]), n: r[1] - r[0] })).join('');
     const where = [p.bp && placeShort(p.bp) && p.bp !== 'unknown' ? t('card.born', { place: placeShort(p.bp) }) : '',
       p.dp && placeShort(p.dp) && p.dp !== 'unknown' ? t('card.died', { place: placeShort(p.dp) }) : ''].filter(Boolean).join('，');
-    const top = `${bar(o, 'person', id)}<div class="d-head"><${o.page ? 'h1' : 'h2'}>${p.n}</${o.page ? 'h1' : 'h2'}>${p.alt ? `<span class="d-alt">${p.alt}</span>` : ''}</div>${laneTag(p.lane)}
+    const top = `${bar(o, 'person', id)}<div class="d-head"><${o.page ? 'h1' : 'h2'}>${p.n}</${o.page ? 'h1' : 'h2'}>${p.alt ? `<span class="d-alt">${p.alt}</span>` : ''}</div>${laneTag(p.lane, p.fac)}
       <p class="d-meta"><b>${H.life(p)}</b>${lived}　${p.role}${reign}</p>${where ? `<p class="d-where">${where}</p>` : ''}`;
     const text = `<p class="d-sum">${esc(p.sum)}</p>${paras(p.body)}`;
 

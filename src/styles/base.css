@@ -42,6 +42,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .d-alt { color: var(--ink-2); font-family: var(--kai); font-size: calc(17px * var(--fz)); }
 .d-lane { margin: 4px 0 0; font-size: calc(12px * var(--fz)); color: var(--ink-2); }
 .d-lane i { display: inline-block; width: 8px; height: 8px; margin-right: 6px; }
+.d-fac { margin-left: 14px; color: var(--ink); }
 .d-meta { margin: 6px 0 10px; color: var(--ink-2); font-size: calc(13px * var(--fz)); }
 .d-meta b { color: var(--ink); font-weight: 600; }
 .d-sum { margin: 0 0 14px; }

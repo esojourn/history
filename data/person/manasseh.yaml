@@ -1,6 +1,7 @@
 id: manasseh
 wikidata: null
 civ: bible
+faction: judah
 importance: 2
 birth: { year: -708, circa: true }
 death: { year: -641, circa: true }

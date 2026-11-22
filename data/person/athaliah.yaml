@@ -1,6 +1,7 @@
 id: athaliah
 wikidata: null
 civ: bible
+faction: judah
 importance: 1
 birth: { unknown: true, approx: -884 }
 death: { year: -834, circa: true }

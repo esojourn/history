@@ -1,6 +1,7 @@
 id: rehoboam
 wikidata: null
 civ: bible
+faction: judah
 importance: 2
 birth: { year: -970, circa: true }
 death: { year: -912, circa: true }

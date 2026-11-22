@@ -1,6 +1,7 @@
 id: jehu
 wikidata: null
 civ: bible
+faction: israel
 importance: 2
 birth: { unknown: true, approx: -879 }
 death: { year: -813, circa: true }

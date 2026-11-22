@@ -1,6 +1,7 @@
 id: micah
 wikidata: null
 civ: bible
+faction: judah
 importance: 2
 birth: { unknown: true, approx: -759 }
 death: { unknown: true, approx: -689 }

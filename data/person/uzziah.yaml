@@ -1,6 +1,7 @@
 id: uzziah
 wikidata: null
 civ: bible
+faction: judah
 importance: 2
 birth: { year: -807, circa: true }
 death: { year: -739, circa: true }

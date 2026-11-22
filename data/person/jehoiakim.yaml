@@ -1,6 +1,7 @@
 id: jehoiakim
 wikidata: null
 civ: bible
+faction: judah
 importance: 1
 birth: { year: -633, circa: true }
 death: { year: -597, circa: true }

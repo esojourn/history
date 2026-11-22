@@ -1,6 +1,7 @@
 id: hoshea
 wikidata: null
 civ: bible
+faction: israel
 importance: 1
 birth: { unknown: true, approx: -769 }
 death: { unknown: true, approx: -715 }

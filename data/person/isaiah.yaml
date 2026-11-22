@@ -1,6 +1,7 @@
 id: isaiah
 wikidata: null
 civ: bible
+faction: judah
 importance: 4
 birth: { unknown: true, approx: -769 }
 death: { unknown: true, approx: -685 }

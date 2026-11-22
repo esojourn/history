@@ -1,6 +1,7 @@
 id: jehoiachin
 wikidata: null
 civ: bible
+faction: judah
 importance: 1
 birth: { year: -614, circa: true }
 death: { unknown: true, approx: -555 }

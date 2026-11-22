@@ -1,6 +1,7 @@
 id: zedekiah
 wikidata: null
 civ: bible
+faction: judah
 importance: 2
 birth: { year: -617, circa: true }
 death: { unknown: true, approx: -575 }
