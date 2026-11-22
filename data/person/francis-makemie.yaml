@@ -1,0 +1,12 @@
+id: francis-makemie
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1658 }
+death: { year: 1708 }
+birthplace: ramelton
+deathplace: accomack
+places:
+  - { place: maryland, start: 1683, end: 1708 }
+  - { place: accomack }
+reviewed: false

@@ -1,0 +1,10 @@
+id: providence-founding
+wikidata: null
+civ: bible
+type: founding
+importance: 2
+start: { year: 1636 }
+places: [providence]
+participants:
+  - person: roger-williams
+reviewed: false

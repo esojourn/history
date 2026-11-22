@@ -1,0 +1,12 @@
+id: junipero-serra
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1713 }
+death: { year: 1784 }
+birthplace: petra-mallorca
+deathplace: carmel-mission
+places:
+  - { place: san-diego, start: 1769, end: 1770 }
+  - { place: carmel-mission, start: 1770, end: 1784 }
+reviewed: false

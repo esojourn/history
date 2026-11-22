@@ -1,0 +1,10 @@
+id: maryland-toleration-act
+wikidata: null
+civ: rome
+type: political
+importance: 2
+start: { year: 1649 }
+places: [maryland]
+participants:
+  - person: cecil-calvert
+reviewed: false

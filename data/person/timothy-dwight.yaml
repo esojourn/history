@@ -1,0 +1,11 @@
+id: timothy-dwight
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1752 }
+death: { year: 1817 }
+birthplace: northampton-ma
+deathplace: new-haven
+places:
+  - { place: new-haven, start: 1795, end: 1817 }
+reviewed: false

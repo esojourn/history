@@ -1,0 +1,12 @@
+id: gilbert-tennent
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1703 }
+death: { year: 1764 }
+birthplace: ireland
+deathplace: philadelphia
+places:
+  - { place: new-brunswick-nj, start: 1726, end: 1743 }
+  - { place: philadelphia, start: 1743, end: 1764 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: gresham-machen
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1881 }
+death: { year: 1937 }
+birthplace: baltimore
+deathplace: bismarck-nd
+places:
+  - { place: princeton, start: 1906, end: 1929 }
+  - { place: philadelphia, start: 1929, end: 1937 }
+reviewed: false

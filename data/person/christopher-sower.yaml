@@ -1,0 +1,11 @@
+id: christopher-sower
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1695 }
+death: { year: 1758 }
+birthplace: laasphe
+deathplace: germantown
+places:
+  - { place: germantown, start: 1724, end: 1758 }
+reviewed: false

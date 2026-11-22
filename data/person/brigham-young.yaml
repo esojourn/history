@@ -1,0 +1,13 @@
+id: brigham-young
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1801 }
+death: { year: 1877 }
+birthplace: whitingham-vt
+deathplace: salt-lake-city
+places:
+  - { place: kirtland, start: 1833, end: 1838 }
+  - { place: nauvoo, start: 1839, end: 1846 }
+  - { place: salt-lake-city, start: 1847, end: 1877 }
+reviewed: false

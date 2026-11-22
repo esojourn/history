@@ -1,0 +1,9 @@
+id: second-vatican-council
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1962 }
+end: { year: 1965 }
+places: [rome]
+reviewed: false

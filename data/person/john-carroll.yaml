@@ -1,0 +1,11 @@
+id: john-carroll
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1735 }
+death: { year: 1815 }
+birthplace: upper-marlboro
+deathplace: baltimore
+places:
+  - { place: baltimore, start: 1784, end: 1815 }
+reviewed: false

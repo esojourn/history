@@ -1,0 +1,14 @@
+# 新大陆教会（约公元 1620—1975 年）的人物关系，依祁伯尔《历史的轨迹》第五部
+- { from: william-tennent, to: gilbert-tennent, type: kin, year: 1726 }
+- { from: frelinghuysen, to: gilbert-tennent, type: mentor, year: 1727 }
+- { from: gilbert-tennent, to: whitefield, type: ally, year: 1740 }
+- { from: jonathan-edwards, to: whitefield, type: ally, year: 1740 }
+- { from: jonathan-edwards, to: timothy-dwight, type: kin, year: 1752 }
+- { from: zinzendorf, to: muhlenberg, type: rival, year: 1742 }
+- { from: john-wesley, to: francis-asbury, type: mentor, year: 1771 }
+- { from: john-wesley, to: thomas-coke, type: mentor, year: 1784 }
+- { from: thomas-coke, to: francis-asbury, type: ally, year: 1784 }
+- { from: adoniram-judson, to: luther-rice, type: ally, year: 1812 }
+- { from: joseph-smith, to: brigham-young, type: lord, year: 1835 }
+- { from: william-miller, to: ellen-white, type: mentor, year: 1842 }
+- { from: dwight-moody, to: john-mott, type: mentor, year: 1886 }

@@ -1,0 +1,12 @@
+id: ellen-white
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1827 }
+death: { year: 1915 }
+birthplace: gorham-me
+deathplace: st-helena-ca
+places:
+  - { place: battle-creek, start: 1855, end: 1881 }
+  - { place: st-helena-ca, start: 1900, end: 1915 }
+reviewed: false

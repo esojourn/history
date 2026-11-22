@@ -1,0 +1,11 @@
+id: william-miller
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1782 }
+death: { year: 1849 }
+birthplace: pittsfield-ma
+deathplace: low-hampton
+places:
+  - { place: low-hampton, start: 1812, end: 1849 }
+reviewed: false

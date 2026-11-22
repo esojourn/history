@@ -1,0 +1,11 @@
+id: great-disappointment
+wikidata: null
+civ: bible
+type: cultural
+importance: 2
+start: { year: 1844 }
+places: [low-hampton, boston]
+participants:
+  - person: william-miller
+  - person: ellen-white
+reviewed: false

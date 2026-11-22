@@ -1,0 +1,8 @@
+id: evangelical-alliance
+wikidata: null
+civ: bible
+type: founding
+importance: 1
+start: { year: 1846 }
+places: [london]
+reviewed: false

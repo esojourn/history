@@ -1,0 +1,12 @@
+id: mary-baker-eddy
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1821 }
+death: { year: 1910 }
+birthplace: bow-nh
+deathplace: chestnut-hill
+places:
+  - { place: boston, start: 1879, end: 1889 }
+  - { place: chestnut-hill, start: 1908, end: 1910 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: william-tennent
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1673 }
+death: { year: 1746 }
+birthplace: ireland
+deathplace: neshaminy
+places:
+  - { place: neshaminy, start: 1726, end: 1746 }
+reviewed: false

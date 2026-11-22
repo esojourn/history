@@ -1,0 +1,11 @@
+id: john-mott
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1865 }
+death: { year: 1955 }
+birthplace: livingston-manor
+deathplace: orlando
+places:
+  - { place: edinburgh, start: 1910, end: 1910 }
+reviewed: false

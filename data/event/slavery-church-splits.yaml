@@ -1,0 +1,9 @@
+id: slavery-church-splits
+wikidata: null
+civ: bible
+type: cultural
+importance: 2
+start: { year: 1844 }
+end: { year: 1845 }
+places: [louisville, augusta-ga]
+reviewed: false

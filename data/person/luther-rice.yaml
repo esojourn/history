@@ -1,0 +1,12 @@
+id: luther-rice
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1783 }
+death: { year: 1836 }
+birthplace: northborough
+deathplace: edgefield-sc
+places:
+  - { place: kolkata, start: 1812, end: 1813 }
+  - { place: washington-dc, start: 1821, end: 1836 }
+reviewed: false

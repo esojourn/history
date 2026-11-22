@@ -1,0 +1,11 @@
+id: frelinghuysen
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1691, circa: true }
+death: { year: 1747, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: raritan-valley, start: 1720, end: 1747 }
+reviewed: false

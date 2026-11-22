@@ -1,0 +1,12 @@
+id: walther
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1811 }
+death: { year: 1887 }
+birthplace: langenchursdorf
+deathplace: st-louis
+places:
+  - { place: perry-county-mo, start: 1839, end: 1841 }
+  - { place: st-louis, start: 1841, end: 1887 }
+reviewed: false

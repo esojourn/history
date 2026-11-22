@@ -1,0 +1,13 @@
+id: muhlenberg
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1711 }
+death: { year: 1787 }
+birthplace: einbeck
+deathplace: trappe-pa
+places:
+  - { place: halle, start: 1738, end: 1742 }
+  - { place: philadelphia, start: 1742, end: 1787 }
+  - { place: trappe-pa }
+reviewed: false

@@ -1,0 +1,12 @@
+id: samuel-seabury
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1729 }
+death: { year: 1796 }
+birthplace: groton-ct
+deathplace: new-london-ct
+places:
+  - { place: aberdeen, start: 1784, end: 1784 }
+  - { place: new-london-ct, start: 1785, end: 1796 }
+reviewed: false

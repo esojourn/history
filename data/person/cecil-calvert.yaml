@@ -1,0 +1,11 @@
+id: cecil-calvert
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 1605 }
+death: { year: 1675 }
+birthplace: unknown
+deathplace: london
+places:
+  - { place: london }
+reviewed: false

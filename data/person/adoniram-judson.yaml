@@ -1,0 +1,13 @@
+id: adoniram-judson
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1788 }
+death: { year: 1850 }
+birthplace: malden
+deathplace: bay-of-bengal
+places:
+  - { place: kolkata, start: 1812, end: 1813 }
+  - { place: yangon, start: 1813, end: 1826 }
+  - { place: mawlamyine, start: 1827, end: 1850 }
+reviewed: false

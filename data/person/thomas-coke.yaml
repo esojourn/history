@@ -1,0 +1,12 @@
+id: thomas-coke
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1747 }
+death: { year: 1814 }
+birthplace: brecon
+deathplace: indian-ocean
+places:
+  - { place: london }
+  - { place: baltimore, start: 1784, end: 1785 }
+reviewed: false

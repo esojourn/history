@@ -1,0 +1,10 @@
+id: lds-church-founding
+wikidata: null
+civ: bible
+type: founding
+importance: 2
+start: { year: 1830 }
+places: [fayette-ny, palmyra-ny]
+participants:
+  - person: joseph-smith
+reviewed: false

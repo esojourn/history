@@ -1,0 +1,13 @@
+id: joseph-smith
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1805 }
+death: { year: 1844 }
+birthplace: sharon-vt
+deathplace: carthage-il
+places:
+  - { place: palmyra-ny, start: 1816, end: 1830 }
+  - { place: kirtland, start: 1831, end: 1838 }
+  - { place: nauvoo, start: 1839, end: 1844 }
+reviewed: false

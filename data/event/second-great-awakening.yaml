@@ -1,0 +1,13 @@
+id: second-great-awakening
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1795, circa: true }
+end: { year: 1835, circa: true }
+places: [new-haven, logan-county-ky, kentucky]
+participants:
+  - person: timothy-dwight
+  - person: james-mcgready
+  - person: francis-asbury
+reviewed: false

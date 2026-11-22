@@ -1,0 +1,12 @@
+id: witherspoon
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1723 }
+death: { year: 1794 }
+birthplace: gifford
+deathplace: princeton
+places:
+  - { place: princeton, start: 1768, end: 1794 }
+  - { place: philadelphia, start: 1776, end: 1782 }
+reviewed: false

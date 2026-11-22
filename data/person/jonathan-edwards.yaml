@@ -1,0 +1,14 @@
+id: jonathan-edwards
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1703 }
+death: { year: 1758 }
+birthplace: east-windsor
+deathplace: princeton
+places:
+  - { place: new-haven, start: 1716, end: 1726 }
+  - { place: northampton-ma, start: 1727, end: 1750 }
+  - { place: stockbridge, start: 1751, end: 1757 }
+  - { place: princeton, start: 1758, end: 1758 }
+reviewed: false

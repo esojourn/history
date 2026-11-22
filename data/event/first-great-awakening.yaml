@@ -1,0 +1,15 @@
+id: first-great-awakening
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1730, circa: true }
+end: { year: 1745, circa: true }
+places: [raritan-valley, northampton-ma, new-brunswick-nj, philadelphia, boston]
+participants:
+  - person: frelinghuysen
+  - person: william-tennent
+  - person: gilbert-tennent
+  - person: jonathan-edwards
+  - person: whitefield
+reviewed: false

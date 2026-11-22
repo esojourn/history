@@ -1,0 +1,11 @@
+id: james-mcgready
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1763, circa: true }
+death: { year: 1817 }
+birthplace: unknown
+deathplace: kentucky
+places:
+  - { place: logan-county-ky, start: 1796, end: 1811 }
+reviewed: false

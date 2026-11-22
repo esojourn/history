@@ -1,0 +1,12 @@
+id: christmas-conference
+wikidata: null
+civ: bible
+type: founding
+importance: 2
+start: { year: 1784 }
+places: [baltimore]
+participants:
+  - person: thomas-coke
+  - person: francis-asbury
+  - person: john-wesley
+reviewed: false

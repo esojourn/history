@@ -1,0 +1,12 @@
+id: francis-asbury
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1745 }
+death: { year: 1816 }
+birthplace: birmingham
+deathplace: spotsylvania
+places:
+  - { place: philadelphia, start: 1771, end: 1771 }
+  - { place: baltimore, start: 1784, end: 1816 }
+reviewed: false

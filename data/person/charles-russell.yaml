@@ -1,0 +1,12 @@
+id: charles-russell
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1852 }
+death: { year: 1916 }
+birthplace: pittsburgh
+deathplace: pampa-tx
+places:
+  - { place: pittsburgh, start: 1870, end: 1909 }
+  - { place: brooklyn, start: 1909, end: 1916 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: van-raalte
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1811 }
+death: { year: 1876 }
+birthplace: wanneperveen
+deathplace: holland-mi
+places:
+  - { place: holland-mi, start: 1847, end: 1876 }
+reviewed: false

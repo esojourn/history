@@ -1,0 +1,14 @@
+id: roger-williams
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1603, circa: true }
+death: { year: 1683 }
+birthplace: london
+deathplace: providence
+places:
+  - { place: boston, start: 1631, end: 1631 }
+  - { place: plymouth-colony, start: 1631, end: 1633 }
+  - { place: salem-ma, start: 1634, end: 1635 }
+  - { place: providence, start: 1636, end: 1683 }
+reviewed: false

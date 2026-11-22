@@ -1,0 +1,13 @@
+id: philander-chase
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1775 }
+death: { year: 1852 }
+birthplace: cornish-nh
+deathplace: peoria-county
+places:
+  - { place: new-orleans, start: 1805, end: 1811 }
+  - { place: gambier-oh, start: 1818, end: 1831 }
+  - { place: peoria-county, start: 1835, end: 1852 }
+reviewed: false

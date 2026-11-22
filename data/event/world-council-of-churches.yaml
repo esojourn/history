@@ -1,0 +1,10 @@
+id: world-council-of-churches
+wikidata: null
+civ: bible
+type: founding
+importance: 2
+start: { year: 1948 }
+places: [amsterdam]
+participants:
+  - person: john-mott
+reviewed: false
