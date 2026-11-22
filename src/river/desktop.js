@@ -11,6 +11,9 @@ export function desktop(H, card, search) {
   const VOPEN = Object.fromEntries(H.site.views.map(v => [v.id, v.open]));   // 有的快捷视图顺带展开某个文明
   const PL = {}, EL = {};
   H.lanes.forEach(l => { PL[l.id] = H.byWeight(H.people.filter(p => p.lane === l.id)); EL[l.id] = H.events.filter(e => e.lane === l.id); });
+  // LH：各泳道正在显示的高度（大事几行、人物几行，换算成像素，变化时逐帧过渡）；PREV：上一次画时各泳道的位置和高度
+  const LH = {}, PEEK = 60;
+  let PREV = {}, moving = false;
   let W = 0, raf = 0, POS = {}, EPOS = {}, Z = fz();   // Z：字号放大倍数。图整张放大 Z 倍，下面的尺寸都是放大前的
 
   const defs = '<defs>' + H.lanes.map(l =>
@@ -26,7 +29,10 @@ export function desktop(H, card, search) {
 
   function render() {
     W = stage.clientWidth / Z; fix();
-    const { t0, k } = S, x = y => (y - t0) * k + G, sy = stage.scrollTop / Z;
+    const { t0, k } = S, x = y => (y - t0) * k + G;
+    let sy = stage.scrollTop / Z;
+    // 泳道高度变化时不一下子跳过去，每一帧走剩下的三成；没走完就再画一帧
+    const ease = (a, b) => { if (a < 0 || reduce || Math.abs(b - a) < 0.5) return b; moving = true; return a + (b - a) * 0.3; };
     const f = H.clamp((k - 2.2) / 1.6, 0, 1);            // 人物层展开的程度
     const zImp = k < 5 ? 3 : k < 8 ? 2 : 1, eImp = k < 5 ? 4 : k < 8 ? 3 : 1;
     const selP = S.sel && S.sel.t === 'p' ? S.sel.id : null;
@@ -39,8 +45,9 @@ export function desktop(H, card, search) {
     POS = {}; EPOS = {};
     // 大事的排位：重要的先占位，放不下的不显示。返回排在第几行，-1 是放不下
     const byPriority = evs => [...evs].sort((a, b) => (b === selE) - (a === selE) || b.imp - a.imp || a.s - b.s);
+    const evBox = e => { const x1 = x(e.s); return [x1 - 8, Math.max(x(e.e), x1 + 12 + e.n.length * 12.5) + 8]; };
     const place = (e, rows) => {
-      const x1 = x(e.s), left = x1 - 8, right = Math.max(x(e.e), x1 + 12 + e.n.length * 12.5) + 8;
+      const [left, right] = evBox(e);
       const i = rows.findIndex(rw => rw.every(([a, b]) => right <= a || left >= b));
       if (i >= 0) rows[i].push([left, right]);
       return i;
@@ -86,13 +93,27 @@ export function desktop(H, card, search) {
         const cap = evRows.slice(0, Math.max(1, evRows.filter(rw => rw.length).length)), had = new Set(evs);
         byPriority(EL[l.id].filter(e => !had.has(e))).forEach(e => { const i = place(e, cap); if (i >= 0) { evRow.set(e, i); evs.push(e); } });
       }
-      const used = evRows.filter(rw => rw.length).length, evH = used ? used * ER + 8 : 0;
-      const full = BH + evH + (nRows ? nRows * RH + 8 : 0) + (open && !all.length ? 26 : 0) + 2;
+      // 泳道高度只看眼前这一屏（左右各多看一点）：这里人少，泳道就矮，下面的文明跟着上移；
+      // 左右移动或放大后人多了，再变高。行号仍是整条泳道统一排的，所以同一个人不会换行
+      const seen = ([a, b]) => b > G - PEEK && a < W + PEEK;
+      const evUsed = Math.max(0, ...[...evRow].filter(([e]) => seen(evBox(e))).map(([, i]) => i + 1));
+      const pUsed = Math.max(0, ...shown.filter(p => seen(span(p))).map(p => p.row + 1));
+      const cur = LH[l.id] || (LH[l.id] = { ev: -1, pp: -1 });
+      cur.ev = ease(cur.ev, evUsed ? evUsed * ER + 8 : 0); cur.pp = ease(cur.pp, pUsed ? pUsed * RH + 8 : 0);
+      const evH = cur.ev, full = BH + evH + cur.pp + (open && !all.length ? 26 : 0) + 2;
       const r = { l, open, shown, evs, evH, evRow, y: yy, bandH: H.lerp(46, BH, f), h: H.lerp(46, full, f) };
       yy += r.h + 6; return r;
     });
     const total = Math.max(yy + 6, stage.clientHeight / Z);
     svg.setAttribute('height', total * Z); svg.setAttribute('viewBox', `0 0 ${W} ${total}`);
+    // 上面的泳道变高变矮时，页面已经往下滚过的，让屏幕最上方那条泳道停在原处，眼前的内容不跟着跳
+    const top = sy > 0 && L.find(r => PREV[r.l.id] && PREV[r.l.id][0] + PREV[r.l.id][1] > sy + AX);
+    if (top) {
+      const d = top.y - PREV[top.l.id][0];
+      if (Math.abs(d) > 0.01) { stage.scrollTop += d * Z; if (dragging) dragging.st += d * Z; sy = stage.scrollTop / Z; }
+    }
+    PREV = Object.fromEntries(L.map(r => [r.l.id, [r.y, r.h]]));
+    if (moving) { moving = false; draw(); }
 
     // 竖格线（年份数字在最后画，因为要钉在顶上）
     const ticks = [], step = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000].find(s => s * k >= 72) || 1000;
