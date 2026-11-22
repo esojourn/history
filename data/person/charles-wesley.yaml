@@ -1,0 +1,15 @@
+id: charles-wesley
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1707 }
+death: { year: 1788 }
+birthplace: epworth
+deathplace: london
+places:
+  - { place: epworth }
+  - { place: oxford, start: 1726, end: 1735 }
+  - { place: savannah, start: 1736, end: 1736 }
+  - { place: bristol, start: 1749, end: 1771 }
+  - { place: london, start: 1771, end: 1788 }
+reviewed: false

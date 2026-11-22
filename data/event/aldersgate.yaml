@@ -1,0 +1,11 @@
+id: aldersgate
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1738 }
+places: [london]
+participants:
+  - person: john-wesley
+  - person: charles-wesley
+reviewed: false

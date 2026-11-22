@@ -1,0 +1,10 @@
+id: pilgrim-fathers
+wikidata: null
+civ: bible
+type: migration
+importance: 2
+start: { year: 1620 }
+places: [leiden, plymouth, plymouth-colony]
+participants:
+  - person: john-robinson
+reviewed: false

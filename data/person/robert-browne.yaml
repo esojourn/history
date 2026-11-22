@@ -1,0 +1,14 @@
+id: robert-browne
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1550, circa: true }
+death: { year: 1633, circa: true }
+birthplace: tolethorpe
+deathplace: northampton
+places:
+  - { place: cambridge, start: 1570, end: 1579 }
+  - { place: norwich, start: 1580, end: 1581 }
+  - { place: middelburg, start: 1582, end: 1583 }
+  - { place: northampton }
+reviewed: false

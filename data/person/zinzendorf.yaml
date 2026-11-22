@@ -1,0 +1,14 @@
+id: zinzendorf
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1700 }
+death: { year: 1760 }
+birthplace: dresden
+deathplace: herrnhut
+places:
+  - { place: dresden }
+  - { place: halle, start: 1710, end: 1716 }
+  - { place: wittenberg, start: 1716, end: 1719 }
+  - { place: herrnhut, start: 1727, end: 1760 }
+reviewed: false

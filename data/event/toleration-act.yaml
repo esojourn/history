@@ -1,0 +1,10 @@
+id: toleration-act
+wikidata: null
+civ: bible
+type: political
+importance: 3
+start: { year: 1689 }
+places: [london]
+participants:
+  - person: william-3
+reviewed: false

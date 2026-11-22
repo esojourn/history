@@ -1,0 +1,10 @@
+id: king-james-bible
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1611 }
+places: [hampton-court, london, oxford, cambridge]
+participants:
+  - person: james-1-england
+reviewed: false

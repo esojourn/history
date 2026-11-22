@@ -1,0 +1,14 @@
+id: charles-2
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 1630 }
+death: { year: 1685 }
+reign:
+  - { start: 1660, end: 1685 }
+birthplace: london
+deathplace: london
+places:
+  - { place: breda, start: 1660, end: 1660 }
+  - { place: london, start: 1660, end: 1685 }
+reviewed: false

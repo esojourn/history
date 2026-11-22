@@ -1,0 +1,11 @@
+id: camisard-war
+wikidata: null
+civ: bible
+type: uprising
+importance: 2
+start: { year: 1702 }
+end: { year: 1710 }
+places: [cevennes]
+participants:
+  - person: louis-14
+reviewed: false

@@ -1,0 +1,11 @@
+id: herrnhut-renewal
+wikidata: null
+civ: bible
+type: founding
+importance: 2
+start: { year: 1727 }
+places: [herrnhut, berthelsdorf]
+participants:
+  - person: zinzendorf
+  - person: christian-david
+reviewed: false

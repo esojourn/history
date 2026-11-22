@@ -1,0 +1,13 @@
+id: george-fox
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1624 }
+death: { year: 1691 }
+birthplace: fenny-drayton
+deathplace: london
+places:
+  - { place: fenny-drayton }
+  - { place: lancaster, start: 1652, end: 1664 }
+  - { place: london }
+reviewed: false

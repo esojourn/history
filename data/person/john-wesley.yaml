@@ -1,0 +1,15 @@
+id: john-wesley
+wikidata: null
+civ: bible
+importance: 4
+birth: { year: 1703 }
+death: { year: 1791 }
+birthplace: epworth
+deathplace: london
+places:
+  - { place: epworth }
+  - { place: oxford, start: 1720, end: 1735 }
+  - { place: savannah, start: 1736, end: 1737 }
+  - { place: london, start: 1738, end: 1791 }
+  - { place: bristol, start: 1739, end: 1791 }
+reviewed: false

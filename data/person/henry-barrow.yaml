@@ -1,0 +1,12 @@
+id: henry-barrow
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1550, circa: true }
+death: { year: 1593 }
+birthplace: shipdham
+deathplace: london
+places:
+  - { place: cambridge, start: 1566, end: 1570 }
+  - { place: london, start: 1587, end: 1593 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: antoine-court
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1695 }
+death: { year: 1760 }
+birthplace: villeneuve-de-berg
+deathplace: lausanne
+places:
+  - { place: villeneuve-de-berg }
+  - { place: monoblet, start: 1715, end: 1715 }
+  - { place: cevennes }
+  - { place: lausanne, start: 1729, end: 1760 }
+reviewed: false

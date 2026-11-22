@@ -1,0 +1,9 @@
+id: first-vatican-council
+wikidata: null
+civ: bible
+type: cultural
+importance: 2
+start: { year: 1869 }
+end: { year: 1870 }
+places: [rome]
+reviewed: false

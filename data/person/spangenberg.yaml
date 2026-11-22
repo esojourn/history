@@ -1,0 +1,14 @@
+id: spangenberg
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1704 }
+death: { year: 1792 }
+birthplace: klettenberg
+deathplace: berthelsdorf
+places:
+  - { place: halle, start: 1732, end: 1733 }
+  - { place: savannah, start: 1735, end: 1736 }
+  - { place: pennsylvania, start: 1744, end: 1762 }
+  - { place: herrnhut }
+reviewed: false

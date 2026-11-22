@@ -1,0 +1,12 @@
+id: milton
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1608 }
+death: { year: 1674 }
+birthplace: london
+deathplace: london
+places:
+  - { place: cambridge, start: 1625, end: 1632 }
+  - { place: london, start: 1640, end: 1674 }
+reviewed: false

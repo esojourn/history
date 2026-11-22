@@ -1,0 +1,12 @@
+id: george-muller
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1805 }
+death: { year: 1898 }
+birthplace: kroppenstedt
+deathplace: bristol
+places:
+  - { place: halle, start: 1825, end: 1828 }
+  - { place: bristol, start: 1832, end: 1898 }
+reviewed: false

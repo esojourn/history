@@ -1,0 +1,12 @@
+id: whitgift
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1530, circa: true }
+death: { year: 1604 }
+birthplace: grimsby
+deathplace: london
+places:
+  - { place: cambridge, start: 1567, end: 1577 }
+  - { place: london, start: 1583, end: 1604 }
+reviewed: false

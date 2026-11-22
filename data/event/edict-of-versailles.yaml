@@ -1,0 +1,10 @@
+id: edict-of-versailles
+wikidata: null
+civ: rome
+type: political
+importance: 1
+start: { year: 1787 }
+places: [versailles]
+participants:
+  - person: paul-rabaut
+reviewed: false

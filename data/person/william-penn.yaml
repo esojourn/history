@@ -1,0 +1,14 @@
+id: william-penn
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1644 }
+death: { year: 1718 }
+birthplace: london
+deathplace: ruscombe
+places:
+  - { place: london }
+  - { place: philadelphia, start: 1682, end: 1684 }
+  - { place: philadelphia, start: 1699, end: 1701 }
+  - { place: ruscombe }
+reviewed: false

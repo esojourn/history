@@ -1,0 +1,12 @@
+id: calixtus
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1586 }
+death: { year: 1656 }
+birthplace: medelby
+deathplace: helmstedt
+places:
+  - { place: helmstedt, start: 1614, end: 1656 }
+  - { place: torun, start: 1645, end: 1645 }
+reviewed: false

@@ -1,0 +1,9 @@
+id: synod-of-dort
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1618 }
+end: { year: 1619 }
+places: [dordrecht]
+reviewed: false

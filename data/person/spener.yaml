@@ -1,0 +1,14 @@
+id: spener
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1635 }
+death: { year: 1705 }
+birthplace: ribeauville
+deathplace: berlin
+places:
+  - { place: strasbourg, start: 1651, end: 1659 }
+  - { place: frankfurt, start: 1666, end: 1686 }
+  - { place: dresden, start: 1686, end: 1691 }
+  - { place: berlin, start: 1691, end: 1705 }
+reviewed: false

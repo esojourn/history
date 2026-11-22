@@ -1,0 +1,11 @@
+id: oxford-movement
+wikidata: null
+civ: bible
+type: cultural
+importance: 2
+start: { year: 1833 }
+end: { year: 1845 }
+places: [oxford]
+participants:
+  - person: newman
+reviewed: false

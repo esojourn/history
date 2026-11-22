@@ -1,0 +1,14 @@
+id: darby
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1800 }
+death: { year: 1882 }
+birthplace: london
+deathplace: bournemouth
+places:
+  - { place: wicklow, start: 1826, end: 1827 }
+  - { place: plymouth, start: 1831, end: 1845 }
+  - { place: london }
+  - { place: bournemouth }
+reviewed: false

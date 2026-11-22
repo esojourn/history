@@ -1,0 +1,12 @@
+id: laud
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1573 }
+death: { year: 1645 }
+birthplace: reading
+deathplace: london
+places:
+  - { place: oxford, start: 1611, end: 1621 }
+  - { place: london, start: 1633, end: 1645 }
+reviewed: false

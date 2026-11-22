@@ -1,0 +1,14 @@
+id: faustus-socinus
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1539 }
+death: { year: 1604 }
+birthplace: siena
+deathplace: luclawice
+places:
+  - { place: siena }
+  - { place: basel, start: 1574, end: 1578 }
+  - { place: krakow, start: 1579, end: 1598 }
+  - { place: luclawice }
+reviewed: false

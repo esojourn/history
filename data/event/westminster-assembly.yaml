@@ -1,0 +1,9 @@
+id: westminster-assembly
+wikidata: null
+civ: bible
+type: cultural
+importance: 3
+start: { year: 1643 }
+end: { year: 1649 }
+places: [london]
+reviewed: false

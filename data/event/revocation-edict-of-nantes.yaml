@@ -1,0 +1,10 @@
+id: revocation-edict-of-nantes
+wikidata: null
+civ: bible
+type: political
+importance: 3
+start: { year: 1685 }
+places: [fontainebleau, cevennes, nimes]
+participants:
+  - person: louis-14
+reviewed: false

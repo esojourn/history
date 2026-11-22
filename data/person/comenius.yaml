@@ -1,0 +1,13 @@
+id: comenius
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1592 }
+death: { year: 1670 }
+birthplace: nivnice
+deathplace: amsterdam
+places:
+  - { place: moravia }
+  - { place: leszno, start: 1628, end: 1656 }
+  - { place: amsterdam, start: 1656, end: 1670 }
+reviewed: false

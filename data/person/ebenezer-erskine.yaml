@@ -1,0 +1,11 @@
+id: ebenezer-erskine
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1680 }
+death: { year: 1754 }
+birthplace: dryburgh
+deathplace: stirling
+places:
+  - { place: stirling, start: 1731, end: 1754 }
+reviewed: false

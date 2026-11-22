@@ -1,0 +1,13 @@
+id: jansen
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1585 }
+death: { year: 1638 }
+birthplace: acquoy
+deathplace: ypres
+places:
+  - { place: leuven, start: 1602, end: 1636 }
+  - { place: ypres, start: 1636, end: 1638 }
+  - { place: paris }
+reviewed: false

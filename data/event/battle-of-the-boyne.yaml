@@ -1,0 +1,11 @@
+id: battle-of-the-boyne
+wikidata: null
+civ: rome
+type: battle
+importance: 2
+start: { year: 1690 }
+places: [boyne]
+participants:
+  - person: william-3
+  - person: james-2
+reviewed: false

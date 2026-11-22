@@ -62,3 +62,14 @@ periods:
   - id: confessional-wars
     start: 1555
     end: 1648
+  # 以下三段按同书第四部“改教后的教会”的脉络划分：
+  # 威斯特伐利亚和约（1648）→ 光荣革命与信仰容忍法案（1689）→ 约翰·卫斯理去世（1791）→ 凯波尔去世（1920）。
+  - id: dissenters
+    start: 1648
+    end: 1689
+  - id: pietism-revival
+    start: 1689
+    end: 1791
+  - id: modern-church
+    start: 1791
+    end: 1920

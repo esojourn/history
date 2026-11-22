@@ -1,0 +1,15 @@
+id: james-2
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 1633 }
+death: { year: 1701 }
+reign:
+  - { start: 1685, end: 1688 }
+birthplace: london
+deathplace: saint-germain-en-laye
+places:
+  - { place: london, start: 1685, end: 1688 }
+  - { place: boyne, start: 1690, end: 1690 }
+  - { place: saint-germain-en-laye, start: 1689, end: 1701 }
+reviewed: false

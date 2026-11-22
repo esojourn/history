@@ -1,0 +1,13 @@
+id: theophilus-lindsey
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1723 }
+death: { year: 1808 }
+birthplace: middlewich
+deathplace: london
+places:
+  - { place: cambridge, start: 1741, end: 1747 }
+  - { place: catterick, start: 1763, end: 1773 }
+  - { place: london, start: 1774, end: 1808 }
+reviewed: false

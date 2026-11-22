@@ -1,0 +1,10 @@
+id: siege-of-vienna-1683
+wikidata: null
+civ: rome
+type: battle
+importance: 2
+start: { year: 1683 }
+places: [vindobona]
+participants:
+  - person: sobieski
+reviewed: false

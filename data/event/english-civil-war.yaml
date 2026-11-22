@@ -1,0 +1,13 @@
+id: english-civil-war
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: 1642 }
+end: { year: 1651 }
+places: [nottingham, naseby, london, oxford]
+participants:
+  - person: charles-1
+  - person: cromwell
+  - person: laud
+reviewed: false

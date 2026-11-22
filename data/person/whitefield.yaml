@@ -1,0 +1,16 @@
+id: whitefield
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1714 }
+death: { year: 1770 }
+birthplace: gloucester
+deathplace: newburyport
+places:
+  - { place: gloucester }
+  - { place: oxford, start: 1732, end: 1736 }
+  - { place: bristol, start: 1739, end: 1739 }
+  - { place: london, start: 1739, end: 1770 }
+  - { place: savannah, start: 1738, end: 1770 }
+  - { place: newburyport }
+reviewed: false

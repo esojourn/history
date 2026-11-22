@@ -1,0 +1,15 @@
+id: kuyper
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1837 }
+death: { year: 1920 }
+birthplace: maassluis
+deathplace: the-hague
+places:
+  - { place: leiden, start: 1855, end: 1863 }
+  - { place: beesd, start: 1863, end: 1867 }
+  - { place: utrecht, start: 1867, end: 1870 }
+  - { place: amsterdam, start: 1870, end: 1920 }
+  - { place: the-hague, start: 1901, end: 1905 }
+reviewed: false

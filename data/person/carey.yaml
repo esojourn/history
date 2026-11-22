@@ -1,0 +1,13 @@
+id: carey
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1761 }
+death: { year: 1834 }
+birthplace: paulerspury
+deathplace: serampore
+places:
+  - { place: paulerspury }
+  - { place: kettering, start: 1792, end: 1792 }
+  - { place: serampore, start: 1800, end: 1834 }
+reviewed: false

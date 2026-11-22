@@ -1,0 +1,13 @@
+id: francke
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1663 }
+death: { year: 1727 }
+birthplace: lubeck
+deathplace: halle
+places:
+  - { place: leipzig, start: 1684, end: 1690 }
+  - { place: erfurt, start: 1690, end: 1691 }
+  - { place: halle, start: 1692, end: 1727 }
+reviewed: false

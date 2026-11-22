@@ -1,0 +1,12 @@
+id: newman
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1801 }
+death: { year: 1890 }
+birthplace: london
+deathplace: birmingham
+places:
+  - { place: oxford, start: 1817, end: 1845 }
+  - { place: birmingham, start: 1848, end: 1890 }
+reviewed: false

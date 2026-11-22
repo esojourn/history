@@ -1,0 +1,8 @@
+id: prussian-union
+wikidata: null
+civ: bible
+type: political
+importance: 1
+start: { year: 1817 }
+places: [berlin]
+reviewed: false

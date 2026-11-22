@@ -1,0 +1,12 @@
+id: great-ejection
+wikidata: null
+civ: bible
+type: political
+importance: 2
+start: { year: 1662 }
+places: [london]
+participants:
+  - person: charles-2
+  - person: bunyan
+  - person: john-owen
+reviewed: false

@@ -1,0 +1,13 @@
+id: chalmers
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1780 }
+death: { year: 1847 }
+birthplace: anstruther
+deathplace: edinburgh
+places:
+  - { place: st-andrews, start: 1791, end: 1803 }
+  - { place: glasgow, start: 1815, end: 1823 }
+  - { place: edinburgh, start: 1828, end: 1847 }
+reviewed: false

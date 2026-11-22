@@ -1,0 +1,15 @@
+id: sobieski
+wikidata: null
+civ: rome
+importance: 1
+birth: { year: 1629 }
+death: { year: 1696 }
+reign:
+  - { start: 1674, end: 1696 }
+birthplace: olesko
+deathplace: wilanow
+places:
+  - { place: krakow, start: 1676, end: 1676 }
+  - { place: vindobona, start: 1683, end: 1683 }
+  - { place: wilanow }
+reviewed: false

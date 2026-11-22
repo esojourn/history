@@ -1,0 +1,16 @@
+id: william-3
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1650 }
+death: { year: 1702 }
+reign:
+  - { start: 1689, end: 1702 }
+birthplace: the-hague
+deathplace: london
+places:
+  - { place: the-hague, start: 1672, end: 1688 }
+  - { place: torbay, start: 1688, end: 1688 }
+  - { place: london, start: 1689, end: 1702 }
+  - { place: boyne, start: 1690, end: 1690 }
+reviewed: false

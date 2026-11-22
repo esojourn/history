@@ -1,0 +1,14 @@
+id: louis-14
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1638 }
+death: { year: 1715 }
+reign:
+  - { start: 1643, end: 1715 }
+birthplace: saint-germain-en-laye
+deathplace: versailles
+places:
+  - { place: paris, start: 1643, end: 1682 }
+  - { place: versailles, start: 1682, end: 1715 }
+reviewed: false

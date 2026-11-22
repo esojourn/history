@@ -1,0 +1,13 @@
+id: christian-david
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1692 }
+death: { year: 1751 }
+birthplace: zenklava
+deathplace: herrnhut
+places:
+  - { place: moravia }
+  - { place: herrnhut, start: 1722, end: 1751 }
+  - { place: greenland, start: 1733, end: 1734 }
+reviewed: false

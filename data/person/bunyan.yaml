@@ -1,0 +1,13 @@
+id: bunyan
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1628 }
+death: { year: 1688 }
+birthplace: elstow
+deathplace: london
+places:
+  - { place: elstow }
+  - { place: bedford, start: 1655, end: 1688 }
+  - { place: london }
+reviewed: false

@@ -1,0 +1,13 @@
+id: john-smyth
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1570, circa: true }
+death: { year: 1612 }
+birthplace: unknown
+deathplace: amsterdam
+places:
+  - { place: cambridge, start: 1586, end: 1598 }
+  - { place: gainsborough, start: 1606, end: 1608 }
+  - { place: amsterdam, start: 1608, end: 1612 }
+reviewed: false

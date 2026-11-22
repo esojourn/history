@@ -1,0 +1,15 @@
+id: arminius
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1560 }
+death: { year: 1609 }
+birthplace: oudewater
+deathplace: leiden
+places:
+  - { place: oudewater }
+  - { place: leiden, start: 1576, end: 1581 }
+  - { place: geneva, start: 1582, end: 1586 }
+  - { place: amsterdam, start: 1588, end: 1603 }
+  - { place: leiden, start: 1603, end: 1609 }
+reviewed: false

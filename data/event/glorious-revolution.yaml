@@ -1,0 +1,12 @@
+id: glorious-revolution
+wikidata: null
+civ: rome
+type: political
+importance: 3
+start: { year: 1688 }
+end: { year: 1689 }
+places: [torbay, london]
+participants:
+  - person: william-3
+  - person: james-2
+reviewed: false

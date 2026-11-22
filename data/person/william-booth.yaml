@@ -1,0 +1,12 @@
+id: william-booth
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1829 }
+death: { year: 1912 }
+birthplace: nottingham
+deathplace: london
+places:
+  - { place: nottingham }
+  - { place: london, start: 1849, end: 1912 }
+reviewed: false

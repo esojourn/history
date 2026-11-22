@@ -1,0 +1,15 @@
+id: james-1-england
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 1566 }
+death: { year: 1625 }
+reign:
+  - { start: 1567, end: 1625 }
+birthplace: edinburgh
+deathplace: theobalds
+places:
+  - { place: edinburgh, start: 1567, end: 1603 }
+  - { place: hampton-court, start: 1604, end: 1604 }
+  - { place: london, start: 1603, end: 1625 }
+reviewed: false

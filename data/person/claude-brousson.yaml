@@ -1,0 +1,13 @@
+id: claude-brousson
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1647 }
+death: { year: 1698 }
+birthplace: nimes
+deathplace: montpellier
+places:
+  - { place: nimes, start: 1647, end: 1683 }
+  - { place: cevennes }
+  - { place: montpellier }
+reviewed: false

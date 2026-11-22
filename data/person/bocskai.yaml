@@ -1,0 +1,15 @@
+id: bocskai
+wikidata: null
+civ: rome
+importance: 1
+birth: { year: 1557 }
+death: { year: 1606 }
+reign:
+  - { start: 1605, end: 1606 }
+birthplace: cluj
+deathplace: kosice
+places:
+  - { place: transylvania }
+  - { place: kosice, start: 1604, end: 1606 }
+  - { place: vindobona }
+reviewed: false

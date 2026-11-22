@@ -1,0 +1,16 @@
+id: charles-1
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 1600 }
+death: { year: 1649 }
+reign:
+  - { start: 1625, end: 1649 }
+birthplace: dunfermline
+deathplace: london
+places:
+  - { place: london, start: 1625, end: 1642 }
+  - { place: nottingham, start: 1642, end: 1642 }
+  - { place: oxford, start: 1642, end: 1646 }
+  - { place: naseby }
+reviewed: false

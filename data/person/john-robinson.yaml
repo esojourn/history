@@ -1,0 +1,14 @@
+id: john-robinson
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1576, circa: true }
+death: { year: 1625 }
+birthplace: sturton-le-steeple
+deathplace: leiden
+places:
+  - { place: cambridge, start: 1592, end: 1604 }
+  - { place: scrooby, start: 1606, end: 1608 }
+  - { place: amsterdam, start: 1608, end: 1609 }
+  - { place: leiden, start: 1609, end: 1625 }
+reviewed: false

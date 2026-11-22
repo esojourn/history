@@ -1,0 +1,12 @@
+id: john-owen
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1616 }
+death: { year: 1683 }
+birthplace: stadhampton
+deathplace: london
+places:
+  - { place: oxford, start: 1651, end: 1660 }
+  - { place: london }
+reviewed: false

@@ -1,0 +1,12 @@
+id: isaac-watts
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1674 }
+death: { year: 1748 }
+birthplace: southampton
+deathplace: london
+places:
+  - { place: southampton }
+  - { place: london, start: 1702, end: 1748 }
+reviewed: false

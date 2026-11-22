@@ -1,0 +1,13 @@
+id: paul-rabaut
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1718 }
+death: { year: 1794 }
+birthplace: bedarieux
+deathplace: nimes
+places:
+  - { place: lausanne, start: 1740, end: 1741 }
+  - { place: nimes, start: 1738, end: 1794 }
+  - { place: cevennes }
+reviewed: false

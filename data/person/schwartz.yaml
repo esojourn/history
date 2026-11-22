@@ -1,0 +1,13 @@
+id: schwartz
+wikidata: null
+civ: bible
+importance: 1
+birth: { year: 1726 }
+death: { year: 1798 }
+birthplace: slonsk
+deathplace: thanjavur
+places:
+  - { place: halle, start: 1746, end: 1749 }
+  - { place: tranquebar, start: 1750, end: 1762 }
+  - { place: thanjavur, start: 1778, end: 1798 }
+reviewed: false

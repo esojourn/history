@@ -1,0 +1,12 @@
+id: cartwright
+wikidata: null
+civ: bible
+importance: 2
+birth: { year: 1535 }
+death: { year: 1603 }
+birthplace: royston
+deathplace: warwick
+places:
+  - { place: cambridge, start: 1569, end: 1570 }
+  - { place: warwick, start: 1586, end: 1603 }
+reviewed: false
