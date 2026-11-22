@@ -22,6 +22,7 @@ node promo/compose.mjs --music <音乐文件> --out history-promo.mp4   # 4. 合
 node promo/record.mjs --portrait     # 竖屏画幅（1200×1600）重录 → promo/out/shots-v/
 node promo/cards.mjs                 # 同时生成竖屏的片名、底板、结尾卡（end-v.png 打码，end-v-clear.png 不打码）
 node promo/compose.mjs --portrait --music <音乐文件>   # → promo/out/history-promo-vertical.mp4
+node promo/compose.mjs --portrait --clear --music <音乐文件>   # 结尾不打码 → promo/out/history-promo-vertical-qr.mp4
 ```
 
 - 旁白文字和字幕分行在 [narration.yaml](narration.yaml)。改了文字要从第 1 步重来（旁白长短变了，录屏时长跟着变）。

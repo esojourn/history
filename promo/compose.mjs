@@ -1,5 +1,6 @@
 // 合成成片：镜头交叉淡化、开头叠片名、结尾卡、烧录字幕、旁白按镜头对齐、背景音乐（旁白时自动压低）。
-// 用法：node promo/compose.mjs [--music 音乐文件] [--out 文件名] [--portrait]
+// 用法：node promo/compose.mjs [--music 音乐文件] [--out 文件名] [--portrait [--clear]]
+//   --clear：竖屏版结尾卡不打码（用 end-v-clear.png），输出 history-promo-vertical-qr.mp4
 //   --portrait：竖屏版 1080×1920。画面用 record.mjs --portrait 录的 shots-v/，放在上方标题和下方字幕之间；结尾卡用打了马赛克的 end-v.png
 // 输入：out/shots/*.mp4（record.mjs）、out/voice/*.mp3 + timing.json（tts.py）、out/cards/*.png（cards.mjs）
 import fs from 'node:fs';
@@ -11,8 +12,8 @@ import YAML from 'yaml';
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(ROOT, 'out');
 const arg = k => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
-const P = process.argv.includes('--portrait');
-const MUSIC = arg('--music'), NAME = arg('--out') || (P ? 'history-promo-vertical.mp4' : 'history-promo.mp4');
+const P = process.argv.includes('--portrait'), CLEAR = P && process.argv.includes('--clear');
+const MUSIC = arg('--music'), NAME = arg('--out') || (P ? (CLEAR ? 'history-promo-vertical-qr.mp4' : 'history-promo-vertical.mp4') : 'history-promo.mp4');
 const CW = P ? 1080 : 1920, CH = P ? 1920 : 1080, SHOTS = P ? 'shots-v' : 'shots', SFX = P ? '-v' : '';
 const SUBS = P ? 'subs-v.ass' : 'subs.ass', FILTER = P ? 'filter-v.txt' : 'filter.txt';
 const XF = 0.3, LEAD = 0.15;   // 转场时长；每段旁白比画面晚开始多少秒
@@ -73,7 +74,7 @@ shots.forEach((s, i) => {
     seat(i, `r${i}`, `v${i}`);
   } else if (s.id === 's7-end') {
     if (P) f.push(`[bg${i}]nullsink`);   // 结尾卡自己占满整屏，不用底板
-    const e = add('-loop', '1', '-framerate', '30', '-t', L.toFixed(3), '-i', path.join(OUT, 'cards', `end${SFX}.png`));
+    const e = add('-loop', '1', '-framerate', '30', '-t', L.toFixed(3), '-i', path.join(OUT, 'cards', `end${SFX}${CLEAR ? '-clear' : ''}.png`));
     // 结尾卡缓慢推近一点点，不至于死板
     f.push(`[${e}:v]scale=${Math.round(CW * 1.1)}:${Math.round(CH * 1.1)},zoompan=z='1+0.035*on/${Math.round(L * 30)}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=${CW}x${CH}:fps=30,format=yuv420p,trim=0:${L.toFixed(3)},setpts=PTS-STARTPTS[v${i}]`);
   } else {
