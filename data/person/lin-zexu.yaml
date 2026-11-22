@@ -1,0 +1,19 @@
+id: lin-zexu
+wikidata: null
+civ: china
+faction: qingchao
+importance: 5
+birth: { year: 1785 }
+death: { year: 1850 }
+birthplace: fuzhou-fj
+deathplace: puning
+places:
+  - { place: fuzhou-fj, start: 1785, end: 1811 }
+  - { place: jianye, start: 1832, end: 1837 }
+  - { place: wuchang, start: 1837, end: 1838 }
+  - { place: panyu, start: 1839, end: 1840 }
+  - { place: humen, start: 1839, end: 1839 }
+  - { place: yili, start: 1842, end: 1845 }
+  - { place: changan, start: 1845, end: 1847 }
+  - { place: dian, start: 1847, end: 1849 }
+reviewed: false

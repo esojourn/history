@@ -5,7 +5,7 @@ type: cultural
 importance: 3
 start: { year: 1704 }
 end: { year: 1742 }
-places: [rome, dadu]
+places: [rome, beijing]
 participants:
   - person: xuanye
   - person: yinzhen

@@ -1,0 +1,17 @@
+id: zeng-guofan
+wikidata: null
+civ: china
+faction: qingchao
+importance: 5
+birth: { year: 1811 }
+death: { year: 1872 }
+birthplace: xiangxiang
+deathplace: jianye
+places:
+  - { place: xiangxiang, start: 1811, end: 1838 }
+  - { place: beijing, start: 1838, end: 1852 }
+  - { place: changsha, start: 1853, end: 1854 }
+  - { place: anqing, start: 1861, end: 1864 }
+  - { place: jianye, start: 1864, end: 1872 }
+  - { place: tianjin, start: 1870, end: 1870 }
+reviewed: false

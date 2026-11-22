@@ -1,0 +1,15 @@
+id: yizhu
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1831 }
+death: { year: 1861 }
+reign:
+  - { start: 1850, end: 1861 }
+birthplace: yuanmingyuan
+deathplace: rehe
+places:
+  - { place: beijing, start: 1831, end: 1860 }
+  - { place: rehe, start: 1860, end: 1861 }
+reviewed: false

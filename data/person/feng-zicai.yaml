@@ -1,0 +1,14 @@
+id: feng-zicai
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1818 }
+death: { year: 1903 }
+birthplace: qinzhou
+deathplace: qinzhou
+places:
+  - { place: qinzhou, start: 1818, end: 1850 }
+  - { place: zhennanguan, start: 1885, end: 1885 }
+  - { place: qinzhou, start: 1885, end: 1903 }
+reviewed: false

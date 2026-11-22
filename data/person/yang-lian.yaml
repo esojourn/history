@@ -6,8 +6,8 @@ importance: 2
 birth: { year: 1572 }
 death: { year: 1625 }
 birthplace: yingshan-hb
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: yingshan-hb, start: 1572, end: 1607 }
-  - { place: dadu, start: 1620, end: 1625 }
+  - { place: beijing, start: 1620, end: 1625 }
 reviewed: false

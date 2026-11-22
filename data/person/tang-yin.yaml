@@ -9,5 +9,5 @@ birthplace: wu
 deathplace: wu
 places:
   - { place: wu, start: 1470, end: 1524 }
-  - { place: dadu, start: 1499, end: 1499 }
+  - { place: beijing, start: 1499, end: 1499 }
 reviewed: false

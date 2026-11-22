@@ -1,0 +1,17 @@
+id: puyi
+wikidata: null
+civ: china
+faction: qingchao
+importance: 4
+birth: { year: 1906 }
+death: { year: 1967 }
+reign:
+  - { start: 1908, end: 1912 }
+birthplace: beijing
+deathplace: beijing
+places:
+  - { place: beijing, start: 1906, end: 1924 }
+  - { place: tianjin, start: 1925, end: 1931 }
+  - { place: fushun, start: 1950, end: 1959 }
+  - { place: beijing, start: 1959, end: 1967 }
+reviewed: false

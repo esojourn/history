@@ -1,0 +1,18 @@
+id: yuan-shikai
+wikidata: null
+civ: china
+faction: qingchao
+importance: 5
+birth: { year: 1859 }
+death: { year: 1916 }
+birthplace: xiangcheng
+deathplace: beijing
+places:
+  - { place: xiangcheng, start: 1859, end: 1880 }
+  - { place: hanseong, start: 1882, end: 1894 }
+  - { place: xiaozhan, start: 1895, end: 1899 }
+  - { place: tianjin, start: 1901, end: 1907 }
+  - { place: beijing, start: 1907, end: 1909 }
+  - { place: xiangzhou-ay, start: 1909, end: 1911 }
+  - { place: beijing, start: 1911, end: 1916 }
+reviewed: false

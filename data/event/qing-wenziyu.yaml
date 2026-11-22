@@ -5,7 +5,7 @@ type: political
 importance: 3
 start: { year: 1711 }
 end: { year: 1782 }
-places: [dadu]
+places: [beijing]
 participants:
   - person: xuanye
   - person: yinzhen

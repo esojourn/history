@@ -9,5 +9,5 @@ birthplace: unknown
 deathplace: guihua
 places:
   - { place: guihua, start: 1540, end: 1582 }
-  - { place: dadu, start: 1550, end: 1550 }
+  - { place: beijing, start: 1550, end: 1550 }
 reviewed: false

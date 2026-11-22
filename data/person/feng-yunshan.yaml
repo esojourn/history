@@ -1,0 +1,14 @@
+id: feng-yunshan
+wikidata: null
+civ: china
+faction: taiping
+importance: 2
+birth: { year: 1815, circa: true }
+death: { year: 1852 }
+birthplace: huaxian
+deathplace: quanzhou-gx
+places:
+  - { place: huaxian, start: 1815, end: 1844 }
+  - { place: guiping, start: 1844, end: 1851 }
+  - { place: quanzhou-gx, start: 1852, end: 1852 }
+reviewed: false

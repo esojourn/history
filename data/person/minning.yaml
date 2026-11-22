@@ -1,0 +1,15 @@
+id: minning
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1782 }
+death: { year: 1850 }
+reign:
+  - { start: 1820, end: 1850 }
+birthplace: beijing
+deathplace: yuanmingyuan
+places:
+  - { place: beijing, start: 1782, end: 1850 }
+  - { place: yuanmingyuan, start: 1820, end: 1850 }
+reviewed: false

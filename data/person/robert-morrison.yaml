@@ -1,0 +1,14 @@
+id: robert-morrison
+wikidata: null
+civ: bible
+importance: 3
+birth: { year: 1782 }
+death: { year: 1834 }
+birthplace: morpeth
+deathplace: panyu
+places:
+  - { place: morpeth, start: 1782, end: 1785 }
+  - { place: london, start: 1798, end: 1807 }
+  - { place: panyu, start: 1807, end: 1834 }
+  - { place: macau, start: 1809, end: 1834 }
+reviewed: false

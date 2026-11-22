@@ -4,7 +4,7 @@ civ: china
 type: political
 importance: 2
 start: { year: 1799 }
-places: [dadu]
+places: [beijing]
 participants:
   - person: heshen
   - person: yongyan

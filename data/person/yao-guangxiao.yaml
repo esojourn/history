@@ -6,8 +6,8 @@ importance: 2
 birth: { year: 1335 }
 death: { year: 1418 }
 birthplace: wu
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: wu, start: 1335, end: 1382 }
-  - { place: dadu, start: 1382, end: 1418 }
+  - { place: beijing, start: 1382, end: 1418 }
 reviewed: false

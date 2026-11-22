@@ -5,7 +5,7 @@ type: political
 importance: 3
 start: { year: 1521 }
 end: { year: 1524 }
-places: [dadu]
+places: [beijing]
 participants:
   - person: zhu-houcong
   - person: yang-tinghe

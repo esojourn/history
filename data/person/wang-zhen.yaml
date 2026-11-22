@@ -8,6 +8,6 @@ death: { year: 1449 }
 birthplace: unknown
 deathplace: tumubao
 places:
-  - { place: dadu, start: 1435, end: 1449 }
+  - { place: beijing, start: 1435, end: 1449 }
   - { place: tumubao, start: 1449, end: 1449 }
 reviewed: false

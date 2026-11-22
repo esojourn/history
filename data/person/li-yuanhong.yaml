@@ -1,0 +1,16 @@
+id: li-yuanhong
+wikidata: null
+civ: china
+faction: geming
+importance: 2
+birth: { year: 1864 }
+death: { year: 1928 }
+birthplace: huangpi
+deathplace: tianjin
+places:
+  - { place: huangpi, start: 1864, end: 1883 }
+  - { place: tianjin, start: 1883, end: 1894 }
+  - { place: wuchang, start: 1896, end: 1913 }
+  - { place: beijing, start: 1913, end: 1923 }
+  - { place: tianjin, start: 1923, end: 1928 }
+reviewed: false

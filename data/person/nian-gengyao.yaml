@@ -6,10 +6,10 @@ importance: 2
 birth: { year: 1679 }
 death: { year: 1726 }
 birthplace: unknown
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: chengdu, start: 1709, end: 1722 }
   - { place: xining, start: 1723, end: 1724 }
   - { place: hangzhou, start: 1725, end: 1725 }
-  - { place: dadu, start: 1725, end: 1726 }
+  - { place: beijing, start: 1725, end: 1726 }
 reviewed: false

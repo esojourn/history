@@ -1,0 +1,15 @@
+id: hong-rengan
+wikidata: null
+civ: china
+faction: taiping
+importance: 2
+birth: { year: 1822 }
+death: { year: 1864 }
+birthplace: huaxian
+deathplace: hongzhou
+places:
+  - { place: huaxian, start: 1822, end: 1852 }
+  - { place: hongkong, start: 1854, end: 1858 }
+  - { place: jianye, start: 1859, end: 1864 }
+  - { place: hongzhou, start: 1864, end: 1864 }
+reviewed: false

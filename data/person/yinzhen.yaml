@@ -7,9 +7,9 @@ birth: { year: 1678 }
 death: { year: 1735 }
 reign:
   - { start: 1722, end: 1735 }
-birthplace: dadu
+birthplace: beijing
 deathplace: yuanmingyuan
 places:
-  - { place: dadu, start: 1678, end: 1735 }
+  - { place: beijing, start: 1678, end: 1735 }
   - { place: yuanmingyuan, start: 1709, end: 1735 }
 reviewed: false

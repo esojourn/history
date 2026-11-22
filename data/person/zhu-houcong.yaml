@@ -8,8 +8,8 @@ death: { year: 1567 }
 reign:
   - { start: 1521, end: 1567 }
 birthplace: zhongxiang
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: zhongxiang, start: 1507, end: 1521 }
-  - { place: dadu, start: 1521, end: 1567 }
+  - { place: beijing, start: 1521, end: 1567 }
 reviewed: false

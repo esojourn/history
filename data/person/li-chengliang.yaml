@@ -6,7 +6,7 @@ importance: 2
 birth: { year: 1526 }
 death: { year: 1615 }
 birthplace: tieling
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: tieling, start: 1526, end: 1570 }
   - { place: liaodong, start: 1570, end: 1608 }

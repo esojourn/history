@@ -5,7 +5,7 @@ type: political
 importance: 4
 start: { year: 1573 }
 end: { year: 1582 }
-places: [dadu]
+places: [beijing]
 participants:
   - person: zhang-juzheng
   - person: zhu-yijun

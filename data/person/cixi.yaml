@@ -1,0 +1,15 @@
+id: cixi
+wikidata: null
+civ: china
+faction: qingchao
+importance: 5
+birth: { year: 1835 }
+death: { year: 1908 }
+birthplace: beijing
+deathplace: beijing
+places:
+  - { place: beijing, start: 1852, end: 1908 }
+  - { place: rehe, start: 1860, end: 1861 }
+  - { place: yiheyuan, start: 1889, end: 1908 }
+  - { place: changan, start: 1900, end: 1901 }
+reviewed: false

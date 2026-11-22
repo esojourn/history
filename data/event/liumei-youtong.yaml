@@ -1,0 +1,14 @@
+id: liumei-youtong
+wikidata: null
+civ: china
+type: cultural
+importance: 3
+start: { year: 1872 }
+end: { year: 1881 }
+places: [shanghai, hartford]
+participants:
+  - person: yung-wing
+  - person: zeng-guofan
+  - person: li-hongzhang
+  - person: zhan-tianyou
+reviewed: false

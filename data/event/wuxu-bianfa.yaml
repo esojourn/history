@@ -1,0 +1,18 @@
+id: wuxu-bianfa
+wikidata: null
+civ: china
+type: political
+importance: 5
+start: { year: 1898 }
+places: [beijing, yiheyuan]
+participants:
+  - person: zaitian
+  - person: kang-youwei
+  - person: liang-qichao
+  - person: tan-sitong
+  - person: cixi
+  - person: yuan-shikai
+  - person: ronglu
+  - person: zhang-zhidong
+  - person: yan-fu
+reviewed: false

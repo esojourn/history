@@ -4,7 +4,7 @@ civ: china
 type: battle
 importance: 5
 start: { year: 1644 }
-places: [shanhaiguan, dadu]
+places: [shanhaiguan, beijing]
 participants:
   - person: dorgon
   - person: wu-sangui

@@ -5,8 +5,8 @@ faction: qingchao
 importance: 2
 birth: { year: 1655 }
 death: { year: 1685 }
-birthplace: dadu
-deathplace: dadu
+birthplace: beijing
+deathplace: beijing
 places:
-  - { place: dadu, start: 1655, end: 1685 }
+  - { place: beijing, start: 1655, end: 1685 }
 reviewed: false

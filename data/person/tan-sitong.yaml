@@ -1,0 +1,14 @@
+id: tan-sitong
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1865 }
+death: { year: 1898 }
+birthplace: beijing
+deathplace: beijing
+places:
+  - { place: liuyang, start: 1865, end: 1895 }
+  - { place: changsha, start: 1897, end: 1898 }
+  - { place: beijing, start: 1898, end: 1898 }
+reviewed: false

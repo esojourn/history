@@ -8,8 +8,8 @@ death: { year: 1661 }
 reign:
   - { start: 1643, end: 1661 }
 birthplace: shengjing
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: shengjing, start: 1638, end: 1644 }
-  - { place: dadu, start: 1644, end: 1661 }
+  - { place: beijing, start: 1644, end: 1661 }
 reviewed: false

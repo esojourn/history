@@ -6,9 +6,9 @@ importance: 2
 birth: { year: 1512 }
 death: { year: 1565 }
 birthplace: huizhou
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: huizhou, start: 1512, end: 1538 }
   - { place: hangzhou, start: 1554, end: 1562 }
-  - { place: dadu, start: 1565, end: 1565 }
+  - { place: beijing, start: 1565, end: 1565 }
 reviewed: false

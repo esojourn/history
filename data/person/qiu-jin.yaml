@@ -1,0 +1,16 @@
+id: qiu-jin
+wikidata: null
+civ: china
+faction: geming
+importance: 2
+birth: { year: 1875 }
+death: { year: 1907 }
+birthplace: unknown
+deathplace: shanyin
+places:
+  - { place: shanyin, start: 1875, end: 1896 }
+  - { place: beijing, start: 1903, end: 1904 }
+  - { place: tokyo, start: 1904, end: 1906 }
+  - { place: shanghai, start: 1906, end: 1907 }
+  - { place: shanyin, start: 1907, end: 1907 }
+reviewed: false

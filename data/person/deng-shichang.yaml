@@ -1,0 +1,15 @@
+id: deng-shichang
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1849 }
+death: { year: 1894 }
+birthplace: panyu
+deathplace: dadonggou
+places:
+  - { place: panyu, start: 1849, end: 1867 }
+  - { place: mawei-fz, start: 1867, end: 1874 }
+  - { place: weihai, start: 1888, end: 1894 }
+  - { place: dadonggou, start: 1894, end: 1894 }
+reviewed: false

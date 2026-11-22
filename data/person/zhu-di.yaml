@@ -10,8 +10,8 @@ reign:
 birthplace: jianye
 deathplace: yumuchuan
 places:
-  - { place: dadu, start: 1380, end: 1402 }
+  - { place: beijing, start: 1380, end: 1402 }
   - { place: jianye, start: 1402, end: 1420 }
-  - { place: dadu, start: 1421, end: 1424 }
+  - { place: beijing, start: 1421, end: 1424 }
   - { place: yumuchuan, start: 1424, end: 1424 }
 reviewed: false

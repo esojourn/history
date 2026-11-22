@@ -1,0 +1,12 @@
+id: xinyou-zhengbian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1861 }
+places: [beijing, rehe]
+participants:
+  - person: cixi
+  - person: yixin
+  - person: zaichun
+reviewed: false

@@ -1,0 +1,15 @@
+id: seng-gelinqin
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1811 }
+death: { year: 1865 }
+birthplace: khorchin
+deathplace: caozhou
+places:
+  - { place: khorchin, start: 1811, end: 1825 }
+  - { place: beijing, start: 1825, end: 1853 }
+  - { place: dagu, start: 1859, end: 1860 }
+  - { place: caozhou, start: 1865, end: 1865 }
+reviewed: false

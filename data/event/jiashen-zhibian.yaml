@@ -4,7 +4,7 @@ civ: china
 type: political
 importance: 5
 start: { year: 1644 }
-places: [dadu]
+places: [beijing]
 participants:
   - person: li-zicheng
   - person: zhu-youjian

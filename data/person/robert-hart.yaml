@@ -1,0 +1,14 @@
+id: robert-hart
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 1835 }
+death: { year: 1911 }
+birthplace: portadown
+deathplace: unknown
+places:
+  - { place: portadown, start: 1835, end: 1854 }
+  - { place: yinxian, start: 1855, end: 1858 }
+  - { place: panyu, start: 1858, end: 1861 }
+  - { place: beijing, start: 1863, end: 1908 }
+reviewed: false

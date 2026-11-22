@@ -1,0 +1,11 @@
+id: xinchou-tiaoyue
+wikidata: null
+civ: china
+type: diplomatic
+importance: 4
+start: { year: 1901 }
+places: [beijing]
+participants:
+  - person: li-hongzhang
+  - person: cixi
+reviewed: false

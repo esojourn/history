@@ -1,0 +1,12 @@
+id: jingzhang-tielu
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 1905 }
+end: { year: 1909 }
+places: [beijing, zhangjiakou]
+participants:
+  - person: zhan-tianyou
+  - person: yuan-shikai
+reviewed: false

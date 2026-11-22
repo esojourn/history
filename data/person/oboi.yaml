@@ -6,8 +6,8 @@ importance: 2
 birth: { unknown: true, approx: 1610 }
 death: { year: 1669 }
 birthplace: unknown
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: shengjing, start: 1630, end: 1644 }
-  - { place: dadu, start: 1644, end: 1669 }
+  - { place: beijing, start: 1644, end: 1669 }
 reviewed: false

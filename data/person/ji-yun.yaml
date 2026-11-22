@@ -6,10 +6,10 @@ importance: 3
 birth: { year: 1724 }
 death: { year: 1805 }
 birthplace: xianxian
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: xianxian, start: 1724, end: 1754 }
-  - { place: dadu, start: 1754, end: 1768 }
+  - { place: beijing, start: 1754, end: 1768 }
   - { place: yili, start: 1768, end: 1771 }
-  - { place: dadu, start: 1771, end: 1805 }
+  - { place: beijing, start: 1771, end: 1805 }
 reviewed: false

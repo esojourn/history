@@ -10,6 +10,6 @@ reign:
 birthplace: yuanmingyuan
 deathplace: rehe
 places:
-  - { place: dadu, start: 1760, end: 1820 }
+  - { place: beijing, start: 1760, end: 1820 }
   - { place: rehe, start: 1820, end: 1820 }
 reviewed: false

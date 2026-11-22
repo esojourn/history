@@ -1,0 +1,14 @@
+id: yang-xiuqing
+wikidata: null
+civ: china
+faction: taiping
+importance: 3
+birth: { year: 1823, circa: true }
+death: { year: 1856 }
+birthplace: guiping
+deathplace: jianye
+places:
+  - { place: guiping, start: 1823, end: 1851 }
+  - { place: yongan-gx, start: 1851, end: 1852 }
+  - { place: jianye, start: 1853, end: 1856 }
+reviewed: false

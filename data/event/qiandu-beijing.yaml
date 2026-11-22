@@ -4,7 +4,7 @@ civ: china
 type: political
 importance: 4
 start: { year: 1421 }
-places: [dadu, jianye]
+places: [beijing, jianye]
 participants:
   - person: zhu-di
 reviewed: false

@@ -1,0 +1,19 @@
+id: zuo-zongtang
+wikidata: null
+civ: china
+faction: qingchao
+importance: 4
+birth: { year: 1812 }
+death: { year: 1885 }
+birthplace: xiangyin
+deathplace: fuzhou-fj
+places:
+  - { place: xiangyin, start: 1812, end: 1852 }
+  - { place: changsha, start: 1852, end: 1860 }
+  - { place: hangzhou, start: 1862, end: 1864 }
+  - { place: fuzhou-fj, start: 1864, end: 1866 }
+  - { place: changan, start: 1867, end: 1873 }
+  - { place: hami, start: 1876, end: 1880 }
+  - { place: jianye, start: 1881, end: 1884 }
+  - { place: fuzhou-fj, start: 1884, end: 1885 }
+reviewed: false

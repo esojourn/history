@@ -1,0 +1,15 @@
+id: yung-wing
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1828 }
+death: { year: 1912 }
+birthplace: xiangshan-gd
+deathplace: hartford
+places:
+  - { place: xiangshan-gd, start: 1828, end: 1847 }
+  - { place: hartford, start: 1872, end: 1881 }
+  - { place: shanghai, start: 1863, end: 1872 }
+  - { place: hartford, start: 1902, end: 1912 }
+reviewed: false

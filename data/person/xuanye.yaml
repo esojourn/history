@@ -7,10 +7,10 @@ birth: { year: 1654 }
 death: { year: 1722 }
 reign:
   - { start: 1661, end: 1722 }
-birthplace: dadu
-deathplace: dadu
+birthplace: beijing
+deathplace: beijing
 places:
-  - { place: dadu, start: 1654, end: 1722 }
+  - { place: beijing, start: 1654, end: 1722 }
   - { place: rehe, start: 1703, end: 1722 }
   - { place: jaomodo, start: 1696, end: 1696 }
   - { place: hangzhou, start: 1684, end: 1707 }

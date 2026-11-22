@@ -1,0 +1,15 @@
+id: kang-youwei
+wikidata: null
+civ: china
+faction: qingchao
+importance: 4
+birth: { year: 1858 }
+death: { year: 1927 }
+birthplace: nanhai-gd
+deathplace: qingdao
+places:
+  - { place: nanhai-gd, start: 1858, end: 1895 }
+  - { place: panyu, start: 1891, end: 1895 }
+  - { place: beijing, start: 1895, end: 1898 }
+  - { place: tokyo, start: 1898, end: 1899 }
+reviewed: false

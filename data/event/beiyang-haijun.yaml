@@ -1,0 +1,13 @@
+id: beiyang-haijun
+wikidata: null
+civ: china
+type: founding
+importance: 2
+start: { year: 1888 }
+places: [weihai, liugongdao, lushun, tianjin]
+participants:
+  - person: li-hongzhang
+  - person: ding-ruchang
+  - person: deng-shichang
+  - person: cixi
+reviewed: false

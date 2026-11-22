@@ -1,0 +1,17 @@
+id: yihetuan-baguo
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 1900 }
+end: { year: 1901 }
+places: [beijing, tianjin, dagu, changan]
+participants:
+  - person: cixi
+  - person: zaitian
+  - person: ronglu
+  - person: li-hongzhang
+  - person: zhang-zhidong
+  - person: yuan-shikai
+  - person: robert-hart
+reviewed: false

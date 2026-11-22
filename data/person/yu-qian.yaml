@@ -6,9 +6,9 @@ importance: 4
 birth: { year: 1398 }
 death: { year: 1457 }
 birthplace: hangzhou
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: hangzhou, start: 1398, end: 1421 }
   - { place: bianzhou, start: 1430, end: 1448 }
-  - { place: dadu, start: 1448, end: 1457 }
+  - { place: beijing, start: 1448, end: 1457 }
 reviewed: false

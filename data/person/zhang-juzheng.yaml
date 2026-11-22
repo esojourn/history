@@ -6,8 +6,8 @@ importance: 5
 birth: { year: 1525 }
 death: { year: 1582 }
 birthplace: jiangling
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: jiangling, start: 1525, end: 1547 }
-  - { place: dadu, start: 1547, end: 1582 }
+  - { place: beijing, start: 1547, end: 1582 }
 reviewed: false

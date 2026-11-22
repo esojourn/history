@@ -1,0 +1,16 @@
+id: hong-xiuquan
+wikidata: null
+civ: china
+faction: taiping
+importance: 5
+birth: { year: 1814 }
+death: { year: 1864 }
+birthplace: huaxian
+deathplace: jianye
+places:
+  - { place: huaxian, start: 1814, end: 1844 }
+  - { place: guiping, start: 1844, end: 1851 }
+  - { place: jintian, start: 1851, end: 1851 }
+  - { place: yongan-gx, start: 1851, end: 1852 }
+  - { place: jianye, start: 1853, end: 1864 }
+reviewed: false

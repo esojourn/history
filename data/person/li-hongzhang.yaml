@@ -1,0 +1,19 @@
+id: li-hongzhang
+wikidata: null
+civ: china
+faction: qingchao
+importance: 5
+birth: { year: 1823 }
+death: { year: 1901 }
+birthplace: hefei
+deathplace: beijing
+places:
+  - { place: hefei, start: 1823, end: 1847 }
+  - { place: anqing, start: 1861, end: 1862 }
+  - { place: shanghai, start: 1862, end: 1865 }
+  - { place: jianye, start: 1865, end: 1870 }
+  - { place: tianjin, start: 1870, end: 1895 }
+  - { place: shimonoseki, start: 1895, end: 1895 }
+  - { place: panyu, start: 1899, end: 1900 }
+  - { place: beijing, start: 1900, end: 1901 }
+reviewed: false

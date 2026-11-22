@@ -1,0 +1,17 @@
+id: zhongfa-zhanzheng
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 1883 }
+end: { year: 1885 }
+places: [mawei-fz, zhennanguan, keelung]
+participants:
+  - person: feng-zicai
+  - person: liu-mingchuan
+  - person: li-hongzhang
+  - person: zhang-zhidong
+  - person: zuo-zongtang
+  - person: yixin
+  - person: robert-hart
+reviewed: false

@@ -1,0 +1,14 @@
+id: gong-zizhen
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1792 }
+death: { year: 1841 }
+birthplace: hangzhou
+deathplace: danyang
+places:
+  - { place: hangzhou, start: 1792, end: 1819 }
+  - { place: beijing, start: 1819, end: 1839 }
+  - { place: danyang, start: 1841, end: 1841 }
+reviewed: false

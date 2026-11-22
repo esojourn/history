@@ -9,6 +9,6 @@ birthplace: fenyi
 deathplace: fenyi
 places:
   - { place: fenyi, start: 1480, end: 1505 }
-  - { place: dadu, start: 1536, end: 1562 }
+  - { place: beijing, start: 1536, end: 1562 }
   - { place: fenyi, start: 1562, end: 1567 }
 reviewed: false

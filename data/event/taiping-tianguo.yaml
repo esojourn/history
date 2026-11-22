@@ -1,0 +1,20 @@
+id: taiping-tianguo
+wikidata: null
+civ: china
+type: uprising
+importance: 5
+start: { year: 1851 }
+end: { year: 1864 }
+places: [jintian, yongan-gx, jianye, anqing, wu]
+participants:
+  - person: hong-xiuquan
+  - person: feng-yunshan
+  - person: yang-xiuqing
+  - person: shi-dakai
+  - person: li-xiucheng
+  - person: hong-rengan
+  - person: zeng-guofan
+  - person: li-hongzhang
+  - person: zuo-zongtang
+  - person: yizhu
+reviewed: false

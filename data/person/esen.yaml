@@ -10,5 +10,5 @@ deathplace: oirat
 places:
   - { place: oirat, start: 1439, end: 1454 }
   - { place: tumubao, start: 1449, end: 1449 }
-  - { place: dadu, start: 1449, end: 1449 }
+  - { place: beijing, start: 1449, end: 1449 }
 reviewed: false

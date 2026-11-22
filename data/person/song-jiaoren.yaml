@@ -1,0 +1,15 @@
+id: song-jiaoren
+wikidata: null
+civ: china
+faction: geming
+importance: 2
+birth: { year: 1882 }
+death: { year: 1913 }
+birthplace: taoyuan-hn
+deathplace: shanghai
+places:
+  - { place: taoyuan-hn, start: 1882, end: 1903 }
+  - { place: tokyo, start: 1904, end: 1910 }
+  - { place: shanghai, start: 1911, end: 1913 }
+  - { place: jianye, start: 1912, end: 1912 }
+reviewed: false

@@ -1,0 +1,13 @@
+id: zhonghua-minguo-chengli
+wikidata: null
+civ: china
+type: founding
+importance: 4
+start: { year: 1912 }
+places: [jianye]
+participants:
+  - person: sun-yatsen
+  - person: huang-xing
+  - person: song-jiaoren
+  - person: li-yuanhong
+reviewed: false

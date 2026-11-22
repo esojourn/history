@@ -1,0 +1,13 @@
+id: dierci-yapian-zhanzheng
+wikidata: null
+civ: china
+type: war
+importance: 4
+start: { year: 1856 }
+end: { year: 1860 }
+places: [panyu, dagu, tianjin, beijing, yuanmingyuan]
+participants:
+  - person: yizhu
+  - person: yixin
+  - person: seng-gelinqin
+reviewed: false

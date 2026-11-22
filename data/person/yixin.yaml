@@ -1,0 +1,12 @@
+id: yixin
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1833 }
+death: { year: 1898 }
+birthplace: beijing
+deathplace: beijing
+places:
+  - { place: beijing, start: 1833, end: 1898 }
+reviewed: false

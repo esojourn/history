@@ -7,8 +7,8 @@ birth: { year: 1611 }
 death: { year: 1644 }
 reign:
   - { start: 1627, end: 1644 }
-birthplace: dadu
-deathplace: dadu
+birthplace: beijing
+deathplace: beijing
 places:
-  - { place: dadu, start: 1611, end: 1644 }
+  - { place: beijing, start: 1611, end: 1644 }
 reviewed: false

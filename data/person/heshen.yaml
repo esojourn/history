@@ -5,8 +5,8 @@ faction: qingchao
 importance: 3
 birth: { year: 1750 }
 death: { year: 1799 }
-birthplace: dadu
-deathplace: dadu
+birthplace: beijing
+deathplace: beijing
 places:
-  - { place: dadu, start: 1750, end: 1799 }
+  - { place: beijing, start: 1750, end: 1799 }
 reviewed: false

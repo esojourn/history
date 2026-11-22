@@ -11,6 +11,6 @@ places:
   - { place: hetuala, start: 1612, end: 1625 }
   - { place: shengjing, start: 1625, end: 1644 }
   - { place: shanhaiguan, start: 1644, end: 1644 }
-  - { place: dadu, start: 1644, end: 1650 }
+  - { place: beijing, start: 1644, end: 1650 }
   - { place: luanping, start: 1650, end: 1650 }
 reviewed: false

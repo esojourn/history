@@ -5,9 +5,9 @@ importance: 3
 birth: { year: 1623 }
 death: { year: 1688 }
 birthplace: flanders
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: flanders, start: 1623, end: 1657 }
   - { place: changan, start: 1659, end: 1660 }
-  - { place: dadu, start: 1660, end: 1688 }
+  - { place: beijing, start: 1660, end: 1688 }
 reviewed: false

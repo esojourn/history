@@ -1,0 +1,11 @@
+id: gongche-shangshu
+wikidata: null
+civ: china
+type: political
+importance: 2
+start: { year: 1895 }
+places: [beijing]
+participants:
+  - person: kang-youwei
+  - person: liang-qichao
+reviewed: false

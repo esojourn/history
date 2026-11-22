@@ -1,0 +1,14 @@
+id: li-xiucheng
+wikidata: null
+civ: china
+faction: taiping
+importance: 3
+birth: { year: 1823 }
+death: { year: 1864 }
+birthplace: tengxian
+deathplace: jianye
+places:
+  - { place: tengxian, start: 1823, end: 1851 }
+  - { place: wu, start: 1860, end: 1863 }
+  - { place: jianye, start: 1863, end: 1864 }
+reviewed: false

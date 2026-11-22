@@ -1,0 +1,16 @@
+id: zhan-tianyou
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1861 }
+death: { year: 1919 }
+birthplace: nanhai-gd
+deathplace: hankou
+places:
+  - { place: nanhai-gd, start: 1861, end: 1872 }
+  - { place: hartford, start: 1872, end: 1881 }
+  - { place: beijing, start: 1905, end: 1909 }
+  - { place: zhangjiakou, start: 1909, end: 1909 }
+  - { place: hankou, start: 1912, end: 1919 }
+reviewed: false

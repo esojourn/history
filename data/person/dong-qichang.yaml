@@ -9,6 +9,6 @@ birthplace: huating
 deathplace: huating
 places:
   - { place: huating, start: 1555, end: 1589 }
-  - { place: dadu, start: 1589, end: 1599 }
+  - { place: beijing, start: 1589, end: 1599 }
   - { place: huating, start: 1599, end: 1636 }
 reviewed: false

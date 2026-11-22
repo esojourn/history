@@ -1,0 +1,17 @@
+id: shi-dakai
+wikidata: null
+civ: china
+faction: taiping
+importance: 3
+birth: { year: 1831 }
+death: { year: 1863 }
+birthplace: guigang
+deathplace: chengdu
+places:
+  - { place: guigang, start: 1831, end: 1850 }
+  - { place: jianye, start: 1853, end: 1857 }
+  - { place: anqing, start: 1853, end: 1854 }
+  - { place: hongzhou, start: 1855, end: 1856 }
+  - { place: anshunchang, start: 1863, end: 1863 }
+  - { place: chengdu, start: 1863, end: 1863 }
+reviewed: false

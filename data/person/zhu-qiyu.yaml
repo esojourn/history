@@ -7,8 +7,8 @@ birth: { year: 1428 }
 death: { year: 1457 }
 reign:
   - { start: 1449, end: 1457 }
-birthplace: dadu
-deathplace: dadu
+birthplace: beijing
+deathplace: beijing
 places:
-  - { place: dadu, start: 1428, end: 1457 }
+  - { place: beijing, start: 1428, end: 1457 }
 reviewed: false

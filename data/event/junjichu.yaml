@@ -4,7 +4,7 @@ civ: china
 type: founding
 importance: 3
 start: { year: 1729 }
-places: [dadu]
+places: [beijing]
 participants:
   - person: yinzhen
   - person: zhang-tingyu

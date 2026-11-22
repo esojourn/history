@@ -6,10 +6,10 @@ importance: 2
 birth: { year: 1724 }
 death: { year: 1777 }
 birthplace: huizhou
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: huizhou, start: 1724, end: 1754 }
-  - { place: dadu, start: 1754, end: 1757 }
+  - { place: beijing, start: 1754, end: 1757 }
   - { place: guangling, start: 1757, end: 1762 }
-  - { place: dadu, start: 1773, end: 1777 }
+  - { place: beijing, start: 1773, end: 1777 }
 reviewed: false

@@ -1,0 +1,11 @@
+id: huanghuagang-qiyi
+wikidata: null
+civ: china
+type: uprising
+importance: 3
+start: { year: 1911 }
+places: [panyu]
+participants:
+  - person: huang-xing
+  - person: sun-yatsen
+reviewed: false

@@ -1,0 +1,17 @@
+id: xinhai-geming
+wikidata: null
+civ: china
+type: uprising
+importance: 5
+start: { year: 1911 }
+end: { year: 1912 }
+places: [wuchang, hankou, jianye, chengdu]
+participants:
+  - person: sun-yatsen
+  - person: huang-xing
+  - person: li-yuanhong
+  - person: yuan-shikai
+  - person: zaifeng
+  - person: song-jiaoren
+  - person: puyi
+reviewed: false

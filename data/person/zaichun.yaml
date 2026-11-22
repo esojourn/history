@@ -1,0 +1,15 @@
+id: zaichun
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1856 }
+death: { year: 1875 }
+reign:
+  - { start: 1861, end: 1875 }
+birthplace: beijing
+deathplace: beijing
+places:
+  - { place: beijing, start: 1856, end: 1875 }
+  - { place: rehe, start: 1860, end: 1861 }
+reviewed: false

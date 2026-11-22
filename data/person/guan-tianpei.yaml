@@ -1,0 +1,13 @@
+id: guan-tianpei
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1781 }
+death: { year: 1841 }
+birthplace: huaian
+deathplace: humen
+places:
+  - { place: huaian, start: 1781, end: 1803 }
+  - { place: humen, start: 1834, end: 1841 }
+reviewed: false

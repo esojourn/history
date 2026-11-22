@@ -5,7 +5,7 @@ type: cultural
 importance: 3
 start: { year: 1664 }
 end: { year: 1669 }
-places: [dadu]
+places: [beijing]
 participants:
   - person: adam-schall
   - person: verbiest

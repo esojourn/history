@@ -1,0 +1,17 @@
+id: jiawu-zhanzheng
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 1894 }
+end: { year: 1895 }
+places: [pingrang, dadonggou, lushun, weihai, liugongdao]
+participants:
+  - person: li-hongzhang
+  - person: ding-ruchang
+  - person: deng-shichang
+  - person: ito-hirobumi
+  - person: zaitian
+  - person: cixi
+  - person: yuan-shikai
+reviewed: false

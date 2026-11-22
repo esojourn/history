@@ -5,7 +5,7 @@ type: battle
 importance: 2
 start: { year: 1629 }
 end: { year: 1630 }
-places: [dadu, ningyuan]
+places: [beijing, ningyuan]
 participants:
   - person: hong-taiji
   - person: yuan-chonghuan

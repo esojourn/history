@@ -1,0 +1,14 @@
+id: qingmo-xinzheng
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 1901 }
+end: { year: 1911 }
+places: [beijing, tianjin, wuchang]
+participants:
+  - person: cixi
+  - person: zhang-zhidong
+  - person: yuan-shikai
+  - person: zaifeng
+reviewed: false

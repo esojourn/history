@@ -8,11 +8,11 @@ death: { year: 1464 }
 reign:
   - { start: 1435, end: 1449 }
   - { start: 1457, end: 1464 }
-birthplace: dadu
-deathplace: dadu
+birthplace: beijing
+deathplace: beijing
 places:
-  - { place: dadu, start: 1427, end: 1449 }
+  - { place: beijing, start: 1427, end: 1449 }
   - { place: tumubao, start: 1449, end: 1449 }
   - { place: oirat, start: 1449, end: 1450 }
-  - { place: dadu, start: 1450, end: 1464 }
+  - { place: beijing, start: 1450, end: 1464 }
 reviewed: false

@@ -9,7 +9,7 @@ birthplace: kunyang-yn
 deathplace: unknown
 places:
   - { place: kunyang-yn, start: 1371, end: 1382 }
-  - { place: dadu, start: 1385, end: 1402 }
+  - { place: beijing, start: 1385, end: 1402 }
   - { place: jianye, start: 1402, end: 1433 }
   - { place: liujiagang, start: 1405, end: 1431 }
   - { place: calicut, start: 1407, end: 1433 }

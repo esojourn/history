@@ -1,0 +1,13 @@
+id: qingdi-tuiwei
+wikidata: null
+civ: china
+type: political
+importance: 5
+start: { year: 1912 }
+places: [beijing]
+participants:
+  - person: puyi
+  - person: yuan-shikai
+  - person: zaifeng
+  - person: sun-yatsen
+reviewed: false

@@ -1,0 +1,15 @@
+id: ding-ruchang
+wikidata: null
+civ: china
+faction: qingchao
+importance: 3
+birth: { year: 1836 }
+death: { year: 1895 }
+birthplace: lujiang
+deathplace: liugongdao
+places:
+  - { place: lujiang, start: 1836, end: 1860 }
+  - { place: weihai, start: 1888, end: 1895 }
+  - { place: dadonggou, start: 1894, end: 1894 }
+  - { place: liugongdao, start: 1895, end: 1895 }
+reviewed: false

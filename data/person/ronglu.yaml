@@ -1,0 +1,14 @@
+id: ronglu
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1836 }
+death: { year: 1903 }
+birthplace: beijing
+deathplace: beijing
+places:
+  - { place: beijing, start: 1836, end: 1898 }
+  - { place: tianjin, start: 1898, end: 1898 }
+  - { place: beijing, start: 1898, end: 1903 }
+reviewed: false

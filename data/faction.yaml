@@ -235,3 +235,9 @@
 - id: zhunger
   civ: steppe
   color: "#9C7A3C"
+- id: taiping
+  civ: china
+  color: "#8F3B76"
+- id: geming
+  civ: china
+  color: "#2B6CB0"

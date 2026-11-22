@@ -10,7 +10,7 @@ deathplace: jianye
 places:
   - { place: qiongshan, start: 1514, end: 1553 }
   - { place: chunan, start: 1558, end: 1562 }
-  - { place: dadu, start: 1564, end: 1567 }
+  - { place: beijing, start: 1564, end: 1567 }
   - { place: wu, start: 1569, end: 1570 }
   - { place: jianye, start: 1585, end: 1587 }
 reviewed: false

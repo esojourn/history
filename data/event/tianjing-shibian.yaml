@@ -1,0 +1,12 @@
+id: tianjing-shibian
+wikidata: null
+civ: china
+type: political
+importance: 3
+start: { year: 1856 }
+places: [jianye]
+participants:
+  - person: hong-xiuquan
+  - person: yang-xiuqing
+  - person: shi-dakai
+reviewed: false

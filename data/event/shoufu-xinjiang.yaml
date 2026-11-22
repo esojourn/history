@@ -1,0 +1,11 @@
+id: shoufu-xinjiang
+wikidata: null
+civ: china
+type: war
+importance: 3
+start: { year: 1876 }
+end: { year: 1878 }
+places: [hami, dihua, shule, yili]
+participants:
+  - person: zuo-zongtang
+reviewed: false

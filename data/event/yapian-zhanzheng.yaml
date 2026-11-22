@@ -1,0 +1,13 @@
+id: yapian-zhanzheng
+wikidata: null
+civ: china
+type: war
+importance: 5
+start: { year: 1840 }
+end: { year: 1842 }
+places: [humen, dinghai, panyu, jianye, hongkong]
+participants:
+  - person: minning
+  - person: lin-zexu
+  - person: guan-tianpei
+reviewed: false

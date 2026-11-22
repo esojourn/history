@@ -6,10 +6,10 @@ importance: 3
 birth: { year: 1527 }
 death: { year: 1602 }
 birthplace: quanzhou
-deathplace: dadu
+deathplace: beijing
 places:
   - { place: quanzhou, start: 1527, end: 1552 }
   - { place: dian, start: 1577, end: 1580 }
   - { place: macheng, start: 1585, end: 1600 }
-  - { place: dadu, start: 1601, end: 1602 }
+  - { place: beijing, start: 1601, end: 1602 }
 reviewed: false

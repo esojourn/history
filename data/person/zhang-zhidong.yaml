@@ -1,0 +1,15 @@
+id: zhang-zhidong
+wikidata: null
+civ: china
+faction: qingchao
+importance: 4
+birth: { year: 1837 }
+death: { year: 1909 }
+birthplace: xingyi-fu
+deathplace: beijing
+places:
+  - { place: nanpi, start: 1837, end: 1863 }
+  - { place: panyu, start: 1884, end: 1889 }
+  - { place: wuchang, start: 1889, end: 1907 }
+  - { place: beijing, start: 1907, end: 1909 }
+reviewed: false

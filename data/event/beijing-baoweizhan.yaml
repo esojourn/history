@@ -4,7 +4,7 @@ civ: china
 type: battle
 importance: 3
 start: { year: 1449 }
-places: [dadu]
+places: [beijing]
 participants:
   - person: yu-qian
   - person: zhu-qiyu

@@ -5,7 +5,7 @@ type: political
 importance: 3
 start: { year: 1604 }
 end: { year: 1627 }
-places: [donglin-shuyuan, dadu]
+places: [donglin-shuyuan, beijing]
 participants:
   - person: gu-xiancheng
   - person: yang-lian

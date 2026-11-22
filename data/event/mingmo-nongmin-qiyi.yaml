@@ -5,7 +5,7 @@ type: uprising
 importance: 4
 start: { year: 1627 }
 end: { year: 1645 }
-places: [mizhi, changan, bianzhou, xiangyang, chengdu, dadu]
+places: [mizhi, changan, bianzhou, xiangyang, chengdu, beijing]
 participants:
   - person: li-zicheng
   - person: zhang-xianzhong

@@ -4,7 +4,7 @@ civ: china
 type: diplomatic
 importance: 4
 start: { year: 1793 }
-places: [rehe, dadu, panyu]
+places: [rehe, beijing, panyu]
 participants:
   - person: macartney
   - person: hongli

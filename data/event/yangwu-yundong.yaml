@@ -1,0 +1,17 @@
+id: yangwu-yundong
+wikidata: null
+civ: china
+type: political
+importance: 4
+start: { year: 1861 }
+end: { year: 1895 }
+places: [anqing, shanghai, jianye, mawei-fz, tianjin, wuchang]
+participants:
+  - person: yixin
+  - person: zeng-guofan
+  - person: li-hongzhang
+  - person: zuo-zongtang
+  - person: zhang-zhidong
+  - person: yung-wing
+  - person: robert-hart
+reviewed: false

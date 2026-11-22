@@ -1,0 +1,12 @@
+id: maguan-tiaoyue
+wikidata: null
+civ: china
+type: diplomatic
+importance: 4
+start: { year: 1895 }
+places: [shimonoseki, penghu, taipei]
+participants:
+  - person: li-hongzhang
+  - person: ito-hirobumi
+  - person: zaitian
+reviewed: false

@@ -1,0 +1,12 @@
+id: zaifeng
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1883 }
+death: { year: 1951 }
+birthplace: beijing
+deathplace: beijing
+places:
+  - { place: beijing, start: 1883, end: 1951 }
+reviewed: false

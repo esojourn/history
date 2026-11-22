@@ -1,0 +1,15 @@
+id: wei-yuan
+wikidata: null
+civ: china
+faction: qingchao
+importance: 2
+birth: { year: 1794 }
+death: { year: 1857 }
+birthplace: shaoyang
+deathplace: hangzhou
+places:
+  - { place: shaoyang, start: 1794, end: 1813 }
+  - { place: guangling, start: 1830, end: 1850 }
+  - { place: gaoyou, start: 1850, end: 1853 }
+  - { place: hangzhou, start: 1857, end: 1857 }
+reviewed: false

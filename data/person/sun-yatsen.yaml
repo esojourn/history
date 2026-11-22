@@ -1,0 +1,18 @@
+id: sun-yatsen
+wikidata: null
+civ: china
+faction: geming
+importance: 5
+birth: { year: 1866 }
+death: { year: 1925 }
+birthplace: xiangshan-gd
+deathplace: beijing
+places:
+  - { place: xiangshan-gd, start: 1866, end: 1879 }
+  - { place: honolulu, start: 1879, end: 1883 }
+  - { place: hongkong, start: 1887, end: 1892 }
+  - { place: tokyo, start: 1905, end: 1907 }
+  - { place: jianye, start: 1912, end: 1912 }
+  - { place: panyu, start: 1917, end: 1924 }
+  - { place: beijing, start: 1924, end: 1925 }
+reviewed: false

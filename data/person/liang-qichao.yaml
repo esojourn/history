@@ -1,0 +1,17 @@
+id: liang-qichao
+wikidata: null
+civ: china
+faction: qingchao
+importance: 4
+birth: { year: 1873 }
+death: { year: 1929 }
+birthplace: xinhui
+deathplace: beijing
+places:
+  - { place: xinhui, start: 1873, end: 1890 }
+  - { place: panyu, start: 1890, end: 1895 }
+  - { place: shanghai, start: 1896, end: 1897 }
+  - { place: beijing, start: 1898, end: 1898 }
+  - { place: tokyo, start: 1898, end: 1912 }
+  - { place: beijing, start: 1912, end: 1929 }
+reviewed: false
