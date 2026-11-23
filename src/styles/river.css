@@ -54,17 +54,26 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 .mband.t .blk { border-left-style: dashed; background: color-mix(in srgb, var(--c) 11%, var(--paper)); }
 .mband.l .blk { border-left-style: dotted; background: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in srgb, var(--c) 22%, transparent) 6px 7px); }
 .mband button.go { align-self: flex-start; margin-top: 4px; border: 1px solid var(--c); background: var(--card); border-radius: 4px; font-size: calc(12px * var(--fz)); padding: 1px 8px; }
+/* 人物长图：svg 钉在可视区域里，外面的 .mmap 只用来撑出滚动范围；滚动时按可视范围重画 */
+#mbody.map { touch-action: pan-x pan-y; -webkit-user-select: none; user-select: none; }   /* 两指缩放由页面自己处理，不放大整个网页 */
+.mmap { position: relative; }
+#mpeople { position: sticky; top: 0; left: 0; display: block; }
 #mpeople text { font-family: var(--hei); fill: var(--ink); }
+#mpeople .hd { font-size: 12.5px; fill: #fff; font-weight: 600; }
+#mpeople .hb { font-size: 11px; fill: #fff; opacity: .85; }
+#mpeople .rl { font-size: 10.5px; paint-order: stroke; stroke: var(--paper); stroke-width: 3.5px; stroke-linejoin: round; }
 #mpeople .vn { font-size: 13px; writing-mode: vertical-rl; }
 #mpeople .ax { font-size: 10.5px; fill: var(--ink-2); }
-#mpeople .evn { font-size: 10.5px; }
+#mpeople .evn { font-size: 11.5px; writing-mode: vertical-rl; fill: var(--ink-2); }
 #mpeople .pp, #mpeople .ev { cursor: pointer; }
-.mmore { position: sticky; left: 0; padding: 10px 12px 90px; font-size: calc(12px * var(--fz)); color: var(--ink-3); }
-.mmore button { border: 1px solid var(--line); background: var(--card); border-radius: 6px; padding: 6px 12px; font-size: calc(13px * var(--fz)); color: var(--ink); margin-bottom: 8px; }
-.mnote { padding: 40px 24px; color: var(--ink-2); }
+/* 关系聚焦时人物卡先只露出一小条（名字和简介开头），不挡关系线；点一下或点顶上的小横条展开 */
+.sheet.peek { max-height: calc(150px * var(--fz)); overflow: hidden; }
+.mgrip { display: block; margin: -10px auto 4px; padding: 8px 28px; border: 0; background: none; }
+.mgrip::before { content: ""; display: block; width: 36px; height: 4px; border-radius: 2px; background: var(--line); }
+.sheet.full .mgrip { display: none; }
 
-/* 手机：人物层顶上钉一条小栏：回到朝代总览、现在是哪一段（可翻上一段、下一段）、显示全部人物 */
-.mseg { position: sticky; top: 0; left: 0; z-index: 2; box-sizing: border-box; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 8px; background: var(--paper); border-bottom: 1px solid var(--line); font-size: calc(11px * var(--fz)); color: var(--ink-2); }
+/* 手机：人物层顶上的小栏。长图：回到时代总览、现在看的文明和年份、缩放、只看主要；聚焦：回到全图、聚焦的是谁、缩放 */
+.mseg { position: relative; z-index: 2; box-sizing: border-box; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 8px; background: var(--paper); border-bottom: 1px solid var(--line); font-size: calc(11px * var(--fz)); color: var(--ink-2); }
 .mseg span { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; line-height: 1.25; white-space: nowrap; }
 .mseg span > * { max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
 .mseg b { color: var(--ink); font-size: calc(13px * var(--fz)); }

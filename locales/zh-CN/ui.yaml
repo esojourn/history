@@ -66,16 +66,17 @@ m.onlyOrder: 只排先后，不标年份
 m.years: "{n} 年"
 m.traditional: ，传统说法
 m.seePeople: 看这一段的人物
-m.mainOnly: 只看主要人物
-m.showAll: 显示全部 {n} 位人物
-m.prevSeg: 上一段
-m.nextSeg: 下一段
-m.nextSegTo: 下一段：{name} ›
 m.overview: ‹ 总览
 m.backBands: 回到时代总览
 m.allShort: 全部 {n} 人
 m.mainShort: 只看主要
-m.guests: 虚线框是其他文明里与他相关的人，点一下就到那个文明去。
+m.zoomIn: 放大
+m.zoomOut: 缩小
+m.map: ‹ 全图
+m.focusOn: 聚焦：{name}
+m.related: "{n} 位相关人物"
+m.sameLane: 同在{lane}
+m.grip: 展开或收起卡片
 
 # 搜索
 search.open: 搜索人物、事件
