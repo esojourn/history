@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>示例：手机上怎么看跨国的人物关系</title>
+<link rel="stylesheet" href="/src/styles/base.css">
+<style>
+  .page { max-width: 1240px; margin: 0 auto; padding: 0 28px 80px; }
+  .top { padding: 40px 0 24px; border-bottom: 1px solid var(--line); }
+  .top h1 { font: 40px/1.2 var(--kai); letter-spacing: .03em; }
+  .top p { max-width: 46em; margin: 12px 0 0; font-size: 15px; color: var(--ink-2); }
+  h2 { font: 30px/1.2 var(--kai); margin: 36px 0 6px; }
+  .lead { max-width: 46em; margin: 0 0 16px; font-size: 15px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  figure { margin: 0; }
+  figcaption { font-size: 15px; margin-bottom: 8px; }
+  figcaption b { font: 22px var(--kai); font-weight: 400; margin-right: 8px; }
+  figcaption a { color: var(--qing); font-size: 13px; margin-left: 8px; }
+  iframe { border: 0; display: block; transform-origin: 0 0; }
+  .phone .box { border: 7px solid var(--ink); border-radius: 30px; overflow: hidden; background: var(--paper); }
+  .desk .box { border: 1px solid var(--ink); border-radius: 6px; overflow: hidden; background: var(--paper); margin-bottom: 26px; }
+  .notes h3 { font-size: 13px; color: var(--ink-3); margin: 16px 0 4px; }
+  .notes ul { margin: 0; padding-left: 1.2em; }
+  .notes li { margin: 3px 0; }
+  .y { color: var(--lv); } .n { color: var(--zhu); }
+  .tbl { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; min-width: 640px; }
+  th, td { text-align: left; padding: 7px 18px 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; white-space: nowrap; }
+  .small { color: var(--ink-3); font-size: 12px; max-width: 52em; margin-top: 28px; }
+  @media (max-width: 760px) {
+    .page { padding: 0 14px 60px; }
+    .top h1 { font-size: 30px; }
+    .pair { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <h1>手机上怎么看跨国的人物关系</h1>
+    <p>两个示例都用正式站点现在的全部数据（1268 位人物、1978 条关系，其中 182 条跨国）。两个示例有两处相同：所有国家连成一整张图，左右随意滑，不再一屏一个国家；能用两指缩放。不同的只是<b>点中一个人以后</b>怎么处理：</p>
+    <p><b>示例一</b>（你提的办法）：和他有关系的国家整条挪到他所在国家的旁边。<br><b>示例二</b>（我建议的办法）：进入“关系聚焦”，他和所有相关的人临时排在一起，时间压缩到一屏之内。</p>
+    <p>框里是能操作的真页面，一开始都选中了“忽必烈”，方便对比。点“单独打开”可以在新窗口里试；电脑上按住 Ctrl 滚动滚轮缩放，或按住鼠标拖动。</p>
+  </header>
+
+  <h2>手机</h2>
+  <div class="pair">
+    <figure class="phone"><figcaption><b>示例一</b>相关国家挪到旁边<a href="a.html" target="_blank">单独打开</a></figcaption><div class="box"><iframe data-src="a.html#p/kublai" width="390" height="760" title="示例一 手机"></iframe></div>
+      <div class="notes">
+        <h3>在框里试试</h3>
+        <ul><li>忽必烈在中国泳道的最左边，所以北方草原、罗马与欧洲、日本被挪到了中国左边。</li><li>点右上角“原顺序”，看各国滑回原位。</li><li>点卡片“展开”，在关系里点“马可·波罗”，顺序会再变一次。</li><li>点空白处关掉卡片，再点别的人物。</li></ul>
+        <h3>长处</h3>
+        <ul class="y"><li>还是同一张地图，只是邻居换了，一眼能看出他和哪些国家有往来。</li><li>身边同时代的其他人物照样看得到。</li></ul>
+        <h3>短处</h3>
+        <ul class="n"><li>挪的是整个国家，不是人。忽必烈这一例，马可·波罗、北条时宗那两条线仍伸到屏幕外，要往左滑才看得到。</li><li>中国泳道有 47 列宽，挪到中国旁边的国家，离中国另一头的人还是很远。</li><li>每点一个人，国家顺序就变一次，看几个人以后容易搞不清自己在哪。</li><li>关系线仍画在发生关系的那一年，年份分散的（如汉武帝）还是要上下滑。</li></ul>
+      </div>
+    </figure>
+    <figure class="phone"><figcaption><b>示例二</b>关系聚焦<a href="b.html" target="_blank">单独打开</a></figcaption><div class="box"><iframe data-src="b.html#p/kublai" width="390" height="760" title="示例二 手机"></iframe></div>
+      <div class="notes">
+        <h3>在框里试试</h3>
+        <ul><li>忽必烈排第一列；紧挨着是其他国家的相关人物（按国家分组，顶上标国名），再往右是中国的相关人物。</li><li>点卡片“展开”，在关系里点某个人，那条线会加粗，并滚到看得见的地方。</li><li>点图上任一相关人物（如“拖雷”），接着看他的关系；左上角“上一位”返回。</li><li>点“全图”回到整张图，位置和进来以前一样。</li></ul>
+        <h3>长处</h3>
+        <ul class="y"><li>所有相关的人、所有连线都在一屏之内，不用来回找。</li><li>跨国的关系排得离本人最近，正好是这次要解决的问题。</li><li>可以顺着关系一路看下去，看完一按就回到原来的位置，地图本身不变。</li></ul>
+        <h3>短处</h3>
+        <ul class="n"><li>聚焦时只看得到相关的人；想看同时代还有谁，要回到全图。</li><li>时间被压缩，各人的条只画出这段时间内的部分。</li><li>关系多的人（汉武帝有 26 条）一屏放不下所有列，要左右滑一点。</li></ul>
+      </div>
+    </figure>
+  </div>
+
+  <h2>桌面</h2>
+  <p class="lead">桌面版正式站点已有缩放和关系线，这两个示例主要是为手机做的。放在这里只是为了确认：同样的做法在大屏幕上也能用。</p>
+  <figure class="desk"><figcaption><b>示例一</b>相关国家挪到旁边（选中汉武帝）</figcaption><div class="box"><iframe data-src="a.html#p/liu-che" width="1280" height="760" title="示例一 桌面"></iframe></div></figure>
+  <figure class="desk"><figcaption><b>示例二</b>关系聚焦（选中汉武帝）</figcaption><div class="box"><iframe data-src="b.html#p/liu-che" width="1280" height="760" title="示例二 桌面"></iframe></div></figure>
+
+  <h2>对照</h2>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>示例一：国家挪到旁边</th><th>示例二：关系聚焦</th></tr></thead>
+    <tbody>
+      <tr><th>全图连成一张、可缩放</th><td>有</td><td>有</td></tr>
+      <tr><th>点中人物后，跨国连线一屏看全</th><td class="n">不一定：国家挨着了，人可能还在国家另一头</td><td class="y">看得全</td></tr>
+      <tr><th>关系年份分散时</th><td class="n">仍要上下滑</td><td class="y">自动压缩到一屏</td></tr>
+      <tr><th>地图会不会变</th><td class="n">每点一人，国家顺序变一次</td><td class="y">不变，聚焦是临时的</td></tr>
+      <tr><th>同时看到无关的同时代人物</th><td class="y">看得到</td><td class="n">要回全图</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">这是讨论展现形式用的示例，代码在 prototypes/links/，没有改动正式站点。卡片里的人物简介取自正式站点，出处的标注和正式站点相同。</p>
+</div>
+<script>
+// 框里的页面按页面宽度等比缩小；框滚到附近再载入，免得四个框同时取数据
+const fit = () => document.querySelectorAll('.box').forEach(box => {
+  const f = box.firstElementChild, W = +f.width, Hh = +f.height, phone = box.parentNode.classList.contains('phone');
+  const s = Math.min(phone ? .9 : 1, (box.parentNode.clientWidth - (phone ? 14 : 2)) / W);
+  box.style.width = W * s + (phone ? 14 : 2) + 'px'; box.style.height = Hh * s + (phone ? 14 : 2) + 'px'; f.style.transform = `scale(${s})`;
+});
+fit(); addEventListener('resize', fit);
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.src = e.target.dataset.src; io.unobserve(e.target); } }), { rootMargin: '300px' });
+document.querySelectorAll('iframe[data-src]').forEach(f => io.observe(f));
+</script>
+</body>
+</html>

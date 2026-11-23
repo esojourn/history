@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>示例一：相关国家挪到旁边</title>
+<link rel="stylesheet" href="/src/styles/base.css">
+<link rel="stylesheet" href="demo.css">
+</head>
+<body data-mode="reorder">
+<header class="bar">
+  <button class="tool" id="back" hidden>‹ 全图</button>
+  <button class="tool" id="prev" hidden>‹ 上一位</button>
+  <h1 id="title">示例一 · 国家挪到旁边</h1>
+  <button class="tool" id="reset" hidden>原顺序</button>
+  <button class="tool zoom" data-z="-1" aria-label="缩小">−</button>
+  <button class="tool zoom" data-z="1" aria-label="放大">+</button>
+</header>
+<div id="sc"><div id="sp"><svg id="cv"><text x="60" y="80" style="font-size:14px;fill:var(--ink-3)">正在载入人物数据……</text></svg></div></div>
+<div class="tip">
+    <p>所有国家连成一整张图：上下是时间，左右随意滑，两指缩放（电脑上按住 Ctrl 滚动滚轮，或点右上角 + −）。</p>
+    <p>点任一人物：和他有关系的国家整条挪到他所在国家的旁边，关系线画在发生关系的那一年。</p>
+    <div class="try">试试：<button data-try="kublai">忽必烈</button><button data-try="liu-che">汉武帝</button><button data-try="matteo-ricci">利玛窦</button><button data-try="charles-5">查理五世</button></div>
+    <button class="ok">知道了</button>
+</div>
+<script>if (location.hash.startsWith("#p/")) document.querySelector(".tip").remove();</script>
+<aside id="sheet"></aside>
+<script type="module" src="demo.js"></script>
+</body>
+</html>

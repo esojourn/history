@@ -12,6 +12,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "preview", "--", "--port", "4330"],
       "port": 4330
+    },
+    {
+      "name": "links-demo",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["prototypes/links/serve.mjs"],
+      "port": 4340
     }
   ]
 }
