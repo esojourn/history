@@ -3,7 +3,7 @@ wikidata: null
 civ: china
 faction: beiqi
 importance: 2
-birth: { year: 541, circa: true }
+birth: { unknown: true, approx: 541 }
 death: { year: 573 }
 birthplace: unknown
 deathplace: ye
