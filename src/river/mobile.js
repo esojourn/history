@@ -87,19 +87,26 @@ export function mobile(H, card, search) {
   let pin = null;   // 刚点过（飞过去）的文明：手指左右拖动以前，小栏和标签一直算它
   function place(lane, v, sy = REF) { pin = lane; scrollV(null, geom().y(v) - sy); fitW(true); const g = geom(); scrollV(g.X0[lane] - laneLeft(g, lane), null); draw(); }
 
-  // 各文明该有多宽：只看这次要画的上下范围（屏幕加上下各一屏，和 draw() 画的范围一样，画出来的人都放得下）
-  // 里用到第几列。人少的时段文明变窄，右边的文明跟着左移；拖到人多的时段再变宽。
+  // 屏幕上看得见的年份范围（顶上文明标签下面到屏幕底），上下各多算 SEEN_PAD 像素：人快露出来时文明就开始加宽
+  const SEEN_PAD = 40;
+  const seenRange = g => [g.yr(stV() + HDH - SEEN_PAD), g.yr(stV() + vhV() + SEEN_PAD)];
+  // 某个文明在这段年份里要几列（事件那一列也算上）
+  function need(id, yA, yB) {
+    const L = LN[id];
+    let n = 0;
+    for (const p of M.all ? L.ps : L.main) if (p.d >= yA && p.b0 <= yB && colOf(p) >= n) n = colOf(p) + 1;
+    return Math.max(1, L.ec + n);
+  }
+  // 各文明该有多宽：只看屏幕上看得见的这一段里用到第几列。人少的时段文明变窄，右边的文明跟着左移；拖到人多的时段再变宽。
+  // 屏幕外预先画好的那一圈不算：那里放不下的人先不画（见 draw），拖过去时 preview() 发现放不下就重画、加宽。
   // snap：直接到位；否则每次走剩下的四成，返回 true 表示还没走完。
   // 两指缩放的过程中（zooming）不做逐帧过渡：过渡要每帧整张重画，手机上会一卡一卡的。
   // 这时只在放不下时直接加宽，不收窄；手指离开以后一步收到该有的宽度（见 settle）
   function fitW(snap) {
-    const g = geom(), OY = Math.round(vhV() * OYF), yA = g.yr(stV() - OY) - 2, yB = g.yr(stV() + vhV() + OY) + 2;
+    const g = geom(), [yA, yB] = seenRange(g);
     let moving = false;
     H.lanes.forEach(l => {
-      const L = LN[l.id];
-      let n = 0;
-      for (const p of M.all ? L.ps : L.main) if (p.d >= yA && p.b0 <= yB && colOf(p) >= n) n = colOf(p) + 1;
-      const want = Math.max(1, L.ec + n), cur = WV[l.id];
+      const want = need(l.id, yA, yB), cur = WV[l.id];
       if (zooming && cur != null && !snap) WV[l.id] = Math.max(cur, want);
       else if (snap || cur == null || reduceMotion() || Math.abs(want - cur) * g.cwOf(l.id) < .5) WV[l.id] = want;
       else { WV[l.id] = cur + (want - cur) * .4; moving = true; }
@@ -153,6 +160,11 @@ export function mobile(H, card, search) {
     if (Ax < lo || Ax > hi || Ay < lo || Ay > hi) return false;
     // 画好的范围在新位置上还得盖满屏幕
     if (Ax * -R.ox + bx > 0 || Ax * (vw + R.ox) + bx < vw || Ay * -R.oy + by > 0 || Ay * (vh + R.oy) + by < vh) return false;
+    // 拖到人多的时段，屏幕上的文明放不下了（放不下的人上次没画）：重画、加宽
+    if (R.cap) {
+      const [yA, yB] = seenRange(g);
+      if (H.lanes.some(l => g.X0[l.id] - sl < vw && g.X0[l.id] + g.WW[l.id] - sl > 0 && need(l.id, yA, yB) > R.cap[l.id])) return false;
+    }
     const tx = ((Ax - 1) * -R.ox + bx) * Z, ty = ((Ay - 1) * -R.oy + by) * Z;
     main.style.transform = `translate(${tx}px,${ty}px) scale(${Ax},${Ay})`;
     head.style.transform = `translate(${tx}px,0) scale(${Ax},1)`;
@@ -177,7 +189,9 @@ export function mobile(H, card, search) {
     }
     const g = clampScroll(), vw = vwV(), vh = vhV(), sl = slV(), st = stV(), F = M.focus, A = bandA(), coarse = A >= .5;
     const OX = Math.round(vw * OXF), OY = Math.round(vh * OYF), WL = vw + 2 * OX, HL = vh + 2 * OY, xL = -OX, xR = vw + OX, yT = -OY, yBt = vh + OY;
-    R = { g, k: g.k, sl, st, ox: OX, oy: OY, focus: F, Z, all: M.all };
+    // cap：各文明这次画到第几列。宽度只按屏幕上看得见的定，屏幕外那一圈里超出的人先不画，免得画到右边的文明里
+    const cap = F ? null : Object.fromEntries(H.lanes.map(l => [l.id, Math.ceil(units(l.id) - 1e-6)]));
+    R = { g, k: g.k, sl, st, ox: OX, oy: OY, focus: F, Z, all: M.all, cap };
     // 三个图层的位置和大小；viewBox 从 (-OX, -OY) 起，图里一律用屏幕坐标
     const lay = (el, l, tp, w, h, vb) => { el.style.left = l * Z + 'px'; el.style.top = tp * Z + 'px'; el.style.transform = ''; el.setAttribute('width', w * Z); el.setAttribute('height', h * Z); el.setAttribute('viewBox', vb); };
     lay(main, xL, yT, WL, HL, `${xL} ${yT} ${WL} ${HL}`);
@@ -243,7 +257,7 @@ export function mobile(H, card, search) {
     // 人物竖条：条的长度是寿命，右边的细条是在位时间，一头渐隐表示生年或卒年不详。
     // 缩得很小时只画成小色块（不能点，点下去是放大到那一段）
     (F ? F.cols : M.all ? H.people : H.lanes.flatMap(l => LN[l.id].main)).forEach(p => {
-      if (p.d < yA || p.b0 > yB) return;
+      if (p.d < yA || p.b0 > yB || (cap && LN[p.lane].ec + colOf(p) >= cap[p.lane])) return;
       const x = X(p);
       if (x < xL - 20 || x > xR + 20) return;
       const c = H.FAC[p.fac].c, fade = fadeOf(p, 'v'), cw = g.cwOf(p.lane), w = Math.max(1, Math.min(24, cw * .8)), me = selP === p;
