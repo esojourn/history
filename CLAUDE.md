@@ -8,6 +8,7 @@
 
 - 计划、数据模型、路线图、已确定的事项：[docs/plan.md](docs/plan.md)
 - 内容怎么写、出处怎么标：[docs/content-guide.md](docs/content-guide.md)（写任何人物、事件之前必读）
+- 宣传短片《峡谷之外》系列（王者荣耀人物的真实历史）的制作标准与文案：[promo/heroes/README.md](promo/heroes/README.md)（做这个系列之前必读；原则有调整先改那一页）
 
 ## 和项目方怎么合作
 
