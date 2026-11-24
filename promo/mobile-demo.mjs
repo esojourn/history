@@ -138,9 +138,9 @@ async function act() {
   await snap('1-whole');
 
   // 2. 两指缩放跟手
-  mark(['两指缩放，跟着手指走', '缩小是朝代色块，放大是一个个人物']);
+  mark(['两指缩放，跟着手指走', '稍一放大，就有朝代名和重要人物']);
   const [, yTang, xChina] = await bandPt('唐');
-  for (let i = 0; i < 3; i++) { await pinch(xChina + 12, yTang, 70, 230, 1100); await sleep(450); }
+  for (let i = 0; i < 6; i++) { await pinch(xChina + 25, yTang, 100, 175, 750); await sleep(i === 5 ? 400 : 800); }
   await sleep(700);
   await snap('2-pinch');
 
@@ -148,7 +148,7 @@ async function act() {
   mark(['拖动、甩一下，顺滑地滑过去', '连着划也不卡']);
   await drag([250, 700], [250, 380], 260, true); await sleep(1300);
   await drag([250, 420], [250, 720], 260, true); await sleep(1300);
-  await drag([250, 650], [250, 480], 700); await sleep(600);
+  await drag([110, 600], [350, 600], 900); await sleep(900);
   await snap('3-glide');
 
   // 4. 事件圆点 → 清单 → 某一件 → 返回清单

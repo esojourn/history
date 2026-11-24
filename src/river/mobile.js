@@ -222,6 +222,8 @@ export function mobile(H, card, search) {
     const selP = M.sel && M.sel.t === 'p' ? H.P[M.sel.id] : null, selE = M.sel && M.sel.t === 'e' ? H.E[M.sel.id] : null;
     const rels = F && selP ? H.relsOf(selP.id) : [];
     const o = [];
+    // 中等缩放（色块已淡出、人名还写不下）时补写的字：朝代名和重要人物的名字，记下占的位置，互不相压
+    const lbs = [], free = (x0, x1, y0, y1) => !lbs.some(b => x0 < b[1] && b[0] < x1 && y0 < b[3] + 4 && b[2] < y1 + 4);
 
     // 文明（聚焦时是“本人 / 各文明 / 同一文明”几组）的底色和分界线
     const lanes = (F ? F.groups.map(gr => ({ id: gr.lane, name: gr.name, s: H.lane(gr.lane).s, x0: AXW + gr.a * FCW - sl, x1: AXW + gr.b * FCW - sl }))
@@ -237,8 +239,15 @@ export function mobile(H, card, search) {
         // 缩小以后：朝代、时代画成色块，深浅相间；放得下就竖写名称。传统说法的时期颜色浅一些
         if (A > 0) {
           o.push(`<rect class="bd" data-b="${l.id}:${bi}" x="${l.x0 + 1}" y="${y1}" width="${w}" height="${y2 - y1}" fill="${c}" fill-opacity="${(bi % 2 ? .2 : .11) * (b[3] ? .7 : 1) * A}"/>`);
-          const n = b[0].length * 13 + 10, cx = (l.x0 + l.x1) / 2;
-          if (A > .4 && w >= 15 && y2 - y1 >= n) o.push(`<text class="bn" x="${cx}" y="${H.clamp(HDH + 8, y1 + 6, y2 - n + 4)}" opacity="${A}">${b[0]}</text>`);
+        }
+        // 朝代、时代名：缩小时写在色块上；放大一些、色块淡掉而人名还太挤写不下时（中国、罗马这类人多的文明），
+        // 照样写出来，衬一圈底色压在人物条上，免得满屏只有色条没有一个字（2026-11-24 改）
+        const n = b[0].length * 13 + 10, cx = (l.x0 + l.x1) / 2, crowd = !coarse && g.cwOf(l.id) < 20;
+        if ((A > .4 || crowd) && w >= 15 && y2 - y1 >= n) {
+          const ty = H.clamp(HDH + 8, y1 + 6, y2 - n + 4);
+          lbs.push([cx - 9, cx + 9, ty - 2, ty + n - 10]);
+          // 字不跟着色块一起变淡：色块淡下去时字底下是人物条，衬底色
+          o.push(`<text class="bn${A < .9 ? ' lb' : ''}" x="${cx}" y="${ty}">${b[0]}</text>`);
         }
         // 只排先后、不标年份的时期（太初）：斜线底纹，这一段的位置只表示次序
         if (b[3] === 'l') {
@@ -303,19 +312,33 @@ export function mobile(H, card, search) {
 
     // 人物竖条：条的长度是寿命，右边的细条是在位时间，一头渐隐表示生年或卒年不详。
     // 缩得很小时只画成小色块（不能点，点下去是放大到那一段）
+    const more = [];   // 列太窄、本来不写名字的人：之后按重要度挑放得下的补写
     (F ? F.cols : M.all ? H.people : H.lanes.flatMap(l => LN[l.id].main)).forEach(p => {
       if (p.d < yA || p.b0 > yB || (cap && LN[p.lane].ec + colOf(p) + 1 > cap[p.lane] + 1e-6)) return;
       const x = X(p);
       if (x < xL - 20 || x > xR + 20) return;
       const c = H.FAC[p.fac].c, fade = fadeOf(p, 'v'), cw = g.cwOf(p.lane), w = Math.max(1, Math.min(24, cw * .8)), me = selP === p;
       const y1 = Y(Math.max(p.b0, lo)), y2 = Y(Math.min(p.d, hi));
-      if (coarse) { o.push(`<rect x="${x - w / 2}" y="${y1}" width="${w}" height="${Math.max(1, y2 - y1)}" fill="${fade || c}" fill-opacity="${fade ? 1 : .22 + .3 * A}"/>`); return; }
+      const ny = H.clamp(HDH + 6, y1 + 5, Math.max(y1 + 5, y2 - p.n.length * NH - 3)), tall = y2 - y1 >= p.n.length * NH;
+      if (coarse) {
+        o.push(`<rect x="${x - w / 2}" y="${y1}" width="${w}" height="${Math.max(1, y2 - y1)}" fill="${fade || c}" fill-opacity="${fade ? 1 : .22 + .3 * A}"/>`);
+        if (cw >= 2.5 && tall && p.imp >= MAIN) more.push({ p, x, ny, me });   // 色块还在时只补写重要的人，朝代名仍是主角
+        return;
+      }
       const on = !selE || !selE.who.length || selE.who.includes(p.id);
-      const ny = H.clamp(HDH + 6, y1 + 5, Math.max(y1 + 5, y2 - p.n.length * NH - 3));
-      const name = cw >= 20 && (F || z >= .99 || y2 - y1 >= p.n.length * NH);
+      const name = cw >= 20 && (F || z >= .99 || tall);
+      if (!name && !F && cw >= 2.5 && tall && on) more.push({ p, x, ny, me });
       o.push(`<g class="pp" data-p="${p.id}" opacity="${on ? 1 : .15}"><rect x="${x - w / 2}" y="${y1}" width="${w}" height="${Math.max(1, y2 - y1)}" rx="${w >= 6 ? 3 : 0}" fill="${fade || c}" fill-opacity="${fade ? 1 : .22 + .3 * A}"${me ? ` stroke="${c}" stroke-width="2"` : (p.ns || p.cert) && w >= 6 ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".8"` : ''}/>
         ${w >= 14 ? p.reigns.map(r => `<rect x="${x + w / 2 - 3}" y="${Y(Math.max(r[0], lo))}" width="3" height="${Math.max(0, Y(Math.min(r[1], hi)) - Y(Math.max(r[0], lo)))}" fill="${c}"/>`).join('') : ''}
         ${name ? `<text class="vn" x="${x - 1}" y="${ny}"${me ? ' font-weight="700"' : ''}>${p.n}</text>` : ''}</g>`);
+    });
+    // 补写人名：重要的先占位置，和已写的朝代名、别人的名字不相压才写
+    const gap = coarse ? 13 : 8;   // 色块还在时名字之间多隔开些，不挤成一片
+    H.byWeight(more.map(m => m.p)).forEach(p => {
+      const m = more.find(v => v.p === p), x0 = m.x - gap, x1 = m.x + gap, y0 = m.ny - 2, y1 = m.ny + p.n.length * NH;
+      if (!free(x0, x1, y0, y1)) return;
+      lbs.push([x0, x1, y0, y1]);
+      o.push(`<text class="vn lb" x="${m.x - 1}" y="${m.ny}"${m.me ? ' font-weight="700"' : ''}>${p.n}</text>`);
     });
 
     // 关系线画在发生关系的那一年，标签写在对方那一头（线比标签短就写到对方外侧）；标签撞了就挪到线下或更上面

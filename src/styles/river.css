@@ -58,6 +58,9 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 #mpeople.coarse .bd { cursor: zoom-in; }
 #mpeople .rl { font-size: 10.5px; paint-order: stroke; stroke: var(--paper); stroke-width: 3.5px; stroke-linejoin: round; }
 #mpeople .vn { font-size: 13px; writing-mode: vertical-rl; }
+/* 中等缩放时补写在人物条上的字：衬一圈底色，不能点（点到的是下面的人物条） */
+#mpeople .lb { paint-order: stroke; stroke: var(--paper); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
+#mpeople .bn.lb { font-size: 13px; font-weight: 700; }
 .mly .ax { font-size: 10.5px; fill: var(--ink-2); }
 #mpeople .evn { font-size: 11.5px; writing-mode: vertical-rl; fill: var(--ink-2); }
 #mpeople .evc { font-size: 8.5px; font-weight: 700; fill: var(--paper); text-anchor: middle; }   /* 圆点里的数字：这里挨着几件事 */
