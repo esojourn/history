@@ -89,7 +89,9 @@ export function mobile(H, card, search) {
 
   // 各文明该有多宽：只看这次要画的上下范围（屏幕加上下各一屏，和 draw() 画的范围一样，画出来的人都放得下）
   // 里用到第几列。人少的时段文明变窄，右边的文明跟着左移；拖到人多的时段再变宽。
-  // snap：直接到位；否则每次走剩下的四成，返回 true 表示还没走完
+  // snap：直接到位；否则每次走剩下的四成，返回 true 表示还没走完。
+  // 两指缩放的过程中（zooming）不做逐帧过渡：过渡要每帧整张重画，手机上会一卡一卡的。
+  // 这时只在放不下时直接加宽，不收窄；手指离开以后再过渡到该有的宽度
   function fitW(snap) {
     const g = geom(), OY = Math.round(vhV() * OYF), yA = g.yr(stV() - OY) - 2, yB = g.yr(stV() + vhV() + OY) + 2;
     let moving = false;
@@ -98,7 +100,8 @@ export function mobile(H, card, search) {
       let n = 0;
       for (const p of M.all ? L.ps : L.main) if (p.d >= yA && p.b0 <= yB && colOf(p) >= n) n = colOf(p) + 1;
       const want = Math.max(1, L.ec + n), cur = WV[l.id];
-      if (snap || cur == null || reduceMotion() || Math.abs(want - cur) * g.cwOf(l.id) < .5) WV[l.id] = want;
+      if (zooming && cur != null && !snap) WV[l.id] = Math.max(cur, want);
+      else if (snap || cur == null || reduceMotion() || Math.abs(want - cur) * g.cwOf(l.id) < .5) WV[l.id] = want;
       else { WV[l.id] = cur + (want - cur) * .4; moving = true; }
     });
     return moving;
@@ -122,13 +125,16 @@ export function mobile(H, card, search) {
 
   /* ---------- 画面跟手：先平移、拉伸画好的图层，必要时才重画 ---------- */
   let R = null, vraf = 0;   // R：上一次重画时的状态
+  let zooming = false;      // 两指缩放（或电脑上 Ctrl+滚轮缩放）进行中
   const OXF = .5, OYF = 1;  // 屏幕外多画的宽度：左右各半屏，上下各一屏
   // 状态变了：在下一帧里能用平移、拉伸顶住就顶住，顶不住才重画
   const show = () => { if (!vraf) vraf = requestAnimationFrame(() => { vraf = 0; if (!preview()) draw(); }); };
-  // 停下来了：状态和上次画的不一样就重画一次
-  const settle = () => {
-    if (R && R.sl === slV() && R.st === stV() && R.k === geom().k && R.focus === M.focus && R.Z === Z && R.all === M.all) { preview(); return; }
-    cancelAnimationFrame(vraf); vraf = requestAnimationFrame(() => { vraf = 0; draw(); });
+  // 停下来了：状态和上次画的不一样就重画一次。
+  // 刚缩放完（zoomed）一定重画，文明宽度一步到位：缩放时只加宽不收窄，要收回来；
+  // 整张图刚变过大小，这时一步收窄看不出跳动，逐帧过渡反倒要连着重画十几次，手机上一松手就卡
+  const settle = (zoomed = false) => {
+    if (!zoomed && R && R.sl === slV() && R.st === stV() && R.k === geom().k && R.focus === M.focus && R.Z === Z && R.all === M.all) { preview(); return; }
+    cancelAnimationFrame(vraf); vraf = requestAnimationFrame(() => { vraf = 0; draw(zoomed); });
   };
   function preview() {
     const main = $('#mpeople'), head = $('#mhead'), axis = $('#maxis');
@@ -142,7 +148,9 @@ export function mobile(H, card, search) {
       const c = vw / 2, x1 = anchorX(g, anchorAt(R.g, R.sl + c - 20)) - sl, x2 = anchorX(g, anchorAt(R.g, R.sl + c + 20)) - sl;
       Ax = (x2 - x1) / 40; bx = (x1 + x2) / 2 - Ax * c;
     }
-    if (Ax < .7 || Ax > 1.45 || Ay < .7 || Ay > 1.45) return false;   // 拉伸太多，字会糊、变形
+    // 拉伸太多，字会糊、变形。缩放手势进行中放宽些（手停下来马上会重画清楚），少重画几次，跟手更顺
+    const lo = zooming ? .5 : .7, hi = zooming ? 2.2 : 1.45;
+    if (Ax < lo || Ax > hi || Ay < lo || Ay > hi) return false;
     // 画好的范围在新位置上还得盖满屏幕
     if (Ax * -R.ox + bx > 0 || Ax * (vw + R.ox) + bx < vw || Ay * -R.oy + by > 0 || Ay * (vh + R.oy) + by < vh) return false;
     const tx = ((Ax - 1) * -R.ox + bx) * Z, ty = ((Ay - 1) * -R.oy + by) * Z;
@@ -153,7 +161,7 @@ export function mobile(H, card, search) {
   }
 
   /* ---------- 画图（长图和关系聚焦同一个画法，聚焦时只画相关的人） ---------- */
-  function draw() {
+  function draw(snapW = false) {   // snapW：文明宽度一步到位，不逐帧过渡
     cancelAnimationFrame(vraf); vraf = 0;
     const main = $('#mpeople'), head = $('#mhead'), axis = $('#maxis');
     if (!main) return;
@@ -163,7 +171,7 @@ export function mobile(H, card, search) {
       // 它自己变窄时右边缘尽量不动，免得整条缩出屏幕，但左边缘最多挪到年份栏旁边
       const g0 = clampScroll(), id = pin && g0.X0[pin] + g0.WW[pin] - slV() > AXW + 10 && g0.X0[pin] - slV() < vwV() - 10 ? pin : laneAt();
       const s0 = g0.X0[id] - slV(), w0 = g0.WW[id];
-      moving = fitW(!R);
+      moving = fitW(!R || snapW);
       const g1 = geom();
       SL = (g1.X0[id] - Math.max(s0, Math.min(AXW + 6, s0 + w0 - g1.WW[id]))) * Z;
     }
@@ -422,6 +430,7 @@ export function mobile(H, card, search) {
     const p = pts(e), moved = tp ? tp.moved : false;
     tp = p.length >= 2 ? { two: true, d: dist(p[0], p[1]) || 1, mx: (p[0].x + p[1].x) / 2, my: (p[0].y + p[1].y) / 2, moved: true }
       : { two: false, x: p[0].x, y: p[0].y, moved, v: [] };
+    zooming = tp.two;
   }
   body.addEventListener('touchstart', e => {
     stopGlide(); cancelAnimationFrame(fly);
@@ -454,9 +463,10 @@ export function mobile(H, card, search) {
     if (!tp) return;
     if (tp.moved) eat = true;
     if (e.touches.length) { startTouch(e); return; }   // 两指缩放松开一指：接着用剩下那根手指拖
+    const zoomed = zooming; zooming = false;
     const v = tp.two ? [] : tp.v.filter(s => performance.now() - s[0] < 100);
     tp = null;
-    if (v.length < 2 || reduceMotion()) { settle(); return; }
+    if (v.length < 2 || reduceMotion()) { settle(zoomed); return; }
     const span = Math.max(16, performance.now() - v[0][0]);
     let vx = v.reduce((s, a) => s + a[1], 0) / span, vy = v.reduce((s, a) => s + a[2], 0) / span, last = performance.now();
     const step = now => {
@@ -488,10 +498,10 @@ export function mobile(H, card, search) {
   body.addEventListener('wheel', e => {
     e.preventDefault(); stopGlide();
     const r = body.getBoundingClientRect(), u = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? body.clientHeight : 1;
-    if (e.ctrlKey) zoomBy(Math.exp(-e.deltaY * .01), e.clientX - r.left, e.clientY - r.top);
+    if (e.ctrlKey) { zooming = true; zoomBy(Math.exp(-e.deltaY * .01), e.clientX - r.left, e.clientY - r.top); }
     else if (e.shiftKey && !e.deltaX) panBy(-e.deltaY * u, 0);
     else panBy(-e.deltaX * u, -e.deltaY * u);
-    show(); clearTimeout(wt); wt = setTimeout(settle, 150);
+    show(); clearTimeout(wt); wt = setTimeout(() => { const zoomed = zooming; zooming = false; settle(zoomed); }, 150);
   }, { passive: false });
 
   // 换字号：仍停在同一处
