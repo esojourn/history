@@ -511,12 +511,26 @@ export function mobile(H, card, search) {
       : { two: false, x: p[0].x, y: p[0].y, moved, v: [] };
     zooming = tp.two;
   }
+  // 拖动、缩放中途会重画，手指按下时碰到的那个图形可能被换掉、移出页面；
+  // 之后的 touchmove、touchend 仍只发给它，却不再冒泡到 body。所以在它身上也听一份，只在它已离开页面时处理，
+  // 否则松手收不到：没有惯性、拖完不整理，下一次点按也会被当成拖动吞掉
+  const hooked = new Set();
+  const lost = h => e => { if (!body.contains(e.target)) h(e); };
+  const onMove = lost(e => moveTouch(e)), onEnd = lost(e => endTouch(e));
+  const unhook = () => { hooked.forEach(t => { t.removeEventListener('touchmove', onMove); t.removeEventListener('touchend', onEnd); t.removeEventListener('touchcancel', onEnd); }); hooked.clear(); };
   body.addEventListener('touchstart', e => {
     stopGlide(); cancelAnimationFrame(fly); fly = 0; clearTimeout(idle);
-    if (e.touches.length === 1) { tp = null; trav.x = trav.y = 0; }
+    if (e.touches.length === 1) { unhook(); tp = null; trav.x = trav.y = 0; }
+    [...e.changedTouches].forEach(({ target: t }) => {
+      if (hooked.has(t)) return;
+      hooked.add(t);
+      t.addEventListener('touchmove', onMove, { passive: false });
+      t.addEventListener('touchend', onEnd); t.addEventListener('touchcancel', onEnd);
+    });
     startTouch(e);
   }, { passive: true });
-  body.addEventListener('touchmove', e => {
+  body.addEventListener('touchmove', moveTouch, { passive: false });
+  function moveTouch(e) {
     if (!tp) return;
     e.preventDefault();
     const p = pts(e);
@@ -537,8 +551,9 @@ export function mobile(H, card, search) {
       while (tp.v.length && now - tp.v[0][0] > 100) tp.v.shift();
       show();
     }
-  }, { passive: false });
+  }
   function endTouch(e) {
+    if (!e.touches.length) unhook();
     if (!tp) return;
     if (tp.moved) eat = true;
     if (e.touches.length) { startTouch(e); return; }   // 两指缩放松开一指：接着用剩下那根手指拖

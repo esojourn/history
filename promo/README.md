@@ -29,6 +29,15 @@ node promo/compose.mjs --portrait --clear --music <音乐文件>   # 结尾不�
 - `node promo/record.mjs --still`：不录像，只截每个镜头的最后一帧到 `out/stills/`，用来检查位置。
 - `promo/out/` 是生成的文件，不进仓库。
 
+### 手机版改进演示（竖屏，约 45 秒，无旁白）
+
+手机画幅（390×844）一镜到底：全貌 → 两指缩放 → 拖动惯性 → 事件圆点与清单 → 全貌、点色块。字幕和每段动作都写在 [mobile-demo.mjs](mobile-demo.mjs) 里。
+
+```bash
+node promo/mobile-demo.mjs --still   # 只截每段结尾的图到 promo/out/mdemo/，检查位置
+node promo/mobile-demo.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # → promo/out/mdemo/mobile-demo.mp4
+```
+
 ## 配音
 
 火山引擎·豆包语音合成（新版控制台 API Key，V3 接口）。密钥和音色写在 `promo/.env`（不进仓库）：
