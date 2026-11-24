@@ -265,11 +265,11 @@ const ass = [`[Script Info]`, `ScriptType: v4.00+`, `PlayResX: 1080`, `PlayResY:
   ``, `[Events]`, `Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text`];
 marks.forEach((m, i) => {
   if (END && m.id === 'm8-end') return;   // 结尾卡自带文字，不再压字幕
-  const a = m.at, b = i + 1 < marks.length ? marks[i + 1].at : TOTAL;
-  ass.push(`Dialogue: 0,${ts(a)},${ts(b)},Big,,0,0,0,,{\\fad(250,200)}${m.lines[0]}`);
+  const a = m.at, b = i + 1 < marks.length ? marks[i + 1].at : TOTAL, fin = i ? 250 : 0;   // 第一段字幕一开始就在（第一帧常被拿去当封面）
+  ass.push(`Dialogue: 0,${ts(a)},${ts(b)},Big,,0,0,0,,{\\fad(${fin},200)}${m.lines[0]}`);
   // 第二行太长时缩小字号，免得超出画面
   const fs2 = m.lines[1] && m.lines[1].length > 24 ? `\\fs${Math.floor(980 / m.lines[1].length)}` : '';
-  if (m.lines[1]) ass.push(`Dialogue: 0,${ts(a)},${ts(b)},Small,,0,0,0,,{\\fad(250,200)${fs2}}${m.lines[1]}`);
+  if (m.lines[1]) ass.push(`Dialogue: 0,${ts(a)},${ts(b)},Small,,0,0,0,,{\\fad(${fin},200)${fs2}}${m.lines[1]}`);
 });
 fs.writeFileSync(path.join(OUT, 'subs.ass'), ass.join('\n'));
 
@@ -284,7 +284,7 @@ marks.forEach(m => args.push('-i', path.join(VOICE, VO[m.id].file)));
 if (MUSIC) args.push('-i', path.resolve(MUSIC));
 const vf = `[3:v]scale=1080:1920:flags=lanczos,format=rgba,fade=in:st=${tEnd.toFixed(3)}:d=0.5:alpha=1[end];`
   + `[1:v]scale=${PW}:${PH}:flags=lanczos[ph];[0:v][ph]overlay=${PX}:${PY}[a];[a][2:v]overlay=0:0,subtitles=subs.ass[s];[s][end]overlay=0:0,`
-  + `fade=in:st=0:d=0.4,fade=out:st=${(TOTAL - 0.8).toFixed(3)}:d=0.8,format=yuv420p[v]`;
+  + `fade=out:st=${(TOTAL - 0.8).toFixed(3)}:d=0.8,format=yuv420p[v]`;   // 不从黑场淡入：第一帧常被平台拿去当封面
 // 旁白：每段在字幕出现后 VOLEAD 秒开始；音乐压低，有人声时再自动让一让（sidechain）
 const vo = marks.map((m, i) => `[${4 + i}:a]aresample=48000,adelay=${Math.round((m.at + VOLEAD) * 1000)}:all=1[v${i}]`);
 let af = `;${vo.join(';')};${marks.map((_, i) => `[v${i}]`).join('')}amix=inputs=${marks.length}:normalize=0,apad,atrim=0:${TOTAL.toFixed(3)},asplit=2[narr][key]`;
@@ -292,9 +292,13 @@ if (MUSIC) {
   const mi = 4 + marks.length;
   af += `;[${mi}:a]aresample=48000,atrim=0:${TOTAL.toFixed(3)},volume=0.3,afade=in:st=0:d=1,afade=out:st=${(TOTAL - 2.5).toFixed(3)}:d=2.5[mu]`
     + `;[mu][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[duck]`
-    + `;[narr][duck]amix=inputs=2:normalize=0,loudnorm=I=-15:TP=-1.5:LRA=11[au]`;
-} else af += `;[narr]loudnorm=I=-15:TP=-1.5:LRA=11[au]`;
-args.push('-filter_complex', vf + af, '-map', '[v]', '-map', '[au]', '-c:a', 'aac', '-b:a', '192k');
-args.push('-t', TOTAL.toFixed(3), '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-movflags', '+faststart', 'mobile-demo.mp4');
+    + `;[narr][duck]amix=inputs=2:normalize=0[mix]`;
+} else af += `;[narr]anull[mix]`;
+// loudnorm 会把采样率升到 192k（AAC 再落成 96k），旁白又是单声道：各平台转码时容易出问题（声音变小、怪）。
+// 统一成 48kHz 立体声，和宣传片一样
+af += `;[mix]loudnorm=I=-15:TP=-1.5:LRA=11,aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[au]`;
+args.push('-filter_complex', vf + af, '-map', '[v]', '-map', '[au]', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2');
+args.push('-t', TOTAL.toFixed(3), '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-pix_fmt', 'yuv420p',
+  '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-movflags', '+faststart', 'mobile-demo.mp4');
 execFileSync('ffmpeg', args, { cwd: OUT });
 console.log('成片：', final, TOTAL.toFixed(1) + 's');
