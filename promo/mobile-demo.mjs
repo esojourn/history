@@ -113,6 +113,13 @@ const bandPt = name => page.evaluate(n => {
   const bd = document.elementsFromPoint(x, y).find(e => e.matches('[data-b]'));
   return [x, y, bd ? bd.getBoundingClientRect().x : r.x - 20];
 }, name);
+// 某文明某一年在屏幕上的位置（按左边年份刻度换算）：返回 [色块中间 x, y, 色块左边缘 x]
+const yearPt = (lane, year) => page.evaluate(([lane, year]) => {
+  const ts = [...document.querySelectorAll('#maxis text.ax')].map(t => { const n = t.textContent.match(/(前)?(\d+)/); const r = t.getBoundingClientRect(); return [n[1] ? 1 - +n[2] : +n[2], r.y + r.height / 2]; });
+  const [a, b] = [ts[0], ts[ts.length - 1]], y = a[1] + (year - a[0]) * (b[1] - a[1]) / (b[0] - a[0]);
+  const bd = [...document.querySelectorAll(`#mpeople [data-b^="${lane}:"]`)].map(e => e.getBoundingClientRect()).find(r => r.y <= y && r.y + r.height >= y);
+  return [bd.x + bd.width / 2, y, bd.x];
+}, [lane, year]);
 // 屏幕中间、数字最大的事件圆点
 const bestCluster = () => page.evaluate(([w, h]) => {
   const c = [...document.querySelectorAll('#mpeople [data-c]')].map(e => { const r = e.querySelector('circle').getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2, n: +(e.textContent.replace('+', '') || 0) }; })
@@ -139,50 +146,63 @@ async function mark(id) {
 const snap = async name => { if (STILL) await page.screenshot({ path: path.join(OUT, name + '.png') }); };
 
 async function act() {
-  // 1. 一打开就是全貌
+  // 1. 改了十几个版本：全貌，左右扫一遍各文明
   await mark('m1-whole');
-  await sleep(2000);
-  await mark('m2-short');
-  await drag([330, 560], [130, 560], 1100); await sleep(900);
-  await drag([130, 560], [380, 560], 1000); await sleep(300);
-  await drag([120, 560], [380, 560], 500); await sleep(800);
+  await sleep(900);
+  // 拖得短一点：不出预先画好的范围，画面不留白
+  await drag([320, 560], [190, 560], 900); await sleep(300);
+  await drag([190, 560], [330, 560], 800);
   await snap('1-whole');
 
-  // 2. 两指缩放跟手
-  await mark('m3-pinch');
-  const [, yTang, xChina] = await bandPt('唐');
-  // 三次放大（每次约 3 倍），每次停一下，看得出字一步步出来
-  for (let i = 0; i < 3; i++) { await pinch(xChina + 25, yTang, 70, 214, 850); await sleep(i === 2 ? 900 : 650); }
-  await snap('2-pinch');
+  // 2. 跨国家对照：两指放大到南宋、元前后，回到中国，再往右一划，左边的“圣经与教会历史”露出来，同一年代并排对照
+  await mark('m2-cross');
+  const [, yYuan, xChina] = await yearPt('china', 1270);
+  for (let i = 0; i < 3; i++) { await pinch(xChina + 25, yYuan, 70, 214, 600); await sleep(150); }
+  // 放大时各文明宽度会变，落点不一定在中国：点上方的“中国”标签回到中国（停在同一年、同样大小）
+  await tapSel('#mtabs [data-lane="china"]'); await sleep(1100);
+  await drag([80, 600], [330, 600], 1100); await sleep(800);
+  await snap('2-cross');
 
-  // 3. 拖动、惯性
+  // 3. 点忽必烈：相关的人聚到同一屏（等画面停稳再点：重画中按下和抬起不在同一个图形上，就不算一次点击）
+  await mark('m3-focus');
+  await sleep(600);
+  const [kx, ky] = await page.evaluate(() => {
+    const r = document.querySelector('#mpeople [data-p="kublai"] rect').getBoundingClientRect();
+    return [r.x + r.width / 2, (Math.max(r.y, 180) + Math.min(r.bottom, 700)) / 2];
+  });
+  await tap(kx, ky); await sleep(1200);
+  if (!(await page.locator('#mseg [data-map]').count())) throw new Error('点忽必烈没有进入关系聚焦');
+  await snap('3-focus');
+
+  // 4. 回到全图；拖动、惯性
   await mark('m4-glide');
-  await drag([250, 700], [250, 380], 260, true); await sleep(1300);
-  await drag([250, 420], [250, 720], 260, true); await sleep(1300);
-  await drag([110, 600], [350, 600], 900); await sleep(900);
-  await snap('3-glide');
+  await tapSel('#mseg [data-map]'); await sleep(700);
+  await drag([250, 700], [250, 380], 260, true); await sleep(1000);
+  await drag([250, 420], [250, 720], 260, true); await sleep(1000);
+  await drag([110, 600], [350, 600], 700); await sleep(600);
+  await snap('4-glide');
 
-  // 4. 事件圆点 → 清单 → 某一件 → 返回清单
+  // 5. 事件圆点 → 清单 → 某一件 → 返回清单
   await mark('m5-cluster');
   let c = await bestCluster();
   if (!c) throw new Error('屏幕上没有事件圆点');
   await sleep(1800);
   await tap(c.x, c.y); await sleep(2300);
   await mark('m6-list');
-  await snap('4a-list');
+  await snap('5a-list');
   await tapSel('#msheet [data-goe]'); await sleep(2400);
-  await snap('4b-event');
+  await snap('5b-event');
   await tapSel('#msheet .d-back'); await sleep(1600);
   await tapSel('#msheet .close'); await sleep(900);
 
-  // 5. 回到全貌，点色块直接放大到那个朝代
+  // 6. 回到全貌，点色块直接放大到那个朝代
   await mark('m7-band');
   await tapSel('#mseg [data-whole]'); await sleep(2000);
   const [xm, ym] = await bandPt('明');
   await tap(xm, ym); await sleep(2600);
-  await snap('5-band');
+  await snap('6-band');
 
-  // 6. 结尾
+  // 7. 结尾
   await mark('m8-end');
   await mark(null);
 }
@@ -243,7 +263,9 @@ const ass = [`[Script Info]`, `ScriptType: v4.00+`, `PlayResX: 1080`, `PlayResY:
 marks.forEach((m, i) => {
   const a = m.at, b = i + 1 < marks.length ? marks[i + 1].at : TOTAL;
   ass.push(`Dialogue: 0,${ts(a)},${ts(b)},Big,,0,0,0,,{\\fad(250,200)}${m.lines[0]}`);
-  if (m.lines[1]) ass.push(`Dialogue: 0,${ts(a)},${ts(b)},Small,,0,0,0,,{\\fad(250,200)}${m.lines[1]}`);
+  // 第二行太长时缩小字号，免得超出画面
+  const fs2 = m.lines[1] && m.lines[1].length > 24 ? `\\fs${Math.floor(980 / m.lines[1].length)}` : '';
+  if (m.lines[1]) ass.push(`Dialogue: 0,${ts(a)},${ts(b)},Small,,0,0,0,,{\\fad(250,200)${fs2}}${m.lines[1]}`);
 });
 fs.writeFileSync(path.join(OUT, 'subs.ass'), ass.join('\n'));
 
