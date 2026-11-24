@@ -35,7 +35,10 @@ export function mobile(H, card, search) {
     LN[l.id] = { ps, main, byImp: H.byWeight(evs), cA: H.pack(ps, p => p.b0, end, 2, 'mcA'), cM: H.pack(main, p => p.b0, end, 2, 'mcM'), ec: evs.length ? 1 : 0 };
   });
   const colOf = p => (M.all ? p.mcA : p.mcM);
-  const units = id => Math.max(1, LN[id].ec + (M.all ? LN[id].cA : LN[id].cM));
+  // 文明宽度随眼前变化：WV 是各文明正在显示的列数（变化时逐帧过渡，可以是小数）。
+  // 列号仍是整个文明统一排的，所以上下拖动时同一个人不换列；只是用不到的右边几列收起来
+  const WV = {};
+  const units = id => WV[id] ?? Math.max(1, LN[id].ec + (M.all ? LN[id].cA : LN[id].cM));
 
   const vwV = () => body.clientWidth / Z, vhV = () => body.clientHeight / Z, slV = () => SL / Z, stV = () => ST / Z;
   const zMin = () => Math.min(.5, (vhV() - HDH - 30) / (Y1 - Y0) / BASEK);   // 缩到最小：几千年正好一屏
@@ -82,7 +85,24 @@ export function mobile(H, card, search) {
   // 把某个文明摆在屏幕上：比屏幕窄就居中，宽就靠左
   const laneLeft = (g, id) => (g.WW[id] > vwV() - AXW - 12 ? AXW + 6 : AXW + (vwV() - AXW - g.WW[id]) / 2);
   let pin = null;   // 刚点过（飞过去）的文明：手指左右拖动以前，小栏和标签一直算它
-  function place(lane, v, sy = REF) { pin = lane; const g = geom(); scrollV(g.X0[lane] - laneLeft(g, lane), g.y(v) - sy); draw(); }
+  function place(lane, v, sy = REF) { pin = lane; scrollV(null, geom().y(v) - sy); fitW(true); const g = geom(); scrollV(g.X0[lane] - laneLeft(g, lane), null); draw(); }
+
+  // 各文明该有多宽：只看这次要画的上下范围（屏幕加上下各一屏，和 draw() 画的范围一样，画出来的人都放得下）
+  // 里用到第几列。人少的时段文明变窄，右边的文明跟着左移；拖到人多的时段再变宽。
+  // snap：直接到位；否则每次走剩下的四成，返回 true 表示还没走完
+  function fitW(snap) {
+    const g = geom(), OY = Math.round(vhV() * OYF), yA = g.yr(stV() - OY) - 2, yB = g.yr(stV() + vhV() + OY) + 2;
+    let moving = false;
+    H.lanes.forEach(l => {
+      const L = LN[l.id];
+      let n = 0;
+      for (const p of M.all ? L.ps : L.main) if (p.d >= yA && p.b0 <= yB && colOf(p) >= n) n = colOf(p) + 1;
+      const want = Math.max(1, L.ec + n), cur = WV[l.id];
+      if (snap || cur == null || reduceMotion() || Math.abs(want - cur) * g.cwOf(l.id) < .5) WV[l.id] = want;
+      else { WV[l.id] = cur + (want - cur) * .4; moving = true; }
+    });
+    return moving;
+  }
   // 平滑地飞到某个文明、某一年、某个缩放倍数（过程中只拉伸画面，到了再重画）
   let fly = 0;
   function flyTo(lane, v, z1, sy = REF) {
@@ -137,6 +157,16 @@ export function mobile(H, card, search) {
     cancelAnimationFrame(vraf); vraf = 0;
     const main = $('#mpeople'), head = $('#mhead'), axis = $('#maxis');
     if (!main) return;
+    let moving = false;
+    if (!M.focus) {
+      // 先定各文明的宽度。左边的文明变宽变窄时，屏幕中间那个文明（刚点过的优先）的左边缘停在原处，眼前的内容不跟着跳；
+      // 它自己变窄时右边缘尽量不动，免得整条缩出屏幕，但左边缘最多挪到年份栏旁边
+      const g0 = clampScroll(), id = pin && g0.X0[pin] + g0.WW[pin] - slV() > AXW + 10 && g0.X0[pin] - slV() < vwV() - 10 ? pin : laneAt();
+      const s0 = g0.X0[id] - slV(), w0 = g0.WW[id];
+      moving = fitW(!R);
+      const g1 = geom();
+      SL = (g1.X0[id] - Math.max(s0, Math.min(AXW + 6, s0 + w0 - g1.WW[id]))) * Z;
+    }
     const g = clampScroll(), vw = vwV(), vh = vhV(), sl = slV(), st = stV(), F = M.focus, A = bandA(), coarse = A >= .5;
     const OX = Math.round(vw * OXF), OY = Math.round(vh * OYF), WL = vw + 2 * OX, HL = vh + 2 * OY, xL = -OX, xR = vw + OX, yT = -OY, yBt = vh + OY;
     R = { g, k: g.k, sl, st, ox: OX, oy: OY, focus: F, Z, all: M.all };
@@ -259,6 +289,8 @@ export function mobile(H, card, search) {
     });
     head.innerHTML = hd.join('');
     if (!F) syncLane();
+    // 宽度还没过渡完：下一帧接着画（这期间有手指移动，也由这一帧一起画）
+    if (moving) vraf = requestAnimationFrame(() => { vraf = 0; draw(); });
   }
 
   // 图上方的一条小栏：长图上是“当前文明与年份 / 全貌 / 缩放 / 只看主要”；聚焦时是“全图 / 聚焦谁 / 缩放”
