@@ -1,21 +1,21 @@
-// 手机版时间长河：时间自上而下，人名竖排。两层：
-//   时代总览：一次看一个文明的各个朝代、时代（顶上点文明名称或左右滑动切换）；
-//   人物：所有文明并排连成一整张长图，左右随意滑，两指缩放；点人物或事件进入“关系聚焦”——
-//     他和所有相关的人临时排在一起（其他文明的人紧挨着他），时间压缩到一屏之内，连线都看得到。
-//     这个做法是对比了两个示例后定的，见 prototypes/links/ 和 docs/plan.md 2.6。
+// 手机版时间长河：时间自上而下，人名竖排。所有文明并排连成一整张图，像地图一样拖动、两指缩放：
+//   缩到最小是几千年的全貌，每个文明一条，朝代、时代是色块（点色块放大到那一段）；
+//   放大以后人物的竖条、名字和大事浮出来。不再分“时代”“人物”两层。
+//   点人物或事件进入“关系聚焦”：他和所有相关的人临时排在一起（其他文明的人紧挨着他），
+//   时间压缩到一屏之内，连线都看得到。这个做法是对比了两个示例后定的，见 prototypes/links/ 和 docs/plan.md 2.6。
+// 手指拖动、两指缩放、松手后的惯性滑动都由这里自己处理（#mbody 设了 touch-action: none），
+// 不靠浏览器的滚动，所以各家浏览器（包括火狐）表现一样。
 import { fades, fadeOf, setHash, readHash, cardTarget, reduceMotion, fz } from './util.js';
 
 export function mobile(H, card, search) {
   const $ = s => document.querySelector(s), t = H.t;
   const body = $('#mbody'), sheet = $('#msheet'), tabs = $('#mtabs'), seg = $('#mseg');
   // 图上的尺寸都是字号放大前的；整张图按字号倍数 Z 放大（svg 的 viewBox 取屏幕尺寸 ÷ Z）
-  const AXW = 46, HDH = 36, NH = 14, BASEK = 8, GAP = .8, FCW = 34, PEEK = 150, MAIN = 4, FEW = 9;
+  const AXW = 46, HDH = 36, NH = 14, BASEK = 8, GAP = .8, MINW = 24, FCW = 34, PEEK = 150, MAIN = 4, FEW = 9, ZMAX = 4;
   const Y0 = H.EXTENT[0], Y1 = H.EXTENT[1];
-  const M = { mode: 'bands', lane: H.site.default_open[0] || H.lanes[0].id, all: true, sel: null, full: false, peek: false, focus: null, home: null };
+  const M = { lane: H.site.default_open[0] || H.lanes[0].id, all: true, sel: null, full: false, peek: false, focus: null, home: null };
   const HIST = [], nameOf = s => (s.t === 'p' ? H.P[s.id] : H.E[s.id]).n;
-  let Z = fz(), z = 1;
-  const inFocus = b => b[1] < H.FOCUS[1] && b[2] > H.FOCUS[0];
-  const within = (p, a, b) => p.d > a && p.b0 < b;
+  let Z = fz(), z = .15;   // z：缩放倍数，1 是一年 8 像素、人名都写得出的大小
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const fit = (s, w, px = 12.5) => { const n = Math.floor(w / px); return n >= s.length ? s : n > 1 ? s.slice(0, n - 1) + '…' : ''; };
 
@@ -26,29 +26,31 @@ export function mobile(H, card, search) {
     const ps = H.byWeight(H.people.filter(p => p.lane === l.id)), end = p => Math.max(p.d, p.b0 + (p.n.length * NH + 12) / BASEK);
     const main = ps.length <= FEW ? ps : ps.filter(p => p.imp >= MAIN);
     const evs = H.events.filter(e => e.lane === l.id && e.imp >= 3).sort((a, b) => a.s - b.s);
-    LN[l.id] = { ps, main, evs, byImp: H.byWeight(evs), cA: H.pack(ps, p => p.b0, end, 2, 'mcA'), cM: H.pack(main, p => p.b0, end, 2, 'mcM'), ec: evs.length ? 1 : 0 };
+    LN[l.id] = { ps, main, byImp: H.byWeight(evs), cA: H.pack(ps, p => p.b0, end, 2, 'mcA'), cM: H.pack(main, p => p.b0, end, 2, 'mcM'), ec: evs.length ? 1 : 0 };
   });
   const colOf = p => (M.all ? p.mcA : p.mcM);
-  let L = layout();
-  function layout() {
-    const X = {}; let u = 0;
-    H.lanes.forEach(l => { const n = LN[l.id]; X[l.id] = u + GAP / 2; u += Math.max(1, n.ec + (M.all ? n.cA : n.cM)) + GAP; });
-    return { X, total: u };
-  }
-  const laneW = id => Math.max(1, LN[id].ec + (M.all ? LN[id].cA : LN[id].cM));
+  const units = id => Math.max(1, LN[id].ec + (M.all ? LN[id].cA : LN[id].cM));
 
-  // 坐标：整张图上的位置（放大前）。减去滚动距离（也换算成放大前）才是屏幕上的位置
   const vwV = () => body.clientWidth / Z, vhV = () => body.clientHeight / Z, slV = () => body.scrollLeft / Z, stV = () => body.scrollTop / Z;
+  const zMin = () => Math.min(.5, (vhV() - HDH - 30) / (Y1 - Y0) / BASEK);   // 缩到最小：几千年正好一屏
+  // 缩小以后朝代色块渐显：z 在 .35 以下开始显出，.1 以下最浓。浓到一半以上时点图上任何地方都是“放大到这一段”
+  const bandA = () => (M.focus ? 0 : H.clamp((.35 - z) / .25, 0, 1));
+
+  // 坐标：整张图上的位置（放大前）。减去滚动距离（也换算成放大前）才是屏幕上的位置。
+  // 每个文明的宽度 = 列数 × 列宽，但不窄于 MINW，缩到很小时每个文明仍是看得见的一条
   function geom() {
     if (M.focus) {
       const F = M.focus;
-      return { k: F.k, cw: FCW, y: v => HDH + (v - F.lo) * F.k, yr: Y => F.lo + (Y - HDH) / F.k, x: p => AXW + (F.idx.get(p.id) + .5) * FCW,
+      return { k: F.k, cwOf: () => FCW, y: v => HDH + (v - F.lo) * F.k, yr: Y => F.lo + (Y - HDH) / F.k, x: p => AXW + (F.idx.get(p.id) + .5) * FCW,
         W: AXW + F.cols.length * FCW + 40, Ht: HDH + (F.hi - F.lo) * F.k + PEEK + 40 };
     }
-    const k = BASEK * z, cw = 30 * H.clamp(z, .2, 1);
-    return { k, cw, y: v => HDH + (v - Y0) * k, yr: Y => Y0 + (Y - HDH) / k,
-      x: p => AXW + (L.X[p.lane] + LN[p.lane].ec + colOf(p) + .5) * cw, xe: e => AXW + (L.X[e.lane] + .5) * cw,
-      W: AXW + L.total * cw + vwV() * .7, Ht: HDH + (Y1 - Y0) * k + 160 };   // 右边留白，最后一个文明也能滚到屏幕左边
+    const k = BASEK * z, cw = 30 * H.clamp(z, .04, 1), G = Math.max(4, GAP * cw), X0 = {}, WW = {};
+    let x = AXW + G / 2;
+    H.lanes.forEach(l => { X0[l.id] = x; WW[l.id] = Math.max(MINW, units(l.id) * cw); x += WW[l.id] + G; });
+    const cwOf = id => WW[id] / units(id);
+    return { k, G, X0, WW, cwOf, y: v => HDH + (v - Y0) * k, yr: Y => Y0 + (Y - HDH) / k,
+      x: p => X0[p.lane] + (LN[p.lane].ec + colOf(p) + .5) * cwOf(p.lane), xe: e => X0[e.lane] + .5 * cwOf(e.lane),
+      W: x + vwV() * .7, Ht: HDH + (Y1 - Y0) * k + 160 };   // 右边留白，最后一个文明也能滚到屏幕左边
   }
   function size() {
     const g = geom(), m = body.querySelector('.mmap');
@@ -56,50 +58,49 @@ export function mobile(H, card, search) {
     return g;
   }
   const scrollV = (x, y) => { if (x != null) body.scrollLeft = x * Z; if (y != null) body.scrollTop = y * Z; };
-  const REF = HDH + 70;   // 换层、换字号时保持在同一年：取屏幕上方这个位置对应的年份
-  const yearAt = () => (M.mode === 'people' ? geom().yr(stV() + REF) : bandYear());
-  // 屏幕左边第一个露出 40 像素以上的文明（顶上的文明标签跟着它走）
+  const REF = HDH + 70;   // 换文明、换字号时保持在同一年：取屏幕上方这个位置对应的年份
+  const yearAt = () => geom().yr(stV() + REF);
+  // 横向的“锚”：屏幕上某一点落在哪个文明的几分之几处。缩放前后让它不动
+  function anchorAt(g, xv) {
+    if (M.focus) return { x: xv };
+    const id = H.lanes.reduce((a, l) => (xv >= g.X0[l.id] - g.G / 2 ? l.id : a), H.lanes[0].id);
+    return { id, f: (xv - g.X0[id]) / g.WW[id] };
+  }
+  const anchorX = (g, a) => (a.id ? g.X0[a.id] + a.f * g.WW[a.id] : a.x);
+  // 屏幕上露出最多的文明（顶上的文明标签跟着它走）；一样多时取左边的
   function laneAt() {
-    const g = geom(), sl = slV();
-    const l = H.lanes.find(l => AXW + (L.X[l.id] - GAP / 2 + laneW(l.id) + GAP) * g.cw - sl > AXW + 40);
-    return (l || H.lanes[H.lanes.length - 1]).id;
+    const g = geom(), sl = slV(), vw = vwV(), seen = id => Math.min(g.X0[id] + g.WW[id] - sl, vw) - Math.max(g.X0[id] - sl, AXW);
+    return H.lanes.reduce((a, l) => (seen(l.id) > seen(a) + 1 ? l.id : a), H.lanes[0].id);
+  }
+  // 把某个文明摆在屏幕上：比屏幕窄就居中，宽就靠左
+  const laneLeft = (g, id) => (g.WW[id] > vwV() - AXW - 12 ? AXW + 6 : AXW + (vwV() - AXW - g.WW[id]) / 2);
+  function place(lane, v, sy = REF) { const g = size(); scrollV(g.X0[lane] - laneLeft(g, lane), g.y(v) - sy); draw(); }
+  // 平滑地飞到某个文明、某一年、某个缩放倍数
+  let fly = 0;
+  function flyTo(lane, v, z1, sy = REF) {
+    cancelAnimationFrame(fly); stopGlide();
+    const g0 = geom(), sx0 = g0.X0[lane] - slV(), sy0 = g0.y(v) - stV(), za = z;
+    z = z1; const sx1 = laneLeft(geom(), lane); z = za;
+    if (reduceMotion()) { z = z1; place(lane, v, sy); return; }
+    const t0 = performance.now();
+    const step = now => {
+      const p = Math.min(1, (now - t0) / 380), e = 1 - Math.pow(1 - p, 3);
+      z = Math.exp(H.lerp(Math.log(za), Math.log(z1), e));
+      const g = size(); scrollV(g.X0[lane] - H.lerp(sx0, sx1, e), g.y(v) - H.lerp(sy0, sy, e)); draw();
+      if (p < 1) fly = requestAnimationFrame(step);
+    };
+    fly = requestAnimationFrame(step);
   }
 
-  /* ---------- 时代总览 ---------- */
-  function bands() {
-    const l = H.lane(M.lane), ps = LN[M.lane].ps;
-    body.innerHTML = `<div style="--c:${l.c};padding:10px 0 40px">` + l.bands.map((b, i) => {
-      const h = H.clamp((b[2] - b[1]) * .26, 40, 230), has = ps.some(p => within(p, b[1], b[2]));
-      return `<div class="mband ${b[3] || ''}" data-i="${i}"${inFocus(b) ? ' data-focus' : ''}><div class="yr">${b[3] === 'l' ? '' : (b[3] ? t('circa') : '') + H.fmt(b[1])}</div>
-        <div class="blk" style="min-height:${h}px"><b>${b[0]}</b>
-        <small>${b[3] === 'l' ? t('m.onlyOrder') : t('m.years', { n: b[2] - b[1] }) + (b[3] ? t('m.traditional') : '')}</small>
-        ${has ? `<button class="go" data-m="people" data-y="${Math.max(b[1], Math.min(...ps.filter(p => within(p, b[1], b[2])).map(p => p.b0)))}">${t('m.seePeople')}</button>` : ''}</div></div>`;
-    }).join('') + '</div>';
-    const fo = body.querySelector('[data-focus]');
-    body.scrollTop = fo ? Math.max(0, fo.offsetTop - 120) : 0;
-  }
-  function bandYear() {
-    const at = body.scrollTop + 110, l = H.lane(M.lane);
-    for (const el of body.querySelectorAll('.mband')) if (el.offsetTop + el.offsetHeight > at) {
-      const b = l.bands[+el.dataset.i]; return b[1] + (b[2] - b[1]) * H.clamp((at - el.offsetTop) / el.offsetHeight, 0, 1);
-    }
-    return null;
-  }
-  function bandsTo(v) {
-    const bs = H.lane(M.lane).bands, dist = b => (v < b[1] ? b[1] - v : v > b[2] ? v - b[2] : 0);
-    let i = 0; bs.forEach((b, j) => { if (dist(b) < dist(bs[i])) i = j; });
-    const el = body.querySelector(`.mband[data-i="${i}"]`), b = bs[i];
-    if (el) body.scrollTop = Math.max(0, el.offsetTop + el.offsetHeight * H.clamp((v - b[1]) / (b[2] - b[1] || 1), 0, 1) - 110);
-  }
-
-  /* ---------- 人物长图与关系聚焦（同一个画法，聚焦时只画相关的人） ---------- */
+  /* ---------- 画图（长图和关系聚焦同一个画法，聚焦时只画相关的人） ---------- */
   let raf = 0;
-  const redraw = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; if (M.mode === 'people') draw(); }); };
+  const redraw = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(); }); };
   function draw() {
     const svg = body.querySelector('#mpeople');
     if (!svg) return;
-    const g = geom(), vw = vwV(), vh = vhV(), sl = slV(), st = stV(), F = M.focus;
+    const g = geom(), vw = vwV(), vh = vhV(), sl = slV(), st = stV(), F = M.focus, A = bandA(), coarse = A >= .5;
     svg.setAttribute('width', body.clientWidth); svg.setAttribute('height', body.clientHeight); svg.setAttribute('viewBox', `0 0 ${vw} ${vh}`);
+    svg.classList.toggle('coarse', coarse);
     const Y = v => g.y(v) - st, X = p => g.x(p) - sl;
     const yA = g.yr(st + HDH) - 2, yB = g.yr(st + vh) + 2, mid = g.yr(st + (vh + HDH) / 2), lo = F ? F.lo : Y0, hi = F ? F.hi : Y1;
     const selP = M.sel && M.sel.t === 'p' ? H.P[M.sel.id] : null, selE = M.sel && M.sel.t === 'e' ? H.E[M.sel.id] : null;
@@ -108,50 +109,67 @@ export function mobile(H, card, search) {
 
     // 文明（聚焦时是“本人 / 各文明 / 同一文明”几组）的底色和分界线
     const lanes = (F ? F.groups.map(gr => ({ id: gr.lane, name: gr.name, x0: AXW + gr.a * FCW - sl, x1: AXW + gr.b * FCW - sl }))
-      : H.lanes.map(l => { const x0 = AXW + (L.X[l.id] - GAP / 2) * g.cw - sl; return { id: l.id, name: l.name, x0, x1: x0 + (laneW(l.id) + GAP) * g.cw }; }))
+      : H.lanes.map(l => ({ id: l.id, name: l.name, x0: g.X0[l.id] - g.G / 2 - sl, x1: g.X0[l.id] + g.WW[l.id] + g.G / 2 - sl })))
       .filter(l => l.x1 > AXW && l.x0 < vw);
     lanes.forEach((l, i) => {
-      o.push(`<rect x="${l.x0}" y="${HDH}" width="${l.x1 - l.x0}" height="${vh}" fill="${H.lane(l.id).c}" fill-opacity="${i % 2 ? .07 : .04}"/><line x1="${l.x0}" x2="${l.x0}" y1="${HDH}" y2="${vh}" stroke="var(--line)"/>`);
-      // 只排先后、不标年份的时期（太初）：斜线底纹，这一段的位置只表示次序
-      if (!F) H.lane(l.id).bands.filter(b => b[3] === 'l' && b[2] > yA && b[1] < yB).forEach(b =>
-        o.push(`<rect x="${l.x0}" y="${Y(b[1])}" width="${l.x1 - l.x0}" height="${Y(b[2]) - Y(b[1])}" fill="url(#mhatch)"/><text class="ax" x="${Math.max(l.x0, AXW) + 6}" y="${Math.max(Y(b[1]), HDH) + 16}">${b[0]}：${t('m.onlyOrder')}</text>`));
+      const c = H.lane(l.id).c;
+      o.push(`<rect x="${l.x0}" y="${HDH}" width="${l.x1 - l.x0}" height="${vh}" fill="${c}" fill-opacity="${i % 2 ? .07 : .04}"/><line x1="${l.x0}" x2="${l.x0}" y1="${HDH}" y2="${vh}" stroke="var(--line)"/>`);
+      if (F) return;
+      H.lane(l.id).bands.forEach((b, bi) => {
+        if (b[2] <= yA || b[1] >= yB) return;
+        const y1 = Y(b[1]), y2 = Y(b[2]), w = l.x1 - l.x0 - 2;
+        // 缩小以后：朝代、时代画成色块，深浅相间；放得下就竖写名称。传统说法的时期颜色浅一些
+        if (A > 0) {
+          o.push(`<rect class="bd" data-b="${l.id}:${bi}" x="${l.x0 + 1}" y="${y1}" width="${w}" height="${y2 - y1}" fill="${c}" fill-opacity="${(bi % 2 ? .2 : .11) * (b[3] ? .7 : 1) * A}"/>`);
+          const n = b[0].length * 13 + 10, cx = (l.x0 + l.x1) / 2;
+          if (A > .4 && w >= 15 && y2 - y1 >= n) o.push(`<text class="bn" x="${cx}" y="${H.clamp(HDH + 8, y1 + 6, y2 - n + 4)}" opacity="${A}">${b[0]}</text>`);
+        }
+        // 只排先后、不标年份的时期（太初）：斜线底纹，这一段的位置只表示次序
+        if (b[3] === 'l') {
+          o.push(`<rect x="${l.x0}" y="${y1}" width="${l.x1 - l.x0}" height="${y2 - y1}" fill="url(#mhatch)" pointer-events="none"/>`);
+          if (w > 150) o.push(`<text class="ax" x="${Math.max(l.x0, AXW) + 6}" y="${Math.max(y1, HDH) + 16}">${b[0]}：${t('m.onlyOrder')}</text>`);
+        }
+      });
     });
     // 年份刻度：落在整十、整百的年份上（公元前按“前 n 年”的 n 取整）
     const step = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000].find(s => s * g.k >= 46) || 1000, ticks = [];
     for (let v = Math.ceil(Math.max(yA, lo)); v <= Math.min(yB, hi); v++) {
       if ((v <= 0 ? 1 - v : v) % step) continue;
       const y = Y(v); if (y < HDH + 6) continue;
-      ticks.push([v, y]); o.push(`<line x1="${AXW}" x2="${vw}" y1="${y}" y2="${y}" stroke="var(--line)" opacity=".6"/>`);
+      ticks.push([v, y]); o.push(`<line x1="${AXW}" x2="${vw}" y1="${y}" y2="${y}" stroke="var(--line)" opacity=".6" pointer-events="none"/>`);
     }
 
-    // 事件（长图上每个文明最左边的一列）：◆ 都画；竖写的名字放得下才写，重要的先占位置，放大以后写得出的就多了。
+    // 事件（每个文明最左边的一列，放大到一定程度才出现）：◆ 都画；竖写的名字放得下才写，重要的先占位置。
     // 持续多年的事件下面拖一条线
-    if (!F) H.lanes.forEach(l => {
-      const x = AXW + (L.X[l.id] + .5) * g.cw - sl;
-      if (x < AXW - 10 || x > vw + 10) return;
+    if (!F && z >= .3) H.lanes.forEach(l => {
+      const cw = g.cwOf(l.id), x = g.X0[l.id] + cw / 2 - sl;
+      if (!LN[l.id].ec || x < AXW - 10 || x > vw + 10) return;
       const taken = [], named = new Set(), vis = LN[l.id].byImp.filter(e => e.e >= yA - 40 && e.s <= yB);
-      if (g.cw >= 20) vis.forEach(e => {
+      if (cw >= 20) vis.forEach(e => {
         const a = Y(e.s) - 6, b = Y(e.s) + 9 + e.n.length * 12;
         if (e === selE || !taken.some(([c, d]) => a < d + 4 && c < b + 4)) { taken.push([a, b]); named.add(e); }
       });
       [...vis].reverse().forEach(e => {
         const y1 = Y(e.s), y2 = Y(Math.max(e.s, e.e)), on = !selE || e === selE, nm = named.has(e);
-        o.push(`<g class="ev" data-e="${e.id}" opacity="${on ? 1 : .25}"><rect x="${x - g.cw / 2}" y="${y1 - 7}" width="${g.cw}" height="${(nm ? e.n.length * 12 + 4 : 0) + 14}" fill="transparent"/>
+        o.push(`<g class="ev" data-e="${e.id}" opacity="${on ? 1 : .25}"><rect x="${x - cw / 2}" y="${y1 - 7}" width="${cw}" height="${(nm ? e.n.length * 12 + 4 : 0) + 14}" fill="transparent"/>
           ${y2 > y1 + 2 ? `<line x1="${x}" x2="${x}" y1="${y1}" y2="${y2}" stroke="var(--ink)" stroke-width="2.5" opacity=".4"/>` : ''}
           ${nm ? `<path d="M${x} ${y1 - 5}l5 5l-5 5l-5-5z" fill="var(--ink)"/>` : `<path d="M${x} ${y1 - 3}l3 3l-3 3l-3-3z" fill="var(--ink-2)"/>`}${nm ? `<text class="evn" x="${x - 1}" y="${y1 + 9}"${e === selE ? ' font-weight="700"' : ''}>${e.n}</text>` : ''}</g>`);
       });
     });
 
-    // 人物竖条：条的长度是寿命，右边的细条是在位时间，一头渐隐表示生年或卒年不详
+    // 人物竖条：条的长度是寿命，右边的细条是在位时间，一头渐隐表示生年或卒年不详。
+    // 缩得很小时只画成小色块（不能点，点下去是放大到那一段）
     (F ? F.cols : M.all ? H.people : H.lanes.flatMap(l => LN[l.id].main)).forEach(p => {
       if (p.d < yA || p.b0 > yB) return;
       const x = X(p);
       if (x < AXW - 20 || x > vw + 20) return;
-      const c = H.FAC[p.fac].c, fade = fadeOf(p, 'v'), w = Math.min(24, g.cw * .8), me = selP === p;
-      const y1 = Y(Math.max(p.b0, lo)), y2 = Y(Math.min(p.d, hi)), on = !selE || !selE.who.length || selE.who.includes(p.id);
+      const c = H.FAC[p.fac].c, fade = fadeOf(p, 'v'), cw = g.cwOf(p.lane), w = Math.max(1, Math.min(24, cw * .8)), me = selP === p;
+      const y1 = Y(Math.max(p.b0, lo)), y2 = Y(Math.min(p.d, hi));
+      if (coarse) { o.push(`<rect x="${x - w / 2}" y="${y1}" width="${w}" height="${Math.max(1, y2 - y1)}" fill="${fade || c}" fill-opacity="${fade ? 1 : .22 + .3 * A}"/>`); return; }
+      const on = !selE || !selE.who.length || selE.who.includes(p.id);
       const ny = H.clamp(HDH + 6, y1 + 5, Math.max(y1 + 5, y2 - p.n.length * NH - 3));
-      const name = g.cw >= 20 && (F || z >= .99 || y2 - y1 >= p.n.length * NH);
-      o.push(`<g class="pp" data-p="${p.id}" opacity="${on ? 1 : .15}"><rect x="${x - w / 2}" y="${y1}" width="${w}" height="${Math.max(1, y2 - y1)}" rx="3" fill="${fade || c}" fill-opacity="${fade ? 1 : .22}"${me ? ` stroke="${c}" stroke-width="2"` : p.ns || p.cert ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".8"` : ''}/>
+      const name = cw >= 20 && (F || z >= .99 || y2 - y1 >= p.n.length * NH);
+      o.push(`<g class="pp" data-p="${p.id}" opacity="${on ? 1 : .15}"><rect x="${x - w / 2}" y="${y1}" width="${w}" height="${Math.max(1, y2 - y1)}" rx="${w >= 6 ? 3 : 0}" fill="${fade || c}" fill-opacity="${fade ? 1 : .22 + .3 * A}"${me ? ` stroke="${c}" stroke-width="2"` : (p.ns || p.cert) && w >= 6 ? ` stroke="${c}" stroke-dasharray="3 3" stroke-opacity=".8"` : ''}/>
         ${w >= 14 ? p.reigns.map(r => `<rect x="${x + w / 2 - 3}" y="${Y(Math.max(r[0], lo))}" width="3" height="${Math.max(0, Y(Math.min(r[1], hi)) - Y(Math.max(r[0], lo)))}" fill="${c}"/>`).join('') : ''}
         ${name ? `<text class="vn" x="${x - 1}" y="${ny}"${me ? ' font-weight="700"' : ''}>${p.n}</text>` : ''}</g>`);
     });
@@ -173,7 +191,7 @@ export function mobile(H, card, search) {
         ${label(r.label.slice(0, 8), x2, y, dir, Math.abs(x2 - x1))}</g>`);
     });
     // 事件：一条横线连起所有参与的人
-    if (selE) {
+    if (selE && !coarse) {
       const xs = selE.who.map(w => H.P[w]).filter(p => !F || F.idx.has(p.id)).filter(p => M.all || F || p.imp >= MAIN || LN[p.lane].ps.length <= FEW).map(X), y = Y(selE.s);
       const x0 = F ? AXW : g.xe(selE) - sl;
       if (xs.length && y > HDH && y < vh) o.push(`<g pointer-events="none"><line x1="${Math.min(x0, ...xs)}" x2="${Math.max(x0, ...xs)}" y1="${y}" y2="${y}" stroke="var(--ink)" stroke-width="1.4"/>${xs.map(v => `<circle cx="${v}" cy="${y}" r="3.4" fill="var(--ink)"/>`).join('')}</g>`);
@@ -188,32 +206,29 @@ export function mobile(H, card, search) {
     lanes.forEach(l => {
       const a = Math.max(l.x0 + 1, AXW + 1), b = Math.min(l.x1 - 1, vw), w = b - a, band = F ? null : H.bandAt(H.lane(l.id), mid);
       o.push(`<rect x="${a}" y="3" width="${Math.max(0, w)}" height="${HDH - 6}" rx="4" fill="${H.lane(l.id).c}"/>`);
-      // 窄的（聚焦时只有一个人的文明）只写名称的头两个字
+      // 窄的只写名称的头两个字，再窄就不写
       const nm = w - 8 >= l.name.length * 12.5 ? l.name : w < 60 ? l.name.slice(0, 2) : fit(l.name, w - 8);
-      if (w > 26) o.push(`<text class="hd" x="${w < 40 ? a + w / 2 : a + 5}"${w < 40 ? ' text-anchor="middle"' : ''} y="${band ? 16 : 23}">${nm}</text>${band ? `<text class="hb" x="${a + 5}" y="${HDH - 8}">${fit(band[0], w - 8, 11)}</text>` : ''}`);
+      if (w > 26) o.push(`<text class="hd" x="${w < 40 ? a + w / 2 : a + 5}"${w < 40 ? ' text-anchor="middle"' : ''} y="${band && w >= 40 ? 16 : 23}">${nm}</text>${band && w >= 40 ? `<text class="hb" x="${a + 5}" y="${HDH - 8}">${fit(band[0], w - 8, 11)}</text>` : ''}`);
     });
     o.push(`<rect width="${AXW}" height="${HDH}" fill="var(--paper)"/>`);
     svg.innerHTML = o.join('');
     if (!F) syncLane();
   }
 
-  // 人物层顶上的一条小栏：长图上是“总览 / 当前文明与年份 / 缩放 / 只看主要”；聚焦时是“全图 / 聚焦谁 / 缩放”
+  // 图上方的一条小栏：长图上是“当前文明与年份 / 全貌 / 缩放 / 只看主要”；聚焦时是“全图 / 聚焦谁 / 缩放”
   function segBar() {
-    seg.hidden = M.mode !== 'people';
-    if (seg.hidden) return;
     const zoom = `<button data-z="-1" aria-label="${t('m.zoomOut')}">−</button><button data-z="1" aria-label="${t('m.zoomIn')}">+</button>`;
     if (M.focus) {
       const F = M.focus;
       seg.innerHTML = `<button class="back" data-map>${t('m.map')}</button><span><b>${t('m.focusOn', { name: F.p ? F.p.n : F.e.n })}</b><i>${t('m.related', { n: F.cols.length - (F.p ? 1 : 0) })}</i></span>${zoom}`;
       return;
     }
-    const n = H.people.length;
-    seg.innerHTML = `<button class="back" data-m="bands" aria-label="${t('m.backBands')}">${t('m.overview')}</button><span id="mwhere"></span>${zoom}
-      <button class="all" data-all aria-pressed="${M.all}">${M.all ? t('m.mainShort') : t('m.allShort', { n })}</button>`;
+    seg.innerHTML = `<span id="mwhere"></span><button class="back" data-whole>${t('m.whole')}</button>${zoom}
+      <button class="all" data-all aria-pressed="${M.all}">${M.all ? t('m.mainShort') : t('m.allShort', { n: H.people.length })}</button>`;
   }
   let lastLane = null;
   function syncLane() {
-    const id = laneAt(), l = H.lane(id), v = yearAt(), b = H.bandAt(l, v), w = $('#mwhere');
+    const id = laneAt(), l = H.lane(id), v = geom().yr(stV() + (vhV() + HDH) / 2), b = H.bandAt(l, v), w = $('#mwhere');   // 屏幕正中那一年
     M.lane = id;
     if (w) w.innerHTML = `<b>${l.name}</b><i>${b ? b[0] : ''}${b && b[3] === 'l' ? '' : ' · ' + H.fmt(Math.round(v))}</i>`;
     if (id !== lastLane) { lastLane = id; markTab(); }
@@ -224,26 +239,13 @@ export function mobile(H, card, search) {
     if (on) tabs.scrollTo({ left: on.offsetLeft - (tabs.clientWidth - on.offsetWidth) / 2, behavior: reduceMotion() ? 'auto' : 'smooth' });
   }
 
-  function map() {
-    body.innerHTML = `<div class="mmap"><svg id="mpeople"></svg></div>`;
-    body.classList.add('map');
-    size(); draw();
-  }
-  // 长图上滚到某个文明、某一年
-  function goTo(lane, v, smooth) {
-    const g = geom(), x = (L.X[lane] - GAP / 2) * g.cw, y = g.y(v) - REF;
-    body.scrollTo({ left: Math.max(0, x) * Z, top: Math.max(0, y) * Z, behavior: smooth && !reduceMotion() ? 'smooth' : 'auto' });
-    redraw();
-  }
-
   function paint() {
-    document.querySelectorAll('#m .seg [data-m]').forEach(b => b.setAttribute('aria-pressed', b.dataset.m === M.mode));
     tabs.hidden = !!M.focus;
     tabs.innerHTML = H.lanes.map(l => `<button data-lane="${l.id}" aria-pressed="${l.id === M.lane}">${l.name}</button>`).join('');
     lastLane = M.lane; markTab();
     segBar();
-    body.classList.remove('map');
-    M.mode === 'bands' ? bands() : map();
+    body.innerHTML = `<div class="mmap"><svg id="mpeople"></svg></div>`;
+    size(); draw();
   }
 
   /* ---------- 关系聚焦 ---------- */
@@ -273,15 +275,16 @@ export function mobile(H, card, search) {
       lo = Math.min(e.s - 5, ...who.map(q => Math.max(q.b0, e.s - 40))); hi = Math.max(e.e + 5, ...who.map(q => Math.min(q.d, e.e + 40)));
     }
     const room = vhV() - HDH - PEEK - 24;
+    cancelAnimationFrame(fly); stopGlide();
     M.focus = { p, e, cols, groups, idx: new Map(cols.map((c, i) => [c.id, i])), lo, hi, k: H.clamp(room / (hi - lo), .4, 16) };
-    M.mode = 'people'; M.peek = true;
+    M.peek = true;
     paint(); scrollV(0, 0); draw();
     if (!reduceMotion()) body.animate([{ opacity: .3, transform: 'scale(.98)' }, { opacity: 1, transform: 'none' }], { duration: 220, easing: 'ease-out' });
   }
   function exitFocus() {
     const h = M.home;
     M.focus = null; M.home = null;
-    if (h) { z = h.z; M.all = h.all; L = layout(); }
+    if (h) { z = h.z; M.all = h.all; }
     paint();
     if (h) { size(); scrollV(h.x, h.y); draw(); }
   }
@@ -301,88 +304,121 @@ export function mobile(H, card, search) {
     M.sel = sel;
     if (!sel) { M.full = false; showCard(); setHash(null); if (M.focus) exitFocus(); else redraw(); return; }
     setHash(sel);
-    // 没有相关的人可排的（没有关系的人、没有登记参与者的事件），不进聚焦，就在长图上滚到他那里
+    // 没有相关的人可排的（没有关系的人、没有登记参与者的事件），不进聚焦，就在长图上放大、滚到他那里
     const lonely = sel.t === 'p' ? !H.relsOf(sel.id).length : !H.E[sel.id].who.length;
     if (lonely) {
       if (M.focus) exitFocus();
       M.peek = false; showCard();
       const x = sel.t === 'p' ? H.P[sel.id] : H.E[sel.id];
-      if (M.mode !== 'people') { M.mode = 'people'; paint(); }
-      if (sel.t === 'p' && !M.all && x.imp < MAIN && LN[x.lane].ps.length > FEW) { M.all = true; L = layout(); segBar(); size(); }
-      const g = geom(), px = sel.t === 'p' ? g.x(x) : g.xe(x);
+      if (sel.t === 'p' && !M.all && x.imp < MAIN && LN[x.lane].ps.length > FEW) { M.all = true; segBar(); }
+      cancelAnimationFrame(fly); stopGlide();
+      z = Math.max(z, 1);
+      const g = size(), px = sel.t === 'p' ? g.x(x) : g.xe(x);
       scrollV(px - vwV() / 2, g.y(sel.t === 'p' ? x.b0 : x.s) - REF); draw();
       return;
     }
     focusOn(sel); showCard();
   }
 
-  // 两指缩放（电脑上按住 Ctrl 滚动滚轮）：手指中间的那一点不动
+  /* ---------- 手势 ---------- */
+  // 缩放时手指中间（或屏幕中间）的那一点不动
   function zoomBy(f, mx, my) {
     mx /= Z; my /= Z;
-    const g0 = geom(), yr = g0.yr(stV() + my), u = (slV() + mx - AXW) / g0.cw;
-    if (M.focus) M.focus.k = H.clamp(M.focus.k * f, .3, 40); else z = H.clamp(z * f, .08, 4);
+    const g0 = geom(), yr = g0.yr(stV() + my), a = anchorAt(g0, slV() + mx);
+    if (M.focus) M.focus.k = H.clamp(M.focus.k * f, .3, 40); else z = H.clamp(z * f, zMin(), ZMAX);
     const g = size();
-    scrollV(u * g.cw + AXW - mx, g.y(yr) - my);
+    scrollV(anchorX(g, a) - mx, g.y(yr) - my);
     draw();
   }
-  let pinch = null;
-  const dist = (a, b) => Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
-  body.addEventListener('touchstart', e => { pinch = M.mode === 'people' && e.touches.length === 2 ? { d: dist(e.touches[0], e.touches[1]) } : null; }, { passive: true });
+  // 一根手指拖动，两根手指缩放（同时跟着手指中点平移），松手后按手指的速度惯性滑一段。
+  // 拖动过的那一下不算“点”，免得一松手就选中了手指下的人
+  let tp = null, glide = 0, eat = false;
+  const stopGlide = () => { cancelAnimationFrame(glide); glide = 0; };
+  const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+  const pts = e => [...e.touches].map(c => ({ x: c.clientX, y: c.clientY }));
+  function startTouch(e) {
+    const p = pts(e), moved = tp ? tp.moved : false;
+    tp = p.length >= 2 ? { two: true, d: dist(p[0], p[1]) || 1, mx: (p[0].x + p[1].x) / 2, my: (p[0].y + p[1].y) / 2, moved: true }
+      : { two: false, x: p[0].x, y: p[0].y, moved, v: [] };
+  }
+  body.addEventListener('touchstart', e => {
+    stopGlide(); cancelAnimationFrame(fly);
+    if (e.touches.length === 1) tp = null;
+    startTouch(e);
+  }, { passive: true });
   body.addEventListener('touchmove', e => {
-    if (!pinch || e.touches.length !== 2) return;
+    if (!tp) return;
     e.preventDefault();
-    const [a, b] = e.touches, d = dist(a, b), r = body.getBoundingClientRect();
-    zoomBy(d / pinch.d, (a.clientX + b.clientX) / 2 - r.left, (a.clientY + b.clientY) / 2 - r.top); pinch.d = d;
+    const p = pts(e);
+    if (p.length >= 2 && tp.two) {
+      const d = dist(p[0], p[1]) || 1, mx = (p[0].x + p[1].x) / 2, my = (p[0].y + p[1].y) / 2, r = body.getBoundingClientRect();
+      body.scrollLeft -= mx - tp.mx; body.scrollTop -= my - tp.my;
+      zoomBy(d / tp.d, mx - r.left, my - r.top);
+      Object.assign(tp, { d, mx, my });
+    } else if (p.length === 1 && !tp.two) {
+      const dx = p[0].x - tp.x, dy = p[0].y - tp.y;
+      if (!tp.moved && Math.abs(dx) + Math.abs(dy) < 8) return;   // 还算是点一下
+      tp.moved = true;
+      body.scrollLeft -= dx; body.scrollTop -= dy;
+      tp.x = p[0].x; tp.y = p[0].y;
+      const now = performance.now();
+      tp.v.push([now, dx, dy]);
+      while (tp.v.length && now - tp.v[0][0] > 100) tp.v.shift();
+    }
   }, { passive: false });
+  function endTouch(e) {
+    if (!tp) return;
+    if (tp.moved) eat = true;
+    if (e.touches.length) { startTouch(e); return; }   // 两指缩放松开一指：接着用剩下那根手指拖
+    const v = tp.two ? [] : tp.v.filter(s => performance.now() - s[0] < 100);
+    tp = null;
+    if (v.length < 2 || reduceMotion()) return;
+    const span = Math.max(16, performance.now() - v[0][0]);
+    let vx = v.reduce((s, a) => s + a[1], 0) / span, vy = v.reduce((s, a) => s + a[2], 0) / span, last = performance.now();
+    const step = now => {
+      const dt = Math.min(40, now - last); last = now;
+      body.scrollLeft -= vx * dt; body.scrollTop -= vy * dt;
+      const f = Math.pow(.94, dt / 16); vx *= f; vy *= f;
+      glide = Math.hypot(vx, vy) > .02 ? requestAnimationFrame(step) : 0;
+    };
+    glide = requestAnimationFrame(step);
+  }
+  body.addEventListener('touchend', endTouch);
+  body.addEventListener('touchcancel', endTouch);
+  // 电脑上（窗口很窄时也是手机版）：按住鼠标拖动；按住 Ctrl 滚动滚轮缩放
+  let md = null;
+  body.addEventListener('pointerdown', e => {
+    eat = false;
+    if (e.pointerType === 'mouse' && !e.button) { stopGlide(); md = { x: e.clientX, y: e.clientY, moved: false }; }
+  });
+  addEventListener('pointermove', e => {
+    if (!md) return;
+    const dx = e.clientX - md.x, dy = e.clientY - md.y;
+    if (!md.moved && Math.abs(dx) + Math.abs(dy) < 5) return;
+    md.moved = true; body.classList.add('drag');
+    body.scrollLeft -= dx; body.scrollTop -= dy; md.x = e.clientX; md.y = e.clientY;
+  });
+  addEventListener('pointerup', () => { if (md && md.moved) eat = true; md = null; body.classList.remove('drag'); });
+  body.addEventListener('click', e => { if (eat) { eat = false; e.stopPropagation(); e.preventDefault(); } }, true);
   body.addEventListener('wheel', e => {
-    if (!e.ctrlKey || M.mode !== 'people') return;
+    if (!e.ctrlKey) return;
     e.preventDefault();
     const r = body.getBoundingClientRect(); zoomBy(Math.exp(-e.deltaY * .01), e.clientX - r.left, e.clientY - r.top);
   }, { passive: false });
 
-  // 时代总览：左右滑动换到相邻的文明（顺序同顶上的标签），停在同一年
-  let sw = null;
-  body.addEventListener('touchstart', e => { sw = M.mode === 'bands' && e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null; }, { passive: true });
-  body.addEventListener('touchcancel', () => { sw = null; pinch = null; });
-  body.addEventListener('touchend', e => {
-    if (e.touches.length < 2) pinch = null;
-    if (!sw || e.touches.length) return;
-    const tc = e.changedTouches[0], dx = tc.clientX - sw.x, dy = tc.clientY - sw.y; sw = null;
-    if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
-    const i = H.lanes.findIndex(l => l.id === M.lane), dir = dx < 0 ? 1 : -1, nx = H.lanes[i + dir];
-    if (nx) switchBands(nx.id, dir);
-  }, { passive: true });
-  function switchBands(id, dir) {
-    const v = bandYear();
-    M.lane = id; paint(); if (v != null) bandsTo(v);
-    if (dir && !reduceMotion()) body.animate([{ transform: `translateX(${dir * 40}px)` }, { transform: 'none' }], { duration: 200, easing: 'ease-out' });
-  }
-
-  // 换字号：仍停在同一年、同一处
-  addEventListener('fzchange', () => {
-    if (M.mode !== 'people') { const v = bandYear(); Z = fz(); paint(); if (v != null) bandsTo(v); return; }
-    const x = slV(), y = stV(); Z = fz(); size(); scrollV(x, y); draw(); showCard();
-  });
-  addEventListener('resize', () => { if (M.mode === 'people') { size(); draw(); } });
+  // 换字号：仍停在同一处
+  addEventListener('fzchange', () => { const x = slV(), y = stV(); Z = fz(); size(); scrollV(x, y); draw(); showCard(); });
+  addEventListener('resize', () => { size(); draw(); });
 
   body.addEventListener('scroll', redraw);
   $('#m').addEventListener('click', e => {
     const el = e.target, to = cardTarget(e);
-    const m = el.closest('[data-m]'), lane = el.closest('[data-lane]'), p = el.closest('#mpeople [data-p]'), ev = el.closest('#mpeople [data-e]');
-    if (m) {
-      const v = yearAt(), mode = m.dataset.m, ln = M.lane;   // 先记下文明：长图画第一帧时会按滚动位置改写 M.lane
-      if (M.focus) { M.focus = null; M.home = null; }
-      M.sel = null; M.full = false; HIST.length = 0; showCard(); setHash(null);
-      M.mode = mode; paint();
-      if (mode === 'people') goTo(ln,m.dataset.y != null ? +m.dataset.y : v != null ? v : H.FOCUS[0]); else if (v != null) bandsTo(v);
-    }
-    else if (lane) { if (M.mode === 'bands') switchBands(lane.dataset.lane); else { M.lane = lane.dataset.lane; markTab(); goTo(lane.dataset.lane, yearAt(), true); } }
+    const lane = el.closest('[data-lane]'), p = el.closest('#mpeople [data-p]'), ev = el.closest('#mpeople [data-e]'), bd = el.closest('#mpeople [data-b]');
+    if (lane) flyTo(lane.dataset.lane, yearAt(), z);
     else if (el.closest('[data-z]')) zoomBy(el.closest('[data-z]').dataset.z > 0 ? 1.5 : 1 / 1.5, body.clientWidth / 2, body.clientHeight / 2);
+    else if (el.closest('[data-whole]')) flyTo(M.lane, (Y0 + Y1) / 2, zMin(), HDH + (vhV() - HDH) / 2);
     else if (el.closest('[data-map]')) select(null);
-    else if (el.closest('[data-all]')) {
-      const x = laneAt(), v = yearAt();
-      M.all = !M.all; L = layout(); segBar(); size(); goTo(x, v);
-    }
+    else if (el.closest('[data-all]')) { const x = laneAt(), v = yearAt(); M.all = !M.all; segBar(); place(x, v); }
     else if (to) { HIST.push(M.sel); select(to, true); }
     else if (el.closest('.d-back')) select(HIST.pop(), true);
     else if (el.closest('.d-full')) { M.full = !M.full; showCard(); }
@@ -397,15 +433,20 @@ export function mobile(H, card, search) {
     }
     else if (ev) select({ t: 'e', id: ev.dataset.e });
     else if (M.sel && !M.focus && el.closest('#mbody')) select(null);
+    else if (bd && bandA() >= .5) {
+      // 缩小时点色块：放大到这个朝代、时代，让它差不多占满一屏
+      const [id, i] = bd.dataset.b.split(':'), b = H.lane(id).bands[+i];
+      flyTo(id, (b[1] + b[2]) / 2, H.clamp((vhV() - HDH - 60) / (b[2] - b[1]) / BASEK, z * 2, 1.2), HDH + (vhV() - HDH) / 2);
+    }
   });
 
+  // 一开始：中国泳道的秦汉之际，缩小到能看见朝代色块的程度。
+  // 地址里的 #people、#rome（某个文明）直接放大到人名看得见；#person/han-xin（某个人）进入他的关系聚焦
+  const start = M.lane;   // 先记下：画第一帧时会按滚动位置改写 M.lane
   paint();
-  // 地址里的 #people、#rome（某个文明的人物）、#person/han-xin（某个人）
+  place(start, (H.FOCUS[0] + H.FOCUS[1]) / 2, HDH + (vhV() - HDH) / 2);
   const { sel, view } = readHash(H);
   addEventListener('hashchange', () => { const r = readHash(H); if (r.sel) select(r.sel); });
   if (sel) select(sel);
-  else if (view === 'people' || LN[view]) {
-    const ln = LN[view] ? view : M.lane;
-    M.mode = 'people'; paint(); goTo(ln, H.FOCUS[0]);
-  }
+  else if (view === 'people' || LN[view]) { z = 1; place(LN[view] ? view : start, H.FOCUS[0]); }
 }

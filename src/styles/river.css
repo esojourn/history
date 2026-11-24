@@ -44,23 +44,15 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 #mtabs { display: flex; gap: 6px; overflow-x: auto; padding: 8px 12px; border-bottom: 1px solid var(--line); scrollbar-width: none; }
 #mtabs button { flex: none; border: 1px solid var(--line); background: var(--card); border-radius: 14px; padding: 3px 12px; font-size: calc(13px * var(--fz)); }
 #mtabs button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-#mbody { flex: 1; overflow: auto; position: relative; overscroll-behavior: contain; }   /* 在尽头滑动用来翻段、换文明，不触发浏览器的下拉刷新和左右返回 */
-.mband { display: grid; grid-template-columns: 62px 1fr; gap: 0 10px; padding: 0 12px; }
-.mband .yr { font-size: calc(11px * var(--fz)); color: var(--ink-2); text-align: right; padding-top: 3px; border-top: 1px solid var(--line); }
-.mband .blk { border-left: 4px solid var(--c); background: color-mix(in srgb, var(--c) 20%, var(--paper)); padding: 5px 10px; margin-bottom: 2px; display: flex; flex-direction: column; justify-content: flex-start; }
-.mband:nth-child(even) .blk { background: color-mix(in srgb, var(--c) 32%, var(--paper)); }
-.mband .blk b { font: calc(17px * var(--fz))/1.3 var(--kai); font-weight: 400; }
-.mband .blk small { color: var(--ink-2); font-size: calc(11px * var(--fz)); }
-.mband.t .blk { border-left-style: dashed; background: color-mix(in srgb, var(--c) 11%, var(--paper)); }
-.mband.l .blk { border-left-style: dotted; background: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in srgb, var(--c) 22%, transparent) 6px 7px); }
-.mband button.go { align-self: flex-start; margin-top: 4px; border: 1px solid var(--c); background: var(--card); border-radius: 4px; font-size: calc(12px * var(--fz)); padding: 1px 8px; }
-/* 人物长图：svg 钉在可视区域里，外面的 .mmap 只用来撑出滚动范围；滚动时按可视范围重画 */
-#mbody.map { touch-action: pan-x pan-y; -webkit-user-select: none; user-select: none; }   /* 两指缩放由页面自己处理，不放大整个网页 */
+#mbody { flex: 1; overflow: auto; position: relative; overscroll-behavior: contain; touch-action: none; -webkit-user-select: none; user-select: none; }   /* 拖动、两指缩放都由页面自己处理（mobile.js），浏览器不滚动、不缩放整个网页 */
+#mbody.drag { cursor: grabbing; }
 .mmap { position: relative; }
 #mpeople { position: sticky; top: 0; left: 0; display: block; }
 #mpeople text { font-family: var(--hei); fill: var(--ink); }
 #mpeople .hd { font-size: 12.5px; fill: #fff; font-weight: 600; }
 #mpeople .hb { font-size: 11px; fill: #fff; opacity: .85; }
+#mpeople .bn { font: 12px var(--kai); writing-mode: vertical-rl; text-anchor: start; fill: var(--ink); pointer-events: none; }
+#mpeople.coarse .bd { cursor: zoom-in; }
 #mpeople .rl { font-size: 10.5px; paint-order: stroke; stroke: var(--paper); stroke-width: 3.5px; stroke-linejoin: round; }
 #mpeople .vn { font-size: 13px; writing-mode: vertical-rl; }
 #mpeople .ax { font-size: 10.5px; fill: var(--ink-2); }
@@ -72,7 +64,7 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 .mgrip::before { content: ""; display: block; width: 36px; height: 4px; border-radius: 2px; background: var(--line); }
 .sheet.full .mgrip { display: none; }
 
-/* 手机：人物层顶上的小栏。长图：回到时代总览、现在看的文明和年份、缩放、只看主要；聚焦：回到全图、聚焦的是谁、缩放 */
+/* 手机：图上方的小栏。长图：现在看的文明和年份、全貌、缩放、只看主要；聚焦：回到全图、聚焦的是谁、缩放 */
 .mseg { position: relative; z-index: 2; box-sizing: border-box; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 8px; background: var(--paper); border-bottom: 1px solid var(--line); font-size: calc(11px * var(--fz)); color: var(--ink-2); }
 .mseg span { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; line-height: 1.25; white-space: nowrap; }
 .mseg span > * { max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
