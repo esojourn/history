@@ -218,8 +218,8 @@ export function mobile(H, card, search) {
     const o = [];
 
     // 文明（聚焦时是“本人 / 各文明 / 同一文明”几组）的底色和分界线
-    const lanes = (F ? F.groups.map(gr => ({ id: gr.lane, name: gr.name, x0: AXW + gr.a * FCW - sl, x1: AXW + gr.b * FCW - sl }))
-      : H.lanes.map(l => ({ id: l.id, name: l.name, x0: g.X0[l.id] - g.G / 2 - sl, x1: g.X0[l.id] + g.WW[l.id] + g.G / 2 - sl })))
+    const lanes = (F ? F.groups.map(gr => ({ id: gr.lane, name: gr.name, s: H.lane(gr.lane).s, x0: AXW + gr.a * FCW - sl, x1: AXW + gr.b * FCW - sl }))
+      : H.lanes.map(l => ({ id: l.id, name: l.name, s: l.s, x0: g.X0[l.id] - g.G / 2 - sl, x1: g.X0[l.id] + g.WW[l.id] + g.G / 2 - sl })))
       .filter(l => l.x1 > xL && l.x0 < xR);
     lanes.forEach((l, i) => {
       const c = H.lane(l.id).c;
@@ -318,9 +318,10 @@ export function mobile(H, card, search) {
     lanes.forEach(l => {
       const a = Math.max(l.x0 + 1, AXW + 1), w = Math.min(l.x1 - 1, vw) - a, band = F ? null : H.bandAt(H.lane(l.id), mid);
       hd.push(`<rect x="${Math.max(l.x0 + 1, xL)}" y="3" width="${Math.max(0, Math.min(l.x1 - 1, xR) - Math.max(l.x0 + 1, xL))}" height="${HDH - 6}" rx="4" fill="${H.lane(l.id).c}"/>`);
-      // 窄的只写名称的头两个字，再窄就不写
-      const nm = w - 8 >= l.name.length * 12.5 ? l.name : w < 60 ? l.name.slice(0, 2) : fit(l.name, w - 8);
-      if (w > 26) hd.push(`<text class="hd" x="${w < 40 ? a + w / 2 : a + 5}"${w < 40 ? ' text-anchor="middle"' : ''} y="${band && w >= 40 ? 16 : 23}">${nm}</text>${band && w >= 40 ? `<text class="hb" x="${a + 5}" y="${HDH - 8}">${fit(band[0], w - 8, 11)}</text>` : ''}`);
+      // 窄的写两个字的简称（“欧洲”“草原”）；窄到横着放不下两个字（全貌时就是这样），就竖着写，字不缩小
+      const nm = w - 8 >= l.name.length * 12.5 ? l.name : w < 60 ? l.s : fit(l.name, w - 8);
+      if (w >= 30) hd.push(`<text class="hd" x="${w < 40 ? a + w / 2 : a + 5}"${w < 40 ? ' text-anchor="middle"' : ''} y="${band && w >= 40 ? 16 : 23}">${nm}</text>${band && w >= 40 ? `<text class="hb" x="${a + 5}" y="${HDH - 8}">${fit(band[0], w - 8, 11)}</text>` : ''}`);
+      else if (w >= 14) hd.push(`<text class="hd" text-anchor="middle">${[...l.s].map((ch, i, all) => `<tspan x="${a + w / 2}" y="${all.length > 1 ? 16 + i * 13 : 23}">${ch}</tspan>`).join('')}</text>`);
     });
     head.innerHTML = hd.join('');
     if (!F) syncLane();
@@ -562,11 +563,12 @@ export function mobile(H, card, search) {
     }
   });
 
-  // 一开始：中国泳道的秦汉之际，缩小到能看见朝代色块的程度。
+  // 一开始就是“全貌”：缩到最小，几千年一屏，和点“全貌”按钮看到的一样。
   // 地址里的 #people、#rome（某个文明）直接放大到人名看得见；#person/han-xin（某个人）进入他的关系聚焦
   const start = M.lane;   // 先记下：画第一帧时会按滚动位置改写 M.lane
   paint();
-  place(start, (H.FOCUS[0] + H.FOCUS[1]) / 2, HDH + (vhV() - HDH) / 2);
+  z = zMin();
+  place(start, (Y0 + Y1) / 2, HDH + (vhV() - HDH) / 2);
   const { sel, view } = readHash(H);
   addEventListener('hashchange', () => { const r = readHash(H); if (r.sel) select(r.sel); });
   if (sel) select(sel);

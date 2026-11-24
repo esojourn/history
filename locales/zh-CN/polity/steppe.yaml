@@ -1,4 +1,5 @@
 name: 北方草原
+short: 草原   # 手机上文明窄时用的两字简称
 periods:
   steppe-tribes:
     name: 草原诸部

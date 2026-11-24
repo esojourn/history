@@ -29,6 +29,7 @@ for (const [id, l] of Object.entries(raw.polity)) {
   const w = `polity/${id}`, t = tx.polity[id] || {};
   if (l.id !== id) err(w, 'id 与文件名不一致');
   if (!t.name) err(w, '缺中文名称');
+  if (t.short != null && [...String(t.short)].length > 2) err(w, '简称 short 最多两个字');
   (l.periods || []).forEach((p, i) => {
     if (!isInt(p.start) || !isInt(p.end) || p.start >= p.end) err(w, `时期 ${p.id} 的起止年有误`);
     if (i && p.start < l.periods[i - 1].end) err(w, `时期 ${p.id} 与前一个时期重叠`);

@@ -88,7 +88,8 @@ function compose(code) {
 
   const lanes = Object.values(raw.polity).sort((a, b) => a.order - b.order).map(l => {
     const t = text('polity', l.id), pt = t.periods || {};
-    return { id: l.id, name: t.name || l.id, c: l.color,
+    // s：两个字的简称，手机上文明窄时用（没写就取名称的头两个字）
+    return { id: l.id, name: t.name || l.id, s: [...(t.short || t.name || l.id)].slice(0, 2).join(''), c: l.color,
       // [名称, 起, 止, 确定度(t 传统 / l 传说), id, 补充说明]
       bands: l.periods.map(p => [(pt[p.id] || {}).name || p.id, p.start, p.end, p.certainty === 'legendary' ? 'l' : p.certainty === 'traditional' ? 't' : '', p.id, (pt[p.id] || {}).note || '']) };
   });
