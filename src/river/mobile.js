@@ -91,7 +91,7 @@ export function mobile(H, card, search) {
   // 里用到第几列。人少的时段文明变窄，右边的文明跟着左移；拖到人多的时段再变宽。
   // snap：直接到位；否则每次走剩下的四成，返回 true 表示还没走完。
   // 两指缩放的过程中（zooming）不做逐帧过渡：过渡要每帧整张重画，手机上会一卡一卡的。
-  // 这时只在放不下时直接加宽，不收窄；手指离开以后再过渡到该有的宽度
+  // 这时只在放不下时直接加宽，不收窄；手指离开以后一步收到该有的宽度（见 settle）
   function fitW(snap) {
     const g = geom(), OY = Math.round(vhV() * OYF), yA = g.yr(stV() - OY) - 2, yB = g.yr(stV() + vhV() + OY) + 2;
     let moving = false;
