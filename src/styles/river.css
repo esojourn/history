@@ -44,18 +44,21 @@ body.river { display: flex; flex-direction: column; overflow: hidden; }
 #mtabs { display: flex; gap: 6px; overflow-x: auto; padding: 8px 12px; border-bottom: 1px solid var(--line); scrollbar-width: none; }
 #mtabs button { flex: none; border: 1px solid var(--line); background: var(--card); border-radius: 14px; padding: 3px 12px; font-size: calc(13px * var(--fz)); }
 #mtabs button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-#mbody { flex: 1; overflow: auto; position: relative; overscroll-behavior: contain; touch-action: none; -webkit-user-select: none; user-select: none; }   /* 拖动、两指缩放都由页面自己处理（mobile.js），浏览器不滚动、不缩放整个网页 */
+#mbody { flex: 1; overflow: hidden; position: relative; overscroll-behavior: contain; touch-action: none; -webkit-user-select: none; user-select: none; }   /* 拖动、两指缩放都由页面自己处理（mobile.js），浏览器不滚动、不缩放整个网页 */
 #mbody.drag { cursor: grabbing; }
-.mmap { position: relative; }
-#mpeople { position: sticky; top: 0; left: 0; display: block; }
-#mpeople text { font-family: var(--hei); fill: var(--ink); }
-#mpeople .hd { font-size: 12.5px; fill: #fff; font-weight: 600; }
-#mpeople .hb { font-size: 11px; fill: #fff; opacity: .85; }
+/* 图分三层（人物、顶上的文明名、左边的年份），手指移动时整层平移、拉伸，由显卡合成 */
+.mly { position: absolute; left: 0; top: 0; display: block; transform-origin: 0 0; will-change: transform; }
+#mhead, #maxis { z-index: 1; }
+.mcorner { position: absolute; left: 0; top: 0; z-index: 2; width: calc(46px * var(--fz)); height: calc(36px * var(--fz)); background: var(--paper); border-bottom: 1px solid var(--line); box-sizing: border-box; }
+.mdefs { position: absolute; width: 0; height: 0; }
+.mly text { font-family: var(--hei); fill: var(--ink); }
+#mhead .hd { font-size: 12.5px; fill: #fff; font-weight: 600; }
+#mhead .hb { font-size: 11px; fill: #fff; opacity: .85; }
 #mpeople .bn { font: 12px var(--kai); writing-mode: vertical-rl; text-anchor: start; fill: var(--ink); pointer-events: none; }
 #mpeople.coarse .bd { cursor: zoom-in; }
 #mpeople .rl { font-size: 10.5px; paint-order: stroke; stroke: var(--paper); stroke-width: 3.5px; stroke-linejoin: round; }
 #mpeople .vn { font-size: 13px; writing-mode: vertical-rl; }
-#mpeople .ax { font-size: 10.5px; fill: var(--ink-2); }
+.mly .ax { font-size: 10.5px; fill: var(--ink-2); }
 #mpeople .evn { font-size: 11.5px; writing-mode: vertical-rl; fill: var(--ink-2); }
 #mpeople .pp, #mpeople .ev { cursor: pointer; }
 /* 关系聚焦时人物卡先只露出一小条（名字和简介开头），不挡关系线；点一下或点顶上的小横条展开 */
