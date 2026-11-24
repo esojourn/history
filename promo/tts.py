@@ -12,7 +12,7 @@
   VOLC_TOKEN=...
   VOLC_VOICE=...   # 选定的音色，可选
 """
-import argparse, asyncio, base64, json, os, pathlib, subprocess, sys, uuid, urllib.request
+import argparse, asyncio, base64, json, os, pathlib, re, subprocess, sys, uuid, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent
 OUT = ROOT / 'out' / 'voice'
@@ -121,6 +121,8 @@ def main():
     for s in shots:
         # 行尾没有标点的，念的时候补一个逗号停顿
         text = s.get('say') or ''.join(l if i == len(s['lines']) - 1 or l[-1] in '，。？！；：、—…' else l + '，' for i, l in enumerate(s['lines']))
+        # 文稿里数字两边按排版习惯留的空格（“公元 564 年”）念的时候去掉，免得多出停顿
+        text = re.sub(r'(?<=[一-鿿\d])[ \t]+(?=[一-鿿\d])', '', text)
         name = f"{s['id']}__{voice}.mp3" if a.sample else f"{s['id']}.mp3"
         path = OUT / name
         if a.engine == 'edge':

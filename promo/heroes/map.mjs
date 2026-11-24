@@ -2,7 +2,7 @@
 // 底图数据是 Natural Earth（公共领域），先下载到 promo/out/heroes/ne/（见 README“地图”一节）。
 // 用法：node promo/heroes/map.mjs            全部重画
 //       node promo/heroes/map.mjs lanling    只画某一张
-// 出图：promo/out/heroes/maps/<id>.png（1080×1080）
+// 出图：promo/out/heroes/maps/<id>.png（默认 1080×1080；某张图写了 size 就按它的宽高）
 import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -37,15 +37,31 @@ const MAPS = {
       { name: '长安', note: '北周都城', at: [108.9, 34.3], dx: 18, dy: 34 },
     ],
   },
+  // 兰陵王成片里“北周大军围困洛阳”一句用的局部图：只有洛阳一带，不画邺城、长安。
+  // 金墉城就在洛阳城边，这个比例下和洛阳是同一个点，所以写在洛阳下面；邙山只标“在洛阳北面”的大致方位。
+  'lanling-luoyang': {
+    title: '洛阳一带',
+    showTitle: true,
+    size: [1080, 1100],
+    box: [111.99, 34.2, 113.25, 35.25],
+    rivers: { 黄河: [112.12, 34.99] },
+    places: [
+      { name: '洛阳', note: '金墉城', at: [112.62, 34.72], dx: 26, dy: 20 },
+    ],
+    hills: [
+      { name: '邙山', at: [112.53, 34.775] },
+    ],
+  },
 };
 
 const load = (f) => JSON.parse(fs.readFileSync(path.join(NE, f + '.geojson'), 'utf8')).features;
 
 function draw(id, m) {
   const [w, s, e, n] = m.box;
+  const [W, H] = m.size || [SIZE, SIZE];
   const k = Math.cos(((s + n) / 2) * Math.PI / 180); // 经度按纬度收窄
-  const scale = Math.min(SIZE / ((e - w) * k), SIZE / (n - s));
-  const ox = (SIZE - (e - w) * k * scale) / 2, oy = (SIZE - (n - s) * scale) / 2;
+  const scale = Math.min(W / ((e - w) * k), H / (n - s));
+  const ox = (W - (e - w) * k * scale) / 2, oy = (H - (n - s) * scale) / 2;
   const P = ([lng, lat]) => [ox + (lng - w) * k * scale, oy + (n - lat) * scale];
   const inBox = ([lng, lat]) => lng > w - 1 && lng < e + 1 && lat > s - 1 && lat < n + 1;
   const d = (line) => line.map((c, i) => (i ? 'L' : 'M') + P(c).map((v) => v.toFixed(1)).join(' ')).join('');
@@ -76,17 +92,25 @@ function draw(id, m) {
     svg += `<text x="${x + p.dx}" y="${y + p.dy}" text-anchor="${a}" class="place">${p.name}</text>`;
     if (p.note) svg += `<text x="${x + p.dx}" y="${y + p.dy + 34}" text-anchor="${a}" class="note">${p.note}</text>`;
   }
+  // 山：不画圆点，只在大致方位写个名字，前面加一个小山形
+  for (const h of m.hills || []) {
+    const [x, y] = P(h.at);
+    svg += `<path d="M${x - 98} ${y + 6}l20 -32l13 18l10 -13l19 27z" fill="#8a7763"/><text x="${x - 26}" y="${y + 8}" class="hill">${h.name}</text>`;
+  }
+  if (m.showTitle) svg += `<text x="44" y="84" class="title">${m.title}</text>`;
   return `<!doctype html><meta charset="utf-8"><style>
     html,body{margin:0}
     svg{display:block;background:#f3ead6}
     text{font-family:"Noto Serif SC","SimSun",serif;paint-order:stroke;stroke:#f3ead6;stroke-width:8px;stroke-linejoin:round}
     .place{font-size:46px;font-weight:700;fill:#3a2a1c}
     .note{font-size:27px;fill:#6b5644}
+    .hill{font-size:44px;font-weight:700;fill:#6b5644;letter-spacing:4px}
+    .title{font-size:40px;font-weight:700;fill:#8a5a2b;letter-spacing:6px}
     .river{font-size:28px;fill:#4f7d92;font-style:italic;stroke-width:6px}
-    .cap{font-size:22px;fill:#8a7763;stroke:none}
-  </style><svg xmlns="http://www.w3.org/2000/svg" width="${SIZE}" height="${SIZE}" viewBox="0 0 ${SIZE} ${SIZE}">
+    .cap{font-size:26px;fill:#7a6753;stroke:none}
+  </style><svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
     ${svg}
-    <text x="${SIZE - 24}" y="${SIZE - 22}" text-anchor="end" class="cap">示意图 · 河流为今天的河道 · 地点为大致方位</text>
+    <text x="${W - 24}" y="${H - 22}" text-anchor="end" class="cap">示意图 · 河流为今天的河道 · 地点为大致方位</text>
   </svg>`;
 }
 
@@ -96,6 +120,8 @@ const browser = await chromium.launch({ executablePath: process.env.CHROME || 'C
 const page = await browser.newPage({ viewport: { width: SIZE, height: SIZE } });
 for (const [id, m] of Object.entries(MAPS)) {
   if (want.length && !want.includes(id)) continue;
+  const [W, H] = m.size || [SIZE, SIZE];
+  await page.setViewportSize({ width: W, height: H });
   await page.setContent(draw(id, m));
   await page.evaluate(() => document.fonts.ready);
   await page.screenshot({ path: path.join(OUT, id + '.png') });
