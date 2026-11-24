@@ -71,6 +71,8 @@ m.focusOn: 聚焦：{name}
 m.related: "{n} 位相关人物"
 m.sameLane: 同在{lane}
 m.grip: 展开或收起卡片
+m.evList: 这里有 {n} 件事
+m.evListBack: 这 {n} 件事
 
 # 搜索
 search.open: 搜索人物、事件

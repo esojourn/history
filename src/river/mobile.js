@@ -20,23 +20,25 @@ export function mobile(H, card, search) {
   const $ = s => document.querySelector(s), t = H.t;
   const body = $('#mbody'), sheet = $('#msheet'), tabs = $('#mtabs'), seg = $('#mseg');
   // 图上的尺寸都是字号放大前的；整张图按字号倍数 Z 放大（svg 的 viewBox 取屏幕尺寸 ÷ Z）
-  const AXW = 46, HDH = 36, NH = 14, BASEK = 8, GAP = .8, MINW = 24, FCW = 34, PEEK = 150, MAIN = 4, FEW = 9, ZMAX = 4;
+  const AXW = 46, HDH = 36, NH = 14, BASEK = 8, GAP = .8, MINW = 24, FCW = 34, PEEK = 150, MAIN = 4, FEW = 9, ZMAX = 4, EC = 1.4, RW = 14;
   const Y0 = H.EXTENT[0], Y1 = H.EXTENT[1];
-  const M = { lane: H.site.default_open[0] || H.lanes[0].id, all: true, sel: null, full: false, peek: false, focus: null, home: null };
-  const HIST = [], nameOf = s => (s.t === 'p' ? H.P[s.id] : H.E[s.id]).n;
+  const M = { lane: H.site.default_open[0] || H.lanes[0].id, all: true, sel: null, list: null, full: false, peek: false, focus: null, home: null };
+  // HIST：卡片上“返回”要回到的上一站。除了人物、事件，也可以是一张事件清单（{ t: 'l', evs }）
+  const HIST = [], nameOf = s => (s.t === 'l' ? t('m.evListBack', { n: s.evs.length }) : (s.t === 'p' ? H.P[s.id] : H.E[s.id]).n);
   let Z = fz(), z = .15;   // z：缩放倍数，1 是一年 8 像素、人名都写得出的大小
   let SL = 0, ST = 0;      // 滚动位置（屏幕像素，已乘字号倍数）
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const fit = (s, w, px = 12.5) => { const n = Math.floor(w / px); return n >= s.length ? s : n > 1 ? s.slice(0, n - 1) + '…' : ''; };
 
   // 每个文明里的人分列排：重要的人先占位，排在左边；列与列之间留出竖写名字的地方。
-  // 事件占文明最左边的一列（重要度 3 以上的）。“只看主要”时只排重要度 4 以上的人（人少的文明全排）。
+  // 事件占文明最左边的一列（重要度 3 以上的），比人物的一列宽一些（EC 倍），里面再分左右两道，见 draw。
+  // “只看主要”时只排重要度 4 以上的人（人少的文明全排）。
   const LN = {};
   H.lanes.forEach(l => {
     const ps = H.byWeight(H.people.filter(p => p.lane === l.id)), end = p => Math.max(p.d, p.b0 + (p.n.length * NH + 12) / BASEK);
     const main = ps.length <= FEW ? ps : ps.filter(p => p.imp >= MAIN);
     const evs = H.events.filter(e => e.lane === l.id && e.imp >= 3).sort((a, b) => a.s - b.s);
-    LN[l.id] = { ps, main, byImp: H.byWeight(evs), cA: H.pack(ps, p => p.b0, end, 2, 'mcA'), cM: H.pack(main, p => p.b0, end, 2, 'mcM'), ec: evs.length ? 1 : 0 };
+    LN[l.id] = { ps, main, evs, byImp: H.byWeight(evs), cA: H.pack(ps, p => p.b0, end, 2, 'mcA'), cM: H.pack(main, p => p.b0, end, 2, 'mcM'), ec: evs.length ? EC : 0 };
   });
   const colOf = p => (M.all ? p.mcA : p.mcM);
   // 文明宽度随眼前变化：WV 是各文明正在显示的列数（变化时逐帧过渡，可以是小数）。
@@ -61,8 +63,11 @@ export function mobile(H, card, search) {
     let x = AXW + G / 2;
     H.lanes.forEach(l => { X0[l.id] = x; WW[l.id] = Math.max(MINW, units(l.id) * cw); x += WW[l.id] + G; });
     const cwOf = id => WW[id] / units(id);
-    return { k, G, X0, WW, cwOf, y: v => HDH + (v - Y0) * k, yr: Y => Y0 + (Y - HDH) / k,
-      x: p => X0[p.lane] + (LN[p.lane].ec + colOf(p) + .5) * cwOf(p.lane), xe: e => X0[e.lane] + .5 * cwOf(e.lane),
+    // 事件那一列：宽 ew。放得下名字（names）时分两道：左边窄窄的一道（中线 rx）画没写名字的事，右边（中线 tx）是 ◆ 和竖写的名字；
+    // 太窄写不下名字时只有中间一道
+    const ev = id => { const ew = LN[id].ec * cwOf(id), names = ew >= RW + 12; return { ew, names, rx: X0[id] + (names ? RW / 2 : ew / 2), tx: X0[id] + (names ? RW + (ew - RW) / 2 : ew / 2) }; };
+    return { k, G, X0, WW, cwOf, ev, y: v => HDH + (v - Y0) * k, yr: Y => Y0 + (Y - HDH) / k,
+      x: p => X0[p.lane] + (LN[p.lane].ec + colOf(p) + .5) * cwOf(p.lane), xe: e => ev(e.lane).tx,
       W: x + vwV() * .7, Ht: HDH + (Y1 - Y0) * k + 160 };   // 右边留白，最后一个文明也能滚到屏幕左边
   }
   // 滚动不能超出图的范围
@@ -129,6 +134,7 @@ export function mobile(H, card, search) {
 
   /* ---------- 画面跟手：先平移、拉伸画好的图层，必要时才重画 ---------- */
   let R = null, vraf = 0, idle = 0;   // R：上一次重画时的状态
+  let CL = {};              // 这次画出来的带数字的圆点各是哪几件事（“文明:第几组” → 事件）
   let zooming = false;      // 两指缩放（或电脑上 Ctrl+滚轮缩放）进行中
   const OXF = .5, OYF = 1;  // 屏幕外多画的宽度：左右各半屏，上下各一屏（手在动时偏向前进的方向，见 draw）
   const AHEAD = .8, IDLE = 120;
@@ -203,7 +209,7 @@ export function mobile(H, card, search) {
     const g = clampScroll(), vw = vwV(), vh = vhV(), sl = slV(), st = stV(), F = M.focus, A = bandA(), coarse = A >= .5;
     const WL = vw + ox2, HL = vh + oy2, xL = -mL, xR = vw + mR, yT = -mT, yBt = vh + mB;
     // cap：各文明这次画到第几列。宽度只按屏幕上看得见的定，屏幕外那一圈里超出的人先不画，免得画到右边的文明里
-    const cap = F ? null : Object.fromEntries(H.lanes.map(l => [l.id, Math.ceil(units(l.id) - 1e-6)]));
+    const cap = F ? null : Object.fromEntries(H.lanes.map(l => [l.id, units(l.id)]));
     R = { g, k: g.k, sl, st, mL, mR, mT, mB, focus: F, Z, all: M.all, cap, live };
     // 三个图层的位置和大小；viewBox 从 (xL, yT) 起，图里一律用屏幕坐标
     const lay = (el, l, tp, w, h, vb) => { el.style.left = l * Z + 'px'; el.style.top = tp * Z + 'px'; el.style.transform = ''; el.setAttribute('width', w * Z); el.setAttribute('height', h * Z); el.setAttribute('viewBox', vb); };
@@ -249,28 +255,56 @@ export function mobile(H, card, search) {
       ticks.push([v, y]); o.push(`<line x1="${xL}" x2="${xR}" y1="${y}" y2="${y}" stroke="var(--line)" opacity=".6" pointer-events="none"/>`);
     }
 
-    // 事件（每个文明最左边的一列，放大到一定程度才出现）：◆ 都画；竖写的名字放得下才写，重要的先占位置。
-    // 持续多年的事件下面拖一条线
+    // 事件（每个文明最左边的一列，放大到一定程度才出现）。一段时间里事情多的时候名字写不下，原先把写不下的画成小 ◆，
+    // 结果小 ◆ 和竖线压在别的事件的名字上，叠成一团（2026-11-24 改）。现在这一列分左右两道，互不相压：
+    //   右边一道：◆ 加竖写的名字，重要的先占位置，放得下才写；持续多年的，名字左边拖一条线。
+    //   左边一道：写不下名字的事。单独一件是小 ◆；挨得近的几件合成一个带数字的圆点，点开是这几件事的清单（见 openList）。
+    // 谁写名字、谁和谁合在一起，都按整个文明来排，不看屏幕画到哪里，所以上下拖动时不会变来变去
+    CL = {};
     if (!F && z >= .3) H.lanes.forEach(l => {
-      const cw = g.cwOf(l.id), x = g.X0[l.id] + cw / 2 - sl;
-      if (!LN[l.id].ec || x < xL - 10 || x > xR + 10) return;
-      const taken = [], named = new Set(), vis = LN[l.id].byImp.filter(e => e.e >= yA - 40 && e.s <= yB);
-      if (cw >= 20) vis.forEach(e => {
+      const L = LN[l.id];
+      if (!L.ec) return;
+      const c = g.ev(l.id), x0 = g.X0[l.id] - sl, rx = c.rx - sl, tx = c.tx - sl;
+      if (x0 + c.ew < xL - 10 || x0 > xR + 10) return;
+      const mine = selE && selE.lane === l.id ? selE : null;   // 选中的事件一定写名字，重要度不够上图的也画出来
+      const named = new Set(), taken = [];
+      if (c.names) (mine ? [mine, ...L.byImp.filter(e => e !== mine)] : L.byImp).forEach(e => {
         const a = Y(e.s) - 6, b = Y(e.s) + 9 + e.n.length * 12;
-        if (e === selE || !taken.some(([c, d]) => a < d + 4 && c < b + 4)) { taken.push([a, b]); named.add(e); }
+        if (!taken.some(([p, q]) => a < q + 4 && p < b + 4)) { taken.push([a, b]); named.add(e); }
       });
-      [...vis].reverse().forEach(e => {
-        const y1 = Y(e.s), y2 = Y(Math.max(e.s, e.e)), on = !selE || e === selE, nm = named.has(e);
-        o.push(`<g class="ev" data-e="${e.id}" opacity="${on ? 1 : .25}"><rect x="${x - cw / 2}" y="${y1 - 7}" width="${cw}" height="${(nm ? e.n.length * 12 + 4 : 0) + 14}" fill="transparent"/>
-          ${y2 > y1 + 2 ? `<line x1="${x}" x2="${x}" y1="${y1}" y2="${y2}" stroke="var(--ink)" stroke-width="2.5" opacity=".4"/>` : ''}
-          ${nm ? `<path d="M${x} ${y1 - 5}l5 5l-5 5l-5-5z" fill="var(--ink)"/>` : `<path d="M${x} ${y1 - 3}l3 3l-3 3l-3-3z" fill="var(--ink-2)"/>`}${nm ? `<text class="evn" x="${x - 1}" y="${y1 + 9}"${e === selE ? ' font-weight="700"' : ''}>${e.n}</text>` : ''}</g>`);
+      // 没写名字的：从上往下，离这一组第一件不到一个圆点高的并进同一组
+      const r = Math.min(6, c.ew / 2 - 1), groups = [];
+      (mine && !L.evs.includes(mine) ? [...L.evs, mine].sort((a, b) => a.s - b.s) : L.evs).forEach(e => {
+        if (named.has(e)) return;
+        const last = groups[groups.length - 1];
+        if (last && (e.s - last[0].s) * g.k <= 2 * r + 1) last.push(e); else groups.push([e]);
+      });
+      const hx = c.names ? x0 - 6 : x0 - 3, hw = c.names ? RW + 7 : c.ew + 6, marks = [];
+      groups.forEach((gr, i) => {
+        const y = Y(gr[0].s);
+        if (Y(Math.max(...gr.map(e => e.e))) < yT - 10 || y > yBt + 10) return;
+        gr.forEach(e => { if (Y(e.e) > Y(e.s) + 2) o.push(`<line x1="${rx}" x2="${rx}" y1="${Y(e.s)}" y2="${Y(e.e)}" stroke="var(--ink)" stroke-width="2" opacity="${selE && e !== selE ? .1 : .28}" pointer-events="none"/>`); });
+        const on = !selE || gr.includes(selE), hit = `<rect x="${hx}" y="${y - 9}" width="${hw}" height="18" fill="transparent"/>`;
+        if (gr.length === 1) { const d = Math.min(3.5, r); marks.push(`<g class="ev" data-e="${gr[0].id}" opacity="${on ? 1 : .25}">${hit}<path d="M${rx} ${y - d}l${d} ${d}l${-d} ${d}l${-d} ${-d}z" fill="var(--ink-2)"/></g>`); return; }
+        const key = l.id + ':' + i, open = M.list && M.list[0] === gr[0];
+        CL[key] = gr;
+        marks.push(`<g class="ev" data-c="${key}" opacity="${on ? 1 : .25}">${hit}<circle cx="${rx}" cy="${y}" r="${r}" fill="var(--${open ? 'ink' : 'ink-2'})"${open ? ' stroke="var(--ink)" stroke-opacity=".3" stroke-width="4"' : ''}/>${r >= 4.5 ? `<text class="evc" x="${rx}" y="${y + 3}">${gr.length > 9 ? '9+' : gr.length}</text>` : ''}</g>`);
+      });
+      o.push(...marks);
+      const lx = Math.max(x0 + RW + 1.5, tx - 9.5);
+      named.forEach(e => {
+        const y1 = Y(e.s), y2 = Y(Math.max(e.s, e.e)), h = e.n.length * 12 + 4;
+        if (Math.max(y2, y1 + h + 7) < yT || y1 - 7 > yBt) return;
+        o.push(`<g class="ev" data-e="${e.id}" opacity="${!selE || e === selE ? 1 : .25}"><rect x="${x0 + RW}" y="${y1 - 7}" width="${c.ew - RW}" height="${h + 14}" fill="transparent"/>
+          ${y2 > y1 + 2 ? `<line x1="${lx}" x2="${lx}" y1="${y1}" y2="${y2}" stroke="var(--ink)" stroke-width="2.5" opacity=".4"/>` : ''}
+          <path d="M${tx} ${y1 - 5}l5 5l-5 5l-5-5z" fill="var(--ink)"/><text class="evn" x="${tx - 1}" y="${y1 + 9}"${e === selE ? ' font-weight="700"' : ''}>${e.n}</text></g>`);
       });
     });
 
     // 人物竖条：条的长度是寿命，右边的细条是在位时间，一头渐隐表示生年或卒年不详。
     // 缩得很小时只画成小色块（不能点，点下去是放大到那一段）
     (F ? F.cols : M.all ? H.people : H.lanes.flatMap(l => LN[l.id].main)).forEach(p => {
-      if (p.d < yA || p.b0 > yB || (cap && LN[p.lane].ec + colOf(p) >= cap[p.lane])) return;
+      if (p.d < yA || p.b0 > yB || (cap && LN[p.lane].ec + colOf(p) + 1 > cap[p.lane] + 1e-6)) return;
       const x = X(p);
       if (x < xL - 20 || x > xR + 20) return;
       const c = H.FAC[p.fac].c, fade = fadeOf(p, 'v'), cw = g.cwOf(p.lane), w = Math.max(1, Math.min(24, cw * .8)), me = selP === p;
@@ -407,17 +441,36 @@ export function mobile(H, card, search) {
 
   /* ---------- 人物卡 ---------- */
   function showCard() {
-    sheet.classList.toggle('on', !!M.sel);
+    sheet.classList.toggle('on', !!(M.sel || M.list));
     sheet.classList.toggle('full', !!M.sel && M.full);
     sheet.classList.toggle('peek', !!M.sel && !M.full && M.peek);
+    if (!M.sel && M.list) { sheet.innerHTML = listHtml(M.list); sheet.scrollTop = 0; }
     if (!M.sel) return;
     sheet.innerHTML = `<button class="mgrip" aria-label="${t('m.grip')}"></button>` + card(M.sel, { full: M.full, back: HIST.length ? nameOf(HIST[HIST.length - 1]) : '' });
     sheet.scrollTop = 0;
   }
 
+  // 事件清单：点带数字的圆点（挨在一起、写不下名字的几件事）时，在底部抽屉里列出来，点哪一件就看哪一件
+  function listHtml(evs) {
+    const l = H.lane(evs[0].lane), a = Math.min(...evs.map(e => e.s)), b = Math.max(...evs.map(e => e.s));
+    return `<div class="d-wrap"><div class="d-bar"><span class="sp"></span><button class="close" aria-label="${t('card.close')}">×</button></div>
+      <div class="d-head"><h2 class="m-evh">${t('m.evList', { n: evs.length })}</h2></div>
+      <p class="d-lane"><i style="background:${l.c}"></i>${l.name}　${evs.some(e => e.ns) ? t('life.order') : a === b ? H.fmt(a) : H.fmt(a) + '—' + H.fmt(b)}</p>
+      <ul class="m-evl">${evs.map(e => `<li><a href="${H.url('event', e.id)}" data-goe="${e.id}"><b>${H.when(e)}</b><span>${esc(e.n)}</span><small>${esc(e.sum)}</small></a></li>`).join('')}</ul></div>`;
+  }
+  function openList(evs) {
+    HIST.length = 0;
+    M.sel = null; M.full = false; M.list = evs; setHash(null);
+    if (M.focus) exitFocus();
+    // 圆点要是在抽屉会盖住的地方，把它挪到抽屉上面
+    const g = geom(), y = g.y(evs[0].s) - stV();
+    if (y > vhV() * .5 || y < HDH + 20) scrollV(null, g.y(evs[0].s) - Math.max(REF, vhV() * .3));
+    draw(); showCard();
+  }
+
   function select(sel, keep) {
     if (!keep) HIST.length = 0;
-    M.sel = sel;
+    M.sel = sel; M.list = null;
     if (!sel) { M.full = false; showCard(); setHash(null); if (M.focus) exitFocus(); else draw(); return; }
     setHash(sel);
     // 没有相关的人可排的（没有关系的人、没有登记参与者的事件），不进聚焦，就在长图上放大、滚到他那里
@@ -536,14 +589,14 @@ export function mobile(H, card, search) {
 
   $('#m').addEventListener('click', e => {
     const el = e.target, to = cardTarget(e);
-    const lane = el.closest('[data-lane]'), p = el.closest('#mpeople [data-p]'), ev = el.closest('#mpeople [data-e]'), bd = el.closest('#mpeople [data-b]');
+    const lane = el.closest('[data-lane]'), p = el.closest('#mpeople [data-p]'), ev = el.closest('#mpeople [data-e]'), cl = el.closest('#mpeople [data-c]'), bd = el.closest('#mpeople [data-b]');
     if (lane) flyTo(lane.dataset.lane, yearAt(), z);
     else if (el.closest('[data-z]')) { zoomBy(el.closest('[data-z]').dataset.z > 0 ? 1.5 : 1 / 1.5, body.clientWidth / 2, body.clientHeight / 2); draw(); }
     else if (el.closest('[data-whole]')) flyTo(M.lane, (Y0 + Y1) / 2, zMin(), HDH + (vhV() - HDH) / 2);
     else if (el.closest('[data-map]')) select(null);
     else if (el.closest('[data-all]')) { const x = laneAt(), v = yearAt(); M.all = !M.all; segBar(); place(x, v); }
-    else if (to) { HIST.push(M.sel); select(to, true); }
-    else if (el.closest('.d-back')) select(HIST.pop(), true);
+    else if (to) { HIST.push(M.sel || { t: 'l', evs: M.list }); select(to, true); }
+    else if (el.closest('.d-back')) { const b = HIST.pop(); if (b.t === 'l') openList(b.evs); else select(b, true); }
     else if (el.closest('.d-full')) { M.full = !M.full; showCard(); }
     else if (el.closest('.mgrip') || (sheet.classList.contains('peek') && el.closest('#msheet') && !el.closest('button, a'))) { M.peek = !M.peek; showCard(); }
     else if (el.closest('#mfind')) search.open(sel => select(sel));
@@ -555,7 +608,8 @@ export function mobile(H, card, search) {
       else select({ t: 'p', id: p.dataset.p });
     }
     else if (ev) select({ t: 'e', id: ev.dataset.e });
-    else if (M.sel && !M.focus && el.closest('#mbody')) select(null);
+    else if (cl && CL[cl.dataset.c]) openList(CL[cl.dataset.c]);
+    else if ((M.sel || M.list) && !M.focus && el.closest('#mbody')) select(null);
     else if (bd && bandA() >= .5) {
       // 缩小时点色块：放大到这个朝代、时代，让它差不多占满一屏
       const [id, i] = bd.dataset.b.split(':'), b = H.lane(id).bands[+i];
