@@ -39,6 +39,8 @@ node promo/mobile-demo.mjs --still   # 只截每段结尾的图到 promo/out/mde
 node promo/mobile-demo.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 2. 录制并合成 → promo/out/mdemo/mobile-demo.mp4
 ```
 
+- 最后一段整屏换成结尾卡，默认用竖屏宣传片的结尾帧 `promo/out/endframe-vqr.png`（带二维码，要先出过竖屏宣传片）；`--end <图片>` 换别的图，`--end none` 不要结尾卡。
+
 ## 配音
 
 火山引擎·豆包语音合成（新版控制台 API Key，V3 接口）。密钥和音色写在 `promo/.env`（不进仓库）：

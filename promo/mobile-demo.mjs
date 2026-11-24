@@ -18,6 +18,9 @@ const OUT = path.join(ROOT, 'out', 'mdemo');
 const CHROME = process.env.CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const argv = process.argv.slice(2), STILL = argv.includes('--still');
 const MUSIC = argv.includes('--music') ? argv[argv.indexOf('--music') + 1] : null;
+// 结尾卡：最后一段（m8-end）整屏换成这张图（1080×1920）。默认用竖屏宣传片的结尾帧（带二维码），--end none 不用
+const ENDARG = argv.includes('--end') ? argv[argv.indexOf('--end') + 1] : path.join(path.dirname(fileURLToPath(import.meta.url)), 'out', 'endframe-vqr.png');
+const END = ENDARG !== 'none' && fs.existsSync(ENDARG) ? path.resolve(ENDARG) : null;
 const VW = 390, VH = 844, DSF = 2;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 fs.mkdirSync(OUT, { recursive: true });
@@ -261,6 +264,7 @@ const ass = [`[Script Info]`, `ScriptType: v4.00+`, `PlayResX: 1080`, `PlayResY:
   `Style: Small,Microsoft YaHei,40,&H00505A60,&H00505A60,&H00DCE9EF,&H00DCE9EF,0,0,0,0,100,100,1,0,1,0,0,8,40,40,226,134`,
   ``, `[Events]`, `Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text`];
 marks.forEach((m, i) => {
+  if (END && m.id === 'm8-end') return;   // 结尾卡自带文字，不再压字幕
   const a = m.at, b = i + 1 < marks.length ? marks[i + 1].at : TOTAL;
   ass.push(`Dialogue: 0,${ts(a)},${ts(b)},Big,,0,0,0,,{\\fad(250,200)}${m.lines[0]}`);
   // 第二行太长时缩小字号，免得超出画面
@@ -271,16 +275,21 @@ fs.writeFileSync(path.join(OUT, 'subs.ass'), ass.join('\n'));
 
 /* ---------- 合成 ---------- */
 const final = path.join(OUT, 'mobile-demo.mp4');
+// 输入：0 底色，1 录屏，2 外框，3 结尾卡（一直铺满，结尾那段开始时淡入），4… 旁白，最后是音乐
+const tEnd = (marks.find(m => m.id === 'm8-end') || { at: TOTAL }).at;
 const args = ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', `color=c=0xefe9dc:s=1080x1920:r=30:d=${TOTAL.toFixed(3)}`, '-i', 'phone.mp4', '-i', 'frame.png'];
+if (END) args.push('-loop', '1', '-framerate', '30', '-t', TOTAL.toFixed(3), '-i', END);
+else args.push('-f', 'lavfi', '-i', `color=c=black@0:s=1080x1920:r=30:d=${TOTAL.toFixed(3)},format=rgba`);
 marks.forEach(m => args.push('-i', path.join(VOICE, VO[m.id].file)));
 if (MUSIC) args.push('-i', path.resolve(MUSIC));
-const vf = `[1:v]scale=${PW}:${PH}:flags=lanczos[ph];[0:v][ph]overlay=${PX}:${PY}[a];[a][2:v]overlay=0:0,subtitles=subs.ass,`
+const vf = `[3:v]scale=1080:1920:flags=lanczos,format=rgba,fade=in:st=${tEnd.toFixed(3)}:d=0.5:alpha=1[end];`
+  + `[1:v]scale=${PW}:${PH}:flags=lanczos[ph];[0:v][ph]overlay=${PX}:${PY}[a];[a][2:v]overlay=0:0,subtitles=subs.ass[s];[s][end]overlay=0:0,`
   + `fade=in:st=0:d=0.4,fade=out:st=${(TOTAL - 0.8).toFixed(3)}:d=0.8,format=yuv420p[v]`;
 // 旁白：每段在字幕出现后 VOLEAD 秒开始；音乐压低，有人声时再自动让一让（sidechain）
-const vo = marks.map((m, i) => `[${3 + i}:a]aresample=48000,adelay=${Math.round((m.at + VOLEAD) * 1000)}:all=1[v${i}]`);
+const vo = marks.map((m, i) => `[${4 + i}:a]aresample=48000,adelay=${Math.round((m.at + VOLEAD) * 1000)}:all=1[v${i}]`);
 let af = `;${vo.join(';')};${marks.map((_, i) => `[v${i}]`).join('')}amix=inputs=${marks.length}:normalize=0,apad,atrim=0:${TOTAL.toFixed(3)},asplit=2[narr][key]`;
 if (MUSIC) {
-  const mi = 3 + marks.length;
+  const mi = 4 + marks.length;
   af += `;[${mi}:a]aresample=48000,atrim=0:${TOTAL.toFixed(3)},volume=0.3,afade=in:st=0:d=1,afade=out:st=${(TOTAL - 2.5).toFixed(3)}:d=2.5[mu]`
     + `;[mu][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[duck]`
     + `;[narr][duck]amix=inputs=2:normalize=0,loudnorm=I=-15:TP=-1.5:LRA=11[au]`;
