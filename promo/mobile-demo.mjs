@@ -1,6 +1,6 @@
-// 手机版改进演示短片（竖屏 1080×1920，1 分钟以内，无旁白，字幕 + 背景音乐）。
+// 手机版改进演示短片（竖屏 1080×1920，1 分钟以内，旁白 + 字幕 + 背景音乐）。
 // 用法：node promo/mobile-demo.mjs [--still] [--music <音乐文件>]
-//   先在仓库根目录 npm run build 生成 dist/。
+//   先在仓库根目录 npm run build 生成 dist/，再按 mobile-narration.yaml 配好旁白（见那个文件开头）。
 //   --still：不录像，每段结束截一张图到 out/mdemo/，用来检查位置。
 // 画面：本机 Chrome 以 390×844 的手机画幅打开 dist/，用真实的触摸事件（CDP）拖动、两指缩放、点按；
 //       一镜到底录下来，再放进竖屏画面，上方是标题和字幕。
@@ -10,6 +10,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import YAML from 'yaml';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.resolve(ROOT, '../dist');
@@ -122,42 +123,52 @@ const bestCluster = () => page.evaluate(([w, h]) => {
 
 /* ---------- 分段：每段的字幕和动作 ---------- */
 // at：这一段字幕出现的时刻（录制时记下），lines：字幕
+// 每段的旁白和字幕在 mobile-narration.yaml；配音时长在 out/mdemo/voice/timing.json。
+// mark(id)：先等上一段的旁白念完（加 pad），再开始这一段；mark(null) 等最后一段念完
+const SHOTS = Object.fromEntries(YAML.parse(fs.readFileSync(path.join(ROOT, 'mobile-narration.yaml'), 'utf8')).shots.map(s => [s.id, s]));
+const VOICE = path.join(OUT, 'voice');
+const VO = Object.fromEntries(JSON.parse(fs.readFileSync(path.join(VOICE, 'timing.json'), 'utf8')).shots.map(s => [s.id, s]));
+const VOLEAD = 0.15;   // 字幕先出来一点，旁白跟上
 const marks = [];
 let t0 = 0;
-const mark = lines => marks.push({ at: (Date.now() - t0) / 1000, lines });
+async function mark(id) {
+  const last = marks[marks.length - 1];
+  if (last) { const due = t0 + (last.at + VOLEAD + VO[last.id].dur + SHOTS[last.id].pad) * 1000 - Date.now(); if (due > 0) await sleep(due); }
+  if (id) marks.push({ id, at: (Date.now() - t0) / 1000, lines: SHOTS[id].lines });
+}
 const snap = async name => { if (STILL) await page.screenshot({ path: path.join(OUT, name + '.png') }); };
 
 async function act() {
   // 1. 一打开就是全貌
-  mark(['一打开就是全貌', '几千年、十几个文明，一屏看完']);
-  await sleep(3200);
-  mark(['窄的文明也写出两个字', '欧洲、朝鲜、草原……竖着写，不缩小']);
+  await mark('m1-whole');
+  await sleep(2000);
+  await mark('m2-short');
   await drag([330, 560], [130, 560], 1100); await sleep(900);
   await drag([130, 560], [380, 560], 1000); await sleep(300);
   await drag([120, 560], [380, 560], 500); await sleep(800);
   await snap('1-whole');
 
   // 2. 两指缩放跟手
-  mark(['两指缩放，跟着手指走', '稍一放大，就有朝代名和重要人物']);
+  await mark('m3-pinch');
   const [, yTang, xChina] = await bandPt('唐');
-  for (let i = 0; i < 6; i++) { await pinch(xChina + 25, yTang, 100, 175, 750); await sleep(i === 5 ? 400 : 800); }
-  await sleep(700);
+  // 三次放大（每次约 3 倍），每次停一下，看得出字一步步出来
+  for (let i = 0; i < 3; i++) { await pinch(xChina + 25, yTang, 70, 214, 850); await sleep(i === 2 ? 900 : 650); }
   await snap('2-pinch');
 
   // 3. 拖动、惯性
-  mark(['拖动、甩一下，顺滑地滑过去', '连着划也不卡']);
+  await mark('m4-glide');
   await drag([250, 700], [250, 380], 260, true); await sleep(1300);
   await drag([250, 420], [250, 720], 260, true); await sleep(1300);
   await drag([110, 600], [350, 600], 900); await sleep(900);
   await snap('3-glide');
 
   // 4. 事件圆点 → 清单 → 某一件 → 返回清单
-  mark(['大事挤在一起时', '合成带数字的圆点']);
+  await mark('m5-cluster');
   let c = await bestCluster();
   if (!c) throw new Error('屏幕上没有事件圆点');
   await sleep(1800);
   await tap(c.x, c.y); await sleep(2300);
-  mark(['点开是清单', '点进一件，“返回”回到清单']);
+  await mark('m6-list');
   await snap('4a-list');
   await tapSel('#msheet [data-goe]'); await sleep(2400);
   await snap('4b-event');
@@ -165,15 +176,15 @@ async function act() {
   await tapSel('#msheet .close'); await sleep(900);
 
   // 5. 回到全貌，点色块直接放大到那个朝代
-  mark(['点“全貌”飞回全图', '点朝代色块，直接放大到那一段']);
+  await mark('m7-band');
   await tapSel('#mseg [data-whole]'); await sleep(2000);
   const [xm, ym] = await bandPt('明');
   await tap(xm, ym); await sleep(2600);
   await snap('5-band');
 
   // 6. 结尾
-  mark(['历史长河 · 手机版', '打开手机就能逛']);
-  await sleep(3200);
+  await mark('m8-end');
+  await mark(null);
 }
 
 /* ---------- 录像（CDP screencast，按时间戳补成 30fps） ---------- */
@@ -239,12 +250,20 @@ fs.writeFileSync(path.join(OUT, 'subs.ass'), ass.join('\n'));
 /* ---------- 合成 ---------- */
 const final = path.join(OUT, 'mobile-demo.mp4');
 const args = ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', `color=c=0xefe9dc:s=1080x1920:r=30:d=${TOTAL.toFixed(3)}`, '-i', 'phone.mp4', '-i', 'frame.png'];
+marks.forEach(m => args.push('-i', path.join(VOICE, VO[m.id].file)));
 if (MUSIC) args.push('-i', path.resolve(MUSIC));
 const vf = `[1:v]scale=${PW}:${PH}:flags=lanczos[ph];[0:v][ph]overlay=${PX}:${PY}[a];[a][2:v]overlay=0:0,subtitles=subs.ass,`
   + `fade=in:st=0:d=0.4,fade=out:st=${(TOTAL - 0.8).toFixed(3)}:d=0.8,format=yuv420p[v]`;
-const af = MUSIC ? `;[3:a]atrim=0:${TOTAL.toFixed(3)},afade=in:st=0:d=1,afade=out:st=${(TOTAL - 2.5).toFixed(3)}:d=2.5,loudnorm=I=-16:TP=-1.5[au]` : '';
-args.push('-filter_complex', vf + af, '-map', '[v]');
-if (MUSIC) args.push('-map', '[au]', '-c:a', 'aac', '-b:a', '192k');
+// 旁白：每段在字幕出现后 VOLEAD 秒开始；音乐压低，有人声时再自动让一让（sidechain）
+const vo = marks.map((m, i) => `[${3 + i}:a]aresample=48000,adelay=${Math.round((m.at + VOLEAD) * 1000)}:all=1[v${i}]`);
+let af = `;${vo.join(';')};${marks.map((_, i) => `[v${i}]`).join('')}amix=inputs=${marks.length}:normalize=0,apad,atrim=0:${TOTAL.toFixed(3)},asplit=2[narr][key]`;
+if (MUSIC) {
+  const mi = 3 + marks.length;
+  af += `;[${mi}:a]aresample=48000,atrim=0:${TOTAL.toFixed(3)},volume=0.3,afade=in:st=0:d=1,afade=out:st=${(TOTAL - 2.5).toFixed(3)}:d=2.5[mu]`
+    + `;[mu][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[duck]`
+    + `;[narr][duck]amix=inputs=2:normalize=0,loudnorm=I=-15:TP=-1.5:LRA=11[au]`;
+} else af += `;[narr]loudnorm=I=-15:TP=-1.5:LRA=11[au]`;
+args.push('-filter_complex', vf + af, '-map', '[v]', '-map', '[au]', '-c:a', 'aac', '-b:a', '192k');
 args.push('-t', TOTAL.toFixed(3), '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-movflags', '+faststart', 'mobile-demo.mp4');
 execFileSync('ffmpeg', args, { cwd: OUT });
 console.log('成片：', final, TOTAL.toFixed(1) + 's');

@@ -1,0 +1,32 @@
+# 手机版改进演示：每段一句旁白。lines 是屏幕上的字幕（第一行大字、第二行小字），合起来就是念的内容；
+# say 写了就念 say（字幕里有不该念的符号时用）。改了文字要重新配音：
+#   python promo/tts.py --engine volc --yaml mobile-narration.yaml --out out/mdemo/voice
+# 段落时长 = 动作和旁白取较长的一个，再加 pad 秒。
+shots:
+  - id: m1-whole
+    pad: 0.3
+    lines: [一打开就是全貌, 几千年、十几个文明，一屏看完]
+  - id: m2-short
+    pad: 0.3
+    lines: [窄的文明也写出两个字, 欧洲、朝鲜、草原，一眼认得]
+  - id: m3-pinch
+    pad: 0.3
+    lines: [两指缩放，跟着手指走, 稍一放大，就有朝代名和重要人物]
+  - id: m4-glide
+    pad: 0.3
+    lines: [拖动、甩一下，顺滑地滑过去, 连着划也不卡]
+  - id: m5-cluster
+    pad: 0.2
+    lines: [大事挤在一起时, 合成带数字的圆点]
+  - id: m6-list
+    pad: 0.3
+    lines: [点开是清单, 点进一件，“返回”又回到清单]
+    say: 点开是清单。点进一件，返回，又回到清单。
+  - id: m7-band
+    pad: 0.3
+    lines: [点“全貌”飞回全图, 点朝代色块，直接放大到那一段]
+    say: 点全貌，飞回全图；点朝代色块，直接放大到那一段。
+  - id: m8-end
+    pad: 1.5
+    lines: [历史长河 · 手机版, 打开手机就能逛]
+    say: 历史长河手机版，打开手机就能逛！

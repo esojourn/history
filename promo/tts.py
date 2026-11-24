@@ -5,6 +5,7 @@
   python promo/tts.py --engine volc --voice <音色>    # 火山引擎·豆包语音合成大模型
   python promo/tts.py --engine edge --voice zh-CN-YunxiNeural
   python promo/tts.py --sample             # 只合成第一个镜头，用来试听音色（文件名带音色名）
+  python promo/tts.py --engine volc --yaml mobile-narration.yaml --out out/mdemo/voice   # 手机版演示的旁白
 
 火山引擎的密钥写在 promo/.env（不提交）：
   VOLC_APPID=...
@@ -29,10 +30,10 @@ def load_env():
     return env
 
 
-def load_shots():
+def load_shots(name='narration.yaml'):
     # narration.yaml 结构简单，不额外装 pyyaml：交给 node 的 yaml 包解析
     js = "const Y=require('yaml');const fs=require('fs');process.stdout.write(JSON.stringify(Y.parse(fs.readFileSync(process.argv[1],'utf8'))))"
-    r = subprocess.run(['node', '-e', js, str(ROOT / 'narration.yaml')], cwd=ROOT, capture_output=True, check=True)
+    r = subprocess.run(['node', '-e', js, str(ROOT / name)], cwd=ROOT, capture_output=True, check=True)
     return json.loads(r.stdout.decode('utf-8'))['shots']
 
 
@@ -103,18 +104,23 @@ def main():
     ap.add_argument('--rate', default='+8%', help='edge 的语速，如 +8%%')
     ap.add_argument('--speed', type=float, default=1.1, help='火山引擎的语速倍数')
     ap.add_argument('--sample', action='store_true')
+    ap.add_argument('--yaml', default='narration.yaml', help='旁白稿，相对 promo/')
+    ap.add_argument('--out', default='out/voice', help='输出目录，相对 promo/')
     a = ap.parse_args()
+    global OUT
+    OUT = ROOT / a.out
     voice = a.voice or ((env.get('VOLC_VOICE') or env.get('speak_id')) if a.engine == 'volc' else None) or ('zh-CN-YunxiNeural' if a.engine == 'edge' else None)
     if not voice:
         sys.exit('请用 --voice 指定火山引擎音色')
 
     OUT.mkdir(parents=True, exist_ok=True)
-    shots = load_shots()
+    shots = load_shots(a.yaml)
     if a.sample:
         shots = shots[:2]
     timing = []
     for s in shots:
-        text = ''.join(s['lines'])
+        # 行尾没有标点的，念的时候补一个逗号停顿
+        text = s.get('say') or ''.join(l if i == len(s['lines']) - 1 or l[-1] in '，。？！；：、—…' else l + '，' for i, l in enumerate(s['lines']))
         name = f"{s['id']}__{voice}.mp3" if a.sample else f"{s['id']}.mp3"
         path = OUT / name
         if a.engine == 'edge':
