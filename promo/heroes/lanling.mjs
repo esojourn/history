@@ -2,7 +2,7 @@
 // 用法：node promo/heroes/lanling.mjs [--still] [--music <音乐文件>]
 //   先做三件事：仓库根目录 npm run build；按 lanling.yaml 开头的命令配音；node promo/heroes/map.mjs lanling-luoyang 画地图。
 //   --still：不录像，每段结束截一张图到 promo/out/heroes/lanling/stills/，用来检查位置。
-// 成片：promo/out/heroes/lanling/lanling.mp4（不进仓库）。
+// 成片：promo/out/heroes/lanling/lanling.mp4（不进仓库）。第一帧就是封面（官方游戏图片 + 片名），封面图另存为 cover.png，可在平台上传封面时用。
 // 做法沿用 promo/mobile-demo.mjs：本机 Chrome 以 390×844 的手机画幅打开 dist/，一镜到底录下来，每段的长短跟着旁白走；
 // 游戏图片、地图、结尾卡是合成时盖在录屏上面的。旁白文字是定稿，这里只对照检查，不改。
 import { chromium } from 'playwright-core';
@@ -20,6 +20,8 @@ const DIST = path.resolve(PROMO, '../dist');
 const OUT = path.join(PROMO, 'out', 'heroes', 'lanling');
 const VOICE = path.join(OUT, 'voice');
 const IMG = path.join(PROMO, 'out', 'heroes', 'img', '153-bigskin-1.jpg');       // 官方图片（默认造型，横版），不进仓库
+const IMG_V = path.join(PROMO, 'out', 'heroes', 'img', '153-mobileskin-1.jpg');   // 官方图片（默认造型，竖版），封面用
+const COVER = 1.0, XF = 0.4;   // 片头封面停留的秒数、封面淡入正片的秒数
 const MAP = path.join(PROMO, 'out', 'heroes', 'maps', 'lanling-luoyang.png');
 const CHROME = process.env.CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const argv = process.argv.slice(2), STILL = argv.includes('--still');
@@ -32,7 +34,7 @@ const CREDIT = '图片来自《王者荣耀》官方';
 const SOURCES = '史实核对自：《北齐书》兰陵武王长恭传、武成纪、后主纪，《教坊记》（维基文库电子版）。';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 fs.mkdirSync(path.join(OUT, 'stills'), { recursive: true });
-for (const f of [IMG, MAP, path.join(VOICE, 'timing.json'), path.join(DIST, 'zh', 'index.html')])
+for (const f of [IMG, IMG_V, MAP, path.join(VOICE, 'timing.json'), path.join(DIST, 'zh', 'index.html')])
   if (!fs.existsSync(f)) { console.error('缺少文件：' + f + '（见本文件开头的用法）'); process.exit(1); }
 
 /* ---------- 旁白：对照定稿，逐字一致才往下做 ---------- */
@@ -304,9 +306,21 @@ const at = id => marks.find(m => m.id === id).at;
 // 录屏放在 (PX, PY)，大小 PW×PH；上方是标题和字幕
 const PW = 700, PH = Math.round(PW * VH / VW), PX = (1080 - PW) / 2, PY = 1920 - PH - 50;
 const TITLE = `<div style="position:absolute;left:0;right:0;top:52px;text-align:center;font:700 38px 'Microsoft YaHei';letter-spacing:6px;color:#8a5a2b">峡谷之外 · 兰陵王</div>`;
-const data = f => `data:image/png;base64,${fs.readFileSync(f).toString('base64')}`;
+const data = f => `data:image/${f.endsWith('.jpg') ? 'jpeg' : 'png'};base64,${fs.readFileSync(f).toString('base64')}`;
 const qr = await QRCode.toDataURL(URL_QR, { errorCorrectionLevel: 'Q', margin: 2, width: 720, color: { dark: '#1B2A31', light: '#FFFFFF' } });
 const PAGES = {
+  // 封面：成片第一帧（社交平台上显示的就是它）。竖版官方图片居中，同一张横版图模糊垫底，下方大字片名
+  cover: `<body style="background:#0d1216;color:#fff;font-family:'Microsoft YaHei'">
+    <img src="${data(IMG)}" style="position:absolute;left:-1000px;top:0;height:1920px;filter:blur(30px) brightness(.55) saturate(.8)">
+    <img src="${data(IMG_V)}" style="position:absolute;left:0;top:170px;width:1080px">
+    <div style="position:absolute;left:0;right:0;top:0;height:330px;background:linear-gradient(#0d1216 45%,transparent)"></div>
+    <div style="position:absolute;left:0;right:0;top:1180px;bottom:0;background:linear-gradient(transparent,#0d1216 42%)"></div>
+    <div style="position:absolute;left:0;right:0;top:70px;text-align:center;font:400 96px 'STKaiti','KaiTi',serif;letter-spacing:16px;text-indent:16px">峡谷之外</div>
+    <div style="position:absolute;left:0;right:0;top:200px;text-align:center;font-size:34px;letter-spacing:8px;color:#d8c9a8">王者荣耀人物的真实历史</div>
+    <div style="position:absolute;left:0;right:0;top:1420px;text-align:center;font:700 200px 'STKaiti','KaiTi',serif;letter-spacing:30px;text-indent:30px;color:#fff;text-shadow:0 6px 30px rgba(0,0,0,.6)">兰陵王</div>
+    <div style="position:absolute;left:0;right:0;top:1680px;text-align:center;font:700 64px 'Microsoft YaHei';letter-spacing:4px;color:#e8c27a">一句“家事”，一杯毒酒</div>
+    <div style="position:absolute;right:30px;top:1850px;font-size:26px;letter-spacing:1px;color:rgba(241,236,224,.8)">${CREDIT}</div>
+  </body>`,
   // 手机外框（中间挖空放录屏）
   frame: `<body style="background:transparent">
     <div style="position:absolute;left:${PX - 16}px;top:${PY - 16}px;width:${PW + 32}px;height:${PH + 32}px;border-radius:64px;
@@ -346,7 +360,7 @@ const p2 = await b2.newPage({ viewport: { width: 1080, height: 1920 } });
 for (const [name, html] of Object.entries(PAGES)) {
   await p2.setContent(`<!doctype html><meta charset="utf-8"><style>html,body{margin:0;width:1080px;height:1920px;overflow:hidden}</style>${html}`);
   await p2.waitForTimeout(300);
-  await p2.screenshot({ path: path.join(OUT, name + '.png'), omitBackground: name !== 'end' });
+  await p2.screenshot({ path: path.join(OUT, name + '.png'), omitBackground: name !== 'end' && name !== 'cover' });
 }
 await b2.close();
 
@@ -431,7 +445,7 @@ const vf = `[1:v]scale=${PW}:${PH}:flags=lanczos[ph];[0:v][ph]overlay=${PX}:${PY
   + `[3:v]format=rgba,fade=out:st=${tIntro.toFixed(3)}:d=0.45:alpha=1[in];[b][in]overlay=0:0:eof_action=pass[c];`
   + `[4:v]format=rgba,fade=in:st=${tMap0.toFixed(3)}:d=0.35:alpha=1,fade=out:st=${tMap1.toFixed(3)}:d=0.35:alpha=1[mp];[c][mp]overlay=0:0[d];`
   + `[5:v]format=rgba,fade=in:st=${tEnd.toFixed(3)}:d=0.5:alpha=1[end];[d][end]overlay=0:0,subtitles=subs.ass,`
-  + `fade=in:st=0:d=0.4,fade=out:st=${(TOTAL - 0.8).toFixed(3)}:d=0.8,format=yuv420p[v]`;
+  + `fade=out:st=${(TOTAL - 0.8).toFixed(3)}:d=0.8,format=yuv420p[v]`;
 // 旁白：每段在字幕出现后 VOLEAD 秒开始；音乐压低，有人声时再自动让一让（sidechain）
 const vo = marks.map((m, i) => `[${6 + i}:a]aresample=48000,adelay=${Math.round((m.at + VOLEAD) * 1000)}:all=1[v${i}]`);
 let af = `;${vo.join(';')};${marks.map((_, i) => `[v${i}]`).join('')}amix=inputs=${marks.length}:normalize=0,apad,atrim=0:${T},asplit=2[narr][key]`;
@@ -442,6 +456,15 @@ if (MUSIC) {
     + `;[narr][duck]amix=inputs=2:normalize=0,loudnorm=I=-15:TP=-1.5:LRA=11[au]`;
 } else af += `;[narr]loudnorm=I=-15:TP=-1.5:LRA=11[au]`;
 args.push('-filter_complex', vf + af, '-map', '[v]', '-map', '[au]', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000',
-  '-t', T, '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-movflags', '+faststart', 'lanling.mp4');
+  '-t', T, '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', 'body.mp4');
 execFileSync('ffmpeg', args, { cwd: OUT });
-console.log('成片：', path.join(OUT, 'lanling.mp4'), TOTAL.toFixed(1) + 's');
+
+/* ---------- 片头封面：第一帧就是封面（不从黑屏淡入），停 COVER 秒后淡入正片；声音整体往后挪 ---------- */
+const off = COVER - XF, FULL = (TOTAL + off).toFixed(3);
+execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-loop', '1', '-framerate', '30', '-t', COVER.toFixed(3), '-i', 'cover.png', '-i', 'body.mp4', '-filter_complex',
+  `[0:v]fps=30,format=yuv420p,setsar=1,settb=AVTB[cv];[1:v]fps=30,setsar=1,settb=AVTB[bd];[cv][bd]xfade=transition=fade:duration=${XF}:offset=${off.toFixed(3)},format=yuv420p[v];`
+  + `[1:a]adelay=${Math.round(off * 1000)}:all=1[au]`,
+  '-map', '[v]', '-map', '[au]', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000',
+  '-t', FULL, '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-movflags', '+faststart', 'lanling.mp4'], { cwd: OUT });
+fs.rmSync(path.join(OUT, 'body.mp4'));
+console.log('成片：', path.join(OUT, 'lanling.mp4'), FULL + 's');
