@@ -1,8 +1,20 @@
-// 《峡谷之外》每一期出一份 txt：讲稿 + 与史书核对查证的记录，放在成片旁边，方便发布时复制、给人审读。
+// 《峡谷之外》每一期出一份 txt，放在成片旁边，发布时直接复制用。格式是项目方 2026-11-26 在 lanling.txt 上改定的：
+//
+//   《峡谷之外的真实历史》二：兰陵王 - 一句“家事”，一杯毒酒      ← 系列名 + 第几篇 + 人物 - 副标题
+//   （空行）
+//   https://lishi.alz-ai.cn/zh/#person/gao-changgong     ← 网站上这个人物的网址
+//   （空行）
+//   旁白，一段一行，不编号、不写画面                   ← 只要念的；第一屏标题等“不念”的不放
+//   （空行）
+//   史实核对自：……                                   ← 结尾卡上的小字
+//   （空行）
+//   查过的原文：                                       ← 核实记录里的书目清单（带链接）；逐条对照表不放
+//   · ……
+//
 // 内容全部取自 scripts.md 对应的那一篇（以 scripts.md 为准，txt 只是导出，不要手改）。
 // 用法：node promo/heroes/export-txt.mjs            给已出成片的每一期导出
 //       node promo/heroes/export-txt.mjs lanling2   只导出某一期（没出成片也照样导出）
-// 出文件：promo/out/heroes/<期>/<期>.txt（UTF-8，Windows 换行，记事本直接能看）
+// 出文件：promo/out/heroes/<期>/<期>.txt（UTF-8 带 BOM，Windows 换行，记事本直接能看）
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,13 +22,15 @@ import { fileURLToPath } from 'node:url';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(HERE, '..', '..');
 const OUT = path.join(HERE, '..', 'out', 'heroes');
+const SITE = 'https://lishi.alz-ai.cn/zh/#person/';
 
-// 每一期对应 scripts.md 里的第几篇（按“## 一、”这样的序号找，标题改了也不影响）。新增一期就在这里加一行。
+// 每一期：对应 scripts.md 里的第几篇（按“## 一、”这样的序号找），网站上的人物编号（与结尾二维码指向的一致）。
+// 新增一期就在这里加一行。
 const EPISODES = {
-  hanxin: '一',
-  lanling: '二',
-  waner: '三',
-  lanling2: '四',
+  hanxin: { no: '一', person: 'han-xin' },
+  lanling: { no: '二', person: 'gao-changgong' },
+  waner: { no: '三', person: 'shangguan-waner' },
+  lanling2: { no: '四', person: 'gao-changgong' },
 };
 
 const md = fs.readFileSync(path.join(HERE, 'scripts.md'), 'utf8').replace(/\r\n/g, '\n');
@@ -39,39 +53,17 @@ const inline = (s) => s
   .replace(/<(https?:[^>]+)>/g, '$1');
 
 const cells = (l) => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((c) => inline(c.trim()));
-const isRule = (l) => /^\|?\s*:?-{3,}/.test(l.trim());
-
-// 把一段 Markdown（列表、小标题、表格、段落）转成纯文本
-function toText(lines) {
-  const out = [];
-  for (let i = 0; i < lines.length; i++) {
-    const l = lines[i];
-    if (l.startsWith('|')) {
-      const head = cells(l);
-      i += isRule(lines[i + 1] || '') ? 2 : 1;
-      let n = 0;
-      for (; i < lines.length && lines[i].startsWith('|'); i++) {
-        const row = cells(lines[i]);
-        n++;
-        out.push(`（${n}）${head[0]}：${row[0]}`);
-        for (let k = 1; k < head.length; k++) out.push(`    ${head[k]}：${row[k] ?? ''}`);
-        out.push('');
-      }
-      i--;
-      continue;
-    }
-    const h = l.match(/^#{3,}\s+(.*)/);
-    if (h) { out.push('', `【${inline(h[1])}】`, ''); continue; }
-    out.push(inline(l).replace(/^(\s*)- /, '$1· '));
-  }
-  return out;
-}
 
 function exportOne(id) {
-  const no = EPISODES[id];
+  const { no, person } = EPISODES[id];
   const sec = section(no);
   if (!sec) throw new Error(`scripts.md 里找不到第${no}篇（${id}）`);
-  const title = inline(sec[0].replace(/^##\s+/, ''));
+
+  // 标题：“## 二、《兰陵王：一句“家事”，一杯毒酒》” → “《峡谷之外的真实历史》二：兰陵王 - 一句“家事”，一杯毒酒”
+  const m = sec[0].match(/^##\s+\S+?、《(.+)》\s*$/);
+  if (!m) throw new Error(`第${no}篇标题认不出：${sec[0]}`);
+  const k = m[1].indexOf('：');
+  const title = k < 0 ? m[1] : `${m[1].slice(0, k)} - ${m[1].slice(k + 1)}`;
 
   // 讲稿表：第一张“画面 | 旁白”表
   const t0 = sec.findIndex((l) => /^\|\s*画面\s*\|\s*旁白/.test(l));
@@ -79,52 +71,33 @@ function exportOne(id) {
   let t1 = t0 + 2;
   while (t1 < sec.length && sec[t1].startsWith('|')) t1++;
   const rows = sec.slice(t0 + 2, t1).map(cells);
+  const spoken = rows.filter(([scene]) => !scene.includes('不念')).map(([, say]) => say);
+  const endNote = rows.find(([scene]) => scene.includes('结尾卡上的小字'));
+  if (!endNote) throw new Error(`第${no}篇没有“结尾卡上的小字”一行`);
 
+  // 核实记录里的“查过的原文：”书目清单（到下一张表或下一个小标题为止）
   const v = sec.findIndex((l) => /^#{3,}\s+核实记录/.test(l));
-  const notesBefore = sec.slice(1, t0); // 状态、依据、定稿时定下的事项
-  const notesAfter = sec.slice(t1, v < 0 ? sec.length : v); // 配地图、未用的句子等
-  const verify = v < 0 ? [] : sec.slice(v);
-
-  const status = (notesBefore.find((l) => l.includes('状态：')) || '').replace(/^\s*- /, '');
-  const dir = path.join(OUT, id);
-  const videos = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.mp4')) : [];
-
-  const shown = [], spoken = [];
-  for (const [scene, say] of rows) {
-    if (scene.includes('不念')) shown.push(`${scene.replace(/（只显示，不念）/, '')}（只显示，不念）：${say}`);
-    else spoken.push([scene, say]);
+  const s0 = v < 0 ? -1 : sec.findIndex((l, i) => i > v && l.trim() === '查过的原文：');
+  if (s0 < 0) throw new Error(`第${no}篇的核实记录里没有“查过的原文：”清单，先在 scripts.md 里补上`);
+  const books = [];
+  for (let i = s0 + 1; i < sec.length && !sec[i].startsWith('|') && !sec[i].startsWith('#'); i++) {
+    if (/^\s*- /.test(sec[i])) books.push(inline(sec[i]).replace(/^\s*- /, '· '));
   }
-  const chars = spoken.reduce((s, [, say]) => s + say.replace(/\s/g, '').length, 0);
+  if (!books.length) throw new Error(`第${no}篇“查过的原文：”下面是空的`);
 
-  const bar = '════════════════════════════════';
-  const L = [];
-  L.push(`《峡谷之外》${title}`, '');
-  L.push(inline(status));
-  if (videos.length) L.push(`成片：${videos.map((f) => `promo/out/heroes/${id}/${f}`).join('、')}`);
-  else L.push('成片：还没有');
-  L.push(`本文件由 promo/heroes/export-txt.mjs 从 promo/heroes/scripts.md 第${no}篇导出（${new Date().toISOString().slice(0, 10)}），内容以 scripts.md 为准。`);
-
-  L.push('', bar, '一、讲稿', bar, '');
-  for (const s of shown.filter((x) => x.startsWith('第一屏'))) L.push(s, '');
-  spoken.forEach(([scene, say], i) => {
-    L.push(`${String(i + 1).padStart(2, '0')}　${say}`);
-    L.push(`    〔画面：${scene}〕`, '');
-  });
-  for (const s of shown.filter((x) => !x.startsWith('第一屏'))) L.push(s, '');
-  L.push(`旁白共 ${spoken.length} 段，连标点约 ${chars} 字。`);
-
-  L.push('', bar, '二、制作说明', bar, '');
-  L.push(...toText([...notesBefore, ...notesAfter]));
-
-  L.push('', bar, '三、与史书核对查证的记录', bar);
-  if (verify.length) L.push(...toText(verify));
-  else L.push('', '这一篇还没有核实记录。');
-
-  const text = L.join('\n').replace(/\n{3,}/g, '\n\n').trim() + '\n';
+  const L = [
+    `《峡谷之外的真实历史》${no}：${title}`, '',
+    SITE + person, '',
+    ...spoken, '',
+    endNote[1], '',
+    '查过的原文：', '',
+    ...books, '',
+  ];
+  const dir = path.join(OUT, id);
   fs.mkdirSync(dir, { recursive: true });
   const file = path.join(dir, `${id}.txt`);
-  fs.writeFileSync(file, '﻿' + text.replace(/\n/g, '\r\n'), 'utf8');
-  console.log(`导出 ${path.relative(ROOT, file)}（旁白 ${spoken.length} 段，约 ${chars} 字）`);
+  fs.writeFileSync(file, '﻿' + L.join('\r\n') + '\r\n', 'utf8');
+  console.log(`导出 ${path.relative(ROOT, file)}（旁白 ${spoken.length} 段，书目 ${books.length} 种）`);
 }
 
 const want = process.argv.slice(2);
