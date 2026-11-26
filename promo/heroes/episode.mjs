@@ -1,5 +1,6 @@
 // 《峡谷之外》各集共用的部分：对照定稿检查旁白、本地静态服务器、手机画幅浏览器与手势、分段计时、录屏转视频、字幕。
 // 从 lanling.mjs 抽出来，韩信一集（hanxin.mjs）、兰陵王横版（lanling-h.mjs）用这里的；lanling.mjs 还是自带一份同样的代码，没有改动，重出兰陵王照旧。
+// 横版用的桌面版浏览器和鼠标动作（openDesktop）是照 lanling-h.mjs 抽出来的，韩信横版（hanxin-h.mjs）用它；lanling-h.mjs 没有改动。
 import { chromium } from 'playwright-core';
 import http from 'node:http';
 import fs from 'node:fs';
@@ -154,6 +155,120 @@ export async function openPhone() {
   return { browser, ctx, page, cdp, pinch, tap, tapSel, tapPerson, labelPt, scrollCard, openCard, closeCard, expectFocus, type };
 }
 
+/* ---------- 桌面版浏览器（横版用）：1920×1080、字号 1.3 档，画出假鼠标（同 lanling-h.mjs、record.mjs） ---------- */
+// 录制时页面里的假鼠标：箭头 + 点击波纹（只在录制时注入，不改网站）
+const CURSOR = () => {
+  const boot = () => {
+    if (document.getElementById('__cur')) return;
+    const st = document.createElement('style');
+    st.textContent = `#__cur{position:fixed;left:0;top:0;z-index:2147483647;pointer-events:none;transition:opacity .25s;will-change:transform}
+      #__cur svg{width:30px;height:30px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35))}
+      .__rip{position:fixed;z-index:2147483646;pointer-events:none;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;border:3px solid #e8a33d;animation:__rip .55s ease-out forwards}
+      @keyframes __rip{from{transform:scale(.4);opacity:1}to{transform:scale(3.2);opacity:0}}`;
+    document.head.append(st);
+    const c = document.createElement('div'); c.id = '__cur';
+    c.innerHTML = '<svg viewBox="0 0 24 24"><path d="M4 2.5v17.2l4.6-4.3 3 6.9 3-1.3-3-6.8h6.3z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>';
+    document.documentElement.append(c);
+    c.style.transform = 'translate(1100px,640px)';
+    addEventListener('mousemove', e => { c.style.transform = `translate(${e.clientX - 4}px,${e.clientY - 2}px)`; }, true);
+    addEventListener('mousedown', e => { const r = document.createElement('div'); r.className = '__rip'; r.style.left = e.clientX + 'px'; r.style.top = e.clientY + 'px'; document.documentElement.append(r); setTimeout(() => r.remove(), 700); }, true);
+    window.__cur = v => { c.style.opacity = v ? 1 : 0; };
+  };
+  if (document.readyState === 'loading') addEventListener('DOMContentLoaded', boot); else boot();
+};
+export const DW = 1920, DH = 1080;
+export async function openDesktop(fz = '1.3') {
+  const browser = await chromium.launch({ executablePath: CHROME, headless: true, args: ['--hide-scrollbars', '--force-color-profile=srgb', '--font-render-hinting=none'] });
+  const ctx = await browser.newContext({ viewport: { width: DW, height: DH }, deviceScaleFactor: 1, locale: 'zh-CN' });
+  await ctx.addInitScript(z => { try { localStorage.setItem('fz', z); } catch (_) {} }, fz);
+  await ctx.addInitScript(CURSOR);
+  await ctx.route(/googletagmanager|google-analytics/, r => r.abort());
+  const page = await ctx.newPage();
+  page.on('pageerror', e => console.log('页面错误：', e.message));
+  const cdp = await ctx.newCDPSession(page);
+  const d = { browser, ctx, page, cdp, detailX: 1491 };   // detailX：右侧人物卡的左边缘，打开页面后用 measure() 量
+
+  d.cursor = v => page.evaluate(v => window.__cur(v), v);
+  d.measure = async () => { d.detailX = await page.evaluate(() => document.querySelector('#detail')?.getBoundingClientRect().x || 1491); return d.detailX; };
+  let mx = 1100, my = 640;
+  d.glide = async (x, y, ms = 700) => {
+    const x0 = mx, y0 = my, n = Math.max(2, Math.round(ms / 16)), t = Date.now();
+    for (let i = 1; i <= n; i++) {
+      const e = ease(i / n);
+      await page.mouse.move(x0 + (x - x0) * e, y0 + (y - y0) * e);
+      const due = t + (ms * i) / n - Date.now(); if (due > 0) await sleep(due);
+    }
+    mx = x; my = y;
+  };
+  d.click = async (x, y, ms = 650) => { await d.glide(x, y, ms); await sleep(120); await page.mouse.down(); await sleep(70); await page.mouse.up(); };
+  d.box = async sel => { const b = await page.locator(sel).first().boundingBox(); if (!b) throw new Error('找不到 ' + sel); return b; };
+  d.clickSel = async (sel, dx = null, ms = 650) => { const b = await d.box(sel); await d.click(b.x + (dx ?? b.width / 2), b.y + b.height / 2, ms); };
+  // 滚轮缩放：total 为负是放大；分成小步，持续 ms 毫秒
+  d.wheel = async (total, ms) => {
+    const n = Math.round(ms / 33), t = Date.now(); let done = 0;
+    for (let i = 1; i <= n; i++) {
+      const want = total * ease(i / n), dd = want - done; done = want;
+      await page.mouse.wheel(0, dd);
+      const due = t + (ms * i) / n - Date.now(); if (due > 0) await sleep(due);
+    }
+  };
+  // 时间轴上某人的生卒条在屏幕上的位置（左边被左栏挡住的、右边被人物卡挡住的不算）
+  d.bar = async id => {
+    const r = await page.evaluate(id => { const g = document.querySelector(`#river [data-p="${id}"] rect`); return g && g.getBoundingClientRect().toJSON(); }, id);
+    if (!r) throw new Error('时间轴上找不到 ' + id);
+    const x1 = Math.max(r.x, 182), x2 = Math.min(r.x + r.width, d.detailX - 10);
+    return { x1, x2, y: r.y + r.height / 2, left: r.x, right: r.x + r.width };
+  };
+  // 时间轴上聚焦的人和某人之间的那条关系连线（竖线）：返回线的 x 和中点 y
+  d.link = async id => {
+    const { y } = await d.bar(id);
+    const p = await page.evaluate(y => {
+      const ls = [...document.querySelectorAll('#river line')].map(l => l.getBoundingClientRect()).filter(r => r.height > 4 && r.width < 3)
+        .filter(r => Math.abs(r.y - y) < 12 || Math.abs(r.bottom - y) < 12);
+      return ls.length ? [ls[0].x + ls[0].width / 2, ls[0].y + ls[0].height / 2] : null;
+    }, y);
+    if (!p) throw new Error('时间轴上找不到连到 ' + id + ' 的关系线');
+    return p;
+  };
+  // 时间轴上某个关系标注（如“举荐”）的位置
+  d.labelPt = text => page.evaluate(t => {
+    const e = [...document.querySelectorAll('#river tspan.rl')].find(x => x.textContent === t); if (!e) return null;
+    const r = e.getBoundingClientRect(); return [r.x + r.width / 2, r.y + r.height / 2];
+  }, text);
+  // 右侧卡片滚到某句话（或 'sel:选择器'）：让它停在卡片顶部往下 off 像素处。不给就回到开头
+  d.scrollCard = (snip, ms = 1200, off = 70) => page.evaluate(([snip, ms, off]) => new Promise((res, rej) => {
+    const sh = document.querySelector('#detail');
+    let y1 = 0;
+    const to = rect => Math.max(0, Math.min(sh.scrollHeight - sh.clientHeight, sh.scrollTop + rect.top - sh.getBoundingClientRect().top - off));
+    if (snip && snip.startsWith('sel:')) {
+      const el = sh.querySelector(snip.slice(4)); if (!el) return rej(new Error('卡片里找不到 ' + snip));
+      y1 = to(el.getBoundingClientRect());
+    } else if (snip) {
+      const w = document.createTreeWalker(sh, NodeFilter.SHOW_TEXT); let n, r = null;
+      while ((n = w.nextNode())) { const i = n.data.indexOf(snip); if (i >= 0) { r = document.createRange(); r.setStart(n, i); r.setEnd(n, i + snip.length); break; } }
+      if (!r) return rej(new Error('卡片里找不到这句话：' + snip));
+      y1 = to(r.getBoundingClientRect());
+    }
+    const y0 = sh.scrollTop, t0 = performance.now(), e = u => (u < .5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2);
+    const step = now => { const u = Math.min(1, (now - t0) / ms); sh.scrollTop = y0 + (y1 - y0) * e(u); if (u < 1) requestAnimationFrame(step); else res(true); };
+    requestAnimationFrame(step);
+  }), [snip, ms, off]);
+  // 卡片里某句话在屏幕上的位置；鼠标指过去（停在那句话的下沿，不挡字）
+  d.textPt = snip => page.evaluate(snip => {
+    const sh = document.querySelector('#detail'), w = document.createTreeWalker(sh, NodeFilter.SHOW_TEXT); let n;
+    while ((n = w.nextNode())) { const i = n.data.indexOf(snip); if (i >= 0) { const r = document.createRange(); r.setStart(n, i); r.setEnd(n, i + snip.length); const b = [...r.getClientRects()].find(q => q.width > 2) || r.getClientRects()[0]; return [b.x + Math.min(b.width, 200) / 2, b.bottom + 4]; } }
+    return null;
+  }, snip);
+  d.pointAt = async (snip, ms = 800) => {
+    const p = await d.textPt(snip); if (!p) throw new Error('卡片里找不到这句话：' + snip);
+    if (p[1] < 70 || p[1] > DH - 50) throw new Error('这句话不在屏幕上：' + snip);
+    await d.glide(p[0], p[1], ms);
+  };
+  d.expectSel = async hash => { const h = await page.evaluate(() => location.hash); if (h !== '#' + hash) throw new Error(`应该选中 ${hash}，现在是 ${h}`); };
+  d.type = async (text, gap = 230) => { for (const ch of text) { await page.keyboard.insertText(ch); await sleep(gap); } };
+  return d;
+}
+
 /* ---------- 分段：每段等上一段的旁白念完（加 pad）再开始 ---------- */
 export const VOLEAD = 0.15;   // 字幕先出来一点，旁白跟上
 export function makeTimeline({ shot, vo, still, stillDir, page }) {
@@ -254,12 +369,18 @@ export const show = c => {
   return s;
 };
 export const ts = s => { const h = Math.floor(s / 3600), m = Math.floor(s / 60) % 60, x = (s % 60).toFixed(2).padStart(5, '0'); return `${h}:${String(m).padStart(2, '0')}:${x}`; };
-// introId 那一段的字幕用白字、放在下方（盖在游戏图片上）；其余在上方
-export function writeSubs({ marks, shot, vo, voiceDir, total, outDir, introId }) {
-  const ass = [`[Script Info]`, `ScriptType: v4.00+`, `PlayResX: 1080`, `PlayResY: 1920`, `WrapStyle: 2`, ``, `[V4+ Styles]`,
+// 竖版：introId 那一段的字幕用白字、放在下方（盖在游戏图片上）；其余在上方。
+// 横版（landscape: true，1920×1080，样式同兰陵王横版）：都在画面下方正中，白字半透明深色底；开头那段白字描边
+export function writeSubs({ marks, shot, vo, voiceDir, total, outDir, introId, landscape = false }) {
+  const ass = [`[Script Info]`, `ScriptType: v4.00+`, `PlayResX: ${landscape ? 1920 : 1080}`, `PlayResY: ${landscape ? 1080 : 1920}`, `WrapStyle: 2`, ``, `[V4+ Styles]`,
     `Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding`,
-    `Style: Sub,Microsoft YaHei,54,&H00312A1B,&H00312A1B,&H00DCE9EF,&H00DCE9EF,1,0,0,0,100,100,1,0,1,0,0,5,30,30,0,134`,
-    `Style: Intro,Microsoft YaHei,56,&H00FFFFFF,&H00FFFFFF,&H00160F0A,&H00160F0A,1,0,0,0,100,100,1,0,1,3,0,5,30,30,0,134`,
+    ...(landscape ? [
+      `Style: Sub,Microsoft YaHei,50,&H00FFFFFF,&H00FFFFFF,&H40312A1B,&H40312A1B,1,0,0,0,100,100,2,0,3,14,0,5,30,30,0,134`,
+      `Style: Intro,Microsoft YaHei,54,&H00FFFFFF,&H00FFFFFF,&H00160F0A,&H00160F0A,1,0,0,0,100,100,2,0,1,3,0,5,30,30,0,134`,
+    ] : [
+      `Style: Sub,Microsoft YaHei,54,&H00312A1B,&H00312A1B,&H00DCE9EF,&H00DCE9EF,1,0,0,0,100,100,1,0,1,0,0,5,30,30,0,134`,
+      `Style: Intro,Microsoft YaHei,56,&H00FFFFFF,&H00FFFFFF,&H00160F0A,&H00160F0A,1,0,0,0,100,100,1,0,1,3,0,5,30,30,0,134`,
+    ]),
     ``, `[Events]`, `Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text`];
   const subLog = [];
   marks.forEach((m, i) => {
@@ -280,12 +401,27 @@ export function writeSubs({ marks, shot, vo, voiceDir, total, outDir, introId })
     cs.forEach((c, j) => {
       const a = m.at + (j ? VOLEAD + starts[j] : 0), b = j + 1 < cs.length ? m.at + VOLEAD + starts[j + 1] : Math.min(next, m.at + VOLEAD + dur + 0.6);
       const intro = m.id === introId;
-      ass.push(`Dialogue: 0,${ts(a)},${ts(b)},${intro ? 'Intro' : 'Sub'},,0,0,0,,{\\pos(540,${intro ? 1760 : 212})\\fad(120,80)}${show(c)}`);
+      const pos = landscape ? '960,1000' : `540,${intro ? 1760 : 212}`;
+      ass.push(`Dialogue: 0,${ts(a)},${ts(b)},${intro ? 'Intro' : 'Sub'},,0,0,0,,{\\pos(${pos})\\fad(120,80)}${show(c)}`);
       subLog.push(`${ts(a)} → ${ts(b)}  ${show(c)}`);
     });
   });
   fs.writeFileSync(path.join(outDir, 'subs.ass'), ass.join('\n'));
   fs.writeFileSync(path.join(outDir, 'subs.txt'), subLog.join('\n'));
+}
+
+/* ---------- 检查视频：整段解码一遍，返回出错的行数（0 = 完好） ---------- */
+// 2026-11-26 发现：在这台电脑的 E 盘上用 ffmpeg 慢速编码直接写成片，偶尔会写进一段全零（几百 KB），画面开头花屏；
+// 同样的命令写到 C 盘就完好，从 C 盘复制到 E 盘也完好。所以横版脚本先在系统临时目录里生成，复制过来后用这里检查。
+export function checkVideo(file) {
+  const r = spawnSync('ffmpeg', ['-v', 'error', '-i', file, '-f', 'null', '-'], { encoding: 'utf8' });
+  return r.stderr.split('\n').filter(l => l.trim()).length;
+}
+// 把临时目录里做好的视频复制到 dest，复制后检查；坏了就再复制，最多三次
+export function copyChecked(src, dest) {
+  if (checkVideo(src)) throw new Error('临时目录里的视频就是坏的：' + src);
+  for (let i = 0; i < 3; i++) { fs.copyFileSync(src, dest); if (!checkVideo(dest)) return; console.log('复制后检查不过，重试：' + dest); }
+  throw new Error('复制三次都检查不过：' + dest);
 }
 
 /* ---------- 片头封面：第一帧就是封面（不从黑屏淡入），停 cover 秒后淡入正片；声音整体往后挪 ---------- */
