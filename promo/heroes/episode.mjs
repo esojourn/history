@@ -1,5 +1,5 @@
 // 《峡谷之外》各集共用的部分：对照定稿检查旁白、本地静态服务器、手机画幅浏览器与手势、分段计时、录屏转视频、字幕。
-// 从 lanling.mjs 抽出来，韩信一集（hanxin.mjs）起用这里的；lanling.mjs 还是自带一份同样的代码，没有改动，重出兰陵王照旧。
+// 从 lanling.mjs 抽出来，韩信一集（hanxin.mjs）、兰陵王横版（lanling-h.mjs）用这里的；lanling.mjs 还是自带一份同样的代码，没有改动，重出兰陵王照旧。
 import { chromium } from 'playwright-core';
 import http from 'node:http';
 import fs from 'node:fs';
@@ -183,17 +183,17 @@ export function fracBefore(say, snip) {
 }
 
 /* ---------- 录像（CDP screencast，按时间戳补成 30fps） ---------- */
-export async function startScreencast(cdp) {
+export async function startScreencast(cdp, w = VW * DSF, h = VH * DSF) {
   const frames = [];
   cdp.on('Page.screencastFrame', f => {
     frames.push({ t: f.metadata.timestamp, b: f.data });
     cdp.send('Page.screencastFrameAck', { sessionId: f.sessionId }).catch(() => {});
   });
-  await cdp.send('Page.startScreencast', { format: 'jpeg', quality: 92, maxWidth: VW * DSF, maxHeight: VH * DSF, everyNthFrame: 1 });
+  await cdp.send('Page.startScreencast', { format: 'jpeg', quality: 92, maxWidth: w, maxHeight: h, everyNthFrame: 1 });
   for (let i = 0; i < 100 && !frames.length; i++) await sleep(20);
   return frames;
 }
-export function framesToVideo(frames, total, outDir, file) {
+export function framesToVideo(frames, total, outDir, file, w = VW * DSF, h = VH * DSF) {
   const fdir = path.join(outDir, 'frames');
   fs.rmSync(fdir, { recursive: true, force: true }); fs.mkdirSync(fdir, { recursive: true });
   const endT = frames[0].t + total, list = [];
@@ -206,16 +206,16 @@ export function framesToVideo(frames, total, outDir, file) {
   list.push(`file '${String(frames.length - 1).padStart(5, '0')}.jpg'`);
   fs.writeFileSync(path.join(fdir, 'list.txt'), list.join('\n'));
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', path.join(fdir, 'list.txt'),
-    '-t', total.toFixed(3), '-vf', `fps=30,scale=${VW * DSF}:${VH * DSF}:flags=lanczos,format=yuv420p`, '-c:v', 'libx264', '-preset', 'slow', '-crf', '14', path.join(outDir, file)]);
+    '-t', total.toFixed(3), '-vf', `fps=30,scale=${w}:${h}:flags=lanczos,format=yuv420p`, '-c:v', 'libx264', '-preset', 'slow', '-crf', '14', path.join(outDir, file)]);
   fs.rmSync(fdir, { recursive: true, force: true });
 }
 
-/* ---------- 把几张 HTML 底图画成 1080×1920 的 PNG ---------- */
-export async function renderPages(pages, outDir, opaque = []) {
+/* ---------- 把几张 HTML 底图画成 PNG（默认 1080×1920；横版传 1920, 1080） ---------- */
+export async function renderPages(pages, outDir, opaque = [], w = 1080, h = 1920) {
   const b2 = await chromium.launch({ executablePath: CHROME, headless: true });
-  const p2 = await b2.newPage({ viewport: { width: 1080, height: 1920 } });
+  const p2 = await b2.newPage({ viewport: { width: w, height: h } });
   for (const [name, html] of Object.entries(pages)) {
-    await p2.setContent(`<!doctype html><meta charset="utf-8"><style>html,body{margin:0;width:1080px;height:1920px;overflow:hidden}</style>${html}`);
+    await p2.setContent(`<!doctype html><meta charset="utf-8"><style>html,body{margin:0;width:${w}px;height:${h}px;overflow:hidden}</style>${html}`);
     await p2.waitForTimeout(300);
     await p2.screenshot({ path: path.join(outDir, name + '.png'), omitBackground: !opaque.includes(name) });
   }
@@ -225,7 +225,7 @@ export const dataUrl = f => `data:image/${f.endsWith('.jpg') ? 'jpeg' : 'png'};b
 
 /* ---------- 字幕：按标点断成短句，一次显示一句；时间按字数分摊，再对齐到配音里的停顿 ---------- */
 const MAXLEN = 18;
-function chunksOf(say) {
+export function chunksOf(say) {
   // 引号里的一整句原话当成一块，不从中间断开
   const pieces = say.match(/“[^”]*”[，。？！：；]?|[^，。？！：；“]+[，。？！：；]?/g);
   const out = []; let cur = '';
@@ -237,14 +237,14 @@ function chunksOf(say) {
   if (cur) out.push(cur);
   return out;
 }
-const weight = s => [...s].reduce((w, ch) => w + (/\d/.test(ch) ? 1.6 : '，；：'.includes(ch) ? 1.3 : '。？！'.includes(ch) ? 2.2 : ch === '、' ? 0.5 : /[“”‘’《》\s]/.test(ch) ? 0 : 1), 0);
-function silences(file) {
+export const weight = s => [...s].reduce((w, ch) => w + (/\d/.test(ch) ? 1.6 : '，；：'.includes(ch) ? 1.3 : '。？！'.includes(ch) ? 2.2 : ch === '、' ? 0.5 : /[“”‘’《》\s]/.test(ch) ? 0 : 1), 0);
+export function silences(file) {
   const r = spawnSync('ffmpeg', ['-hide_banner', '-i', file, '-af', 'silencedetect=noise=-35dB:d=0.1', '-f', 'null', '-'], { encoding: 'utf8' });
   const s = [...r.stderr.matchAll(/silence_start: ([\d.]+)/g)].map(m => +m[1]), e = [...r.stderr.matchAll(/silence_end: ([\d.]+)/g)].map(m => +m[1]);
   return s.map((a, i) => [a, e[i] ?? a + 0.2]);
 }
 // 太长的一句（没有逗号可断）从靠中间的顿号处折成两行
-const show = c => {
+export const show = c => {
   let s = c.replace(/[，。；]$/, '').replace(/[，。]([”’])$/, '$1');
   if (s.length > MAXLEN) {
     const cuts = [...s.matchAll(/、/g)].map(m => m.index + 1), mid = s.length / 2;
@@ -253,7 +253,7 @@ const show = c => {
   }
   return s;
 };
-const ts = s => { const h = Math.floor(s / 3600), m = Math.floor(s / 60) % 60, x = (s % 60).toFixed(2).padStart(5, '0'); return `${h}:${String(m).padStart(2, '0')}:${x}`; };
+export const ts = s => { const h = Math.floor(s / 3600), m = Math.floor(s / 60) % 60, x = (s % 60).toFixed(2).padStart(5, '0'); return `${h}:${String(m).padStart(2, '0')}:${x}`; };
 // introId 那一段的字幕用白字、放在下方（盖在游戏图片上）；其余在上方
 export function writeSubs({ marks, shot, vo, voiceDir, total, outDir, introId }) {
   const ass = [`[Script Info]`, `ScriptType: v4.00+`, `PlayResX: 1080`, `PlayResY: 1920`, `WrapStyle: 2`, ``, `[V4+ Styles]`,
