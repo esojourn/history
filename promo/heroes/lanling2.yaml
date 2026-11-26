@@ -2,7 +2,7 @@
 # （定稿，不要在这里改字；lanling2.mjs 开头会对照 scripts.md 检查，对不上就不录）。一行一段，没有拆。
 # 第一屏标题、结尾小字“只显示，不念”，不在这里。
 # 字幕由 lanling2.mjs 按标点自动断行。pad 是这一段念完后多停的秒数。改了要重新配音：
-#   python promo/tts.py --engine volc --speed 1.25 --yaml heroes/lanling2.yaml --out out/heroes/lanling2/voice
+#   python promo/tts.py --engine volc --speed 1.25 --yaml heroes/lanling2.yaml --out out/heroes/004-lanling2/voice
 shots:
   - id: n01
     pad: 0.25

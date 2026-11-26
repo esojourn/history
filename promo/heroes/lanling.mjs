@@ -1,8 +1,8 @@
 // 《峡谷之外》兰陵王一集（竖屏 1080×1920）：开头游戏图片 → 网站手机画幅录屏 → 一处局部地图 → 结尾卡。
 // 用法：node promo/heroes/lanling.mjs [--still] [--music <音乐文件>]
 //   先做三件事：仓库根目录 npm run build；按 lanling.yaml 开头的命令配音；node promo/heroes/map.mjs lanling-luoyang 画地图。
-//   --still：不录像，每段结束截一张图到 promo/out/heroes/lanling/stills/，用来检查位置。
-// 成片：promo/out/heroes/lanling/lanling.mp4（不进仓库）。第一帧就是封面（官方游戏图片 + 片名），封面图另存为 cover.png，可在平台上传封面时用。
+//   --still：不录像，每段结束截一张图到 promo/out/heroes/002-lanling/stills/，用来检查位置。
+// 成片：promo/out/heroes/002-lanling/lanling.mp4（不进仓库）。第一帧就是封面（官方游戏图片 + 片名），封面图另存为 cover.png，可在平台上传封面时用。
 // 做法沿用 promo/mobile-demo.mjs：本机 Chrome 以 390×844 的手机画幅打开 dist/，一镜到底录下来，每段的长短跟着旁白走；
 // 游戏图片、地图、结尾卡是合成时盖在录屏上面的。旁白文字是定稿，这里只对照检查，不改。
 import { chromium } from 'playwright-core';
@@ -17,7 +17,7 @@ import YAML from 'yaml';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const PROMO = path.resolve(HERE, '..');
 const DIST = path.resolve(PROMO, '../dist');
-const OUT = path.join(PROMO, 'out', 'heroes', 'lanling');
+const OUT = path.join(PROMO, 'out', 'heroes', '002-lanling');
 const VOICE = path.join(OUT, 'voice');
 const IMG = path.join(PROMO, 'out', 'heroes', 'img', '153-bigskin-1.jpg');       // 官方图片（默认造型，横版），不进仓库
 const IMG_V = path.join(PROMO, 'out', 'heroes', 'img', '153-mobileskin-1.jpg');   // 官方图片（默认造型，竖版），封面用

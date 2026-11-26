@@ -2,7 +2,7 @@
 # （定稿，不要在这里改字；hanxin.mjs 开头会对照 scripts.md 检查，对不上就不录）。
 # 第 5 行（配地图的那一行）在句号处拆成两段配音，只是为了画面好对时间，字没有动。
 # 字幕由 hanxin.mjs 按标点自动断行。pad 是这一段念完后多停的秒数。改了要重新配音：
-#   python promo/tts.py --engine volc --speed 1.25 --yaml heroes/hanxin.yaml --out out/heroes/hanxin/voice
+#   python promo/tts.py --engine volc --speed 1.25 --yaml heroes/hanxin.yaml --out out/heroes/001-hanxin/voice
 shots:
   - id: n01
     pad: 0.25

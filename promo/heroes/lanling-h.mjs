@@ -1,9 +1,9 @@
 // 《峡谷之外》兰陵王一集·横版（1920×1080）：内容、旁白与竖版（lanling.mjs）相同，网站画面换成桌面版。
 // 用法：node promo/heroes/lanling-h.mjs [--still] [--music <音乐文件>]
-//   先做三件事：仓库根目录 npm run build；配音沿用竖版的（promo/out/heroes/lanling/voice/，见 lanling.yaml 开头）；
+//   先做三件事：仓库根目录 npm run build；配音沿用竖版的（promo/out/heroes/002-lanling/voice/，见 lanling.yaml 开头）；
 //   node promo/heroes/map.mjs lanling-luoyang 画地图。
-//   --still：不录像，每段结束截一张图到 promo/out/heroes/lanling/h/stills/，用来检查位置。
-// 成片：promo/out/heroes/lanling/lanling-h.mp4（不进仓库）；中间文件都在 promo/out/heroes/lanling/h/，不碰竖版的文件。
+//   --still：不录像，每段结束截一张图到 promo/out/heroes/002-lanling/h/stills/，用来检查位置。
+// 成片：promo/out/heroes/002-lanling/lanling-h.mp4（不进仓库）；中间文件都在 promo/out/heroes/002-lanling/h/，不碰竖版的文件。
 // 做法沿用 promo/record.mjs：本机 Chrome 以 1920×1080、字号 1.3 档打开 dist/ 的桌面版，画出假鼠标，一镜到底录下来，
 // 每段的长短跟着旁白走；游戏图片、地图、结尾卡是合成时盖在录屏上面的。旁白文字是定稿，这里只对照检查，不改。
 import QRCode from 'qrcode';
@@ -17,7 +17,7 @@ import {
 } from './episode.mjs';
 
 const W = 1920, H = 1080, FZ = '1.3';   // 视频里字要大一点：用网站自带的字号档 1.3（同功能介绍片）
-const SRC = path.join(PROMO, 'out', 'heroes', 'lanling');
+const SRC = path.join(PROMO, 'out', 'heroes', '002-lanling');
 const OUT = path.join(SRC, 'h');
 const VOICE = path.join(SRC, 'voice');   // 竖版做好的配音，直接复用
 const IMG = path.join(PROMO, 'out', 'heroes', 'img', '153-bigskin-1.jpg');   // 官方图片（默认造型，横版 1920×882），不进仓库

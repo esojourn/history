@@ -2,8 +2,8 @@
 //   第一屏标题画面 → 开头游戏图片 → 网站手机画幅录屏（人物卡、关系图）+ 史书原文的文字卡 → 结尾卡。不配地图。
 // 用法：node promo/heroes/lanling2.mjs [--still] [--music <音乐文件>]
 //   先做两件事：仓库根目录 npm run build；按 lanling2.yaml 开头的命令配音。
-//   --still：不录像，每段结束截一张图到 promo/out/heroes/lanling2/stills/，用来检查位置；同时画出各张底图和文字卡。
-// 成片：promo/out/heroes/lanling2/lanling2.mp4（不进仓库）。第一屏另存为 cover.png，可在平台上传封面时用。
+//   --still：不录像，每段结束截一张图到 promo/out/heroes/004-lanling2/stills/，用来检查位置；同时画出各张底图和文字卡。
+// 成片：promo/out/heroes/004-lanling2/lanling2.mp4（不进仓库）。第一屏另存为 cover.png，可在平台上传封面时用。
 // 通用的部分在 episode.mjs。旁白文字是定稿，这里只对照检查，不改。
 // 网站条目里没有分瓜果、阳士深这些事（条目不改），所以画面上用文字卡显示《北齐书》本传的原文，
 // 引文与 scripts.md 第四篇核实记录里的原文逐字一致（开录前自动对照）。
@@ -17,7 +17,7 @@ import {
   makeTimeline, fracBefore, startScreencast, framesToVideo, renderPages, dataUrl, writeSubs, prependCover, copyChecked,
 } from './episode.mjs';
 
-const OUT = path.join(PROMO, 'out', 'heroes', 'lanling2');
+const OUT = path.join(PROMO, 'out', 'heroes', '004-lanling2');
 const WORK = path.join(os.tmpdir(), 'xiagu-lanling2');   // 录屏、开头、正片、成片先写在这里（E 盘直接写偶尔写坏，见 episode.mjs checkVideo）
 const VOICE = path.join(OUT, 'voice');
 const IMG = path.join(PROMO, 'out', 'heroes', 'img', '153-bigskin-1.jpg');       // 官方图片（默认造型，横版），不进仓库

@@ -2,8 +2,8 @@
 //   片头封面 → 开头游戏图片 → 网站手机画幅录屏 → 一处局部地图（井陉、垓下）→ 结尾卡。
 // 用法：node promo/heroes/hanxin.mjs [--still] [--music <音乐文件>]
 //   先做三件事：仓库根目录 npm run build；按 hanxin.yaml 开头的命令配音；node promo/heroes/map.mjs hanxin-zhan 画地图。
-//   --still：不录像，每段结束截一张图到 promo/out/heroes/hanxin/stills/，用来检查位置。
-// 成片：promo/out/heroes/hanxin/hanxin.mp4（不进仓库）。封面图另存为 cover.png，可在平台上传封面时用。
+//   --still：不录像，每段结束截一张图到 promo/out/heroes/001-hanxin/stills/，用来检查位置。
+// 成片：promo/out/heroes/001-hanxin/hanxin.mp4（不进仓库）。封面图另存为 cover.png，可在平台上传封面时用。
 // 做法同兰陵王一集（lanling.mjs），通用的部分在 episode.mjs。旁白文字是定稿，这里只对照检查，不改。
 import fs from 'node:fs';
 import path from 'node:path';
@@ -14,7 +14,7 @@ import {
   makeTimeline, fracBefore, startScreencast, framesToVideo, renderPages, dataUrl, writeSubs, prependCover,
 } from './episode.mjs';
 
-const OUT = path.join(PROMO, 'out', 'heroes', 'hanxin');
+const OUT = path.join(PROMO, 'out', 'heroes', '001-hanxin');
 const VOICE = path.join(OUT, 'voice');
 const IMG = path.join(PROMO, 'out', 'heroes', 'img', '150-bigskin-1.jpg');       // 官方图片（默认造型，横版），不进仓库
 const IMG_V = path.join(PROMO, 'out', 'heroes', 'img', '150-mobileskin-1.jpg');   // 官方图片（默认造型，竖版），封面用

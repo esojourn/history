@@ -1,7 +1,7 @@
 # 《峡谷之外》兰陵王一集的旁白。say 与 scripts.md 第二篇“旁白”一栏逐字一致（定稿，不要在这里改字；
 # lanling.mjs 开头会对照 scripts.md 检查，对不上就不录）。第 4 行拆成两段，是为了知道地图该放多久。
 # 字幕由 lanling.mjs 按标点自动断行。pad 是这一段念完后多停的秒数。改了要重新配音：
-#   python promo/tts.py --engine volc --speed 1.25 --yaml heroes/lanling.yaml --out out/heroes/lanling/voice
+#   python promo/tts.py --engine volc --speed 1.25 --yaml heroes/lanling.yaml --out out/heroes/002-lanling/voice
 shots:
   - id: n01
     pad: 0.25

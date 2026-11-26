@@ -1,8 +1,8 @@
 // 《峡谷之外》兰陵王第二篇·横版（1920×1080）：内容、旁白、配音、史书原文文字卡与竖版（lanling2.mjs）相同，网站画面换成桌面版。
 // 用法：node promo/heroes/lanling2-h.mjs [--still] [--music <音乐文件>]
-//   先做两件事：仓库根目录 npm run build；配音沿用竖版的（promo/out/heroes/lanling2/voice/，见 lanling2.yaml 开头）。
-//   --still：不录像，每段结束截一张图到 promo/out/heroes/lanling2/h/stills/，同时画出第一屏、文字卡、结尾卡，用来检查位置。
-// 成片：promo/out/heroes/lanling2/lanling2-h.mp4（不进仓库）；中间文件都在 promo/out/heroes/lanling2/h/，不碰竖版的文件。
+//   先做两件事：仓库根目录 npm run build；配音沿用竖版的（promo/out/heroes/004-lanling2/voice/，见 lanling2.yaml 开头）。
+//   --still：不录像，每段结束截一张图到 promo/out/heroes/004-lanling2/h/stills/，同时画出第一屏、文字卡、结尾卡，用来检查位置。
+// 成片：promo/out/heroes/004-lanling2/lanling2-h.mp4（不进仓库）；中间文件都在 promo/out/heroes/004-lanling2/h/，不碰竖版的文件。
 // 视频文件先在系统临时目录里生成，最后复制过来并整段解码检查（E 盘直接写会偶尔写坏，见 episode.mjs 的 checkVideo）。
 // 做法同韩信横版（hanxin-h.mjs）：桌面版网站、假鼠标、一镜到底，每段的长短跟着旁白走；游戏图片、文字卡、结尾卡是合成时盖上去的。
 // 文字卡盖在左边的时间轴上，右边的人物卡照常露出。旁白、原文都是定稿，这里只对照检查，不改。
@@ -16,7 +16,7 @@ import {
   makeTimeline, fracBefore, startScreencast, framesToVideo, renderPages, dataUrl, writeSubs, prependCover, copyChecked,
 } from './episode.mjs';
 
-const SRC = path.join(PROMO, 'out', 'heroes', 'lanling2');
+const SRC = path.join(PROMO, 'out', 'heroes', '004-lanling2');
 const OUT = path.join(SRC, 'h');
 const VOICE = path.join(SRC, 'voice');   // 竖版做好的配音，直接复用
 const IMG = path.join(PROMO, 'out', 'heroes', 'img', '153-bigskin-1.jpg');   // 官方图片（默认造型，横版 1920×882），不进仓库

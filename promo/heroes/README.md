@@ -25,6 +25,7 @@
 | 史书原文上屏 | 旁白引用或讲到史书记载时，在画面上用文字卡打出史书原文（项目方看过兰陵王第二篇后说“这样很好，以后可以常用”）。做法见第三节 | 2026-11-26 |
 | 第一屏标题 | 每集第一屏都是标题画面：最上面中号字系列标题“峡谷之外的真实历史”，下面用明显的大字写这一集的标题，人物名用小字（背后的游戏图片已表明是谁）。做法见第三节 | 2026-11-26 |
 | 每期一份 txt | 每一期视频都输出一个 txt 文件，和成片放在一起，发布时直接复制。格式由项目方在 `lanling.txt` 上改定：标题、网站网址、旁白、史料出处、查过的原文书目，不放画面说明、制作说明和逐条对照表。格式见第二节第 6 步 | 2026-11-26 |
+| 成片目录编号 | `promo/out/heroes/` 下每一期的目录前加三位编号，方便查找，例 `001-hanxin`。编号等于篇序，做法见第六节开头 | 2026-11-26 |
 
 ## 二、制作流程
 
@@ -33,7 +34,7 @@
 3. **素材**：按定稿收集游戏图片或视频、局部地图，出处记入本页。
 4. **录屏**：按定稿录网站界面（手机画幅）。
 5. **配音与合成**：沿用 `promo/` 现有的配音、合成脚本。
-6. **导出讲稿与核实记录**：成片做好后运行 `node promo/heroes/export-txt.mjs`（只导某一期：`node promo/heroes/export-txt.mjs lanling2`），在成片旁边生成 `promo/out/heroes/<期>/<期>.txt`。内容从 [scripts.md](scripts.md) 里那一篇原样取出，格式是项目方 2026-11-26 改定的，每块之间空一行：
+6. **导出讲稿与核实记录**：成片做好后运行 `node promo/heroes/export-txt.mjs`（只导某一期：`node promo/heroes/export-txt.mjs lanling2`），在成片旁边生成 `promo/out/heroes/<编号>-<期>/<期>.txt`（例：`002-lanling/lanling.txt`）。内容从 [scripts.md](scripts.md) 里那一篇原样取出，格式是项目方 2026-11-26 改定的，每块之间空一行：
    ```
    《峡谷之外的真实历史》二：兰陵王 - 一句“家事”，一杯毒酒
    https://lishi.alz-ai.cn/zh/#person/gao-changgong
@@ -103,15 +104,15 @@
 
 | 成片 | 用了哪张 | 用在哪里 | 怎么用的 |
 |---|---|---|---|
-| 兰陵王 | `153-mobileskin-1.jpg`（默认造型，竖版） | 片头封面（第一帧，停 1 秒后淡入正片） | 铺满画面中部，同一造型的横版图模糊垫底，下方大字“兰陵王”和副标题；右下角标注“图片来自《王者荣耀》官方”。封面另存为 `promo/out/heroes/lanling/cover.png`，平台上传封面时可用 |
+| 兰陵王 | `153-mobileskin-1.jpg`（默认造型，竖版） | 片头封面（第一帧，停 1 秒后淡入正片） | 铺满画面中部，同一造型的横版图模糊垫底，下方大字“兰陵王”和副标题；右下角标注“图片来自《王者荣耀》官方”。封面另存为 `promo/out/heroes/002-lanling/cover.png`，平台上传封面时可用 |
 | 兰陵王 | `153-bigskin-1.jpg`（默认造型，横版） | 封面之后约 4 秒 | 裁出人物所在的一块放在画面中部，缓慢推近；同一张图模糊、压暗后垫在上下；画面左下角标注“图片来自《王者荣耀》官方” |
-| 兰陵王·横版 | `153-bigskin-1.jpg`（默认造型，横版） | 片头封面，以及封面之后约 4 秒 | 放大到画面等高、铺满，人物在偏右，左边压暗放片名（封面是大字“兰陵王”和副标题；之后那 4 秒同一位置只留系列名和副标题，图片缓慢推近）；右下角标注“图片来自《王者荣耀》官方”。封面另存为 `promo/out/heroes/lanling/h/cover.png` |
-| 韩信 | `150-mobileskin-1.jpg`（默认造型，竖版） | 片头封面（第一帧，停 1 秒后淡入正片） | 同兰陵王：竖版图铺满画面中部，横版图模糊垫底，下方大字“悲情韩信”和副标题“追他回来的人，送他去死”；右下角标注“图片来自《王者荣耀》官方”。封面另存为 `promo/out/heroes/hanxin/cover.png` |
+| 兰陵王·横版 | `153-bigskin-1.jpg`（默认造型，横版） | 片头封面，以及封面之后约 4 秒 | 放大到画面等高、铺满，人物在偏右，左边压暗放片名（封面是大字“兰陵王”和副标题；之后那 4 秒同一位置只留系列名和副标题，图片缓慢推近）；右下角标注“图片来自《王者荣耀》官方”。封面另存为 `promo/out/heroes/002-lanling/h/cover.png` |
+| 韩信 | `150-mobileskin-1.jpg`（默认造型，竖版） | 片头封面（第一帧，停 1 秒后淡入正片） | 同兰陵王：竖版图铺满画面中部，横版图模糊垫底，下方大字“悲情韩信”和副标题“追他回来的人，送他去死”；右下角标注“图片来自《王者荣耀》官方”。封面另存为 `promo/out/heroes/001-hanxin/cover.png` |
 | 韩信 | `150-bigskin-1.jpg`（默认造型，横版） | 封面之后约 7 秒（第一句旁白念完） | 同兰陵王：裁出人物所在的一块缓慢推近，模糊的同一张图垫底；左下角标注“图片来自《王者荣耀》官方” |
-| 韩信·横版 | `150-bigskin-1.jpg`（默认造型，横版） | 片头封面，以及封面之后约 7 秒 | 同兰陵王横版：放大到画面等高、铺满，人物的脸在偏右，左边压暗放片名（封面是大字“悲情韩信”和副标题“追他回来的人，送他去死”；之后那几秒同一位置只留系列名和副标题，图片朝脸缓慢推近）；右下角标注“图片来自《王者荣耀》官方”。封面另存为 `promo/out/heroes/hanxin/h/cover.png` |
+| 韩信·横版 | `150-bigskin-1.jpg`（默认造型，横版） | 片头封面，以及封面之后约 7 秒 | 同兰陵王横版：放大到画面等高、铺满，人物的脸在偏右，左边压暗放片名（封面是大字“悲情韩信”和副标题“追他回来的人，送他去死”；之后那几秒同一位置只留系列名和副标题，图片朝脸缓慢推近）；右下角标注“图片来自《王者荣耀》官方”。封面另存为 `promo/out/heroes/001-hanxin/h/cover.png` |
 
-| 兰陵王（第二篇） | `153-mobileskin-1.jpg`（默认造型，竖版）、`153-bigskin-1.jpg`（横版，模糊垫底） | 第一屏标题画面（成片第一帧，停约 1.6 秒后淡入正片） | 照第三节的新标题画面：竖版图居中，上下两头渐隐融进模糊底图（样张上沿那道硬边改柔和了）；系列标题“峡谷之外的真实历史”、大字“历史中的 / 阳光大男孩”（后一行金色）、小字“兰陵王”；右下角标注“图片来自《王者荣耀》官方”。另存为 `promo/out/heroes/lanling2/cover.png` |
-| 兰陵王（第二篇）·横版 | `153-bigskin-1.jpg`（默认造型，横版） | 第一屏，以及之后约 8 秒（第一句旁白念完） | 照样张 `title-h.png` 的版式：图片放大到画面等高，人物偏右，左边压暗放字。样张里大标题正好压在人物脸上，这里把图片往右挪了 100 像素（左边空出的一条是压暗的底色），脸露在标题右边。之后那几秒同一位置只留系列标题和一行集标题，图片朝脸缓慢推近；右下角标注“图片来自《王者荣耀》官方”。第一屏另存为 `promo/out/heroes/lanling2/h/cover.png` |
+| 兰陵王（第二篇） | `153-mobileskin-1.jpg`（默认造型，竖版）、`153-bigskin-1.jpg`（横版，模糊垫底） | 第一屏标题画面（成片第一帧，停约 1.6 秒后淡入正片） | 照第三节的新标题画面：竖版图居中，上下两头渐隐融进模糊底图（样张上沿那道硬边改柔和了）；系列标题“峡谷之外的真实历史”、大字“历史中的 / 阳光大男孩”（后一行金色）、小字“兰陵王”；右下角标注“图片来自《王者荣耀》官方”。另存为 `promo/out/heroes/004-lanling2/cover.png` |
+| 兰陵王（第二篇）·横版 | `153-bigskin-1.jpg`（默认造型，横版） | 第一屏，以及之后约 8 秒（第一句旁白念完） | 照样张 `title-h.png` 的版式：图片放大到画面等高，人物偏右，左边压暗放字。样张里大标题正好压在人物脸上，这里把图片往右挪了 100 像素（左边空出的一条是压暗的底色），脸露在标题右边。之后那几秒同一位置只留系列标题和一行集标题，图片朝脸缓慢推近；右下角标注“图片来自《王者荣耀》官方”。第一屏另存为 `promo/out/heroes/004-lanling2/h/cover.png` |
 | 兰陵王（第二篇） | `153-bigskin-1.jpg`（默认造型，横版） | 第一屏之后约 8 秒（第一句旁白念完） | 同第一篇：裁出人物所在的一块缓慢推近，模糊的同一张图垫底；上方系列标题和集标题，左下角标注“图片来自《王者荣耀》官方” |
 
 收集办法（其他人物照此办理）：
@@ -145,16 +146,16 @@
 
 ## 六、成片
 
-成片和中间文件都在 `promo/out/heroes/<人物>/`，不进仓库。
+成片和中间文件都在 `promo/out/heroes/<编号>-<期>/`，不进仓库。编号三位数，等于这一期在 [scripts.md](scripts.md) 里的篇序，和 txt 标题里的序号一致：`001-hanxin`（韩信第一篇）、`002-lanling`（兰陵王第一篇）、`003-waner`（上官婉儿，还没出片）、`004-lanling2`（兰陵王第二篇）。新增一期时按篇序接着编，同时改这一期录制脚本里的目录名和 `export-txt.mjs` 的 `EPISODES`。`img`、`maps`、`ne`、`title-sample`、`tmp` 是共用素材和临时文件，不编号。
 
 | 集 | 成片 | 时长 | 出片日期 | 状态 |
 |---|---|---|---|---|
-| 兰陵王 | `promo/out/heroes/lanling/lanling.mp4`（1080×1920） | 1 分 52 秒 | 2026-11-25 | 第二版：加片头封面，待项目方看片 |
-| 兰陵王·横版 | `promo/out/heroes/lanling/lanling-h.mp4`（1920×1080） | 1 分 53 秒 | 2026-11-26 | 初版，待项目方看片 |
-| 韩信（第一篇） | `promo/out/heroes/hanxin/hanxin.mp4`（1080×1920） | 1 分 55 秒 | 2026-11-25 | 初版，待项目方看片、听配音 |
-| 韩信（第一篇）·横版 | `promo/out/heroes/hanxin/hanxin-landscape.mp4`（1920×1080） | 1 分 55 秒 | 2026-11-26 | 初版，待项目方看片 |
-| 兰陵王（第二篇） | `promo/out/heroes/lanling2/lanling2.mp4`（1080×1920） | 1 分 44 秒 | 2026-11-26 | 项目方已看（2026-11-26），认可原文文字卡；同日改了换卡方式重出 |
-| 兰陵王（第二篇）·横版 | `promo/out/heroes/lanling2/lanling2-h.mp4`（1920×1080） | 1 分 44 秒 | 2026-11-26 | 初版，待项目方看片 |
+| 兰陵王 | `promo/out/heroes/002-lanling/lanling.mp4`（1080×1920） | 1 分 52 秒 | 2026-11-25 | 第二版：加片头封面，待项目方看片 |
+| 兰陵王·横版 | `promo/out/heroes/002-lanling/lanling-h.mp4`（1920×1080） | 1 分 53 秒 | 2026-11-26 | 初版，待项目方看片 |
+| 韩信（第一篇） | `promo/out/heroes/001-hanxin/hanxin.mp4`（1080×1920） | 1 分 55 秒 | 2026-11-25 | 初版，待项目方看片、听配音 |
+| 韩信（第一篇）·横版 | `promo/out/heroes/001-hanxin/hanxin-landscape.mp4`（1920×1080） | 1 分 55 秒 | 2026-11-26 | 初版，待项目方看片 |
+| 兰陵王（第二篇） | `promo/out/heroes/004-lanling2/lanling2.mp4`（1080×1920） | 1 分 44 秒 | 2026-11-26 | 项目方已看（2026-11-26），认可原文文字卡；同日改了换卡方式重出 |
+| 兰陵王（第二篇）·横版 | `promo/out/heroes/004-lanling2/lanling2-h.mp4`（1920×1080） | 1 分 44 秒 | 2026-11-26 | 初版，待项目方看片 |
 
 ### 兰陵王一集是怎么做的
 
@@ -174,9 +175,9 @@
 
 ```bash
 npm run build                                   # 仓库根目录：先生成最新的 dist/
-python promo/tts.py --engine volc --speed 1.25 --yaml heroes/lanling.yaml --out out/heroes/lanling/voice   # 配音（改了旁白才要重跑）
+python promo/tts.py --engine volc --speed 1.25 --yaml heroes/lanling.yaml --out out/heroes/002-lanling/voice   # 配音（改了旁白才要重跑）
 node promo/heroes/map.mjs lanling-luoyang       # 地图 → promo/out/heroes/maps/
-node promo/heroes/lanling.mjs --still           # 只截每段结尾的图到 promo/out/heroes/lanling/stills/，检查位置
+node promo/heroes/lanling.mjs --still           # 只截每段结尾的图到 promo/out/heroes/002-lanling/stills/，检查位置
 node promo/heroes/lanling.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成
 ```
 
@@ -184,7 +185,7 @@ node promo/heroes/lanling.mjs --music promo/out/music-dl/C-lexin-upbeat-document
 
 ### 兰陵王·横版是怎么做的
 
-- 脚本 [lanling-h.mjs](lanling-h.mjs)。内容和竖版完全一样：旁白同一份 [lanling.yaml](lanling.yaml)（开录前对照定稿），配音直接用竖版做好的（`promo/out/heroes/lanling/voice/`，没有重配），音乐、字幕断句、片头封面的做法都同竖版。中间文件放在 `promo/out/heroes/lanling/h/`，竖版的 `lanling.mp4` 和它的中间文件没有动。
+- 脚本 [lanling-h.mjs](lanling-h.mjs)。内容和竖版完全一样：旁白同一份 [lanling.yaml](lanling.yaml)（开录前对照定稿），配音直接用竖版做好的（`promo/out/heroes/002-lanling/voice/`，没有重配），音乐、字幕断句、片头封面的做法都同竖版。中间文件放在 `promo/out/heroes/002-lanling/h/`，竖版的 `lanling.mp4` 和它的中间文件没有动。
 - 网站画面是桌面版（1920×1080、字号 1.3 档，同功能介绍片），用假鼠标操作：点搜索框输入“兰陵王”→ 时间轴飞到南北朝，右边出他的人物卡，鼠标指着“相貌柔美而性情勇猛”“唐代的《教坊记》”→ 地图（只在“公元 564 年冬，北周大军围困洛阳”一句，盖住左边的时间轴，右边人物卡照常露出），同时在卡片里点“邙山之战”→ 事件卡滚到五百骑兵、摘头盔、《兰陵王入阵曲》→ 点“返回 兰陵王”，在时间轴上点“北齐后主”，卡片滚到“先后杀害斛律光、兰陵王……”→ 鼠标移到后主和兰陵王之间“赐毒酒”那条连线上，滚轮放大 → 点回兰陵王，卡片滚到“家事”和自污那一段 → 鼠标移到他生卒条的末端，顶上显示“公元 573 年”，再放大 → 在时间轴上点事件“北周灭北齐”→ 结尾卡。
 - 和手机版的不同：桌面版没有单独的“关系图”页面，关系是时间轴上的连线，人物卡固定在右边，所以“看关系图”“放大到那条线”都在时间轴上用滚轮做；卡片一屏放得下的内容多，就用鼠标指着旁白说到的那一句。
 - 地图用的是竖版那张 `lanling-luoyang`（近正方形），没有另画横幅的；“示意图”字样在图上。
@@ -198,8 +199,8 @@ node promo/heroes/lanling.mjs --music promo/out/music-dl/C-lexin-upbeat-document
 ```bash
 npm run build                                   # 仓库根目录：先生成最新的 dist/
 node promo/heroes/map.mjs lanling-luoyang       # 地图（已有就不用）
-node promo/heroes/lanling-h.mjs --still         # 只截每段结尾的图到 promo/out/heroes/lanling/h/stills/，检查位置
-node promo/heroes/lanling-h.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成 → promo/out/heroes/lanling/lanling-h.mp4
+node promo/heroes/lanling-h.mjs --still         # 只截每段结尾的图到 promo/out/heroes/002-lanling/h/stills/，检查位置
+node promo/heroes/lanling-h.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成 → promo/out/heroes/002-lanling/lanling-h.mp4
 ```
 
 [episode.mjs](episode.mjs) 为此加了可选的画幅参数（录屏、底图默认仍是竖版 1080×1920），并导出字幕断句的几个函数；竖版两集的脚本不受影响。
@@ -223,21 +224,21 @@ node promo/heroes/lanling-h.mjs --music promo/out/music-dl/C-lexin-upbeat-docume
 
 ```bash
 npm run build                                   # 仓库根目录：先生成最新的 dist/
-python promo/tts.py --engine volc --speed 1.25 --yaml heroes/hanxin.yaml --out out/heroes/hanxin/voice   # 配音（改了旁白才要重跑）
+python promo/tts.py --engine volc --speed 1.25 --yaml heroes/hanxin.yaml --out out/heroes/001-hanxin/voice   # 配音（改了旁白才要重跑）
 node promo/heroes/map.mjs hanxin-zhan           # 地图 → promo/out/heroes/maps/
-node promo/heroes/hanxin.mjs --still            # 只截每段结尾的图到 promo/out/heroes/hanxin/stills/，检查位置
+node promo/heroes/hanxin.mjs --still            # 只截每段结尾的图到 promo/out/heroes/001-hanxin/stills/，检查位置
 node promo/heroes/hanxin.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成
 ```
 
 ### 韩信·横版是怎么做的
 
-- 脚本 [hanxin-h.mjs](hanxin-h.mjs)，做法照兰陵王横版。内容和竖版完全一样：旁白同一份 [hanxin.yaml](hanxin.yaml)（开录前对照定稿，片尾小字也从 scripts.md 读），配音直接用竖版做好的（`promo/out/heroes/hanxin/voice/`，没有重配），语速、音乐、字幕断句、片头封面的做法都同竖版。中间文件放在 `promo/out/heroes/hanxin/h/`，竖版的 `hanxin.mp4` 和它的中间文件没有动。
+- 脚本 [hanxin-h.mjs](hanxin-h.mjs)，做法照兰陵王横版。内容和竖版完全一样：旁白同一份 [hanxin.yaml](hanxin.yaml)（开录前对照定稿，片尾小字也从 scripts.md 读），配音直接用竖版做好的（`promo/out/heroes/001-hanxin/voice/`，没有重配），语速、音乐、字幕断句、片头封面的做法都同竖版。中间文件放在 `promo/out/heroes/001-hanxin/h/`，竖版的 `hanxin.mp4` 和它的中间文件没有动。
 - 网站画面是桌面版（1920×1080、字号 1.3 档），用假鼠标操作，画面顺序同竖版：点搜索框输入“韩信”并点开 → 时间轴飞到秦汉之际，右边出他的人物卡，鼠标指着“屡次献策不被采用”“中途逃走” → 鼠标移到时间轴上前 206 年萧何“举荐”那条连线上，滚轮放大，点萧何，卡片停在“韩信逃亡，萧何亲自追回” → 地图（只在“按他的计策，汉军杀回关中……项羽败亡”一句，盖住左边的时间轴），这期间右边的卡片依次是韩信“东出陈仓”一段、事件“井陉背水一战”（念到“背水列阵”时点开）、事件“垓下之战”（念到“袭取齐国”时换） → 回到韩信，卡片滚到“项羽死后，高祖夺其军”“降为淮阴侯” → 事件“韩信被杀”，鼠标跟着四句旁白一句一句往下指 → 在时间轴上点“汉高祖”，卡片停在“异姓诸侯王韩信、彭越、英布等相继被废被杀” → 点回韩信：时间轴上韩信、汉高祖、吕后、萧何同屏（张良、项羽也在），连线都连在他身上，滚轮放大，鼠标先停在前 206 年“举荐”那条线上，念到“骗他进宫”时移到前 196 年“诛杀”那条线上 → 结尾卡。
 - 地图用的是竖版那张 `hanxin-zhan`（只标井陉、垓下，“示意图”和“垓下位置有争议”都在图上），没有另画；放大到 1180 宽，盖住时间轴，右边人物卡照常露出。
 - 桌面版的动作（鼠标、滚轮、卡片滚动、找连线）抽进了 [episode.mjs](episode.mjs) 的 `openDesktop()`，字幕函数加了横版选项（样式同兰陵王横版：画面下方正中，白字半透明深色底）；竖版两集和 lanling-h.mjs 没有改。
 - 结尾卡：左边是韩信关系图的电脑画面，右边二维码、网址；下面两行小字是定稿里的史料清单（只显示、不念）。二维码打开 `…/zh/#person/han-xin`，已用程序从成片的画面里扫出确认。
 - 时长 1 分 55 秒（片头封面 1 秒 + 正片 1 分 54 秒），和竖版一样长：每段都等旁白念完才往下走，桌面版点卡片的动作压到和手机版差不多快。
-- 视频文件（录屏、开头、正片、成片）先在系统临时目录里生成，再复制到 `promo/out/heroes/hanxin/`，复制后整段解码检查一遍。原因：这次发现在 E 盘上用 ffmpeg 慢速编码直接写文件，偶尔会写进一段全零（几百 KB），成片开头花屏；同样的命令写到 C 盘完好，复制到 E 盘也完好。已出的竖版两集和兰陵王横版查过，没有这个问题。
+- 视频文件（录屏、开头、正片、成片）先在系统临时目录里生成，再复制到 `promo/out/heroes/001-hanxin/`，复制后整段解码检查一遍。原因：这次发现在 E 盘上用 ffmpeg 慢速编码直接写文件，偶尔会写进一段全零（几百 KB），成片开头花屏；同样的命令写到 C 盘完好，复制到 E 盘也完好。已出的竖版两集和兰陵王横版查过，没有这个问题。
 - **还没做到、要项目方知道的**：竖版列的四条横版同样存在——配音是同一份，要听的字同竖版（“萧何”“垓下”“禀报”“降为淮阴侯”“长乐宫”“灭了他三族”“洪迈”，以及“虽疾，强入贺”的“强”、“且喜且怜之”）；“韩信被杀”卡上“萧何亲自劝韩信”的措辞；没有游戏视频。另外：桌面版卡片上能看到的字比手机版多，鼠标在“虽疾，强入贺”那一句停留时，“萧何亲自劝韩信”就在同一行上方，看得很清楚。竖版第 3 条（最后一幕显示“返回 萧何”）横版没有：桌面版是在时间轴上点回韩信，卡片上没有那个按钮。
 
 ### 重出韩信·横版
@@ -245,8 +246,8 @@ node promo/heroes/hanxin.mjs --music promo/out/music-dl/C-lexin-upbeat-documenta
 ```bash
 npm run build                                   # 仓库根目录：先生成最新的 dist/
 node promo/heroes/map.mjs hanxin-zhan           # 地图（已有就不用）
-node promo/heroes/hanxin-h.mjs --still          # 只截每段结尾的图到 promo/out/heroes/hanxin/h/stills/，检查位置
-node promo/heroes/hanxin-h.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成 → promo/out/heroes/hanxin/hanxin-landscape.mp4
+node promo/heroes/hanxin-h.mjs --still          # 只截每段结尾的图到 promo/out/heroes/001-hanxin/h/stills/，检查位置
+node promo/heroes/hanxin-h.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成 → promo/out/heroes/001-hanxin/hanxin-landscape.mp4
 ```
 
 ### 兰陵王第二篇是怎么做的
@@ -270,14 +271,14 @@ node promo/heroes/hanxin-h.mjs --music promo/out/music-dl/C-lexin-upbeat-documen
 
 ```bash
 npm run build                                   # 仓库根目录：先生成最新的 dist/
-python promo/tts.py --engine volc --speed 1.25 --yaml heroes/lanling2.yaml --out out/heroes/lanling2/voice   # 配音（改了旁白才要重跑）
-node promo/heroes/lanling2.mjs --still          # 只截每段结尾的图到 promo/out/heroes/lanling2/stills/，并画出第一屏、文字卡、结尾卡
-node promo/heroes/lanling2.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成 → promo/out/heroes/lanling2/lanling2.mp4
+python promo/tts.py --engine volc --speed 1.25 --yaml heroes/lanling2.yaml --out out/heroes/004-lanling2/voice   # 配音（改了旁白才要重跑）
+node promo/heroes/lanling2.mjs --still          # 只截每段结尾的图到 promo/out/heroes/004-lanling2/stills/，并画出第一屏、文字卡、结尾卡
+node promo/heroes/lanling2.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成 → promo/out/heroes/004-lanling2/lanling2.mp4
 ```
 
 ### 兰陵王第二篇·横版是怎么做的
 
-- 脚本 [lanling2-h.mjs](lanling2-h.mjs)，做法照韩信横版。内容和竖版完全一样：旁白同一份 [lanling2.yaml](lanling2.yaml)（开录前对照定稿），配音直接用竖版做好的，音乐、字幕断句、第一屏停留时间、10 张史书原文文字卡（原文开录前对照核实记录）都同竖版。中间文件放在 `promo/out/heroes/lanling2/h/`。
+- 脚本 [lanling2-h.mjs](lanling2-h.mjs)，做法照韩信横版。内容和竖版完全一样：旁白同一份 [lanling2.yaml](lanling2.yaml)（开录前对照定稿），配音直接用竖版做好的，音乐、字幕断句、第一屏停留时间、10 张史书原文文字卡（原文开录前对照核实记录）都同竖版。中间文件放在 `promo/out/heroes/004-lanling2/h/`。
 - 网站画面是桌面版（1920×1080、字号 1.3 档），用假鼠标操作：点搜索框输入“兰陵王”→ 时间轴飞到南北朝，右边出人物卡，鼠标指着开头“高长恭，一名孝瓘”（念好的一面）→ 卡片滚到“有意收受财物以自污”，念到“部下尉相愿”时指过去（阳士深几段停在这里）→ 念“后人的理解”时鼠标移到时间轴上他的生卒条，滚轮放大 → 念邙山大功时卡片滚到河清三年，指着“率五百骑兵冲入周军阵中”，念到“部下问他”回到自污那一句 → 结尾卡。
 - 文字卡盖在左边的时间轴上，右边的人物卡和顶栏照常露出；字幕在画面下方正中。
 - 第一屏照样张 `title-h.png`，但图片往右挪了 100 像素：样张里大标题压在人物脸上，不合“字不要压住人物的脸”这一条。
@@ -289,8 +290,8 @@ node promo/heroes/lanling2.mjs --music promo/out/music-dl/C-lexin-upbeat-documen
 
 ```bash
 npm run build                                   # 仓库根目录：先生成最新的 dist/
-node promo/heroes/lanling2-h.mjs --still        # 只截每段结尾的图到 promo/out/heroes/lanling2/h/stills/，并画出第一屏、文字卡、结尾卡
-node promo/heroes/lanling2-h.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成 → promo/out/heroes/lanling2/lanling2-h.mp4
+node promo/heroes/lanling2-h.mjs --still        # 只截每段结尾的图到 promo/out/heroes/004-lanling2/h/stills/，并画出第一屏、文字卡、结尾卡
+node promo/heroes/lanling2-h.mjs --music promo/out/music-dl/C-lexin-upbeat-documentary.mp3   # 录制并合成 → promo/out/heroes/004-lanling2/lanling2-h.mp4
 ```
 
 [episode.mjs](episode.mjs) 的定稿对照函数加了一个可选参数：这一篇不配地图，表格后面是“不配地图”而不是“配地图：”。其他各集不受影响。
@@ -338,3 +339,4 @@ node promo/heroes/lanling2-h.mjs --music promo/out/music-dl/C-lexin-upbeat-docum
 - 2026-11-26：项目方看过兰陵王第二篇竖版，认可在画面上打出史书原文，定为以后常用的做法，写进“已定事项”和第三节。兰陵王第二篇另出横版（`lanling2-h.mjs`，1 分 44 秒）；文字卡换卡改为交叉淡入淡出，竖版同时重出。
 - 2026-11-26：项目方定下每一期视频都输出一个 txt 文件（讲稿 + 与史书核对查证的记录）。新增 `export-txt.mjs`，从 scripts.md 导出；已给韩信第一篇、兰陵王两篇导出。制作流程加上这一步。
 - 2026-11-26：项目方在 `lanling.txt` 上改定 txt 格式：标题、网站网址、旁白一段一行、史料出处、查过的原文书目；去掉画面说明、制作说明和逐条对照表。导出脚本照此改写，韩信第一篇、兰陵王两篇按新格式重新导出（兰陵王第一篇与项目方改的版本逐字节相同）。兰陵王第二篇的核实记录原来没有“查过的原文”清单，在 scripts.md 里补上（只有《北齐书》卷十一一种，与那篇核实时查的一致）。
+- 2026-11-26：项目方要求 `promo/out/heroes/` 下每一期的目录加三位编号。按篇序改名为 `001-hanxin`、`002-lanling`、`004-lanling2`（`003` 留给上官婉儿）；各录制脚本、配音命令、导出脚本和本页里的路径一并改了。

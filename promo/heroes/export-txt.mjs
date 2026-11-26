@@ -14,7 +14,7 @@
 // 内容全部取自 scripts.md 对应的那一篇（以 scripts.md 为准，txt 只是导出，不要手改）。
 // 用法：node promo/heroes/export-txt.mjs            给已出成片的每一期导出
 //       node promo/heroes/export-txt.mjs lanling2   只导出某一期（没出成片也照样导出）
-// 出文件：promo/out/heroes/<期>/<期>.txt（UTF-8 带 BOM，Windows 换行，记事本直接能看）
+// 出文件：promo/out/heroes/<编号>-<期>/<期>.txt，如 002-lanling/lanling.txt（UTF-8 带 BOM，Windows 换行，记事本直接能看）
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -24,13 +24,13 @@ const ROOT = path.join(HERE, '..', '..');
 const OUT = path.join(HERE, '..', 'out', 'heroes');
 const SITE = 'https://lishi.alz-ai.cn/zh/#person/';
 
-// 每一期：对应 scripts.md 里的第几篇（按“## 一、”这样的序号找），网站上的人物编号（与结尾二维码指向的一致）。
-// 新增一期就在这里加一行。
+// 每一期：对应 scripts.md 里的第几篇（按“## 一、”这样的序号找）、成片目录（三位编号 = 篇序）、
+// 网站上的人物编号（与结尾二维码指向的一致）。新增一期就在这里加一行。
 const EPISODES = {
-  hanxin: { no: '一', person: 'han-xin' },
-  lanling: { no: '二', person: 'gao-changgong' },
-  waner: { no: '三', person: 'shangguan-waner' },
-  lanling2: { no: '四', person: 'gao-changgong' },
+  hanxin: { no: '一', dir: '001-hanxin', person: 'han-xin' },
+  lanling: { no: '二', dir: '002-lanling', person: 'gao-changgong' },
+  waner: { no: '三', dir: '003-waner', person: 'shangguan-waner' },
+  lanling2: { no: '四', dir: '004-lanling2', person: 'gao-changgong' },
 };
 
 const md = fs.readFileSync(path.join(HERE, 'scripts.md'), 'utf8').replace(/\r\n/g, '\n');
@@ -93,7 +93,7 @@ function exportOne(id) {
     '查过的原文：', '',
     ...books, '',
   ];
-  const dir = path.join(OUT, id);
+  const dir = path.join(OUT, EPISODES[id].dir);
   fs.mkdirSync(dir, { recursive: true });
   const file = path.join(dir, `${id}.txt`);
   fs.writeFileSync(file, '﻿' + L.join('\r\n') + '\r\n', 'utf8');
@@ -103,7 +103,8 @@ function exportOne(id) {
 const want = process.argv.slice(2);
 for (const id of want.length ? want : Object.keys(EPISODES)) {
   if (!EPISODES[id]) { console.error(`不认识的期：${id}（可选：${Object.keys(EPISODES).join('、')}）`); process.exitCode = 1; continue; }
-  const hasVideo = fs.existsSync(path.join(OUT, id)) && fs.readdirSync(path.join(OUT, id)).some((f) => f.endsWith('.mp4'));
+  const d = path.join(OUT, EPISODES[id].dir);
+  const hasVideo = fs.existsSync(d) && fs.readdirSync(d).some((f) => f.endsWith('.mp4'));
   if (!want.length && !hasVideo) { console.log(`跳过 ${id}：还没出成片`); continue; }
   exportOne(id);
 }
