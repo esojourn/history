@@ -21,12 +21,15 @@ export const ease = u => (u < .5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) /
 
 /* ---------- 旁白：对照 scripts.md 里某一篇的定稿，逐字一致才往下做 ---------- */
 // heading：这一篇的标题行开头（如 '## 一、'）；rows：表里要念的行数（不算“只显示，不念”那一行）
-export function loadNarration(yamlFile, heading, rows) {
+// end：文案表格后面紧跟的那行字（默认“配地图：”；不配地图的篇目写的是“不配地图”），用来截出这一篇的表格
+export function loadNarration(yamlFile, heading, rows, end = '配地图：') {
   const shots = YAML.parse(fs.readFileSync(yamlFile, 'utf8')).shots;
   const md = fs.readFileSync(path.join(HERE, 'scripts.md'), 'utf8');
   const i = md.indexOf(heading);
   if (i < 0) { console.error('scripts.md 里找不到 ' + heading); process.exit(1); }
-  const sec = md.slice(i, md.indexOf('配地图：', i));
+  const j = md.indexOf(end, i);
+  if (j < 0) { console.error(`scripts.md 的 ${heading} 后面找不到“${end}”`); process.exit(1); }
+  const sec = md.slice(i, j);
   const rs = sec.split('\n').filter(l => l.startsWith('|')).map(l => l.split('|').map(c => c.trim()))
     .filter(c => c[1] !== '画面' && !/^-+$/.test(c[1]) && !c[1].includes('不念'));
   const want = rs.map(c => c[2]).join(''), got = shots.map(s => s.say).join('');
