@@ -216,7 +216,7 @@ const tOf = ([id, snip]) => (snip ? at(id) + VOLEAD + VO[id].dur * fracBefore(SH
 const qt = QUOTES.map((q, i) => {
   const a = tOf(q.on), nx = QUOTES[i + 1];
   const b = q.off ? at(q.off) - 0.1 : nx ? tOf(nx.on) : at('n13') - 0.1;
-  return { a, b, cross: !q.off && !!nx };   // cross：紧接着下一张，不淡出（下一张淡入盖住它）
+  return { a, b, cross: !q.off && !!nx };   // cross：紧接着下一张，和下一张交叉淡入淡出
 });
 fs.writeFileSync(path.join(OUT, 'quotes.txt'), QUOTES.map((q, i) => `${qt[i].a.toFixed(2)} → ${qt[i].b.toFixed(2)}  ${q.text}`).join('\n'));
 
@@ -233,8 +233,8 @@ let vf = `[1:v]scale=${PW}:${PH}:flags=lanczos[ph];[0:v][ph]overlay=${PX}:${PY}[
   + `[3:v]format=rgba,fade=out:st=${tIntro.toFixed(3)}:d=0.45:alpha=1[in];[b][in]overlay=0:0:eof_action=pass[q0];`;
 QUOTES.forEach((_, i) => {
   const { a, b, cross } = qt[i];
-  // 紧接下一张的：显示到下一张淡入完再撤（enable），不另外淡出
-  const outF = cross ? '' : `,fade=out:st=${(b - 0.3).toFixed(3)}:d=0.3:alpha=1`;
+  // 紧接下一张的：在下一张淡入的同时淡出（两张卡高矮不一，不淡出的话旧卡的下沿会露出来）
+  const outF = `,fade=out:st=${(cross ? b : b - 0.3).toFixed(3)}:d=0.3:alpha=1`;
   vf += `[${Q0 + i}:v]format=rgba,fade=in:st=${a.toFixed(3)}:d=0.3:alpha=1${outF}[qq${i}];`
     + `[q${i}][qq${i}]overlay=0:0:enable='between(t,${a.toFixed(3)},${(cross ? b + 0.3 : b).toFixed(3)})'[q${i + 1}];`;
 });
