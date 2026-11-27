@@ -30,11 +30,15 @@ def load_env():
     return env
 
 
-def load_shots(name='narration.yaml'):
+def load_doc(name='narration.yaml'):
     # narration.yaml 结构简单，不额外装 pyyaml：交给 node 的 yaml 包解析
     js = "const Y=require('yaml');const fs=require('fs');process.stdout.write(JSON.stringify(Y.parse(fs.readFileSync(process.argv[1],'utf8'))))"
     r = subprocess.run(['node', '-e', js, str(ROOT / name)], cwd=ROOT, capture_output=True, check=True)
-    return json.loads(r.stdout.decode('utf-8'))['shots']
+    return json.loads(r.stdout.decode('utf-8'))
+
+
+def load_shots(name='narration.yaml'):
+    return load_doc(name)['shots']
 
 
 def duration(path):
@@ -114,7 +118,10 @@ def main():
         sys.exit('请用 --voice 指定火山引擎音色')
 
     OUT.mkdir(parents=True, exist_ok=True)
-    shots = load_shots(a.yaml)
+    doc = load_doc(a.yaml)
+    shots = doc['shots']
+    # 读音提示（可选）：yaml 顶层的 pron，如 {龙且: 龙居}。只替换送给配音工具的字，旁白、字幕不变
+    pron = doc.get('pron') or {}
     if a.sample:
         shots = shots[:2]
     timing = []
@@ -123,6 +130,8 @@ def main():
         text = s.get('say') or ''.join(l if i == len(s['lines']) - 1 or l[-1] in '，。？！；：、—…' else l + '，' for i, l in enumerate(s['lines']))
         # 文稿里数字两边按排版习惯留的空格（“公元 564 年”）念的时候去掉，免得多出停顿
         text = re.sub(r'(?<=[一-鿿\d])[ \t]+(?=[一-鿿\d])', '', text)
+        for k, v in pron.items():
+            text = text.replace(k, v)
         name = f"{s['id']}__{voice}.mp3" if a.sample else f"{s['id']}.mp3"
         path = OUT / name
         if a.engine == 'edge':
