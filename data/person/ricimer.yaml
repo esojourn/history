@@ -1,0 +1,13 @@
+id: ricimer
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 418, circa: true }
+death: { year: 472 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: ravenna }
+  - { place: rome }
+  - { place: milan }
+reviewed: false

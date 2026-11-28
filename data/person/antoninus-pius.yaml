@@ -1,0 +1,14 @@
+id: antoninus-pius
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 86 }
+death: { year: 161 }
+reign:
+  - { start: 138, end: 161 }
+birthplace: lanuvium
+deathplace: lorium
+places:
+  - { place: rome }
+  - { place: lorium }
+reviewed: false

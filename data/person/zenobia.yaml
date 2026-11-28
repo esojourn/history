@@ -1,0 +1,15 @@
+id: zenobia
+wikidata: null
+civ: meso
+importance: 3
+birth: { year: 240, circa: true }
+death: { unknown: true, approx: 275 }
+reign:
+  - { start: 267, end: 272 }
+birthplace: palmyra
+deathplace: unknown
+places:
+  - { place: palmyra }
+  - { place: antioch, start: 270, end: 272 }
+  - { place: emesa, start: 272 }
+reviewed: false

@@ -1,0 +1,14 @@
+id: galba
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -2 }
+death: { year: 69 }
+reign:
+  - { start: 68, end: 69 }
+birthplace: tarracina
+deathplace: rome
+places:
+  - { place: hispania, start: 60, end: 68 }
+  - { place: rome }
+reviewed: false

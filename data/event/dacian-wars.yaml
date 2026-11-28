@@ -1,0 +1,13 @@
+id: dacian-wars
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: 101 }
+end: { year: 106 }
+places: [dacia, sarmizegetusa]
+participants:
+  - person: trajan
+  - person: decebalus
+  - person: hadrian
+reviewed: false

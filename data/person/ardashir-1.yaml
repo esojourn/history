@@ -1,0 +1,15 @@
+id: ardashir-1
+wikidata: null
+civ: meso
+faction: sasanian
+importance: 3
+birth: { unknown: true, approx: 180 }
+death: { year: 242, circa: true }
+reign:
+  - { start: 224, end: 242 }
+birthplace: persis
+deathplace: unknown
+places:
+  - { place: persis }
+  - { place: ctesiphon, start: 226, end: 242 }
+reviewed: false

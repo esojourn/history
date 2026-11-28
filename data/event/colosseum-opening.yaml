@@ -1,0 +1,11 @@
+id: colosseum-opening
+wikidata: null
+civ: rome
+type: cultural
+importance: 3
+start: { year: 80 }
+places: [colosseum]
+participants:
+  - person: titus
+  - person: domitian
+reviewed: false

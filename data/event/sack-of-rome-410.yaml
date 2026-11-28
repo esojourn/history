@@ -7,4 +7,7 @@ start: { year: 410 }
 places: [rome]
 participants:
   - person: alaric
+  - person: honorius
+  - person: galla-placidia
+  - person: athaulf
 reviewed: false

@@ -1,0 +1,12 @@
+id: antonine-plague
+wikidata: null
+civ: rome
+type: disaster
+importance: 3
+start: { year: 165 }
+end: { year: 180 }
+places: [seleucia-tigris, rome, aquileia]
+participants:
+  - person: marcus-aurelius
+  - person: galen
+reviewed: false

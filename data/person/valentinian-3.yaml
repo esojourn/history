@@ -1,0 +1,14 @@
+id: valentinian-3
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 419 }
+death: { year: 455 }
+reign:
+  - { start: 425, end: 455 }
+birthplace: ravenna
+deathplace: rome
+places:
+  - { place: ravenna }
+  - { place: rome }
+reviewed: false

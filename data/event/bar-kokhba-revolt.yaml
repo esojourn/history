@@ -1,0 +1,11 @@
+id: bar-kokhba-revolt
+wikidata: null
+civ: bible
+type: uprising
+importance: 3
+start: { year: 132 }
+end: { year: 135 }
+places: [judea, jerusalem]
+participants:
+  - person: hadrian
+reviewed: false

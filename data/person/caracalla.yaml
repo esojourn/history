@@ -1,0 +1,16 @@
+id: caracalla
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 188 }
+death: { year: 217 }
+reign:
+  - { start: 198, end: 217 }
+birthplace: lyon
+deathplace: haran
+places:
+  - { place: rome }
+  - { place: britain, start: 208, end: 211 }
+  - { place: alexandria, start: 215 }
+  - { place: antioch, start: 215, end: 217 }
+reviewed: false

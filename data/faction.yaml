@@ -265,3 +265,24 @@
 - id: numidia
   civ: rome
   color: "#B5782A"
+- id: germans
+  civ: rome
+  color: "#8C5A3C"
+- id: goths
+  civ: rome
+  color: "#3F6FA6"
+- id: vandals
+  civ: rome
+  color: "#7E4A8C"
+- id: huns
+  civ: rome
+  color: "#B0452F"
+- id: britons
+  civ: rome
+  color: "#5A9A4F"
+- id: dacia
+  civ: rome
+  color: "#A08A2E"
+- id: sasanian
+  civ: meso
+  color: "#8E2F6A"

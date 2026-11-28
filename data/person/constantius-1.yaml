@@ -1,0 +1,16 @@
+id: constantius-1
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 250, circa: true }
+death: { year: 306 }
+reign:
+  - { start: 293, end: 306 }
+birthplace: unknown
+deathplace: eboracum
+places:
+  - { place: trier }
+  - { place: gaul }
+  - { place: britain, start: 296 }
+  - { place: eboracum, start: 305, end: 306 }
+reviewed: false

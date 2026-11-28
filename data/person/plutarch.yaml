@@ -1,0 +1,14 @@
+id: plutarch
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 46, circa: true }
+death: { year: 120, circa: true }
+birthplace: chaeronea
+deathplace: chaeronea
+places:
+  - { place: chaeronea }
+  - { place: athens, start: 66, end: 67 }
+  - { place: rome }
+  - { place: delphi, start: 95, end: 120 }
+reviewed: false

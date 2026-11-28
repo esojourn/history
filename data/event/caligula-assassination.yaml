@@ -1,0 +1,11 @@
+id: caligula-assassination
+wikidata: null
+civ: rome
+type: political
+importance: 2
+start: { year: 41 }
+places: [rome]
+participants:
+  - person: caligula
+  - person: claudius
+reviewed: false

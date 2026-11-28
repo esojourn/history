@@ -1,0 +1,13 @@
+id: aetius
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 391, circa: true }
+death: { year: 454 }
+birthplace: durostorum
+deathplace: ravenna
+places:
+  - { place: ravenna }
+  - { place: gaul, start: 425, end: 451 }
+  - { place: rome }
+reviewed: false

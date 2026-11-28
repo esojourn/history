@@ -1,0 +1,14 @@
+id: ammianus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 330, circa: true }
+death: { unknown: true, approx: 395 }
+birthplace: antioch
+deathplace: unknown
+places:
+  - { place: antioch }
+  - { place: gaul, start: 355, end: 357 }
+  - { place: amida, start: 359 }
+  - { place: rome, start: 383, end: 395 }
+reviewed: false

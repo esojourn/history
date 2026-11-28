@@ -1,0 +1,11 @@
+id: ulpian
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: 170 }
+death: { year: 223, circa: true }
+birthplace: tyre
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

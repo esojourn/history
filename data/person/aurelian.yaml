@@ -1,0 +1,16 @@
+id: aurelian
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 214, circa: true }
+death: { year: 275 }
+reign:
+  - { start: 270, end: 275 }
+birthplace: unknown
+deathplace: thrace
+places:
+  - { place: rome }
+  - { place: sirmium }
+  - { place: palmyra, start: 272, end: 273 }
+  - { place: gaul }
+reviewed: false

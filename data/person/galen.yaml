@@ -1,0 +1,14 @@
+id: galen
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 129 }
+death: { year: 216, circa: true }
+birthplace: pergamon
+deathplace: unknown
+places:
+  - { place: pergamon }
+  - { place: alexandria, start: 152, end: 157 }
+  - { place: rome, start: 162, end: 166 }
+  - { place: rome, start: 169, end: 216 }
+reviewed: false

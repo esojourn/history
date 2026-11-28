@@ -1,0 +1,10 @@
+id: pantheon-rebuilt
+wikidata: null
+civ: rome
+type: cultural
+importance: 3
+start: { year: 126, circa: true }
+places: [rome]
+participants:
+  - person: hadrian
+reviewed: false

@@ -1,0 +1,15 @@
+id: honorius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 384 }
+death: { year: 423 }
+reign:
+  - { start: 395, end: 423 }
+birthplace: constantinople
+deathplace: ravenna
+places:
+  - { place: milan, start: 395, end: 402 }
+  - { place: ravenna, start: 402, end: 423 }
+  - { place: rome }
+reviewed: false

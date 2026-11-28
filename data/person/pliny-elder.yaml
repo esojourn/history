@@ -1,0 +1,15 @@
+id: pliny-elder
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 23, circa: true }
+death: { year: 79 }
+birthplace: comum
+deathplace: stabiae
+places:
+  - { place: comum }
+  - { place: germania, start: 47, end: 58 }
+  - { place: rome }
+  - { place: misenum, start: 77, end: 79 }
+  - { place: stabiae, start: 79 }
+reviewed: false

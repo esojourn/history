@@ -1,0 +1,12 @@
+id: aurelian-reunification
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: 272 }
+end: { year: 274 }
+places: [antioch, emesa, palmyra, gaul]
+participants:
+  - person: aurelian
+  - person: zenobia
+reviewed: false

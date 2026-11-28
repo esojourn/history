@@ -1,0 +1,12 @@
+id: frigidus-battle
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: 394 }
+places: [frigidus, aquileia]
+participants:
+  - person: theodosius-1
+  - person: stilicho
+  - person: alaric
+reviewed: false

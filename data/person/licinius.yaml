@@ -1,0 +1,15 @@
+id: licinius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 263, circa: true }
+death: { year: 325 }
+reign:
+  - { start: 308, end: 324 }
+birthplace: unknown
+deathplace: thessalonica
+places:
+  - { place: sirmium }
+  - { place: nicomedia }
+  - { place: milan, start: 313 }
+reviewed: false

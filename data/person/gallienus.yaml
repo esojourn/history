@@ -1,0 +1,15 @@
+id: gallienus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 218, circa: true }
+death: { year: 268 }
+reign:
+  - { start: 253, end: 268 }
+birthplace: unknown
+deathplace: milan
+places:
+  - { place: rome }
+  - { place: milan }
+  - { place: cologne }
+reviewed: false

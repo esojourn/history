@@ -1,0 +1,13 @@
+id: germanicus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -14 }
+death: { year: 19 }
+birthplace: rome
+deathplace: antioch
+places:
+  - { place: germania, start: 13, end: 16 }
+  - { place: rome }
+  - { place: antioch, start: 18, end: 19 }
+reviewed: false

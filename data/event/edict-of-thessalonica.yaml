@@ -1,0 +1,12 @@
+id: edict-of-thessalonica
+wikidata: null
+civ: bible
+type: political
+importance: 4
+start: { year: 380 }
+places: [thessalonica, constantinople]
+participants:
+  - person: theodosius-1
+  - person: gratian
+  - person: gregory-nazianzus
+reviewed: false

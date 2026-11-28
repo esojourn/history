@@ -1,0 +1,13 @@
+id: fritigern
+wikidata: null
+civ: rome
+faction: goths
+importance: 2
+birth: { unknown: true, approx: 330 }
+death: { unknown: true, approx: 381 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: thrace, start: 376, end: 380 }
+  - { place: adrianople, start: 378 }
+reviewed: false

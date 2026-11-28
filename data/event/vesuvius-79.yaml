@@ -1,0 +1,12 @@
+id: vesuvius-79
+wikidata: null
+civ: rome
+type: disaster
+importance: 4
+start: { year: 79 }
+places: [pompeii, herculaneum, stabiae, misenum]
+participants:
+  - person: pliny-elder
+  - person: pliny-younger
+  - person: titus
+reviewed: false

@@ -1,0 +1,11 @@
+id: rhine-crossing-406
+wikidata: null
+civ: rome
+type: migration
+importance: 3
+start: { year: 406 }
+places: [mainz, gaul, hispania]
+participants:
+  - person: gaiseric
+  - person: stilicho
+reviewed: false

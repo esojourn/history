@@ -1,0 +1,12 @@
+id: agricola
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 40 }
+death: { year: 93 }
+birthplace: forum-julii
+deathplace: rome
+places:
+  - { place: britain, start: 77, end: 84 }
+  - { place: rome }
+reviewed: false

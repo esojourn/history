@@ -1,0 +1,10 @@
+id: year-of-five-emperors
+wikidata: null
+civ: rome
+type: political
+importance: 2
+start: { year: 193 }
+places: [rome]
+participants:
+  - person: septimius-severus
+reviewed: false

@@ -7,4 +7,5 @@ start: { year: 313 }
 places: [milan, nicomedia]
 participants:
   - person: constantine
+  - person: licinius
 reviewed: false

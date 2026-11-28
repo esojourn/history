@@ -1,0 +1,15 @@
+id: year-of-four-emperors
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: 68 }
+end: { year: 69 }
+places: [rome, hispania, cologne, alexandria]
+participants:
+  - person: nero
+  - person: galba
+  - person: otho
+  - person: vitellius
+  - person: vespasian
+reviewed: false

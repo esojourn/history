@@ -1,0 +1,11 @@
+id: tacitus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 56, circa: true }
+death: { year: 120, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+reviewed: false

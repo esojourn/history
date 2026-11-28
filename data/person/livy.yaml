@@ -1,0 +1,12 @@
+id: livy
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -58, circa: true }
+death: { year: 17, circa: true }
+birthplace: patavium
+deathplace: patavium
+places:
+  - { place: patavium }
+  - { place: rome }
+reviewed: false

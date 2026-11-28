@@ -1,0 +1,11 @@
+id: maecenas
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -69, circa: true }
+death: { year: -7 }
+birthplace: arretium
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

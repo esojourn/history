@@ -1,0 +1,10 @@
+id: great-fire-of-rome
+wikidata: null
+civ: rome
+type: disaster
+importance: 3
+start: { year: 64 }
+places: [rome]
+participants:
+  - person: nero
+reviewed: false

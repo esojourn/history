@@ -1,0 +1,12 @@
+id: julian-persian-campaign
+wikidata: null
+civ: meso
+type: war
+importance: 3
+start: { year: 363 }
+places: [antioch, ctesiphon, nisibis]
+participants:
+  - person: julian
+  - person: shapur-2
+  - person: ammianus
+reviewed: false

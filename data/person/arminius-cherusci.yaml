@@ -1,0 +1,13 @@
+id: arminius-cherusci
+wikidata: null
+civ: rome
+faction: germans
+importance: 3
+birth: { year: -17, circa: true }
+death: { year: 21 }
+birthplace: germania
+deathplace: germania
+places:
+  - { place: germania }
+  - { place: teutoburg, start: 9 }
+reviewed: false

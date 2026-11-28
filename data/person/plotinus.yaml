@@ -1,0 +1,13 @@
+id: plotinus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 204, circa: true }
+death: { year: 270 }
+birthplace: egypt
+deathplace: campania
+places:
+  - { place: alexandria, start: 232, end: 243 }
+  - { place: rome, start: 244, end: 269 }
+  - { place: campania }
+reviewed: false

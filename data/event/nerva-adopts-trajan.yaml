@@ -1,0 +1,11 @@
+id: nerva-adopts-trajan
+wikidata: null
+civ: rome
+type: political
+importance: 2
+start: { year: 97 }
+places: [rome]
+participants:
+  - person: nerva
+  - person: trajan
+reviewed: false

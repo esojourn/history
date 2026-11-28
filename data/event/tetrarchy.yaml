@@ -1,0 +1,13 @@
+id: tetrarchy
+wikidata: null
+civ: rome
+type: founding
+importance: 4
+start: { year: 293 }
+places: [nicomedia, milan, trier, sirmium]
+participants:
+  - person: diocletian
+  - person: maximian
+  - person: galerius
+  - person: constantius-1
+reviewed: false

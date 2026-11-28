@@ -1,0 +1,11 @@
+id: sasanian-rise
+wikidata: null
+civ: meso
+type: founding
+importance: 4
+start: { year: 224 }
+places: [persis, ctesiphon]
+participants:
+  - person: ardashir-1
+  - person: shapur-1
+reviewed: false

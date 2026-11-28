@@ -1,0 +1,11 @@
+id: juvenal
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: 60 }
+death: { unknown: true, approx: 130 }
+birthplace: aquinum
+deathplace: unknown
+places:
+  - { place: rome }
+reviewed: false

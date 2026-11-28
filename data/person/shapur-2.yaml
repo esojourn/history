@@ -1,0 +1,16 @@
+id: shapur-2
+wikidata: null
+civ: meso
+faction: sasanian
+importance: 2
+birth: { year: 309 }
+death: { year: 379 }
+reign:
+  - { start: 309, end: 379 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ctesiphon }
+  - { place: nisibis, start: 350 }
+  - { place: amida, start: 359 }
+reviewed: false

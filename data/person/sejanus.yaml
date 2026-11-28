@@ -1,0 +1,11 @@
+id: sejanus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -19, circa: true }
+death: { year: 31 }
+birthplace: volsinii
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

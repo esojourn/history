@@ -6,4 +6,5 @@ start: { year: 95, circa: true }
 places: [patmos]
 participants:
   - person: john-apostle
+  - person: domitian
 reviewed: false

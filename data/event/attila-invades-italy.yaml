@@ -1,0 +1,13 @@
+id: attila-invades-italy
+wikidata: null
+civ: rome
+type: war
+importance: 2
+start: { year: 452 }
+places: [aquileia, milan]
+participants:
+  - person: attila
+  - person: leo-1
+  - person: aetius
+  - person: valentinian-3
+reviewed: false

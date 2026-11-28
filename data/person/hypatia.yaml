@@ -1,0 +1,11 @@
+id: hypatia
+wikidata: null
+civ: egypt
+importance: 2
+birth: { year: 355, circa: true }
+death: { year: 415 }
+birthplace: alexandria
+deathplace: alexandria
+places:
+  - { place: alexandria }
+reviewed: false

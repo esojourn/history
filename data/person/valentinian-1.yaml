@@ -1,0 +1,15 @@
+id: valentinian-1
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 321 }
+death: { year: 375 }
+reign:
+  - { start: 364, end: 375 }
+birthplace: cibalae
+deathplace: brigetio
+places:
+  - { place: milan }
+  - { place: trier, start: 367, end: 375 }
+  - { place: gaul }
+reviewed: false

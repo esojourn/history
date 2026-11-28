@@ -1,0 +1,14 @@
+id: commodus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 161 }
+death: { year: 192 }
+reign:
+  - { start: 177, end: 192 }
+birthplace: lanuvium
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: vindobona, start: 178, end: 180 }
+reviewed: false

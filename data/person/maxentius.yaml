@@ -1,0 +1,13 @@
+id: maxentius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 278, circa: true }
+death: { year: 312 }
+reign:
+  - { start: 306, end: 312 }
+birthplace: unknown
+deathplace: milvian-bridge
+places:
+  - { place: rome }
+reviewed: false

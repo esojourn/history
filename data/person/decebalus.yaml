@@ -1,0 +1,15 @@
+id: decebalus
+wikidata: null
+civ: rome
+faction: dacia
+importance: 2
+birth: { unknown: true, approx: 50 }
+death: { year: 106 }
+reign:
+  - { start: 87, end: 106 }
+birthplace: dacia
+deathplace: dacia
+places:
+  - { place: sarmizegetusa }
+  - { place: dacia }
+reviewed: false

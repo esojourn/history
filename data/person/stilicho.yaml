@@ -1,0 +1,14 @@
+id: stilicho
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 359, circa: true }
+death: { year: 408 }
+birthplace: unknown
+deathplace: ravenna
+places:
+  - { place: constantinople }
+  - { place: milan, start: 395, end: 402 }
+  - { place: ravenna, start: 402, end: 408 }
+  - { place: pavia }
+reviewed: false

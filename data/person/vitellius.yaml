@@ -1,0 +1,14 @@
+id: vitellius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 15 }
+death: { year: 69 }
+reign:
+  - { start: 69, end: 69 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: cologne, start: 68, end: 69 }
+reviewed: false

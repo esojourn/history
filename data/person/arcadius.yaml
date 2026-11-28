@@ -1,0 +1,13 @@
+id: arcadius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 377, circa: true }
+death: { year: 408 }
+reign:
+  - { start: 395, end: 408 }
+birthplace: hispania
+deathplace: constantinople
+places:
+  - { place: constantinople }
+reviewed: false

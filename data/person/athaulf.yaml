@@ -1,0 +1,16 @@
+id: athaulf
+wikidata: null
+civ: rome
+faction: goths
+importance: 2
+birth: { year: 370, circa: true }
+death: { year: 415 }
+reign:
+  - { start: 410, end: 415 }
+birthplace: unknown
+deathplace: barcino
+places:
+  - { place: rome, start: 410 }
+  - { place: narbo, start: 413, end: 414 }
+  - { place: barcino, start: 415 }
+reviewed: false

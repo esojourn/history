@@ -1,0 +1,12 @@
+id: sack-of-rome-455
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: 455 }
+places: [rome, carthage]
+participants:
+  - person: gaiseric
+  - person: leo-1
+  - person: valentinian-3
+reviewed: false

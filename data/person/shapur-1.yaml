@@ -1,0 +1,17 @@
+id: shapur-1
+wikidata: null
+civ: meso
+faction: sasanian
+importance: 3
+birth: { year: 215, circa: true }
+death: { year: 270, circa: true }
+reign:
+  - { start: 240, end: 270 }
+birthplace: persis
+deathplace: bishapur
+places:
+  - { place: ctesiphon }
+  - { place: bishapur }
+  - { place: antioch, start: 253 }
+  - { place: edessa, start: 260 }
+reviewed: false

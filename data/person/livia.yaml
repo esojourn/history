@@ -1,0 +1,11 @@
+id: livia
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -57 }
+death: { year: 29 }
+birthplace: rome
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

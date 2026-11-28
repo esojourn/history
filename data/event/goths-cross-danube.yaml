@@ -1,0 +1,11 @@
+id: goths-cross-danube
+wikidata: null
+civ: rome
+type: migration
+importance: 4
+start: { year: 376 }
+places: [durostorum, thrace]
+participants:
+  - person: fritigern
+  - person: valens
+reviewed: false

@@ -1,0 +1,14 @@
+id: boudica
+wikidata: null
+civ: rome
+faction: britons
+importance: 2
+birth: { unknown: true, approx: 25 }
+death: { year: 61, circa: true }
+birthplace: britain
+deathplace: britain
+places:
+  - { place: britain }
+  - { place: camulodunum, start: 60 }
+  - { place: london, start: 60 }
+reviewed: false

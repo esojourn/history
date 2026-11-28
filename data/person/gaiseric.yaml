@@ -1,0 +1,17 @@
+id: gaiseric
+wikidata: null
+civ: rome
+faction: vandals
+importance: 3
+birth: { year: 389, circa: true }
+death: { year: 477 }
+reign:
+  - { start: 428, end: 477 }
+birthplace: unknown
+deathplace: carthage
+places:
+  - { place: hispania, start: 409, end: 429 }
+  - { place: hippo, start: 430, end: 431 }
+  - { place: carthage, start: 439, end: 477 }
+  - { place: rome, start: 455 }
+reviewed: false

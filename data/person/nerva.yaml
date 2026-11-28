@@ -1,0 +1,13 @@
+id: nerva
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 30 }
+death: { year: 98 }
+reign:
+  - { start: 96, end: 98 }
+birthplace: narnia
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

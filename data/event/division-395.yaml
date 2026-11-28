@@ -1,0 +1,13 @@
+id: division-395
+wikidata: null
+civ: rome
+type: political
+importance: 5
+start: { year: 395 }
+places: [milan, constantinople]
+participants:
+  - person: theodosius-1
+  - person: arcadius
+  - person: honorius
+  - person: stilicho
+reviewed: false

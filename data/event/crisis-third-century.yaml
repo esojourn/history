@@ -1,0 +1,16 @@
+id: crisis-third-century
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: 235 }
+end: { year: 284 }
+places: [rome, gaul, palmyra, sirmium]
+participants:
+  - person: alexander-severus
+  - person: decius
+  - person: valerian
+  - person: gallienus
+  - person: aurelian
+  - person: diocletian
+reviewed: false

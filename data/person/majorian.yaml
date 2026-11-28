@@ -1,0 +1,15 @@
+id: majorian
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 420, circa: true }
+death: { year: 461 }
+reign:
+  - { start: 457, end: 461 }
+birthplace: unknown
+deathplace: dertona
+places:
+  - { place: ravenna }
+  - { place: gaul, start: 458, end: 459 }
+  - { place: hispania, start: 460 }
+reviewed: false

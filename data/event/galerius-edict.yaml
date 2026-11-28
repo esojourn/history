@@ -7,4 +7,6 @@ start: { year: 311 }
 places: [nicomedia, serdica]
 participants:
   - person: galerius
+  - person: constantine
+  - person: licinius
 reviewed: false

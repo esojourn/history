@@ -1,0 +1,15 @@
+id: galla-placidia
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 390, circa: true }
+death: { year: 450 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: narbo, start: 414 }
+  - { place: barcino, start: 415 }
+  - { place: ravenna, start: 416, end: 450 }
+  - { place: constantinople, start: 423, end: 424 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: alexander-severus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 208 }
+death: { year: 235 }
+reign:
+  - { start: 222, end: 235 }
+birthplace: arca-caesarea
+deathplace: mainz
+places:
+  - { place: rome }
+  - { place: antioch, start: 231, end: 233 }
+  - { place: mainz, start: 234, end: 235 }
+reviewed: false

@@ -1,0 +1,10 @@
+id: constantinople-founding
+wikidata: null
+civ: rome
+type: founding
+importance: 5
+start: { year: 330 }
+places: [constantinople]
+participants:
+  - person: constantine
+reviewed: false

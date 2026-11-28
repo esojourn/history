@@ -1,0 +1,11 @@
+id: boudica-revolt
+wikidata: null
+civ: rome
+type: uprising
+importance: 2
+start: { year: 60, circa: true }
+end: { year: 61, circa: true }
+places: [camulodunum, london, britain]
+participants:
+  - person: boudica
+reviewed: false

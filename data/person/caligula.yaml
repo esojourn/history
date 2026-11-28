@@ -1,0 +1,15 @@
+id: caligula
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 12 }
+death: { year: 41 }
+reign:
+  - { start: 37, end: 41 }
+birthplace: antium
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: germania, start: 14, end: 16 }
+  - { place: capri, start: 31, end: 37 }
+reviewed: false

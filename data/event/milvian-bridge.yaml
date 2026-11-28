@@ -7,4 +7,5 @@ start: { year: 312 }
 places: [milvian-bridge, rome]
 participants:
   - person: constantine
+  - person: maxentius
 reviewed: false

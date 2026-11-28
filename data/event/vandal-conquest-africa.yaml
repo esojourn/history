@@ -1,0 +1,14 @@
+id: vandal-conquest-africa
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: 429 }
+end: { year: 439 }
+places: [hippo, carthage, numidia]
+participants:
+  - person: gaiseric
+  - person: augustine
+  - person: galla-placidia
+  - person: valentinian-3
+reviewed: false

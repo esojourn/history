@@ -1,0 +1,15 @@
+id: gratian
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 359 }
+death: { year: 383 }
+reign:
+  - { start: 367, end: 383 }
+birthplace: sirmium
+deathplace: lyon
+places:
+  - { place: trier }
+  - { place: milan }
+  - { place: sirmium, start: 378, end: 379 }
+reviewed: false

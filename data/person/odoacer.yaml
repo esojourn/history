@@ -1,0 +1,16 @@
+id: odoacer
+wikidata: null
+civ: rome
+faction: germans
+importance: 3
+birth: { year: 433, circa: true }
+death: { year: 493 }
+reign:
+  - { start: 476, end: 493 }
+birthplace: unknown
+deathplace: ravenna
+places:
+  - { place: ravenna }
+  - { place: pavia }
+  - { place: verona, start: 489 }
+reviewed: false

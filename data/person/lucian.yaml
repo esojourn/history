@@ -1,0 +1,14 @@
+id: lucian
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 125, circa: true }
+death: { unknown: true, approx: 185 }
+birthplace: samosata
+deathplace: unknown
+places:
+  - { place: samosata }
+  - { place: athens }
+  - { place: gaul }
+  - { place: alexandria }
+reviewed: false

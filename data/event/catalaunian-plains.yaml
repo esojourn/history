@@ -1,0 +1,11 @@
+id: catalaunian-plains
+wikidata: null
+civ: rome
+type: battle
+importance: 4
+start: { year: 451 }
+places: [catalaunian, orleans]
+participants:
+  - person: attila
+  - person: aetius
+reviewed: false

@@ -1,0 +1,14 @@
+id: claudius
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -9 }
+death: { year: 54 }
+reign:
+  - { start: 41, end: 54 }
+birthplace: lyon
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: britain, start: 43 }
+reviewed: false

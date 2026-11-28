@@ -1,0 +1,12 @@
+id: agrippina-younger
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 15 }
+death: { year: 59 }
+birthplace: cologne
+deathplace: baiae
+places:
+  - { place: rome }
+  - { place: baiae }
+reviewed: false

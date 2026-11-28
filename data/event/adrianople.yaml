@@ -7,4 +7,6 @@ start: { year: 378 }
 places: [adrianople]
 participants:
   - person: valens
+  - person: fritigern
+  - person: gratian
 reviewed: false

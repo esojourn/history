@@ -1,0 +1,13 @@
+id: varus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -45, circa: true }
+death: { year: 9 }
+birthplace: unknown
+deathplace: teutoburg
+places:
+  - { place: syria, start: -6, end: -3 }
+  - { place: germania, start: 7, end: 9 }
+  - { place: teutoburg, start: 9 }
+reviewed: false

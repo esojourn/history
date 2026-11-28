@@ -1,0 +1,14 @@
+id: domitian
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 51 }
+death: { year: 96 }
+reign:
+  - { start: 81, end: 96 }
+birthplace: rome
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: germania }
+reviewed: false

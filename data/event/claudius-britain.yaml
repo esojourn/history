@@ -1,0 +1,11 @@
+id: claudius-britain
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: 43 }
+places: [britain, camulodunum]
+participants:
+  - person: claudius
+  - person: vespasian
+reviewed: false

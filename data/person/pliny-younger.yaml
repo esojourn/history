@@ -1,0 +1,14 @@
+id: pliny-younger
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: 61, circa: true }
+death: { year: 113, circa: true }
+birthplace: comum
+deathplace: bithynia
+places:
+  - { place: comum }
+  - { place: rome }
+  - { place: misenum, start: 79 }
+  - { place: bithynia, start: 110, end: 113 }
+reviewed: false

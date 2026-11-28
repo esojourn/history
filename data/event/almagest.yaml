@@ -1,0 +1,10 @@
+id: almagest
+wikidata: null
+civ: egypt
+type: cultural
+importance: 3
+start: { year: 150, circa: true }
+places: [alexandria]
+participants:
+  - person: ptolemy-astronomer
+reviewed: false

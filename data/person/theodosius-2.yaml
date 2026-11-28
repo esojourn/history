@@ -1,0 +1,13 @@
+id: theodosius-2
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 401 }
+death: { year: 450 }
+reign:
+  - { start: 408, end: 450 }
+birthplace: constantinople
+deathplace: constantinople
+places:
+  - { place: constantinople }
+reviewed: false

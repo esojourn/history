@@ -1,0 +1,17 @@
+id: maximian
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 250, circa: true }
+death: { year: 310 }
+reign:
+  - { start: 286, end: 305 }
+  - { start: 306, end: 308 }
+birthplace: sirmium
+deathplace: massilia
+places:
+  - { place: milan }
+  - { place: gaul }
+  - { place: carthage, start: 297, end: 298 }
+  - { place: rome }
+reviewed: false

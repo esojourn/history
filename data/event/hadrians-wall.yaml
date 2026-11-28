@@ -1,0 +1,10 @@
+id: hadrians-wall
+wikidata: null
+civ: rome
+type: founding
+importance: 3
+start: { year: 122 }
+places: [hadrians-wall, britain]
+participants:
+  - person: hadrian
+reviewed: false

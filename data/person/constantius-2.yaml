@@ -1,0 +1,17 @@
+id: constantius-2
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 317 }
+death: { year: 361 }
+reign:
+  - { start: 337, end: 361 }
+birthplace: sirmium
+deathplace: cilicia
+places:
+  - { place: constantinople }
+  - { place: antioch }
+  - { place: sirmium, start: 351, end: 359 }
+  - { place: rome, start: 357 }
+  - { place: milan }
+reviewed: false

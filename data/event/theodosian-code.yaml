@@ -1,0 +1,11 @@
+id: theodosian-code
+wikidata: null
+civ: rome
+type: founding
+importance: 2
+start: { year: 438 }
+places: [constantinople, rome]
+participants:
+  - person: theodosius-2
+  - person: valentinian-3
+reviewed: false

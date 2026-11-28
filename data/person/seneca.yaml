@@ -1,0 +1,12 @@
+id: seneca
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -3, circa: true }
+death: { year: 65 }
+birthplace: corduba
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: corsica, start: 41, end: 49 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: marcomannic-wars
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: 166 }
+end: { year: 180 }
+places: [pannonia, aquileia, vindobona]
+participants:
+  - person: marcus-aurelius
+  - person: commodus
+reviewed: false

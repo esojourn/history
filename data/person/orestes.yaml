@@ -1,0 +1,14 @@
+id: orestes
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: 420 }
+death: { year: 476 }
+birthplace: pannonia
+deathplace: placentia
+places:
+  - { place: pannonia }
+  - { place: constantinople, start: 449 }
+  - { place: ravenna, start: 475, end: 476 }
+  - { place: pavia, start: 476 }
+reviewed: false

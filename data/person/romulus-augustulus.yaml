@@ -1,0 +1,14 @@
+id: romulus-augustulus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 461, circa: true }
+death: { unknown: true, approx: 510 }
+reign:
+  - { start: 475, end: 476 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ravenna, start: 475, end: 476 }
+  - { place: naples, start: 476 }
+reviewed: false

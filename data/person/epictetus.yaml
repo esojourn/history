@@ -1,0 +1,12 @@
+id: epictetus
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 50, circa: true }
+death: { year: 135, circa: true }
+birthplace: hierapolis-phrygia
+deathplace: nicopolis-epirus
+places:
+  - { place: rome }
+  - { place: nicopolis-epirus, start: 93, end: 135 }
+reviewed: false

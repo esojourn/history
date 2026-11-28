@@ -1,0 +1,12 @@
+id: trajan-parthian-war
+wikidata: null
+civ: meso
+type: war
+importance: 3
+start: { year: 114 }
+end: { year: 117 }
+places: [armenia, mesopotamia, ctesiphon, antioch]
+participants:
+  - person: trajan
+  - person: hadrian
+reviewed: false

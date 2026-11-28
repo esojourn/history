@@ -1,0 +1,12 @@
+id: ovid
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -42 }
+death: { year: 17, circa: true }
+birthplace: sulmo
+deathplace: tomis
+places:
+  - { place: rome }
+  - { place: tomis, start: 8, end: 17 }
+reviewed: false

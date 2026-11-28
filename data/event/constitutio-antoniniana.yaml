@@ -1,0 +1,11 @@
+id: constitutio-antoniniana
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: 212 }
+places: [rome]
+participants:
+  - person: caracalla
+  - person: ulpian
+reviewed: false

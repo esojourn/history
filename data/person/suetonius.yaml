@@ -1,0 +1,11 @@
+id: suetonius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: 69, circa: true }
+death: { unknown: true, approx: 130 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+reviewed: false

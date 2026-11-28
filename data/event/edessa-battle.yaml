@@ -1,0 +1,11 @@
+id: edessa-battle
+wikidata: null
+civ: meso
+type: battle
+importance: 3
+start: { year: 260 }
+places: [edessa, haran]
+participants:
+  - person: shapur-1
+  - person: valerian
+reviewed: false
