@@ -3,24 +3,45 @@ extent: [-3000, 2000]        # 时间轴的两端
 hymn_url: https://dingxuan.info/hymn/index.php?n=   # 正文里的诗歌链到这里，编号见 locales/<语言>/hymn.yaml
 focus: [-261, -137]          # 样板时段（公元前 262—前 138 年）：各文明都录了人物；圣经历史另录了全程
 default_open: [china]        # 进入人物层时默认展开的文明
-views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 view.<id>
+views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 view.<id>。group：在“时期”菜单里归哪一组（viewgroup.<组>）
   - { id: world, range: [-3000, 2000] }
-  - { id: china, range: [-2149, 2000] }
-  - { id: bible, range: [-2260, 1980], open: [bible] }
-  - { id: greece, range: [-800, -390], open: [greece, meso] }
-  - { id: hellenistic, range: [-405, -140], open: [greece, meso, egypt] }
-  - { id: rome-republic, range: [-770, -20], open: [rome] }
-  - { id: roman-empire, range: [-35, 485], open: [rome, meso] }
-  - { id: chunqiu, range: [-775, -470] }
-  - { id: zhanguo, range: [-480, -250] }
-  - { id: focus, range: [-261, -137] }
-  - { id: sanguo, range: [15, 290] }
-  - { id: liangjin, range: [270, 430] }
-  - { id: nanbei, range: [410, 600] }
-  - { id: suitang, range: [580, 765] }
-  - { id: tanglate, range: [745, 915] }
-  - { id: wudai, range: [900, 968], open: [china, steppe] }
-  - { id: beisong, range: [955, 1135], open: [china, steppe] }
-  - { id: nansongyuan, range: [1120, 1375], open: [china, steppe] }
-  - { id: ming, range: [1360, 1650], open: [china, steppe] }
-  - { id: qing, range: [1635, 1915], open: [china, steppe] }
+  - { id: china, group: china, range: [-2149, 2000] }
+  - { id: bible, group: bible, range: [-2260, 1980], open: [bible] }
+  - { id: bible-primeval, group: bible, range: [-3000, -2132], open: [bible] }
+  - { id: bible-patriarchs, group: bible, range: [-2177, -1863], open: [bible] }
+  - { id: bible-egypt-sojourn, group: bible, range: [-1892, -1428], open: [bible] }
+  - { id: bible-exodus-judges, group: bible, range: [-1461, -1033], open: [bible] }
+  - { id: bible-united-monarchy, group: bible, range: [-1054, -924], open: [bible] }
+  - { id: bible-divided-monarchy, group: bible, range: [-943, -571], open: [bible] }
+  - { id: bible-exile, group: bible, range: [-589, -533], open: [bible] }
+  - { id: bible-second-temple, group: bible, range: [-558, 16], open: [bible] }
+  - { id: bible-new-testament, group: bible, range: [-9, 104], open: [bible] }
+  - { id: bible-early-church, group: bible, range: [91, 322], open: [bible] }
+  - { id: bible-council-era, group: bible, range: [306, 483], open: [bible] }
+  - { id: bible-missions-era, group: bible, range: [465, 765], open: [bible] }
+  - { id: bible-papal-alliance, group: bible, range: [742, 1066], open: [bible] }
+  - { id: bible-papal-zenith, group: bible, range: [1044, 1304], open: [bible] }
+  - { id: bible-pre-reformation, group: bible, range: [1285, 1526], open: [bible] }
+  - { id: bible-reformation, group: bible, range: [1513, 1559], open: [bible] }
+  - { id: bible-confessional-wars, group: bible, range: [1551, 1652], open: [bible] }
+  - { id: bible-dissenters, group: bible, range: [1644, 1693], open: [bible] }
+  - { id: bible-pietism-revival, group: bible, range: [1685, 1795], open: [bible] }
+  - { id: bible-modern-church, group: bible, range: [1786, 1925], open: [bible] }
+  - { id: bible-ecumenical-age, group: bible, range: [1916, 1979], open: [bible] }
+  - { id: greece, group: classical, range: [-800, -390], open: [greece, meso] }
+  - { id: hellenistic, group: classical, range: [-405, -140], open: [greece, meso, egypt] }
+  - { id: rome-republic, group: classical, range: [-770, -20], open: [rome] }
+  - { id: roman-empire, group: classical, range: [-35, 485], open: [rome, meso] }
+  - { id: chunqiu, group: china, range: [-775, -470] }
+  - { id: zhanguo, group: china, range: [-480, -250] }
+  - { id: focus, group: china, range: [-261, -137] }
+  - { id: sanguo, group: china, range: [15, 290] }
+  - { id: liangjin, group: china, range: [270, 430] }
+  - { id: nanbei, group: china, range: [410, 600] }
+  - { id: suitang, group: china, range: [580, 765] }
+  - { id: tanglate, group: china, range: [745, 915] }
+  - { id: wudai, group: china, range: [900, 968], open: [china, steppe] }
+  - { id: beisong, group: china, range: [955, 1135], open: [china, steppe] }
+  - { id: nansongyuan, group: china, range: [1120, 1375], open: [china, steppe] }
+  - { id: ming, group: china, range: [1360, 1650], open: [china, steppe] }
+  - { id: qing, group: china, range: [1635, 1915], open: [china, steppe] }

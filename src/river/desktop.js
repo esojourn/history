@@ -313,8 +313,12 @@ export function desktop(H, card, search) {
   svg.addEventListener('pointerleave', () => { if (!dragging) { S.hx = null; draw(); } });
   stage.addEventListener('scroll', draw);
 
+  // “时期”菜单：点按钮开合；选了一项、点别处或按 Esc 就收起
+  const pm = $('#d .pm'), pmBtn = $('#d [data-periods]');
+  const openPm = on => { pm.hidden = !on; pmBtn.setAttribute('aria-expanded', on); };
   $('#d').addEventListener('click', e => {
     const v = e.target.closest('button[data-view]'), op = e.target.closest('[data-open]');
+    if (e.target.closest('[data-periods]')) openPm(pm.hidden); else if (v || !e.target.closest('.pm')) openPm(false);
     if (v) { stage.scrollTop = 0; (VOPEN[v.dataset.view] || []).forEach(id => S.open.add(id)); fly(...VIEWS[v.dataset.view]); }
     if (op) {
       S.open = new Set(op.dataset.open === 'all' ? H.lanes.map(l => l.id) : op.dataset.open === 'default' ? H.site.default_open : []);
@@ -332,7 +336,7 @@ export function desktop(H, card, search) {
   $('#find').addEventListener('click', openSearch);
   // Esc：先退出全屏，再关详情卡。按 / 打开搜索。
   addEventListener('keydown', e => {
-    if (e.key === 'Escape') { if (S.full) { S.full = false; showCard(); } else if (S.sel) select(null); }
+    if (e.key === 'Escape') { if (!pm.hidden) openPm(false); else if (S.full) { S.full = false; showCard(); } else if (S.sel) select(null); }
     else if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); openSearch(); }
   });
   $('#legend').innerHTML = Object.values(H.RT).map(r => `<span class="lg"><i style="border-top:2px ${r.dash ? 'dashed' : 'solid'} ${r.c}"></i>${r.n}</span>`).join('');

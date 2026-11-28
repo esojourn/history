@@ -16,14 +16,22 @@ export function getStaticPaths() {
 }
 const { lang } = Astro.params;
 const data = build(lang), t = createModel(structuredClone(data)).t;
+// “时期”菜单：快捷视图按 site.yaml 里的 group 分组；与组同名的那一项（如“中国”）显示成“全程”
+const groups = [...new Set(data.site.views.map(v => v.group).filter(Boolean))].map(g => ({ g, views: data.site.views.filter(v => v.group === g) }));
 ---
 <Base title={t('site.title')} desc={t('site.desc')} lang={data.htmlLang} bodyClass="river">
   <div id="app" data-src={`/data/${lang}.json`} data-base={`/${lang}/`} style="display:contents">
     <div id="d" hidden>
       <header class="bar">
         <h1>{t('site.title')}</h1>
-        <div class="seg" role="group">
-          {data.site.views.filter(v => v.id === 'world').map(v => <button data-view={v.id}>{t(`view.${v.id}`)}</button>)}
+        <div class="pm-wrap">
+          <div class="seg" role="group">
+            {data.site.views.filter(v => v.id === 'world').map(v => <button data-view={v.id}>{t(`view.${v.id}`)}</button>)}
+            <button data-periods aria-expanded="false">{t('periods.open')} ▾</button>
+          </div>
+          <div class="pm" hidden>
+            {groups.map(({ g, views }) => <><h3>{t(`viewgroup.${g}`)}</h3><div>{views.map(v => <button data-view={v.id}>{v.id === g ? t('periods.whole') : t(`view.${v.id}`)}</button>)}</div></>)}
+          </div>
         </div>
         <div class="seg" role="group">
           <button data-open="all">{t('open.all')}</button><button data-open="none">{t('open.none')}</button>
@@ -50,6 +58,9 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
       </header>
       <nav id="mtabs"></nav>
       <div id="mseg" class="mseg"></div>
+      <div class="pm-anchor"><div class="pm" hidden>
+        {groups.map(({ g, views }) => <><h3>{t(`viewgroup.${g}`)}</h3><div>{views.map(v => <button data-view={v.id}>{v.id === g ? t('periods.whole') : t(`view.${v.id}`)}</button>)}</div></>)}
+      </div></div>
       <div id="mbody"></div>
       <aside id="msheet" class="detail sheet"></aside>
     </div>

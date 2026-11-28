@@ -392,7 +392,7 @@ export function mobile(H, card, search) {
       seg.innerHTML = `<button class="back" data-map>${t('m.map')}</button><span><b>${t('m.focusOn', { name: F.p ? F.p.n : F.e.n })}</b><i>${t('m.related', { n: F.cols.length - (F.p ? 1 : 0) })}</i></span>${zoom}`;
       return;
     }
-    seg.innerHTML = `<span id="mwhere"></span><button class="back" data-whole>${t('m.whole')}</button>${zoom}
+    seg.innerHTML = `<span id="mwhere"></span><button class="back" data-whole>${t('m.whole')}</button><button class="back" data-periods aria-expanded="false">${t('periods.open')}</button>${zoom}
       <button class="all" data-all aria-pressed="${M.all}">${M.all ? t('m.mainShort') : t('m.allShort', { n: H.people.length })}</button>`;
   }
   let lastLane = null;
@@ -627,6 +627,15 @@ export function mobile(H, card, search) {
 
   $('#m').addEventListener('click', e => {
     const el = e.target, to = cardTarget(e);
+    // “时期”菜单：选一项就飞到那个文明、那一段，缩放到这一段差不多占满一屏；点别处收起
+    const pm = $('#m .pm'), pv = el.closest('.pm [data-view]'), wasOpen = !pm.hidden;
+    const openPm = on => { pm.hidden = !on; const b = $('#m [data-periods]'); if (b) b.setAttribute('aria-expanded', on); };
+    if (el.closest('[data-periods]')) return openPm(pm.hidden);
+    if (wasOpen) { openPm(false); if (!pv) return; }
+    if (pv) {
+      const v = H.site.views.find(x => x.id === pv.dataset.view), [a, b] = v.range, mid = HDH + (vhV() - HDH) / 2;
+      return flyTo((v.open || H.site.default_open)[0] || M.lane, (a + b) / 2, H.clamp((vhV() - HDH - 60) / (b - a) / BASEK, zMin(), 1.2), mid);
+    }
     const lane = el.closest('[data-lane]'), p = el.closest('#mpeople [data-p]'), ev = el.closest('#mpeople [data-e]'), cl = el.closest('#mpeople [data-c]'), bd = el.closest('#mpeople [data-b]');
     if (lane) flyTo(lane.dataset.lane, yearAt(), z);
     else if (el.closest('[data-z]')) { zoomBy(el.closest('[data-z]').dataset.z > 0 ? 1.5 : 1 / 1.5, body.clientWidth / 2, body.clientHeight / 2); draw(); }

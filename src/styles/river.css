@@ -118,3 +118,14 @@ dialog.about::backdrop { background: rgba(0,0,0,.4); }
 .mmore button.mnext { border-color: var(--ink-2); font-weight: 600; }
 .seg.fz button { padding: 5px 9px; }
 .seg.fz button:disabled { opacity: .35; cursor: default; }
+
+/* “时期”菜单：快捷视图分组列出。桌面挂在按钮下面，手机铺在小栏下面 */
+.pm-wrap { position: relative; flex-shrink: 0; }
+.pm { position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; width: min(520px, 90vw); box-sizing: border-box; padding: 4px 14px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 28px rgba(27, 42, 49, .16); }
+.pm[hidden] { display: none; }
+.pm h3 { font-size: calc(12px * var(--fz)); color: var(--ink-3); margin: 10px 0 6px; }
+.pm div { display: flex; flex-wrap: wrap; gap: 6px; }
+.pm button { border: 1px solid var(--line); background: var(--paper); border-radius: 14px; padding: 3px 12px; font-size: calc(13px * var(--fz)); }
+.pm button:hover { border-color: var(--ink-2); }
+.pm-anchor { position: relative; height: 0; z-index: 15; }   /* 不占高度，只给菜单一个紧贴小栏下沿的定位点 */
+#m .pm { top: 0; right: 0; width: auto; max-height: 72vh; overflow: auto; border-width: 0 0 1px; border-radius: 0 0 12px 12px; }
