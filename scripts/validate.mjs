@@ -14,7 +14,7 @@ try { raw = loadRaw(); tx = loadText(BASE_LOCALE); } catch (e) { console.error('
 const isInt = v => Number.isInteger(v);
 const unknown = v => v === 'unknown' || (v && typeof v === 'object' && v.unknown);
 const TYPES = new Set(raw.relType.map(t => t.id));
-const EVENT_TYPES = new Set(['battle', 'war', 'political', 'founding', 'uprising', 'cultural', 'diplomatic', 'migration']);
+const EVENT_TYPES = new Set(['battle', 'war', 'political', 'founding', 'uprising', 'cultural', 'diplomatic', 'migration', 'disaster']);
 const factions = new Set(raw.faction.map(f => f.id));
 
 // 地点引用：null = 还没查；unknown = 查过，史料无载；其余必须是已有的地点 id

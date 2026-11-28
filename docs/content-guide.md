@@ -71,7 +71,7 @@ recalled:                    # 凭记忆标注、还没核对的；没有就不�
 - 发现已有年份与可靠来源不符：**直接改正**，并在交回的报告里逐条列出（原值、新值、依据）。
 - 来源之间有分歧的：取学界通行说法，加 `circa: true`，并在正文里提一句另一说。
 - `wikidata`：到 Wikidata 查到本条目的编号（形如 `Q7192`）后填写；查不到保持 `null`。
-- `type`（事件）：从 `battle`（战役）、`war`（战争）、`political`（政变、即位、分封等政治事件）、`founding`（建国、立制）、`uprising`（起义）、`cultural`（学术、文化、宗教）、`diplomatic`（出使、和约）、`migration`（迁徙）里选一个。
+- `type`（事件）：从 `battle`（战役）、`war`（战争）、`political`（政变、即位、分封等政治事件）、`founding`（建国、立制）、`uprising`（起义）、`cultural`（学术、文化、宗教）、`diplomatic`（出使、和约）、`migration`（迁徙）、`disaster`（瘟疫、地震、饥荒、水旱等灾害；2026-11-28 增设）里选一个。
 - 不要改 `id`、`civ`、`faction`、`importance`、`participants`、`reviewed`。认为这些有问题的，写进报告。
 
 ## 4. 结构文件：地点

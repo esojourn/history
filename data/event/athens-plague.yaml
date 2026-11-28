@@ -1,7 +1,7 @@
 id: athens-plague
 wikidata: null
 civ: greece
-type: cultural
+type: disaster
 importance: 3
 start: { year: -429 }
 end: { year: -425 }

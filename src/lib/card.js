@@ -22,7 +22,8 @@ export function makeCard(H) {
   // 人物另属某个阵营（如北国以色列、南国犹大）时，在泳道名后注明，说明时间轴上那根条的颜色
   const laneTag = (id, fac) => { const l = H.lane(id), f = fac && fac !== id && H.FAC[fac];
     return `<p class="d-lane"><i style="background:${l.c}"></i>${l.name}${f ? `<span class="d-fac"><i style="background:${f.c}"></i>${f.n}</span>` : ''}</p>`; };
-  const ageAt = (p, y) => (p.b == null || p.ns ? '' : t('card.age', { circa: p.circa ? t('circa') + ' ' : '', n: Math.round(y - p.b) }));
+  // 数据只记到年份，年龄是两个年份相减，可能差一岁，所以一律写“约”（2026-11-28 项目方确定）
+  const ageAt = (p, y) => (p.b == null || p.ns ? '' : t('card.age', { circa: t('circa') + ' ', n: Math.round(y - p.b) }));
 
   const bar = (o, kind, id) => (o.page
     ? `<div class="d-bar"><a class="d-river" href="${H.riverUrl(kind, id)}">${t('card.inRiver')}</a></div>`
@@ -63,7 +64,7 @@ export function makeCard(H) {
   /* ---------- 人物 ---------- */
   function person(id, o) {
     const p = H.P[id], rs = H.relsOf(id), es = H.eventsOf(id).sort((a, b) => a.s - b.s);
-    const lived = p.b != null && !p.dq && !p.ns ? '，' + t('card.lived', { circa: p.circa || p.dc ? t('circa') : '', n: p.d - p.b }) : '';
+    const lived = p.b != null && !p.dq && !p.ns ? '，' + t('card.lived', { circa: t('circa'), n: p.d - p.b }) : '';
     const reign = p.reigns.map(r => '，' + t('card.reign', { a: H.fmt(r[0]), b: H.fmt(r[1]), n: r[1] - r[0] })).join('');
     const where = [p.bp && placeShort(p.bp) && p.bp !== 'unknown' ? t('card.born', { place: placeShort(p.bp) }) : '',
       p.dp && placeShort(p.dp) && p.dp !== 'unknown' ? t('card.died', { place: placeShort(p.dp) }) : ''].filter(Boolean).join('，');
