@@ -1,6 +1,7 @@
 id: brennus-delphi
 wikidata: null
 civ: rome
+faction: gaul
 importance: 2
 birth: { unknown: true, approx: -320 }
 death: { year: -278 }

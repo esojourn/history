@@ -8,4 +8,7 @@ end: { year: -274 }
 places: [tarentum, heraclea-lucania, asculum, sicily, beneventum]
 participants:
   - person: pyrrhus
+  - person: dentatus
+  - person: fabricius
+  - person: appius-caecus
 reviewed: false
