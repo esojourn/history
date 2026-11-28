@@ -154,6 +154,10 @@ const quoteHtml = q => `<body style="background:transparent">
     <div style="font:700 30px 'Microsoft YaHei';letter-spacing:4px;color:#8a5a2b">${q.book}</div>
     <div style="margin-top:22px;font:400 58px/1.5 ${KAI};color:#1B2A31;letter-spacing:2px">${q.text.replace(/\//g, '<br>').replace(/【/g, '<b style="color:#C4472D">').replace(/】/g, '</b>')}</div>
   </div></body>`;
+// 系列标题（第一屏和开头同一位置，第一屏淡入开头时不重影）。项目方 2026-11-28 要求加大、“真实历史”更明显：
+// “峡谷之外的”米色，“真实历史”更大、加粗、金色
+const SERIES = `<div style="position:absolute;left:0;right:0;top:92px;text-align:center;font-family:${KAI};color:#e8dcc0;letter-spacing:8px;text-indent:8px;white-space:nowrap;text-shadow:0 4px 20px rgba(0,0,0,.6)">`
+  + `<span style="font-size:84px">峡谷之外的</span><span style="font-size:112px;font-weight:700;color:#f2c96b">真实历史</span></div>`;
 const pages = {
   // 第一屏（成片第一帧，也是平台上的预览图）：照制作标准的标题画面（版式同兰陵王第二篇）。竖版图居中，同一造型的横版图模糊垫底；
   // 大标题“忍过胯下之辱的将军”太长，分两行：“忍过 / 胯下之辱的将军”，后一行金色（不让“的”字起行，“胯下之辱”整个在金色里）
@@ -163,7 +167,7 @@ const pages = {
       -webkit-mask-image:linear-gradient(transparent 0,rgba(0,0,0,.55) 110px,#000 300px,#000 900px,transparent 1300px)">
     <div style="position:absolute;left:0;right:0;top:0;height:520px;background:linear-gradient(rgba(13,18,22,.92) 0,rgba(13,18,22,.75) 200px,transparent)"></div>
     <div style="position:absolute;left:0;right:0;top:1100px;bottom:0;background:linear-gradient(transparent,rgba(13,18,22,.9) 300px,#0d1216 520px)"></div>
-    <div style="position:absolute;left:0;right:0;top:110px;text-align:center;font:400 64px ${KAI};letter-spacing:12px;text-indent:12px;color:#e8dcc0">峡谷之外的真实历史</div>
+    ${SERIES}
     <div style="position:absolute;left:0;right:0;top:1340px;text-align:center;font:700 132px/1.22 ${KAI};letter-spacing:10px;text-indent:10px;text-shadow:0 6px 30px rgba(0,0,0,.7)">忍过<br><span style="color:#f2c96b">胯下之辱的将军</span></div>
     <div style="position:absolute;left:0;right:0;top:1720px;text-align:center;font-size:36px;letter-spacing:10px;text-indent:10px;color:rgba(241,236,224,.75)">韩信</div>
     <div style="position:absolute;right:30px;bottom:30px;font-size:24px;color:rgba(241,236,224,.7)">${CREDIT}</div>
@@ -176,8 +180,8 @@ const pages = {
   intro: `<body style="background:transparent;color:#fff;font-family:'Microsoft YaHei'">
     <div style="position:absolute;left:0;right:0;top:330px;height:90px;background:linear-gradient(#0d1216,transparent)"></div>
     <div style="position:absolute;left:0;right:0;top:1370px;height:160px;background:linear-gradient(transparent,#0d1216)"></div>
-    <div style="position:absolute;left:0;right:0;top:110px;text-align:center;font:400 64px ${KAI};letter-spacing:12px;text-indent:12px;color:#e8dcc0">峡谷之外的真实历史</div>
-    <div style="position:absolute;left:0;right:0;top:218px;text-align:center;font:700 44px ${KAI};letter-spacing:6px;text-indent:6px;color:#f2c96b">韩信：忍过胯下之辱的将军</div>
+    ${SERIES}
+    <div style="position:absolute;left:0;right:0;top:256px;text-align:center;font:700 46px ${KAI};letter-spacing:6px;text-indent:6px;color:#f1ece0;text-shadow:0 3px 14px rgba(0,0,0,.6)">韩信：忍过胯下之辱的将军</div>
     <div style="position:absolute;left:36px;top:1466px;padding:8px 18px;border-radius:8px;background:rgba(0,0,0,.55);font-size:28px;letter-spacing:1px;color:#f1ece0">${CREDIT}</div>
   </body>`,
   // 结尾卡：二维码、网址；最下面小字是核实过的史料（只显示、不念）
