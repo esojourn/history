@@ -1,0 +1,13 @@
+id: octavia
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -68, circa: true }
+death: { year: -10 }
+birthplace: nola
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: athens, start: -38, end: -36 }
+  - { place: tarentum, start: -36, end: -36 }
+reviewed: false

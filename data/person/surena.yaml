@@ -1,0 +1,13 @@
+id: surena
+wikidata: null
+civ: meso
+faction: parthia
+importance: 2
+birth: { year: -83, circa: true }
+death: { year: -51, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: seleucia-tigris }
+  - { place: haran, start: -52, end: -52 }
+reviewed: false

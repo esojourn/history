@@ -1,0 +1,13 @@
+id: actium-battle
+wikidata: null
+civ: rome
+type: battle
+importance: 5
+start: { year: -30 }
+places: [actium]
+participants:
+  - person: augustus
+  - person: agrippa
+  - person: mark-antony
+  - person: cleopatra-7
+reviewed: false

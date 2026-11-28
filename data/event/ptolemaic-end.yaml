@@ -1,0 +1,12 @@
+id: ptolemaic-end
+wikidata: null
+civ: egypt
+type: political
+importance: 4
+start: { year: -29 }
+places: [alexandria]
+participants:
+  - person: cleopatra-7
+  - person: mark-antony
+  - person: augustus
+reviewed: false

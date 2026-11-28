@@ -1,0 +1,12 @@
+id: plautus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -253, circa: true }
+death: { year: -183 }
+birthplace: sarsina
+deathplace: rome
+places:
+  - { place: sarsina }
+  - { place: rome }
+reviewed: false

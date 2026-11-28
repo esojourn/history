@@ -36,3 +36,147 @@
   to: archimedes
   type: rival
   year: -211
+# 第 ③ 批：罗马王政与共和（2026-11-28）
+- { from: romulus, to: numa, type: lord, year: -720 }
+- { from: numa, to: tullus-hostilius, type: lord, year: -680 }
+- { from: numa, to: ancus-marcius, type: kin }
+- { from: tullus-hostilius, to: ancus-marcius, type: lord, year: -645 }
+- { from: ancus-marcius, to: tarquin-priscus, type: lord, year: -620 }
+- { from: tarquin-priscus, to: servius-tullius, type: kin, year: -580 }
+- { from: tarquin-priscus, to: tarquin-superbus, type: kin }
+- { from: servius-tullius, to: tarquin-superbus, type: rival, year: -534 }
+- { from: tarquin-superbus, to: lucretia, type: rival, year: -508 }
+- { from: brutus-founder, to: tarquin-superbus, type: rival, year: -508 }
+- { from: brutus-founder, to: lucretia, type: ally, year: -508 }
+- { from: porsenna, to: tarquin-superbus, type: ally, year: -507 }
+- { from: camillus, to: brennus, type: rival, year: -389 }
+- { from: camillus, to: licinius-stolo, type: rival, year: -366 }
+- { from: appius-caecus, to: pyrrhus, type: rival, year: -279 }
+- { from: dentatus, to: pyrrhus, type: rival, year: -274 }
+- { from: fabricius, to: pyrrhus, type: rival, year: -279 }
+- { from: fabricius, to: dentatus, type: ally, year: -275 }
+- { from: duilius, to: regulus, type: ally, year: -256 }
+- { from: flaminius, to: hannibal, type: rival, year: -216 }
+- { from: flaminius, to: fabius, type: rival, year: -231 }
+- { from: hamilcar, to: hasdrubal-barca, type: kin }
+- { from: hannibal, to: hasdrubal-barca, type: kin, year: -217 }
+- { from: hasdrubal-barca, to: scipio, type: rival, year: -207 }
+- { from: hasdrubal-barca, to: masinissa, type: ally, year: -210 }
+- { from: masinissa, to: scipio, type: ally, year: -205 }
+- { from: masinissa, to: hannibal, type: rival, year: -201 }
+- { from: masinissa, to: aemilianus, type: ally, year: -147 }
+- { from: masinissa, to: jugurtha, type: kin }
+- { from: flamininus, to: philip-v, type: rival, year: -196 }
+- { from: flamininus, to: hannibal, type: rival, year: -182 }
+- { from: flamininus, to: nabis, type: rival, year: -194 }
+- { from: flamininus, to: attalus-1, type: ally, year: -196 }
+- { from: flamininus, to: antiochus-3, type: rival, year: -192 }
+- { from: aemilius-paullus, to: perseus, type: rival, year: -167 }
+- { from: aemilius-paullus, to: aemilianus, type: kin }
+- { from: aemilius-paullus, to: scipio, type: kin, year: -190 }
+- { from: aemilius-paullus, to: polybius, type: mentor, year: -166 }
+- { from: aemilius-paullus, to: cato, type: kin, year: -160 }
+- { from: mummius, to: aemilianus, type: ally, year: -141 }
+- { from: mummius, to: polybius, type: ally, year: -145 }
+- { from: cato, to: ennius, type: mentor, year: -203 }
+- { from: ennius, to: scipio, type: ally, year: -190 }
+- { from: terence, to: aemilianus, type: ally, year: -160 }
+- { from: cornelia, to: scipio, type: kin }
+- { from: cornelia, to: tiberius-gracchus, type: kin }
+- { from: cornelia, to: gaius-gracchus, type: kin }
+- { from: cornelia, to: aemilianus, type: kin, year: -140 }
+- { from: tiberius-gracchus, to: gaius-gracchus, type: kin }
+- { from: tiberius-gracchus, to: aemilianus, type: kin, year: -136 }
+- { from: gaius-gracchus, to: aemilianus, type: rival, year: -128 }
+- { from: marius, to: aemilianus, type: lord, year: -133 }
+- { from: jugurtha, to: aemilianus, type: lord, year: -133 }
+- { from: marius, to: jugurtha, type: rival, year: -105 }
+- { from: sulla, to: jugurtha, type: rival, year: -104 }
+- { from: marius, to: sulla, type: rival, year: -87 }
+- { from: marius, to: cinna, type: ally, year: -86 }
+- { from: marius, to: caesar, type: kin, year: -90 }
+- { from: marius, to: sertorius, type: lord, year: -101 }
+- { from: mithridates-6, to: marius, type: rival, year: -97 }
+- { from: cinna, to: caesar, type: kin, year: -83 }
+- { from: cinna, to: sulla, type: rival, year: -86 }
+- { from: cinna, to: sertorius, type: ally, year: -86 }
+- { from: livius-drusus, to: poppaedius-silo, type: ally, year: -90 }
+- { from: livius-drusus, to: cato-younger, type: kin, year: -91 }
+- { from: poppaedius-silo, to: marius, type: rival, year: -89 }
+- { from: sulla, to: mithridates-6, type: rival, year: -84 }
+- { from: sulla, to: lucullus, type: mentor, year: -85 }
+- { from: sulla, to: pompey, type: mentor, year: -82 }
+- { from: sulla, to: crassus, type: lord, year: -81 }
+- { from: sulla, to: catiline, type: lord, year: -81 }
+- { from: sulla, to: caesar, type: rival, year: -81 }
+- { from: sulla, to: sertorius, type: rival, year: -87 }
+- { from: lucullus, to: mithridates-6, type: rival, year: -71 }
+- { from: lucullus, to: tigranes-2, type: rival, year: -68 }
+- { from: mithridates-6, to: tigranes-2, type: kin, year: -90 }
+- { from: pompey, to: mithridates-6, type: rival, year: -65 }
+- { from: pompey, to: tigranes-2, type: lord, year: -65 }
+- { from: pompey, to: lucullus, type: rival, year: -65 }
+- { from: sertorius, to: pompey, type: rival, year: -75 }
+- { from: sertorius, to: mithridates-6, type: ally, year: -74 }
+- { from: spartacus, to: crassus, type: rival, year: -70 }
+- { from: pompey, to: spartacus, type: rival, year: -70 }
+- { from: pompey, to: crassus, type: ally, year: -59 }
+- { from: caesar, to: pompey, type: rival, year: -47 }
+- { from: caesar, to: crassus, type: ally, year: -59 }
+- { from: crassus, to: surena, type: rival, year: -52 }
+- { from: crassus, to: cassius, type: lord, year: -52 }
+- { from: pompey, to: sextus-pompey, type: kin }
+- { from: pompey, to: clodius, type: rival, year: -57 }
+- { from: varro, to: pompey, type: lord, year: -66 }
+- { from: cicero, to: catiline, type: rival, year: -62 }
+- { from: cicero, to: clodius, type: rival, year: -57 }
+- { from: cicero, to: pompey, type: ally, year: -56 }
+- { from: cicero, to: caesar, type: rival, year: -48 }
+- { from: cicero, to: mark-antony, type: rival, year: -42 }
+- { from: cicero, to: augustus, type: mentor, year: -42 }
+- { from: cicero, to: cato-younger, type: ally, year: -62 }
+- { from: cicero, to: brutus, type: mentor, year: -45 }
+- { from: cicero, to: varro, type: ally, year: -44 }
+- { from: cicero, to: lucretius, type: ally, year: -54 }
+- { from: catullus, to: cicero, type: ally, year: -55 }
+- { from: sallust, to: cicero, type: rival, year: -51 }
+- { from: cato-younger, to: caesar, type: rival, year: -62 }
+- { from: cato-younger, to: brutus, type: kin, year: -50 }
+- { from: cato-younger, to: pompey, type: ally, year: -48 }
+- { from: clodius, to: caesar, type: ally, year: -58 }
+- { from: clodius, to: lucullus, type: kin, year: -67 }
+- { from: clodius, to: cato-younger, type: rival, year: -57 }
+- { from: caesar, to: vercingetorix, type: rival, year: -51 }
+- { from: caesar, to: brutus, type: rival, year: -43 }
+- { from: caesar, to: cassius, type: rival, year: -43 }
+- { from: caesar, to: mark-antony, type: lord, year: -48 }
+- { from: caesar, to: lepidus, type: lord, year: -45 }
+- { from: caesar, to: augustus, type: kin, year: -44 }
+- { from: caesar, to: cleopatra-7, type: ally, year: -47 }
+- { from: caesar, to: sallust, type: lord, year: -45 }
+- { from: caesar, to: catullus, type: rival, year: -54 }
+- { from: caesar, to: varro, type: rival, year: -48 }
+- { from: caesar, to: hyrcanus-2, type: lord, year: -46 }
+- { from: brutus, to: cassius, type: ally, year: -43 }
+- { from: brutus, to: mark-antony, type: rival, year: -41 }
+- { from: cassius, to: mark-antony, type: rival, year: -41 }
+- { from: brutus, to: augustus, type: rival, year: -41 }
+- { from: cassius, to: herod, type: ally, year: -42 }
+- { from: mark-antony, to: augustus, type: rival, year: -30 }
+- { from: mark-antony, to: lepidus, type: ally, year: -42 }
+- { from: augustus, to: lepidus, type: rival, year: -35 }
+- { from: mark-antony, to: cleopatra-7, type: kin, year: -36 }
+- { from: mark-antony, to: octavia, type: kin, year: -39 }
+- { from: octavia, to: cleopatra-7, type: rival, year: -34 }
+- { from: augustus, to: octavia, type: kin }
+- { from: augustus, to: agrippa, type: ally, year: -30 }
+- { from: augustus, to: cleopatra-7, type: rival, year: -29 }
+- { from: agrippa, to: mark-antony, type: rival, year: -30 }
+- { from: agrippa, to: sextus-pompey, type: rival, year: -35 }
+- { from: augustus, to: sextus-pompey, type: rival, year: -37 }
+- { from: mark-antony, to: sextus-pompey, type: rival, year: -34 }
+- { from: varro, to: mark-antony, type: rival, year: -42 }
+- { from: mark-antony, to: herod, type: lord, year: -39 }
+- { from: augustus, to: herod, type: lord, year: -29 }
+- { from: cleopatra-7, to: herod, type: rival, year: -33 }
+- { from: agrippa, to: herod, type: ally, year: -14 }

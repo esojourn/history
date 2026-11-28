@@ -1,0 +1,13 @@
+id: gallic-wars
+wikidata: null
+civ: rome
+type: war
+importance: 4
+start: { year: -57 }
+end: { year: -49 }
+places: [gaul, britain, gergovia, alesia]
+participants:
+  - person: caesar
+  - person: vercingetorix
+  - person: mark-antony
+reviewed: false

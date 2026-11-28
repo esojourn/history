@@ -1,0 +1,12 @@
+id: carrhae
+wikidata: null
+civ: meso
+type: battle
+importance: 3
+start: { year: -52 }
+places: [haran]
+participants:
+  - person: crassus
+  - person: surena
+  - person: cassius
+reviewed: false

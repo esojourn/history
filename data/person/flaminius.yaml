@@ -1,0 +1,13 @@
+id: flaminius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -274, circa: true }
+death: { year: -216 }
+birthplace: unknown
+deathplace: trasimene
+places:
+  - { place: rome }
+  - { place: sicily, start: -226, end: -226 }
+  - { place: trasimene, start: -216, end: -216 }
+reviewed: false

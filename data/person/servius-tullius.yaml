@@ -1,0 +1,13 @@
+id: servius-tullius
+wikidata: null
+civ: rome
+importance: 3
+birth: { unknown: true, approx: -610, certainty: traditional }
+death: { year: -534, certainty: traditional }
+reign:
+  - { start: -577, end: -534 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome, start: -577, end: -534 }
+reviewed: false

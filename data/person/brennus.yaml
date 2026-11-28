@@ -1,0 +1,14 @@
+id: brennus
+wikidata: null
+civ: rome
+faction: gaul
+importance: 3
+birth: { unknown: true, approx: -430, certainty: traditional }
+death: { unknown: true, approx: -380, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: clusium }
+  - { place: allia, start: -389, end: -389 }
+  - { place: rome, start: -389, end: -389 }
+reviewed: false

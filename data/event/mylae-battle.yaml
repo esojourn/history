@@ -1,0 +1,10 @@
+id: mylae-battle
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: -259 }
+places: [mylae]
+participants:
+  - person: duilius
+reviewed: false

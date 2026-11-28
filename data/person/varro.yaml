@@ -1,0 +1,14 @@
+id: varro
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -115 }
+death: { year: -26 }
+birthplace: reate
+deathplace: unknown
+places:
+  - { place: reate }
+  - { place: rome }
+  - { place: athens }
+  - { place: hispania, start: -48, end: -48 }
+reviewed: false

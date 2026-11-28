@@ -1,0 +1,8 @@
+id: plebeian-secession
+wikidata: null
+civ: rome
+type: political
+importance: 3
+start: { year: -493, certainty: traditional }
+places: [mons-sacer, rome]
+reviewed: false

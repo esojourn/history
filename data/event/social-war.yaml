@@ -1,0 +1,15 @@
+id: social-war
+wikidata: null
+civ: rome
+type: war
+importance: 4
+start: { year: -90 }
+end: { year: -87 }
+places: [corfinium, samnium]
+participants:
+  - person: livius-drusus
+  - person: poppaedius-silo
+  - person: marius
+  - person: sulla
+  - person: cinna
+reviewed: false

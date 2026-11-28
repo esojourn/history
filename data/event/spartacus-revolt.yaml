@@ -1,0 +1,13 @@
+id: spartacus-revolt
+wikidata: null
+civ: rome
+type: uprising
+importance: 4
+start: { year: -72 }
+end: { year: -70 }
+places: [capua, campania, mutina, lucania]
+participants:
+  - person: spartacus
+  - person: crassus
+  - person: pompey
+reviewed: false

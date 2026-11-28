@@ -1,0 +1,13 @@
+id: cimbrian-war
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: -112 }
+end: { year: -100 }
+places: [arausio, aquae-sextiae, vercellae]
+participants:
+  - person: marius
+  - person: sulla
+  - person: sertorius
+reviewed: false

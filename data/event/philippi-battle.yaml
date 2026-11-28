@@ -1,0 +1,13 @@
+id: philippi-battle
+wikidata: null
+civ: rome
+type: battle
+importance: 4
+start: { year: -41 }
+places: [philippi]
+participants:
+  - person: brutus
+  - person: cassius
+  - person: mark-antony
+  - person: augustus
+reviewed: false

@@ -1,0 +1,13 @@
+id: cinna
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -130 }
+death: { year: -83 }
+birthplace: unknown
+deathplace: ancona
+places:
+  - { place: rome }
+  - { place: campania, start: -86, end: -86 }
+  - { place: ancona, start: -83, end: -83 }
+reviewed: false

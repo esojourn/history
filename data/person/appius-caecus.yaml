@@ -1,0 +1,12 @@
+id: appius-caecus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -339, circa: true }
+death: { year: -272, circa: true }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: samnium, start: -306, end: -295 }
+reviewed: false

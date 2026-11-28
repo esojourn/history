@@ -1,0 +1,13 @@
+id: pontius
+wikidata: null
+civ: rome
+faction: italians
+importance: 2
+birth: { unknown: true, approx: -360 }
+death: { year: -291, circa: true }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: samnium }
+  - { place: caudine-forks, start: -320, end: -320 }
+reviewed: false

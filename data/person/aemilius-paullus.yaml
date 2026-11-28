@@ -1,0 +1,15 @@
+id: aemilius-paullus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -228, circa: true }
+death: { year: -159 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: hispania, start: -190, end: -188 }
+  - { place: pydna, start: -167, end: -167 }
+  - { place: delphi, start: -166, end: -166 }
+  - { place: epirus, start: -166, end: -166 }
+reviewed: false

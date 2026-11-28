@@ -1,0 +1,11 @@
+id: livius-drusus
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -123 }
+death: { year: -90 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

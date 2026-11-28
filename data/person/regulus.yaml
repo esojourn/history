@@ -1,0 +1,14 @@
+id: regulus
+wikidata: null
+civ: rome
+importance: 3
+birth: { unknown: true, approx: -307 }
+death: { year: -249, circa: true }
+birthplace: unknown
+deathplace: carthage
+places:
+  - { place: rome }
+  - { place: brundisium, start: -266, end: -266 }
+  - { place: tunes, start: -255, end: -254 }
+  - { place: carthage, start: -254, end: -249 }
+reviewed: false

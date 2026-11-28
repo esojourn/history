@@ -1,0 +1,14 @@
+id: lucullus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -117, circa: true }
+death: { year: -56, circa: true }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: pontus, start: -72, end: -66 }
+  - { place: tigranocerta, start: -68, end: -68 }
+  - { place: naples }
+reviewed: false

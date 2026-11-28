@@ -1,0 +1,10 @@
+id: caudine-forks
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: -320 }
+places: [caudine-forks]
+participants:
+  - person: pontius
+reviewed: false

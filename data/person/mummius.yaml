@@ -1,0 +1,13 @@
+id: mummius
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -195 }
+death: { unknown: true, approx: -140 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: hispania, start: -152, end: -152 }
+  - { place: corinth, start: -145, end: -145 }
+reviewed: false

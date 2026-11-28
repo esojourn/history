@@ -1,0 +1,11 @@
+id: twelve-tables
+wikidata: null
+civ: rome
+type: founding
+importance: 4
+start: { year: -450, certainty: traditional }
+end: { year: -448, certainty: traditional }
+places: [rome]
+participants:
+  - person: appius-decemvir
+reviewed: false

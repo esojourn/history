@@ -1,0 +1,14 @@
+id: tarquin-priscus
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -660, certainty: traditional }
+death: { year: -578, certainty: traditional }
+reign:
+  - { start: -615, end: -578 }
+birthplace: tarquinii
+deathplace: rome
+places:
+  - { place: tarquinii }
+  - { place: rome, start: -615, end: -578 }
+reviewed: false

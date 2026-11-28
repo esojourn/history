@@ -1,0 +1,13 @@
+id: samnite-wars
+wikidata: null
+civ: rome
+type: war
+importance: 4
+start: { year: -342 }
+end: { year: -289 }
+places: [samnium, campania, caudine-forks]
+participants:
+  - person: pontius
+  - person: appius-caecus
+  - person: dentatus
+reviewed: false

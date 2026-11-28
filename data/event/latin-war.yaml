@@ -1,0 +1,9 @@
+id: latin-war
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: -339 }
+end: { year: -337 }
+places: [campania, antium]
+reviewed: false

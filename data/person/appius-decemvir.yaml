@@ -1,0 +1,11 @@
+id: appius-decemvir
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -510, certainty: traditional }
+death: { year: -448, certainty: traditional }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome }
+reviewed: false

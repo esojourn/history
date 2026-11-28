@@ -1,0 +1,11 @@
+id: licinius-stolo
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -415, certainty: traditional }
+death: { unknown: true, approx: -350, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+reviewed: false

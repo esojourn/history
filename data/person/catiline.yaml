@@ -1,0 +1,12 @@
+id: catiline
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -107, circa: true }
+death: { year: -61 }
+birthplace: unknown
+deathplace: pistoria
+places:
+  - { place: rome }
+  - { place: pistoria, start: -61, end: -61 }
+reviewed: false

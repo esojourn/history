@@ -1,0 +1,10 @@
+id: appian-way
+wikidata: null
+civ: rome
+type: cultural
+importance: 3
+start: { year: -311 }
+places: [rome, capua]
+participants:
+  - person: appius-caecus
+reviewed: false

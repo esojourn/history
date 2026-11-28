@@ -1,0 +1,16 @@
+id: sulla
+wikidata: null
+civ: rome
+importance: 4
+birth: { year: -137 }
+death: { year: -77 }
+birthplace: rome
+deathplace: puteoli
+places:
+  - { place: rome }
+  - { place: numidia, start: -106, end: -104 }
+  - { place: athens, start: -86, end: -85 }
+  - { place: chaeronea, start: -85, end: -85 }
+  - { place: brundisium, start: -82, end: -82 }
+  - { place: puteoli, start: -78, end: -77 }
+reviewed: false

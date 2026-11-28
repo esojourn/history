@@ -1,0 +1,15 @@
+id: tarquin-superbus
+wikidata: null
+civ: rome
+importance: 3
+birth: { unknown: true, approx: -580, certainty: traditional }
+death: { year: -494, certainty: traditional }
+reign:
+  - { start: -534, end: -508 }
+birthplace: unknown
+deathplace: cumae
+places:
+  - { place: rome, start: -534, end: -508 }
+  - { place: ardea, start: -508, end: -508 }
+  - { place: cumae, start: -495, end: -494 }
+reviewed: false

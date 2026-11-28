@@ -1,0 +1,16 @@
+id: agrippa
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -62, circa: true }
+death: { year: -11 }
+birthplace: unknown
+deathplace: campania
+places:
+  - { place: rome }
+  - { place: gaul, start: -38, end: -37 }
+  - { place: sicily, start: -35, end: -35 }
+  - { place: actium, start: -30, end: -30 }
+  - { place: jerusalem, start: -14, end: -14 }
+  - { place: campania, start: -11, end: -11 }
+reviewed: false

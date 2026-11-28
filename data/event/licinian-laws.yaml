@@ -1,0 +1,11 @@
+id: licinian-laws
+wikidata: null
+civ: rome
+type: founding
+importance: 3
+start: { year: -366, certainty: traditional }
+places: [rome]
+participants:
+  - person: licinius-stolo
+  - person: camillus
+reviewed: false

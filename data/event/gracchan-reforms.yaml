@@ -1,0 +1,14 @@
+id: gracchan-reforms
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: -132 }
+end: { year: -120 }
+places: [rome]
+participants:
+  - person: tiberius-gracchus
+  - person: gaius-gracchus
+  - person: cornelia
+  - person: aemilianus
+reviewed: false

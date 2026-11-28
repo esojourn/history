@@ -1,0 +1,10 @@
+id: veii-fall
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: -395, certainty: traditional }
+places: [veii]
+participants:
+  - person: camillus
+reviewed: false

@@ -1,0 +1,14 @@
+id: hasdrubal-barca
+wikidata: null
+civ: rome
+faction: carthage
+importance: 2
+birth: { year: -244, circa: true }
+death: { year: -206 }
+birthplace: carthage
+deathplace: metaurus
+places:
+  - { place: hispania, start: -217, end: -207 }
+  - { place: new-carthage }
+  - { place: metaurus, start: -206, end: -206 }
+reviewed: false

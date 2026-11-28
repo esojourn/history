@@ -1,0 +1,12 @@
+id: clodius
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -92, circa: true }
+death: { year: -51 }
+birthplace: unknown
+deathplace: bovillae
+places:
+  - { place: rome }
+  - { place: bovillae, start: -51, end: -51 }
+reviewed: false

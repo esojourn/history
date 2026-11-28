@@ -1,0 +1,11 @@
+id: augustus-settlement
+wikidata: null
+civ: rome
+type: founding
+importance: 5
+start: { year: -26 }
+places: [rome]
+participants:
+  - person: augustus
+  - person: agrippa
+reviewed: false

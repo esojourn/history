@@ -1,0 +1,13 @@
+id: porsenna
+wikidata: null
+civ: rome
+faction: italians
+importance: 2
+birth: { unknown: true, approx: -555, certainty: traditional }
+death: { unknown: true, approx: -490, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: clusium }
+  - { place: rome, start: -507, end: -507 }
+reviewed: false

@@ -1,0 +1,17 @@
+id: mithridates-6
+wikidata: null
+civ: meso
+importance: 4
+birth: { year: -134, circa: true }
+death: { year: -62 }
+reign:
+  - { start: -119, end: -62 }
+birthplace: sinope
+deathplace: panticapaeum
+places:
+  - { place: sinope }
+  - { place: pontus }
+  - { place: pergamon, start: -87, end: -84 }
+  - { place: armenia, start: -70, end: -67 }
+  - { place: panticapaeum, start: -64, end: -62 }
+reviewed: false

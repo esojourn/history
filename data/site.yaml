@@ -9,6 +9,7 @@ views:                       # 顶栏的快捷视图；名称在 ui.yaml 的 vie
   - { id: bible, range: [-2260, 1980], open: [bible] }
   - { id: greece, range: [-800, -390], open: [greece, meso] }
   - { id: hellenistic, range: [-405, -140], open: [greece, meso, egypt] }
+  - { id: rome-republic, range: [-770, -20], open: [rome] }
   - { id: chunqiu, range: [-775, -470] }
   - { id: zhanguo, range: [-480, -250] }
   - { id: focus, range: [-261, -137] }

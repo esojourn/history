@@ -1,0 +1,13 @@
+id: duilius
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -300 }
+death: { unknown: true, approx: -230 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: mylae, start: -259, end: -259 }
+  - { place: sicily, start: -259, end: -259 }
+reviewed: false

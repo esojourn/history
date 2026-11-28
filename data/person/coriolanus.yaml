@@ -1,0 +1,13 @@
+id: coriolanus
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -525, certainty: traditional }
+death: { unknown: true, approx: -485, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: corioli, start: -492, end: -492 }
+  - { place: antium }
+reviewed: false

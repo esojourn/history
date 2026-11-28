@@ -1,0 +1,12 @@
+id: sulla-march-on-rome
+wikidata: null
+civ: rome
+type: political
+importance: 3
+start: { year: -87 }
+places: [rome, nola]
+participants:
+  - person: sulla
+  - person: marius
+  - person: cinna
+reviewed: false

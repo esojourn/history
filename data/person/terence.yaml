@@ -1,0 +1,12 @@
+id: terence
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -194, circa: true }
+death: { year: -158, circa: true }
+birthplace: carthage
+deathplace: unknown
+places:
+  - { place: carthage }
+  - { place: rome }
+reviewed: false

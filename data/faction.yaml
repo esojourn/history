@@ -256,3 +256,12 @@
 - id: thebes
   civ: greece
   color: "#B5651D"
+- id: italians
+  civ: rome
+  color: "#7A8B3C"
+- id: gaul
+  civ: rome
+  color: "#2F7F6B"
+- id: numidia
+  civ: rome
+  color: "#B5782A"

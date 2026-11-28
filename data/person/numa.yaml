@@ -1,0 +1,14 @@
+id: numa
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -752, certainty: traditional }
+death: { year: -672, certainty: traditional }
+reign:
+  - { start: -714, end: -672 }
+birthplace: cures
+deathplace: rome
+places:
+  - { place: cures }
+  - { place: rome, start: -714, end: -672 }
+reviewed: false

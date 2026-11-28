@@ -1,0 +1,14 @@
+id: cato-younger
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -94 }
+death: { year: -45 }
+birthplace: rome
+deathplace: utica
+places:
+  - { place: rome }
+  - { place: cyprus, start: -57, end: -55 }
+  - { place: dyrrhachium, start: -47, end: -47 }
+  - { place: utica, start: -46, end: -45 }
+reviewed: false

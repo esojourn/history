@@ -1,0 +1,14 @@
+id: catiline-conspiracy
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: -62 }
+end: { year: -61 }
+places: [rome, pistoria]
+participants:
+  - person: catiline
+  - person: cicero
+  - person: cato-younger
+  - person: caesar
+reviewed: false

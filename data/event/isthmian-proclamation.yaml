@@ -7,4 +7,5 @@ start: { year: -195 }
 places: [corinth]
 participants:
   - person: philip-v
+  - person: flamininus
 reviewed: false

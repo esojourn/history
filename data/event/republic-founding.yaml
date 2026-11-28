@@ -1,0 +1,13 @@
+id: republic-founding
+wikidata: null
+civ: rome
+type: founding
+importance: 5
+start: { year: -508, certainty: traditional }
+places: [rome, ardea]
+participants:
+  - person: tarquin-superbus
+  - person: brutus-founder
+  - person: lucretia
+  - person: porsenna
+reviewed: false

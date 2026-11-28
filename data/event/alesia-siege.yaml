@@ -1,0 +1,12 @@
+id: alesia-siege
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: -51 }
+places: [alesia]
+participants:
+  - person: caesar
+  - person: vercingetorix
+  - person: mark-antony
+reviewed: false

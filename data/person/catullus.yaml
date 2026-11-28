@@ -1,0 +1,12 @@
+id: catullus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -83, circa: true }
+death: { year: -53, circa: true }
+birthplace: verona
+deathplace: rome
+places:
+  - { place: verona }
+  - { place: rome }
+reviewed: false

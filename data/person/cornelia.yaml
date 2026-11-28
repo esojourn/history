@@ -1,0 +1,12 @@
+id: cornelia
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -189, circa: true }
+death: { year: -114, circa: true }
+birthplace: unknown
+deathplace: misenum
+places:
+  - { place: rome }
+  - { place: misenum, start: -120, end: -114 }
+reviewed: false

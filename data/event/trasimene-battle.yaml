@@ -1,0 +1,11 @@
+id: trasimene-battle
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: -216 }
+places: [trasimene]
+participants:
+  - person: hannibal
+  - person: flaminius
+reviewed: false

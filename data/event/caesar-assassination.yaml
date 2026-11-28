@@ -1,0 +1,15 @@
+id: caesar-assassination
+wikidata: null
+civ: rome
+type: political
+importance: 5
+start: { year: -43 }
+places: [rome]
+participants:
+  - person: caesar
+  - person: brutus
+  - person: cassius
+  - person: mark-antony
+  - person: cicero
+  - person: lepidus
+reviewed: false

@@ -1,0 +1,14 @@
+id: tullus-hostilius
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -710, certainty: traditional }
+death: { year: -641, certainty: traditional }
+reign:
+  - { start: -672, end: -641 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: rome, start: -672, end: -641 }
+  - { place: alba-longa }
+reviewed: false

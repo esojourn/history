@@ -1,0 +1,13 @@
+id: jugurthine-war
+wikidata: null
+civ: rome
+type: war
+importance: 3
+start: { year: -111 }
+end: { year: -104 }
+places: [numidia, cirta]
+participants:
+  - person: jugurtha
+  - person: marius
+  - person: sulla
+reviewed: false

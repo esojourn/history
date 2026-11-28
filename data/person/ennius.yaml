@@ -1,0 +1,12 @@
+id: ennius
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -238 }
+death: { year: -168 }
+birthplace: rudiae
+deathplace: rome
+places:
+  - { place: rudiae }
+  - { place: rome, start: -203, end: -168 }
+reviewed: false

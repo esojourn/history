@@ -1,0 +1,13 @@
+id: sallust
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -85 }
+death: { year: -34, circa: true }
+birthplace: amiternum
+deathplace: rome
+places:
+  - { place: amiternum }
+  - { place: rome }
+  - { place: numidia, start: -45, end: -44 }
+reviewed: false

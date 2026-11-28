@@ -1,0 +1,17 @@
+id: jugurtha
+wikidata: null
+civ: rome
+faction: numidia
+importance: 3
+birth: { year: -159, circa: true }
+death: { year: -103 }
+reign:
+  - { start: -117, end: -104 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: numidia }
+  - { place: numantia, start: -133, end: -132 }
+  - { place: cirta, start: -111, end: -111 }
+  - { place: rome, start: -110, end: -110 }
+reviewed: false

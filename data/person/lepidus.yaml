@@ -1,0 +1,15 @@
+id: lepidus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -88, circa: true }
+death: { year: -12, circa: true }
+birthplace: unknown
+deathplace: circeii
+places:
+  - { place: rome }
+  - { place: hispania, start: -47, end: -46 }
+  - { place: gaul, start: -43, end: -42 }
+  - { place: sicily, start: -35, end: -35 }
+  - { place: circeii, start: -35, end: -12 }
+reviewed: false

@@ -1,0 +1,12 @@
+id: lucretia
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -535, certainty: traditional }
+death: { year: -508, certainty: traditional }
+birthplace: unknown
+deathplace: collatia
+places:
+  - { place: collatia }
+  - { place: rome }
+reviewed: false

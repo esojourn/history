@@ -1,0 +1,15 @@
+id: vercingetorix
+wikidata: null
+civ: rome
+faction: gaul
+importance: 3
+birth: { year: -81, circa: true }
+death: { year: -45 }
+birthplace: unknown
+deathplace: rome
+places:
+  - { place: gaul }
+  - { place: gergovia, start: -51, end: -51 }
+  - { place: alesia, start: -51, end: -51 }
+  - { place: rome, start: -51, end: -45 }
+reviewed: false

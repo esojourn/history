@@ -1,0 +1,14 @@
+id: flamininus
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -228, circa: true }
+death: { year: -173 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: tarentum, start: -204, end: -203 }
+  - { place: cynoscephalae, start: -196, end: -196 }
+  - { place: corinth, start: -195, end: -193 }
+reviewed: false

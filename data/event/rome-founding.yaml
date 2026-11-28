@@ -1,0 +1,10 @@
+id: rome-founding
+wikidata: null
+civ: rome
+type: founding
+importance: 4
+start: { year: -752, certainty: traditional }
+places: [rome]
+participants:
+  - person: romulus
+reviewed: false

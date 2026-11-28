@@ -1,0 +1,14 @@
+id: sextus-pompey
+wikidata: null
+civ: rome
+importance: 2
+birth: { year: -66, circa: true }
+death: { year: -34 }
+birthplace: unknown
+deathplace: miletus
+places:
+  - { place: hispania, start: -45, end: -43 }
+  - { place: sicily, start: -42, end: -35 }
+  - { place: misenum, start: -38, end: -38 }
+  - { place: miletus, start: -34, end: -34 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: tigranes-2
+wikidata: null
+civ: meso
+importance: 3
+birth: { year: -139, circa: true }
+death: { year: -54, circa: true }
+reign:
+  - { start: -94, end: -54 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: armenia }
+  - { place: tigranocerta, start: -79, end: -68 }
+  - { place: antioch, start: -82, end: -68 }
+reviewed: false

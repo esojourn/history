@@ -1,0 +1,13 @@
+id: second-triumvirate
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: -42 }
+places: [mutina, bologna, rome]
+participants:
+  - person: mark-antony
+  - person: augustus
+  - person: lepidus
+  - person: cicero
+reviewed: false

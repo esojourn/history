@@ -1,0 +1,13 @@
+id: dentatus
+wikidata: null
+civ: rome
+importance: 3
+birth: { unknown: true, approx: -330 }
+death: { year: -269 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: samnium, start: -289, end: -289 }
+  - { place: beneventum, start: -274, end: -274 }
+reviewed: false

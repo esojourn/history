@@ -17,8 +17,8 @@ export function makeCard(H) {
   const wrap = s => `<div class="d-wrap">${s}</div>`;
   const pLink = (p, cls = '') => `<a href="${H.url('person', p.id)}" data-go="${p.id}"${cls ? ` class="${cls}"` : ''}>`;
   const eLink = e => `<a href="${H.url('event', e.id)}" data-goe="${e.id}">`;
-  // 传说、传统说法的年代：在年份下面注明口径（plan.md 3）
-  const certNote = x => (x.cert ? `<p class="d-cert">${t('cert.' + x.cert)}${x.sch && x.cert === 't' ? t('cert.' + x.sch) : ''}</p>` : '');
+  // 传说、传统说法的年代：在年份下面注明口径（plan.md 3）。“共和元年以前”只对中国泳道成立，其他泳道用通用措辞 cert.tw
+  const certNote = x => (x.cert ? `<p class="d-cert">${t(x.cert === 't' && x.lane !== 'china' ? 'cert.tw' : 'cert.' + x.cert)}${x.sch && x.cert === 't' ? t('cert.' + x.sch) : ''}</p>` : '');
   // 人物另属某个阵营（如北国以色列、南国犹大）时，在泳道名后注明，说明时间轴上那根条的颜色
   const laneTag = (id, fac) => { const l = H.lane(id), f = fac && fac !== id && H.FAC[fac];
     return `<p class="d-lane"><i style="background:${l.c}"></i>${l.name}${f ? `<span class="d-fac"><i style="background:${f.c}"></i>${f.n}</span>` : ''}</p>`; };

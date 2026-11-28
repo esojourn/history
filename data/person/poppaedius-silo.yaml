@@ -1,0 +1,14 @@
+id: poppaedius-silo
+wikidata: null
+civ: rome
+faction: italians
+importance: 2
+birth: { unknown: true, approx: -130 }
+death: { year: -87 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: corfinium, start: -90, end: -88 }
+  - { place: rome }
+  - { place: samnium, start: -88, end: -87 }
+reviewed: false

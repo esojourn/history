@@ -1,0 +1,13 @@
+id: first-triumvirate
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: -59 }
+places: [rome]
+participants:
+  - person: caesar
+  - person: pompey
+  - person: crassus
+  - person: cato-younger
+reviewed: false

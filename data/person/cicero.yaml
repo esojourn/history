@@ -1,0 +1,17 @@
+id: cicero
+wikidata: null
+civ: rome
+importance: 5
+birth: { year: -105 }
+death: { year: -42 }
+birthplace: arpinum
+deathplace: formiae
+places:
+  - { place: arpinum }
+  - { place: rome }
+  - { place: athens, start: -78, end: -77 }
+  - { place: rhodes, start: -77, end: -76 }
+  - { place: sicily, start: -74, end: -74 }
+  - { place: thessalonica, start: -57, end: -56 }
+  - { place: formiae, start: -42, end: -42 }
+reviewed: false

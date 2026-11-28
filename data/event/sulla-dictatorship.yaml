@@ -1,0 +1,13 @@
+id: sulla-dictatorship
+wikidata: null
+civ: rome
+type: political
+importance: 4
+start: { year: -81 }
+end: { year: -78 }
+places: [rome]
+participants:
+  - person: sulla
+  - person: pompey
+  - person: crassus
+reviewed: false

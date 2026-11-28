@@ -1,0 +1,15 @@
+id: mithridatic-wars
+wikidata: null
+civ: rome
+type: war
+importance: 4
+start: { year: -88 }
+end: { year: -62 }
+places: [pontus, pergamon, athens, chaeronea, armenia]
+participants:
+  - person: mithridates-6
+  - person: sulla
+  - person: lucullus
+  - person: pompey
+  - person: tigranes-2
+reviewed: false

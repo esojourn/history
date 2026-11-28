@@ -1,0 +1,17 @@
+id: masinissa
+wikidata: null
+civ: rome
+faction: numidia
+importance: 3
+birth: { year: -237, circa: true }
+death: { year: -147 }
+reign:
+  - { start: -201, end: -147 }
+birthplace: unknown
+deathplace: cirta
+places:
+  - { place: numidia }
+  - { place: hispania, start: -211, end: -205 }
+  - { place: zama, start: -201, end: -201 }
+  - { place: cirta, start: -202, end: -147 }
+reviewed: false

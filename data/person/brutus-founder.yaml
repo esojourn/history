@@ -1,0 +1,13 @@
+id: brutus-founder
+wikidata: null
+civ: rome
+importance: 4
+birth: { unknown: true, approx: -550, certainty: traditional }
+death: { year: -508, certainty: traditional }
+birthplace: unknown
+deathplace: silva-arsia
+places:
+  - { place: rome }
+  - { place: delphi }
+  - { place: silva-arsia, start: -508, end: -508 }
+reviewed: false

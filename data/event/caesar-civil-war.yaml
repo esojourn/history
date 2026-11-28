@@ -1,0 +1,16 @@
+id: caesar-civil-war
+wikidata: null
+civ: rome
+type: war
+importance: 5
+start: { year: -48 }
+end: { year: -44 }
+places: [rubicon, rome, dyrrhachium, pharsalus, alexandria, utica, munda]
+participants:
+  - person: caesar
+  - person: pompey
+  - person: cato-younger
+  - person: mark-antony
+  - person: cicero
+  - person: sextus-pompey
+reviewed: false

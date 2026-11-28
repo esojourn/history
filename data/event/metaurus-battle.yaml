@@ -1,0 +1,10 @@
+id: metaurus-battle
+wikidata: null
+civ: rome
+type: battle
+importance: 3
+start: { year: -206 }
+places: [metaurus]
+participants:
+  - person: hasdrubal-barca
+reviewed: false

@@ -1,0 +1,15 @@
+id: sertorius
+wikidata: null
+civ: rome
+importance: 3
+birth: { year: -125, circa: true }
+death: { year: -72, circa: true }
+birthplace: nursia
+deathplace: osca
+places:
+  - { place: nursia }
+  - { place: rome }
+  - { place: arausio, start: -104, end: -104 }
+  - { place: hispania, start: -82, end: -72 }
+  - { place: osca, start: -76, end: -72 }
+reviewed: false

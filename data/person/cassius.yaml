@@ -1,0 +1,15 @@
+id: cassius
+wikidata: null
+civ: rome
+importance: 3
+birth: { unknown: true, approx: -86 }
+death: { year: -41 }
+birthplace: unknown
+deathplace: philippi
+places:
+  - { place: rome }
+  - { place: haran, start: -52, end: -52 }
+  - { place: antioch, start: -52, end: -50 }
+  - { place: rhodes, start: -41, end: -41 }
+  - { place: philippi, start: -41, end: -41 }
+reviewed: false

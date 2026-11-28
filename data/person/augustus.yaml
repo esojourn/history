@@ -1,0 +1,19 @@
+id: augustus
+wikidata: null
+civ: rome
+importance: 5
+birth: { year: -62 }
+death: { year: 14 }
+reign:
+  - { start: -26, end: 14 }
+birthplace: rome
+deathplace: nola
+places:
+  - { place: rome }
+  - { place: mutina, start: -42, end: -42 }
+  - { place: philippi, start: -41, end: -41 }
+  - { place: sicily, start: -35, end: -35 }
+  - { place: actium, start: -30, end: -30 }
+  - { place: alexandria, start: -29, end: -29 }
+  - { place: nola, start: 14, end: 14 }
+reviewed: false

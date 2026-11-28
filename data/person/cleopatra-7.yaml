@@ -1,0 +1,17 @@
+id: cleopatra-7
+wikidata: null
+civ: egypt
+importance: 4
+birth: { year: -68 }
+death: { year: -29 }
+reign:
+  - { start: -50, end: -29 }
+birthplace: alexandria
+deathplace: alexandria
+places:
+  - { place: alexandria }
+  - { place: rome, start: -45, end: -43 }
+  - { place: tarsus, start: -40, end: -40 }
+  - { place: antioch, start: -36, end: -36 }
+  - { place: actium, start: -30, end: -30 }
+reviewed: false

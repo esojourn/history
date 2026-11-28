@@ -1,0 +1,16 @@
+id: crassus
+wikidata: null
+civ: rome
+importance: 4
+birth: { year: -114, circa: true }
+death: { year: -52 }
+birthplace: unknown
+deathplace: haran
+places:
+  - { place: rome }
+  - { place: hispania, start: -86, end: -84 }
+  - { place: lucania, start: -70, end: -70 }
+  - { place: antioch, start: -53, end: -52 }
+  - { place: jerusalem, start: -53, end: -53 }
+  - { place: haran, start: -52, end: -52 }
+reviewed: false

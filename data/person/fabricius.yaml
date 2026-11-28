@@ -1,0 +1,13 @@
+id: fabricius
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -325 }
+death: { unknown: true, approx: -265 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: rome }
+  - { place: thurii, start: -281, end: -281 }
+  - { place: tarentum, start: -279, end: -277 }
+reviewed: false

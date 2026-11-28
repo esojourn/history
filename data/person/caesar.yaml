@@ -1,0 +1,16 @@
+id: caesar
+wikidata: null
+civ: rome
+importance: 5
+birth: { year: -99 }
+death: { year: -43 }
+birthplace: rome
+deathplace: rome
+places:
+  - { place: rome }
+  - { place: gaul, start: -57, end: -49 }
+  - { place: britain, start: -54, end: -53 }
+  - { place: rubicon, start: -48, end: -48 }
+  - { place: pharsalus, start: -47, end: -47 }
+  - { place: alexandria, start: -47, end: -46 }
+reviewed: false
