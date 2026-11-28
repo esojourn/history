@@ -2,7 +2,7 @@ id: attila
 wikidata: null
 civ: rome
 faction: huns
-importance: 2
+importance: 3
 birth: { unknown: true, approx: 406 }
 death: { year: 453 }
 reign:

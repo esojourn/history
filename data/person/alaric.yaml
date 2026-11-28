@@ -2,7 +2,7 @@ id: alaric
 wikidata: null
 civ: rome
 faction: goths
-importance: 2
+importance: 3
 birth: { year: 370, circa: true }
 death: { year: 410 }
 reign:
