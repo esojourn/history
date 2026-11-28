@@ -69,4 +69,4 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .bar { flex-wrap: wrap; }
 .bar button { white-space: nowrap; }
 .bar h1, .bar .seg { flex-shrink: 0; }
-.bar.notitle h1, .bar.noabout .about { display: none; }
+.bar.notitle h1 { display: none; }

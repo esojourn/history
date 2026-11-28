@@ -1,0 +1,18 @@
+---
+// 顶栏最右边的菜单按钮（三条横线）。点开：说明、更新历史；最下面是 GitHub 链接和版本号。
+// 桌面、手机顶栏各放一个；“说明”“更新历史”两个弹窗和开关菜单的脚本在 [lang]/index.astro 里。
+const { t, repo, version } = Astro.props;
+---
+<div class="menu">
+  <button class="menu-btn" aria-haspopup="true" aria-expanded="false" aria-label={t('menu.open')} title={t('menu.open')}>
+    <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <div class="menu-pop" hidden>
+    <button data-dialog="about">{t('about.open')}</button>
+    <button data-dialog="changes">{t('menu.changes')}</button>
+    <div class="menu-foot">
+      <a href={repo} target="_blank" rel="noopener">{t('menu.github')} ↗</a>
+      <span>{t('menu.version')} v{version}</span>
+    </div>
+  </div>
+</div>

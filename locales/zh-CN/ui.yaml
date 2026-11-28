@@ -50,6 +50,10 @@ open.none: 全部收起
 about.open: 说明
 about.close: 关闭
 about.github: 源代码与数据：
+menu.open: 菜单
+menu.changes: 更新历史
+menu.github: GitHub 源代码与数据
+menu.version: 版本
 fz.label: 字号
 fz.smaller: 字号缩小
 fz.bigger: 字号放大

@@ -5,7 +5,10 @@ import '../../styles/river.css';
 import '../../styles/detail.css';
 import { LANGS, build } from '../../lib/dataset.mjs';
 import { createModel } from '../../lib/model.js';
-import { Content as Readme } from '../../../README.md';   // “说明”弹窗的内容直接取自仓库的 README
+import Menu from '../../components/Menu.astro';
+import { Content as Readme } from '../../../README.md';      // “说明”弹窗的内容直接取自仓库的 README
+import { Content as Changes } from '../../../CHANGELOG.md';  // “更新历史”弹窗的内容取自 CHANGELOG.md
+import pkg from '../../../package.json';                     // 菜单底部的版本号
 const REPO = 'https://github.com/esojourn/history';
 
 export function getStaticPaths() {
@@ -28,7 +31,7 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
         <button class="find" id="find">{t('search.open')}</button>
         <div class="seg fz" role="group" aria-label={t('fz.label')}><button data-fz="-1" aria-label={t('fz.smaller')}>A−</button><button data-fz="1" aria-label={t('fz.bigger')}>A+</button></div>
         <span class="hint">{t('hint.desktop')}</span>
-        <div class="seg about"><button data-about>{t('about.open')}</button></div>
+        <Menu t={t} repo={REPO} version={pkg.version} />
       </header>
       <div class="wrap">
         <div class="stage"><svg id="river" role="img" aria-label={t('river.aria')}></svg></div>
@@ -43,7 +46,7 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
         <h1>{t('site.title')}</h1>
         <button class="find" id="mfind">{t('search.open')}</button>
         <div class="seg fz" role="group" aria-label={t('fz.label')}><button data-fz="-1" aria-label={t('fz.smaller')}>A−</button><button data-fz="1" aria-label={t('fz.bigger')}>A+</button></div>
-        <div class="seg about"><button data-about>{t('about.open')}</button></div>
+        <Menu t={t} repo={REPO} version={pkg.version} />
       </header>
       <nav id="mtabs"></nav>
       <div id="mseg" class="mseg"></div>
@@ -58,13 +61,26 @@ const data = build(lang), t = createModel(structuredClone(data)).t;
       <p class="about-gh">{t('about.github')}<a href={REPO} target="_blank" rel="noopener">{REPO}</a></p>
     </div>
   </dialog>
+  <dialog id="changes" class="about">
+    <form method="dialog" class="about-close"><button aria-label={t('about.close')}>×</button></form>
+    <div class="about-body"><Changes /></div>
+  </dialog>
   <script>
-    // 说明弹窗：README 里指向仓库文件的相对链接改指到 GitHub
-    const dlg = document.getElementById('about');
+    // 顶栏菜单：点三条横线开关；点菜单外面或按 Esc 关上。菜单里的“说明”“更新历史”各开一个弹窗。
     const GH = 'https://github.com/esojourn/history/blob/main/';
-    dlg.querySelectorAll('.about-body a[href]').forEach(a => { const h = a.getAttribute('href'); if (!/^(https?:|#|mailto:)/.test(h)) a.href = GH + h; a.target = '_blank'; a.rel = 'noopener'; });
-    document.querySelectorAll('[data-about]').forEach(b => b.addEventListener('click', () => dlg.showModal()));
-    dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+    document.querySelectorAll('dialog.about').forEach(dlg => {
+      // 弹窗内容取自仓库里的 .md 文件，其中指向仓库文件的相对链接改指到 GitHub
+      dlg.querySelectorAll('.about-body a[href]').forEach(a => { const h = a.getAttribute('href'); if (!/^(https?:|#|mailto:)/.test(h)) a.href = GH + h; a.target = '_blank'; a.rel = 'noopener'; });
+      dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+    });
+    const menus = [...document.querySelectorAll('.menu')];
+    const setOpen = (m, on) => { m.querySelector('.menu-pop').hidden = !on; m.querySelector('.menu-btn').setAttribute('aria-expanded', on); };
+    menus.forEach(m => {
+      m.querySelector('.menu-btn').addEventListener('click', () => setOpen(m, m.querySelector('.menu-pop').hidden));
+      m.querySelectorAll('[data-dialog]').forEach(b => b.addEventListener('click', () => { setOpen(m, false); document.getElementById(b.dataset.dialog).showModal(); }));
+    });
+    document.addEventListener('pointerdown', e => menus.forEach(m => { if (!m.contains(e.target)) setOpen(m, false); }));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') menus.forEach(m => setOpen(m, false)); });
   </script>
   <script>
     import '../../river/main.js';
