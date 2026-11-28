@@ -259,9 +259,12 @@ const ITEM_HTML = {
   tongchou: itemBox(at_(1300, `<div style="font-size:60px;letter-spacing:4px">${gold('比的不是力气，是【统筹】')}</div>`)),
   yigeren: itemBox(at_(1440, `<div style="font:700 84px/1.45 ${KAI};letter-spacing:6px;text-indent:6px">${gold('把几十万人，/指挥得像【一个人】')}</div>`)),
 };
-// 系列标题（第一屏和开头同一位置，第一屏淡入开头时不重影）：样式同韩信“胯下之辱”一篇（项目方 2026-11-28 要求加大、“真实历史”更明显）
-const SERIES = `<div style="position:absolute;left:0;right:0;top:92px;text-align:center;font-family:${KAI};color:#e8dcc0;letter-spacing:8px;text-indent:8px;white-space:nowrap;text-shadow:0 4px 20px rgba(0,0,0,.6)">`
-  + `<span style="font-size:84px">峡谷之外的</span><span style="font-size:112px;font-weight:700;color:#f2c96b">真实历史</span></div>`;
+// 系列标题（第一屏和开头同一位置，第一屏淡入开头时不重影）——“朱红印章”刊头，同韩信“胯下之辱”一篇（项目方 2026-11-28 选定）：
+// 系列名用宋体（主标题是楷体），“峡谷之外的”浅米色，“真实历史”白字反衬在朱红色的印章块里
+const SERIF = "'Noto Serif SC','Source Han Serif SC','SimSun',serif";
+const SERIES = `<div style="position:absolute;left:0;right:0;top:104px;display:flex;justify-content:center;align-items:center;font-family:${SERIF};white-space:nowrap">`
+  + `<span style="font-size:66px;font-weight:500;letter-spacing:12px;color:#e8dcc0;text-shadow:0 4px 16px rgba(0,0,0,.6)">峡谷之外的</span>`
+  + `<span style="margin-left:8px;padding:6px 10px 8px 22px;background:#b3392b;border-radius:4px;font-size:72px;font-weight:900;letter-spacing:12px;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.35)">真实历史</span></div>`;
 const pages = {
   // 第一屏（成片第一帧，也是平台上的预览图）：照制作标准的标题画面（版式同韩信“胯下之辱”一篇）。竖版图居中，同一造型的横版图模糊垫底；
   // 大标题分两行：“多多益善 / 兵越多，越难带”，后一行金色
