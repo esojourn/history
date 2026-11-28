@@ -1,0 +1,12 @@
+id: peace-of-philocrates
+wikidata: null
+civ: greece
+type: diplomatic
+importance: 2
+start: { year: -345 }
+places: [athens, pella]
+participants:
+  - person: philip-2-macedon
+  - person: demosthenes
+  - person: aeschines
+reviewed: false

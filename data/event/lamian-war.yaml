@@ -1,0 +1,15 @@
+id: lamian-war
+wikidata: null
+civ: greece
+type: war
+importance: 3
+start: { year: -322 }
+end: { year: -321 }
+places: [lamia, crannon, athens]
+participants:
+  - person: antipater
+  - person: craterus
+  - person: hyperides
+  - person: demosthenes
+  - person: phocion
+reviewed: false

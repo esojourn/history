@@ -250,3 +250,9 @@
 - id: greek-cities
   civ: greece
   color: "#8A7A3C"
+- id: macedon
+  civ: greece
+  color: "#6B4E9A"
+- id: thebes
+  civ: greece
+  color: "#B5651D"

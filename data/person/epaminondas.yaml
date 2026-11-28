@@ -1,0 +1,15 @@
+id: epaminondas
+wikidata: null
+civ: greece
+faction: thebes
+importance: 5
+birth: { year: -417, circa: true }
+death: { year: -361 }
+birthplace: thebes-greece
+deathplace: mantinea
+places:
+  - { place: thebes-greece }
+  - { place: leuctra, start: -370, end: -370 }
+  - { place: messene, start: -368, end: -368 }
+  - { place: mantinea, start: -361, end: -361 }
+reviewed: false

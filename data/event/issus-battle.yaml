@@ -1,0 +1,12 @@
+id: issus-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 4
+start: { year: -332 }
+places: [issus]
+participants:
+  - person: alexander-great
+  - person: darius-3
+  - person: parmenion
+reviewed: false

@@ -1,0 +1,13 @@
+id: messene-founding
+wikidata: null
+civ: greece
+type: founding
+importance: 3
+start: { year: -369 }
+end: { year: -368 }
+places: [sparta, messene, megalopolis]
+participants:
+  - person: epaminondas
+  - person: pelopidas
+  - person: agesilaus-2
+reviewed: false

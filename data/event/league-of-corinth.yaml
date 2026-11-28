@@ -1,0 +1,10 @@
+id: league-of-corinth
+wikidata: null
+civ: greece
+type: founding
+importance: 3
+start: { year: -336 }
+places: [corinth]
+participants:
+  - person: philip-2-macedon
+reviewed: false

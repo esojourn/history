@@ -1,0 +1,21 @@
+id: diadochi-wars
+wikidata: null
+civ: greece
+type: war
+importance: 4
+start: { year: -321 }
+end: { year: -280 }
+places: [babylon, memphis, gabiene, gaza, cyprus, ipsus, corupedium]
+participants:
+  - person: perdiccas
+  - person: antipater
+  - person: craterus
+  - person: eumenes-cardia
+  - person: antigonus-1
+  - person: demetrius-1
+  - person: cassander
+  - person: lysimachus
+  - person: ptolemy-1
+  - person: seleucus-1
+  - person: olympias
+reviewed: false

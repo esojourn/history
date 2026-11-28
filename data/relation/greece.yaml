@@ -69,3 +69,150 @@
 - { from: thrasybulus, to: critias, type: rival, year: -402 }
 - { from: thrasybulus, to: theramenes, type: ally, year: -405 }
 - { from: lysander, to: thrasybulus, type: rival, year: -402 }
+- { from: socrates, to: plato, type: mentor, year: -406 }
+- { from: socrates, to: xenophon, type: mentor, year: -403 }
+- { from: critias, to: plato, type: kin }
+- { from: plato, to: aristotle, type: mentor, year: -366 }
+- { from: plato, to: dionysius-1, type: rival, year: -387 }
+- { from: plato, to: eudoxus, type: mentor, year: -367 }
+- { from: diogenes, to: plato, type: rival, year: -370 }
+- { from: gorgias, to: isocrates, type: mentor, year: -410 }
+- { from: isocrates, to: philip-2-macedon, type: mentor, year: -345 }
+- { from: isocrates, to: lycurgus-athens, type: mentor, year: -360 }
+- { from: isocrates, to: hyperides, type: mentor, year: -365 }
+- { from: cyrus-younger, to: xenophon, type: lord, year: -400 }
+- { from: xenophon, to: agesilaus-2, type: ally, year: -393 }
+- { from: cyrus-younger, to: artaxerxes-2, type: rival, year: -400 }
+- { from: cyrus-younger, to: lysander, type: ally, year: -406 }
+- { from: lysander, to: agesilaus-2, type: mentor, year: -399 }
+- { from: agesilaus-2, to: epaminondas, type: rival, year: -370 }
+- { from: agesilaus-2, to: artaxerxes-2, type: rival, year: -395 }
+- { from: artaxerxes-2, to: conon, type: lord, year: -393 }
+- { from: lysander, to: conon, type: rival, year: -404 }
+- { from: antalcidas, to: artaxerxes-2, type: ally, year: -386 }
+- { from: antalcidas, to: conon, type: rival, year: -391 }
+- { from: iphicrates, to: agesilaus-2, type: rival, year: -389 }
+- { from: thrasybulus, to: conon, type: ally, year: -392 }
+- { from: dionysius-1, to: agesilaus-2, type: ally, year: -386 }
+- { from: pelopidas, to: epaminondas, type: ally, year: -370 }
+- { from: pelopidas, to: philip-2-macedon, type: ally, year: -367 }
+- { from: jason-pherae, to: epaminondas, type: ally, year: -370 }
+- { from: timoleon, to: agathocles, type: lord, year: -340 }
+- { from: artaxerxes-2, to: artaxerxes-3, type: kin }
+- { from: artaxerxes-3, to: darius-3, type: lord, year: -345 }
+- { from: artaxerxes-3, to: philip-2-macedon, type: rival, year: -339 }
+- { from: diogenes, to: alexander-great, type: mentor, year: -335 }
+- { from: eudoxus, to: aristotle, type: mentor, year: -360 }
+- { from: aristotle, to: alexander-great, type: mentor, year: -342 }
+- { from: aristotle, to: theophrastus, type: mentor, year: -334 }
+- { from: aristotle, to: callisthenes, type: kin }
+- { from: philip-2-macedon, to: aristotle, type: lord, year: -342 }
+- { from: aristotle, to: antipater, type: ally, year: -322 }
+- { from: theophrastus, to: menander-poet, type: mentor, year: -322 }
+- { from: theophrastus, to: demetrius-phalerum, type: mentor, year: -320 }
+- { from: callisthenes, to: theophrastus, type: ally, year: -330 }
+- { from: demosthenes, to: philip-2-macedon, type: rival, year: -350 }
+- { from: demosthenes, to: aeschines, type: rival, year: -329 }
+- { from: demosthenes, to: phocion, type: rival, year: -339 }
+- { from: demosthenes, to: hyperides, type: ally, year: -339 }
+- { from: demosthenes, to: antipater, type: rival, year: -321 }
+- { from: demosthenes, to: alexander-great, type: rival, year: -334 }
+- { from: hyperides, to: antipater, type: rival, year: -321 }
+- { from: lycurgus-athens, to: demosthenes, type: ally, year: -337 }
+- { from: phocion, to: antipater, type: ally, year: -321 }
+- { from: aeschines, to: philip-2-macedon, type: ally, year: -345 }
+- { from: memnon-rhodes, to: philip-2-macedon, type: ally, year: -350 }
+- { from: philip-2-macedon, to: olympias, type: kin, year: -356 }
+- { from: philip-2-macedon, to: alexander-great, type: kin }
+- { from: olympias, to: alexander-great, type: kin }
+- { from: philip-2-macedon, to: parmenion, type: lord, year: -345 }
+- { from: philip-2-macedon, to: antipater, type: lord, year: -345 }
+- { from: parmenion, to: antipater, type: ally, year: -345 }
+- { from: alexander-great, to: parmenion, type: lord, year: -329 }
+- { from: alexander-great, to: antipater, type: lord, year: -333 }
+- { from: alexander-great, to: hephaestion, type: ally, year: -330 }
+- { from: alexander-great, to: callisthenes, type: lord, year: -327 }
+- { from: alexander-great, to: darius-3, type: rival, year: -330 }
+- { from: alexander-great, to: memnon-rhodes, type: rival, year: -333 }
+- { from: alexander-great, to: porus, type: rival, year: -325 }
+- { from: alexander-great, to: roxana, type: kin, year: -326 }
+- { from: alexander-great, to: perdiccas, type: lord, year: -322 }
+- { from: alexander-great, to: craterus, type: lord, year: -324 }
+- { from: alexander-great, to: eumenes-cardia, type: lord, year: -325 }
+- { from: alexander-great, to: ptolemy-1, type: lord, year: -328 }
+- { from: alexander-great, to: seleucus-1, type: lord, year: -325 }
+- { from: alexander-great, to: lysimachus, type: lord, year: -327 }
+- { from: alexander-great, to: antigonus-1, type: lord, year: -332 }
+- { from: alexander-great, to: cassander, type: rival, year: -323 }
+- { from: pyrrho, to: alexander-great, type: lord, year: -326 }
+- { from: darius-3, to: memnon-rhodes, type: lord, year: -333 }
+- { from: hephaestion, to: craterus, type: rival, year: -325 }
+- { from: olympias, to: antipater, type: rival, year: -330 }
+- { from: olympias, to: cassander, type: rival, year: -315 }
+- { from: olympias, to: eumenes-cardia, type: ally, year: -317 }
+- { from: roxana, to: cassander, type: rival, year: -310 }
+- { from: perdiccas, to: eumenes-cardia, type: ally, year: -321 }
+- { from: perdiccas, to: ptolemy-1, type: rival, year: -320 }
+- { from: perdiccas, to: seleucus-1, type: rival, year: -320 }
+- { from: perdiccas, to: antipater, type: rival, year: -321 }
+- { from: antipater, to: craterus, type: ally, year: -321 }
+- { from: antipater, to: cassander, type: kin }
+- { from: craterus, to: eumenes-cardia, type: rival, year: -320 }
+- { from: eumenes-cardia, to: antigonus-1, type: rival, year: -315 }
+- { from: antigonus-1, to: demetrius-1, type: kin }
+- { from: antigonus-1, to: seleucus-1, type: rival, year: -300 }
+- { from: antigonus-1, to: ptolemy-1, type: rival, year: -305 }
+- { from: antigonus-1, to: cassander, type: rival, year: -301 }
+- { from: antigonus-1, to: lysimachus, type: rival, year: -300 }
+- { from: demetrius-1, to: ptolemy-1, type: rival, year: -305 }
+- { from: demetrius-1, to: seleucus-1, type: kin, year: -298 }
+- { from: demetrius-1, to: cassander, type: rival, year: -303 }
+- { from: demetrius-1, to: lysimachus, type: rival, year: -287 }
+- { from: demetrius-1, to: pyrrhus, type: rival, year: -287 }
+- { from: demetrius-1, to: antigonus-2, type: kin }
+- { from: demetrius-1, to: demetrius-phalerum, type: rival, year: -306 }
+- { from: cassander, to: demetrius-phalerum, type: lord, year: -316 }
+- { from: cassander, to: lysimachus, type: ally, year: -301 }
+- { from: lysimachus, to: seleucus-1, type: rival, year: -280 }
+- { from: lysimachus, to: arsinoe-2, type: kin, year: -299 }
+- { from: lysimachus, to: pyrrhus, type: rival, year: -284 }
+- { from: ptolemy-1, to: seleucus-1, type: ally, year: -311 }
+- { from: ptolemy-1, to: ptolemy-2, type: kin }
+- { from: ptolemy-1, to: arsinoe-2, type: kin }
+- { from: ptolemy-2, to: arsinoe-2, type: kin, year: -274 }
+- { from: ptolemy-1, to: demetrius-phalerum, type: lord, year: -295 }
+- { from: ptolemy-1, to: euclid, type: lord, year: -299 }
+- { from: ptolemy-1, to: pyrrhus, type: mentor, year: -297 }
+- { from: agathocles, to: ptolemy-1, type: kin, year: -299 }
+- { from: seleucus-1, to: antiochus-1, type: kin }
+- { from: seleucus-1, to: chandragupta, type: ally, year: -302 }
+- { from: antiochus-1, to: antiochus-2, type: kin }
+- { from: antiochus-1, to: antigonus-2, type: ally, year: -277 }
+- { from: antiochus-1, to: ptolemy-2, type: rival, year: -273 }
+- { from: chandragupta, to: ashoka, type: kin }
+- { from: pyrrhus, to: antigonus-2, type: rival, year: -273 }
+- { from: pyrrhus, to: agathocles, type: kin, year: -294 }
+- { from: pyrrhus, to: hiero-2, type: lord, year: -276 }
+- { from: hiero-2, to: archimedes, type: lord, year: -240 }
+- { from: epicurus, to: menander-poet, type: ally, year: -322 }
+- { from: zeno-citium, to: cleanthes, type: mentor, year: -280 }
+- { from: cleanthes, to: chrysippus, type: mentor, year: -240 }
+- { from: zeno-citium, to: antigonus-2, type: mentor, year: -276 }
+- { from: cleanthes, to: aristarchus, type: rival, year: -260 }
+- { from: antigonus-2, to: aratus, type: rival, year: -242 }
+- { from: antigonus-2, to: ptolemy-2, type: rival, year: -262 }
+- { from: antigonus-2, to: antigonus-3, type: kin }
+- { from: antigonus-3, to: philip-v, type: kin }
+- { from: antigonus-3, to: aratus, type: ally, year: -223 }
+- { from: antigonus-3, to: cleomenes-3, type: rival, year: -221 }
+- { from: cleomenes-3, to: aratus, type: rival, year: -225 }
+- { from: ptolemy-3, to: cleomenes-3, type: lord, year: -221 }
+- { from: cleomenes-3, to: ptolemy-4, type: rival, year: -218 }
+- { from: agis-4, to: aratus, type: ally, year: -240 }
+- { from: agis-4, to: cleomenes-3, type: mentor, year: -240 }
+- { from: philopoemen, to: cleomenes-3, type: rival, year: -222 }
+- { from: philopoemen, to: nabis, type: rival, year: -191 }
+- { from: philopoemen, to: polybius, type: mentor, year: -183 }
+- { from: philopoemen, to: antigonus-3, type: ally, year: -221 }
+- { from: nabis, to: philip-v, type: ally, year: -196 }
+- { from: attalus-1, to: philip-v, type: rival, year: -200 }

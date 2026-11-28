@@ -1,0 +1,15 @@
+id: nabis
+wikidata: null
+civ: greece
+faction: sparta
+importance: 2
+birth: { unknown: true, approx: -250 }
+death: { year: -191 }
+reign:
+  - { start: -206, end: -191 }
+birthplace: sparta
+deathplace: sparta
+places:
+  - { place: sparta }
+  - { place: argos, start: -196, end: -194 }
+reviewed: false

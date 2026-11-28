@@ -1,0 +1,21 @@
+id: alexander-campaign
+wikidata: null
+civ: greece
+type: war
+importance: 5
+start: { year: -333 }
+end: { year: -322 }
+places: [granicus, issus, tyre, alexandria, gaugamela, babylon, persepolis, bactria, hydaspes]
+participants:
+  - person: alexander-great
+  - person: darius-3
+  - person: parmenion
+  - person: hephaestion
+  - person: craterus
+  - person: perdiccas
+  - person: ptolemy-1
+  - person: seleucus-1
+  - person: callisthenes
+  - person: memnon-rhodes
+  - person: porus
+reviewed: false

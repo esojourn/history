@@ -1,0 +1,13 @@
+id: cleanthes
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { year: -329, circa: true }
+death: { year: -229, circa: true }
+birthplace: assos
+deathplace: athens
+places:
+  - { place: assos }
+  - { place: athens }
+reviewed: false

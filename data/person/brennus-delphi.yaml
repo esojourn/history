@@ -1,0 +1,12 @@
+id: brennus-delphi
+wikidata: null
+civ: rome
+importance: 2
+birth: { unknown: true, approx: -320 }
+death: { year: -278 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: thermopylae, start: -278, end: -278 }
+  - { place: delphi, start: -278, end: -278 }
+reviewed: false

@@ -1,0 +1,15 @@
+id: perdiccas
+wikidata: null
+civ: greece
+faction: macedon
+importance: 3
+birth: { unknown: true, approx: -360 }
+death: { year: -320, circa: true }
+birthplace: macedon
+deathplace: memphis
+places:
+  - { place: macedon }
+  - { place: babylon, start: -322, end: -321 }
+  - { place: cappadocia, start: -321, end: -321 }
+  - { place: memphis, start: -320, end: -320 }
+reviewed: false

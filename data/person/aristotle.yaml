@@ -1,0 +1,18 @@
+id: aristotle
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 5
+birth: { year: -383 }
+death: { year: -321 }
+birthplace: stagira
+deathplace: chalcis
+places:
+  - { place: stagira }
+  - { place: athens, start: -366, end: -346 }
+  - { place: assos, start: -346, end: -344 }
+  - { place: lesbos, start: -344, end: -342 }
+  - { place: macedon, start: -342, end: -334 }
+  - { place: athens, start: -334, end: -322 }
+  - { place: chalcis, start: -322, end: -321 }
+reviewed: false

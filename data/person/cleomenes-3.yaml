@@ -1,0 +1,17 @@
+id: cleomenes-3
+wikidata: null
+civ: greece
+faction: sparta
+importance: 3
+birth: { year: -259, circa: true }
+death: { year: -218 }
+reign:
+  - { start: -234, end: -221 }
+birthplace: sparta
+deathplace: alexandria
+places:
+  - { place: sparta }
+  - { place: megalopolis, start: -222, end: -222 }
+  - { place: sellasia, start: -221, end: -221 }
+  - { place: alexandria, start: -221, end: -218 }
+reviewed: false

@@ -1,0 +1,19 @@
+id: babylon-settlement
+wikidata: null
+civ: meso
+type: political
+importance: 4
+start: { year: -322 }
+places: [babylon]
+participants:
+  - person: alexander-great
+  - person: perdiccas
+  - person: roxana
+  - person: ptolemy-1
+  - person: eumenes-cardia
+  - person: lysimachus
+  - person: seleucus-1
+  - person: craterus
+  - person: antipater
+  - person: antigonus-1
+reviewed: false

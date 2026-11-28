@@ -1,0 +1,15 @@
+id: aeschines
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { year: -388, circa: true }
+death: { year: -313, circa: true }
+birthplace: athens
+deathplace: unknown
+places:
+  - { place: athens }
+  - { place: pella, start: -345, end: -345 }
+  - { place: delphi, start: -338, end: -338 }
+  - { place: rhodes, start: -329 }
+reviewed: false

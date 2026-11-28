@@ -1,0 +1,15 @@
+id: dionysius-1
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -431, circa: true }
+death: { year: -366 }
+reign:
+  - { start: -404, end: -366 }
+birthplace: syracuse
+deathplace: syracuse
+places:
+  - { place: syracuse }
+  - { place: sicily }
+reviewed: false

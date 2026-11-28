@@ -1,0 +1,15 @@
+id: epicurus
+wikidata: null
+civ: greece
+faction: athens
+importance: 4
+birth: { year: -340 }
+death: { year: -269 }
+birthplace: samos
+deathplace: athens
+places:
+  - { place: samos }
+  - { place: lesbos, start: -310, end: -309 }
+  - { place: lampsacus, start: -309, end: -305 }
+  - { place: athens, start: -305, end: -269 }
+reviewed: false

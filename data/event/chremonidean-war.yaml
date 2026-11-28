@@ -1,0 +1,12 @@
+id: chremonidean-war
+wikidata: null
+civ: greece
+type: war
+importance: 2
+start: { year: -266 }
+end: { year: -260 }
+places: [athens, corinth]
+participants:
+  - person: antigonus-2
+  - person: ptolemy-2
+reviewed: false

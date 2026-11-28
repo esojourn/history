@@ -1,0 +1,13 @@
+id: pyrrho
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { year: -359, circa: true }
+death: { year: -269, circa: true }
+birthplace: elis
+deathplace: elis
+places:
+  - { place: elis }
+  - { place: bactria, start: -328, end: -326 }
+reviewed: false

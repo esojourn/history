@@ -1,0 +1,16 @@
+id: philopoemen
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -252 }
+death: { year: -182 }
+birthplace: megalopolis
+deathplace: messene
+places:
+  - { place: megalopolis }
+  - { place: sellasia, start: -221, end: -221 }
+  - { place: mantinea, start: -206, end: -206 }
+  - { place: sparta, start: -191, end: -187 }
+  - { place: messene, start: -182, end: -182 }
+reviewed: false

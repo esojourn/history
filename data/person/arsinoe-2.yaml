@@ -1,0 +1,12 @@
+id: arsinoe-2
+wikidata: null
+civ: egypt
+importance: 2
+birth: { year: -315, circa: true }
+death: { year: -269, circa: true }
+birthplace: unknown
+deathplace: alexandria
+places:
+  - { place: thrace, start: -299, end: -280 }
+  - { place: alexandria, start: -278, end: -269 }
+reviewed: false

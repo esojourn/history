@@ -1,0 +1,14 @@
+id: antalcidas
+wikidata: null
+civ: greece
+faction: sparta
+importance: 2
+birth: { unknown: true, approx: -430 }
+death: { year: -366, circa: true }
+birthplace: sparta
+deathplace: unknown
+places:
+  - { place: sparta }
+  - { place: sardis, start: -391, end: -391 }
+  - { place: susa, start: -387, end: -386 }
+reviewed: false

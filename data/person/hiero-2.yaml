@@ -1,0 +1,15 @@
+id: hiero-2
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -307, circa: true }
+death: { year: -214 }
+reign:
+  - { start: -269, end: -214 }
+birthplace: syracuse
+deathplace: syracuse
+places:
+  - { place: syracuse }
+  - { place: messana }
+reviewed: false

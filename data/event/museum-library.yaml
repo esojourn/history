@@ -1,0 +1,12 @@
+id: museum-library
+wikidata: null
+civ: egypt
+type: cultural
+importance: 4
+start: { year: -294, circa: true }
+places: [alexandria]
+participants:
+  - person: ptolemy-1
+  - person: demetrius-phalerum
+  - person: ptolemy-2
+reviewed: false

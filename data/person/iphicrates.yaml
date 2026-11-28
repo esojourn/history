@@ -1,0 +1,15 @@
+id: iphicrates
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { year: -417, circa: true }
+death: { year: -352, circa: true }
+birthplace: athens
+deathplace: unknown
+places:
+  - { place: athens }
+  - { place: corinth, start: -392, end: -389 }
+  - { place: thrace }
+  - { place: egypt, start: -373, end: -372 }
+reviewed: false

@@ -1,0 +1,8 @@
+id: second-athenian-league
+wikidata: null
+civ: greece
+type: founding
+importance: 3
+start: { year: -377 }
+places: [athens]
+reviewed: false

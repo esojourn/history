@@ -1,0 +1,11 @@
+id: seleucid-maurya-treaty
+wikidata: null
+civ: india
+type: diplomatic
+importance: 3
+start: { year: -302, circa: true }
+places: unknown
+participants:
+  - person: seleucus-1
+  - person: chandragupta
+reviewed: false

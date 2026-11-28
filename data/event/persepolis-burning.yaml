@@ -1,0 +1,11 @@
+id: persepolis-burning
+wikidata: null
+civ: meso
+type: political
+importance: 3
+start: { year: -329 }
+places: [persepolis]
+participants:
+  - person: alexander-great
+  - person: parmenion
+reviewed: false

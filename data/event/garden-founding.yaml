@@ -1,0 +1,10 @@
+id: garden-founding
+wikidata: null
+civ: greece
+type: cultural
+importance: 2
+start: { year: -305 }
+places: [athens]
+participants:
+  - person: epicurus
+reviewed: false

@@ -1,0 +1,13 @@
+id: phocion
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -401, circa: true }
+death: { year: -317 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+  - { place: piraeus }
+reviewed: false

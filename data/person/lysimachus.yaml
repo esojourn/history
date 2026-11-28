@@ -1,0 +1,18 @@
+id: lysimachus
+wikidata: null
+civ: greece
+faction: macedon
+importance: 3
+birth: { year: -359, circa: true }
+death: { year: -280 }
+reign:
+  - { start: -305, end: -280 }
+birthplace: pella
+deathplace: corupedium
+places:
+  - { place: pella }
+  - { place: thrace, start: -322, end: -280 }
+  - { place: ipsus, start: -300, end: -300 }
+  - { place: macedon, start: -287, end: -280 }
+  - { place: corupedium, start: -280, end: -280 }
+reviewed: false

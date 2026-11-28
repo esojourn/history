@@ -1,0 +1,12 @@
+id: cyrus-younger
+wikidata: null
+civ: meso
+importance: 3
+birth: { year: -422, circa: true }
+death: { year: -400 }
+birthplace: unknown
+deathplace: cunaxa
+places:
+  - { place: sardis, start: -407, end: -400 }
+  - { place: cunaxa, start: -400, end: -400 }
+reviewed: false

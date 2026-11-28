@@ -1,0 +1,11 @@
+id: thebes-destruction
+wikidata: null
+civ: greece
+type: battle
+importance: 3
+start: { year: -334 }
+places: [thebes-greece]
+participants:
+  - person: alexander-great
+  - person: perdiccas
+reviewed: false

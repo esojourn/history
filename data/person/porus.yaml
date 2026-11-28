@@ -1,0 +1,11 @@
+id: porus
+wikidata: null
+civ: india
+importance: 2
+birth: { unknown: true, approx: -370 }
+death: { year: -317, circa: true }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: hydaspes, start: -325, end: -325 }
+reviewed: false

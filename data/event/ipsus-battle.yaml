@@ -1,0 +1,15 @@
+id: ipsus-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 4
+start: { year: -300 }
+places: [ipsus]
+participants:
+  - person: antigonus-1
+  - person: demetrius-1
+  - person: seleucus-1
+  - person: lysimachus
+  - person: antiochus-1
+  - person: pyrrhus
+reviewed: false

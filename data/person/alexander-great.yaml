@@ -1,0 +1,24 @@
+id: alexander-great
+wikidata: null
+civ: greece
+faction: macedon
+importance: 5
+birth: { year: -355 }
+death: { year: -322 }
+reign:
+  - { start: -335, end: -322 }
+birthplace: pella
+deathplace: babylon
+places:
+  - { place: pella }
+  - { place: granicus, start: -333, end: -333 }
+  - { place: issus, start: -332, end: -332 }
+  - { place: tyre, start: -331, end: -331 }
+  - { place: alexandria, start: -330, end: -330 }
+  - { place: gaugamela, start: -330, end: -330 }
+  - { place: persepolis, start: -329, end: -329 }
+  - { place: bactria, start: -328, end: -326 }
+  - { place: hydaspes, start: -325, end: -325 }
+  - { place: susa, start: -323, end: -323 }
+  - { place: babylon, start: -322, end: -322 }
+reviewed: false

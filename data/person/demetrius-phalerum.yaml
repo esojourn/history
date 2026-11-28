@@ -1,0 +1,14 @@
+id: demetrius-phalerum
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { year: -349, circa: true }
+death: { year: -279, circa: true }
+birthplace: athens
+deathplace: egypt
+places:
+  - { place: athens, start: -316, end: -306 }
+  - { place: thebes-greece, start: -306, end: -296 }
+  - { place: alexandria, start: -296 }
+reviewed: false

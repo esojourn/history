@@ -1,0 +1,11 @@
+id: lyceum-founding
+wikidata: null
+civ: greece
+type: cultural
+importance: 3
+start: { year: -334 }
+places: [athens]
+participants:
+  - person: aristotle
+  - person: theophrastus
+reviewed: false

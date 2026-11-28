@@ -1,0 +1,12 @@
+id: sellasia-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 3
+start: { year: -221 }
+places: [sellasia, sparta]
+participants:
+  - person: cleomenes-3
+  - person: antigonus-3
+  - person: philopoemen
+reviewed: false

@@ -1,0 +1,18 @@
+id: darius-3
+wikidata: null
+civ: meso
+importance: 4
+birth: { year: -379, circa: true }
+death: { year: -329 }
+reign:
+  - { start: -335, end: -329 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: susa }
+  - { place: persepolis }
+  - { place: babylon }
+  - { place: issus, start: -332, end: -332 }
+  - { place: gaugamela, start: -330, end: -330 }
+  - { place: ecbatana, start: -330, end: -329 }
+reviewed: false

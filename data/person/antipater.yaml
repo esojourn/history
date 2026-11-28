@@ -1,0 +1,15 @@
+id: antipater
+wikidata: null
+civ: greece
+faction: macedon
+importance: 4
+birth: { year: -396, circa: true }
+death: { year: -318 }
+birthplace: macedon
+deathplace: macedon
+places:
+  - { place: pella }
+  - { place: megalopolis, start: -330, end: -330 }
+  - { place: lamia, start: -322, end: -321 }
+  - { place: crannon, start: -321, end: -321 }
+reviewed: false

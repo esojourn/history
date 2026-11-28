@@ -1,0 +1,11 @@
+id: pyrrhic-war
+wikidata: null
+civ: rome
+type: war
+importance: 4
+start: { year: -279 }
+end: { year: -274 }
+places: [tarentum, heraclea-lucania, asculum, sicily, beneventum]
+participants:
+  - person: pyrrhus
+reviewed: false

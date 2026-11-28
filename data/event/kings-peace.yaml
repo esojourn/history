@@ -1,0 +1,12 @@
+id: kings-peace
+wikidata: null
+civ: greece
+type: diplomatic
+importance: 3
+start: { year: -386 }
+places: [sardis, susa, sparta]
+participants:
+  - person: artaxerxes-2
+  - person: antalcidas
+  - person: agesilaus-2
+reviewed: false

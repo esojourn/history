@@ -1,0 +1,14 @@
+id: macedonian-wars
+wikidata: null
+civ: greece
+type: war
+importance: 4
+start: { year: -213 }
+end: { year: -147 }
+places: [macedon, cynoscephalae, pydna, pella]
+participants:
+  - person: philip-v
+  - person: perseus
+  - person: attalus-1
+  - person: polybius
+reviewed: false

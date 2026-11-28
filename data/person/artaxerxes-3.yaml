@@ -1,0 +1,15 @@
+id: artaxerxes-3
+wikidata: null
+civ: meso
+importance: 2
+birth: { unknown: true, approx: -410 }
+death: { year: -337 }
+reign:
+  - { start: -357, end: -337 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: susa }
+  - { place: persepolis }
+  - { place: egypt, start: -342, end: -341 }
+reviewed: false

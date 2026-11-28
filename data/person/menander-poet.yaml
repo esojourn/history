@@ -1,0 +1,12 @@
+id: menander-poet
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -341, circa: true }
+death: { year: -290, circa: true }
+birthplace: athens
+deathplace: piraeus
+places:
+  - { place: athens }
+reviewed: false

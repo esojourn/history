@@ -1,0 +1,17 @@
+id: corinthian-war
+wikidata: null
+civ: greece
+type: war
+importance: 3
+start: { year: -394 }
+end: { year: -386 }
+places: [haliartus, coronea, cnidus, corinth]
+participants:
+  - person: lysander
+  - person: agesilaus-2
+  - person: conon
+  - person: iphicrates
+  - person: thrasybulus
+  - person: antalcidas
+  - person: artaxerxes-2
+reviewed: false

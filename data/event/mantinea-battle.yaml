@@ -1,0 +1,11 @@
+id: mantinea-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 3
+start: { year: -361 }
+places: [mantinea]
+participants:
+  - person: epaminondas
+  - person: agesilaus-2
+reviewed: false

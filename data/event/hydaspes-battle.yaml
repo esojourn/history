@@ -1,0 +1,16 @@
+id: hydaspes-battle
+wikidata: null
+civ: india
+type: battle
+importance: 3
+start: { year: -325 }
+places: [hydaspes, taxila]
+participants:
+  - person: alexander-great
+  - person: porus
+  - person: craterus
+  - person: perdiccas
+  - person: hephaestion
+  - person: seleucus-1
+  - person: ptolemy-1
+reviewed: false

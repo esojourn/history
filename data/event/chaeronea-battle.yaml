@@ -1,0 +1,12 @@
+id: chaeronea-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 5
+start: { year: -337 }
+places: [chaeronea]
+participants:
+  - person: philip-2-macedon
+  - person: alexander-great
+  - person: demosthenes
+reviewed: false

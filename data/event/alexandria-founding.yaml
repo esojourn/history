@@ -1,0 +1,10 @@
+id: alexandria-founding
+wikidata: null
+civ: egypt
+type: founding
+importance: 4
+start: { year: -330 }
+places: [alexandria, siwa]
+participants:
+  - person: alexander-great
+reviewed: false

@@ -1,0 +1,14 @@
+id: theophrastus
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -370, circa: true }
+death: { year: -286, circa: true }
+birthplace: lesbos
+deathplace: athens
+places:
+  - { place: lesbos }
+  - { place: assos, start: -346, end: -344 }
+  - { place: athens, start: -334, end: -286 }
+reviewed: false

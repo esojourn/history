@@ -1,0 +1,16 @@
+id: agathocles
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -360, circa: true }
+death: { year: -288 }
+reign:
+  - { start: -316, end: -288 }
+birthplace: himera
+deathplace: syracuse
+places:
+  - { place: syracuse }
+  - { place: sicily }
+  - { place: carthage, start: -309, end: -306 }
+reviewed: false

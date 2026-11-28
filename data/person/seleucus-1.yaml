@@ -1,0 +1,19 @@
+id: seleucus-1
+wikidata: null
+civ: meso
+importance: 4
+birth: { year: -357, circa: true }
+death: { year: -280 }
+reign:
+  - { start: -304, end: -280 }
+birthplace: macedon
+deathplace: thrace
+places:
+  - { place: macedon }
+  - { place: hydaspes, start: -325, end: -325 }
+  - { place: babylon, start: -320, end: -315 }
+  - { place: babylon, start: -311, end: -300 }
+  - { place: ipsus, start: -300, end: -300 }
+  - { place: antioch, start: -299, end: -281 }
+  - { place: corupedium, start: -280, end: -280 }
+reviewed: false

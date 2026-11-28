@@ -1,0 +1,13 @@
+id: jason-pherae
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { unknown: true, approx: -420 }
+death: { year: -369 }
+birthplace: pherae
+deathplace: pherae
+places:
+  - { place: pherae }
+  - { place: thessaly }
+reviewed: false

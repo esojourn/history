@@ -1,0 +1,22 @@
+id: pyrrhus
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 4
+birth: { year: -318 }
+death: { year: -271 }
+reign:
+  - { start: -305, end: -301 }
+  - { start: -296, end: -271 }
+birthplace: epirus
+deathplace: argos
+places:
+  - { place: epirus }
+  - { place: alexandria, start: -297, end: -296 }
+  - { place: tarentum, start: -279, end: -274 }
+  - { place: heraclea-lucania, start: -279, end: -279 }
+  - { place: asculum, start: -278, end: -278 }
+  - { place: sicily, start: -277, end: -275 }
+  - { place: beneventum, start: -274, end: -274 }
+  - { place: argos, start: -271, end: -271 }
+reviewed: false

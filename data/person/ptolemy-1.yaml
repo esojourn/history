@@ -1,0 +1,17 @@
+id: ptolemy-1
+wikidata: null
+civ: egypt
+importance: 4
+birth: { year: -366, circa: true }
+death: { year: -281 }
+reign:
+  - { start: -304, end: -281 }
+birthplace: macedon
+deathplace: alexandria
+places:
+  - { place: macedon }
+  - { place: bactria, start: -328, end: -326 }
+  - { place: memphis, start: -322, end: -312 }
+  - { place: gaza, start: -311, end: -311 }
+  - { place: alexandria }
+reviewed: false

@@ -1,0 +1,12 @@
+id: aristarchus
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -309, circa: true }
+death: { year: -229, circa: true }
+birthplace: samos
+deathplace: unknown
+places:
+  - { place: samos }
+reviewed: false

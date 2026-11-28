@@ -1,0 +1,20 @@
+id: philip-2-macedon
+wikidata: null
+civ: greece
+faction: macedon
+importance: 5
+birth: { year: -381 }
+death: { year: -335 }
+reign:
+  - { start: -358, end: -335 }
+birthplace: pella
+deathplace: aegae
+places:
+  - { place: pella }
+  - { place: thebes-greece, start: -367, end: -364 }
+  - { place: amphipolis, start: -356, end: -356 }
+  - { place: olynthus, start: -347, end: -347 }
+  - { place: chaeronea, start: -337, end: -337 }
+  - { place: corinth, start: -336, end: -336 }
+  - { place: aegae, start: -335, end: -335 }
+reviewed: false

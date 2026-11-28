@@ -1,0 +1,12 @@
+id: isocrates
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -435 }
+death: { year: -337 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+reviewed: false

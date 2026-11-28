@@ -1,0 +1,12 @@
+id: gaugamela-battle
+wikidata: null
+civ: meso
+type: battle
+importance: 5
+start: { year: -330 }
+places: [gaugamela]
+participants:
+  - person: alexander-great
+  - person: darius-3
+  - person: parmenion
+reviewed: false

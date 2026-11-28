@@ -1,0 +1,12 @@
+id: euclid
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 4
+birth: { unknown: true, approx: -325 }
+death: { unknown: true, approx: -265 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: alexandria }
+reviewed: false

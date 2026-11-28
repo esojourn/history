@@ -1,0 +1,12 @@
+id: granicus-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 3
+start: { year: -333 }
+places: [granicus]
+participants:
+  - person: alexander-great
+  - person: parmenion
+  - person: memnon-rhodes
+reviewed: false

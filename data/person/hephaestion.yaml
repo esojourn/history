@@ -1,0 +1,15 @@
+id: hephaestion
+wikidata: null
+civ: greece
+faction: macedon
+importance: 3
+birth: { year: -355, circa: true }
+death: { year: -323 }
+birthplace: pella
+deathplace: ecbatana
+places:
+  - { place: pella }
+  - { place: bactria, start: -328, end: -326 }
+  - { place: susa, start: -323, end: -323 }
+  - { place: ecbatana, start: -323, end: -323 }
+reviewed: false

@@ -1,0 +1,11 @@
+id: leuctra-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 4
+start: { year: -370 }
+places: [leuctra]
+participants:
+  - person: epaminondas
+  - person: pelopidas
+reviewed: false

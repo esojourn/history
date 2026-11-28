@@ -1,0 +1,16 @@
+id: memnon-rhodes
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { year: -379, circa: true }
+death: { year: -332 }
+birthplace: rhodes
+deathplace: lesbos
+places:
+  - { place: rhodes }
+  - { place: pella, start: -352, end: -342 }
+  - { place: granicus, start: -333, end: -333 }
+  - { place: halicarnassus, start: -333, end: -333 }
+  - { place: lesbos, start: -332, end: -332 }
+reviewed: false

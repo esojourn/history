@@ -1,0 +1,16 @@
+id: attalus-1
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -268 }
+death: { year: -196 }
+reign:
+  - { start: -240, end: -196 }
+birthplace: pergamon
+deathplace: pergamon
+places:
+  - { place: pergamon }
+  - { place: athens, start: -199, end: -199 }
+  - { place: thebes-greece, start: -196, end: -196 }
+reviewed: false

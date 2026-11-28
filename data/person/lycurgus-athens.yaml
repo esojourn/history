@@ -1,0 +1,12 @@
+id: lycurgus-athens
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { year: -389, circa: true }
+death: { year: -323, circa: true }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+reviewed: false

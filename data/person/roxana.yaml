@@ -1,0 +1,15 @@
+id: roxana
+wikidata: null
+civ: greece
+faction: macedon
+importance: 2
+birth: { unknown: true, approx: -345 }
+death: { year: -309, circa: true }
+birthplace: bactria
+deathplace: amphipolis
+places:
+  - { place: bactria }
+  - { place: babylon, start: -322, end: -322 }
+  - { place: macedon, start: -319, end: -315 }
+  - { place: amphipolis, start: -315, end: -309 }
+reviewed: false

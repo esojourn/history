@@ -1,0 +1,15 @@
+id: eumenes-cardia
+wikidata: null
+civ: greece
+faction: macedon
+importance: 3
+birth: { year: -361, circa: true }
+death: { year: -315 }
+birthplace: cardia
+deathplace: gabiene
+places:
+  - { place: cardia }
+  - { place: pella, start: -341, end: -334 }
+  - { place: cappadocia, start: -321, end: -318 }
+  - { place: gabiene, start: -316, end: -315 }
+reviewed: false

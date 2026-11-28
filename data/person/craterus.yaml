@@ -1,0 +1,14 @@
+id: craterus
+wikidata: null
+civ: greece
+faction: macedon
+importance: 2
+birth: { year: -369, circa: true }
+death: { year: -320, circa: true }
+birthplace: macedon
+deathplace: unknown
+places:
+  - { place: macedon }
+  - { place: hydaspes, start: -325, end: -325 }
+  - { place: crannon, start: -321, end: -321 }
+reviewed: false

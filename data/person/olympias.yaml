@@ -1,0 +1,14 @@
+id: olympias
+wikidata: null
+civ: greece
+faction: macedon
+importance: 3
+birth: { year: -374, circa: true }
+death: { year: -315 }
+birthplace: epirus
+deathplace: pydna
+places:
+  - { place: epirus }
+  - { place: pella, start: -356, end: -336 }
+  - { place: pydna, start: -316, end: -315 }
+reviewed: false

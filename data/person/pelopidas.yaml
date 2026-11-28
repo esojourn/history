@@ -1,0 +1,16 @@
+id: pelopidas
+wikidata: null
+civ: greece
+faction: thebes
+importance: 3
+birth: { year: -409, circa: true }
+death: { year: -363 }
+birthplace: thebes-greece
+deathplace: cynoscephalae
+places:
+  - { place: thebes-greece }
+  - { place: athens, start: -381, end: -378 }
+  - { place: leuctra, start: -370, end: -370 }
+  - { place: thessaly, start: -368, end: -363 }
+  - { place: susa, start: -366, end: -366 }
+reviewed: false

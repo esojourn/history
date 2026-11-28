@@ -1,0 +1,18 @@
+id: cassander
+wikidata: null
+civ: greece
+faction: macedon
+importance: 3
+birth: { year: -354, circa: true }
+death: { year: -296 }
+reign:
+  - { start: -304, end: -296 }
+birthplace: macedon
+deathplace: macedon
+places:
+  - { place: pella }
+  - { place: babylon, start: -323, end: -322 }
+  - { place: athens, start: -316, end: -316 }
+  - { place: pydna, start: -316, end: -315 }
+  - { place: thessalonica }
+reviewed: false

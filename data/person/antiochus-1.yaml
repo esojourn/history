@@ -1,0 +1,16 @@
+id: antiochus-1
+wikidata: null
+civ: meso
+importance: 3
+birth: { year: -323, circa: true }
+death: { year: -260 }
+reign:
+  - { start: -280, end: -260 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ipsus, start: -300, end: -300 }
+  - { place: babylon }
+  - { place: antioch }
+  - { place: sardis }
+reviewed: false

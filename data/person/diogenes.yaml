@@ -1,0 +1,14 @@
+id: diogenes
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -411, circa: true }
+death: { year: -322, circa: true }
+birthplace: sinope
+deathplace: corinth
+places:
+  - { place: sinope }
+  - { place: athens }
+  - { place: corinth }
+reviewed: false

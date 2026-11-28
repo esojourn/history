@@ -1,0 +1,16 @@
+id: parmenion
+wikidata: null
+civ: greece
+faction: macedon
+importance: 3
+birth: { year: -399, circa: true }
+death: { year: -329 }
+birthplace: macedon
+deathplace: ecbatana
+places:
+  - { place: macedon }
+  - { place: granicus, start: -333, end: -333 }
+  - { place: issus, start: -332, end: -332 }
+  - { place: gaugamela, start: -330, end: -330 }
+  - { place: ecbatana, start: -329, end: -329 }
+reviewed: false

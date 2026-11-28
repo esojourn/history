@@ -1,0 +1,10 @@
+id: isthmian-proclamation
+wikidata: null
+civ: greece
+type: diplomatic
+importance: 3
+start: { year: -195 }
+places: [corinth]
+participants:
+  - person: philip-v
+reviewed: false

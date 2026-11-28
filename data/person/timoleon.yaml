@@ -1,0 +1,14 @@
+id: timoleon
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -410, circa: true }
+death: { year: -336, circa: true }
+birthplace: corinth
+deathplace: syracuse
+places:
+  - { place: corinth }
+  - { place: syracuse, start: -343, end: -336 }
+  - { place: sicily }
+reviewed: false

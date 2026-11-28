@@ -1,0 +1,16 @@
+id: year-of-kings
+wikidata: null
+civ: greece
+type: political
+importance: 3
+start: { year: -305 }
+end: { year: -303 }
+places: [cyprus, alexandria, babylon]
+participants:
+  - person: antigonus-1
+  - person: demetrius-1
+  - person: ptolemy-1
+  - person: seleucus-1
+  - person: lysimachus
+  - person: cassander
+reviewed: false

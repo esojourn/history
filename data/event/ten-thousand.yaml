@@ -1,0 +1,13 @@
+id: ten-thousand
+wikidata: null
+civ: greece
+type: war
+importance: 3
+start: { year: -400 }
+end: { year: -398 }
+places: [sardis, cunaxa, trapezus]
+participants:
+  - person: cyrus-younger
+  - person: artaxerxes-2
+  - person: xenophon
+reviewed: false

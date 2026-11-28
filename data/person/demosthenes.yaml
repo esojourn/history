@@ -1,0 +1,15 @@
+id: demosthenes
+wikidata: null
+civ: greece
+faction: athens
+importance: 5
+birth: { year: -383 }
+death: { year: -321 }
+birthplace: athens
+deathplace: calauria
+places:
+  - { place: athens }
+  - { place: pella, start: -345, end: -345 }
+  - { place: chaeronea, start: -337, end: -337 }
+  - { place: calauria, start: -321, end: -321 }
+reviewed: false

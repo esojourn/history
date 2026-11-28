@@ -1,0 +1,11 @@
+id: third-sacred-war
+wikidata: null
+civ: greece
+type: war
+importance: 2
+start: { year: -355 }
+end: { year: -345 }
+places: [delphi, phocis, thessaly]
+participants:
+  - person: philip-2-macedon
+reviewed: false

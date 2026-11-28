@@ -1,0 +1,14 @@
+id: eudoxus
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -407, circa: true }
+death: { year: -354, circa: true }
+birthplace: cnidus
+deathplace: cnidus
+places:
+  - { place: cnidus }
+  - { place: athens }
+  - { place: egypt }
+reviewed: false

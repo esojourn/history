@@ -1,0 +1,13 @@
+id: plato
+wikidata: null
+civ: greece
+faction: athens
+importance: 5
+birth: { year: -427, circa: true }
+death: { year: -346, circa: true }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+  - { place: syracuse, start: -387, end: -360 }
+reviewed: false

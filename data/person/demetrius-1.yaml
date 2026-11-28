@@ -1,0 +1,20 @@
+id: demetrius-1
+wikidata: null
+civ: greece
+faction: macedon
+importance: 4
+birth: { year: -336, circa: true }
+death: { year: -282 }
+reign:
+  - { start: -293, end: -287 }
+birthplace: macedon
+deathplace: apamea-syria
+places:
+  - { place: gaza, start: -311, end: -311 }
+  - { place: athens, start: -306, end: -303 }
+  - { place: cyprus, start: -305, end: -305 }
+  - { place: rhodes, start: -304, end: -303 }
+  - { place: ipsus, start: -300, end: -300 }
+  - { place: macedon, start: -293, end: -287 }
+  - { place: apamea-syria, start: -284, end: -282 }
+reviewed: false

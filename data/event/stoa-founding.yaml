@@ -1,0 +1,11 @@
+id: stoa-founding
+wikidata: null
+civ: greece
+type: cultural
+importance: 3
+start: { year: -299, circa: true }
+places: [athens]
+participants:
+  - person: zeno-citium
+  - person: cleanthes
+reviewed: false

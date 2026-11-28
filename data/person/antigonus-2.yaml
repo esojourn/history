@@ -1,0 +1,17 @@
+id: antigonus-2
+wikidata: null
+civ: greece
+faction: macedon
+importance: 3
+birth: { year: -318, circa: true }
+death: { year: -238 }
+reign:
+  - { start: -276, end: -238 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: pella }
+  - { place: corinth }
+  - { place: athens }
+  - { place: chalcis }
+reviewed: false

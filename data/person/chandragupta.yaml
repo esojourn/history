@@ -1,0 +1,14 @@
+id: chandragupta
+wikidata: null
+civ: india
+importance: 4
+birth: { unknown: true, approx: -345 }
+death: { year: -296, circa: true }
+reign:
+  - { start: -320, end: -296 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: pataliputra }
+  - { place: taxila }
+reviewed: false

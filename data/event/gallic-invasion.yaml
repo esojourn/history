@@ -1,0 +1,12 @@
+id: gallic-invasion
+wikidata: null
+civ: greece
+type: war
+importance: 3
+start: { year: -279 }
+end: { year: -276 }
+places: [macedon, thermopylae, delphi, thrace]
+participants:
+  - person: brennus-delphi
+  - person: antigonus-2
+reviewed: false

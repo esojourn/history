@@ -1,0 +1,12 @@
+id: thebes-liberation
+wikidata: null
+civ: greece
+type: political
+importance: 2
+start: { year: -378 }
+places: [thebes-greece]
+participants:
+  - person: pelopidas
+  - person: epaminondas
+  - person: agesilaus-2
+reviewed: false
