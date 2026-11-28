@@ -33,6 +33,7 @@ const EPISODES = {
   lanling2: { no: '四', dir: '004-lanling2', person: 'gao-changgong' },
   'lanling-song': { no: '五', dir: '005-lanling-song', person: 'gao-changgong' },
   'hanxin-kuaxia': { no: '六', dir: '006-hanxin-kuaxia', person: 'han-xin' },
+  'hanxin-duoduo': { no: '七', dir: '007-hanxin-duoduo', person: 'han-xin' },
 };
 
 const md = fs.readFileSync(path.join(HERE, 'scripts.md'), 'utf8').replace(/\r\n/g, '\n');

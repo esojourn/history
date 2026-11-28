@@ -18,6 +18,12 @@
       "runtimeExecutable": "node",
       "runtimeArgs": ["prototypes/links/serve.mjs"],
       "port": 4340
+    },
+    {
+      "name": "heroes-out",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4350", "--bind", "127.0.0.1", "--directory", "promo/out/heroes"],
+      "port": 4350
     }
   ]
 }
