@@ -1,7 +1,6 @@
 id: euclid
 wikidata: null
-civ: greece
-faction: greek-cities
+civ: egypt
 importance: 4
 birth: { unknown: true, approx: -325 }
 death: { unknown: true, approx: -265 }
