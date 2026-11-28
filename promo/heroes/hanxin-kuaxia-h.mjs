@@ -147,9 +147,13 @@ const IMGX = 230, IMGW = Math.round(1920 * H / 882), DX = dk.detailX;
 const KAI = "'STKaiti','KaiTi',serif";
 const qr = await QRCode.toDataURL(URL_QR, { errorCorrectionLevel: 'Q', margin: 2, width: 720, color: { dark: '#1B2A31', light: '#FFFFFF' } });
 const SHADE = `<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,18,22,.94) 0,rgba(13,18,22,.8) 36%,rgba(13,18,22,0) 62%)"></div>`;
-// 系列标题（第一屏和开头同一位置）。项目方 2026-11-28 要求加大、“真实历史”更明显：“峡谷之外的”米色，“真实历史”更大、加粗、金色
-const SERIES = `<div style="position:absolute;left:106px;top:110px;font-family:${KAI};color:#e8dcc0;letter-spacing:8px;white-space:nowrap;text-shadow:0 4px 20px rgba(0,0,0,.6)">`
-  + `<span style="font-size:76px">峡谷之外的</span><span style="font-size:102px;font-weight:700;color:#f2c96b">真实历史</span></div>`;
+// 系列标题（第一屏和开头同一位置）——“朱红印章”刊头，项目方 2026-11-28 从三种样张里选定：
+// 系列名用宋体（主标题是楷体），“峡谷之外的”浅米色，“真实历史”白字反衬在朱红色的印章块里。
+// 这样系列名和主标题字体、处理方式都不同，一眼分得出哪个是系列、哪个是这一集
+const SERIF = "'Noto Serif SC','Source Han Serif SC','SimSun',serif";
+const SERIES = `<div style="position:absolute;left:108px;top:128px;display:flex;align-items:center;font-family:${SERIF};white-space:nowrap">`
+  + `<span style="font-size:58px;font-weight:500;letter-spacing:12px;color:#e8dcc0;text-shadow:0 4px 16px rgba(0,0,0,.6)">峡谷之外的</span>`
+  + `<span style="margin-left:8px;padding:6px 10px 8px 22px;background:#b3392b;border-radius:4px;font-size:62px;font-weight:900;letter-spacing:12px;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.35)">真实历史</span></div>`;
 const CREDIT_TAG = `<div style="position:absolute;right:30px;bottom:24px;font-size:24px;letter-spacing:1px;color:rgba(241,236,224,.85)">${CREDIT}</div>`;
 // 文字卡：盖在左边的时间轴上（顶栏、右边的人物卡照常露出），底下留给字幕
 const quoteHtml = q => `<body style="background:transparent">

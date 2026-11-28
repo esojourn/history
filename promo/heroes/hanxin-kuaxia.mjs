@@ -154,10 +154,12 @@ const quoteHtml = q => `<body style="background:transparent">
     <div style="font:700 30px 'Microsoft YaHei';letter-spacing:4px;color:#8a5a2b">${q.book}</div>
     <div style="margin-top:22px;font:400 58px/1.5 ${KAI};color:#1B2A31;letter-spacing:2px">${q.text.replace(/\//g, '<br>').replace(/【/g, '<b style="color:#C4472D">').replace(/】/g, '</b>')}</div>
   </div></body>`;
-// 系列标题（第一屏和开头同一位置，第一屏淡入开头时不重影）。项目方 2026-11-28 要求加大、“真实历史”更明显：
-// “峡谷之外的”米色，“真实历史”更大、加粗、金色
-const SERIES = `<div style="position:absolute;left:0;right:0;top:92px;text-align:center;font-family:${KAI};color:#e8dcc0;letter-spacing:8px;text-indent:8px;white-space:nowrap;text-shadow:0 4px 20px rgba(0,0,0,.6)">`
-  + `<span style="font-size:84px">峡谷之外的</span><span style="font-size:112px;font-weight:700;color:#f2c96b">真实历史</span></div>`;
+// 系列标题（第一屏和开头同一位置，第一屏淡入开头时不重影）——“朱红印章”刊头，同横版（项目方 2026-11-28 选定）：
+// 系列名用宋体（主标题是楷体），“峡谷之外的”浅米色，“真实历史”白字反衬在朱红色的印章块里
+const SERIF = "'Noto Serif SC','Source Han Serif SC','SimSun',serif";
+const SERIES = `<div style="position:absolute;left:0;right:0;top:104px;display:flex;justify-content:center;align-items:center;font-family:${SERIF};white-space:nowrap">`
+  + `<span style="font-size:66px;font-weight:500;letter-spacing:12px;color:#e8dcc0;text-shadow:0 4px 16px rgba(0,0,0,.6)">峡谷之外的</span>`
+  + `<span style="margin-left:8px;padding:6px 10px 8px 22px;background:#b3392b;border-radius:4px;font-size:72px;font-weight:900;letter-spacing:12px;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.35)">真实历史</span></div>`;
 const pages = {
   // 第一屏（成片第一帧，也是平台上的预览图）：照制作标准的标题画面（版式同兰陵王第二篇）。竖版图居中，同一造型的横版图模糊垫底；
   // 大标题“忍过胯下之辱的将军”太长，分两行：“忍过 / 胯下之辱的将军”，后一行金色（不让“的”字起行，“胯下之辱”整个在金色里）
