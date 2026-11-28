@@ -1,0 +1,13 @@
+id: sophocles
+wikidata: null
+civ: greece
+faction: athens
+importance: 4
+birth: { year: -496, circa: true }
+death: { year: -405 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+  - { place: samos, start: -440, end: -439 }
+reviewed: false

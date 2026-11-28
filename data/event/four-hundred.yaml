@@ -1,0 +1,12 @@
+id: four-hundred
+wikidata: null
+civ: greece
+type: political
+importance: 2
+start: { year: -410 }
+places: [athens, samos]
+participants:
+  - person: theramenes
+  - person: thrasybulus
+  - person: alcibiades
+reviewed: false

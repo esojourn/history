@@ -1,0 +1,14 @@
+id: polycrates
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { unknown: true, approx: -570 }
+death: { year: -521, circa: true }
+reign:
+  - { start: -537, end: -521 }
+birthplace: samos
+deathplace: magnesia-meander
+places:
+  - { place: samos }
+reviewed: false

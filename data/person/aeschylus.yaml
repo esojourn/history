@@ -1,0 +1,14 @@
+id: aeschylus
+wikidata: null
+civ: greece
+faction: athens
+importance: 4
+birth: { year: -524, circa: true }
+death: { year: -455, circa: true }
+birthplace: eleusis
+deathplace: gela
+places:
+  - { place: athens }
+  - { place: marathon }
+  - { place: sicily }
+reviewed: false

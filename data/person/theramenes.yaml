@@ -1,0 +1,12 @@
+id: theramenes
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { unknown: true, approx: -450 }
+death: { year: -403 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+reviewed: false

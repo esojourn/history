@@ -1,0 +1,14 @@
+id: pythagoras
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 4
+birth: { year: -569, circa: true }
+death: { year: -494, circa: true }
+birthplace: samos
+deathplace: metapontum
+places:
+  - { place: samos }
+  - { place: croton, start: -529 }
+  - { place: metapontum }
+reviewed: false

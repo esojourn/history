@@ -1,0 +1,13 @@
+id: zeno-elea
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { year: -489, circa: true }
+death: { year: -429, circa: true }
+birthplace: elea
+deathplace: unknown
+places:
+  - { place: elea }
+  - { place: athens }
+reviewed: false

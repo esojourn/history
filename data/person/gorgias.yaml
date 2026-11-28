@@ -1,0 +1,14 @@
+id: gorgias
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { year: -482, circa: true }
+death: { year: -375, circa: true }
+birthplace: leontini
+deathplace: unknown
+places:
+  - { place: leontini }
+  - { place: athens, start: -426 }
+  - { place: larissa }
+reviewed: false

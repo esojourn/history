@@ -1,0 +1,12 @@
+id: ephialtes
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { unknown: true, approx: -500 }
+death: { year: -460 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+reviewed: false

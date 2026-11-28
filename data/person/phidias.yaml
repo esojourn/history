@@ -1,0 +1,13 @@
+id: phidias
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -479, circa: true }
+death: { year: -429, circa: true }
+birthplace: athens
+deathplace: unknown
+places:
+  - { place: athens }
+  - { place: olympia }
+reviewed: false

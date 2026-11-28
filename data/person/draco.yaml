@@ -1,0 +1,12 @@
+id: draco
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { unknown: true, approx: -660 }
+death: { unknown: true, approx: -600 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: athens }
+reviewed: false

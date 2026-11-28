@@ -1,0 +1,13 @@
+id: pericles
+wikidata: null
+civ: greece
+faction: athens
+importance: 5
+birth: { year: -494, circa: true }
+death: { year: -428 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+  - { place: samos, start: -439, end: -438 }
+reviewed: false

@@ -1,0 +1,17 @@
+id: lysander
+wikidata: null
+civ: greece
+faction: sparta
+importance: 4
+birth: { unknown: true, approx: -450 }
+death: { year: -394 }
+birthplace: sparta
+deathplace: haliartus
+places:
+  - { place: sparta }
+  - { place: ephesus }
+  - { place: aegospotami }
+  - { place: athens, start: -403, end: -403 }
+  - { place: samos }
+  - { place: haliartus }
+reviewed: false

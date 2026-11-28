@@ -1,0 +1,14 @@
+id: anaxagoras
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -499, circa: true }
+death: { year: -427, circa: true }
+birthplace: clazomenae
+deathplace: lampsacus
+places:
+  - { place: clazomenae }
+  - { place: athens }
+  - { place: lampsacus }
+reviewed: false

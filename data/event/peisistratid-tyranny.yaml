@@ -1,0 +1,13 @@
+id: peisistratid-tyranny
+wikidata: null
+civ: greece
+type: political
+importance: 3
+start: { year: -545 }
+end: { year: -509 }
+places: [athens]
+participants:
+  - person: peisistratus
+  - person: cleomenes-1
+  - person: cleisthenes
+reviewed: false

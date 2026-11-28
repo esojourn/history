@@ -1,0 +1,11 @@
+id: amphipolis-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 2
+start: { year: -421 }
+places: [amphipolis]
+participants:
+  - person: cleon
+  - person: brasidas
+reviewed: false

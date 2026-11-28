@@ -1,0 +1,14 @@
+id: thucydides
+wikidata: null
+civ: greece
+faction: athens
+importance: 4
+birth: { year: -459, circa: true }
+death: { year: -399, circa: true }
+birthplace: athens
+deathplace: unknown
+places:
+  - { place: athens }
+  - { place: thrace }
+  - { place: amphipolis }
+reviewed: false

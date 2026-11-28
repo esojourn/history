@@ -1,0 +1,16 @@
+id: xerxes-1
+wikidata: null
+civ: meso
+importance: 4
+birth: { year: -517, circa: true }
+death: { year: -464 }
+reign:
+  - { start: -485, end: -464 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: susa }
+  - { place: persepolis }
+  - { place: sardis, start: -480, end: -478 }
+  - { place: athens, start: -479, end: -479 }
+reviewed: false

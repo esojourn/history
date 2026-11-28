@@ -1,0 +1,10 @@
+id: eurymedon
+wikidata: null
+civ: greece
+type: battle
+importance: 2
+start: { year: -465, circa: true }
+places: [eurymedon]
+participants:
+  - person: cimon
+reviewed: false

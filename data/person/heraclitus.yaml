@@ -1,0 +1,12 @@
+id: heraclitus
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -534, circa: true }
+death: { year: -474, circa: true }
+birthplace: ephesus
+deathplace: ephesus
+places:
+  - { place: ephesus }
+reviewed: false

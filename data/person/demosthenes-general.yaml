@@ -1,0 +1,14 @@
+id: demosthenes-general
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { unknown: true, approx: -460 }
+death: { year: -412 }
+birthplace: athens
+deathplace: syracuse
+places:
+  - { place: athens }
+  - { place: pylos }
+  - { place: syracuse, start: -412, end: -412 }
+reviewed: false

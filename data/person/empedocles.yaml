@@ -1,0 +1,13 @@
+id: empedocles
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -493, circa: true }
+death: { year: -433, circa: true }
+birthplace: akragas
+deathplace: unknown
+places:
+  - { place: akragas }
+  - { place: thurii }
+reviewed: false

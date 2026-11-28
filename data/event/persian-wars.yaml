@@ -1,0 +1,18 @@
+id: persian-wars
+wikidata: null
+civ: greece
+type: war
+importance: 5
+start: { year: -498 }
+end: { year: -448 }
+places: [ionia, marathon, thermopylae, salamis, plataea, cyprus]
+participants:
+  - person: darius-1
+  - person: xerxes-1
+  - person: miltiades
+  - person: themistocles
+  - person: leonidas-1
+  - person: pausanias-sparta
+  - person: aristides
+  - person: cimon
+reviewed: false

@@ -1,0 +1,10 @@
+id: socrates-trial
+wikidata: null
+civ: greece
+type: cultural
+importance: 4
+start: { year: -398 }
+places: [athens]
+participants:
+  - person: socrates
+reviewed: false

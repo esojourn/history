@@ -1,0 +1,13 @@
+id: marathon
+wikidata: null
+civ: greece
+type: battle
+importance: 5
+start: { year: -489 }
+places: [marathon]
+participants:
+  - person: miltiades
+  - person: darius-1
+  - person: aristides
+  - person: aeschylus
+reviewed: false

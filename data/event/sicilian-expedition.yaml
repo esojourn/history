@@ -1,0 +1,14 @@
+id: sicilian-expedition
+wikidata: null
+civ: greece
+type: war
+importance: 4
+start: { year: -414 }
+end: { year: -412 }
+places: [syracuse, sicily, athens]
+participants:
+  - person: nicias
+  - person: alcibiades
+  - person: demosthenes-general
+  - person: gylippus
+reviewed: false

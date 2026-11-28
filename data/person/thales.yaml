@@ -1,0 +1,12 @@
+id: thales
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 4
+birth: { year: -623, circa: true }
+death: { year: -545, circa: true }
+birthplace: miletus
+deathplace: unknown
+places:
+  - { place: miletus }
+reviewed: false

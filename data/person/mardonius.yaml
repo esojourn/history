@@ -1,0 +1,13 @@
+id: mardonius
+wikidata: null
+civ: meso
+importance: 2
+birth: { unknown: true, approx: -530 }
+death: { year: -478 }
+birthplace: unknown
+deathplace: plataea
+places:
+  - { place: thrace }
+  - { place: athens, start: -478, end: -478 }
+  - { place: plataea }
+reviewed: false

@@ -1,0 +1,13 @@
+id: gylippus
+wikidata: null
+civ: greece
+faction: sparta
+importance: 2
+birth: { unknown: true, approx: -450 }
+death: { unknown: true, approx: -400 }
+birthplace: sparta
+deathplace: unknown
+places:
+  - { place: sparta }
+  - { place: syracuse, start: -413, end: -412 }
+reviewed: false

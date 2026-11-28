@@ -1,0 +1,13 @@
+id: sappho
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -629, circa: true }
+death: { year: -569, circa: true }
+birthplace: lesbos
+deathplace: unknown
+places:
+  - { place: lesbos }
+  - { place: sicily }
+reviewed: false

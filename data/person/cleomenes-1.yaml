@@ -1,0 +1,16 @@
+id: cleomenes-1
+wikidata: null
+civ: greece
+faction: sparta
+importance: 2
+birth: { unknown: true, approx: -555 }
+death: { year: -489, circa: true }
+reign:
+  - { start: -519, end: -489 }
+birthplace: sparta
+deathplace: sparta
+places:
+  - { place: sparta }
+  - { place: athens }
+  - { place: argos }
+reviewed: false

@@ -1,0 +1,14 @@
+id: pausanias-sparta
+wikidata: null
+civ: greece
+faction: sparta
+importance: 3
+birth: { unknown: true, approx: -515 }
+death: { year: -469, circa: true }
+birthplace: sparta
+deathplace: sparta
+places:
+  - { place: sparta }
+  - { place: plataea }
+  - { place: constantinople, start: -477, end: -470 }
+reviewed: false

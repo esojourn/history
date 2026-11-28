@@ -1,0 +1,12 @@
+id: ephialtes-reform
+wikidata: null
+civ: greece
+type: founding
+importance: 3
+start: { year: -461 }
+places: [athens]
+participants:
+  - person: ephialtes
+  - person: pericles
+  - person: cimon
+reviewed: false

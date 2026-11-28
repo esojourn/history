@@ -1,0 +1,14 @@
+id: critias
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { year: -459, circa: true }
+death: { year: -402 }
+birthplace: athens
+deathplace: piraeus
+places:
+  - { place: athens }
+  - { place: larissa }
+  - { place: piraeus }
+reviewed: false

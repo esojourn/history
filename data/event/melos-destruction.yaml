@@ -1,0 +1,8 @@
+id: melos-destruction
+wikidata: null
+civ: greece
+type: battle
+importance: 2
+start: { year: -415 }
+places: [melos]
+reviewed: false

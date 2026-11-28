@@ -1,0 +1,11 @@
+id: thirty-years-peace
+wikidata: null
+civ: greece
+type: diplomatic
+importance: 3
+start: { year: -445 }
+places: [athens, sparta]
+participants:
+  - person: pericles
+  - person: archidamus-2
+reviewed: false

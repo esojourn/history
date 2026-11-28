@@ -1,0 +1,8 @@
+id: first-olympiad
+wikidata: null
+civ: greece
+type: cultural
+importance: 4
+start: { year: -775, certainty: traditional }
+places: [olympia]
+reviewed: false

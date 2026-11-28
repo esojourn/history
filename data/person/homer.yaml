@@ -1,0 +1,13 @@
+id: homer
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 5
+birth: { unknown: true, approx: -770, certainty: traditional }
+death: { unknown: true, approx: -700, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ionia }
+  - { place: chios }
+reviewed: false

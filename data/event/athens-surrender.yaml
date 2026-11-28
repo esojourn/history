@@ -1,0 +1,11 @@
+id: athens-surrender
+wikidata: null
+civ: greece
+type: political
+importance: 4
+start: { year: -403 }
+places: [athens, piraeus]
+participants:
+  - person: lysander
+  - person: theramenes
+reviewed: false

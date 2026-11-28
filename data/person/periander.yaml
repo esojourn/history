@@ -1,0 +1,14 @@
+id: periander
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { unknown: true, approx: -665 }
+death: { year: -584, circa: true }
+reign:
+  - { start: -626, end: -584 }
+birthplace: corinth
+deathplace: corinth
+places:
+  - { place: corinth }
+reviewed: false

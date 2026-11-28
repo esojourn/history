@@ -1,0 +1,13 @@
+id: salamis
+wikidata: null
+civ: greece
+type: battle
+importance: 5
+start: { year: -479 }
+places: [salamis, athens]
+participants:
+  - person: themistocles
+  - person: xerxes-1
+  - person: aristides
+  - person: aeschylus
+reviewed: false

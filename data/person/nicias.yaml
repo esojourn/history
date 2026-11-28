@@ -1,0 +1,13 @@
+id: nicias
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -469, circa: true }
+death: { year: -412 }
+birthplace: athens
+deathplace: syracuse
+places:
+  - { place: athens }
+  - { place: syracuse, start: -414, end: -412 }
+reviewed: false

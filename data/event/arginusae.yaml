@@ -1,0 +1,12 @@
+id: arginusae
+wikidata: null
+civ: greece
+type: battle
+importance: 3
+start: { year: -405 }
+places: [arginusae, athens]
+participants:
+  - person: socrates
+  - person: thrasybulus
+  - person: theramenes
+reviewed: false

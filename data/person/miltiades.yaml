@@ -1,0 +1,14 @@
+id: miltiades
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -549, circa: true }
+death: { year: -488 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+  - { place: thrace }
+  - { place: marathon }
+reviewed: false

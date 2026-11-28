@@ -1,0 +1,16 @@
+id: darius-1
+wikidata: null
+civ: meso
+importance: 4
+birth: { year: -549, circa: true }
+death: { year: -485 }
+reign:
+  - { start: -521, end: -485 }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: susa }
+  - { place: persepolis }
+  - { place: babylon }
+  - { place: ecbatana }
+reviewed: false

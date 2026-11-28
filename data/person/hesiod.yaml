@@ -1,0 +1,12 @@
+id: hesiod
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { unknown: true, approx: -750, certainty: traditional }
+death: { unknown: true, approx: -680, certainty: traditional }
+birthplace: unknown
+deathplace: unknown
+places:
+  - { place: ascra }
+reviewed: false

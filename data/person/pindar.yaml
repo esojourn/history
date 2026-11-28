@@ -1,0 +1,15 @@
+id: pindar
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -517, circa: true }
+death: { year: -437, circa: true }
+birthplace: thebes-greece
+deathplace: unknown
+places:
+  - { place: thebes-greece }
+  - { place: athens }
+  - { place: sicily }
+  - { place: delphi }
+reviewed: false

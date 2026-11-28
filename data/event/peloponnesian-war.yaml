@@ -1,0 +1,18 @@
+id: peloponnesian-war
+wikidata: null
+civ: greece
+type: war
+importance: 5
+start: { year: -430 }
+end: { year: -403 }
+places: [athens, sparta, plataea, pylos, amphipolis, syracuse, aegospotami]
+participants:
+  - person: pericles
+  - person: archidamus-2
+  - person: cleon
+  - person: brasidas
+  - person: nicias
+  - person: alcibiades
+  - person: lysander
+  - person: thucydides
+reviewed: false

@@ -1,0 +1,8 @@
+id: mycenae-collapse
+wikidata: null
+civ: greece
+type: political
+importance: 3
+start: { year: -1199, circa: true, certainty: traditional }
+places: [mycenae, pylos, thebes-greece]
+reviewed: false

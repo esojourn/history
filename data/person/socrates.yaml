@@ -1,0 +1,12 @@
+id: socrates
+wikidata: null
+civ: greece
+faction: athens
+importance: 5
+birth: { year: -469, circa: true }
+death: { year: -398 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+reviewed: false

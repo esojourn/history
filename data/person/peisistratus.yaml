@@ -1,0 +1,15 @@
+id: peisistratus
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -599, circa: true }
+death: { year: -526 }
+reign:
+  - { start: -545, end: -526 }
+birthplace: athens
+deathplace: athens
+places:
+  - { place: athens }
+  - { place: thrace }
+reviewed: false

@@ -1,0 +1,16 @@
+id: thrasybulus
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -439, circa: true }
+death: { year: -387 }
+birthplace: athens
+deathplace: aspendus
+places:
+  - { place: athens }
+  - { place: samos, start: -410 }
+  - { place: thebes-greece, start: -403 }
+  - { place: piraeus }
+  - { place: aspendus }
+reviewed: false

@@ -1,0 +1,10 @@
+id: himera-battle
+wikidata: null
+civ: greece
+type: battle
+importance: 2
+start: { year: -479 }
+places: [himera]
+participants:
+  - person: gelon
+reviewed: false

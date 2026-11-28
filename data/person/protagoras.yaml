@@ -1,0 +1,15 @@
+id: protagoras
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -489, circa: true }
+death: { year: -419, circa: true }
+birthplace: abdera
+deathplace: unknown
+places:
+  - { place: abdera }
+  - { place: athens }
+  - { place: thurii }
+  - { place: sicily }
+reviewed: false

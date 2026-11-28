@@ -1,0 +1,12 @@
+id: aristophanes
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -445, circa: true }
+death: { year: -385, circa: true }
+birthplace: athens
+deathplace: unknown
+places:
+  - { place: athens }
+reviewed: false

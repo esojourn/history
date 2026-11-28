@@ -1,0 +1,9 @@
+id: greek-colonization
+wikidata: null
+civ: greece
+type: migration
+importance: 3
+start: { year: -749, circa: true }
+end: { year: -549, circa: true }
+places: [sicily, syracuse, tarentum, constantinople, ionia]
+reviewed: false

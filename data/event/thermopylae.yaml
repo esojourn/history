@@ -1,0 +1,11 @@
+id: thermopylae
+wikidata: null
+civ: greece
+type: battle
+importance: 4
+start: { year: -479 }
+places: [thermopylae]
+participants:
+  - person: leonidas-1
+  - person: xerxes-1
+reviewed: false

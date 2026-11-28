@@ -1,0 +1,13 @@
+id: sphacteria
+wikidata: null
+civ: greece
+type: battle
+importance: 3
+start: { year: -424 }
+places: [pylos]
+participants:
+  - person: demosthenes-general
+  - person: cleon
+  - person: brasidas
+  - person: nicias
+reviewed: false

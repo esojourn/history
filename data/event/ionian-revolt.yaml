@@ -1,0 +1,12 @@
+id: ionian-revolt
+wikidata: null
+civ: greece
+type: uprising
+importance: 3
+start: { year: -498 }
+end: { year: -492 }
+places: [miletus, sardis, ionia, cyprus]
+participants:
+  - person: darius-1
+  - person: cleomenes-1
+reviewed: false

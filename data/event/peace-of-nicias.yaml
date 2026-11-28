@@ -1,0 +1,11 @@
+id: peace-of-nicias
+wikidata: null
+civ: greece
+type: diplomatic
+importance: 3
+start: { year: -420 }
+places: [athens, sparta]
+participants:
+  - person: nicias
+  - person: alcibiades
+reviewed: false

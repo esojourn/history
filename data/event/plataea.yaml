@@ -1,0 +1,12 @@
+id: plataea
+wikidata: null
+civ: greece
+type: battle
+importance: 4
+start: { year: -478 }
+places: [plataea, mycale]
+participants:
+  - person: pausanias-sparta
+  - person: mardonius
+  - person: aristides
+reviewed: false

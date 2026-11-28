@@ -1,0 +1,16 @@
+id: themistocles
+wikidata: null
+civ: greece
+faction: athens
+importance: 4
+birth: { year: -523, circa: true }
+death: { year: -458, circa: true }
+birthplace: athens
+deathplace: magnesia-meander
+places:
+  - { place: athens }
+  - { place: piraeus }
+  - { place: salamis }
+  - { place: argos, start: -470, end: -466 }
+  - { place: magnesia-meander, start: -464 }
+reviewed: false

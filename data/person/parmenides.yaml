@@ -1,0 +1,13 @@
+id: parmenides
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 3
+birth: { year: -514, circa: true }
+death: { unknown: true, approx: -449 }
+birthplace: elea
+deathplace: unknown
+places:
+  - { place: elea }
+  - { place: athens }
+reviewed: false

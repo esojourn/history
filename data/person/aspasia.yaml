@@ -1,0 +1,13 @@
+id: aspasia
+wikidata: null
+civ: greece
+faction: athens
+importance: 2
+birth: { year: -469, circa: true }
+death: { unknown: true, approx: -400 }
+birthplace: miletus
+deathplace: unknown
+places:
+  - { place: miletus }
+  - { place: athens }
+reviewed: false

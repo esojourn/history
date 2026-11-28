@@ -20,3 +20,6 @@
 - { from: peter, to: paul, type: ally, year: 49 }
 - { from: peter, to: mark, type: mentor, year: 60 }
 - { from: herod, to: herod-antipas, type: kin, year: -5 }
+- { from: darius-1, to: zerubbabel, type: lord, year: -519 }
+- { from: xerxes-1, to: esther, type: kin, year: -478 }
+- { from: xerxes-1, to: mordecai, type: lord, year: -473 }

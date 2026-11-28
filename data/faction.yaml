@@ -241,3 +241,12 @@
 - id: geming
   civ: china
   color: "#2B6CB0"
+- id: athens
+  civ: greece
+  color: "#1F7A8C"
+- id: sparta
+  civ: greece
+  color: "#A63D40"
+- id: greek-cities
+  civ: greece
+  color: "#8A7A3C"

@@ -1,0 +1,15 @@
+id: brasidas
+wikidata: null
+civ: greece
+faction: sparta
+importance: 3
+birth: { unknown: true, approx: -465 }
+death: { year: -421 }
+birthplace: sparta
+deathplace: amphipolis
+places:
+  - { place: sparta }
+  - { place: pylos }
+  - { place: thrace }
+  - { place: amphipolis }
+reviewed: false

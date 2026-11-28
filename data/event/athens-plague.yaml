@@ -1,0 +1,12 @@
+id: athens-plague
+wikidata: null
+civ: greece
+type: cultural
+importance: 3
+start: { year: -429 }
+end: { year: -425 }
+places: [athens, piraeus]
+participants:
+  - person: pericles
+  - person: thucydides
+reviewed: false

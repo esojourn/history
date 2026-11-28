@@ -1,0 +1,13 @@
+id: lycurgus-sparta
+wikidata: null
+civ: greece
+faction: sparta
+importance: 3
+birth: { unknown: true, approx: -830, certainty: legendary }
+death: { unknown: true, approx: -760, certainty: legendary }
+birthplace: sparta
+deathplace: unknown
+places:
+  - { place: sparta }
+  - { place: delphi }
+reviewed: false

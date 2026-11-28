@@ -1,0 +1,16 @@
+id: cimon
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { year: -509, circa: true }
+death: { year: -449 }
+birthplace: athens
+deathplace: cyprus
+places:
+  - { place: athens }
+  - { place: thrace }
+  - { place: eurymedon }
+  - { place: ithome }
+  - { place: cyprus }
+reviewed: false

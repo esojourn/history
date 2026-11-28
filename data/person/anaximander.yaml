@@ -1,0 +1,12 @@
+id: anaximander
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { year: -609, circa: true }
+death: { year: -545, circa: true }
+birthplace: miletus
+deathplace: unknown
+places:
+  - { place: miletus }
+reviewed: false

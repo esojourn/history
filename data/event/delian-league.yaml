@@ -1,0 +1,12 @@
+id: delian-league
+wikidata: null
+civ: greece
+type: founding
+importance: 4
+start: { year: -477 }
+places: [delos, athens]
+participants:
+  - person: aristides
+  - person: cimon
+  - person: pausanias-sparta
+reviewed: false

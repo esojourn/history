@@ -1,0 +1,17 @@
+id: alcibiades
+wikidata: null
+civ: greece
+faction: athens
+importance: 4
+birth: { year: -449, circa: true }
+death: { year: -403 }
+birthplace: athens
+deathplace: phrygia
+places:
+  - { place: athens }
+  - { place: sparta, start: -414, end: -411 }
+  - { place: sardis, start: -411, end: -410 }
+  - { place: samos, start: -410, end: -406 }
+  - { place: thrace }
+  - { place: phrygia }
+reviewed: false

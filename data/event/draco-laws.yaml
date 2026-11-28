@@ -1,0 +1,10 @@
+id: draco-laws
+wikidata: null
+civ: greece
+type: founding
+importance: 2
+start: { year: -620, circa: true }
+places: [athens]
+participants:
+  - person: draco
+reviewed: false

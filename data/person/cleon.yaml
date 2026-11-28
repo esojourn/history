@@ -1,0 +1,14 @@
+id: cleon
+wikidata: null
+civ: greece
+faction: athens
+importance: 3
+birth: { unknown: true, approx: -470 }
+death: { year: -421 }
+birthplace: athens
+deathplace: amphipolis
+places:
+  - { place: athens }
+  - { place: pylos }
+  - { place: amphipolis }
+reviewed: false

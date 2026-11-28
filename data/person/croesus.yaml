@@ -1,0 +1,14 @@
+id: croesus
+wikidata: null
+civ: meso
+importance: 3
+birth: { year: -594, circa: true }
+death: { unknown: true, approx: -545 }
+reign:
+  - { start: -559, end: -545 }
+birthplace: sardis
+deathplace: unknown
+places:
+  - { place: sardis }
+  - { place: delphi }
+reviewed: false

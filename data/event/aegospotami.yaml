@@ -1,0 +1,11 @@
+id: aegospotami
+wikidata: null
+civ: greece
+type: battle
+importance: 3
+start: { year: -404 }
+places: [aegospotami, lampsacus]
+participants:
+  - person: lysander
+  - person: alcibiades
+reviewed: false

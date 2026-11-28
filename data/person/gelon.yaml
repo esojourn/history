@@ -1,0 +1,16 @@
+id: gelon
+wikidata: null
+civ: greece
+faction: greek-cities
+importance: 2
+birth: { unknown: true, approx: -540 }
+death: { year: -477 }
+reign:
+  - { start: -490, end: -477 }
+birthplace: gela
+deathplace: syracuse
+places:
+  - { place: gela }
+  - { place: syracuse, start: -484 }
+  - { place: himera }
+reviewed: false
